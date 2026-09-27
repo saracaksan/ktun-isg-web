@@ -1,0 +1,915 @@
+{
+  "ana_sayfa": "index.html",
+  "giris": "login.html",
+  "donemler": [
+    {
+      "donem": "1. Dönem",
+      "klasor": "birinci-donem",
+      "dersler": [
+        {
+          "kod": "83300310010",
+          "ders": "Mekanik İşlerde Güvenlik",
+          "ogretim_uyesi": "Prof. Dr. Yusuf Yılmaz",
+          "klasor": "birinci-donem/mekanik-islerde-guvenlik",
+          "ana_sayfa": "birinci-donem/mekanik-islerde-guvenlik/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310020",
+          "ders": "İş Sağlığı ve Güvenliği Mevzuatı",
+          "ogretim_uyesi": "Doç. Dr. Ahmet Peker",
+          "klasor": "birinci-donem/is-sagligi-ve-guvenligi-mevzuati",
+          "ana_sayfa": "birinci-donem/is-sagligi-ve-guvenligi-mevzuati/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310030",
+          "ders": "Çalışma Ortamı Gözetimi",
+          "ogretim_uyesi": "Prof. Dr. Bilgehan Kekeç",
+          "klasor": "birinci-donem/calisma-ortami-gozetimi",
+          "ana_sayfa": "birinci-donem/calisma-ortami-gozetimi/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310040",
+          "ders": "Araştırma Yöntemleri ve Veri Analizi",
+          "ogretim_uyesi": "Prof. Dr. Saadettin Erhan Kesen",
+          "klasor": "birinci-donem/arastirma-yontemleri-ve-veri-analizi",
+          "ana_sayfa": "birinci-donem/arastirma-yontemleri-ve-veri-analizi/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310050",
+          "ders": "Madencilikte Güvenlik ve Acil Durum Yönetimi",
+          "ogretim_uyesi": "Prof. Dr. Niyazi Bilim",
+          "klasor": "birinci-donem/madencilikte-guvenlik-ve-acil-durum-yonetimi",
+          "ana_sayfa": "birinci-donem/madencilikte-guvenlik-ve-acil-durum-yonetimi/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310060",
+          "ders": "İş Kazaları ve Korunma Politikaları",
+          "ogretim_uyesi": "Prof. Dr. Yakup Kara",
+          "klasor": "birinci-donem/is-kazalari-ve-korunma-politikalari",
+          "ana_sayfa": "birinci-donem/is-kazalari-ve-korunma-politikalari/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "donem": "2. Dönem",
+      "klasor": "ikinci-donem",
+      "dersler": [
+        {
+          "kod": "83300310070",
+          "ders": "İş Sağlığı ve Güvenliği Yönetim Sistemleri",
+          "ogretim_uyesi": "",
+          "klasor": "ikinci-donem/isg-yonetim-sistemleri",
+          "ana_sayfa": "ikinci-donem/isg-yonetim-sistemleri/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310080",
+          "ders": "Elektrikle Çalışmalarda Güvenlik",
+          "ogretim_uyesi": "",
+          "klasor": "ikinci-donem/elektrikle-calismalarda-guvenlik",
+          "ana_sayfa": "ikinci-donem/elektrikle-calismalarda-guvenlik/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310090",
+          "ders": "Risk Değerlendirmesi",
+          "ogretim_uyesi": "",
+          "klasor": "ikinci-donem/risk-degerlendirmesi",
+          "ana_sayfa": "ikinci-donem/risk-degerlendirmesi/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310100",
+          "ders": "Yapı İşlerinde Güvenlik",
+          "ogretim_uyesi": "",
+          "klasor": "ikinci-donem/yapi-islerinde-guvenlik",
+          "ana_sayfa": "ikinci-donem/yapi-islerinde-guvenlik/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310110",
+          "ders": "İleri Endüstriyel Ergonomi",
+          "ogretim_uyesi": "",
+          "klasor": "ikinci-donem/ileri-endustriyel-ergonomi",
+          "ana_sayfa": "ikinci-donem/ileri-endustriyel-ergonomi/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310120",
+          "ders": "Tehlikeli Maddelerle Çalışmalarda Güvenlik",
+          "ogretim_uyesi": "",
+          "klasor": "ikinci-donem/tehlikeli-maddelerle-calismalarda-guvenlik",
+          "ana_sayfa": "ikinci-donem/tehlikeli-maddelerle-calismalarda-guvenlik/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        },
+        {
+          "kod": "83300310130",
+          "ders": "Dönem (Uygulama) Projesi",
+          "ogretim_uyesi": "Kredisiz – Zorunlu Mezuniyet Çalışması",
+          "klasor": "ikinci-donem/donem-uygulama-projesi",
+          "ana_sayfa": "ikinci-donem/donem-uygulama-projesi/index.html",
+          "materyaller": [
+            {
+              "bolum": 1,
+              "konu": "bolum-01-konu.html",
+              "sunum": "bolum-01-sunum.html",
+              "sorular": "bolum-01-sorular.html"
+            },
+            {
+              "bolum": 2,
+              "konu": "bolum-02-konu.html",
+              "sunum": "bolum-02-sunum.html",
+              "sorular": "bolum-02-sorular.html"
+            },
+            {
+              "bolum": 3,
+              "konu": "bolum-03-konu.html",
+              "sunum": "bolum-03-sunum.html",
+              "sorular": "bolum-03-sorular.html"
+            },
+            {
+              "bolum": 4,
+              "konu": "bolum-04-konu.html",
+              "sunum": "bolum-04-sunum.html",
+              "sorular": "bolum-04-sorular.html"
+            },
+            {
+              "bolum": 5,
+              "konu": "bolum-05-konu.html",
+              "sunum": "bolum-05-sunum.html",
+              "sorular": "bolum-05-sorular.html"
+            },
+            {
+              "bolum": 6,
+              "konu": "bolum-06-konu.html",
+              "sunum": "bolum-06-sunum.html",
+              "sorular": "bolum-06-sorular.html"
+            },
+            {
+              "bolum": 7,
+              "konu": "bolum-07-konu.html",
+              "sunum": "bolum-07-sunum.html",
+              "sorular": "bolum-07-sorular.html"
+            },
+            {
+              "bolum": 8,
+              "konu": "bolum-08-konu.html",
+              "sunum": "bolum-08-sunum.html",
+              "sorular": "bolum-08-sorular.html"
+            },
+            {
+              "bolum": 9,
+              "konu": "bolum-09-konu.html",
+              "sunum": "bolum-09-sunum.html",
+              "sorular": "bolum-09-sorular.html"
+            },
+            {
+              "bolum": 10,
+              "konu": "bolum-10-konu.html",
+              "sunum": "bolum-10-sunum.html",
+              "sorular": "bolum-10-sorular.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

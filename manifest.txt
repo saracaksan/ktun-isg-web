@@ -1,0 +1,15 @@
+13 DERS
+130 BÖLÜM
+390 HTML MATERYAL
+
+Materyal türleri:
+- Konu Anlatımı
+- Sunum
+- Sorular / Alıştırmalar
+
+Belge uzantıları:
+- .html
+
+PDF: YOK
+DOCX: YOK
+PPTX: YOK

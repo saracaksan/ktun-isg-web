@@ -1,0 +1,58 @@
+KONYA TEKNİK ÜNİVERSİTESİ
+İSG EĞİTİM PORTALI – 2026–2027
+
+ANA YAPI
+========
+index.html
+login.html
+site-map.json
+KLASOR-DOSYA-HARITASI.txt
+assets/css/style.css
+assets/js/app.js
+
+BİRİNCİ DÖNEM
+=============
+6 ders bulunmaktadır.
+Her ders:
+- 1 adet index.html
+- 10 bölüm
+- Her bölümde 3 HTML sayfası
+- Toplam 30 HTML materyal
+
+İKİNCİ DÖNEM
+============
+7 ders bulunmaktadır.
+Her ders:
+- 1 adet index.html
+- 10 bölüm
+- Her bölümde 3 HTML sayfası
+- Toplam 30 HTML materyal
+
+MATERYAL İSİMLENDİRME
+=====================
+bolum-01-konu.html
+bolum-01-sunum.html
+bolum-01-sorular.html
+
+bolum-02-konu.html
+bolum-02-sunum.html
+bolum-02-sorular.html
+
+...
+
+bolum-10-konu.html
+bolum-10-sunum.html
+bolum-10-sorular.html
+
+ÖNEMLİ
+======
+PDF, DOCX, PPTX veya başka belge formatı kullanılmamıştır.
+Konu anlatımı, sunum ve soru materyallerinin tamamı HTML'dir.
+
+Toplam:
+13 ders
+130 bölüm
+390 HTML materyal sayfası
+13 ders index.html sayfası
+1 ana index.html
+1 login.html
