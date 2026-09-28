@@ -4,14 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>İSG Eğitim Portalı | Konya Teknik Üniversitesi</title>
+
+    <!-- GitHub Pages için güvenilir fallback yönlendirmesi -->
     <meta http-equiv="refresh" content="0; url=login.html">
 
-    <title>İSG Eğitim Portalı</title>
+    <style>
+        :root {
+            --navy: #071a33;
+            --blue: #1769aa;
+            --cyan: #0ea5e9;
+            --text: #172033;
+            --muted: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            font-family:
+                Inter,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(23, 105, 170, .18),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #071a33 0%,
+                    #0b2948 55%,
+                    #1769aa 100%
+                );
+
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 100vh;
+        }
+
+        .loading {
+            width: min(460px, calc(100% - 40px));
+            text-align: center;
+        }
+
+        .logo {
+            width: 68px;
+            height: 68px;
+
+            margin: 0 auto 22px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--blue),
+                    var(--cyan)
+                );
+
+            box-shadow:
+                0 18px 45px rgba(0,0,0,.25);
+
+            font-size: 22px;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+
+            font-size: 23px;
+            font-weight: 800;
+        }
+
+        p {
+            margin: 0;
+
+            color: #cbd8e7;
+
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .loader {
+            width: 34px;
+            height: 34px;
+
+            margin: 28px auto 0;
+
+            border: 3px solid rgba(255,255,255,.22);
+            border-top-color: white;
+
+            border-radius: 50%;
+
+            animation:
+                spin .8s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .manual {
+            margin-top: 24px;
+
+            font-size: 12px;
+        }
+
+        .manual a {
+            color: #fff;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    </style>
 </head>
+
 <body>
-    <p>Giriş sayfasına yönlendiriliyorsunuz...</p>
+
+    <main class="loading">
+
+        <div class="logo">
+            KT
+        </div>
+
+        <h1>
+            İSG Eğitim Portalı
+        </h1>
+
+        <p>
+            Konya Teknik Üniversitesi<br>
+            İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans<br>
+            2026–2027 Eğitim Öğretim Yılı
+        </p>
+
+        <div class="loader"></div>
+
+        <div class="manual">
+            Giriş sayfası açılmazsa
+            <a href="login.html">
+                buraya tıklayın
+            </a>.
+        </div>
+
+    </main>
+
     <script>
+        /*
+         * GitHub Pages uyumlu yönlendirme.
+         *
+         * replace() kullanıldığı için kullanıcı
+         * geri tuşuna bastığında gereksiz bir
+         * index.html döngüsü oluşmaz.
+         */
+
         window.location.replace("login.html");
     </script>
+
 </body>
 </html>
