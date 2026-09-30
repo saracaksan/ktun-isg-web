@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mekanik İşlerde Güvenlik — Final Denemeleri | 3 Deneme × 20 Soru | KTÜN İSG">
+<meta name="author" content="Sıraç Aksan">
+<meta name="theme-color" content="#071a33">
+<title>Final Denemeleri | Mekanik İşlerde Güvenlik | KTÜN İSG</title>
+<style>
+:root{
+  --navy:#071a33;
+  --navy-2:#0b2948;
+  --blue:#1769aa;
+  --cyan:#0ea5e9;
+  --aqua:#22d3ee;
+  --gold:#f59e0b;
+  --gold-light:#fbbf24;
+  --bg:#f4f7fb;
+  --card:#fff;
+  --text:#1f2937;
+  --muted:#5b6b7f;
+  --border:#dbe4f0;
+  --primary:#0d47a1;
+  --primary-dark:#082f6b;
+  --primary-light:#e8f0fb;
+  --accent:#1976d2;
+  --success:#1b8a3a;
+  --success-bg:#e6f5ec;
+  --success-border:#a8dbb8;
+  --danger:#c62828;
+  --danger-bg:#fdecec;
+  --danger-border:#f0b4b4;
+  --warning:#d97706;
+  --warning-bg:#fff7ed;
+  --radius:14px;
+  --shadow:0 6px 22px rgba(13,71,161,.08);
+  --shadow-lg:0 14px 40px rgba(13,71,161,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  font-family:'Segoe UI',Roboto,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  font-size:16px;
+  padding-bottom:40px;
+}
+a{color:var(--primary);text-decoration:none;}
+a:hover{text-decoration:underline;}
+img{max-width:100%;height:auto;}
+.container{max-width:1080px;margin:0 auto;padding:0 16px;}
+
+/* ===================== HEADER ===================== */
+.site-header{
+  background:
+    radial-gradient(circle at 90% 10%, rgba(34,211,238,.16), transparent 55%),
+    linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 55%, var(--blue) 130%);
+  color:#fff;
+  padding:26px 0 22px;
+  box-shadow:var(--shadow-lg);
+  position:relative;
+  overflow:hidden;
+}
+.site-header::after{
+  content:"";position:absolute;right:-60px;top:-60px;width:280px;height:280px;
+  background:radial-gradient(circle,rgba(34,211,238,.18),transparent 70%);
+  border-radius:50%;
+  animation:floatOrb 20s ease-in-out infinite;
+}
+@keyframes floatOrb{
+  0%,100%{transform:translate(0,0) scale(1);}
+  50%{transform:translate(30px,-20px) scale(1.08);}
+}
+.brand{display:flex;align-items:center;gap:14px;position:relative;z-index:2;}
+.brand-badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:58px;height:58px;border-radius:15px;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--blue),var(--cyan) 70%,var(--aqua));
+  border:1.5px solid rgba(255,255,255,.35);
+  font-weight:900;font-size:17px;letter-spacing:.5px;
+  box-shadow:0 10px 25px rgba(14,165,233,.35);
+}
+.brand h1{
+  font-size:clamp(17px,2.4vw,23px);
+  font-weight:700;letter-spacing:.2px;line-height:1.25;
+}
+.brand .sub{
+  font-size:clamp(12px,1.6vw,14px);
+  opacity:.92;margin-top:3px;font-weight:500;
+}
+.top-nav{
+  display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;
+  position:relative;z-index:2;
+}
+.top-nav a{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 15px;border-radius:10px;
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.20);
+  color:#fff !important;font-size:13.5px;font-weight:600;
+  text-decoration:none !important;
+  transition:all .22s ease;
+  white-space:nowrap;
+}
+.top-nav a:hover{
+  background:rgba(34,211,238,.20);
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(0,0,0,.18);
+}
+
+/* ===================== INTRO ===================== */
+.intro-box{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  border:1px solid var(--border);
+  margin-top:26px;
+  overflow:hidden;
+}
+.intro-head{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:18px 22px;cursor:pointer;
+  background:linear-gradient(90deg,#f7faff,#eef4fd);
+  border-bottom:1px solid var(--border);
+}
+.intro-head h2{
+  font-size:16px;color:var(--primary-dark);font-weight:700;
+  display:flex;align-items:center;gap:10px;
+}
+.intro-head .chev{
+  font-size:18px;color:var(--primary);transition:transform .3s ease;flex:0 0 auto;
+}
+.intro-head.closed .chev{transform:rotate(-90deg);}
+.intro-body{padding:20px 22px 24px;}
+.intro-body.hidden{display:none;}
+.intro-body p{margin-bottom:12px;font-size:15px;color:#374151;text-align:justify;}
+.intro-body h3{
+  font-size:15px;color:var(--primary-dark);margin:18px 0 10px;font-weight:700;
+}
+.intro-body ul{margin:8px 0 12px 4px;list-style:none;}
+.intro-body ul li{
+  position:relative;padding-left:22px;margin-bottom:9px;font-size:14.5px;color:#374151;
+}
+.intro-body ul li::before{
+  content:"";position:absolute;left:4px;top:10px;width:8px;height:8px;
+  border-radius:50%;background:var(--accent);
+}
+
+/* ===================== TABS ===================== */
+.tabs{
+  display:flex;gap:10px;margin-top:26px;flex-wrap:wrap;
+}
+.tab-btn{
+  flex:1 1 220px;
+  padding:15px 16px;border-radius:12px;border:2px solid var(--border);
+  background:var(--card);color:var(--muted);cursor:pointer;
+  font-size:14px;font-weight:700;text-align:left;
+  transition:all .22s ease;font-family:inherit;
+  display:flex;flex-direction:column;gap:4px;
+  position:relative;overflow:hidden;
+}
+.tab-btn::before{
+  content:"";position:absolute;top:0;left:0;width:100%;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light));
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .3s ease;
+}
+.tab-btn:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:var(--shadow);}
+.tab-btn:hover::before{transform:scaleX(1);}
+.tab-btn .tt{font-size:15px;color:var(--primary-dark);font-weight:800;}
+.tab-btn .ts{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;}
+.tab-btn.active{
+  background:linear-gradient(135deg,#78350f 0%, #b45309 55%, var(--gold) 130%);
+  border-color:#b45309;color:#fff;
+  box-shadow:0 12px 30px rgba(180,83,9,.32);
+}
+.tab-btn.active .tt,.tab-btn.active .ts{color:#fff;}
+
+/* ===================== TIMER BAR ===================== */
+.timer-bar{
+  margin-top:18px;
+  background:linear-gradient(135deg,#78350f,#b45309 60%,var(--gold));
+  color:#fff;border-radius:var(--radius);
+  padding:16px 22px;
+  display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;justify-content:space-between;
+  box-shadow:0 12px 30px rgba(180,83,9,.28);
+  font-size:14px;font-weight:700;
+  position:relative;overflow:hidden;
+}
+.timer-bar::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,rgba(255,255,255,.4),rgba(255,255,255,.1));
+}
+.timer-bar .label{display:flex;align-items:center;gap:9px;font-size:12.5px;opacity:.95;}
+.timer-bar .clock{
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(0,0,0,.24);
+  padding:8px 16px;border-radius:11px;
+  font-family:'Consolas','Monaco','Courier New',monospace;
+  font-size:22px;font-weight:900;letter-spacing:1px;
+  border:1px solid rgba(255,255,255,.18);
+  min-width:110px;justify-content:center;
+}
+.timer-bar .clock.warning{
+  background:rgba(220,38,38,.35);
+  animation:pulseWarn 1s ease-in-out infinite;
+}
+@keyframes pulseWarn{
+  0%,100%{box-shadow:0 0 0 0 rgba(220,38,38,.5);}
+  50%{box-shadow:0 0 0 10px rgba(220,38,38,0);}
+}
+.timer-actions{display:flex;gap:8px;flex-wrap:wrap;}
+.timer-btn{
+  padding:10px 16px;border-radius:10px;
+  border:1px solid rgba(255,255,255,.24);
+  background:rgba(255,255,255,.12);
+  color:#fff;font-size:12.5px;font-weight:750;
+  cursor:pointer;font-family:inherit;
+  transition:all .22s ease;
+  display:inline-flex;align-items:center;gap:7px;
+}
+.timer-btn:hover{background:rgba(255,255,255,.22);transform:translateY(-2px);}
+.timer-btn:disabled{opacity:.45;cursor:not-allowed;transform:none;}
+.timer-btn.primary{
+  background:rgba(255,255,255,.95);color:#78350f;
+  border-color:#fff;
+}
+.timer-btn.primary:hover{background:#fff;box-shadow:0 8px 20px rgba(0,0,0,.24);}
+
+/* ===================== SCORE BAR ===================== */
+.score-bar{
+  position:sticky;top:0;z-index:50;
+  margin-top:14px;
+  background:linear-gradient(90deg,var(--primary-dark),var(--primary));
+  color:#fff;border-radius:var(--radius);
+  padding:12px 18px;
+  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;
+  box-shadow:var(--shadow-lg);
+  font-size:13.5px;font-weight:600;
+}
+.score-bar .grp{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+.score-bar .item{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;}
+.score-bar .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+.dot-green{background:#5ee27f;}
+.dot-red{background:#ff8181;}
+.dot-gray{background:#c8d3e3;}
+.score-bar .puan{
+  background:rgba(255,255,255,.18);padding:6px 14px;border-radius:9px;
+  border:1px solid rgba(255,255,255,.28);font-size:14px;
+}
+.score-bar .puan strong{font-size:17px;}
+
+/* ===================== NAVIGATOR ===================== */
+.navigator{
+  display:flex;flex-wrap:wrap;gap:7px;margin-top:14px;
+  padding:14px;background:var(--card);border-radius:var(--radius);
+  border:1px solid var(--border);box-shadow:var(--shadow);
+}
+.nav-chip{
+  width:38px;height:38px;border-radius:9px;border:2px solid var(--border);
+  background:#f7faff;color:var(--muted);font-weight:700;font-size:13.5px;
+  cursor:pointer;transition:all .18s ease;font-family:inherit;
+  display:inline-flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.nav-chip:hover{transform:translateY(-2px);border-color:var(--accent);}
+.nav-chip.correct{background:var(--success);border-color:var(--success);color:#fff;}
+.nav-chip.wrong{background:var(--danger);border-color:var(--danger);color:#fff;}
+.nav-chip.flagged::after{
+  content:"";position:absolute;top:-3px;right:-3px;
+  width:11px;height:11px;border-radius:50%;
+  background:var(--gold);
+  border:2px solid #fff;
+}
+.nav-chip.current{
+  outline:3px solid var(--accent);outline-offset:2px;
+  box-shadow:0 0 0 2px #fff inset;
+}
+
+/* ===================== QUESTION CARD ===================== */
+.q-card{
+  margin-top:16px;background:var(--card);border-radius:var(--radius);
+  border:1px solid var(--border);box-shadow:var(--shadow);
+  padding:22px 22px 26px;
+  animation:fadeUp .35s ease;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.q-meta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  margin-bottom:14px;
+}
+.q-badge{
+  background:linear-gradient(135deg,#78350f,#b45309 70%,var(--gold));
+  color:#fff;font-weight:800;font-size:13px;
+  padding:7px 15px;border-radius:9px;letter-spacing:.3px;
+}
+.q-topic{
+  font-size:12px;font-weight:700;color:var(--accent);
+  background:var(--primary-light);padding:6px 12px;border-radius:8px;
+  text-transform:uppercase;letter-spacing:.4px;
+}
+.q-flag-btn{
+  margin-left:auto;
+  padding:7px 13px;border-radius:9px;
+  border:1.5px solid var(--border);
+  background:#fbfdff;color:var(--muted);
+  font-size:12px;font-weight:750;font-family:inherit;
+  cursor:pointer;transition:all .2s ease;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.q-flag-btn:hover{border-color:var(--gold);color:var(--gold);}
+.q-flag-btn.flagged{
+  background:var(--warning-bg);border-color:var(--gold);color:var(--warning);
+}
+.q-text{
+  font-size:15.5px;color:#1f2937;line-height:1.75;
+  margin-bottom:20px;text-align:justify;
+}
+
+/* Options */
+.options{display:flex;flex-direction:column;gap:10px;}
+.option{
+  display:flex;gap:13px;align-items:flex-start;
+  padding:13px 15px;border-radius:11px;
+  border:2px solid var(--border);background:#fbfdff;
+  cursor:pointer;transition:all .2s ease;
+  text-align:left;font-family:inherit;font-size:14.5px;color:#26303d;
+  width:100%;line-height:1.6;
+}
+.option:hover:not(.disabled){
+  border-color:var(--accent);background:#f2f7ff;transform:translateX(3px);
+}
+.option .letter{
+  flex:0 0 auto;width:30px;height:30px;border-radius:8px;
+  background:var(--primary-light);color:var(--primary-dark);
+  font-weight:800;font-size:14px;
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:all .2s ease;
+}
+.option .otext{flex:1 1 auto;}
+.option.disabled{cursor:default;}
+.option.selected-correct{
+  background:var(--success-bg);border-color:var(--success-border);
+}
+.option.selected-correct .letter{background:var(--success);color:#fff;}
+.option.selected-wrong{
+  background:var(--danger-bg);border-color:var(--danger-border);
+}
+.option.selected-wrong .letter{background:var(--danger);color:#fff;}
+.option.reveal-correct{
+  background:var(--success-bg);border-color:var(--success-border);
+  box-shadow:0 0 0 2px rgba(27,138,58,.15) inset;
+}
+.option.reveal-correct .letter{background:var(--success);color:#fff;}
+.option.dim{opacity:.62;}
+
+/* Feedback */
+.feedback{
+  margin-top:16px;padding:14px 16px;border-radius:11px;
+  font-weight:700;font-size:14.5px;display:none;
+  align-items:center;gap:10px;
+}
+.feedback.show{display:flex;}
+.feedback.ok{background:var(--success-bg);color:var(--success);border:1.5px solid var(--success-border);}
+.feedback.no{background:var(--danger-bg);color:var(--danger);border:1.5px solid var(--danger-border);}
+.feedback .ico{font-size:20px;}
+
+/* Solution */
+.solution{
+  margin-top:16px;border-radius:12px;overflow:hidden;
+  border:1px solid var(--border);background:#fbfdff;
+}
+.solution-head{
+  background:linear-gradient(90deg,#eef4fd,#e2ecfa);
+  padding:14px 16px;font-weight:800;font-size:14px;color:var(--primary-dark);
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  user-select:none;
+}
+.solution-head.clickable{cursor:pointer;transition:background .2s ease;}
+.solution-head.clickable:hover{background:linear-gradient(90deg,#e2ecfa,#d4e3fa);}
+.solution-head .chev{
+  font-size:14px;color:var(--primary);transition:transform .3s ease;
+  display:inline-block;
+}
+.solution-head .chev.open{transform:rotate(180deg);}
+.solution-body{
+  padding:16px 18px 20px;font-size:14.5px;color:#2b3542;line-height:1.75;
+  border-top:1px solid var(--border);
+  display:none;
+}
+.solution-body.show{display:block;animation:fadeUp .3s ease;}
+.solution-body p{margin-bottom:11px;}
+.solution-body strong{color:var(--primary-dark);}
+.solution-body ul{margin:6px 0 12px 4px;list-style:none;}
+.solution-body ul li{
+  position:relative;padding-left:20px;margin-bottom:8px;font-size:14px;
+}
+.solution-body ul li::before{
+  content:"▸";position:absolute;left:3px;top:0;color:var(--accent);font-weight:800;
+}
+.answer-tag{
+  display:inline-block;background:var(--success);color:#fff;
+  padding:3px 12px;border-radius:7px;font-size:13px;font-weight:800;
+  margin-left:6px;
+}
+
+/* Controls */
+.controls{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
+  margin-top:20px;
+}
+.btn{
+  padding:12px 22px;border-radius:11px;border:none;cursor:pointer;
+  font-family:inherit;font-size:14.5px;font-weight:700;
+  transition:all .2s ease;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+  color:#fff;box-shadow:0 6px 16px rgba(13,71,161,.28);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(13,71,161,.35);}
+.btn-gold{
+  background:linear-gradient(135deg,#78350f,#b45309 70%,var(--gold));
+  color:#fff;box-shadow:0 6px 16px rgba(180,83,9,.35);
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(180,83,9,.45);}
+.btn-ghost{
+  background:#eef4fd;color:var(--primary-dark);border:1.5px solid var(--border);
+}
+.btn-ghost:hover{background:#e2ecfa;border-color:var(--accent);}
+.btn:disabled{opacity:.42;cursor:not-allowed;transform:none !important;box-shadow:none !important;}
+
+/* Result Card */
+.result-card{
+  margin-top:18px;background:var(--card);border-radius:var(--radius);
+  border:2px solid var(--gold-light);box-shadow:var(--shadow-lg);
+  padding:28px 22px;text-align:center;
+  display:none;animation:fadeUp .4s ease;
+}
+.result-card.show{display:block;}
+.result-card h3{
+  font-size:21px;color:var(--primary-dark);margin-bottom:6px;
+}
+.result-card .res-sub{font-size:13.5px;color:var(--muted);margin-bottom:20px;}
+.res-grid{
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:18px;
+}
+.res-item{
+  flex:1 1 130px;max-width:180px;
+  padding:16px 12px;border-radius:12px;
+  background:#f7faff;border:1.5px solid var(--border);
+}
+.res-item .num{font-size:26px;font-weight:800;line-height:1.1;}
+.res-item .lbl{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-top:4px;}
+.res-item.ok .num{color:var(--success);}
+.res-item.no .num{color:var(--danger);}
+.res-item.score .num{color:#b45309;}
+.res-item.score{background:linear-gradient(135deg,#fffbeb,#fef3c7);border-color:#fde68a;}
+.res-item.net .num{color:var(--primary);}
+.res-item.net{background:var(--primary-light);border-color:#bcd4f2;}
+.res-msg{
+  font-size:14.5px;font-weight:700;padding:14px 18px;border-radius:10px;
+  background:#f7faff;border:1px dashed var(--border);color:var(--primary-dark);
+  line-height:1.7;
+}
+
+/* ===================== FOOTER ===================== */
+.site-footer{
+  margin-top:44px;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(34,211,238,.10), transparent 50%),
+    linear-gradient(135deg,#04101f 0%, #071a33 60%, #0b2948 100%);
+  color:#c3d3ea;padding:34px 0 26px;
+  position:relative;overflow:hidden;
+}
+.site-footer::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--blue),var(--cyan),var(--aqua));
+}
+.footer-grid{
+  display:grid;grid-template-columns:1fr;gap:22px;
+}
+@media(min-width:760px){
+  .footer-grid{grid-template-columns:1.5fr 1fr;}
+}
+.footer-grid h4{
+  color:#fff;font-size:15px;margin-bottom:10px;font-weight:800;
+}
+.footer-grid p,.footer-grid a{font-size:13.5px;color:#c3d3ea;line-height:1.85;}
+.footer-grid a{color:#8fc0ff;}
+.footer-grid a:hover{color:#fff;}
+.footer-contact{display:flex;flex-direction:column;gap:6px;font-size:13.5px;}
+.footer-contact a{color:#8fc0ff;width:fit-content;}
+.footer-bottom{
+  margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);
+  font-size:12.5px;color:#9fb4d0;text-align:center;line-height:1.75;
+}
+.footer-bottom strong{color:#fff;}
+
+/* ===================== RESPONSIVE ===================== */
+@media(max-width:640px){
+  body{font-size:15px;}
+  .brand{flex-direction:row;align-items:flex-start;}
+  .brand-badge{width:48px;height:48px;font-size:14px;border-radius:12px;}
+  .top-nav a{padding:8px 12px;font-size:12.5px;}
+  .intro-head{padding:15px 16px;}
+  .intro-body{padding:16px 16px 20px;}
+  .q-card{padding:18px 15px 22px;}
+  .q-text{font-size:14.5px;text-align:left;}
+  .option{padding:11px 12px;font-size:14px;}
+  .option .letter{width:27px;height:27px;font-size:13px;}
+  .nav-chip{width:34px;height:34px;font-size:12.5px;}
+  .score-bar{padding:11px 13px;font-size:12.5px;gap:8px 12px;}
+  .score-bar .puan{font-size:13px;padding:5px 11px;}
+  .score-bar .puan strong{font-size:15px;}
+  .timer-bar{padding:14px 15px;flex-direction:column;align-items:stretch;gap:12px;}
+  .timer-bar .clock{font-size:19px;padding:7px 14px;min-width:96px;}
+  .timer-actions{justify-content:stretch;}
+  .timer-btn{flex:1;justify-content:center;}
+  .controls{flex-direction:column-reverse;}
+  .controls .btn{width:100%;justify-content:center;}
+  .tab-btn{padding:12px 13px;}
+  .tab-btn .tt{font-size:14px;}
+  .res-item{flex:1 1 100px;max-width:150px;padding:13px 10px;}
+  .res-item .num{font-size:22px;}
+}
+@media(min-width:900px){
+  .q-text{font-size:16px;}
+  .option{font-size:15px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <span class="brand-badge">KT</span>
+      <div>
+        <h1>Final Denemeleri — Mekanik İşlerde Güvenlik</h1>
+        <p class="sub">3 Deneme × 20 Soru · Süreli Çözümlü Sınav Sistemi</p>
+      </div>
+    </div>
+    <nav class="top-nav">
+      <a href="../../../ana-sayfa.html">🏠 Ana Sayfa</a>
+      <a href="../index.html">📚 Ders Ana Sayfası</a>
+      <a href="../../index.html">🗂️ 1. Dönem</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- ================= INTRO ================= -->
+  <section class="intro-box">
+    <div class="intro-head" id="introHead">
+      <h2>📘 Sınav Yönergesi ve Değerlendirme Esasları</h2>
+      <span class="chev">▾</span>
+    </div>
+    <div class="intro-body" id="introBody">
+      <p>Bu final deneme paketi; <strong>Mekanik İşlerde İş Sağlığı ve Güvenliği</strong> dersinin 15 haftalık akademik müfredatı ekseninde, El Aletleri (klasik, elektrikli, pnömatik, hidrolik), İş Ekipmanlarının Tasarım ve Kullanım Güvenliği, Basınçlı Kaplar ve Tesisatlar, İş Makinaları ve Motorlu Araçlar, Bakım-Onarım ve Enerji İzolasyon (LOTO) Prosedürleri ile Kaynak İşlerinde İSG konularını kapsayan <strong>3 bağımsız deneme sınavından</strong> oluşmaktadır.</p>
+
+      <h3>Sınav Uygulama ve Değerlendirme Kuralları:</h3>
+      <ul>
+        <li><strong>Soru Yapısı:</strong> Her deneme <strong>20 adet çoktan seçmeli</strong> sorudan oluşur.</li>
+        <li><strong>Süre:</strong> Her deneme için <strong>30 dakika</strong> geri sayım süresi tanımlanmıştır. Süre dolduğunda sınav otomatik sonlandırılır.</li>
+        <li><strong>Puanlama:</strong> <strong>4 yanlış 1 doğruyu götürür.</strong> Net = Doğru − (Yanlış ÷ 4). Her soru 5 puandır; toplam 100 puan üzerinden değerlendirilir.</li>
+        <li><strong>Başarı Sınırı:</strong> 100 üzerinden <strong>70 puan</strong> başarılı sayılır.</li>
+        <li><strong>Çözümler:</strong> Her sorunun ardından doğru cevabın mevzuat gerekçesi ve yanlış şıkların detaylı analizi yer alır.</li>
+        <li><strong>İşaretleme:</strong> Emin olmadığınız soruları bayrakla işaretleyip daha sonra tekrar gözden geçirebilirsiniz.</li>
+      </ul>
+
+      <h3>Denemelerin Kapsamı:</h3>
+      <ul>
+        <li><strong>Deneme 1 — Kapsamlı Değerlendirme ve Saha Analizi:</strong> El aletleri, iş ekipmanı tasarımı, basınçlı kaplar, iş makineleri, LOTO ve kaynak güvenliği konularından genel mühendislik ve mevzuat soruları.</li>
+        <li><strong>Deneme 2 — İleri Düzey Vaka ve Risk Analizi:</strong> Gerçek iş kazaları, kök neden analizi (RCA), malzeme mekaniği ve ekipman arızaları üzerine vaka soruları.</li>
+        <li><strong>Deneme 3 — Ustalaşma ve Simülasyon Sınavı:</strong> Karmaşık mühendislik hesapları, mevzuat istisnaları ve ileri düzey saha senaryoları.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= TABS ================= -->
+  <div class="tabs" id="tabs"></div>
+
+  <!-- ================= TIMER BAR ================= -->
+  <div class="timer-bar">
+    <div class="label">
+      <span>⏱️ Kalan Süre</span>
+    </div>
+    <div class="clock" id="timerDisplay">30:00</div>
+    <div class="timer-actions">
+      <button class="timer-btn primary" id="startBtn" type="button">▶ Başlat</button>
+      <button class="timer-btn" id="pauseBtn" type="button" disabled>⏸ Duraklat</button>
+      <button class="timer-btn" id="finishBtn" type="button" disabled>✓ Sınavı Bitir</button>
+    </div>
+  </div>
+
+  <!-- ================= SCORE BAR ================= -->
+  <div class="score-bar">
+    <div class="grp">
+      <span class="item"><span class="dot dot-green"></span> Doğru: <strong id="sDogru">0</strong></span>
+      <span class="item"><span class="dot dot-red"></span> Yanlış: <strong id="sYanlis">0</strong></span>
+      <span class="item"><span class="dot dot-gray"></span> Boş: <strong id="sBos">20</strong></span>
+    </div>
+    <div class="puan">Net: <strong id="sNet">0</strong> · Puan: <strong id="sPuan">0</strong>/100</div>
+  </div>
+
+  <!-- ================= NAVIGATOR ================= -->
+  <div class="navigator" id="navigator"></div>
+
+  <!-- ================= TEST AREA ================= -->
+  <div id="testArea"></div>
+
+  <!-- ================= RESULT ================= -->
+  <div class="result-card" id="resultCard">
+    <h3 id="resTitle">Deneme Tamamlandı! 🏆</h3>
+    <p class="res-sub" id="resSub">Aşağıda bu denemedeki performans özetiniz yer almaktadır.</p>
+    <div class="res-grid">
+      <div class="res-item ok"><div class="num" id="rDogru">0</div><div class="lbl">Doğru</div></div>
+      <div class="res-item no"><div class="num" id="rYanlis">0</div><div class="lbl">Yanlış</div></div>
+      <div class="res-item"><div class="num" id="rBos">20</div><div class="lbl">Boş</div></div>
+      <div class="res-item net"><div class="num" id="rNet">0</div><div class="lbl">Net</div></div>
+      <div class="res-item score"><div class="num" id="rPuan">0</div><div class="lbl">Puan / 100</div></div>
+    </div>
+    <div class="res-msg" id="resMsg"></div>
+  </div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>📘 KTÜN · İş Sağlığı ve Güvenliği Eğitim Portalı</h4>
+        <p>
+          <strong>Mekanik İşlerde Güvenlik</strong> dersi kapsamında hazırlanan
+          3 denemeli final sınav paketi; el aletleri, iş ekipmanları, basınçlı kaplar,
+          iş makineleri, bakım-onarım/LOTO ve kaynak güvenliği konularını
+          kapsayan 60 adet çözümlü sorudan oluşmaktadır.
+        </p>
+      </div>
+      <div>
+        <h4>✉️ İletişim &amp; Telif</h4>
+        <div class="footer-contact">
+          <span><strong>Hazırlayan:</strong> Sıraç AKSAN</span>
+          <a href="tel:+905069282210">📞 0506 928 22 10</a>
+          <a href="mailto:saracaksan@gmail.com">✉️ saracaksan@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <strong>© Tüm Hakları Saklıdır.</strong>
+      Bu dokümanın içeriği, soruları, çözümleri ve tasarımı
+      <strong>Sıraç AKSAN</strong>'a aittir. Yazılı izin alınmaksızın
+      kopyalanamaz, çoğaltılamaz, değiştirilemez ve ticari amaçlarla kullanılamaz.<br>
+      © <span id="yil"></span> — KTÜN İSG Eğitim Portalı · Sürüm: Mekanik İşlerde Güvenlik · Final Denemeleri
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   BÖLÜM: MEKANİK İŞLERDE GÜVENLİK — FİNAL DENEMELERİ
+   3 DENEME × 20 SORU = 60 SORU
+   ========================================================= */
+const TESTS = [
+/* ======================= DENEME 1 ======================= */
+{
+  id: 1,
+  title: "Deneme 1",
+  subtitle: "Kapsamlı Değerlendirme ve Saha Analizi",
+  range: "Soru 1 – 20",
+  questions: [
+    {
+      n: 1,
+      topic: "El Aletleri — Uzatma Kolu Kullanımı",
+      text: "Bir imalat fabrikasında yürütülen denetimde, bakım personelinin tork yetersizliği yaşadığı cıvataları gevşetmek için açık ağızlı anahtarın sapına çelik boru takarak uzatma kolu oluşturduğu tespit edilmiştir. Malzeme mekaniği ve teknik emniyet ilkeleri doğrultusunda bu durumla ilgili yapılan aşağıdaki değerlendirmelerden hangisi doğrudur?",
+      options: {
+        A: "Boru malzemesi anahtarla aynı alaşımlı çelikten seçildiği sürece momenti emniyetle ileteceğinden standart bir saha kolaylaştırma yöntemidir.",
+        B: "Rastgele uzatma kolu kullanımı, anahtar gövdesine uygulanan bükme momentini tasarlanan akma gerilmesinin (σy) üzerine çıkararak anahtar ağzının açılmasına veya sapın aniden kırılmasına yol açacağından kesinlikle yasaktır.",
+        C: "Cıvata çapı 24 mm ve üzerindeki büyük bağlantılarda uzatma kolu kullanılmasına İş Ekipmanları Yönetmeliği uyarınca izin verilir.",
+        D: "Uzatma kolu kullanımı sadece havalı aletlerde tehlikelidir; el anahtarlarında çalışanın uyguladığı kas gücü sınırlı olduğundan emniyet riski yaratmaz.",
+        E: "Anahtar sapına boru eklenmesi durumunda sadece kişisel koruyucu donanım olarak deri eldiven seviyesinin yükseltilmesi yeterli bir tedbirdir."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> "El Aletlerinde Alınması Gereken Genel Tedbirler" mevzuatı ve malzeme mekaniği ilkeleri uyarınca "Boru ve çubuk gibi rastgele uzatma kolu kullanılmamalıdır." Bir el anahtarına boru eklenmesi kuvvet kolunu (r) artırarak torku (T = F · r) kontrolsüz büyütür. Bu durum, aletin alaşımlı çelik malzemesinin akma sınırını (σy) aşarak plastik deformasyona, ağız açılmasına veya kütlesel kırılmaya yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E seçenekleri boru eklemeyi meşrulaştıran ve sahada sıklıkla yapılan hatalı kabullerdir.</li></ul>'
+    },
+    {
+      n: 2,
+      topic: "El Aletleri — Mantarlaşma ve Çapak Temizliği",
+      text: "Zımba, murç ve keski gibi darbe ile çalışan el aletlerinin baş kısımlarında zamanla meydana gelen soğuk plastik deformasyon sonucunda mantarlaşma ve çapak oluşumu gözlenmektedir. Bu aletlerin kullanımı sırasında çapak fırlaması riskini önlemek için uygulanması gereken doğru teknik işlem aşağıdakilerden hangisidir?",
+      options: {
+        A: "Çapaklanan baş kısımları sertliği artırmak amacıyla doğrudan suya daldırılarak hızlıca soğutulmalıdır.",
+        B: "Mantarlaşan baş kısımlarının çevresi kauçuk bantla sarılarak fırlama enerjisi sönümlenmelidir.",
+        C: "Aletlerin baş kısımları belirli aralıklarla taşlama/tıraşlama işlemine tabi tutularak radyal çapaklar temizlenmeli ve pah kırılmalıdır.",
+        D: "Mantarlaşma gösteren yüzeylere sürtünmeyi ve darbe şiddetini azaltmak için gres yağı sürülmelidir.",
+        E: "Mantarlaşmış aletler hiçbir mekanik işleme tabi tutulmadan derhal hurdaya ayrılmalıdır."
+      },
+      answer: "C",
+      solution: '<p><strong>Gerekçe:</strong> Zımba, murç ve çivilerin baş kısımları darbe aldıkça birikimli plastik deformasyona uğrar ve pekleşir (work hardening). Pekleşen malzeme gevrekleşir. Baş kısmında oluşan mantarlaşma ve radyal çapaklar bir sonraki çekiç darbesinde yüksek kinetik enerji ile fırlayarak körlük ve vücut yaralanmalarına yol açar. Bu riski engellemek için alet başları düzenli olarak taşlanarak pah kırılmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A şıkkı gevrekleşmeyi artırır; B şıkkı darbeyi absorbe etmez; D şıkkı çekiç başının kaymasına neden olur; E şıkkı ise tıraşlanarak kurtarılabilecek aletin israf edilmesine sebep olur.</li></ul>'
+    },
+    {
+      n: 3,
+      topic: "El Aletleri — Kürek Türleri ve Doğru Kullanım",
+      text: "Atölye ortamında yürütülen sıyırma, kazıma ve toprak/malzeme aktarma işlerinde kullanılan el aletlerinin ergonomik ve mekanik nitelikleri göz önüne alındığında, aşağıdakilerden hangisi hatalı alet kullanımına bağlı sap kırılması ve bel incinmesi riskini doğrudan oluşturur?",
+      options: {
+        A: "Sıyırmak ve kaldırmak suretiyle dökme malzemeyi aktarmak amacıyla tasarlanmış düz küreğin, sert zemini şekilli kesip çıkarmak amacıyla bel küreği yerine kullanılması",
+        B: "Bel küreğinin sert ve killi toprak zemini dik açı ile kesmek amacıyla kullanılması",
+        C: "Takım çantasında depolanan kürek saplarının zımparalanıp koruyucu vernik ile kaplanması",
+        D: "Kürek kullanımı sırasında çalışanların iş ayakkabısı olarak çelik burunlu emniyet ayakkabısı tercih etmesi",
+        E: "Kürek sapının pürüzsüz ve kıymıksız ahşap malzemeden imal edilmiş olması"
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Sıyırmak suretiyle malzemeyi kaldırmak amacıyla tasarlanan düz küreğin, toprağı şekilli kesip çıkarmak amacıyla (bel küreği yerine) kullanılması alet geometrisine ve sapına tasarlanmamış yönlerde eksenel ve bükücü yükler bindirir. Bu durum sapın kırılmasına, aletin kaymasına ve çalışanın bel kaslarında aşırı zorlanmaya yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E seçenekleri doğru alet kullanımı, doğru depolama ve standart KKD kullanım adımlarıdır.</li></ul>'
+    },
+    {
+      n: 4,
+      topic: "Elektrikli El Aletleri — Kablo Yalıtımı",
+      text: "Elektrikli el aletlerinin saha içi kullanımı ve periyodik güvenlik kontrolleri ile ilgili olarak aşağıda verilen teknik ifadelerden hangisi yanlıştır?",
+      options: {
+        A: "Elektrikli el aletlerinin dış gövdesi ve sapı her kullanımdan önce çatlak ve kırık riskine karşı denetlenmelidir.",
+        B: "Yalıtımı bozulmuş, dış kılıfı sıyrılmış veya kesik tespit edilen besleme kabloları bez/izolasyon bandı ile sarılarak kullanımına devam edilebilir.",
+        C: "Islak ve iletken ortamlarda kullanılan elektrikli el aletleri küçük gerilimle (SELV) çalıştırılmalı veya güvenlik izolasyon transformatörü üzerinden beslenmelidir.",
+        D: "Elektrikli el aletlerinin gövde topraklaması veya çift yalıtım (Sınıf II) özellikleri korunmalıdır.",
+        E: "Kablo arızası tespit edilen elektrikli el aletleri derhal etiketlenerek yetkili servise gönderilmelidir."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Elektrikli el aletlerinin kablo yalıtımı bozulduğunda, dış kılıfta kesik veya çatlak oluştuğunda bantlama yapılarak kullanılması kesinlikle yasaktır. İzolasyon bandı mekanik gerilimlere ve neme dayanıklı değildir; elektrik çarpması, kısa devre ve yangın riski taşır. Kablo komple orijinali ile değiştirilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları elektrikli el aletlerinde iş güvenliği standardının temel gereklilikleridir.</li></ul>'
+    },
+    {
+      n: 5,
+      topic: "Kumanda Cihazlarının Yerleşimi",
+      text: "İş ekipmanlarında bulunan kumanda cihazlarının tasarımı, konumu ve çalışma emniyeti ile ilgili olarak İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği uyarınca aşağıdakilerden hangisi yanlıştır?",
+      options: {
+        A: "Kumanda cihazları açıkça görülebilir, tanınabilir ve gerektiğinde uygun şekilde işaretlenmiş olmalıdır.",
+        B: "Kumanda cihazları zorunlu haller dışında tehlikeli bölgenin dışına yerleştirilmelidir.",
+        C: "Kumanda cihazlarının kullanımı istem dışı hareketlerde ek bir tehlike oluşturmayacak yapıda olmalıdır.",
+        D: "Operatör, ana kumanda yerinden tehlike bölgesinde kimsenin bulunmadığından emin olamıyorsa, makine çalışmaya başlamadan önce otomatik bir sesli ve/veya ışıklı ikaz sistemi devreye girmelidir.",
+        E: "Acil durumlarda operatörün hızlı müdahale edebilmesi için kumanda cihazları tehlikeli operasyon noktasının tam merkezine yerleştirilmelidir."
+      },
+      answer: "E",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 2.1.2 gereğince kumanda cihazları zorunlu haller dışında tehlikeli bölgenin DIŞINA yerleştirilmelidir. Kumanda cihazlarının tehlikeli bölgenin merkezinde yer alması operatörün müdahale esnasında hareketli parçalara kapılmasına yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve D şıkları yönetmeliğin 2.1 maddesinde tanımlanan asgari güvenlik şartlarıdır.</li></ul>'
+    },
+    {
+      n: 6,
+      topic: "Durdurma Sistemleri ve Enerji Kesme",
+      text: "Üretim hatlarındaki iş ekipmanlarının durdurma sistemleri ve enerji kesme mekanizmalarının güvenlik ilkeleri açısından aşağıdakilerden hangisi doğrudur?",
+      options: {
+        A: "İş ekipmanlarının çalıştırma sistemleri, acil durdurma sistemlerine göre operasyonel önceliğe sahiptir.",
+        B: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre her zaman öncelikli olmalı; tehlikeli kısımlar durdurulduğunda bunları harekete geçiren enerji de kesilmelidir.",
+        C: "Durdurma butonuna basıldığında makine motorunun elektriği kesilmemeli, sadece kavrama boşa çıkarılarak bekleme moduna geçilmelidir.",
+        D: "Tüm iş ekipmanlarında risk seviyesine ve durma süresine bakılmaksızın aynı tip mekanik el freni bulunması zorunludur.",
+        E: "Enerji kesme aracı devreye alındığında, hatta biriken hidrolik veya pnömatik basıncın kendiliğinden boşalması mevzuatça yasaklanmıştır."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 2.3 uyarınca: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre öncelikli olması gerekir. İş ekipmanı veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özellikte olur."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A şıkkı öncelik sırasını ters verir. C ve E şıkları kalıntı enerji izolasyonunu reddeder. D şıkkı ise tek tip fren mekanizması olamayacağını göz ardı eder.</li></ul>'
+    },
+    {
+      n: 7,
+      topic: "Acil Durdurma Sistemi Zorunluluğu",
+      text: "İş ekipmanlarında acil durdurma sistemlerinin (Emergency Stop) kurulması zorunluluğu ile ilgili aşağıdakilerden hangisi mevzuat hükmünü tam olarak yansıtır?",
+      options: {
+        A: "Acil durdurma sistemi, sadece elektrik motor gücü 15 kW üzerinde olan tüm iş ekipmanlarında zorunludur.",
+        B: "Acil durdurma sistemi, ekipmanın tehlikesi ve normal durma süresinin gerektirmesi halinde iş ekipmanında bulunması zorunlu bir sistemdir.",
+        C: "Tüm taşınabilir ve el ile kumanda edilen küçük aletlerde acil durdurma butonu yer almak zorundadır.",
+        D: "Acil durdurma butonu devreye girdiğinde sadece ikaz lambası yanar, mekanik hareket devam eder.",
+        E: "Acil durdurma butonlarının mantar başlığı sadece mavi renkte tasarlanabilir."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 2.4 uyarınca; acil durdurma sisteminin bulunması zorunluluğu "ekipmanın tehlikesi ve normal durma süresinin gerektirmesi" şartına bağlıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları motor gücüne, renge veya kurgusal sınırlamalara dayalı hatalı beyanlardır.</li></ul>'
+    },
+    {
+      n: 8,
+      topic: "İş Ekipmanı Yerleşimi ve Emniyet Mesafesi",
+      text: "İş ekipmanlarının emniyetli yerleşimi ve operasyonel çevre emniyeti kuralları uyarınca aşağıdakilerden hangisi mevzuata aykırıdır?",
+      options: {
+        A: "İş ekipmanının hareketli kısımları ile çevresinde bulunan sabit veya hareketli elemanlar arasında çalışanların güvenliğini tehlikeye atmayacak yeterli emniyet mesafesi bırakılmalıdır.",
+        B: "İş ekipmanında kullanılan veya üretilen enerjinin ya da maddelerin güvenli bir şekilde temini ve uzaklaştırılması sağlanmalıdır.",
+        C: "Hareketli parçalara temas riskini ortadan kaldırmak amacıyla ekipmanlar duvara ve diğer tezgahlara sıfır yanaştırılarak geçiş koridorları kapatılmalıdır.",
+        D: "Ekipmanın kurulması ve sökülmesi işlemleri imalatçı tarafından verilen kullanma talimatı doğrultusunda yürütülmelidir.",
+        E: "İş ekipmanının çalışma alanında yapılan işe uygun ve çalışanların sağlığını koruyacak yeterli aydınlatma sağlanmalıdır."
+      },
+      answer: "C",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 1.1 uyarınca iş ekipmanının hareketli kısımları ile çevresindeki sabit veya hareketli parçalar arasında yeterli emniyet mesafesi bulunmalıdır. Ekipmanın duvara sıfır dayanması çalışanların sıkışmasına ve kaçış yollarının kapanmasına sebep olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D ve E seçenekleri mevzuatın saha yerleşimi ve aydınlatma ile ilgili doğru hükümleridir.</li></ul>'
+    },
+    {
+      n: 9,
+      topic: "Hidrostatik Test Uygulaması",
+      text: "Basınçlı kaplar ve tesisatların emniyetli işletilmesi ve periyodik test standartları göz önüne alındığında, hidrostatik basınç testi uygulaması ile ilgili aşağıdakilerden hangisi doğrudur?",
+      options: {
+        A: "Hidrostatik testler, mevzuatta aksi belirtilmediği sürece tasarım basıncının 1,5 katı değerinde ve standartlara uygun sürelerde gerçekleştirilir.",
+        B: "Hidrostatik test sırasında kabın içerisine su yerine doğrudan yüksek basınçlı sıkıştırılmış hava verilerek sızdırmazlık denetlenmelidir.",
+        C: "Basınçlı kabın emniyet vanası hidrostatik test sırasında açık bırakılmalı ve test basıncında açması beklenmelidir.",
+        D: "Hidrostatik test sadece kapta gözle görülür bir biçim bozukluğu oluştuğunda yapılır, periyodik olarak tekrarlanmaz.",
+        E: "Hidrostatik test süresince kap üzerindeki manometrenin yükselmesi engellenmek için manometre vanası kapatılmalıdır."
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Basınçlı kaplar mevzuatı gereğince hidrostatik testler aksine bir hüküm yoksa tasarım basıncının 1,5 katı (1.5 × Ptasarım) ile ve sıkıştırılamaz bir sıvı olan su ile yapılır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B şıkkı (hava ile test) depolanan yüksek gaz enerjisi nedeniyle patlama ve patlama parçalanması riski yaratır (çok tehlikelidir). C şıkkı emniyet valfini tahrip eder. D ve E şıkları test metodolojisine aykırıdır.</li></ul>'
+    },
+    {
+      n: 10,
+      topic: "Kompresör Hava Deposu Emniyet Valfi",
+      text: "Endüstriyel tesislerde kullanılan kompresör hava depolarının (hava alıcıları) emniyet ekipmanları ve işletme kuralları ile ilgili olarak aşağıdakilerden hangisi yanlıştır?",
+      options: {
+        A: "Hava depoları üzerinde aşırı basınca karşı koruma sağlayan, doğrudan basınca duyarlı emniyet valfi bulunmalıdır.",
+        B: "Hava deposunun altında biriken su ve yağı tahliye etmek üzere manuel veya otomatik kondens boşaltma (blöf) vanası bulunmalıdır.",
+        C: "Emniyet valfinin açma basıncı, havalı aletlerin çalışma basıncından düşük bir değere ayarlanmalıdır.",
+        D: "Hava depoları patlama riskine karşı mümkünse çalışanların bulunduğu çalışma alanlarının dışına, özel bölmelere kurulmalıdır.",
+        E: "Kompresör hava depolarının periyodik kontrolleri yetkili uzmanlarca yapılmalı ve rapora bağlanmalıdır."
+      },
+      answer: "C",
+      solution: '<p><strong>Gerekçe:</strong> Hava deposu emniyet valfinin açma basıncı, hava tankının müsaade edilen azami çalışma basıncına (Pmax) göre ayarlanır. Emniyet valfi basıncını havalı aletlerin düşük çalışma basıncına ayarlamak sistemin sürekli hava kaçırmasına ve işletmenin çalışamamasına yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D ve E şıkları kompresör depo güvenliğinin temel kurallarıdır.</li></ul>'
+    },
+    {
+      n: 11,
+      topic: "Gaz Tüpleri — Asetilen Dik Konum Kuralı",
+      text: "Oksiasetilen kaynak ve kesme takımlarında kullanılan yanıcı (Asetilen) ve yakıcı (Oksijen) gaz tüplerinin depolanması ve saha kullanımı ile ilgili aşağıdaki emniyet kurallarından hangisi yanlıştır?",
+      options: {
+        A: "Yanıcı ve yakıcı gaz tüpleri depolanırken aralarında en az 6 metre mesafe bırakılmalı veya en az 1,5 metre yüksekliğinde yarım saat yangına dayanıklı bir duvar bulunmalıdır.",
+        B: "Depolanan ve kullanılan tüpler devrilmeye karşı zincir veya kelepçe ile dik konumda sabitlenmelidir.",
+        C: "Asetilen tüpleri yüksek debili gaz çekimlerinde donmayı önlemek amacıyla yatay konumda yere yatırılarak kullanılmalıdır.",
+        D: "Tüp vanaları ve basınç düşürücü manometreler gres, sıvı yağ veya yağlı maddelerle kesinlikle temas ettirilmemelidir.",
+        E: "Kullanım dışı olan veya boş tüplerin vanaları kapatılmalı ve koruyucu van başlıkları takılı tutulmalıdır."
+      },
+      answer: "C",
+      solution: '<p><strong>Gerekçe:</strong> Asetilen tüpleri içerisinde gözenekli kütle ve aseton çözeltisi bulunur. Asetilen tüpü yatay konuma getirildiğinde içindeki aseton vanadan dışarı kaçar ve gazla birlikte sürüklenerek patlama riskini tırmandırır. Asetilen tüpleri KESİNLİKLE dik konumda kullanılmalı ve depolanmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D ve E şıkları gaz tüplerinin emniyetli depolanması ve kullanımı kurallarıdır.</li></ul>'
+    },
+    {
+      n: 12,
+      topic: "Periyodik Kontrol — NDT Kullanımı",
+      text: "Basınçlı kapların periyodik kontrolleri ve tahribatsız muayene yöntemleri ile ilgili olarak aşağıda verilen ifadelerden hangisi mevzuat ve mühendislik esaslarına uygundur?",
+      options: {
+        A: "Hidrostatik test yapılmasının imkansız veya sakıncalı olduğu durumlarda, tahribatsız muayene yöntemleri (Ultrasonik kalınlık ölçümü, radyografik test vb.) kullanılabilir.",
+        B: "Basınçlı kapların periyodik kontrol süresi imalatçının beyanı ne olursa olsun en fazla 10 yılda bir yapılır.",
+        C: "Basınçlı kap üzerinde yapılan kaynaklı tadilatlardan sonra hidrostatik test yapılmasına gerek yoktur.",
+        D: "Tahribatsız muayene raporları sadece fabrika içi bilgilendirme amaçlıdır, resmi denetimlerde hükmü yoktur.",
+        E: "Basınçlı kabın et kalınlığı korozyon nedeniyle incelse dahi emniyet valfi açma basıncı değiştirilemez."
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik hükümleri gereğince, işletme şartları veya kap yapısı nedeniyle hidrostatik test yapılması imkansız veya riskli ise yetkili uzmanlarca standartlarda belirtilen NDT (Non-Destructive Testing / Tahribatsız Muayene) yöntemleri uygulanabilir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E şıkları kontrol sürelerini, kaynaklı tadilat test zorunluluğunu ve NDT geçerliliğini yanlış ifade etmektedir.</li></ul>'
+    },
+    {
+      n: 13,
+      topic: "Hareketli İş Ekipmanı — Devrilme Riski (ROPS)",
+      text: "Üzerinde çalışan bulunan hareketli iş ekipmanlarında (iş makineleri, forkliftler vb.) devrilme riskine (ROPS — Rollover Protective Structure) karşı mevzuatın öngördüğü sınır açı ve koruma şartı aşağıdakilerden hangisidir?",
+      options: {
+        A: "Cihaz bir çeyrekten (90°'lik açı) fazla dönmeyecek şekilde yapılmış olmalı veya bir çeyrekten fazla dönüyorsa etrafında yeterli açıklık/koruyucu yapı bulunmalıdır.",
+        B: "Ekipman 180° tam takla atsa dahi sürücünün fırlamasını sağlayan fırlatma mekanizması bulunmalıdır.",
+        C: "ROPS yapıları sadece hızı 50 km/s üzerinde olan motorlu araçlarda zorunludur.",
+        D: "Devrilme riski olan iş makinelerinde sürücü kabini tamamen açık bırakılmalıdır.",
+        E: "İş ekipmanı devrildiğinde motor emniyet mantığıyla gaza basmaya devam etmelidir."
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 3.1.4 uyarınca; üzerinde çalışan bulunan hareketli iş ekipmanı normal çalışma koşullarında devrilme riskine karşı bir çeyrekten (90°\'lik açı) fazla dönmeyecek şekilde tasarlanmalı veya etrafında yeterli açıklık/koruyucu yapı (ROPS) bulundurmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E seçenekleri teknik temeli olmayan mühendislik dışı ifadelerdir.</li></ul>'
+    },
+    {
+      n: 14,
+      topic: "Uzaktan Kumandalı Ekipman — Fail-Safe",
+      text: "Saha içerisinde operasyon yürüten uzaktan kumandalı bir iş ekipmanının kontrol sınırlarının dışına çıkması veya kumanda sinyalinin kesilmesi durumunda güvenlik sisteminin vermesi gereken otomatik tepki aşağıdakilerden hangisidir?",
+      options: {
+        A: "Sinyal kopsa dahi ekipman son aldığı komutu tekrarlayarak hareketini sürdürmelidir.",
+        B: "Ekipman otomatik olarak hemen duracak şekilde tasarlanmış olmalıdır.",
+        C: "Ekipman en yakın engele çarparak durmak üzere yönünü değiştirmelidir.",
+        D: "Ekipman sesli ikaz vererek çalışma hızını iki katına çıkarmalıdır.",
+        E: "Ekipmanın üzerindeki hidrolik sistem kilitlenmeli ancak elektrikli yürüyüş motoru çalışmaya devam etmelidir."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 3.1.4.1 (f) bendi gereğince: "Uzaktan kumandalı iş ekipmanının, kontrol sınırlarının dışına çıkması halinde otomatik olarak hemen duracak şekilde olması gerekir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>Sinyal kesildiğinde veya mesafe aşıldığında hareketin sürmesi kontrolsüz çarpmalara ve ölümlü kazalara sebep olur.</li></ul>'
+    },
+    {
+      n: 15,
+      topic: "İş Makineleri — Yangın Güvenliği",
+      text: "Saha içerisinde çalışan kendinden tahrikli iş makinelerinde ve motorlu araçlarda yangın güvenliği önlemleri hususunda mevzuatın zorunlu kıldığı şart aşağıdakilerden hangisidir?",
+      options: {
+        A: "Yangın söndürme cihazları sadece ana depoda tutulmalı, araç üzerinde taşınmamalıdır.",
+        B: "Çalışanları etkileyebilecek yangın çıkma tehlikesi olan iş ekipmanının kendisinde veya hemen yakınında yeterli yangın söndürme cihazları bulunmalıdır.",
+        C: "Yangın tüpleri sadece araca yakıt ikmali yapılırken araç üzerine monte edilmelidir.",
+        D: "Araç üzerindeki yangın söndürücüler sadece su bazlı olmalı, KKT kullanılmamalıdır.",
+        E: "İş makinelerindeki yangın söndürücülerin kontrolü 5 yılda bir yapılsa yeterlidir."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 3.1.4.1 (e) bendi uyarınca; çalışanları etkileyebilecek yangın çıkma tehlikesi olan iş ekipmanının kendisinde veya hemen yakınında yeterli yangın söndürme cihazları bulundurulmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları yangın güvenliği ilkelerine aykırıdır.</li></ul>'
+    },
+    {
+      n: 16,
+      topic: "Bakım Kayıtları ve E-İmza",
+      text: "5070 sayılı Elektronik İmza Kanunu ve İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği uyarınca makine bakım kayıtlarının tutulması ve saklanması ile ilgili aşağıdakilerden hangisi doğrudur?",
+      options: {
+        A: "Bakım kayıtları sadece fiziki kağıt formatında ıslak imza ile tutulabilir; dijital kayıtlar geçersizdir.",
+        B: "Bakımla ilgili işlemler günü gününe bakım defterine işlenmeli; 5070 sayılı Kanuna uygun güvenli e-imza ile elektronik ortamda tutulan kayıtlar da bakım defteri yerine kabul edilmelidir.",
+        C: "Bakım defterleri yıllık olarak topluca doldurulup noterden onaylatılmalıdır.",
+        D: "Elektronik ortamda saklanan bakım kayıtlarının resmi denetimlerde gösterilme zorunluluğu yoktur.",
+        E: "Bakım kayıtları sadece makine garanti kapsamındayken tutulur, garanti bitiminde imha edilir."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 2.13.1 uyarınca: "Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe bu deftere işlenir. 5070 sayılı Elektronik İmza Kanununa uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtlar da bakım defteri olarak kabul edilir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E seçenekleri e-imzanın hukuki geçerliliğini ve bakım defteri zorunluluğunu reddeden yanlış beyanlardır.</li></ul>'
+    },
+    {
+      n: 17,
+      topic: "LOTO — Sıfır Enerji Durumu",
+      text: "Makine bakım-onarım ve arıza giderme müdahalelerinde Güvenli Enerji İzolasyonu ve LOTO (Etiketleme/Kilitleme) prosedürünün uygulanmasında temel mühendislik yaklaşımı ne olmalıdır?",
+      options: {
+        A: "Sadece elektrik ana şalterinin kapatılması yeterli olup mekanik ve hidrolik hatlarda çalışma yapılabilir.",
+        B: "Ekipmanın enerji kaynakları kesilmeli, kilitlenmeli, etiketlenmeli ve hatlarda kalan artık/kalıntı enerji (mekanik, hidrolik, pnömatik, potansiyel) tamamen sıfırlanmalıdır (Zero Energy State).",
+        C: "LOTO prosedürü sadece hat durdurulduktan sonra 1 saatten uzun sürecek bakımlarda uygulanır.",
+        D: "Ekipmanın enerjisi kesildikten sonra anahtarlar makine üzerinde bırakılmalıdır.",
+        E: "Bakım sırasında kumanda butonuna \"Çalıştırmayınız\" yazılı kağıt yapıştırılması kilitleme yerine geçer."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Bakım ve onarım işlerinde temel emniyet ilkesi "Sıfır Enerji Durumu" (Zero Energy State) sağlamaktır. Sadece elektriği kesmek yeterli değildir; sisteme bağlı hidrolik akümülatörler, basınçlı hatlar, sıkışmış yaylar veya havada asılı yüklerin potansiyel enerjisi güvenli şekilde tahliye edilip kilitlenmelidir (LOTO).</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları eksik izolasyon nedeniyle bakımlarda meydana gelen ölümlü kazaların birincil nedenleridir.</li></ul>'
+    },
+    {
+      n: 18,
+      topic: "İş Ekipmanı Kurulum ve Sökümü",
+      text: "İş ekipmanlarının sahada kurulması, montajı veya sökülmesi operasyonları ile ilgili olarak aşağıda verilen kural hükümlerinden hangisi mevzuata uygundur?",
+      options: {
+        A: "Ekipmanın montajı ve sökülmesi, imalatçı tarafından verilen kullanma talimatı doğrultusunda ve emniyetli koşullar altında yürütülmelidir.",
+        B: "Ekipman sökülürken zamandan kazanmak için öncelikle emniyet muhafazaları sökülmelidir.",
+        C: "Montaj talimatları sadece yabancı dil olarak saklanmalı, sahaya Türkçe çevirisi verilmemelidir.",
+        D: "Ekipman sökümünde elektrik enerjisinin kesilmesine gerek yoktur.",
+        E: "Kurulum işlemleri sadece gece vardiyasında yapılmak zorundadır."
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 1.2 uyarınca: "İş ekipmanının kurulması veya sökülmesi, özellikle imalatçı tarafından verilen kullanma talimatı doğrultusunda güvenli koşullar altında yapılır."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E şıkları montaj/söküm safhasında emniyeti ihlal eden yaklaşımlardır.</li></ul>'
+    },
+    {
+      n: 19,
+      topic: "Kaynak Güvenliği — Elektrik Emniyeti",
+      text: "Elektrik ark kaynağı operasyonlarında elektrik güvenliği, kaynak devresi ve topraklama hattı ilkesi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+      options: {
+        A: "Kaynak pensi ve kabloları tam izoleli olmalı, ekli veya soyulmuş kablolar kullanılmamalıdır.",
+        B: "Kaynak akımının dönüş yolu (şase bağlantısı) iş parçasına doğrudan ve sağlam bir klemensle bağlanmalıdır.",
+        C: "Kaynak makinesinin gövde topraklaması yapılmalı, bina çelik konstrüksiyonu gidiş-dönüş iletkeni olarak kullanılmamalıdır.",
+        D: "Boşta çalışma gerilimi (open circuit voltage) tehlikeli seviyelerin üzerinde olan makinelerde boşta çalışma gerilim düşürücüleri (VRD) kullanılmalıdır.",
+        E: "Islak ve nemli zeminlerde çalışırken elektrot değişimi doğrudan çıplak elle yapılmalıdır."
+      },
+      answer: "E",
+      solution: '<p><strong>Gerekçe:</strong> Islak ve nemli ortamlarda insan vücudunun elektrik direnci (R) ciddi oranda düşer. Elektrot değişimi sırasında çıplak elle temas etmek elektrik çarpması sonucunda ventriküler fibrilasyona ve ölüme yol açar. Elektrot değişimi izole eldivenlerle yapılmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve D seçenekleri ark kaynağında elektrik emniyetinin temel ilkeleridir.</li></ul>'
+    },
+    {
+      n: 20,
+      topic: "Kaynak Güvenliği — Alev Geri Tepme",
+      text: "Oksiasetilen ve yanıcı gaz kaynağı sistemlerinde, bek (üfleç) veya regülatör arkasında meydana gelebilecek alev geri tepmesine (flashback) karşı alınması gereken temel güvenlik tedbiri nedir?",
+      options: {
+        A: "Gaz hortumlarının boyunu 50 metrenin üzerine çıkarmak",
+        B: "Yanıcı ve yakıcı gaz hatlarına, alevin tüplere ulaşmasını engelleyen sulu veya kuru tip Alev Geri Tepme Emniyet Valfleri (Flashback Arrestor) monte etmek",
+        C: "Asetilen basıncını 1,5 bar manifold sınırının üzerine çıkarmak",
+        D: "Kaynak üflecinin ucunu soğutmak için sık sık gres yağına batırmak",
+        E: "Gaz hortumlarını tel ile sıkarak ek yapmak"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Gaz kaynağında alevin hortum boyunca geriye yürüyerek tüplere ulaşmasını ve tüp patlamasını engellemek için hem üfleç arkasına hem de regülatör çıkışına basınca ve ısıya duyarlı Alev Geri Tepme Emniyet Valfleri (Flashback Arrestor) takılması zorunludur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları alev geri tepmesini engellemez; tam aksine riski tırmandırır.</li></ul>'
+    }
+  ]
+},
+/* ======================= DENEME 2 ======================= */
+{
+  id: 2,
+  title: "Deneme 2",
+  subtitle: "İleri Düzey Vaka ve Risk Analizi",
+  range: "Soru 1 – 20",
+  questions: [
+    {
+      n: 1,
+      topic: "Vaka Analizi — Eğenin Keski Olarak Kullanımı",
+      text: "Bir ahşap atölyesinde yürütülen çalışmada, marangoz ustası törpüleme işlemi yaparken sapı bulunmayan ve önceden taşlanarak çelik keski haline dönüştürülmüş bir eğeyi çekiçle vurarak kullanmıştır. Darbe esnasında eğe aniden kırılarak parçalanmış ve işçinin gözüne saplanmıştır. Kazanın ardından yapılan kök neden analizinde (RCA) kazanın meydana gelmesindeki asıl malzeme mekaniği nedeni aşağıdakilerden hangisidir?",
+      options: {
+        A: "Eğelerin imal edildiği yüksek karbonlu çeliğin ısıl işlem sonrası sert ve son derece gevrek yapıda olması, darbe/eğilme yüklerine karşı dayanım gösteremeyip aniden gevrek kırılmaya (brittle fracture) uğraması",
+        B: "Eğenin ahşap yerine metal malzemede kullanılmamış olması",
+        C: "Çekicin ahşap sapının kısa seçilmiş olması",
+        D: "Çalışma alanında lokal cebri havalandırmanın bulunmaması",
+        E: "Eğenin taşlama esnasında su ile soğutulmamış olması"
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Eğeler, aşındırma görevlerini yerine getirebilmeleri için yüksek karbonlu çelikten (>%0,8 C) imal edilir ve yüksek sertlik elde etmek amacıyla sertleştirme ısıl işlemine tabi tutulur. Bu durum eğelere yüksek aşınma direnci kazandırırken sünekliğini düşürür ve onları aşırı gevrek hale getirir. Eğeden keski yapmak ve çekiçle vurmak, gevrek malzemenin darbeli bükme yüklerine dayanamayarak cam gibi aniden kırılmasına ve yüksek kinetik enerjili parçacıkların fırlamasına yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E seçenekleri kazanın asıl malzeme mekaniği ve metalurjik kök nedenini açıklamayan tali faktörlerdir.</li></ul>'
+    },
+    {
+      n: 2,
+      topic: "Vaka Analizi — Baltanın Kama Olarak Kullanımı",
+      text: "Ağaç kesim sahasında baltanın üzerine çekiçle vurularak gövdenin kama gibi kullanılmaya çalışılması esnasında balta sırtından fırlayan sertleşmiş metal parçası yakındaki yardımcının bacağına saplanmıştır. Bu kazanın kök neden analizi yapıldığında, alet güvenliği açısından yapılan temel kural ihlali nedir?",
+      options: {
+        A: "Baltanın kullanımdan önce yağlanmaması",
+        B: "Baltaların sadece ağaç kesmek, yontmak ve yarmak için tasarlanmış olması; kama gibi araya sıkıştırılıp üzerine sert çekiçle vurularak kullanılmasının metal çapak fırlamasına ve kütlesel kırılmaya yol açması",
+        C: "Yardımcının bacağında çelik kaval koruyucu bulunmaması",
+        D: "Baltanın sapının çelik borudan imal edilmemiş olması",
+        E: "Çalışmanın yağmurlu havada yürütülmesi"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> "El Aletleri Yanlış Kullanım Tablosu" uyarınca; baltalar ağaç kesmek, yontmak ve yarmak için tasarlanmıştır. Baltanın kama gibi araya sıkıştırılması ve üzerine çekiçle vurulması, aletin sırt kısmında Peening (çekiçleme) etkisiyle aşırı pekleşmeye ve fırlayan metal çapaklarına yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>Olayın yağlanmayla veya kaval koruyucuyla ilgisi yoktur; tamamen aletin amaç dışı zorlanmasıdır.</li></ul>'
+    },
+    {
+      n: 3,
+      topic: "Vaka Analizi — Matkap Tezgahı Küçük Parça",
+      text: "Bir bakım teknisyeni, sütunlu matkap tezgâhında 30 mm çapında küçük bir çelik flanşı elle tutarak delme işlemi yaparken, matkap ucu parçaya takılmış ve flanş yüksek devirle dönerek teknisyenin el bileğinde ağır kesik ve kırıklara yol açmıştır. Kazayı önleyecek temel teknik tedbir aşağıdakilerden hangisidir?",
+      options: {
+        A: "Delme esnasında matkap devir sayısını iki katına çıkarmak",
+        B: "İş parçasını el ile tutmak yerine tezgah tablasına mengene veya pabuçlarla emniyetli şekilde sabitlemek",
+        C: "Teknisyene kalın deri kaynak eldiveni giydirmek",
+        D: "Matkap ucunu soğutma yağı ile sürekli yağlamak",
+        E: "Flanş çapını 100 mm'ye çıkarmak"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Matkapla delme operasyonunda matkap ucu malzemeye daldığında kesme torku (T) iş parçasına aktarılır. Küçük parçalar elle tutulduğunda, matkap ucunun takılması anında oluşan reaksiyon torku insan kas gücünü aşar ve parçayı yüksek devirle döndürerek el kesilmelerine ve uzuv kayıplarına yol açar. Küçük parçalar KESİNLİKLE mengene ile sabitleştirilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>Eldiven takmak (C) dönen aksama eldivenin kaptırılması riskini doğurarak kazayı ağırlaştırır. A, D ve E şıkları güvenliği sağlamaz.</li></ul>'
+    },
+    {
+      n: 4,
+      topic: "Vaka Analizi — Çatlak Gövde Bantlama",
+      text: "Bir dökümhanede kullanılan el taşlama aletinin plastik dış gövdesinde meydana gelen çatlak, bakım personeli tarafından fark edilmesine rağmen işlem yarıda kalmasın diye elektrik bandı ile sarılarak kullanılmaya devam edilmiştir. Çalışma esnasında aletin kilitlenmesi sonucu oluşan tork tepkisiyle gövde banttan ayrılarak kırılmış ve çalışan elinden ağır yaralanmıştır. Bu kazadaki kök ihlal aşağıdakilerden hangisidir?",
+      options: {
+        A: "Taşlama diskinin çapının küçük seçilmesi",
+        B: "Dış gövdesi ve şasesi kırık/çatlak olan el aletlerinin derhal kullanımdan çekilmesi ve onarılması/değiştirilmesi kuralının ihlal edilmesi",
+        C: "Aletin 220 V yerine 380 V ile çalıştırılması",
+        D: "Çalışanın taşlama yaparken gözlük takmaması",
+        E: "Taşlama aletinin devir ayarının yapılmamış olması"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> "Elektrikli El Aletlerinde Güvenlik" kurallarına göre alet sapı ve şasesi kırık/çatlak risklerine karşı her kullanımdan önce denetlenmelidir. Gövdesi çatlayan aletlerin tork mukavemeti düşer. Çatlağı bantla sararak çalışmak sahte bir güvenlik hissi yaratır. Arızalı alet derhal servis dışı bırakılmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E seçenekleri gövde kırılması kazasının kök ihlalini ortadan kaldırmaz.</li></ul>'
+    },
+    {
+      n: 5,
+      topic: "Vaka Analizi — Kör Nokta Ezilmesi",
+      text: "Büyük bir otomotiv montaj hattında operatörün görüş açısının kapalı olduğu kör bir noktada çalışan personelin bulunmasına rağmen hattın aniden çalıştırılması sonucu sıkışma kazası meydana gelmiştir. İş ekipmanları tasarımı ilkelerine göre bu kazayı önleyecek otomasyon emniyet tedbiri nedir?",
+      options: {
+        A: "Operatör ana kumanda yerinden tehlike bölgesinde kimsenin bulunmadığından emin olamıyorsa, makine harekete geçmeden önce otomatik sesli ve/veya ışıklı ikaz sisteminin devreye girmesi",
+        B: "Operatörün yanına bir ikaz bayraktarı görevlendirilmesi",
+        C: "Montaj hattının çalışma hızının %10 azaltılması",
+        D: "Tehlike bölgesine sadece \"Girilmeyebilir\" yazılı ikaz levhası asılması",
+        E: "Hattın çalıştırma anahtarının makine üzerinde asılı bırakılması"
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 2.1.3 uyarınca: Operatör ana kumanda yerinden tehlike bölgesinde kimsenin bulunmadığından emin olamıyorsa, makine çalışmaya başlamadan önce sesli ve/veya ışıklı ikaz sistemi OTOMATİK olarak devreye girmelidir. Bu sistem tehlike bölgesindeki çalışanın alanı terk etmesine veya acil durdurmaya basmasına imkan tanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E seçenekleri otomasyon emniyet mühendisliği standartlarına aykırıdır.</li></ul>'
+    },
+    {
+      n: 6,
+      topic: "Vaka Analizi — Pano Kilitleme Eksikliği",
+      text: "Fabrikadaki ana şalter panosunda yapılan bakım çalışması esnasında, elektrik teknisyeni panoyu kapatmış ancak kilitleme yapmamıştır. Vardiya değişiminde panoyu kapalı gören diğer teknisyen şalteri tekrar kaldırarak hatta elektrik vermiş ve hat üzerinde çalışan bakımcı elektrik akımına kapılmıştır. Kök neden tespiti yapıldığında sistemik eksiklik nedir?",
+      options: {
+        A: "Tesisin elektrik faturasının ödenmemiş olması",
+        B: "İş ekipmanı enerji kaynaklarının kolayca görülebilir, tanınabilir olması, enerji kesildikten sonra fiziksel olarak kilitlenip etiketlenmesini (LOTO) sağlayan prosedürün uygulanmaması",
+        C: "Elektrik panosunun renginin gri olması",
+        D: "Bakımcının izole halı kullanmaması",
+        E: "Vardiya değişiminin sözlü olarak yapılması"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 2.14 ve LOTO (Kilitleme/Etiketleme) standartları gereğince; enerji kesme araçları kolayca görülebilir, tanınabilir olmalı ve enerjinin kazara veya başkası tarafından verilmesini önlemek için fiziksel kilit ile emniyete alınmalıdır. Sadece şalteri kapatmak yeterli değildir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları izolasyon yetersizliği kazasının kök nedenini yansıtmaz.</li></ul>'
+    },
+    {
+      n: 7,
+      topic: "Vaka Analizi — Yıldırım Koruması",
+      text: "Açık sahada çalışan yükseltilebilir hareketli iş platformu (MEWP) fırtınalı bir günde kule vinç yakınında çalışırken yıldırım çarpmasına maruz kalmış ve elektronik kartları yanarak platform yüksekte kilitlenmiştir. İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği Madde 1.3 uyarınca bu risk nasıl yönetilmelidir?",
+      options: {
+        A: "Açık sahada kullanımı sırasında yıldırım düşme ihtimali bulunan iş ekipmanlarının yıldırımın etkilerine karşı uygun korunma araçları (paratoner/topraklama) ile donatılması",
+        B: "İş ekipmanının üzerinin su geçirmez branda ile kapatılması",
+        C: "Platformun tekerlek havasının indirilmesi",
+        D: "Yıldırım ihtimalinde ekipmanın motor devrinin yükseltilmesi",
+        E: "Platform metal aksamının yalıtkan boya ile kaplanması"
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 1.3 uyarınca: "Kullanımı sırasında yıldırım düşmesi ihtimali bulunan iş ekipmanı yıldırımın etkilerinden korunmak için uygun araçlarla donatılır."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E seçenekleri yıldırımdan korunma tekniğine tamamen aykırıdır.</li></ul>'
+    },
+    {
+      n: 8,
+      topic: "Vaka Analizi — Çift El Kumanda Baypası",
+      text: "Bir pres tezgâhında çalışan operatör, üretim hızını artırmak amacıyla çift el kumanda butonlarından birini ahşap takoz sıkıştırarak sürekli basılı konumda baypas etmiştir. Operatör diğer eliyle malzemeyi düzeltirken prese basmış ve parmak amputasyonu kazası geçmiştir. Kazadaki temel teknik kusur ve kök neden aşağıdakilerden hangisidir?",
+      options: {
+        A: "Pres kalıbının yeterince yağlanmaması",
+        B: "Çift el kumanda sisteminin, tek elle veya köprüleme (tamponlama) yapılarak çalıştırılmasını engelleyen zaman uyumsuzluğu (anti-tiedown / eşzamanlılık) emniyet rölesine sahip olmaması veya baypas edilmesine izin veren idari denetim eksikliği",
+        C: "Pres motorunun gücünün yüksek olması",
+        D: "Operatörün çalışma esnasında baret takmaması",
+        E: "Pres tezgâhının tabana cıvatalanmamış olması"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Çift el kumanda sistemleri, operatörün her iki elini de tehlikeli bölgenin dışında tutmasını sağlar. Bu sistemlerin emniyet standartlarına (EN ISO 13851) uygun olabilmesi için eşzamanlılık (0,5 saniye içinde iki butona birden basma) ve köprülemeyi önleme (anti-tiedown) özelliklerine sahip olması gerekir. Butonlardan birinin mekanik olarak takozla kilitlenmesine izin verilmesi ağır bir İSG ve sistemik denetim kusurudur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları pres emniyet sisteminin baypas edilmesi kök nedenini kapsamaz.</li></ul>'
+    },
+    {
+      n: 9,
+      topic: "Vaka Analizi — Emniyet Valfi Tıkanması",
+      text: "Bir tekstil fabrikasında kullanılan buhar kazanının emniyet valfi sürekli buhar kaçırdığı gerekçesiyle işletme bakımcısı tarafından vana çıkışına kör tapa takılarak tıkanmıştır. Kazan basıncı kontrolden çıktığında kazan patlamış ve fabrikada ağır hasar oluşmuştur. Bu kazadaki ölümcül teknik hata aşağıdakilerden hangisidir?",
+      options: {
+        A: "Buhar kazanında hidrostatik test basıncının düşük tutulması",
+        B: "Basınçlı kaplarda aşırı basınca karşı emniyet supabı olarak görev yapan emniyet valflerinin önünün veya arkasının kapatılması, kör tapayla tıkanması veya açma basıncının rastgele artırılması",
+        C: "Kazan besleme suyunun yumuşatılmadan kullanılması",
+        D: "Kazanın bacasının kısa tutulması",
+        E: "Kazan dairesinin kapısının kilitlenmesi"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Basınçlı kaplarda emniyet valfleri, sistem basıncı müsaade edilen azami işletme basıncını aştığında otomatik olarak açılarak fazla basıncı tahliye eden nihai emniyet elemanıdır. Emniyet valfinin önüne/arkasına vana konulması, çıkışının kör tapayla kapatılması kabın aşırı basınç altında patlamasına yol açan hayati bir hatadır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E seçenekleri emniyet valfinin tıkalanması ölümcül hatasının yerini tutamaz.</li></ul>'
+    },
+    {
+      n: 10,
+      topic: "Vaka Analizi — Gaz Tüpü Taşıma Kazası",
+      text: "Şantiye sahasında yanıcı LPG ve Asetilen tüpleri vinçle kaldırılırken, tüplerin üzerindeki vanaları koruyan emniyet başlıklarının takılmadığı ve tüplerin bez sapanla yatay bağlandığı görülmüştür. Sapanın kayması sonucu tüp yere düşmüş, vanası kırılarak roket etkisiyle fırlamış ve yangın çıkarmıştır. Gaz tüplerinin taşınmasında kaza riskini sıfırlayacak doğru uygulama hangisidir?",
+      options: {
+        A: "Tüpleri taşıma esnasında vanaları açık bırakmak",
+        B: "Gaz tüplerinin koruyucu van başlıkları takılı olarak, özel tüp taşıma sepetleri/kafesleri içerisinde ve dik konumda sabitlenerek kaldırılması",
+        C: "Tüplerin forklift çatalları üzerinde serbestçe taşınması",
+        D: "Tüplerin düşme ihtimaline karşı etrafına sünger sarılması",
+        E: "Tüp vanalarının gres yağı ile sızdırmaz hale getirilmesi"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Basınçlı gaz tüplerinin vanaları en hassas ve zayıf noktalarıdır. Vananın darbe alarak kırılması yüksek basınçlı gazın aniden salınarak tüpü bir rokete dönüştürmesine yol açar. Tüpler mutlaka koruyucu van başlıkları takılı, dik konumda zincirlenmiş ve özel taşıma sepetleri ile taşınmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları tüp patlaması ve yangın riskini tırmandıran çok tehlikeli saha hatalarıdır.</li></ul>'
+    },
+    {
+      n: 11,
+      topic: "Vaka Analizi — Kompresör Tank Korozyonu",
+      text: "Bir fabrikadaki Vidalı Hava Kompresörünün altındaki otomatik kondens tahliye vanası (blöf) arızalandığı için uzun süre depo içerisinde su birikmiş, nem nedeniyle tank tabanında şiddetli korozyon oluşmuştur. Yıllık periyodik kontrolde ultrasonik test yapılmadan işletilmeye devam eden tank açılan çentik korozyonu noktasından patlamıştır. Bu olayın kök nedeni aşağıdakilerden hangisidir?",
+      options: {
+        A: "Kompresör elektrik motorunun fazla ısınması",
+        B: "Hava depolarında kondens suyunun düzenli tahliye edilmemesi ve periyodik kontrollerde Ultrasonik Et Kalınlığı Ölçümü yapılarak aşınan tankın servis dışı bırakılmaması",
+        C: "Kompresörün emiş filtresinin tıkanması",
+        D: "Hava deposunun dışının maviye boyanması",
+        E: "Kompresör odasında havalandırma fanının bulunmaması"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Kompresörlerde havadaki nem depoda yoğunlaşarak su (kondens) oluşturur. Su ve oksijen birleştiğinde tank tabanında çentik korozyonu ve et kalınlığı kaybı meydana gelir. Kondens boşaltılmadığında ve periyodik kontrolde NDT (Ultrasonik Kalınlık) yapılmadığında tankın zayıflayan noktadan patlaması kaçınılmazdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları korozyon patlamasının kök nedenini ifade etmez.</li></ul>'
+    },
+    {
+      n: 12,
+      topic: "Vaka Analizi — Pnömatik Test Patlaması",
+      text: "Bir basınçlı döküm tankına sızdırmazlık testi yapılırken, imalatçı firma su ile hidrostatik test yapmak yerine pratik olsun diye tesisat havası ile 15 bar pnömatik basınç uygulamıştır. Test esnasında kaynak dikişinin ayrılması sonucu tank şiddetle patlamış ve test personeli hayatını kaybetmiştir. Bu kazadaki temel fiziksel kök neden aşağıdakilerden hangisidir?",
+      options: {
+        A: "Suyun sıkıştırılamaz bir akışkan olması sebebiyle patlama anında genleşip kinetik enerji açığa çıkarmamasına karşın, havanın (gazın) yüksek oranda sıkıştırılabilir olması nedeniyle muazzam bir depolanmış potansiyel enerjiyi aniden patlamalı genleşmeye (blast effect) dönüştürmesi",
+        B: "Test esnasında kullanılan manometrenin dijital olmaması",
+        C: "Tankın döküm malzemeden imal edilmiş olması",
+        D: "Test ortamının fazla aydınlık olması",
+        E: "Pnömatik test sırasında tankın soğutulmaması"
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Basınçlı kap testlerinde sıkıştırılamaz akışkanların (Su: K ≈ 2.2 GPa) basınç altında depoladığı hacimsel enerji son derece düşüktür; kap yırtıldığında basınç anında düşer. Gazlar (Hava, Azot) ise yüksek oranda sıkıştırılabilir olduğundan büyük bir potansiyel enerji depolar. Kap yırtıldığında bu enerji genleşerek şok dalgası ve fırlayan parçalar oluşturur. Bu nedenle sızdırmazlık testleri KESİNLİKLE hava ile yüksek basınçta yapılmamalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E seçenekleri fiziksel patlama mekanizmasını açıklamaz.</li></ul>'
+    },
+    {
+      n: 13,
+      topic: "Vaka Analizi — ROPS'a Kaynak Yapılması",
+      text: "Bir maden işletmesinde çalışan yükleyici iş makinesinin (Loder) tavanındaki ROPS koruyucu yapısına, ek ışık takmak amacıyla kaynak yapılmış ve delik delinmiştir. Makine şarampole devrildiğinde, ROPS yapısı kaynak yerinden burkulup çökmüş ve operatör kabin içinde sıkışmıştır. Kök neden tespiti uyarınca ROPS sistemlerine müdahale kuralı nedir?",
+      options: {
+        A: "ROPS yapılarına imalatçı onayı olmadan kaynak yapılması, delik delinmesi veya kesilmesi, malzemenin ısıl işlem yapısını ve strüktürel mukavemetini bozacağından kesinlikle yasaktır.",
+        B: "ROPS yapıları her kazadan sonra doğrultularak tekrar kullanılmalıdır.",
+        C: "ROPS koruyucu yapıları sadece ahşap malzemeden imal edilmelidir.",
+        D: "ROPS yapılarına kaynak yapıldıktan sonra üzerine boya atılması mukavemeti geri kazandırır.",
+        E: "ROPS kabini devrilme anında otomatik olarak gövdeden ayrılmalıdır."
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> ROPS (Devrilmeye Karşı Koruyucu Yapı) sistemleri özel alaşımlı çeliklerden belirli enerji absorbe etme kapasitelerine göre tasarlanır ve test edilir. ROPS yapısına kaynak yapılması veya delik delinmesi, malzemenin Isıdan Etkilenen Bölgesinde (HAZ) gerilim konsantrasyonu ve yapısal zayıflık yaratarak devrilme esnasında ROPS\'un çökmesine neden olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E şıkları ROPS mühendislik standartlarına aykırı yanlış beyanlardır.</li></ul>'
+    },
+    {
+      n: 14,
+      topic: "Vaka Analizi — İş Makinesi Kör Nokta Ezilmesi",
+      text: "Liman sahasında geri manevra yapan bir ekskavatör, arkasındaki kör noktada bulunan saha denetçisini ezmiştir. İş makinelerinde görünebilirlik ve manevra güvenliği mevzuatı açısından kazayı önleyecek zorunlu teknik donanım aşağıdakilerden hangisidir?",
+      options: {
+        A: "Aracın egzoz sesinin artırılması",
+        B: "Operatörün doğrudan görüş alanının kapalı olduğu alanlarda arka kamera, yakınlık sensörü ve otomatik devreye giren sesli/ışıklı geri vites ikaz sistemlerinin bulunması",
+        C: "Araca daha büyük dikiz aynaları takılması",
+        D: "İş makinesinin hızının 5 km/s'ye sabitlenmesi",
+        E: "Saha denetçisinin elinde ikaz feneri taşıması"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> İş makinelerinde sürücünün dikiz aynaları ile göremediği kör noktalar mevcuttur. İş Ekipmanları Yönetmeliği gereğince bu alanların kamera, yakınlık sensörü ve sesli/ışıklı ikaz sistemleri ile emniyete alınması ezilme kazalarını önleyen kök tedbirdir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları kör nokta riskini tamamen ortadan kaldırmaz.</li></ul>'
+    },
+    {
+      n: 15,
+      topic: "Vaka Analizi — Uzaktan Kumanda Sinyal Kaybı",
+      text: "Endüstriyel bir tesiste uzaktan kumanda ile işletilen tavan vinci, başka bir frekanstan gelen sinyal çakışması veya kapsama alanı dışına çıkması sonucu kumandadan bağımsız hareket etmeye başlamış ve yükü çalışanın üzerine düşürmüştür. Tasarım emniyeti açısından uzaktan kumandalı sistemlerin sahip olması gereken temel mekanizma nedir?",
+      options: {
+        A: "Sinyal çakıştığında ekipmanın hızlanarak alanı terk etmesi",
+        B: "Kontrol sınırları dışına çıkıldığında veya sinyal koptuğunda ekipmanın güvenli başarısızlık (fail-safe) mantığıyla OTOMATİK OLARAK HEMEN DURMASI",
+        C: "Ekipmanın en yakın duvara giderek kendini durdurması",
+        D: "Kumanda cihazının şarjı bittiğinde uyarısız çalışmaya devam etmesi",
+        E: "Ekipmanın sinyal aramak amacıyla kendi etrafında dönmesi"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 3.1.4.1 (f) bendi uyarınca: Uzaktan kumandalı iş ekipmanlarının sinyal kesintisi veya sınır dışına çıkma durumunda "Fail-Safe" (Güvenli Başarısızlık) prensibiyle anında otomatik olarak durması zorunludur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>Sinyal kopmasında hareketin sürmesi felaketle sonuçlanır.</li></ul>'
+    },
+    {
+      n: 16,
+      topic: "Vaka Analizi — Bakım Kaydı İhmali",
+      text: "Bir kimya fabrikasında yürütülen periyodik denetimde, reaktör karıştırıcı motorunun bakımlarının yapıldığı ancak bakım defterine veya dijital sisteme gününde işlenmediği, bu nedenle bir önceki rulman arızasının gözden kaçarak yangına yol açtığı anlaşılmıştır. 5070 sayılı Kanun ve İSG mevzuatı yönünden doğru uygulama nedir?",
+      options: {
+        A: "Bakım kayıtlarının sadece imalatçı tarafından tutulması yeterlidir.",
+        B: "Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe işlenmeli; 5070 sayılı Kanuna uygun güvenli e-imza ile elektronik ortamda saklanan kayıtlar da resmi bakım defteri olarak kabul edilmelidir.",
+        C: "Bakım kayıtları yıl sonlarında topluca hatırlanarak yazılabilir.",
+        D: "Dijital ortamda tutulan bakım kayıtları hukuken geçersizdir.",
+        E: "Bakım kayıtları tutulmayan makinelerin garantisi uzatılır."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik Madde 2.13.1 uyarınca bakım kayıtlarının günü gününe tutulması esastır. 5070 sayılı Kanuna uygun e-imzalı dijital kayıtlar da resmi bakım defteri hukuki niteliğindedir. Kayıtların güncel tutulması tekrarlayan arızaların kök nedenini görünür kılar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları hukuki geçerliliği ve bakım disiplinini reddeder.</li></ul>'
+    },
+    {
+      n: 17,
+      topic: "Vaka Analizi — Kalıntı Enerji (Akümülatör)",
+      text: "Bir hidrolik presin ana elektrik motoru kapatılıp şalter kilitlenmesine rağmen, pres pistonunu havada tutan hidrolik akümülatördeki kalıntı basınç (residual pressure) tahliye edilmediği için bakımcının kafasına pres tablası düşmüştür. Bu kazada LOTO prosedürünün hangi hayati adımı atlanmıştır?",
+      options: {
+        A: "Elektrik panosunun kilitlenmesi",
+        B: "Sistemde birikmiş mekanik, hidrolik veya pnömatik kalıntı/potansiyel enerjinin emniyetle sönümlenerek \"Sıfır Enerji Durumu\"nun (Zero Energy State) doğrulanması",
+        C: "Bakımcının baret takması",
+        D: "Pres gövdesinin temizlenmesi",
+        E: "Elektrik kablosunun sökülmesi"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> LOTO prosedürü sadece elektrik enerjisini değil, sistemde birikmiş tüm potansiyel ve kalıntı enerjilerin (hidrolik akümülatör basıncı, yerçekimi potansiyel enerjisi, pnömatik hatlar) sönümlenmesini ve mechanical lock (mekanik takozlama) yapılmasını gerektirir. Akümülatör basıncı boşaltılmadığı için tabla düşmüştür.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları kalıntı enerji tehlikesini göz ardı eden eksik adımlardır.</li></ul>'
+    },
+    {
+      n: 18,
+      topic: "Vaka Analizi — Kaza Sonrası Yeniden Kontrol",
+      text: "Bir şantiyede yaşanan ağır kule vinç kazası sonrasında, vinç tamir edilmiş ve ertesi gün periyodik kontrol veya uzman onay raporu alınmadan tekrar operasyona sokulmuş, ilk kaldırmada kule devrilmiştir. İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği uyarınca bu ihlalin gerekçesi nedir?",
+      options: {
+        A: "İş ekipmanları sadece yılda bir kez kontrol edilir, kaza geçirmesi kontrolü gerektirmez.",
+        B: "Çalışma şeklinde değişiklikler, kazalar, doğal olaylar veya ekipmanın uzun süre kullanılmaması gibi durumlardan sonra emniyetin bozulmadığını doğrulamak üzere periyodik kontrole yetkili kişilerce YENİDEN KONTROL yapılması zorunludur.",
+        C: "Tamir edilen ekipmanların kontrolünü sadece şantiye şefi yapar.",
+        D: "Kaza sonrası kontrol yapılması sadece yabancı menşeili ekipmanlarda zorunludur.",
+        E: "Kule vinçlerin kaza sonrası periyodik kontrol süresi 5 yıla çıkarılır."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yönetmelik periyodik kontrol maddeleri uyarınca; kazalar, doğal olaylar veya uzun süre kullanılmama gibi güvenliği bozabilecek durumlardan sonra ekipmanın tekrar üretime alınabilmesi için yetkili uzmanlarca periyodik kontrolünün TEKRARLANMASI zorunludur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları kaza sonrası denetim zorunluluğunu göz ardı eden yanlış beyanlardır.</li></ul>'
+    },
+    {
+      n: 19,
+      topic: "Vaka Analizi — Kapalı Alanda Kaynak Gazı",
+      text: "Kapalı bir tank içerisinde gaz altı (MIG/MAG) kaynağı yapan bir kaynakçı, koruyucu gaz olan Argon ve Karbondioksitin havadan ağır olması nedeniyle tank tabanında birikip oksijeni boğması sonucu bayılmış ve zehirlenmiştir. Kapalı alanlarda kaynak güvenliği için birincil önlem nedir?",
+      options: {
+        A: "Kaynakçıya oksijen tüpü vermeden içeri tek başına göndermek",
+        B: "Kapalı hacimlerde yanıcı ve boğucu gaz birikmesini önlemek amacıyla ortamı sürekli Temiz Hava Veren Cebri Havalandırma (lokal emiş ve besleme) ile havalandırmak ve gaz ölçümü yapmak",
+        C: "Kaynak amperini maksimuma çıkarmak",
+        D: "Tankın dışını soğuk suyla yıkamak",
+        E: "Kaynak esnasında maske kullanılmasını yasaklamak"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Argon ve CO2 gibi koruyucu kaynak gazlarının özgül ağırlığı havanınkinden büyüktür. Kapalı hacimlerde ve tanklarda bu gazlar tabanda birikerek havadaki oksijen oranını (%20,9) düşürür ve asfiksiye (boğulmaya) neden olur. Sürekli cebri havalandırma ve gaz ölçümü zorunludur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları kapalı alan kaynak güvenliğini ihlal eden çok tehlikeli yaklaşımlardır.</li></ul>'
+    },
+    {
+      n: 20,
+      topic: "Vaka Analizi — Fotokeratit ve Filtre Camı",
+      text: "Ağır sanayide ark kaynağı yapan bir operatörün, kaynak akımına (amperajına) uygun koyulukta cam filtre (Shade filter) seçmemesi nedeniyle gözlerinde şiddetli ağrı, çapak batması hissi ve kanlanma (Fotokeratit / Kaynak alması) oluşmuştur. Koruyucu ekipman ve kaynak güvenliği açısından doğru seçim yaklaşımı nedir?",
+      options: {
+        A: "Tüm kaynak türlerinde tek tip şeffaf cam kullanılması yeterlidir.",
+        B: "Yapılan kaynak türüne (SMAW, TIG, MIG) ve kaynak akımı amper değerine uygun filtre camı koyuluk derecesinin (EN 169 standardına göre DIN 9, 10, 11, 12 vb.) seçilmesi",
+        C: "Kaynak maskesi yerine sadece güneş gözlüğü takılması",
+        D: "Filtre camının koyuluğunun operatörün yaşını esas alması",
+        E: "Kaynak maskesinin camının periyodik olarak yağlanması"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Kaynak arkından yayılan Ultraviyole (UV) ve İnfrared (IR) radyasyon şiddeti kaynak akımının (Amper) karesiyle doğru orantılı olarak artar. Yetersiz filtre koyuluğu kornea tabakasında yanıklara (Fotokeratit) sebep olur. Amper değerine göre EN 169 standardında belirtilen doğru koyuluktaki filtre kullanılmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E seçenekleri göz sağlığını korumada tamamen yetersiz ve yanlış önerilerdir.</li></ul>'
+    }
+  ]
+},
+/* ======================= DENEME 3 ======================= */
+{
+  id: 3,
+  title: "Deneme 3",
+  subtitle: "Ustalaşma ve Simülasyon Sınavı",
+  range: "Soru 1 – 20",
+  questions: [
+    {
+      n: 1,
+      topic: "Pnömatik Aletler — Hortum Kırbaçlanması",
+      text: "Pnömatik (havalı) el aletlerinin yüksek basınç altında kullanımı sırasında kompresör hortumunun alet rekorundan kopması sonucu fırlayan hortumun (hose whip) işçilere çarpmasını önlemek amacıyla alınması gereken mekanik emniyet tedbiri aşağıdakilerden hangisidir?",
+      options: {
+        A: "Pnömatik aletin hava girişine vantilatör koymak",
+        B: "Basınçlı hava hortum eklerine ve alet bağlantı noktalarına kırbaçlama önleyici çelik Emniyet Halatı / Kamçı Tutucu (Whipcheck) ve emniyet pimi takmak",
+        C: "Pnömatik aletin hava basıncını 0 bar'a düşürmek",
+        D: "Hortum bağlantılarını elektrik izolasyon bandı ile sarmak",
+        E: "Pnömatik el aletini sadece ahşap zeminlerde kullanmak"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Pnömatik sistemlerde yüksek basınçlı hava hortumunun yerinden çıkması, hortumun kırbaç gibi kontrolsüzce savrulmasına (Hose Whip) ve etraftaki çalışanların yüz ve gövde bölgesinde kırık, körlük ve hayati yaralanmalara yol açmasına neden olur. Bağlantı noktalarına çelik Whipcheck (Kamçı Tutucu) halatları ve emniyet pimleri takılması zorunlu mekanik tedbirdir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E seçenekleri kırbaçlama riskini önlemeyen veya operasyonu imkansız kılan mantıksız önerilerdir.</li></ul>'
+    },
+    {
+      n: 2,
+      topic: "El Aletleri — Sivri Uçlu Aletlerin Taşınması",
+      text: "Şantiye ortamında çalışan bir işçinin sivri uçlu murç ve keskileri pantolon cebinde taşıması sonucu merdivenden kayıp düşerken keskilerin bacağına saplanması kazası yaşanmıştır. Klasik el aletlerinin taşınması ve depolanması ile ilgili temel kural nedir?",
+      options: {
+        A: "Sivri ve keskin uçlu el aletleri cepte kesinlikle taşınmamalı, taşıma kılıfları, özel takım kemerleri veya takım çantaları içerisinde nakledilmelidir.",
+        B: "Sivri uçlu aletler cebe konmadan önce gres yağı ile kaplanmalıdır.",
+        C: "Aletlerin cebe sığabilmesi için sapları kesilerek kısaltılmalıdır.",
+        D: "Sivri uçlu aletler sadece ceket ceplerinde taşınabilir.",
+        E: "Yüksekte yapılan çalışmalarda el aletleri serbestçe açık raflara bırakılmalıdır."
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> "Klasik El Aletlerinde Güvenlik" kuralları gereğince; sivri uçlu ve keskin kenarlı el aletleri ceplerde taşınmamalıdır. Düşme veya burkulma anında bu aletler insan dokusuna saplanarak atardamar kesilmelerine ve ağır yaralanmalara yol açar. Aletler kılıflı olarak çanta veya kemerlerde nakledilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E seçenekleri emniyet kurallarını açıkça ihlal eden davranışlardır.</li></ul>'
+    },
+    {
+      n: 3,
+      topic: "İş Makineleri — Elektrik Hattı Teması",
+      text: "Ekskavatör ile yapılan altyapı kazısı esnasında, kepçe dişinin zemindeki yüksek gerilim elektrik kablosuna temas etmesi sonucu iş makinesi elektrik yüklenmiştir. Operatörün bu durum karşısında yapması gereken en emniyetli davranış aşağıdakilerden hangisidir?",
+      options: {
+        A: "Derhal kabinden aşağıya atlayarak yere basmak",
+        B: "Kabin içerisinde kalarak temas kesilene kadar beklemek ve dışarıdaki personelin makineye dokunmasını engellemek; kabinden çıkması kaçınılmazsa adımlama potansiyeli riskine karşı ayakları birleşik şekilde dışarıya sıçrayıp iki ayak birleşik zıplayarak uzaklaşmak",
+        C: "Makineden inip tutamaklara sarılarak elektrik hattını çekmeye çalışmak",
+        D: "Ekskavatörün kovasını hızla havada sallamak",
+        E: "Aracın yakıt deposunun vanasını açmak"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yüksek gerilimli hatta temas eden iş makinesinin gövdesi yüksek gerilim altındadır. Operatör kabin içinde kaldığı sürece Faraday Kafesi etkisiyle güvendedir. Ancak araçtan yere basarsa vücudu üzerinden akım toprağa akar (Adımlama Gerilimi / Step Potential). Kabinden çıkış kaçınılmazsa, araca ve yere aynı anda dokunmadan dışarı sıçranmalı ve ayaklar birleşik şekilde zıplayarak uzaklaşılmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A şıkkı (aşağı atlayıp basmak) elektrik çarpmasıyla ölüme yol açan en yaygın hatalı davranıştır.</li></ul>'
+    },
+    {
+      n: 4,
+      topic: "Döner Tezgahlarda Dolanma Riski",
+      text: "Bir talaşlı imalat atölyesinde döner aksama sahip torna ve matkap tezgâhlarının yakınında çalışan personelin emniyeti açısından aşağıdakilerden hangisi ağır bir kaza riski (dolaylı kapılma) oluşturur?",
+      options: {
+        A: "Çalışanların bol, sarkıntılı kıyafetler giymesi, kravat, künye takması ve uzun saçlarını toplamaması",
+        B: "Çalışanların çelik burunlu emniyet ayakkabısı giymesi",
+        C: "Tezgâhın acil durdurma butonunun mantar başlı olması",
+        D: "Tezgâh çevresinde talaş siperliklerinin kullanılması",
+        E: "Tezgâhın tabana sağlam bir şekilde sabitlenmiş olması"
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Torna, matkap ve taşlama gibi dönen millere sahip makinelerin yakınında çalışırken bol giysiler, kravat, atkı, künye ve açık uzun saçlar dönen aksama dolanarak (Entanglement) çalışanı makinenin içine çeker ve feci şekilde ölüme yol açar. Dar giysiler tercih edilmeli ve saçlar file/baret altına toplanmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E şıkları dolanma riski yaratmayan, tam aksine İSG standartlarına uygun niteliklerdir.</li></ul>'
+    },
+    {
+      n: 5,
+      topic: "Çift El Kumanda — Tasarım İlkeleri",
+      text: "Pres tezgâhlarında kullanılan Çift El Kumanda sisteminin güvenlik kategorisi ve tasarım ilkeleri ile ilgili olarak aşağıdakilerden hangisi yanlıştır?",
+      options: {
+        A: "Çift el kumanda butonları tek elle çalıştırılamayacak aralıkta ve koruyucu siperlik içerisinde olmalıdır.",
+        B: "Butonlardan birine basıldıktan sonra diğerine basılması için müsaade edilen maksimum zaman farkı (eşzamanlılık) 0,5 saniye olmalıdır.",
+        C: "Operatör butonlardan birini bıraktığı anda tezgâh tehlikeli hareketi derhal durdurmalıdır.",
+        D: "Çift el kumanda sistemi pres kalıbı kapanırken parça koymak amacıyla elin içeri girmesine izin vermelidir.",
+        E: "Butonlar köprülemeye (takozla sabitlemeye) karşı korumalı olmalıdır."
+      },
+      answer: "D",
+      solution: '<p><strong>Gerekçe:</strong> Çift el kumanda sistemlerinin temel tasarım amacı, pres kalıbı inip kapanırken operatörün HER İKİ ELİNİN DE emniyetli bölgede (butonların üzerinde) bulunmasını sağlamaktır. Sistem, kalıp inerken elin içeri girmesine izin veriyorsa güvenlik fonksiyonunu tamamen yitirmiş demektir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve E seçenekleri EN ISO 13851 standardına uygun çift el kumanda tasarım şartlarıdır.</li></ul>'
+    },
+    {
+      n: 6,
+      topic: "Durdurma Kategorileri — Kategori 0",
+      text: "İş ekipmanlarında Kategori 0 ve Kategori 1 durdurma fonksiyonları ile ilgili olarak; gücün makine tahrik elemanlarına anında kesilmesiyle sağlanan durdurma tipi aşağıdakilerden hangisidir?",
+      options: {
+        A: "Kategori 0 Durdurma",
+        B: "Kategori 1 Durdurma",
+        C: "Kategori 2 Durdurma",
+        D: "Bekleme Modu (Stand-by)",
+        E: "Otomatik Yeniden Başlatma"
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> EN ISO 13850 ve EN 60204-1 standartlarına göre:</p><ul><li><strong>Kategori 0 Durdurma:</strong> Makine tahrik elemanlarının enerjisinin ANINDA kesilmesi ile sağlanan durdurmadır (Uncontrolled stop).</li><li><strong>Kategori 1 Durdurma:</strong> Makineye önce enerji verilerek kontrollü durdurma sağlanması, durma tamamlandıktan sonra gücün kesilmesidir (Controlled stop).</li></ul><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E şıkları Kategori 0 durdurma tanımına uymaz.</li></ul>'
+    },
+    {
+      n: 7,
+      topic: "Kumanda Butonları — Renk Kodları",
+      text: "İş ekipmanlarında kullanılan kumanda butonlarının renk kodları (EN 60204-1 standardı) ve işlevleri ile ilgili aşağıdaki eşleştirmelerden hangisi doğrudur?",
+      options: {
+        A: "Kırmızı — Başlatma / Çalıştırma",
+        B: "Yeşil / Beyaz — Durdurma / Acil Durdurma",
+        C: "Kırmızı — Acil Durdurma / Durdurma",
+        D: "Sarı — Normal Çalıştırma",
+        E: "Mavi — Tehlikeli Hareketi Başlatma"
+      },
+      answer: "C",
+      solution: '<p><strong>Gerekçe:</strong> EN 60204-1 Makine Elektrik Emniyeti standardına göre kumanda buton renkleri:</p><ul><li><strong>Kırmızı:</strong> Acil Durdurma ve Durdurma butonlarında zorunludur.</li><li><strong>Yeşil / Beyaz:</strong> Başlatma / Çalıştırma butonlarında kullanılır.</li><li><strongSar>Sarı:</strong> Anormal durum ve müdahale butonlarında kullanılır.</li></ul><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D ve E şıklarında renk kodları ve işlevleri yanlış eşleştirilmiştir.</li></ul>'
+    },
+    {
+      n: 8,
+      topic: "Stroboskopik Etki — Döner Ayna Tehlikesi",
+      text: "Döner parçalı tezgâhlarda (torna, taşlama vb.) lokal aydınlatma amacıyla kullanılan gaz deşarjlı lambaların (flüoresan vb.) frekansı nedeniyle döner aynanın duruyormuş gibi görünmesi fenomene ne ad verilir ve yarattığı İSG riski nedir?",
+      options: {
+        A: "Piezoelektrik Etki — Makinenin aşırı ısınmasına yol açar.",
+        B: "Stroboskopik (Durgun Görme) Etki — Çalışanın dönen aynayı duruyor sanarak elini temas ettirmesine ve ağır uzuv kaybına yol açar.",
+        C: "Fototermik Etki — Gözde kalıcı katarakt oluşturur.",
+        D: "Doppler Etki — Tezgâhın ses seviyesini tırmandırır.",
+        E: "Joule Etki — Elektrik çarpması yaratır."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Gaz deşarjlı lambalar (flüoresan vb.) şebeke frekansına (50 Hz) bağlı olarak saniyede 100 kez kırpışır. Döner tezgâhın devir sayısı bu frekansın katlarına ulaştığında döner ayna duruyormuş veya çok yavaş dönüyormuş gibi algılanır (Stroboskopik Etki). Operatörün dönen parçaya elini sürmesiyle ağır uzuv kayıpları yaşanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>Olay doğrudan optik yanılsama olan Stroboskopik etki ile açıklanır.</li></ul>'
+    },
+    {
+      n: 9,
+      topic: "Emniyet Valfi Kapasite Hesabı",
+      text: "Basınçlı kapların emniyet ekipmanları arasında yer alan Emniyet Valflerinin (Safety Valve) kapasite hesabı ve boyutlandırılması ile ilgili temel teknik kural nedir?",
+      options: {
+        A: "Emniyet valfinin tahliye kapasite debisi, kabın üretebileceği veya beslenebileceği azami buhar/gaz debisinden küçük olmalıdır.",
+        B: "Emniyet valfinin tahliye kapasitesi, basınçlı kapta meydana gelebilecek en kötü senaryodaki maksimum gaz/buhar üretim debisini kap basıncı emniyet sınırını aşmadan dışarı atabilecek kapasitede olmalıdır.",
+        C: "Emniyet valfi çapı her zaman 10 mm olarak sabit seçilmelidir.",
+        D: "Emniyet valfi sadece basınç sıfırlandığında açacak şekilde kurgulanmalıdır.",
+        E: "Emniyet valfi kapasitesi depo hacminin %1'i kadar olmalıdır."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Emniyet valfi basınçlı kabın nihai sigortasıdır. Emniyet valfinin tahliye debisi kapasitesi (Qvalf), kabın içinde oluşabilecek maksimum gaz/buhar debisinden (Qmax) büyük olmak zorundadır. Aksi takdirde valf açsa dahi basınç yükselmeye devam eder ve kap patlar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları emniyet valfi mühendislik kapasite hesabına aykırıdır.</li></ul>'
+    },
+    {
+      n: 10,
+      topic: "Et Kalınlığı Azalması ve Re-rating",
+      text: "Basınçlı kaplarda yapılan periyodik ultrasonik et kalınlığı ölçümlerinde, tank korozyon payının altına düşmüş ve emniyet marjı kaybolmuşsa yetkili uzmanın alması gereken en doğru mühendislik kararı nedir?",
+      options: {
+        A: "Tankın çalışma basıncını kademeli olarak artırmak",
+        B: "Tankı derhal servis dışı bırakmak veya müsaade edilen azami çalışma basıncını düşürerek (Re-rating) yeni basınca göre emniyet valfini ayarlayıp raporlamak",
+        C: "Tankın dış yüzeyini kalın epoxy boya ile kaplayıp kullanıma devam etmek",
+        D: "Ultrasonik ölçüm cihazının kalibrasyonunu bozarak değeri yüksek göstermek",
+        E: "Tankın altına ekstra destek takozu koymak"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Korozyon nedeniyle et kalınlığı azalan basınçlı kapların tanjant gerilmesi artar (σ = P·r/t). Et kalınlığı (t) düştüğünde gerilmenin akma sınırını aşmaması için ya tank derhal servis dışı bırakılmalı ya da müsaade edilen azami çalışma basıncı (P) düşürülerek (Re-rating işlemi) emniyet valfi yeni düşük basınca ayarlanmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A şıkkı patlamayı hızlandırır. C, D ve E şıkları sahte ve uygunsuz çözümlerdir.</li></ul>'
+    },
+    {
+      n: 11,
+      topic: "LPG Tankları — Emniyet Mesafeleri",
+      text: "Sanayi tesislerinde kullanılan dökme LPG (Sıvılaştırılmış Petrol Gazı) depolama tanklarının yerleşimi ve emniyet mesafeleri ile ilgili aşağıdakilerden hangisi yanlıştır?",
+      options: {
+        A: "LPG tankları vadi, çukur veya gaz birikmesi muhtemel kapalı alanlara kurulmamalıdır.",
+        B: "LPG havadan ağır bir gaz olduğu için sızıntı durumunda çukurlara ve drenaj kanallarına dolarak patlama riski yaratır.",
+        C: "LPG tanklarının etrafına yanıcı maddeler ve kuru otlar yığılabilir.",
+        D: "Tank etrafındaki elektrik tesisatı patlamaya karşı korumalı (Ex-Proof) olmalıdır.",
+        E: "LPG tankları ile bina açıklıkları ve tutuşma kaynakları arasında mevzuatta öngörülen emniyet mesafeleri bırakılmalıdır."
+      },
+      answer: "C",
+      solution: '<p><strong>Gerekçe:</strong> LPG depolama tanklarının etrafında yanıcı maddeler, otlar veya tutuşma kaynaklarının bulunması yangın durumunda tankın BLEVE (Boiling Liquid Expanding Vapor Explosion) patlamasına yol açar. Tank etrafı temiz ve emniyet mesafelerine uygun tutulmalıdır. C şıkkı ağır bir güvenlik ihlalidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D ve E seçenekleri dökme LPG tanklarının doğru yerleşim ve emniyet kurallarıdır.</li></ul>'
+    },
+    {
+      n: 12,
+      topic: "Basınçlı Hava Şartlandırıcı (FRY) İhmali",
+      text: "Basınçlı hava tesisatlarında yer alan Şartlandırıcı (FRY — Filtre, Regülatör, Yağlayıcı) ünitesinin bakımının yapılmaması ve su tutucunun boşaltılmaması havalı aletlerde ve hatlarda hangi doğrudan emniyet riskine yol açar?",
+      options: {
+        A: "Tesisatın elektriksel voltajının yükselmesine",
+        B: "Hatlarda ve havalı el aletlerinde korozyon, valf kilitlenmesi, kaçak ve aletin aniden kontrolden çıkması riskine",
+        C: "Kompresörün devir sayısının sıfırlanmasına",
+        D: "Hava sıcaklığının -50 °C'ye düşmesine",
+        E: "Tesisatın yıldırım çekme riskinin tırmanmasına"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Basınçlı hava hatlarında yoğuşan su ve nem şartlandırıcılar ile tutulmazsa pnömatik el aletlerinin içindeki valf ve pistonların yağını yıkayarak korozyona ve kilitlenmeye sebep olur. Sıkışan valfler aletin aniden durmamasına veya kontrolden çıkmasına yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları pnömatik şartlandırıcı eksikliğinin doğrudan sonuçları değildir.</li></ul>'
+    },
+    {
+      n: 13,
+      topic: "Mobil Vinç — Destek Ayağı ve Zemin",
+      text: "Mobil vinçlerin kurulumu ve kaldıracağı yük kapasitesi ile ilgili olarak; vinç destek ayaklarının (Outrigger) altına ahşap/çelik takoz takılmadan yumuşak zeminde kurularak yük kaldırılması hangi feci kazaya doğrudan yol açar?",
+      options: {
+        A: "Vincin bomunun elektrik üretmesine",
+        B: "Destek ayağının zemine batması sonucu vincin dengesini kaybederek devrilmesine (Overturning) ve bom kırılmasına",
+        C: "Vincin halatının paslanmasına",
+        D: "Vincin motorunun fazla yakıt tüketmesine",
+        E: "Vincin tekerleklerinin patlamasına"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Mobil vinçlerin kaldırma kapasitesi stabilite momentine bağlıdır. Destek ayaklarının zemine uyguladığı lokal zemin gerilmesi (σ = F/A) yüksektir. Yumuşak zeminde ahşap/çelik berkitme plakaları kullanılmazsa destek ayağı zemine batar, vinç devrilme eksenini kaybederek devrilir ve bom kırılması yaşanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları zemin çökmesi kazasını açıklamaz.</li></ul>'
+    },
+    {
+      n: 14,
+      topic: "Yeraltı Kazı — Tesisat Taraması",
+      text: "Şantiye kazı işlerinde kazı makinesinin (Ekskavatör, Beko-Loder) yeraltı elektrik kabloları veya doğalgaz hatlarına zarar vermemesi için kazıya başlamadan önce alınması gereken birincil yönetsel ve teknik tedbir nedir?",
+      options: {
+        A: "Kazıya doğrudan en büyük kepçe ile başlanmalıdır.",
+        B: "İlgili kurum ve kuruluşlardan (TEDAŞ, BOTAŞ vb.) yeraltı tesisat planları alınmalı, hatlar dedektörlerle taranarak işaretlenmeli ve emniyet mesafesine kadar el ile kazı yapılmalıdır.",
+        C: "Kazı alanı su ile doldurularak kazılmalıdır.",
+        D: "Kazı sadece gece yürütülmelidir.",
+        E: "Kazı makinesinin kovası kauçuk kaplanmalıdır."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yeraltı kazı operasyonlarında en hayati kaza kök nedeni elektrik çarpması ve doğalgaz patlamasıdır. Kazıya başlamadan önce kurum haritaları temin edilmeli, NDT/Dedektör taraması yapılmalı ve hatlara 1 metre mesafeye kadar makineli kazı yapılmayıp kürekle hassas elle kazı yürütülmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E seçenekleri kaza riskini tırmandıran yanlış uygulamalardır.</li></ul>'
+    },
+    {
+      n: 15,
+      topic: "Forklift — Stabilite Üçgeni",
+      text: "Forkliftlerin stabilite üçgeni (Stability Triangle) ve yük merkezi (Load Center) ilkelerine göre; forkliftin aşırı yükle veya yük yukarıdayken hızlı dönüş yapması durumunda meydana gelecek kinetik kaza riski nedir?",
+      options: {
+        A: "Forkliftin frenlerinin kilitlenmesi",
+        B: "Bileşke ağırlık merkezinin stabilite devrilme çizgisinin dışına çıkması sonucu forkliftin devrilmesi",
+        C: "Forklift çatallarının erimesi",
+        D: "Forklift egzozundan siyah duman çıkması",
+        E: "Forklift kor Kornasının bozulması"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Forkliftlerin devrilme emniyeti "Stabilite Üçgeni" içerisindeki bileşke ağırlık merkezinin konumuna bağlıdır. Yük yukarı kaldırıldığında veya viraja hızlı girildiğinde oluşan merkezkaç kuvveti bileşke ağırlık merkezini üçgen çizgisinin dışına kaydırır ve forklift aniden yana veya öne devrilir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E seçenekleri devrilme mekaniğini tanımlamaz.</li></ul>'
+    },
+    {
+      n: 16,
+      topic: "LOTO — Grup Kilitleme Prosedürü",
+      text: "Karmaşık bir üretim hattında birden fazla bakım personelinin (elektrik, mekanik, otomasyon) aynı anda müdahale ettiği devasa bir makinede LOTO (Grup Kilitleme) prosedürü nasıl uygulanmalıdır?",
+      options: {
+        A: "Sadece en kıdemli ustanın kilit asması yeterlidir.",
+        B: "Hat ana enerjisi kesilip kilitlendikten sonra, anahtar Grup Kilitleme Kutusuna (Lockout Box) konulmalı ve bakıma katılan her bir çalışan KENDİ KİŞİSEL KİLİDİNİ bu kutu üzerine asmalıdır.",
+        C: "Makineye kilit asılmamalı, sadece sözlü haberleşilmelidir.",
+        D: "Çalışanlar kilit yerine isim kartlarını asmalıdır.",
+        E: "Hat çalışırken bakıma devam edilmelidir."
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Çoklu disiplinli bakım işlerinde Grup Kilitleme (Group Lockout) uygulanır. Hat enerjisi kesildikten sonra anahtar kilitleme kutusuna konur. İşe dahil olan ELEKTRİK, MEKANİK ve OTOMASYON personellerinin HER BİRİ kutunun üzerine KENDİ kişisel asma kilidini takar. Son personel kilidini sökmeden hat enerjilendirilemez.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları LOTO emniyet hiyerarşisini bozan hayati hatalardır.</li></ul>'
+    },
+    {
+      n: 17,
+      topic: "Revizyon Sonrası Devreye Alma",
+      text: "Büyük bir revizyon sonrası iş ekipmanının tekrar işletmeye alınması (Re-commissioning) safhasında emniyet protokolü uyarınca yapılması gereken son işlem aşağıdakilerden hangisidir?",
+      options: {
+        A: "Bakım esnasında sökülen tüm emniyet muhafazalarının, kapakların ve interlock sviçlerinin yerli yerine takıldığının denetlenmesi, alanın temizlenmesi ve kilitlerin sırayla kaldırılması",
+        B: "Makineyi emniyet muhafazaları sökük vaziyette maksimum devirde çalıştırmak",
+        C: "Bakım defterini imzalamadan alanı terk etmek",
+        D: "Makinenin acil durdurma butonunu sökmek",
+        E: "Makineye enerji vermeden önce yağlama yapmamak"
+      },
+      answer: "A",
+      solution: '<p><strong>Gerekçe:</strong> Bakım sonrası makinenin tekrar devreye alınması protokolünde en kritik aşama; bakım esnasında sökülmüş olan dişli muhafazalarının, siperliklerin ve güvenlik sviçlerinin (interlock) eksiksiz olarak yerine takıldığının teyit edilmesidir. Muhafazasız makineye enerji verilmesi uzuv kayıplı kazalara yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E şıkları revizyon sonrası emniyet kurallarına aykırıdır.</li></ul>'
+    },
+    {
+      n: 18,
+      topic: "E-İmza — Hukuki Geçerlilik Unsurları",
+      text: "5070 sayılı Elektronik İmza Kanunu kapsamında e-imzalı dijital bakım kayıtlarının denetimi esnasında, kayıtların hukuki geçerliliğini sağlayan teknik unsur aşağıdakilerden hangisidir?",
+      options: {
+        A: "Kaydın Word formatında saklanması",
+        B: "Kaydın Zaman Damgası (Timestamp) barındırması ve değiştirilemez kriptografik hash yapısı ile güvenli elektronik imza ile imzalanmış olması",
+        C: "Kaydın fotokopisi çekilerek saklanması",
+        D: "Kaydın sadece ekran görüntüsünün alınması",
+        E: "Kaydın e-posta ile gönderilmiş olması"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> 5070 sayılı Kanuna göre dijital verilerin hukuki delil niteliği kazanabilmesi için veri bütünlüğünün bozulmadığını doğrulayan Kriptografik Hash yapısı, Yetkili Elektronik Sertifika ile atılmış Güvenli E-İmza ve Zaman Damgası (Timestamp) içermesi zorunludur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E seçenekleri hukuki geçerliliği olmayan düz metin veya fotokopi formatlarıdır.</li></ul>'
+    },
+    {
+      n: 19,
+      topic: "Sıcak Çalışma İzni",
+      text: "Tehlikeli ve yanıcı ortamda yürütülecek Sıcak Çalışma (Hot Work — Kaynak, Kesme) operasyonu öncesinde iş sağlığı ve güvenliği profesyonelinin düzenlemesi gereken zorunlu doküman ve saha ölçümü nedir?",
+      options: {
+        A: "Yıllık İzin Formu",
+        B: "Sıcak Çalışma İzin Formu (Hot Work Permit) düzenlenerek gaz ölçüm cihazı ile ortamda patlayıcı/yanıcı gaz (LEL ölçümü) denetimi yapmak ve 30 dakika Yangın Gözetçisi (Fire Watch) görevlendirmek",
+        C: "İş Sözleşmesi",
+        D: "Zimmet Tutanağı",
+        E: "Satın Alma Talebi"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Yanıcı ve patlayıcı ortamlarda sıcak çalışma yapılmadan önce "Sıcak Çalışma İzin Formu" (Hot Work Permit) düzenlenmelidir. Ortamda LEL (Lower Explosive Limit) gaz ölçümü yapılmalı, yanıcı maddeler temizlenmeli veya yangın battaniyesi ile örtülmeli ve çalışma süresince ve çalışmadan 30 dakika sonrasına kadar yangın söndürücülü bir "Yangın Gözetçisi" bekletilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E şıkları sıcak çalışma emniyeti ile ilgisiz idari formlardır.</li></ul>'
+    },
+    {
+      n: 20,
+      topic: "Kaynak Dumanı Humması (Metal Fume Fever)",
+      text: "Galvaniz kaplı sacların ark kaynağı veya oksiasetilen kaynağı ile birleştirilmesi esnasında açığa çıkan Çinko Oksit (ZnO) dumanının kaynakçı tarafından solunması sonucu ortaya çıkan meslek hastalığı aşağıdakilerden hangisidir?",
+      options: {
+        A: "Silikozis",
+        B: "Kaynak Dumanı Humması (Metal Büyüsü / Metal Fume Fever)",
+        C: "Asbestozis",
+        D: "Byssinosis",
+        E: "Antrakozis"
+      },
+      answer: "B",
+      solution: '<p><strong>Gerekçe:</strong> Galvaniz kaplı (Çinko kaplı) çeliklerin kaynağı esnasında çinko buharlaşarak hava ile temas eder ve Çinko Oksit (ZnO) dumanı oluşturur. Bu dumanın solunması kaynakçıda dumanı soluduktan 4-12 saat sonra titreme, yüksek ateş, kas ağrısı ve tat bozukluğu ile seyreden "Kaynak Dumanı Humması" (Metal Fume Fever) meslek hastalığına yol açar. Yerel cebri emiş sistemleri zorunludur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A (Silis tozu), C (Asbest), D (Pamuk tozu) ve E (Kömür tozu) farklı meslek hastalıklarının etkenleridir.</li></ul>'
+    }
+  ]
+}
+];
+
+/* =========================================================
+   UYGULAMA MANTIĞI
+   ========================================================= */
+const EXAM_DURATION_SEC = 30 * 60; // 30 dakika = 1800 saniye
+
+const state = {
+  currentTest: 0,
+  currentQ: [0, 0, 0],
+  answers: TESTS.map(t => t.questions.map(() => null)),
+  flagged: TESTS.map(t => t.questions.map(() => false)),
+  timers: TESTS.map(() => ({
+    remaining: EXAM_DURATION_SEC,
+    running: false,
+    finished: false,
+    intervalId: null
+  }))
+};
+
+const tabsEl = document.getElementById('tabs');
+const navEl = document.getElementById('navigator');
+const areaEl = document.getElementById('testArea');
+const resultEl = document.getElementById('resultCard');
+const timerDisplay = document.getElementById('timerDisplay');
+const startBtn = document.getElementById('startBtn');
+const pauseBtn = document.getElementById('pauseBtn');
+const finishBtn = document.getElementById('finishBtn');
+
+/* ---- YARDIMCI ---- */
+function pad2(n){ return n < 10 ? '0' + n : '' + n; }
+function formatTime(sec){
+  sec = Math.max(0, Math.floor(sec));
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return pad2(m) + ':' + pad2(s);
+}
+function updateTimerDisplay(){
+  const t = state.timers[state.currentTest];
+  timerDisplay.textContent = formatTime(t.remaining);
+  if (t.remaining <= 60 && !t.finished){
+    timerDisplay.classList.add('warning');
+  } else {
+    timerDisplay.classList.remove('warning');
+  }
+}
+
+/* ---- TABS ---- */
+function buildTabs(){
+  tabsEl.innerHTML = TESTS.map((t, i) =>
+    `<button class="tab-btn ${i===0?'active':''}" data-test="${i}">
+       <span class="tt">${t.title}</span>
+       <span class="ts">${t.subtitle}</span>
+     </button>`
+  ).join('');
+  tabsEl.querySelectorAll('.tab-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      if (state.timers[state.currentTest].running){
+        if (!confirm('Devam eden sınavı durdurmak istediğinize emin misiniz? Bu denemedeki süre durdurulacak ve diğer denemeye geçilecektir.')){
+          return;
+        }
+        pauseTimer();
+      }
+      state.currentTest = parseInt(btn.dataset.test, 10);
+      tabsEl.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+      updateTimerDisplay();
+      updateTimerButtons();
+      window.scrollTo({top: tabsEl.offsetTop - 20, behavior:'smooth'});
+    });
+  });
+}
+
+/* ---- NAVIGATOR ---- */
+function buildNav(){
+  const test = TESTS[state.currentTest];
+  const ans = state.answers[state.currentTest];
+  const flg = state.flagged[state.currentTest];
+  navEl.innerHTML = test.questions.map((q, i)=>{
+    let cls = 'nav-chip';
+    if (ans[i] !== null){
+      cls += (ans[i] === q.answer) ? ' correct' : ' wrong';
+    }
+    if (flg[i]) cls += ' flagged';
+    if (i === state.currentQ[state.currentTest]) cls += ' current';
+    return `<button class="${cls}" data-idx="${i}">${q.n}</button>`;
+  }).join('');
+  navEl.querySelectorAll('.nav-chip').forEach(chip=>{
+    chip.addEventListener('click', ()=>{
+      state.currentQ[state.currentTest] = parseInt(chip.dataset.idx, 10);
+      render();
+      window.scrollTo({top: navEl.offsetTop - 80, behavior:'smooth'});
+    });
+  });
+}
+
+/* ---- STATS ---- */
+function calculateStats(testIdx){
+  const test = TESTS[testIdx];
+  const ans = state.answers[testIdx];
+  let dogru = 0, yanlis = 0, bos = 0;
+  test.questions.forEach((q, i)=>{
+    if (ans[i] === null) bos++;
+    else if (ans[i] === q.answer) dogru++;
+    else yanlis++;
+  });
+  // 4 yanlış 1 doğruyu götürür
+  const netRaw = dogru - (yanlis / 4);
+  const net = Math.max(0, Math.round(netRaw * 100) / 100);
+  // Her soru 5 puan → net * 5
+  const puan = Math.max(0, Math.round(net * 5 * 100) / 100);
+  return { dogru, yanlis, bos, net, puan, total: test.questions.length };
+}
+
+function updateScoreBar(){
+  const s = calculateStats(state.currentTest);
+  document.getElementById('sDogru').textContent = s.dogru;
+  document.getElementById('sYanlis').textContent = s.yanlis;
+  document.getElementById('sBos').textContent = s.bos;
+  document.getElementById('sNet').textContent = s.net.toFixed(2);
+  document.getElementById('sPuan').textContent = Math.round(s.puan);
+}
+
+/* ---- TIMER ACTIONS ---- */
+function startTimer(){
+  const t = state.timers[state.currentTest];
+  if (t.finished || t.running) return;
+  t.running = true;
+  t.intervalId = setInterval(()=>{
+    t.remaining--;
+    updateTimerDisplay();
+    if (t.remaining <= 0){
+      finishTimer(true);
+    }
+  }, 1000);
+  updateTimerButtons();
+}
+function pauseTimer(){
+  const t = state.timers[state.currentTest];
+  if (!t.running) return;
+  t.running = false;
+  clearInterval(t.intervalId);
+  t.intervalId = null;
+  updateTimerButtons();
+}
+function finishTimer(auto){
+  const t = state.timers[state.currentTest];
+  t.running = false;
+  t.finished = true;
+  if (t.intervalId){
+    clearInterval(t.intervalId);
+    t.intervalId = null;
+  }
+  if (auto){
+    alert('⏰ Süre doldu! Sınav otomatik olarak sonlandırıldı. Sonuçlarınız aşağıda gösteriliyor.');
+  } else {
+    if (!confirm('Sınavı bitirmek istediğinize emin misiniz? Sonuçlarınız hesaplanacak ve cevaplar kilitlenecek.')){
+      return;
+    }
+  }
+  updateTimerButtons();
+  // Cevapsızları boş bırak ve sonucu göster
+  showResult();
+}
+function updateTimerButtons(){
+  const t = state.timers[state.currentTest];
+  startBtn.disabled = t.running || t.finished;
+  pauseBtn.disabled = !t.running;
+  finishBtn.disabled = t.finished;
+}
+
+/* ---- RENDER ---- */
+function render(){
+  const testIdx = state.currentTest;
+  const qIdx = state.currentQ[testIdx];
+  const test = TESTS[testIdx];
+  const q = test.questions[qIdx];
+  const ans = state.answers[testIdx];
+  const flg = state.flagged[testIdx];
+  const userAnswer = ans[qIdx];
+  const isFinished = state.timers[testIdx].finished;
+  const answered = userAnswer !== null;
+
+  buildNav();
+  updateScoreBar();
+
+  const optionLetters = Object.keys(q.options);
+  const optionsHtml = optionLetters.map(L=>{
+    let cls = 'option';
+    if (answered){
+      cls += ' disabled';
+      if (L === q.answer){
+        cls += (userAnswer === L) ? ' selected-correct' : ' reveal-correct';
+      } else if (L === userAnswer){
+        cls += ' selected-wrong';
+      } else {
+        cls += ' dim';
+      }
+    }
+    return `<button class="${cls}" data-letter="${L}">
+              <span class="letter">${L}</span>
+              <span class="otext">${q.options[L]}</span>
+            </button>`;
+  }).join('');
+
+  const feedbackHtml = answered
+    ? (userAnswer === q.answer
+        ? `<div class="feedback ok show"><span class="ico">✅</span> Doğru Cevap! Tebrikler.</div>`
+        : `<div class="feedback no show"><span class="ico">❌</span> Yanlış Cevap. Doğru cevap: <strong>${q.answer}</strong></div>`)
+    : '';
+
+  const solutionHtml = answered
+    ? `<div class="solution">
+         <div class="solution-head clickable" id="solutionToggle">
+           <span>📖 Detaylı Çözümü Göster</span>
+           <span class="chev" id="solutionChev">▼</span>
+         </div>
+         <div class="solution-body" id="solutionBody">
+           <p><strong>Doğru Cevap:</strong> <span class="answer-tag">${q.answer}</span></p>
+           ${q.solution}
+         </div>
+       </div>`
+    : `<div class="solution">
+         <div class="solution-head">
+           <span>🔒 Çözümü Görmek İçin Bir Şık Seçiniz</span>
+         </div>
+       </div>`;
+
+  const prevDisabled = qIdx === 0 ? 'disabled' : '';
+  const nextDisabled = qIdx === test.questions.length - 1 ? 'disabled' : '';
+
+  areaEl.innerHTML = `
+    <div class="q-card">
+      <div class="q-meta">
+        <span class="q-badge">Soru ${q.n}</span>
+        <span class="q-topic">${q.topic}</span>
+        <button class="q-flag-btn ${flg[qIdx]?'flagged':''}" id="flagBtn" type="button">
+          ${flg[qIdx]?'🚩 İşaretli':'🏳️ İşaretle'}
+        </button>
+      </div>
+      <div class="q-text">${q.text}</div>
+      <div class="options">${optionsHtml}</div>
+      ${feedbackHtml}
+      ${solutionHtml}
+      <div class="controls">
+        <button class="btn btn-ghost" id="btnPrev" ${prevDisabled}>⬅️ Önceki Soru</button>
+        <button class="btn btn-primary" id="btnNext" ${nextDisabled}>Sonraki Soru ➡️</button>
+      </div>
+    </div>
+  `;
+
+  /* Şık seçimi */
+  if (!answered && !isFinished){
+    areaEl.querySelectorAll('.option').forEach(opt=>{
+      opt.addEventListener('click', ()=>{
+        if (!state.timers[testIdx].running && !state.timers[testIdx].finished){
+          if (!confirm('Sınav süresi başlatılmadı. Soruyu cevaplamak için önce "Başlat" butonuna basmanız gerekiyor. Yine de cevaplamak istiyor musunuz?')){
+            return;
+          }
+        }
+        state.answers[testIdx][qIdx] = opt.dataset.letter;
+        render();
+        checkCompletion();
+      });
+    });
+  } else if (answered){
+    const toggle = document.getElementById('solutionToggle');
+    const body = document.getElementById('solutionBody');
+    const chev = document.getElementById('solutionChev');
+    if (toggle && body){
+      toggle.addEventListener('click', ()=>{
+        const isOpen = body.classList.contains('show');
+        if (isOpen){
+          body.classList.remove('show');
+          if (chev) chev.classList.remove('open');
+          toggle.querySelector('span').textContent = '📖 Detaylı Çözümü Göster';
+        } else {
+          body.classList.add('show');
+          if (chev) chev.classList.add('open');
+          toggle.querySelector('span').textContent = '📖 Detaylı Çözümü Gizle';
+        }
+      });
+    }
+  }
+
+  /* Bayrak butonu */
+  const flagBtn = document.getElementById('flagBtn');
+  if (flagBtn){
+    flagBtn.addEventListener('click', ()=>{
+      state.flagged[testIdx][qIdx] = !state.flagged[testIdx][qIdx];
+      render();
+    });
+  }
+
+  /* Önceki / Sonraki */
+  const btnPrev = document.getElementById('btnPrev');
+  const btnNext = document.getElementById('btnNext');
+  if (btnPrev) btnPrev.addEventListener('click', ()=>{
+    if (state.currentQ[testIdx] > 0){
+      state.currentQ[testIdx]--;
+      render();
+      window.scrollTo({top: navEl.offsetTop - 80, behavior:'smooth'});
+    }
+  });
+  if (btnNext) btnNext.addEventListener('click', ()=>{
+    if (state.currentQ[testIdx] < test.questions.length - 1){
+      state.currentQ[testIdx]++;
+      render();
+      window.scrollTo({top: navEl.offsetTop - 80, behavior:'smooth'});
+    }
+  });
+}
+
+/* ---- SHOW RESULT ---- */
+function showResult(){
+  const testIdx = state.currentTest;
+  const test = TESTS[testIdx];
+  const s = calculateStats(testIdx);
+  document.getElementById('rDogru').textContent = s.dogru;
+  document.getElementById('rYanlis').textContent = s.yanlis;
+  document.getElementById('rBos').textContent = s.bos;
+  document.getElementById('rNet').textContent = s.net.toFixed(2);
+  document.getElementById('rPuan').textContent = Math.round(s.puan);
+  document.getElementById('resTitle').textContent = `${test.title} Tamamlandı! 🏆`;
+  document.getElementById('resSub').textContent = `${test.subtitle} — ${test.range}`;
+
+  let msg = '';
+  const p = s.puan;
+  if (p >= 90) msg = '🏆 <strong>MÜKEMMEL!</strong> Bu denemede olağanüstü bir performans sergilediniz. Mekanik İSG konularına tam hakimiyetiniz kanıtlanmıştır.';
+  else if (p >= 70) msg = '👍 <strong>BAŞARILI!</strong> Başarı sınırını geçtiniz. Detaylı çözümleri inceleyerek eksik kalan konuları pekiştirebilirsiniz.';
+  else if (p >= 50) msg = '📘 <strong>GELİŞTİRİLMELİ.</strong> Temel bilginiz var ancak başarı sınırının altındasınız. Konu anlatımını ve detaylı çözümleri dikkatlice tekrar çalışmanız önerilir.';
+  else msg = '📖 <strong>TEKRAR GEREKLİ.</strong> Bu denemedeki performansınız başarı sınırının altında. Konu anlatımını baştan gözden geçirmeniz ve ilgili bölümlerin sorularını tekrar çözmeniz faydalı olacaktır.';
+  msg += `<br><span style="font-size:12.5px;color:var(--muted);font-weight:600;">Net = Doğru − (Yanlış ÷ 4) | Her soru 5 puan | 4 yanlış 1 doğruyu götürür</span>`;
+  document.getElementById('resMsg').innerHTML = msg;
+  resultEl.classList.add('show');
+  resultEl.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+/* ---- COMPLETION CHECK (tüm sorular cevaplandığında otomatik bitir) ---- */
+function checkCompletion(){
+  const testIdx = state.currentTest;
+  if (state.timers[testIdx].finished) return;
+  const ans = state.answers[testIdx];
+  const allAnswered = ans.every(a => a !== null);
+  if (allAnswered && state.timers[testIdx].running){
+    if (confirm('Tüm soruları cevapladınız! Sınavı şimdi bitirmek ister misiniz? (İptal ederseniz süre işlemeye devam eder)')) {
+      state.timers[testIdx].finished = true;
+      state.timers[testIdx].running = false;
+      if (state.timers[testIdx].intervalId){
+        clearInterval(state.timers[testIdx].intervalId);
+        state.timers[testIdx].intervalId = null;
+      }
+      updateTimerButtons();
+      showResult();
+    }
+  }
+}
+
+/* ---- INTRO TOGGLE ---- */
+document.getElementById('introHead').addEventListener('click', function(){
+  this.classList.toggle('closed');
+  document.getElementById('introBody').classList.toggle('hidden');
+});
+
+/* ---- TIMER BUTTON EVENTS ---- */
+startBtn.addEventListener('click', startTimer);
+pauseBtn.addEventListener('click', pauseTimer);
+finishBtn.addEventListener('click', ()=>finishTimer(false));
+
+/* ---- INIT ---- */
+document.getElementById('yil').textContent = new Date().getFullYear();
+buildTabs();
+render();
+updateTimerDisplay();
+updateTimerButtons();
+
+/* ---- SAYFA KAPATILIRKEN UYARI ---- */
+window.addEventListener('beforeunload', function(e){
+  const anyRunning = state.timers.some(t => t.running);
+  if (anyRunning){
+    e.preventDefault();
+    e.returnValue = '';
+    return '';
+  }
+});
+</script>
+
+</body>
+</html>

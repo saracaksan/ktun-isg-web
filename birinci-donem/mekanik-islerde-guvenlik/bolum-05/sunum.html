@@ -1,1 +1,1021 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mekanik İşlerde Güvenlik · Bölüm 05 · Sunum</title><style>*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#172033}a{text-decoration:none;color:inherit}.top{background:linear-gradient(135deg,#071a33,#1769aa);color:white}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:900}.brand small{display:block;color:#b9cce0;font-size:10px;margin-top:4px}.back{border:1px solid #ffffff2b;padding:9px 13px;border-radius:9px;font-size:11px;background:#ffffff0d}.hero{padding:52px 0}.eyebrow{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#b9e7ff;font-weight:800}.hero h1{font-size:clamp(30px,4vw,48px);margin:14px 0 8px;line-height:1.08}.hero p{color:#cbd9e6;font-size:13px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{font-size:10px;padding:7px 10px;border-radius:8px;background:#ffffff12;border:1px solid #ffffff18}main{padding:35px 0 70px}.head{margin-bottom:20px}.head h2{margin:0;color:#071a33}.head p{color:#64748b;font-size:11px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 5px 22px #0f172a0a}.num{width:34px;height:34px;border-radius:9px;background:#eef6fc;color:#1769aa;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}.card h3{margin:14px 0 7px;font-size:15px}.card p{font-size:10px;color:#64748b}.links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px}.links a{font-size:9px;font-weight:800;color:#1769aa;background:#f6f9fc;border:1px solid #e7edf3;border-radius:8px;padding:10px 5px;text-align:center}.empty{padding:20px;background:white;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b;font-size:11px}.footer{background:#04101f;color:#91a6bb;padding:25px 0;font-size:10px;line-height:1.7}@media(max-width:700px){.grid{grid-template-columns:1fr}.links{grid-template-columns:1fr}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}}</style></head><body><header class="top"><div class="wrap nav"><div class="brand">KTÜN · İSG Eğitim Portalı<small>2026–2027</small></div><a class="back" href="../../index.html">← Ders Ana Sayfası</a></div><div class="wrap hero"><span class="eyebrow">Mekanik İşlerde Güvenlik</span><h1>Bölüm 05</h1><p>Sunum</p><div class="meta"><span class="pill">Bölüm 05</span><span class="pill">Sunum</span></div></div></header><main><div class="wrap"><div class="empty">Bu alan içerik eklenmesi için hazırdır. Şu anda boş bırakılmıştır.</div></div></main><footer class="footer"><div class="wrap">Hazırlayan: Sıraç AKSAN · 0506 928 22 10 · saracaksan@gmail.com</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bakım Onarım İşlerinde İSG - Soru Bankası ve Çalışma Rehberi">
+<meta name="author" content="Sıraç Aksan">
+<title>Bakım Onarım İşlerinde İSG — Soru Bankası ve Çalışma Rehberi</title>
+<style>
+:root{
+  --primary:#0d47a1;
+  --primary-dark:#082f6b;
+  --primary-light:#e8f0fb;
+  --accent:#1976d2;
+  --success:#1b8a3a;
+  --success-bg:#e6f5ec;
+  --success-border:#a8dbb8;
+  --danger:#c62828;
+  --danger-bg:#fdecec;
+  --danger-border:#f0b4b4;
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --text:#1f2937;
+  --text-dark:#0f172a;
+  --muted:#5b6b7f;
+  --border:#dbe4f0;
+  --radius:14px;
+  --shadow:0 6px 22px rgba(13,71,161,.08);
+  --shadow-lg:0 14px 40px rgba(13,71,161,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  font-family:'Segoe UI',Roboto,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  font-size:16px;
+  padding-bottom:40px;
+}
+img{max-width:100%;height:auto;}
+a{color:var(--primary);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.container{max-width:1080px;margin:0 auto;padding:0 16px;}
+
+/* ===================== HEADER ===================== */
+.site-header{
+  background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 55%,var(--accent) 100%);
+  color:#fff;
+  padding:26px 0 22px;
+  box-shadow:var(--shadow-lg);
+  position:relative;
+  overflow:hidden;
+}
+.site-header::after{
+  content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;
+  background:radial-gradient(circle,rgba(255,255,255,.14),transparent 70%);
+  border-radius:50%;
+}
+.brand{display:flex;align-items:center;gap:14px;position:relative;z-index:2;}
+.brand-badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:58px;height:58px;border-radius:14px;flex:0 0 auto;
+  background:rgba(255,255,255,.16);
+  border:1.5px solid rgba(255,255,255,.4);
+  font-weight:800;font-size:17px;letter-spacing:.5px;
+  backdrop-filter:blur(4px);
+}
+.brand h1{
+  font-size:clamp(17px,2.4vw,23px);
+  font-weight:700;letter-spacing:.2px;line-height:1.25;
+}
+.brand .sub{
+  font-size:clamp(12px,1.6vw,14px);
+  opacity:.92;margin-top:3px;font-weight:500;
+}
+.top-nav{
+  display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;
+  position:relative;z-index:2;
+}
+.top-nav a{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 15px;border-radius:10px;
+  background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.22);
+  color:#fff !important;font-size:13.5px;font-weight:600;
+  text-decoration:none !important;
+  transition:all .22s ease;
+  white-space:nowrap;
+}
+.top-nav a:hover{
+  background:rgba(255,255,255,.28);
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(0,0,0,.18);
+}
+
+/* ===================== INTRO ===================== */
+.intro-box{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  border:1px solid var(--border);
+  margin-top:26px;
+  overflow:hidden;
+}
+.intro-head{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:18px 22px;cursor:pointer;
+  background:linear-gradient(90deg,#f7faff,#eef4fd);
+  border-bottom:1px solid var(--border);
+}
+.intro-head h2{
+  font-size:16px;color:var(--primary-dark);font-weight:700;
+  display:flex;align-items:center;gap:10px;
+}
+.intro-head .chev{
+  font-size:18px;color:var(--primary);transition:transform .3s ease;flex:0 0 auto;
+}
+.intro-head.closed .chev{transform:rotate(-90deg);}
+.intro-body{padding:20px 22px 24px;}
+.intro-body.hidden{display:none;}
+.intro-body p{margin-bottom:12px;font-size:15px;color:#374151;text-align:justify;}
+.intro-body h3{
+  font-size:15px;color:var(--primary-dark);margin:18px 0 10px;font-weight:700;
+}
+.intro-body ul{margin:8px 0 12px 4px;list-style:none;}
+.intro-body ul li{
+  position:relative;padding-left:22px;margin-bottom:9px;font-size:14.5px;color:#374151;
+}
+.intro-body ul li::before{
+  content:"";position:absolute;left:4px;top:10px;width:8px;height:8px;
+  border-radius:50%;background:var(--accent);
+}
+.intro-body table{
+  width:100%;border-collapse:collapse;margin:14px 0;
+  font-size:13.5px;
+}
+.intro-body table th,.intro-body table td{
+  border:1px solid var(--border);padding:9px 11px;text-align:left;
+}
+.intro-body table th{
+  background:linear-gradient(90deg,#eef4fd,#e2ecfa);
+  color:var(--primary-dark);font-weight:700;
+}
+.intro-body table tr:nth-child(even) td{background:#f9fbff;}
+
+/* ===================== TABS ===================== */
+.tabs{
+  display:flex;gap:10px;margin-top:26px;flex-wrap:wrap;
+}
+.tab-btn{
+  flex:1 1 200px;
+  padding:14px 16px;border-radius:12px;border:2px solid var(--border);
+  background:var(--card);color:var(--muted);cursor:pointer;
+  font-size:14px;font-weight:700;text-align:left;
+  transition:all .22s ease;font-family:inherit;
+  display:flex;flex-direction:column;gap:3px;
+}
+.tab-btn .tt{font-size:15px;color:var(--primary-dark);}
+.tab-btn .ts{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;}
+.tab-btn:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow);}
+.tab-btn.active{
+  background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+  border-color:var(--primary-dark);color:#fff;
+  box-shadow:var(--shadow-lg);
+}
+.tab-btn.active .tt,.tab-btn.active .ts{color:#fff;}
+
+/* ===================== SCORE BAR ===================== */
+.score-bar{
+  position:sticky;top:0;z-index:50;
+  margin-top:18px;
+  background:linear-gradient(90deg,var(--primary-dark),var(--primary));
+  color:#fff;border-radius:var(--radius);
+  padding:12px 18px;
+  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;
+  box-shadow:var(--shadow-lg);
+  font-size:13.5px;font-weight:600;
+}
+.score-bar .grp{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+.score-bar .item{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;}
+.score-bar .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+.dot-green{background:#5ee27f;}
+.dot-red{background:#ff8181;}
+.dot-gray{background:#c8d3e3;}
+.score-bar .puan{
+  background:rgba(255,255,255,.18);padding:6px 14px;border-radius:9px;
+  border:1px solid rgba(255,255,255,.28);font-size:14px;
+}
+.score-bar .puan strong{font-size:17px;}
+
+/* ===================== NAVIGATOR ===================== */
+.navigator{
+  display:flex;flex-wrap:wrap;gap:7px;margin-top:18px;
+  padding:14px;background:var(--card);border-radius:var(--radius);
+  border:1px solid var(--border);box-shadow:var(--shadow);
+}
+.nav-chip{
+  width:38px;height:38px;border-radius:9px;border:2px solid var(--border);
+  background:#f7faff;color:var(--muted);font-weight:700;font-size:13.5px;
+  cursor:pointer;transition:all .18s ease;font-family:inherit;
+  display:inline-flex;align-items:center;justify-content:center;
+}
+.nav-chip:hover{transform:translateY(-2px);border-color:var(--accent);}
+.nav-chip.correct{background:var(--success);border-color:var(--success);color:#fff;}
+.nav-chip.wrong{background:var(--danger);border-color:var(--danger);color:#fff;}
+.nav-chip.current{
+  outline:3px solid var(--accent);outline-offset:2px;
+  box-shadow:0 0 0 2px #fff inset;
+}
+
+/* ===================== QUESTION CARD ===================== */
+.q-card{
+  margin-top:18px;background:var(--card);border-radius:var(--radius);
+  border:1px solid var(--border);box-shadow:var(--shadow);
+  padding:22px 22px 26px;
+  animation:fadeUp .35s ease;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.q-meta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  margin-bottom:14px;
+}
+.q-badge{
+  background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+  color:#fff;font-weight:800;font-size:13px;
+  padding:7px 15px;border-radius:9px;letter-spacing:.3px;
+}
+.q-topic{
+  font-size:12px;font-weight:700;color:var(--accent);
+  background:var(--primary-light);padding:6px 12px;border-radius:8px;
+  text-transform:uppercase;letter-spacing:.4px;
+}
+/* SORU KÖKÜ — KALIN VE KOYU RENK */
+.q-text{
+  font-size:15.5px;color:var(--text-dark);line-height:1.75;
+  margin-bottom:20px;text-align:justify;
+  font-weight:600;
+}
+.q-text u{
+  text-decoration:underline;
+  text-decoration-color:var(--danger);
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+  font-weight:800;
+}
+
+/* Options */
+.options{display:flex;flex-direction:column;gap:10px;}
+.option{
+  display:flex;gap:13px;align-items:flex-start;
+  padding:13px 15px;border-radius:11px;
+  border:2px solid var(--border);background:#fbfdff;
+  cursor:pointer;transition:all .2s ease;
+  text-align:left;font-family:inherit;font-size:14.5px;color:#26303d;
+  width:100%;line-height:1.6;
+  font-weight:400;
+}
+.option:hover:not(.disabled){
+  border-color:var(--accent);background:#f2f7ff;transform:translateX(3px);
+}
+.option .letter{
+  flex:0 0 auto;width:30px;height:30px;border-radius:8px;
+  background:var(--primary-light);color:var(--primary-dark);
+  font-weight:800;font-size:14px;
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:all .2s ease;
+}
+.option .otext{flex:1 1 auto;}
+.option.disabled{cursor:default;}
+.option.selected-correct{
+  background:var(--success-bg);border-color:var(--success-border);
+}
+.option.selected-correct .letter{background:var(--success);color:#fff;}
+.option.selected-wrong{
+  background:var(--danger-bg);border-color:var(--danger-border);
+}
+.option.selected-wrong .letter{background:var(--danger);color:#fff;}
+.option.reveal-correct{
+  background:var(--success-bg);border-color:var(--success-border);
+  box-shadow:0 0 0 2px rgba(27,138,58,.15) inset;
+}
+.option.reveal-correct .letter{background:var(--success);color:#fff;}
+.option.dim{opacity:.62;}
+
+/* Feedback */
+.feedback{
+  margin-top:16px;padding:14px 16px;border-radius:11px;
+  font-weight:700;font-size:14.5px;display:none;
+  align-items:center;gap:10px;
+}
+.feedback.show{display:flex;}
+.feedback.ok{background:var(--success-bg);color:var(--success);border:1.5px solid var(--success-border);}
+.feedback.no{background:var(--danger-bg);color:var(--danger);border:1.5px solid var(--danger-border);}
+.feedback .ico{font-size:20px;}
+
+/* ============ SOLUTION (KAPALI/İSTEĞE BAĞLI) ============ */
+.solution{
+  margin-top:16px;border-radius:12px;overflow:hidden;
+  border:1px solid var(--border);background:#fbfdff;
+}
+.solution-head{
+  background:linear-gradient(90deg,#eef4fd,#e2ecfa);
+  padding:14px 16px;font-weight:800;font-size:14px;color:var(--primary-dark);
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  user-select:none;
+}
+.solution-head.clickable{cursor:pointer;transition:background .2s ease;}
+.solution-head.clickable:hover{background:linear-gradient(90deg,#e2ecfa,#d4e3fa);}
+.solution-head .chev{
+  font-size:14px;color:var(--primary);transition:transform .3s ease;
+  display:inline-block;
+}
+.solution-head .chev.open{transform:rotate(180deg);}
+.solution-body{
+  padding:16px 18px 20px;font-size:14.5px;color:#2b3542;line-height:1.75;
+  border-top:1px solid var(--border);
+  display:none;
+}
+.solution-body.show{display:block;animation:fadeUp .3s ease;}
+.solution-body p{margin-bottom:11px;}
+.solution-body strong{color:var(--primary-dark);}
+.solution-body ul{margin:6px 0 12px 4px;list-style:none;}
+.solution-body ul li{
+  position:relative;padding-left:20px;margin-bottom:8px;font-size:14px;
+}
+.solution-body ul li::before{
+  content:"▸";position:absolute;left:3px;top:0;color:var(--accent);font-weight:800;
+}
+.solution-body u{
+  text-decoration:underline;
+  text-decoration-color:var(--danger);
+  text-decoration-thickness:2px;
+  text-underline-offset:2px;
+  font-weight:700;
+}
+.answer-tag{
+  display:inline-block;background:var(--success);color:#fff;
+  padding:3px 12px;border-radius:7px;font-size:13px;font-weight:800;
+  margin-left:6px;
+}
+
+/* Controls */
+.controls{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
+  margin-top:20px;
+}
+.btn{
+  padding:12px 22px;border-radius:11px;border:none;cursor:pointer;
+  font-family:inherit;font-size:14.5px;font-weight:700;
+  transition:all .2s ease;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+  color:#fff;box-shadow:0 6px 16px rgba(13,71,161,.28);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(13,71,161,.35);}
+.btn-ghost{
+  background:#eef4fd;color:var(--primary-dark);border:1.5px solid var(--border);
+}
+.btn-ghost:hover{background:#e2ecfa;border-color:var(--accent);}
+.btn:disabled{opacity:.42;cursor:not-allowed;transform:none !important;box-shadow:none !important;}
+
+/* Result Card */
+.result-card{
+  margin-top:18px;background:var(--card);border-radius:var(--radius);
+  border:2px solid var(--success-border);box-shadow:var(--shadow-lg);
+  padding:26px 22px;text-align:center;
+  display:none;animation:fadeUp .4s ease;
+}
+.result-card.show{display:block;}
+.result-card h3{
+  font-size:19px;color:var(--primary-dark);margin-bottom:6px;
+}
+.result-card .res-sub{font-size:13.5px;color:var(--muted);margin-bottom:18px;}
+.res-grid{
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:18px;
+}
+.res-item{
+  flex:1 1 130px;max-width:180px;
+  padding:16px 12px;border-radius:12px;
+  background:#f7faff;border:1.5px solid var(--border);
+}
+.res-item .num{font-size:26px;font-weight:800;line-height:1.1;}
+.res-item .lbl{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-top:4px;}
+.res-item.ok .num{color:var(--success);}
+.res-item.no .num{color:var(--danger);}
+.res-item.score .num{color:var(--primary);}
+.res-item.score{background:var(--primary-light);border-color:#bcd4f2;}
+.res-msg{
+  font-size:14.5px;font-weight:700;padding:12px 16px;border-radius:10px;
+  background:#f7faff;border:1px dashed var(--border);color:var(--primary-dark);
+}
+
+/* ===================== FOOTER ===================== */
+.site-footer{
+  margin-top:44px;
+  background:linear-gradient(135deg,#0b1f3a,#0d47a1);
+  color:#dbe6f5;padding:32px 0 26px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1fr;gap:20px;
+}
+@media(min-width:760px){
+  .footer-grid{grid-template-columns:1.4fr 1fr;}
+}
+.footer-grid h4{
+  color:#fff;font-size:15px;margin-bottom:9px;font-weight:700;
+}
+.footer-grid p,.footer-grid a{font-size:13.5px;color:#c3d3ea;line-height:1.75;}
+.footer-grid a{color:#8fc0ff;}
+.footer-grid a:hover{color:#fff;}
+.footer-bottom{
+  margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.14);
+  font-size:12.5px;color:#9fb4d0;text-align:center;line-height:1.7;
+}
+.footer-bottom strong{color:#fff;}
+
+/* ===================== RESPONSIVE ===================== */
+@media(max-width:640px){
+  body{font-size:15px;}
+  .brand{flex-direction:row;align-items:flex-start;}
+  .brand-badge{width:48px;height:48px;font-size:14px;border-radius:12px;}
+  .top-nav a{padding:8px 12px;font-size:12.5px;}
+  .intro-head{padding:15px 16px;}
+  .intro-body{padding:16px 16px 20px;}
+  .intro-body table{font-size:12px;}
+  .intro-body table th,.intro-body table td{padding:7px 8px;}
+  .q-card{padding:18px 15px 22px;}
+  .q-text{font-size:14.5px;text-align:left;}
+  .option{padding:11px 12px;font-size:14px;}
+  .option .letter{width:27px;height:27px;font-size:13px;}
+  .nav-chip{width:34px;height:34px;font-size:12.5px;}
+  .score-bar{padding:11px 13px;font-size:12.5px;gap:8px 12px;}
+  .score-bar .puan{font-size:13px;padding:5px 11px;}
+  .score-bar .puan strong{font-size:15px;}
+  .controls{flex-direction:column-reverse;}
+  .controls .btn{width:100%;justify-content:center;}
+  .tab-btn{padding:12px 13px;}
+  .tab-btn .tt{font-size:14px;}
+}
+@media(min-width:900px){
+  .q-text{font-size:16px;}
+  .option{font-size:15px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <span class="brand-badge">İSG</span>
+      <div>
+        <h1>Bakım Onarım İşlerinde İSG</h1>
+        <p class="sub">Soru Bankası ve Çalışma Rehberi — 10 Soruluk Çözümlü Uzman Değerlendirmesi</p>
+      </div>
+    </div>
+    <nav class="top-nav">
+      <a href="../../../index.html">🏠 Ana Sayfa</a>
+      <a href="../index.html">📚 Ders Ana Sayfası</a>
+      <a href="konu-anlatimi.html">📖 Konu Anlatımı</a>
+      <a href="sunum.html">📊 Sunum</a>
+      <a href="../bolum-01/konu-anlatimi.html">⬅️ Önceki Bölüm</a>
+      <a href="../bolum-02/konu-anlatimi.html">➡️ Sonraki Bölüm</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- ================= INTRO ================= -->
+  <section class="intro-box">
+    <div class="intro-head" id="introHead">
+      <h2>📘 Sınav Yapısı, Metodolojik Yaklaşım ve Soru Bankası Kullanım Kılavuzu</h2>
+      <span class="chev">▾</span>
+    </div>
+    <div class="intro-body" id="introBody">
+      <p>Endüstriyel tesislerde ve karmaşık üretim sahalarında gerçekleştirilen bakım-onarım faaliyetleri, statik çalışma koşullarından niteliksel olarak ayrılan, dinamik risk profillerine ve yüksek kaza potansiyeline sahip süreçlerdir. Bu kritik alanda görev yapan veya denetim yetkisini haiz İş Sağlığı ve Güvenliği (İSG) profesyonellerinin ölçme ve değerlendirme süreçleri, yüzeysel mevzuat ezberinin ötesine geçmek zorundadır. Senaryo tabanlı ölçme metodolojisi; adayın teorik emniyet normlarını, sahadaki kaza öncesi belirteçleri (pre-accident indicators) ve zincirleme kaza mekanizmalarını teşhis edebilme kabiliyetini sınar. Bu doğrultuda hazırlanan sorular, doğrudan sahadaki önleyici bakım mekanizmalarının ve proaktif güvenlik kültürünün tesis edilmesine stratejik katkı sunmaktadır.</p>
+
+      <h3>Analitik Analiz ve Kapsam ("So What?" Katmanı)</h3>
+      <p>Dokümanda sunulan tüm teknik emniyet kuralları, hukuki düzenlemeler ve ekipman kontrol standartları pedagojik bir süzgeçten geçirilerek soru bankası modüllerine dönüştürülmüştür. Testolojinin temel ilkeleri çerçevesinde, ölçme araçlarının psikometrik kalitesini belirleyen "Madde Ayırt Edicilik İndeksi" (item discrimination index) ve "Çeldirici Çekicilik Gücü" (distractor attractiveness) parametreleri maksimum seviyeye çıkarılmıştır. Soruların kapsadığı Bloom Taksonomisi düzeyleri ve modüler dağılım matrisi aşağıda sunulmuştur:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Modül / Konu Alanı</th>
+            <th>Bilgi Düzeyi</th>
+            <th>Analiz Düzeyi</th>
+            <th>Sentez Düzeyi</th>
+            <th>Toplam Soru</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Modül 1: İş Ekipmanlarında Bakım-Onarım, Periyodik Kontroller ve Kumanda Güvenliği</td>
+            <td>1</td><td>2</td><td>2</td><td>5</td>
+          </tr>
+          <tr>
+            <td>Modül 2: El Aletleri Kullanımında Bakım-Onarım ve İş Güvenliği Protokolleri</td>
+            <td>0</td><td>3</td><td>1</td><td>4</td>
+          </tr>
+          <tr>
+            <td>Modül 3: Entegre Saha Senaryoları ve Karma Karmaşıklık Düzeyli Vaka Analizi</td>
+            <td>0</td><td>0</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <td><strong>Genel Dağılım Toplamı</strong></td>
+            <td><strong>1</strong></td><td><strong>5</strong></td><td><strong>4</strong></td><td><strong>10</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>5 seçenekli (A-E) olarak tasarlanan soruların vaka kurgularında, sahadaki gerçek mühendislik hataları, operatör inisiyatifleri ve bakımsızlık kök nedenleri esas alınmıştır. Çeldirici seçenekler; yüzeysel olarak doğru görünen ancak mevzuatsal veya teknik açıdan kritik bir güvenlik mantık hatası içeren yapıdadır. Adayların soruları çözerken sadece doğru şıkkı bulması yeterli kabul edilmemekte; her bir çeldiricinin neden yanlış olduğunu teknik gerekçelerle ayrıştırması beklenmektedir. Bu yöntem, adayın sahada denetim yaparken hatalı uygulamaları anında teşhis etme yetisini (diagnostic capability) üst seviyeye taşır.</p>
+    </div>
+  </section>
+
+  <!-- ================= TABS ================= -->
+  <div class="tabs" id="tabs"></div>
+
+  <!-- ================= SCORE BAR ================= -->
+  <div class="score-bar">
+    <div class="grp">
+      <span class="item"><span class="dot dot-green"></span> Doğru: <strong id="sDogru">0</strong></span>
+      <span class="item"><span class="dot dot-red"></span> Yanlış: <strong id="sYanlis">0</strong></span>
+      <span class="item"><span class="dot dot-gray"></span> Boş: <strong id="sBos">10</strong></span>
+    </div>
+    <div class="puan">Puan: <strong id="sPuan">0</strong> / 100</div>
+  </div>
+
+  <!-- ================= NAVIGATOR ================= -->
+  <div class="navigator" id="navigator"></div>
+
+  <!-- ================= TEST AREA ================= -->
+  <div id="testArea"></div>
+
+  <!-- ================= RESULT ================= -->
+  <div class="result-card" id="resultCard">
+    <h3 id="resTitle">Test Tamamlandı! 🎉</h3>
+    <p class="res-sub" id="resSub">Aşağıda bu testteki performans özetiniz yer almaktadır.</p>
+    <div class="res-grid">
+      <div class="res-item ok"><div class="num" id="rDogru">0</div><div class="lbl">Doğru</div></div>
+      <div class="res-item no"><div class="num" id="rYanlis">0</div><div class="lbl">Yanlış</div></div>
+      <div class="res-item"><div class="num" id="rBos">10</div><div class="lbl">Boş</div></div>
+      <div class="res-item score"><div class="num" id="rPuan">0</div><div class="lbl">Puan / 100</div></div>
+    </div>
+    <div class="res-msg" id="resMsg"></div>
+  </div>
+
+  <!-- ================= ANSWER KEY & DIAGNOSIS ================= -->
+  <section class="intro-box" style="margin-top:26px;">
+    <div class="intro-head" id="diagHead">
+      <h2>📝 Sınav Sonrası Analiz, Cevap Anahtarı ve Teşhis Rehberi</h2>
+      <span class="chev">▾</span>
+    </div>
+    <div class="intro-body" id="diagBody">
+      <p>Sınav sonrası değerlendirme süreçleri, adayın toplam doğru sayısını tespit etmenin ötesinde; teknik emniyet kurallarındaki ve mevzuat bilgisindeki boşlukları teşhis eden bir yönetsel araçtır. İSG yönetim sistemlerindeki sürekli iyileştirme (PUKÖ - Planla, Uygula, Kontrol Et, Önlem Al) döngüsü gereğince, yanlış yapılan maddeler üzerinden gerçekleştirilecek odaklanmış tekrarlar sahadaki olası insan hatalarını ve denetim gözden kaçırmalarını sıfırlamayı hedefler.</p>
+
+      <h3>Toplu Cevap Anahtarı Tablosu</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Soru No</th>
+            <th>Doğru Seçenek</th>
+            <th>İlgili Konu Başlığı</th>
+            <th>Bloom Seviyesi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>C</td><td>İş Ekipmanlarında Periyodik Kontroller ve Ekstra Durumlar</td><td>Analiz</td></tr>
+          <tr><td>2</td><td>D</td><td>Kumanda Cihazları ve Durdurma Sistemleri Hiyerarşisi</td><td>Sentez</td></tr>
+          <tr><td>3</td><td>B</td><td>Bakım Defteri ve Elektronik İmza Mevzuatı (5070 Sayılı Kanun)</td><td>Analiz</td></tr>
+          <tr><td>4</td><td>E</td><td>Hareketli Ekipman ve Devrilme Emniyeti (Çeyrek Tur Kuralı)</td><td>Bilgi</td></tr>
+          <tr><td>5</td><td>B</td><td>Uzaktan Kumandalı Ekipmanlar ve Yıldırım Riski</td><td>Sentez</td></tr>
+          <tr><td>6</td><td>D</td><td>Klasik El Aletlerinin Yanlış Kullanım Analizi</td><td>Analiz</td></tr>
+          <tr><td>7</td><td>B</td><td>Vurmalı Aletler Bakımı (Çapak Tıraşlama) ve Mengene Kullanımı</td><td>Analiz</td></tr>
+          <tr><td>8</td><td>A</td><td>Elektrikli ve Pnömatik El Aletlerinde Güvenlik Standartları</td><td>Analiz</td></tr>
+          <tr><td>9</td><td>E</td><td>El Aletlerinde Genel Tedbirler ve Saha Taşınma Kuralları</td><td>Sentez</td></tr>
+          <tr><td>10</td><td>E</td><td>Entegre Saha Denetimi ve Kök Neden Kaza Analizi</td><td>Sentez</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Kavramsal ve Mevzuat Odaklı Teşhis Rehberi</h3>
+      <ul>
+        <li><strong>1. veya 3. Soruda Hata Yaptıysanız:</strong> İş ekipmanlarında periyodik kontrol zorunlulukları ve bakım kayıt prosedürlerini gözden geçiriniz. Mevzuatsal odak: İş Ekipmanlarının Tasarım, İmalat ve Kullanımında İSG Kuralları Madde 1.b/2 ve Madde 2.13.1 maddelerini inceleyiniz. Doğal olaylar, 6 ay ve üzeri atıl kalma durumları ile çalışma şekli değişikliklerinden sonra yapılması gereken yetkili kontrolleri ve 5070 sayılı Elektronik İmza Kanununa göre günü gününe tutulması gereken dijital bakım defteri esaslarını yeniden çalışınız.</li>
+        <li><strong>2., 4. veya 5. Soruda Hata Yaptıysanız:</strong> Kumanda sistemleri hiyerarşisi, izolasyon emniyeti ve devrilme/uzaktan kumanda koruma standartlarını tekrar ediniz. İlgili yönetmeliğin Madde 2.1.2, 2.1.3, 2.4, 3.1.4 ve 1.3 maddelerine yoğunlaşınız. Durdurma sistemlerinin çalıştırma sistemlerine mutlak önceliğini, durdurma anında akışkan/elektrik enerjisinin kesilmesi ilkesini, hareketli ekipmanlarda çeyrek tur (90 derece) dönme sınırını ve uzaktan kumandalı sistemlerin kapsama alanı dışına çıkması halinde otomatik anında durma mekanizmalarını tekrar edin.</li>
+        <li><strong>6. veya 7. Soruda Hata Yaptıysanız:</strong> Klasik el aletlerinin tasarım amaçlarına uygun kullanımı ve vurmalı alet bakım standartlarını gözden geçiriniz. Eğelerin keski, anahtarların çekiç, bıçakların kanırtma aparatı olarak kullanılmasının yarattığı fiziksel tehlikeleri; zımba, murç ve çivilerin başlarındaki mantarlaşmış çapakların tıraşlanması gerekliliğini ve küçük parçalarla çalışırken mengene kullanımının zorunlu olduğunu yeniden inceleyiniz.</li>
+        <li><strong>8. veya 9. Soruda Hata Yaptıysanız:</strong> Elektrikli, pnömatik ve hidrolik el aletlerinde güvenlik ve genel saha taşıma kurallarını tekrar ediniz. Kullanım öncesi kablo/şase kontrolü prosedürlerini, havalı alet hortumlarında "whip-check" (kamçılamayı önleyici emniyet kablosu) ve emniyet pimi zorunluluğunu, sivri/keskin aletlerin cepte taşınmaması ve çalışır durumdaki makineye durdurulmadan müdahale edilmemesi kurallarını gözden geçiriniz.</li>
+        <li><strong>10. Soruda Hata Yaptıysanız:</strong> Entegre saha denetimi, kaza kırım analizi ve kök neden ayrıştırmasını çalışınız. Birden fazla güvensiz durum ve güvensiz davranışın birleştiği karmaşık endüstriyel senaryolarda; primer donanım/kumanda hataları ile sekonder insan kusurlarını mevzuat maddeleriyle doğru eşleştirme pratiklerine ağırlık veriniz.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>📌 Bakım Onarım İşlerinde İSG — Soru Bankası ve Çalışma Rehberi</h4>
+        <p>Bu soru bankası; iş ekipmanlarında bakım-onarım, periyodik kontroller, kumanda güvenliği, el aletleri kullanım protokolleri ve entegre saha senaryoları konularını kapsayan 10 adet senaryo tabanlı uzmanlık sorusu ve detaylı çözümlerinden oluşmaktadır.</p>
+      </div>
+      <div>
+        <h4>✉️ İletişim &amp; Telif</h4>
+        <p><strong>Hazırlayan:</strong> Sıraç Aksan</p>
+        <p><strong>E-posta:</strong> <a href="mailto:essaracaksan@gmail.com">essaracaksan@gmail.com</a></p>
+        <p>İletişim, geri bildirim, hata bildirimi ve kullanım izni talepleri için lütfen yukarıdaki e-posta adresinden iletişime geçiniz.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <strong>© Tüm Hakları Saklıdır.</strong> Bu dokümanın içeriği, soruları, çözümleri ve tasarımı <strong>Sıraç Aksan</strong>'a aittir. Yazılı izin alınmaksızın kopyalanamaz, çoğaltılamaz, değiştirilemez ve ticari amaçlarla kullanılamaz.<br>
+      © <span id="yil"></span> — İSG Uzmanlık Soru Bankası | Sürüm: Bakım Onarım İşlerinde İSG
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   BAKIM ONARIM İŞLERİNDE İSG — 10 SORU VERİSİ (TEK TEST)
+   ========================================================= */
+const TESTS = [
+  {
+    id: 1,
+    title: "Uzmanlık Testi",
+    subtitle: "Bakım Onarım İşlerinde İSG — 10 Soruluk Çözümlü Değerlendirme",
+    range: "Soru 1 – 10",
+    questions: [
+      {
+        n: 1,
+        topic: "Modül 1 · Periyodik Kontroller ve Ekstra Durumlar",
+        text: "Bir imalat fabrikasında gerçekleştirilen teknik denetimde, üretim hattında yer alan ağır bir iş ekipmanının 6 ay boyunca atıl durumda bırakılarak depoda muhafaza edildiği, ardından işletme ihtiyacı üzerine tekrar devreye alındığı tespit edilmiştir. Devreye alma sürecinde ekipmanın çalışma parametrelerinde radikal değişiklikler yapılmış ve bu süreçten kısa bir süre önce bölgede meydana gelen orta şiddetteki bir deprem sonrasında yetkili bir uzman tarafından kontrol gerçekleştirilmemiştir. İşveren, periyodik kontrol takviminde yer alan yıllık rutin kontrol süresinin henüz dolmadığını gerekçe göstererek ek bir kontrole gerek olmadığını iddia etmektedir. İş ekipmanlarının kullanımı ve kontrolüne ilişkin mevzuat hükümleri doğrultusunda, işverenin bu tutumu ve periyodik kontrol yükümlülüğü ile ilgili olarak aşağıdakilerden hangisi doğrudur?",
+        options: {
+          A: "Ekipmanın yıllık rutin periyodik kontrol süresi dolmadığı sürece, deprem veya uzun süreli atıl kalma durumları hukuken ek kontrol zorunluluğu doğurmaz.",
+          B: "Çalışma şekli değişiklikleri ve deprem sonrasında periyodik kontrol yapılması sadece ekipman imalatçısının yazılı talebi veya şartnamesi varsa zorunlu hale gelir.",
+          C: "İş ekipmanındaki güvenliğin bozulmasına neden olabilecek kazalar, doğal olaylar, çalışma şekli değişiklikleri ve uzun süre kullanılmama durumlarından sonra periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontrollerin derhal yapılması sağlanmalıdır.",
+          D: "Ekipmanın depoda kaldığı süre boyunca mekanik aşınmaya maruz kalmayacağı varsayıldığından, sadece çalışma şekli değişikliği yapılan kısımların gözle muayenesi yeterli kabul edilir.",
+          E: "Doğal olaylar ve uzun süreli atıl kalma durumlarında kontrol yükümlülüğü işverene değil, ekipmanı kuran ve montajını yapan yetkili servise aittir."
+        },
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> İş Ekipmanlarının Tasarım, İmalat ve Kullanımında İSG Kuralları (Madde 1.b/2) uyarınca; iş ekipmanının güvenliğinin bozulmasına neden olabilecek çalışma şeklinde değişiklikler, kazalar, doğal olaylar (örn. deprem) veya ekipmanın uzun süre kullanılmaması (örn. 6 ay atıl kalma) gibi durumlardan sonra, arızanın zamanında belirlenip giderilmesi ve sağlık/güvenlik koşullarının korunması amacıyla periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontrollerin derhal yapılması sağlanmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Rutin periyodik kontrol süresi dolmamış olsa dahi, mevzuatta açıkça belirtilen ekstra durumların (deprem, 6 ay atıl kalma) gerçekleşmesi durumunda ek kontrol yapılması yasal bir zorunluluktur.</li><li>B Şıkkı <u>Yanlıştır</u>: Kontrol zorunluluğu imalatçının yazılı talebine veya insiyatifine bağlı değildir; doğrudan mevzuatın işverene yüklediği kanuni bir ödevdir.</li><li>D Şıkkı <u>Yanlıştır</u>: Uzun süre kullanılmayan ve deprem şokuna maruz kalan ekipmanda kasanın ve iç mekanizmaların bütünsel kontrolü gerekir; sadece çalışma şekli değişen kısmın gözle muayenesi teknik olarak yetersizdir.</li><li>E Şıkkı <u>Yanlıştır</u>: 6331 sayılı Kanun ve ilgili yönetmelikler uyarınca iş ekipmanlarının periyodik kontrolünü yaptırma sorumluluğu doğrudan işverene aittir, yetkili servise devredilemez.</li></ul>'
+      },
+      {
+        n: 2,
+        topic: "Modül 1 · Kumanda Cihazları ve Durdurma Sistemleri Hiyerarşisi",
+        text: "Bir endüstriyel tesisteki iş ekipmanının kumanda ve durdurma sistemleri üzerinde yapılan başdenetim incelemesinde şu teknik eksiklikler tespit edilmiştir:<br>• Kumanda cihazları zorunlu bir hal bulunmamasına rağmen doğrudan yüksek riskli tehlikeli bölgenin içerisine monte edilmiştir.<br>• Ekipmanın çalıştırılmasıyla ilgili kumanda altyapısında, acil durdurma ve başlatma sistemleri aynı hiyerarşik seviyede tasarlanmıştır.<br>• Ekipmanın tehlikeli kısımları durdurma kumandası ile kapatıldığında, tahrik mekanizmasını harekete geçiren ana enerji kaynağı kesilmemekte, hatta voltaj/basınç beslemesi devam etmektedir.<br>İş ekipmanlarında bulunan kumanda cihazları ve durdurma sistemlerinin güvenlik gerekleri dikkate alındığında, yapılan aşağıdaki değerlendirmelerden hangisi teknik ve hukuki olarak doğrudur?",
+        options: {
+          A: "Tehlikeli bölge içine kumanda cihazı yerleştirilmesi, operatörün operasyona hızlı müdahale etmesini sağladığı için mevzuata uygundur.",
+          B: "İş ekipmanlarının çalıştırma sistemleri, üretim sürekliliğinin korunması amacıyla durdurma sistemlerine göre her zaman öncelikli olmalıdır.",
+          C: "Ekipman durdurulduğunda harekete geçiren enerjinin kesilmemesi, sistemin yeniden hızlı başlatılmasına imkan tanıdığı için kabul edilebilir bir teknik uygulamadır.",
+          D: "Kumanda cihazları zorunlu haller dışında tehlikeli bölgenin dışına yerleştirilmeli, durdurma sistemleri çalıştırma sistemlerine öncelikli olmalı ve durdurma gerçekleştiğinde enerjiyi de kesecek özellikte olmalıdır.",
+          E: "İstem dışı hareket riski bulunsun veya bulunmasın, kumanda cihazlarının işaretlenmiş olması tüm tasarımsal güvenlik gereksinimlerini tek başına karşılar."
+        },
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> İş Ekipmanlarının Tasarım, İmalat ve Kullanımında İSG Kuralları (Madde 2.1.2, 2.1.3 ve 2.4) uyarınca; 1) Kumanda cihazları zorunlu haller dışında tehlikeli bölgenin dışına yerleştirilmeli ve istem dışı hareketlerde tehlikeye yol açmamalıdır. 2) İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre öncelikli olmalıdır. 3) Ekipman veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özellikte tasarlanmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Kumanda cihazlarının tehlikeli bölge içine konulması operasyonel kolaylık sağlasa da zorunlu haller dışında açık bir güvenlik ihlalidir.</li><li>B Şıkkı <u>Yanlıştır</u>: Çalıştırma değil, durdurma sistemleri her koşulda mutlak önceliğe sahip olmalıdır.</li><li>C Şıkkı <u>Yanlıştır</u>: Durdurma sağlandığında enerjinin kesilmemesi, istem dışı yeniden başlama veya elektrik/hidrolik kaçak riskleri yaratacağından ağır bir teknik kusurdur.</li><li>E Şıkkı <u>Yanlıştır</u>: Cihazların sadece belirgin veya işaretlenmiş olması, konumlandırma ve enerji izolasyon emniyeti şartlarını ortadan kaldırmaz.</li></ul>'
+      },
+      {
+        n: 3,
+        topic: "Modül 1 · Bakım Defteri ve Elektronik İmza Mevzuatı (5070 Sayılı Kanun)",
+        text: "Bir imalat tesisinde bakımdan sorumlu makine mühendisi, makinelerin bakım ve onarım işlemlerini haftalık toplu taslaklar halinde kağıt evraklara kaydetmekte ve ay sonunda arşivlemektedir. Tesis yönetimi, dijital dönüşüm süreci kapsamında bakım kayıtlarını elektronik ortama taşımayı planlamakta ancak hukuki geçerlilik ve denetim standartları açısından tereddüt yaşamaktadır. İş ekipmanlarının bakım defteri süreçleri ve ilgili mevzuat hükümleri göz önüne alındığında, aşağıdaki ifadelerden hangisi hukuken ve teknik olarak doğrudur?",
+        options: {
+          A: "Bakım defteri işlemleri haftalık periyotlarla toplu tutulabilir; elektronik ortamdaki kayıtların ise denetimlerde hiçbir hukuki geçerliliği yoktur.",
+          B: "Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe işlenmeli; 5070 sayılı Elektronik İmza Kanununa uygun güvenli elektronik imza ile imzalanmış elektronik kayıtlar da bakım defteri olarak kabul edilmelidir.",
+          C: "Elektronik ortamda saklanan bakım kayıtlarının geçerli sayılması için mutlaka noter onaylı dijital zaman damgası ve mühür bulunması şarttır.",
+          D: "Bakım kayıtlarının günü gününe işlenmesi zorunluluğu sadece garanti kapsamındaki makineler için geçerli olup, diğer ekipmanlarda ayda bir kayıt tutulması yeterlidir.",
+          E: "Güvenli elektronik imza kullanılsa dahi, ıslak imzalı fiziksel bakım defterinin eşzamanlı olarak saklanmaması mevzuata açık aykırılık oluşturur."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> İş Ekipmanlarının Tasarım, İmalat ve Kullanımında İSG Kuralları (Madde 2.13.1) uyarınca; bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe bu deftere işlenir. Aynı maddede, 5070 sayılı Elektronik İmza Kanununa uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtların da bakım defteri olarak kabul edileceği açıkça hükme bağlanmıştır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Bakım kayıtlarının haftalık tutulması mevzuata aykırıdır (günü gününe olmalıdır); ayrıca güvenli e-imzalı elektronik kayıtlar hukuken geçerlidir.</li><li>C Şıkkı <u>Yanlıştır</u>: Mevzuat 5070 sayılı Kanun kapsamındaki güvenli e-imzayı yeterli görmekte, ek bir noter tasdiki veya mühür şartı koşmamaktadır.</li><li>D Şıkkı <u>Yanlıştır</u>: Günü gününe kayıt tutma zorunluluğu garanti süresinden bağımsız olarak bakım defteri olan tüm makineler için geçerlidir.</li><li>E Şıkkı <u>Yanlıştır</u>: Mevzuata uygun elektronik kayıtlar bakım defteri yerine geçtiği için ek olarak fiziksel kağıt defter tutma zorunluluğu bulunmamaktadır.</li></ul>'
+      },
+      {
+        n: 4,
+        topic: "Modül 1 · Hareketli Ekipman ve Devrilme Emniyeti (Çeyrek Tur Kuralı)",
+        text: "Açık saha operasyonlarında kullanılan ve üzerinde çalışan personel bulunan hareketli bir iş ekipmanının devrilme riskine karşı güvenlik donanımları incelenmektedir. Ekipmanın devrilme analizi yapılırken devrilme açısı, koruyucu yapı (ROPS) gereksinimleri ve çalışanın etrafındaki emniyet alanları değerlendirilmektedir. Üzerinde çalışan bulunan hareketli iş ekipmanlarının normal çalışma koşullarında devrilme riskine karşı taşıması gereken emniyet standartları ile ilgili olarak aşağıdakilerden hangisi <u>yanlıştır</u>?",
+        options: {
+          A: "Ekipman, bir çeyrekten (90 derecelik açı) fazla dönmeyecek şekilde tasarlanmış ve imal edilmiş olmalıdır.",
+          B: "Ekipman bir çeyrekten fazla dönüyorsa, üzerinde bulunan çalışanın etrafında yeterli açıklık bulunmalıdır.",
+          C: "Devrilme riskine karşı aynı koruma etkisini sağlayacak başka bir koruyucu yapı veya sistem bulunmalıdır.",
+          D: "Devrilmeye karşı koruyucu yapı veya sistem, iş ekipmanının kendi parçası olarak entegre edilebilir.",
+          E: "Üzerinde çalışan bulunan hareketli ekipmanlarda devrilme açısı 180 dereceyi geçmediği sürece herhangi bir ek koruyucu yapı veya açıklık şartı aranmaz."
+        },
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> İş Ekipmanlarının Tasarım, İmalat ve Kullanımında İSG Kuralları (Madde 3.1.4) uyarınca; üzerinde çalışan bulunan hareketli iş ekipmanı devrilme riskine karşı: a) Cihaz bir çeyrekten (90 derecelik açı) fazla dönmeyecek şekilde yapılır, veya b) Bir çeyrekten fazla dönüyorsa etrafında yeterli açıklık bulunur, veya c) Aynı etkiyi sağlayacak koruyucu yapı/sistem bulunmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur (Yanlış önerme değildir): Çeyrek tur (90 derece) dönmeme kuralı temel mevzuat maddesidir.</li><li>B Şıkkı Doğrudur: Çeyrek turdan fazla dönme durumunda çalışan etrafında emniyet açıklığı bırakılması zorunludur.</li><li>C Şıkkı Doğrudur: Eşdeğer koruma sağlayan alternatif koruyucu sistemlerin kullanımı mevzuata uygundur.</li><li>D Şıkkı Doğrudur: ROPS gibi koruyucu yapıların ekipmanın kendi orijinal parçası olabileceği Madde 3.1.4.1\'de belirtilmiştir.</li><li>E Şıkkı <u>Yanlıştır</u> (Aranan yanlış önermedir): Mevzuatta 180 derece gibi bir istisna tanımı kesinlikle yoktur; kural çeyrek tur (90 derece) esasına dayanır.</li></ul>'
+      },
+      {
+        n: 5,
+        topic: "Modül 1 · Uzaktan Kumandalı Ekipmanlar ve Yıldırım Riski",
+        text: "Açık sahada yürütülen bir altyapı projesinde uzaktan kumandalı iş ekipmanları kullanılmaktadır. Çalışma sahasının genişliği ve meteorolojik koşullar dikkate alındığında, kumanda kapsama sınırı ihlalleri ve yıldırım düşme tehlikesi operasyonel risk olarak tanımlanmıştır. Uzaktan kumandalı iş ekipmanlarının kullanımı, kontrol sınırları, çarpma/ezilme riskleri ve dış ortam etkenleri ile ilgili mevzuat kurallarına göre aşağıdakilerden hangisi zorunlu bir emniyet tedbiridir?",
+        options: {
+          A: "Uzaktan kumandalı iş ekipmanı kontrol sınırlarının dışına çıktığında, operatör manuel müdahale edene kadar en son gönderilen komut doğrultusunda hareketine devam etmelidir.",
+          B: "Uzaktan kumandalı iş ekipmanı, kontrol sınırlarının dışına çıkması halinde otomatik olarak hemen duracak şekilde olmalı ve normal şartlarda çarpma/ezilme risklerine karşı korunmalıdır.",
+          C: "Kullanımı sırasında yıldırım düşmesi ihtimali bulunan iş ekipmanlarında risk sadece operasyonun durdurulmasıyla yönetilir, ekipman üzerinde ek bir yıldırımdan korunma donanımı aranmaz.",
+          D: "Uzaktan kumandalı ekipmanların hareketli kısımları ile çevre arasındaki emniyet mesafesi önemsiz olup, sadece sesli ikaz sisteminin aktif olması yeterlidir.",
+          E: "Uzaktan kumandalı sistemlerde çarpma ve ezilme riski tamamen operatörün kişisel dikkatine bağlıdır, ekipman üzerinde teknik bir koruyucu yapı bulunması gerekmez."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> İş Ekipmanlarının Tasarım, İmalat ve Kullanımında İSG Kuralları (Madde 1.3 ve Madde 3.1.4/f, g) uyarınca; uzaktan kumandalı iş ekipmanı kontrol sınırlarının dışına çıkması halinde otomatik olarak hemen duracak yapıda olmalı ve normal şartlarda çarpma/ezilme risklerine karşı korunmalıdır. Ayrıca kullanımı sırasında yıldırım düşme ihtimali olan ekipmanlar yıldırımın etkilerinden korunmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Kontrol sınırları dışına çıkan ekipman son komutla çalışmaya devam edemez, otomatik olarak anında durmalıdır.</li><li>C Şıkkı <u>Yanlıştır</u>: Yıldırım riski olan alanlarda kullanılan ekipmanların teknik olarak yıldırımdan korunma donanımına (paratoner/topraklama vb.) sahip olması Madde 1.3 uyarınca zorunludur.</li><li>D Şıkkı <u>Yanlıştır</u>: Hareketli kısımlar ile çevre arasında yeterli emniyet mesafesinin bırakılması teknik bir zorunluluktur.</li><li>E Şıkkı <u>Yanlıştır</u>: Çarpma ve ezilme koruması ekipman üzerinde bulunması gereken tasarımsal bir tedbirdir, sadece operatör dikkatine bırakılamaz.</li></ul>'
+      },
+      {
+        n: 6,
+        topic: "Modül 2 · Klasik El Aletlerinin Yanlış Kullanım Analizi",
+        text: "Bir mekanik bakım atölyesinde yürütülen denetimde teknik ekibin gerçekleştirdiği şu uygulamalar kayıt altına alınmıştır:<br>• Ahşap sapında çatlak bulunan ve başı gevşemiş bir çekiçle, sertleştirilmiş çelik malzeme üzerine doğrudan darbe vurulmaktadır.<br>• Bir bakım teknisyeni sıkışmış bir pano kapağını kanırtarak açmak için kesme bıçağını kullanmakta; diğer bir teknisyen ise eğenin sivri kuyruk kısmını keski gibi kullanarak metale çekiçle vurmaktadır.<br>• Sıkışan bir cıvatayı gevşetmekte zorlanan çalışan, el anahtarının sapına çekiçle vurmakta ve moment kolunu artırmak amacıyla anahtarın sapına rastgele bir demir boru takmaktadır.<br>Klasik el aletlerinin doğru kullanım amaçları ve kaza nedenleri dikkate alındığında, yukarıdaki vakada gerçekleşen hatalı davranışlar ile ilgili aşağıdakilerden hangisi <u>söylenemez</u>?",
+        options: {
+          A: "Eğeden keski yapmaya çalışmak veya bıçağı kapak kanırtmada kullanmak, el aletlerinin tasarım amaçları dışında kullanılmasına tipik birer örnektir.",
+          B: "El anahtarları cıvata sıkma/gevşetme amacı taşır; anahtar sapına çekiçle vurulması veya boru/çubuk gibi rastgele uzatma kollarının takılması mevzuatça açıkça yasaklanmış kaza nedenlerindendir.",
+          C: "Çatlak saplı çekiç kullanımı ve sert çelik dövmede uygunsuz çekiç seçimi, fırlama ve kırılma kaynaklı yaralanma risklerini doğrudan tetikler.",
+          D: "Cıvata gevşetme işlemlerinde tork yetersiz kaldığında anahtar sapına boru takılarak moment kolunun uzatılması, bakım standartlarınca kabul edilen pratik ve güvenli bir saha çözümüdür.",
+          E: "El aletlerinin bakımsız/arızalı olması ve amaçları dışında kullanılması, atölye ortamındaki yaralanmaların temel kök nedenleri arasında yer alır."
+        },
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Teknik Gerekçe:</strong> El Aletlerinde Alınması Gereken Genel Tedbirler başlığı altında açıkça belirtildiği üzere: "Boru ve çubuk gibi rastgele uzatma kolu kullanılmamalıdır." Ayrıca anahtarlar cıvataların sıkılması veya gevşetilmesi amacıyla tasarlanmış olup çekiç yerine kullanılması veya uzatma kolu takılarak aşırı tork yüklenmesi aletin kırılmasına ve fırlamasına yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Eğeden keski yapmak ve bıçakla kapak kanırtmak kaynak metinde sayılan tipik "amaç dışı kullanım" örnekleridir; ifade doğrudur.</li><li>B Şıkkı Doğrudur: Anahtarlara çekiçle vurulması ve uzatma kolu takılması yasaklanmış kaza nedenlerindendir; ifade doğrudur.</li><li>C Şıkkı Doğrudur: Çatlak saplı ve sertleştirilmiş malzemeye darbe vuran çekiç kullanımı fırlama ve parçalanma riski yaratır; ifade doğrudur.</li><li>D Şıkkı <u>Yanlıştır</u> (Aranan seçenektir): Anahtar sapına boru takılması mevzuatça açıkça yasaklanmıştır, güvenli bir saha çözümü değildir; ifade yanlıştır.</li><li>E Şıkkı Doğrudur: Bakımsız/arızalı alet kullanımı ve usulsüz yöntemler kaza kök nedenleridir; ifade doğrudur.</li></ul>'
+      },
+      {
+        n: 7,
+        topic: "Modül 2 · Vurmalı Aletler Bakımı ve Mengene Kullanımı",
+        text: "Atölye ortamında üzerine çekiçle vurularak çalışan zımba, murç ve çivi gibi el aletlerinin vurma başlarında zamanla ezilmeler, mantarlaşmalar ve çapaklar meydana gelmiştir. Ayrıca, matkap ve keski ile işlenen küçük metal parçalar çalışanlar tarafından elle tutularak sabitlenmeye çalışılmaktadır. Vurmalı el aletlerinin bakımı ve küçük parçalarla çalışma emniyet kurallarına göre aşağıdakilerden hangisi doğru bir uygulamadır?",
+        options: {
+          A: "Vurmalı aletlerin başlarında oluşan mantarlaşmış çapaklar, çekiç darbesini sönümlediği için olduğu gibi bırakılmalıdır.",
+          B: "Üzerine vurulmak suretiyle çalışan zımba, murç ve çivilerin başları zaman zaman tıraşlanarak çapak fırlamalarının önüne geçilmeli; küçük parçalarla çalışırken parça mutlaka mengene ile tutturulmalıdır.",
+          C: "Körelmiş bıçak, zımba ve matkap uçları, yüzeye uygulanan sürtünme kuvvetini artırarak daha hassas kesim sağladığı için tercih edilmelidir.",
+          D: "Küçük parçalar çalışan tarafından eldivenle sıkıca tutulduğu sürece mengene kullanımına gerek duyulmaz.",
+          E: "Vurmalı aletlerin başlarındaki çapaklar sadece estetik bir kusur olup, herhangi bir iş güvenliği veya yaralanma tehlikesi yaratmaz."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Teknik Gerekçe:</strong> El Aletlerinde Alınması Gereken Genel Tedbirler (A. Klasik El Aletleri) hükümleri uyarınca; üzerine vurulmak suretiyle çalışan zımbalar, murçlar ve çivilerin başları zaman zaman tıraşlanarak çapak fırlamalarının önüne geçilmelidir. Ayrıca, "Küçük parçalarla çalışırken mengene ile tutturulmadan çalışılmamalı" ve "Körelmiş bıçak, zımba ve matkap uçları kullanılmamalıdır" kuralları amirdir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Vurmalı alet başlarındaki mantarlaşmış çapaklar darbe anında yüksek hızla fırlayarak körlük ve saplanma yaralanmalarına yol açar, derhal tıraşlanmalıdır.</li><li>C Şıkkı <u>Yanlıştır</u>: Körelmiş uçların kullanılması kaymaya, aşırı kuvvet uygulanmasına ve iş kazasına sebep olur; kullanımı yasaktır.</li><li>D Şıkkı <u>Yanlıştır</u>: Küçük parçaların elle tutulması matkap veya keski kaymasında el yaralanmalarına yol açar, mengene şarttır.</li><li>E Şıkkı <u>Yanlıştır</u>: Çapaklar estetik değil, doğrudan göz ve vücut yaralanması yaratan ağır bir fiziksel tehlikedir.</li></ul>'
+      },
+      {
+        n: 8,
+        topic: "Modül 2 · Elektrikli ve Pnömatik El Aletlerinde Güvenlik Standartları",
+        text: "Bir bakım personeli, avuç içi taşlama makinesini priz kablosundan tutarak çekmek suretiyle çalışma alanına getirmiştir. Aletin kablo izolasyonunda kesikler olduğunu ve plastik şasesinde çatlak bulunduğunu görmesine rağmen işi yetiştirmek amacıyla kullanmaya başlamıştır. Aynı alanda çalışan diğer bir teknisyen ise yüksek basınçlı pnömatik (havalı) somun sıkma aletini kompresör hattına bağlarken hortum bağlantı noktasına emniyet pimi/mandalı takmamış ve \"whip-check\" (kamçılamayı önleyici emniyet kablosu) kullanmamıştır. Elektrikli ve pnömatik el aletlerinde alınması gereken güvenlik tedbirleri kapsamında yaşanan bu durum ile ilgili aşağıdakilerden hangisi teknik riskleri doğru ifade eder?",
+        options: {
+          A: "Elektrikli aletlerdeki kablo kesikleri ve şase çatlakları doğrudan elektrik şoku riski yaratırken; havalı aletlerde emniyet pimi ve kamçılama kablosunun bulunmaması, hortumun kopması durumunda yüksek basınçlı hortum fırlaması (kamçılama) kaynaklı ağır yaralanma riski oluşturur.",
+          B: "Elektrikli el aletlerinde şase çatlakları yalıtımı etkilemez, pnömatik aletlerde ise emniyet pimi kullanımı sadece 10 bar üzerindeki yüksek basınçlı sistemlerde zorunludur.",
+          C: "Aletin kablosundan veya basınç hortumundan çekilerek taşınması, bağlantı elemanlarını esnettiği için önerilen pratik bir taşıma yöntemidir.",
+          D: "Elektrikli ve havalı el aletlerinde kullanım öncesi kontrol sadece altı ayda bir yetkili bakımcı tarafından yapılır; kullanıcının her kullanım öncesi kontrol sorumluluğu yoktur.",
+          E: "Yalıtımı bozulmuş elektrik kablolarının bez bantla sarılması ve havalı alet hortumlarının tel ile bağlanması kalıcı ve tam güvenli bir teknik çözümdür."
+        },
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Teknik Gerekçe:</strong> El Aletlerinde Alınması Gereken Genel Tedbirler (B. Elektrikli, Pnömatik ve Hidrolik El Aletleri) uyarınca; elektrikli el aletlerinde yalıtımı bozulmuş, çatlak veya kesik kablolar kullanılmamalı, şase ve sap çatlakları her kullanımdan önce kullanıcı tarafından kontrol edilmelidir. Pnömatik (havalı) aletlerde ise hat kopmalarında hortumun yüksek basınçla kontrolsüz savrulmasını (kamçılama/whip action) önlemek için emniyet pimi/mandalı ve "whip-check" emniyet kablosu kullanımı teknik bir zorunluluktur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Şase çatlakları yalıtımı bozar; havalı aletlerde emniyet pimi ve kamçılama kablosu basınç değerinden bağımsız olarak tüm basınçlı hatlarda zorunludur.</li><li>C Şıkkı <u>Yanlıştır</u>: Aletin kablosundan veya hortumundan çekilerek taşınması iletken kopmalarına ve rekor gevşemelerine yol açar, yasaktır.</li><li>D Şıkkı <u>Yanlıştır</u>: Kontrol yükümlülüğü periyodik bakımların yanı sıra "her kullanımdan önce kullanıcı tarafından" yerine getirilmelidir.</li><li>E Şıkkı <u>Yanlıştır</u>: Bez bant veya tel ile geçici bağlamalar mevzuata aykırı olup hayati risk yaratır.</li></ul>'
+      },
+      {
+        n: 9,
+        topic: "Modül 2 · El Aletlerinde Genel Tedbirler ve Saha Taşınma Kuralları",
+        text: "Saha denetçisi, montaj ve bakım alanında yaptığı incelemelerde aşağıdaki operasyonel durumları tespit etmiştir:<br>1. Bir bakım teknisyeni, sivri uçlu tornavida ve açılan maket bıçağını iş tulumunun arka cebinde taşımaktadır.<br>2. Döner aksamı ve kırma mekanizması devam eden çalışır durumdaki bir kırma makinesine, makine durdurulmadan sıkışan malzemeyi çıkarmak amacıyla bir levye (manivela) ile müdahale edilmektedir.<br>3. Çalışma zemininin yağlı ve kaygan olduğu ortamda, hidrolik somun kesme aletinin yüksek basınç hortumu zorlanarak bükülmüştür.<br>El aletlerinde alınması gereken genel tedbirler ve tehlike mekanizmaları göz önüne alındığında, bu tespitlerden hangileri iş sağlığı ve güvenliği kurallarının açık ihlalidir?",
+        options: {
+          A: "Yalnız 1",
+          B: "Yalnız 2",
+          C: "1 ve 2",
+          D: "2 ve 3",
+          E: "1, 2 ve 3"
+        },
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Teknik Gerekçe:</strong> El Aletlerinde Alınması Gereken Genel Tedbirler hükümleri uyarınca:</p><ul><li>"Sivri uçlu ya da keskin kenarlı el aletleri cepte taşınmamalıdır." (Öncül 1 açık ihlaldir.)</li><li>"Çalışan makineler durdurulmadan el aleti ile müdahale edilmemeli." (Öncül 2 açık ihlaldir; sıkışan parçaya çalışan makinede manivela ile müdahale etmek kapma ve uzuv kaybı riskidir.)</li><li>"El aletleri ile çalışma yapılacak alan kuru ve düzgün olmalıdır. Kaygan ve engebeli olmamalıdır." Ayrıca hidrolik hortumların bükülmesi akışkan jeti patlamasına yol açar. (Öncül 3 açık ihlaldir.)</li></ul><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Sadece 1. öncülü kapsadığı için eksiktir.</li><li>B Şıkkı <u>Yanlıştır</u>: Sadece 2. öncülü kapsadığı için eksiktir.</li><li>C Şıkkı <u>Yanlıştır</u>: 3. öncülü dışarıda bıraktığı için eksiktir.</li><li>D Şıkkı <u>Yanlıştır</u>: 1. öncülü dışarıda bıraktığı için eksiktir.</li></ul>'
+      },
+      {
+        n: 10,
+        topic: "Modül 3 · Entegre Saha Denetimi ve Kök Neden Kaza Analizi",
+        text: "Bir tekstil fabrikasının dokuma/iplik hazırlık bölümünde meydana gelen ağır yaralanmalı iş kazası sonrasında İSG Başdenetçisi ve Kaza İnceleme Komisyonu tarafından hazırlanan teknik raporda şu bulgular tespit edilmiştir:<br>1. Arızalanan dokuma makinesine müdahale eden teknik personel, makineyi yerel stop butonundan durdurmuş ancak buton basılı konumdayken tahrik motoruna giden ana elektrik enerjisi kesilmemiş, kumanda devresi pasif izolasyon sağlamamıştır.<br>2. Teknisyen, sıkışan cıvatayı sökmek için uygun tork anahtarı kullanmak yerine el anahtarının sapına ağır çekiçle vurmuş ve cıvata yuvasını kanırtmak amacıyla bir eğenin sivri ucunu keski gibi kullanarak darbe uygulamıştır.<br>3. Müdahale esnasında kullanılan elektrikli el aletinin kablo dış kılıfında derin kesikler olduğu, şasesinde çatlak bulunduğu ve aletin sahadaki pnömatik hortumlara takılarak sürüklendiği belirlenmiştir.<br>4. Makinenin bakım logları incelendiğinde, son 3 aylık işlemlerin günü gününe deftere işlenmeyip geriye dönük toplu imzalandığı ve 6 ay önce tesiste yaşanan su baskını (doğal olay) sonrasında yetkili bir uzmana periyodik kontrol yaptırılmadan makinenin üretime alındığı anlaşılmıştır.<br>Bu karmaşık vaka bütünsel İSG yönetim sistemleri ve mevzuat hükümleri çerçevesinde değerlendirildiğinde, kaza kök nedenleri ve ihlaller ile ilgili aşağıdaki yargılardan hangisi <u>yanlıştır</u>?",
+        options: {
+          A: "İş ekipmanının durdurulması anında tahrik enerjisinin otomatik olarak kesilmemesi ve su baskını sonrasında yetkili periyodik kontrolün yaptırılmaması, ekipman güvenlik mevzuatının açık ihlalidir.",
+          B: "Eğeden keski yapılması ve el anahtarına çekiçle vurulması, el aletlerinin usulsüz kullanımı olup kazanın birincil (primer) güvensiz davranış kök nedenlerindendir.",
+          C: "Bakım defteri kayıtlarının günü gününe tutulmayıp geriye dönük imzalanması, 5070 sayılı Kanun ve bakım kayıt mevzuatına aykırılık teşkil eder.",
+          D: "Elektrikli el aletinde şase çatlağı ve kesik kablo ile çalışılması, her kullanım öncesi kullanıcı kontrolü yükümlülüğünün ihlal edildiğini gösterir.",
+          E: "İş ekipmanının durdurulması durumunda enerjisinin kesilmesi ilkesi sadece yüksek voltajlı (HV) hatlar için geçerli bir kural olup, vakadaki el aleti usulsüzlüklerinin yaşanan kaza ile hiçbir teknik bağı bulunmamaktadır."
+        },
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong></p><ul><li><strong>Sistemik Tedbir Yetersizliği ve Durdurma İzolasyon Hatası:</strong> İş Ekipmanlarının Tasarım, İmalat ve Kullanımında İSG Kuralları (Madde 2.1.3 ve 2.4) uyarınca; "İş ekipmanı veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özellikte olur." Bu kural voltaj seviyesinden veya makine türünden bağımsız olarak tüm iş ekipmanlarında amirdir. Enerjinin kesilmemesi primer donanım izolasyon hatasıdır.</li><li><strong>Doğal Olay Sonrası Kontrol İhlali:</strong> Aynı yönetmeliğin Madde 1.b/2 hükmü gereğince, su baskını gibi doğal olaylardan sonra yetkili kontrolü yapılmadan ekipman çalıştırılamaz.</li><li><strong>Bakım Kayıt İhlali:</strong> Madde 2.13.1 uyarınca bakım defteri kayıtları günü gününe işlenmelidir. Geriye dönük kayıt tutulması yasal ihlaldir.</li><li><strong>El Aleti ve İnsan Faktörü Kusuru:</strong> Eğeden keski yapılması, anahtara çekiçle vurulması ve arızalı elektrikli alet kullanımı kazayı tetikleyen sekonder kök nedenlerdir.</li></ul><p>Dolayısıyla E seçeneğinde yer alan "durdurmada enerji kesme kuralının sadece yüksek voltajda geçerli olduğu ve el aleti usulsüzlüklerinin kazayla ilişkisiz olduğu" iddiası teknik, hukuki ve kaza kırım analizi açısından tamamen <u>yanlıştır</u>.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Durdurmada enerjinin kesilmemesi ve su baskını sonrası kontrolsüzlük mevzuat ihlalidir.</li><li>B Şıkkı Doğrudur: El aletlerinin amaç dışı zorlanması kazayı tetikleyen güvensiz davranış boyutudur.</li><li>C Şıkkı Doğrudur: Geriye dönük bakım kaydı tutulması hukuki geçerliliği yok eder.</li><li>D Şıkkı Doğrudur: Hasarlı elektrikli aletle çalışma yapılması kullanım öncesi kontrol prosedürünün işletilmediğini kanıtlar.</li></ul>'
+      }
+    ]
+  }
+];
+
+/* =========================================================
+   UYGULAMA MANTIĞI
+   ========================================================= */
+const state = {
+  currentTest: 0,
+  currentQ: [0],
+  answers: TESTS.map(t => t.questions.map(() => null))
+};
+
+const tabsEl = document.getElementById('tabs');
+const navEl = document.getElementById('navigator');
+const areaEl = document.getElementById('testArea');
+const resultEl = document.getElementById('resultCard');
+
+/* ---- TABS ---- */
+function buildTabs(){
+  tabsEl.innerHTML = TESTS.map((t, i) =>
+    `<button class="tab-btn ${i===0?'active':''}" data-test="${i}">
+       <span class="tt">${t.title}</span>
+       <span class="ts">${t.range}</span>
+     </button>`
+  ).join('');
+  tabsEl.querySelectorAll('.tab-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      state.currentTest = parseInt(btn.dataset.test, 10);
+      tabsEl.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+      window.scrollTo({top: tabsEl.offsetTop - 20, behavior:'smooth'});
+    });
+  });
+}
+
+/* ---- NAVIGATOR ---- */
+function buildNav(){
+  const test = TESTS[state.currentTest];
+  const ans = state.answers[state.currentTest];
+  navEl.innerHTML = test.questions.map((q, i)=>{
+    let cls = 'nav-chip';
+    if (ans[i] !== null){
+      cls += (ans[i] === q.answer) ? ' correct' : ' wrong';
+    }
+    if (i === state.currentQ[state.currentTest]) cls += ' current';
+    return `<button class="${cls}" data-idx="${i}">${q.n}</button>`;
+  }).join('');
+  navEl.querySelectorAll('.nav-chip').forEach(chip=>{
+    chip.addEventListener('click', ()=>{
+      state.currentQ[state.currentTest] = parseInt(chip.dataset.idx, 10);
+      render();
+      window.scrollTo({top: navEl.offsetTop - 80, behavior:'smooth'});
+    });
+  });
+}
+
+/* ---- HELPERS ---- */
+function calculateStats(testIdx){
+  const test = TESTS[testIdx];
+  const ans = state.answers[testIdx];
+  let dogru=0, yanlis=0, bos=0;
+  test.questions.forEach((q,i)=>{
+    if (ans[i] === null) bos++;
+    else if (ans[i] === q.answer) dogru++;
+    else yanlis++;
+  });
+  const puan = Math.round((dogru / test.questions.length) * 100);
+  return {dogru, yanlis, bos, puan, total: test.questions.length};
+}
+
+function updateScoreBar(){
+  const s = calculateStats(state.currentTest);
+  document.getElementById('sDogru').textContent = s.dogru;
+  document.getElementById('sYanlis').textContent = s.yanlis;
+  document.getElementById('sBos').textContent = s.bos;
+  document.getElementById('sPuan').textContent = s.puan;
+}
+
+/* ---- RENDER QUESTION ---- */
+function render(){
+  const testIdx = state.currentTest;
+  const qIdx = state.currentQ[testIdx];
+  const test = TESTS[testIdx];
+  const q = test.questions[qIdx];
+  const ans = state.answers[testIdx];
+  const userAnswer = ans[qIdx];
+  const answered = userAnswer !== null;
+
+  buildNav();
+  updateScoreBar();
+
+  const optionLetters = Object.keys(q.options);
+  const optionsHtml = optionLetters.map(L=>{
+    let cls = 'option';
+    if (answered){
+      cls += ' disabled';
+      if (L === q.answer){
+        cls += (userAnswer === L) ? ' selected-correct' : ' reveal-correct';
+      } else if (L === userAnswer){
+        cls += ' selected-wrong';
+      } else {
+        cls += ' dim';
+      }
+    }
+    return `<button class="${cls}" data-letter="${L}">
+              <span class="letter">${L}</span>
+              <span class="otext">${q.options[L]}</span>
+            </button>`;
+  }).join('');
+
+  const feedbackHtml = answered
+    ? (userAnswer === q.answer
+        ? `<div class="feedback ok show"><span class="ico">✅</span> Doğru Cevap! Tebrikler.</div>`
+        : `<div class="feedback no show"><span class="ico">❌</span> Yanlış Cevap. Doğru cevap: <strong>${q.answer}</strong></div>`)
+    : '';
+
+  /* ==== ÇÖZÜM: Sadece cevap verildiğinde göster, KAPALI halde ==== */
+  const solutionHtml = answered
+    ? `<div class="solution">
+         <div class="solution-head clickable" id="solutionToggle">
+           <span>📖 Detaylı Çözümü Göster</span>
+           <span class="chev" id="solutionChev">▼</span>
+         </div>
+         <div class="solution-body" id="solutionBody">
+           <p><strong>Doğru Cevap:</strong> <span class="answer-tag">${q.answer}</span></p>
+           ${q.solution}
+         </div>
+       </div>`
+    : `<div class="solution">
+         <div class="solution-head">
+           <span>🔒 Çözümü Görmek İçin Bir Şık Seçiniz</span>
+         </div>
+       </div>`;
+
+  const prevDisabled = qIdx === 0 ? 'disabled' : '';
+  const nextDisabled = qIdx === test.questions.length - 1 ? 'disabled' : '';
+
+  areaEl.innerHTML = `
+    <div class="q-card">
+      <div class="q-meta">
+        <span class="q-badge">Soru ${q.n}</span>
+        <span class="q-topic">${q.topic}</span>
+      </div>
+      <div class="q-text">${q.text}</div>
+      <div class="options">${optionsHtml}</div>
+      ${feedbackHtml}
+      ${solutionHtml}
+      <div class="controls">
+        <button class="btn btn-ghost" id="btnPrev" ${prevDisabled}>⬅️ Önceki Soru</button>
+        <button class="btn btn-primary" id="btnNext" ${nextDisabled}>Sonraki Soru ➡️</button>
+      </div>
+    </div>
+  `;
+
+  /* Şık seçimi */
+  if (!answered){
+    areaEl.querySelectorAll('.option').forEach(opt=>{
+      opt.addEventListener('click', ()=>{
+        state.answers[testIdx][qIdx] = opt.dataset.letter;
+        render();
+        checkCompletion();
+      });
+    });
+  } else {
+    /* Detaylı çözüm aç/kapa - SADECE kullanıcı tıklarsa açılır */
+    const toggle = document.getElementById('solutionToggle');
+    const body = document.getElementById('solutionBody');
+    const chev = document.getElementById('solutionChev');
+    if (toggle && body){
+      toggle.addEventListener('click', ()=>{
+        const isOpen = body.classList.contains('show');
+        if (isOpen){
+          body.classList.remove('show');
+          if (chev) chev.classList.remove('open');
+          toggle.querySelector('span').textContent = '📖 Detaylı Çözümü Göster';
+        } else {
+          body.classList.add('show');
+          if (chev) chev.classList.add('open');
+          toggle.querySelector('span').textContent = '📖 Detaylı Çözümü Gizle';
+        }
+      });
+    }
+  }
+
+  /* Önceki / Sonraki */
+  const btnPrev = document.getElementById('btnPrev');
+  const btnNext = document.getElementById('btnNext');
+  if (btnPrev) btnPrev.addEventListener('click', ()=>{
+    if (state.currentQ[testIdx] > 0){
+      state.currentQ[testIdx]--;
+      render();
+      window.scrollTo({top: navEl.offsetTop - 80, behavior:'smooth'});
+    }
+  });
+  if (btnNext) btnNext.addEventListener('click', ()=>{
+    if (state.currentQ[testIdx] < test.questions.length - 1){
+      state.currentQ[testIdx]++;
+      render();
+      window.scrollTo({top: navEl.offsetTop - 80, behavior:'smooth'});
+    }
+  });
+}
+
+/* ---- COMPLETION CHECK ---- */
+function checkCompletion(){
+  const testIdx = state.currentTest;
+  const test = TESTS[testIdx];
+  const ans = state.answers[testIdx];
+  const allAnswered = ans.every(a => a !== null);
+  if (!allAnswered){
+    resultEl.classList.remove('show');
+    return;
+  }
+  const s = calculateStats(testIdx);
+  document.getElementById('rDogru').textContent = s.dogru;
+  document.getElementById('rYanlis').textContent = s.yanlis;
+  document.getElementById('rBos').textContent = s.bos;
+  document.getElementById('rPuan').textContent = s.puan;
+  document.getElementById('resTitle').textContent = `${test.title} Tamamlandı! 🎉`;
+  document.getElementById('resSub').textContent = `${test.subtitle} — ${test.range}`;
+  let msg = '';
+  if (s.puan >= 90) msg = '🏆 Mükemmel! Bu bölümdeki bilginiz uzmanlık düzeyinde.';
+  else if (s.puan >= 70) msg = '👍 İyi! Birkaç konuyu tekrar ederek mükemmelliğe ulaşabilirsiniz.';
+  else if (s.puan >= 50) msg = '📘 Fena değil. Konu anlatımını ve sunumu tekrar gözden geçirmenizi öneririz.';
+  else msg = '📖 Konu anlatımını ve detaylı çözümleri dikkatlice tekrar çalışmanız faydalı olacaktır.';
+  document.getElementById('resMsg').innerHTML = msg;
+  resultEl.classList.add('show');
+  resultEl.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+/* ---- INTRO TOGGLE ---- */
+document.getElementById('introHead').addEventListener('click', function(){
+  this.classList.toggle('closed');
+  document.getElementById('introBody').classList.toggle('hidden');
+});
+
+/* ---- DIAGNOSIS TOGGLE ---- */
+document.getElementById('diagHead').addEventListener('click', function(){
+  this.classList.toggle('closed');
+  document.getElementById('diagBody').classList.toggle('hidden');
+});
+
+/* ---- INIT ---- */
+document.getElementById('yil').textContent = new Date().getFullYear();
+buildTabs();
+render();
+</script>
+
+</body>
+</html>

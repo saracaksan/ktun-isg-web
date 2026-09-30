@@ -1,171 +1,517 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="Sıraç Aksan"><meta name="description" content="Bölüm 3 kapsamlı konu anlatımı - Mekanik İşlerde Güvenlik"><title>Bölüm 3 | Mekanik İşlerde Güvenlik</title><style>
-:root{--bg:#f4f7fb;--ink:#172033;--muted:#667085;--nav:#0b1220;--blue:#2563eb;--purple:#7c3aed;--red:#dc2626;--amber:#d97706;--line:#e5e7eb;--card:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.72}a{text-decoration:none;color:inherit}
-.top{position:sticky;top:0;z-index:100;background:#0b1220f5;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff18}.topin{max-width:1280px;margin:auto;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;gap:10px;align-items:center;color:#fff;font-weight:900}.gear{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#2563eb,#7c3aed);display:grid;place-items:center}.brand small{display:block;color:#aab7cb;font-size:.7rem;font-weight:600}.nav{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.nav a{color:#dbe5f5;padding:8px 10px;border-radius:9px;font-size:.77rem;font-weight:850}.nav a:hover{background:#ffffff12}
-.hero{background:radial-gradient(circle at 85% 10%,#2563eb45,transparent 25%),linear-gradient(135deg,#0b1220,#172b4a 60%,#0f172a);color:#fff}.hero-in{max-width:1280px;margin:auto;padding:45px 18px 35px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}.eyebrow{display:inline-flex;padding:6px 10px;border-radius:999px;background:#ef4444;color:#fff;font-size:.74rem;font-weight:950}.hero h1{font-size:clamp(2.25rem,5vw,4.1rem);line-height:1.04;letter-spacing:-.05em;margin:16px 0}.hero p{color:#cbd5e1;max-width:850px}.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 18px 35px #0005)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:19px}.btn{padding:10px 13px;border-radius:10px;border:1px solid #ffffff24;background:#ffffff0c;color:#fff;font-size:.8rem;font-weight:900}.btn.primary{background:#fff;color:#0b1220}
-.shell{max-width:1280px;margin:auto;padding:24px 18px 60px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:22px;align-items:start}.article{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:0 14px 40px #0f172a12}.side{position:sticky;top:78px;display:grid;gap:12px}.side-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px}.side-title{text-transform:uppercase;letter-spacing:.08em;font-size:.7rem;color:var(--muted);font-weight:950;margin-bottom:7px}.toc a{display:block;padding:7px 8px;border-radius:8px;font-size:.8rem;font-weight:750;color:#344054}.toc a:hover{background:#eff6ff;color:#1d4ed8}
-.major{scroll-margin-top:80px;border-top:1px solid var(--line);padding-top:27px;margin-top:32px}.major:first-of-type{border-top:0;padding-top:0;margin-top:0}.major h2{font-size:clamp(1.45rem,2.4vw,2rem);line-height:1.2;color:#0f274d;letter-spacing:-.03em;margin:0 0 14px}.major h3{font-size:1.12rem;color:#18345c;margin:26px 0 8px}.major h4{font-size:1rem;color:#334155;margin:22px 0 7px}p{margin:9px 0}li{margin:7px 0}ul,ol{padding-left:24px}
-.exam,.scenario,.memory{padding:16px 18px;border-radius:14px;margin:18px 0}.exam{background:#fff7ed;border:1px solid #fed7aa;border-left:5px solid #f59e0b}.scenario{background:#ecfdf5;border:1px solid #a7f3d0;border-left:5px solid #059669}.memory{background:#f5f3ff;border:1px solid #ddd6fe;border-left:5px solid #7c3aed}
-.visual{margin:22px 0;padding:11px;border:1px solid var(--line);border-radius:16px;background:#f8fafc}.visual svg{display:block;width:100%;height:auto}.caption{text-align:center;color:var(--muted);font-size:.75rem;padding:6px}
-.table-wrap{overflow-x:auto;margin:17px 0;border:1px solid var(--line);border-radius:14px}table{width:100%;min-width:700px;border-collapse:collapse}th,td{padding:11px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#f1f5f9;font-size:.8rem}tr:last-child td{border-bottom:0}.alpha{list-style-type:lower-alpha}.footer{border-top:1px solid var(--line);margin-top:35px;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;color:var(--muted);font-size:.8rem}
-@media(max-width:980px){.hero-in{grid-template-columns:1fr}.hero-art{max-width:700px}.layout{grid-template-columns:1fr}.side{position:static;order:-1;grid-template-columns:1fr 1fr}}@media(max-width:650px){.topin{align-items:flex-start;padding:8px 11px}.brand small{display:none}.nav a{font-size:.66rem;padding:6px 7px}.hero-in{padding:35px 13px 28px}.shell{padding:13px 11px 45px}.article{padding:18px 14px}.hero h1{font-size:2.25rem}.side{grid-template-columns:1fr}.table-wrap{margin-left:-2px;margin-right:-2px}}
-</style></head>
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Mekanik İşlerde Güvenlik - 3. Bölüm: Basınçlı Kaplarda İş Sağlığı ve Güvenliği. 6, 7, 8 ve 9. haftaların kapsamlı konu anlatımı, örnekler, görseller, videolar ve sınav hafızası.">
+<title>3. Bölüm | Basınçlı Kaplarda İSG</title>
+<style>
+:root{--navy:#12344d;--blue:#176b87;--cyan:#e9f8fc;--green:#177245;--greenbg:#eefaf3;--orange:#b65b0a;--orangebg:#fff5e9;--red:#a52d2d;--redbg:#fff0f0;--purple:#633f91;--purplebg:#f6f0fc;--ink:#182433;--muted:#617083;--line:#d9e2ea;--bg:#f4f7fa;--white:#fff;--shadow:0 10px 30px rgba(18,52,77,.09)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.72}
+a{color:var(--blue)}
+.container{width:min(1180px,calc(100% - 28px));margin:auto}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:58px;display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap}
+.brand{font-weight:850;color:var(--navy)}
+.navlinks{display:flex;gap:6px;flex-wrap:wrap}
+.navlinks a{font-size:14px;text-decoration:none;background:#edf5f8;padding:7px 10px;border-radius:9px;font-weight:700;color:var(--navy)}
+.hero{margin:26px 0 18px;border-radius:26px;padding:42px 36px;background:linear-gradient(135deg,#0d3449 0%,#176b87 54%,#1d7650 100%);color:#fff;box-shadow:var(--shadow)}
+.hero h1{font-size:clamp(32px,5vw,58px);line-height:1.04;margin:10px 0 15px;letter-spacing:-1px}
+.hero p{max-width:930px;font-size:18px;color:#edfafd}
+.badges{display:flex;gap:7px;flex-wrap:wrap}.badge{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);padding:5px 10px;border-radius:999px;font-size:13px}
+.toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:9px}
+.toc a{background:#fff;border:1px solid var(--line);padding:11px 13px;border-radius:12px;text-decoration:none;color:var(--navy);font-weight:750;box-shadow:0 4px 15px rgba(0,0,0,.03)}
+.card{background:var(--white);border:1px solid var(--line);border-radius:19px;padding:26px;margin:20px 0;box-shadow:var(--shadow)}
+h2{font-size:30px;line-height:1.2;color:var(--navy);margin:0 0 18px;border-left:6px solid var(--blue);padding-left:13px}
+h3{font-size:22px;color:var(--blue);margin:26px 0 10px}h4{color:var(--navy);margin:17px 0 7px}
+p{margin:9px 0}.lead{font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.tile{border:1px solid var(--line);border-radius:15px;padding:17px;background:#fbfdff}
+.tile h3{margin:0 0 6px;font-size:19px}
+.note{border-left:5px solid var(--blue);background:var(--cyan);padding:16px 18px;border-radius:12px;margin:17px 0}
+.exam{border-left-color:var(--orange);background:var(--orangebg)}
+.danger{border-left-color:var(--red);background:var(--redbg)}
+.success{border-left-color:var(--green);background:var(--greenbg)}
+.memory{border-left-color:var(--purple);background:var(--purplebg)}
+.formula{font-size:26px;font-weight:900;text-align:center;padding:17px;border:2px dashed #54a6bb;border-radius:14px;background:#f1fbfd;margin:17px 0}
+.big-number{font-size:38px;font-weight:900;color:var(--blue)}
+table{width:100%;border-collapse:collapse;margin:15px 0;background:#fff}
+th,td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-align:top}
+th{background:#eaf3f7;color:var(--navy)}
+figure{margin:18px 0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fff}
+figure img{display:block;max-width:100%;width:auto;max-height:520px;margin:auto;border-radius:10px}
+figcaption{font-size:13px;color:var(--muted);padding:9px 5px 2px}
+.source{font-size:12px;color:var(--muted)}
+.diagram{overflow:auto;background:#0d1c27;border-radius:15px;padding:14px;margin:17px 0}
+svg{display:block;max-width:100%;height:auto;margin:auto}
+.video{position:relative;width:100%;padding-top:56.25%;background:#0b0b0b;border-radius:15px;overflow:hidden}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.video-title{font-weight:800;color:var(--navy);margin:0 0 7px}
+.steps{counter-reset:step}.step{position:relative;padding:14px 14px 14px 58px;border-bottom:1px dashed var(--line)}.step:last-child{border-bottom:0}
+.step:before{counter-increment:step;content:counter(step);position:absolute;left:8px;top:12px;width:33px;height:33px;line-height:33px;text-align:center;border-radius:50%;background:var(--blue);color:#fff;font-weight:900}
+.quiz{border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0;background:#fff}
+.answer{margin-top:9px;padding:9px 12px;border-radius:9px;background:#f5f8fa}
+details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:#fff}
+summary{cursor:pointer;padding:12px 14px;font-weight:800;color:var(--navy)}
+details>div{padding:0 14px 14px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:7px 11px;border-radius:999px;background:#eaf4f7;color:var(--navy);font-weight:800}
+.progress{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}.week{padding:13px;border-radius:12px;text-align:center;border:1px solid var(--line);background:#fff}.week b{display:block;color:var(--blue)}
+.footer{text-align:center;color:var(--muted);padding:35px 10px}
+.pager{display:flex;gap:9px;justify-content:space-between;flex-wrap:wrap;margin:25px 0}.pager a{padding:12px 15px;border-radius:11px;background:#eaf4f7;text-decoration:none;font-weight:800;color:var(--navy)}
+code{background:#eef2f5;padding:2px 6px;border-radius:5px}
+@media(max-width:700px){.hero{padding:30px 22px}.card{padding:19px}h2{font-size:25px}.navlinks a{font-size:12px}.progress{grid-template-columns:1fr 1fr}}
+</style>
+</head>
 <body>
-<header class="top"><div class="topin"><a class="brand" href="../../index.html"><span class="gear">⚙</span><span>MEKANİK İŞLERDE GÜVENLİK<small>El Aletleri ve İş Ekipmanları</small></span></a><nav class="nav"><a href="../../index.html">🏠 Site Ana Sayfa</a><a href="../index.html">🗂️ 1. Dönem</a><a href="index.html">📚 Ders Ana Sayfa</a></nav></div></header>
-<section class="hero"><div class="hero-in"><div><span class="eyebrow">BÖLÜM 3 · KONU ANLATIMI</span><h1>El Aletleri ve İş Ekipmanlarında İSG</h1><p>Tanımdan tahrik kaynaklarına, tehlike ve kök neden analizinden güvenli kullanıma; kumanda, durdurma, hareketli ekipman, periyodik kontrol ve sınav odaklı kritik bilgilere kadar kapsamlı çalışma sayfası.</p><div class="actions"><a class="btn primary" href="bolum-03-sunum.html">📊 Bölüm 3 Sunumu</a><a class="btn primary" href="bolum-03-sorular.html">📝 Bölüm 3 Soruları</a><a class="btn" href="index.html">📚 Ders Ana Sayfası</a><a class="btn" href="../index.html">🗂️ 1. Dönem</a></div></div><div class="hero-art"><svg viewBox="0 0 760 250" role="img" aria-label="El aletleri özgün çizimi"><rect width="760" height="250" rx="30" fill="#111d36"/><g transform="translate(70,55) rotate(-10)"><rect x="90" y="40" width="150" height="36" rx="16" fill="#64748b"/><rect x="20" y="47" width="90" height="22" rx="9" fill="#f59e0b"/><rect x="225" y="45" width="65" height="26" rx="8" fill="#334155"/></g><g transform="translate(310,45) rotate(18)"><rect x="0" y="75" width="30" height="110" rx="12" fill="#ef4444"/><rect x="7" y="10" width="17" height="90" rx="7" fill="#e2e8f0"/></g><g transform="translate(455,50) rotate(-20)"><rect x="0" y="25" width="38" height="135" rx="15" fill="#f59e0b"/><circle cx="19" cy="20" r="24" fill="#94a3b8"/><circle cx="19" cy="20" r="11" fill="#0f172a"/></g><g transform="translate(570,48)"><path d="M30 40 L115 5 L130 20 L58 78 Z" fill="#60a5fa"/><path d="M58 78 L95 165 L77 176 L38 90 Z" fill="#f59e0b"/></g><text x="35" y="225" fill="#dbeafe" font-size="17" font-weight="800">Güvenli seçim → doğru kullanım → kontrol → bakım → KKD</text></svg></div></div></section>
-<main class="shell"><div class="layout"><article class="article">
-<div class="visual"><svg viewBox="0 0 900 250" role="img" aria-label="Dört tahrik sınıfı"><rect x="10" y="20" width="205" height="205" rx="24" fill="#eff6ff" stroke="#bfdbfe"/><rect x="235" y="20" width="205" height="205" rx="24" fill="#fff1f2" stroke="#fecdd3"/><rect x="460" y="20" width="205" height="205" rx="24" fill="#fffbeb" stroke="#fde68a"/><rect x="685" y="20" width="205" height="205" rx="24" fill="#f5f3ff" stroke="#ddd6fe"/><text x="112" y="55" text-anchor="middle" font-weight="800" font-size="18">MEKANİK</text><text x="337" y="55" text-anchor="middle" font-weight="800" font-size="18">ELEKTRİKLİ</text><text x="562" y="55" text-anchor="middle" font-weight="800" font-size="18">HİDROLİK</text><text x="787" y="55" text-anchor="middle" font-weight="800" font-size="18">PNÖMATİK</text><circle cx="112" cy="115" r="40" fill="#2563eb"/><text x="112" y="123" text-anchor="middle" fill="white" font-size="28">✋</text><circle cx="337" cy="115" r="40" fill="#e11d48"/><text x="337" y="123" text-anchor="middle" fill="white" font-size="28">⚡</text><circle cx="562" cy="115" r="40" fill="#d97706"/><text x="562" y="123" text-anchor="middle" fill="white" font-size="28">◉</text><circle cx="787" cy="115" r="40" fill="#7c3aed"/><text x="787" y="123" text-anchor="middle" fill="white" font-size="28">≋</text><text x="112" y="183" text-anchor="middle" font-size="14">Kas / kol gücü</text><text x="337" y="183" text-anchor="middle" font-size="14">Şebeke / akü</text><text x="562" y="183" text-anchor="middle" font-size="14">Sıvı basıncı</text><text x="787" y="183" text-anchor="middle" font-size="14">Basınçlı hava</text></svg><div class="caption">Tahrik / güç kaynağına göre dört temel sınıf.</div></div>
-<section class="major" id="s1"><h2>1. İş Ekipmanları ve El Aletlerinde İSG'nin Temel Esasları ve Sınıflandırma</h2>
-<h3>1.1. Giriş ve İş Ekipmanlarında İSG'nin Stratejik Önemi</h3>
-<p>Endüstriyel tesislerden küçük ölçekli atölyelere ve günlük çalışma sahalarına kadar geniş bir alanda kullanılan iş ekipmanları ve el aletleri, üretim süreçlerinin temeli ve verimliliğin anahtar bileşenidir. Ancak tasarım, imalat, seçim ve kullanım aşamalarında güvenlik ilkelerinin göz ardı edilmesi, iş ekipmanlarını ölümcül kazaların ve kalıcı mesleki sakatlıkların ana kaynağı haline getirmektedir. Mühendislik perspektifinden bakıldığında; bir el aletinin mekanik dayanımı, ergonomisi ve tahrik kaynağının güvenliği, doğrudan sahadaki risk seviyesini belirler. Akademik ve mesleki İSG sınavlarında iş ekipmanlarının tasarım standartları, kullanım esasları ve mevzuat hükümleri son derece yüksek bir soru potansiyeline sahiptir. Adayların bu konudaki soruları doğru yanıtlayabilmesi, teknik kuralları ezberlemekle değil; risk hiyerarşisi ve mevzuatın mantıksal altyapısını analitik bir yaklaşımla kavratan bir hazırlık süreciyle mümkündür.</p>
-<h3>1.2. İş Ekipmanı ve El Aleti Kavramsal Tanımı ve İşlevsel Kapsamı</h3>
-<p>Kaynak metinlerdeki teknik çerçeve doğrultusunda el aletleri; yalnızca insanın kas gücüyle işleyen basit bir tornavidadan başlayarak, elektrik, hidrolik veya pnömatik gibi çeşitli enerji kaynakları yardımıyla tahrik edilen gelişmiş makinelere kadar uzanan son derece geniş bir iş ekipmanı yelpazesini kapsamaktadır. Çalışma hayatında ve operasyonel süreçlerde el aletleri, malzeme üzerinde doğrudan mekanik veya termal etki oluşturarak çok çeşitli işlevsel amaçlara hizmet eder.</p>
-<p><strong>El Aletlerinin Temel Kullanım Amaçları:</strong></p>
-<ul><li>Çeşitli maddeleri, parçaları veya yapı elemanlarını sıkıştırmak,</li><li>Malzemeleri istenilen boyut ve formda kesmek,</li><li>Yüzey çapaklarını, pürüzlerini ve form bozukluklarını düzeltmek,</li><li>Cisimleri veya ekipmanları belirli noktalara asmak,</li><li>Ağır yükleri, parçaları veya bileşenleri kaldırmak,</li><li>Malzemeler veya yüzeyler üzerinde delik açmak (delmek),</li><li>Hammaddelere veya iş parçalarına istenen geometrik şekli vermek,</li><li>Parçaları, yapıları veya çalışma ortamını ısıtmak,</li><li>Malzemeleri ergime veya dolgu maddesi yoluyla birbirine kaynatmak ve birleştirmek.</li></ul>
-<h3>1.3. Tahrik Kaynağına Göre El Aletleri ve İş Ekipmanlarının Sınıflandırılması</h3>
-<p>El aletleri ve iş ekipmanları, kullandıkları enerji türü ve tork iletim mekanizmalarına göre dört temel sınıfta incelenmektedir:</p>
-<p>El Aleti Tipi</p>
-<p>Tahrik / Güç Kaynağı Türü</p>
-<p>Temel Çalışma Prensibi / Özelliği</p>
-<p>İSG Açısından Temel Değerlendirme / Örnekler</p>
-<p><strong>Mekanik El Aletleri</strong></p>
-<p>İnsan kol gücü ve kas enerjisi</p>
-<p>Doğrudan fiziksel kuvvet uygulanarak mekanik moment ve etki oluşturulması</p>
-<p>Sap bütünlüğü, aşınma, çatlak ve amacına uygun kullanım kontrolleri esastır (Çekiç, keski, eğe, anahtar).</p>
-<p><strong>Elektrikli El Aletleri</strong></p>
-<p>Şebeke elektriği veya batarya/akü</p>
-<p>Elektrik enerjisinin motorda mekanik harekete veya rezistansta ısıya dönüştürülmesi</p>
-<p>Şase/sap çatlakları, yalıtım bozulmaları ve kablo arızalarına karşı kullanım öncesi kontrol şarttır (Matkap, taşlama).</p>
-<p><strong>Hidrolik El Aletleri</strong></p>
-<p>Sıkıştırılamaz sıvı basıncı (Hidrolik Yağ)</p>
-<p>Paskal ilkesi uyarınca akışkan basıncı vasıtasıyla yüksek mekanik kuvvet üretimi</p>
-<p>Yüksek basınç altında çalışma, hortum dayanımı ve sızdırmazlık güvenliği kritik önem taşır (Hidrolik krikolar, çektirmeler).</p>
-<p><strong>Pnömatik (Havalı) El Aletleri</strong></p>
-<p>Sıkıştırılmış hava basıncı</p>
-<p>Kompresörden sağlanan basınçlı havanın pnomatik motorda mekanik güce dönüştürülmesi</p>
-<p>Bağlantı rekorları, basınç dayanımı, kamçılamayı önleyici kilitler ve hava kaçaklarına dikkat edilmelidir (Havalı somun sıkma, pürüz alma).</p>
-<h3>1.4. Bölüm Geçişi</h3>
-<p>El aletlerinin kavramsal tanımı, işlevsel amaçları ve tahrik kaynaklarına göre sınıflandırılmasının ardından; çalışma sahasında bu ekipmanların kullanımı esnasında ortaya çıkan temel tehlike kaynaklarının, kazaların kök nedenlerinin ve sahadaki özel hatalı kullanımların analitik olarak detaylandırılması gerekmektedir.</p>
-<section class="major" id="s2"><h2>2. El Aletleri ve İş Ekipmanlarında Tehlike Kaynakları, Kaza Nedenleri ve Özel Kullanım Hataları</h2>
-<h3>2.1. Giriş: Tehlike ve Risk Analizinin Sınav Açısından Değerlendirilmesi</h3>
-<p>Endüstriyel sahalarda ve atölyelerde yaygın olarak kullanılan el aletleri; basit yapılarına rağmen yanlış kullanım, bakımsızlık veya koruyucu donanım eksikliği nedeniyle büyük tehlike potansiyeli taşır. Bu ekipmanlardan kaynaklanan kazalar; cilt sıyrıklarından ve kesiklerden başlayarak uzuv kopmalarına, göz kayıplarına ve hatta ölümcül yaralanmalara kadar varan ağır sonuçlar doğurmaktadır. İSG sınavlarında risk analizi soruları; kazaların kök nedenleri, tehlike türlerinin ayrımı ve el aletlerinin amacına aykırı kullanım senaryoları üzerinden kurgulanmaktadır. Adayların bu senaryolardaki kök hataları tespit edebilme becerisi doğrudan sınav başarısına yansımaktadır.</p>
-<h3>2.2. El Aletlerinden Kaynaklanan Temel Tehlikeler</h3>
-<p>İş ekipmanları ve el aletleriyle gerçekleştirilen operasyonlarda tespit edilen temel tehlike türleri şunlardır:</p>
-<ul><li><strong>Gürültü:</strong> Darbeli, kesici ve motorlu aletlerin çalışması esnasında oluşan, işitme kaybına yol açabilecek yüksek ses seviyeleri.</li><li><strong>Sivri Uçlar:</strong> Kontrolsüz temas halinde doku batması ve delinme riski taşıyan geometrik yapılar.</li><li><strong>Keskin Kenarlar:</strong> Temas anında doku bütünlüğünü bozan bıçak, ağız ve kenar yüzeyleri.</li><li><strong>Kesilmeler:</strong> Kesici aksamların kontrolden çıkması sonucu vücut dokularında oluşan derin yaralanmalar.</li><li><strong>Sıyrıklar / Sıyrılmalar:</strong> Kayan el aletlerinin yüzey sürtünmesi nedeniyle ciltte oluşturduğu yüzeysel ve derin epiderm hasarları.</li><li><strong>Elektrik Şokları:</strong> Elektrikli el aletlerinin yalıtım zafiyetleri, gövde kaçakları veya yıpranmış kablolarından kaynaklanan akım çarpmaları.</li><li><strong>Toz:</strong> Kesme, delme, kırma ve zımparalama işlemleri esnasında solunum bölgesine yayılan partiküller.</li></ul>
-<h3>2.3. Kazaların Temel Nedenleri ve Sahadan Risk Etkenleri</h3>
-<p>El aletleri kullanımında meydana gelen iş kazalarının arkasında yatan 4 ana kök neden bulunmaktadır:</p>
-<ol><li><strong>Arızalı ve Bakımsız Olması:</strong> Ekipmanın periyodik bakımlarının yapılmaması, çatlak, kırık, körelmiş veya aşınmış parçalarla zorlanarak çalıştırılması.</li><li><strong>Amacına Uygun Kullanılmaması:</strong> El aletinin kendi tasarım amacı dışında farklı bir mekanik zorlama için kullanılması.</li><li><strong>Kullanış Yöntemlerinin Yanlış Olması:</strong> Doğru el aleti seçilse dahi hatalı duruş pozisyonu, yanlış kuvvet uygulama açısı ve hatalı kavrama tekniklerinin uygulanması.</li><li><strong>Uygun KKD Kullanılmaması veya Hiç Kullanılmaması:</strong> Yapılan işin riskine uygun kişisel koruyucu donanımın (gözlük, eldiven, siperlik vb.) seçilmemesi ya da hiç tercih edilmemesi.</li></ol>
-<h3>2.4. El Aletlerinin Amacı Dışında ve Yanlış Kullanımına İlişkin Senaryo ve Sınav Eşleştirme Tablosu</h3>
-<p>Sınav sorularında en çok çeldirici kurgulanan alan, el aletlerinin amaca aykırı kullanım şekilleridir. Özellikle keskilerin tornavida veya manivela yerine kullanılması ya da tornavidanın keski/kazıma aleti veya bel küreği gibi zorlanması sınavlarda çapraz eşleştirme olarak karşımıza çıkar.</p>
-<div class="exam"><strong>⭐ Sınav / Mevzuat Vurgusu</strong><p><strong>Önemli Sınav Vurgusu:</strong> İSG sınavlarında "Aşağıdakilerden hangisi el aletlerinin yanlış kullanımına örnektir?" sorularında, aletlerin ikame edilmesi sıkça sorulur. Örneğin tornavidanın vida sıkma/gevşetme dışında keski veya manivela olarak zorlanması, ya da keskilerin vidalama ve manivela amacıyla kullanılması tipik çeldiricilerdir.</p></div>
-<p>El Aleti</p>
-<p>Doğru / Amacına Uygun Kullanım Şekli</p>
-<p>Hatalı / Yanlış Kullanım Şekli</p>
-<p><strong>Çekiçler</strong></p>
-<p>Çakma, dövme ve sıkıştırma işlemleri</p>
-<p>Çivi sökmek için çekicin çeneli tarafının kullanılması, demir dövmede ağır demirci çekici kullanılması, demirci çekicinin doğrama işlerinde kullanılması, sert çelik dövme işinde kullanılması.</p>
-<p><strong>Keskiler</strong></p>
-<p>Ağaç parçalamak, metal kesmek</p>
-<p>Tornavida veya manivela gibi kullanılması (Vidaları gevşetmeye veya parçaları kanırtmaya çalışmak).</p>
-<p><strong>Matkaplar</strong></p>
-<p>Ahşap, beton ya da metal delme işlemleri</p>
-<p>Yanlış tatbik edilmesi (Hatalı uç seçimi, eksen dışı baskı açısı uygulamak veya delme dışı zorlamak).</p>
-<p><strong>Eğeler</strong></p>
-<p>Malzeme yüzeylerini eğelemek ve düzeltmek</p>
-<p>Eskimiş eğelerden keski veya tornavida yapılması.</p>
-<p><strong>Bıçaklar</strong></p>
-<p>Kesme işlerinde kullanılması</p>
-<p>Tornavida gibi kullanılması veya kutu kapağı açmada (manivela gibi) kullanılması.</p>
-<p><strong>Manivelalar</strong></p>
-<p>Uygun şekilde yük kaldırmak, sandık açmak vb.</p>
-<p>Fazla ağır yük kaldırmak, destek veya takoz gibi kullanmak.</p>
-<p><strong>Kazmalar</strong></p>
-<p>Toprak kazmada kullanmak</p>
-<p>Manivela gibi taş veya ağaç sökmede kullanmak.</p>
-<p><strong>Baltalar</strong></p>
-<p>Ağaç kesmek, yontmak ve yarmak</p>
-<p>Kama gibi araya sıkıştırmak veya üzerine vurarak yarmak.</p>
-<p><strong>Tornavidalar</strong></p>
-<p>Vida sıkmak veya gevşetmek</p>
-<p>Keski, manivela veya bel küreği gibi toprak işlerinde kullanılması.</p>
-<p><strong>Kürekler</strong></p>
-<p>Sıyırmak suretiyle malzemeyi kaldırmak</p>
-<p>Bel küreği gibi toprak yapmak.</p>
-<p><strong>Bel Küreği</strong></p>
-<p>Toprağı şekilli kesip çıkarmak</p>
-<p>Sıyırma ve aktarma işlerinde kullanmak.</p>
-<p><strong>Anahtarlar</strong></p>
-<p>Cıvataların sıkılması veya gevşetilmesi</p>
-<p>Çekiç yerine kullanmak, yanlış ölçüde/tipte anahtar kullanmak.</p>
-<h3>2.5. Bölüm Geçişi</h3>
-<p>Tehlike kaynaklarının, kazaların kök nedenlerinin ve hatalı kullanım şekillerinin analiz edilmesinden sonra; kazaları sahada sıfırlamaya dönük proaktif önleyici tedbirlere ve mühendislik tabanlı güvenlik standartlarına geçilmesi gerekmektedir.</p>
-<section class="major" id="s3"><h2>3. Önleyici Tedbirler ve Güvenlik Standardı İlkeleri (Klasik ve Elektrikli El Aletleri)</h2>
-<h3>3.1. Giriş: Proaktif Güvenlik Yönetiminin Stratejik Değeri</h3>
-<p>Kazaların önlenmesi, el aletinin sahaya kabulünden depolanmasına, ehil kişilerce bakımından kullanım sırasındaki mühendislik tedbirlerine kadar uzanan proaktif bir emniyet anlayışıyla mümkündür. Riskleri kaynağında yok eden bütüncül yaklaşım, iş kazalarını engellediği gibi yasal mevzuata tam uyumu sağlar.</p>
-<h3>3.2. Klasik El Aletlerinde Alınması Gereken Genel Tedbirler</h3>
-<p>Mekanik (klasik) el aletleriyle yürütülen çalışmalarda güvenliğin sağlanması için uyulması gereken temel teknik esaslar aşağıda aktif komut ifadeleriyle ve mühendislik gerekçeleriyle sunulmuştur:</p>
-<ul><li><strong>İşe Uygunluk ve Kontrol:</strong> El aleti kullanılmadan önce detaylıca kontrol edilmeli; çatlak saplı, aşınmış, kırık, güvenli olmayan ve sapı gevşemiş aletler kesinlikle kullanılmamalıdır. Yapılacak işin teknik niteliğine uygun alet seçilmelidir.</li><li><strong>Ehil Kişilerce Bakım ve Onarım:</strong> El aletleri daima bakımlı olmalı ve bakımları yetkin/ehil kişilerce yapılmalıdır. Arızalı olduğu tespit edilen aletler derhal kullanımdan çekilmeli, değiştirilmeli veya onarılmalıdır.</li><li><strong>Sap Özellikleri ve Bütünlük:</strong> Alet sapları ergonomik ve uygun yapıda olmalı, yuvasından kolayca çıkmayacak şekilde kamalanmalı; sap yüzeylerinde çatlak/kırık bulunmamalı, kavramayı zorlaştıran yağlı ve kaygan maddelerden arındırılmalıdır.</li><li><strong>Uzatma Kolu Kullanma Yasağı (Mühendislik Gerekçesi):</strong> Moment artırmak amacıyla anahtar ve manivelalara boru, çubuk veya kovan gibi rastgele uzatma kolları takılmamalıdır. <em>Mühendislik Yaklaşımı:</em> Fiziksel olarak moment M = F · d bağıntısıyla ifade edilir. Uzatılan dik mesafe (d), uygulanan torku kontrolsüz şekilde artırarak el aletinin tasarım akma dayanımını aşmasına, çeliğin aniden gevrekleşerek kırılmasına ve fırlayan metal parçalarının yaralanmalara yol açmasına sebep olur.</li><li><strong>Küçük Parçalarla Çalışma (Mengene Şartı):</strong> Küçük iş parçaları üzerinde el aletleriyle çalışırken parça el ile tutulmamalı, mutlaka bir mengene veya sabitleme aparatı ile sabitlenmelidir.</li><li><strong>Hareketli Makineye Müdahale Yasağı:</strong> Çalışmakta olan makineler tamamen durdurulmadan ve enerji izolasyonu sağlanmadan el aleti ile müdahale edilmemelidir.</li><li><strong>Taşıma ve Saha Koşulları:</strong> Sivri uçlu veya keskin kenarlı el aletleri cepte taşınmamalı, özel kılıf veya takım çantalarında taşınmalıdır. Çalışma alanı kuru ve düzgün olmalı; kaygan ve engebeli olmamalıdır.</li><li><strong>Teknik Ömür ve Körelme:</strong> Teknik ömrünü tamamlamış el aletleri ile körelmiş bıçak, zımba ve matkap uçları kullanılmamalıdır.</li><li><strong>Muhafaza:</strong> El aletleri kullanılmadığında takım çantaları içerisinde ya da panolardaki özel standlarda bulundurulmalıdır.</li><li><strong>Çapak Önleme ve Tıraşlama (Mühendislik Gerekçesi):</strong> Üzerine çekiçle vurulmak suretiyle çalışan zımba, murç ve çivi başları zaman zaman tıraşlanmalıdır. <em>Mühendislik Yaklaşımı:</em> Vurma eylemi esnasında oluşan plastik deformasyon, aletin tepesinde "papatyalaşma" (çapaklanma/mushrooming) meydana getirir. Sertleşen ve gevrekleşen bu çapaklar sonraki darbelerde mikro çatlaklardan koparak yüksek hızla çevreye fırlayan çelik kıymıklarına dönüşür. Tıraşlama işlemi bu fırlama riskini kökten engeller.</li><li><strong>KKD Kullanımı:</strong> Yapılan işin ve kullanılan aletin riskine uygun kişisel koruyucu donanım (özellikle darbe emici gözlük, siperlik ve kaymaz eldiven) eksiksiz kullanılmalıdır.</li></ul>
-<h3>3.3. Elektrikli El Aletlerinde Güvenlik ve Bakım Esasları</h3>
-<p>Elektrikli el aletleri, mekanik tehlikelere ek olarak elektrik enerjisinin getirdiği ölümcül riskleri de barındırır. Kazaları önlemek için şu süreçler eksiksiz yürütülmelidir:</p>
-<ul><li><strong>Kullanım Öncesi Kontrol:</strong> Elektrikli el aletleri her kullanım öncesinde operatör tarafından görsel ve işlevsel kontrolden geçirilmelidir.</li><li><strong>Gövde ve Sap İzolasyonu:</strong> Aletin sapı, dış gövdesi ve şasesi kırık, çatlak ve deformasyon riskine karşı incelenmelidir. Gövdedeki mikronize çatlaklar dahi yalıtım direncini düşürerek gövdeye elektrik sıçramasına ve çarpılmalara neden olur.</li><li><strong>Kablo Bütünlüğü ve İşaretleme:</strong> Kablo hasarlarına azami dikkat edilmeli; dış kılıfı sıyrılmış, yalıtımı bozulmuş, kesik veya ezilmiş kabloya sahip elektrikli el aletleri kesinlikle sisteme bağlanmamalıdır. Arızalı kablo görüldüğünde ekipman derhal kullanım dışı bırakılmalı ve üzerine <em>"DİKKAT! KABLO ARIZALIDIR, KULLANMAYINIZ"</em> ikaz levhası asılmalıdır.</li></ul>
-<h3>3.4. Bölüm Geçişi</h3>
-<p>El aletlerinde alınması gereken bireysel, teknik ve mühendislik önlemlerinin ardından; iş ekipmanlarının tasarım, imalat, kumanda ve durdurma sistemlerine ilişkin yasal mevzuat gereksinimlerinin detaylı incelemesine geçilmektedir.</p>
-<section class="major" id="s4"><h2>4. İş Ekipmanlarının Tasarım, İmalat ve Kumanda Sistemlerinde İSG Mevzuat Gerekleri</h2>
-<h3>4.1. Giriş: Tasarım ve İmalat Güvenliğinin Mevzuattaki Yeri</h3>
-<p>İş ekipmanlarının kullanım safhasındaki güvenliği, tasarım ve imalat aşamasında entegre edilen mühendislik emniyet sistemleriyle doğrudan ilişkilidir. Ülkemizde bu alanın temel hukuki dayanağı <strong>İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği</strong>’dir. Yönetmelik, ekipmanların kumanda mekanizmalarından acil durdurma sistemlerine kadar pek çok teknik kriteri emredici hükümlerle düzenler. Sınavlarda bu yönetmelik hükümleri doğrudan madde numarası veya teknik tanım şeklinde soru olarak adayların karşısına çıkarılmaktadır.</p>
-<h3>4.2. Kumanda Cihazları Standartları ve Güvenlik Koşulları</h3>
-<p><strong>İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği</strong> uyarınca, iş ekipmanında bulunan ve güvenliği etkileyen kumanda cihazları için aranan asgari gerekler şunlardır:</p>
-<ul><li><strong>Görülebilirlik ve İşaretleme:</strong> Kumanda cihazları açıkça görülebilir, tanınabilir özellikte olmalı ve gerektiğinde uygun şekilde işaretlenmelidir.</li><li><strong>Emniyetli Konumlandırma:</strong> Kumanda cihazları zorunlu haller dışında, tehlikeli bölgenin dışına yerleştirilmeli ve bunların kullanımı ek bir tehlike oluşturmamalıdır.</li><li><strong>İstem Dışı Hareket Koruması:</strong> Kumanda cihazları, istem dışı hareketlerde tehlikeye neden olmayacak yapıda tasarlanmalıdır.</li><li><strong>Operatör Görüşü ve İkaz Sistemleri:</strong> Operatör, ana kumanda yerinden tehlike bölgesinde herhangi bir kimsenin bulunmadığından emin olabilmelidir. Bu mümkün değilse, makine çalışmaya başlamadan önce otomatik olarak devreye giren sesli ve/veya görsel ikaz sistemi bulunmalıdır.</li></ul>
-<h3>4.3. Durdurma ve Acil Durdurma Sistemleri Hiyerarşisi</h3>
-<p>Yönetmelik uyarınca iş ekipmanlarında durdurma mekanizmaları kesin bir hiyerarşiye tabidir:</p>
-<div class="exam"><strong>⭐ Sınav / Mevzuat Vurgusu</strong><p><strong>Mevzuat Altın Kuralı (Sınav Çeldiricisi):</strong> İş ekipmanlarının <strong>durdurma sistemleri, çalıştırma sistemlerine göre ÖNCELİKLİ</strong> olmak zorundadır!</p></div>
-<ul><li><strong>Enerji Kesintisi:</strong> İş ekipmanı veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özellikte olmalıdır.</li><li><strong>Çalışma Yeri Durdurma Sistemi:</strong> Her bir çalışma yerinde, tehlikenin durumuna göre, iş ekipmanının tamamını veya bir kısmını durdurabilecek ve ekipmanın güvenli bir durumda kalmasını sağlayacak kumanda sistemi yer almalıdır.</li><li><strong>Acil Durdurma Sistemi:</strong> İş ekipmanının tehlikesi ve normal durma süresinin gerektirmesi halinde, ekipmanda bir acil durdurma sistemi bulunmalıdır.</li></ul>
-<h3>4.4. Enerji Kaynaklarının İzolasyonu ve İkaz Sistemleri</h3>
-<ul><li><strong>Enerji Kesme Araçları:</strong> İş ekipmanlarının enerji kaynaklarını kesecek araç ve gereçler kolayca görülebilir ve tanınabilir özellikte olmalıdır.</li><li><strong>Yeniden Bağlanma Emniyeti:</strong> Ekipmanın enerji kaynaklarına yeniden bağlanması çalışanlar için tehlikeye sebep olmayacak özellikte tasarlanmalıdır.</li><li><strong>İkaz Sistemleri:</strong> Çalışanların güvenliğinin sağlanmasında esas olan ikaz ve uyarı donanımları ekipman üzerinde eksiksiz yer almalıdır.</li></ul>
-<h3>4.5. Bölüm Geçişi</h3>
-<p>Kumanda ve durdurma sistemlerine ilişkin mevzuat esaslarının anlaşılmasının ardından; hareketli iş ekipmanları, saha kurulumu, bakımı ve ilgili kanuni düzenlemelerin incelenmesine geçilmektedir.</p>
-<section class="major" id="s5"><h2>5. Hareketli İş Ekipmanları, Kurulum, Bakım Yönetimi ve Mevzuat Detayları</h2>
-<h3>5.1. Giriş: Ekipman İşletim ve Bakım Süreçlerinin Güvenliği</h3>
-<p>Hareketli iş ekipmanlarının kullanımı, devrilme ve çarpma gibi yüksek riskli kazalara açık süreçlerdir. Ekipmanın sahaya kurulumundan sökümüne, periyodik kontrollerinden bakım kayıtlarının tutulmasına kadar her adım <strong>İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği</strong> çerçevesinde yönetilmelidir.</p>
-<h3>5.2. Hareketli İş Ekipmanlarında Devrilme, Çarpma ve Ezilme Risk Yönetimi</h3>
-<p>Üzerinde çalışan bulunan hareketli iş ekipmanları, normal çalışma koşullarında devrilme riskine karşı yönetmelikte belirtilen 3 şarttan en az birini sağlamak zorundadır:</p>
-<p><strong>Devrilme Riskine Karşı 3 Mevzuat Seçeneği (Yönetmelik EK-II Madde 3.1.4):</strong></p>
-<ol class='alpha'><li>Cihaz bir çeyrekten (<strong>90 derecelik açı</strong>) fazla dönmeyecek şekilde yapılmış olur, <strong>VEYA</strong></li></ol>
-<ol class='alpha'><li>Bir çeyrekten fazla dönüyorsa, üzerinde bulunan çalışanın etrafında <strong>yeterli açıklık</strong> bulunur, <strong>VEYA</strong></li></ol>
-<ol class='alpha'><li>Aynı etkiyi sağlayacak başka <strong>koruyucu yapı veya sistem</strong> bulunur (Bu koruyucu yapı veya sistem iş ekipmanının kendi parçası olabilir).</li></ol>
-<p><strong>Hareketli Ekipmanlarda Diğer Özel Tedbirler:</strong></p>
-<ul><li><strong>Zemin Teması Önlemi:</strong> Ekipman hareketli kısımlarının yere teması nedeniyle hasar görmesine veya kirlenmesine karşı gerekli önlemler alınır.</li><li><strong>Uzaktan Kumandalı Ekipmanlar:</strong> Uzaktan kumandalı iş ekipmanları, kontrol sınırlarının dışına çıkması halinde <strong>otomatik olarak hemen duracak</strong> şekilde tasarlanmalıdır. Ayrıca normal şartlarda çarpma ve ezilme risklerine karşı korumalı olmalıdır.</li></ul>
-<h3>5.3. Yerleşim, Kurulum, Söküm, Yıldırım, Aydınlatma ve Yangın Tedbirleri</h3>
-<ul><li><strong>Yerleşim ve Güvenli Mesafe:</strong> İş ekipmanı, hareketli kısımları ile çevresinde bulunan sabit veya hareketli kısımlar arasında yeterli mesafe bırakılacak şekilde yerleştirilir ve kurulur. Enerji ve maddelerin emniyetli temini/uzaklaştırılması sağlanır.</li><li><strong>Kurulum ve Söküm:</strong> İş ekipmanının kurulması veya sökülmesi, özellikle imalatçı tarafından verilen kullanma talimatı doğrultusunda güvenli koşullar altında gerçekleştirilir.</li><li><strong>Yıldırımdan Korunma:</strong> Kullanımı sırasında yıldırım düşmesi ihtimali bulunan iş ekipmanı yıldırımın etkilerine karşı uygun araçlarla korunur.</li><li><strong>Aydınlatma:</strong> Yapılan işi yürütmeye uygun ve çalışanların güvenliğini sağlayacak yeterli aydınlatma sistemi bulundurulur.</li><li><strong>Yangın Söndürme Cihazları:</strong> Çalışanları etkileyebilecek yangın çıkma tehlikesi olan iş ekipmanının kendisinin veya yedekte taşıdığı ekipmanın kullanıldığı yerin hemen yakınında yangın söndürme cihazları bulunmuyorsa, bu ekipmanlarda yeterli yangın söndürme cihazı bulundurulması zorunludur.</li></ul>
-<h3>5.4. İş Ekipmanlarının Kontrolü, Bakım Defteri ve 5070 Sayılı Kanun Vurgusu</h3>
-<p><strong>İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği</strong> uyarınca periyodik kontroller ve bakım defteri yönetimi şu esaslara bağlıdır:</p>
-<ul><li><strong>Periyodik Kontroller:</strong> Arızaya sebep olabilecek etkilere maruz kalarak tehlike yaratabilecek iş ekipmanlarının periyodik kontrolleri, periyodik kontrolleri yapmaya yetkili kişilerce gerçekleştirilir.</li><li><strong>Olağan dışı Durum Kontrolleri:</strong> Çalışma şeklinde değişiklikler, iş kazaları, doğal olaylar veya ekipmanın uzun süre kullanılmaması gibi güvenliğin bozulmasına neden olabilecek durumlardan sonra gerekli kontroller yetkili kişilerce yapılır.</li><li><strong>Bakım Defteri Esası:</strong> Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe deftere işlenir.</li><li><strong>5070 Sayılı Kanun Vurgusu (Kritik Sınav Bilgisi):</strong> <strong>5070 sayılı Elektronik İmza Kanununa</strong> uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtlar da mevzuat açısından <strong>bakım defteri olarak kabul edilir.</strong></li></ul>
-<h3>5.5. Bölüm Geçişi</h3>
-<p>Mevzuat detaylarının ve teknik standartların tamamlanmasının ardından; edinilen bilgilerin pekiştirilmesi, saha vakalarıyla eşleştirilmesi ve sınav sorularına yansıtılması amacıyla hazırlanan uygulama rehberi ve kontrol listesine geçilmektedir.</p>
-<section class="major" id="s6"><h2>6. Sınava Hazırlık ve Uygulama Rehberi: Örnek Senaryo, Kritik Hatırlatmalar ve Check-List</h2>
-<h3>6.1. Giriş: Sınav Sorularına Yaklaşım Stratejisi</h3>
-<p>İSG sınavlarında iş ekipmanları ve el aletleri konusundaki sorular doğrudan mevzuatın sayısal limitlerini (90 derece), kanun numaralarını (5070 sayılı Kanun), durdurma/çalıştırma hiyerarşisini ve yanlış el aleti ikamelerini sorgular. Soruları çözerken "Mevzuat neyi emrediyor?" ve "Mekanik riskin kaynağı nedir?" soruları birlikte düşünülmelidir.</p>
-<h3>6.2. Örnek Saha Senaryosu Analizi (Günlük Hayat İlişkisi)</h3>
-<div class="scenario"><strong>🧩 Saha Senaryosu</strong><p><strong>Saha Senaryosu:</strong> Bir imalat atölyesinde yürütülen denetimde aşağıdaki durumlar tespit edilmiştir:</p></div>
-<ol><li>Bir çalışan, doğrama işinde parçaları şekillendirmek için ağır demirci çekici kullanmakta ve cıvataları gevşetmek için keskiyi tornavida gibi zorlamaktadır. Ayrıca üzerine çekiçle vurulan murç başındaki çapakları tıraşlamadan çalışmaya devam etmekte, gözlük takmamaktadır.</li><li>Bir diğer çalışan, kablosunun dış kılıfı zedelenmiş elektrikli matkabı kontrol etmeden prize takıp kullanmaktadır.</li><li>Sahadaki hareketli bir iş ekipmanı (çeyrekten/90 dereceden fazla dönme ihtimali olan) üzerinde koruyucu yapı veya yeterli açıklık bulunmaksızın çalıştırılmaktadır. Bu ekipmanın çalıştırma düğmesi, durdurma sistemine göre öncelikli kılınmıştır.</li><li>İşletme bakım koordinatörü, periyodik bakım kayıtlarını fiziksel defter yerine güvenli elektronik imza ile 5070 sayılı Kanuna uygun ortamda saklamaktadır.</li></ol>
-<div class="scenario"><strong>🧩 Saha Senaryosu</strong><p><strong>Senaryonun İSG ve Mevzuat Açısından Adım Adım Analizi:</strong></p></div>
-<ul><li><strong>Hata 1 (El Aleti İhlali):</strong> Demirci çekicinin doğrama işinde kullanılması amaca aykırıdır. Keskilerin tornavida gibi kullanılması tipik bir hatalı ikamedir. Murç başındaki çapakların tıraşlanmaması "papatyalaşma" nedeniyle metal fırlama riski yaratır.</li><li><em>Mevzuat ve Teknik Karşılığı:</em> İş İşe uygun alet seçilmeli, vurmalı alet başları zaman zaman tıraşlanmalı ve uygun KKD takılmalıdır.</li><li><strong>Hata 2 (Elektrikli Alet İhlali):</strong> Yalıtımı zedelenmiş kablo elektrik şoku riski doğurur.</li><li><em>Mevzuat ve Teknik Karşılığı:</em> Elektrikli aletler her kullanımdan önce kontrol edilmeli, arızalı kablolu aletler ikaz levhası asılarak kullanımdan çekilmelidir.</li><li><strong>Hata 3 (Hareketli Ekipman ve Kumanda İhlali):</strong> 90 dereceden fazla dönme riski olan ekipmanda açıklık veya koruyucu sistem bulunmaması <strong>İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği EK-II Madde 3.1.4</strong> hükmüne aykırıdır. Çalıştırmanın durdurmaya öncelikli olması ise <strong>Yönetmelik EK-II Madde 2.1 / 2.3</strong> durdurma hiyerarşisini ihlal eder.</li><li><em>Mevzuat ve Teknik Karşılığı:</em> Devrilmeye karşı koruyucu yapı eklenmeli; <strong>durdurma sistemleri çalıştırmaya kesinlikle öncelikli</strong> kılınmalıdır.</li><li><strong>Doğru Uygulama (5070 Sayılı Kanun):</strong> Bakım kayıtlarının <strong>5070 sayılı Elektronik İmza Kanununa</strong> uygun güvenli elektronik imza ile saklanması <strong>Yönetmelik EK-II Madde 2.13.1</strong> uyarınca bakım defteri yerine geçer ve tam mevzuat uyumudur.</li></ul>
-<h3>6.3. Sınavda Çıkması Muhtemel "Kritik Bilgi" Kontrol Listesi (Check-List)</h3>
-<h4>Sınavda Düşülmemesi Gereken 5 Temel Çeldirici (Exam Traps)</h4>
-<div class="exam"><strong>⭐ Sınav / Mevzuat Vurgusu</strong><p><strong>1. SINAV TUZAĞI (Durdurma Önceliği):</strong> Sınavda <em>"Çalıştırma sistemi durdurmaya önceliklidir"</em> şıkkı koyulur. <strong>SABİT GERÇEK:</strong> Durdurma sistemleri, çalıştırma sistemlerine göre <strong>HER ZAMAN ÖNCELİKLİDİR!</strong></p></div>
-<div class="exam"><strong>⭐ Sınav / Mevzuat Vurgusu</strong><p><strong>2. SINAV TUZAĞI (Devrilme Açısı):</strong> Hareketli ekipman devrilme sınır açısı sorgulanır. <strong>SABİT GERÇEK:</strong> Kritik sınır <strong>bir çeyrek (90 derecelik açı)</strong> kadardır.</p></div>
-<div class="exam"><strong>⭐ Sınav / Mevzuat Vurgusu</strong><p><strong>3. SINAV TUZAĞI (Elektronik Bakım Kaydı):</strong> <em>"Elektronik ortamda bakım kaydı tutulamaz"</em> çeldiricisi kullanılır. <strong>SABİT GERÇEK:</strong> <strong>5070 sayılı Elektronik İmza Kanununa</strong> uygun e-imzalı kayıtlar bakım defteri yerine geçer.</p></div>
-<div class="exam"><strong>⭐ Sınav / Mevzuat Vurgusu</strong><p><strong>4. SINAV TUZAĞI (Uzaktan Kumandalı Ekipman):</strong> Sınavda <em>"Sınır dışına çıkınca yavaşlar"</em> denir. <strong>SABİT GERÇEK:</strong> Kontrol sınırları dışına çıktığında <strong>OTOMATİK OLARAK HEMEN DURMALIDIR!</strong></p></div>
-<div class="exam"><strong>⭐ Sınav / Mevzuat Vurgusu</strong><p><strong>5. SINAV TUZAĞI (Uzatma Kolu Kullanımı):</strong> Sınavda <em>"Daha fazla tork için boru takılabilir"</em> ifadesi geçer. <strong>SABİT GERÇEK:</strong> Moment/tork artırmak için rastgele uzatma kolu kullanımı <strong>KESİNLİKLE YASAKTIR!</strong></p></div>
-<h4>Genel Teknik Check-List</h4>
-<ul><li>[ ] <strong>Yönetmelik Adı:</strong> İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği.</li><li>[ ] <strong>Çapak Önleme (Tıraşlama):</strong> Zımba, murç ve çivi başları çapak fırlamasını önlemek için zaman zaman tıraşlanmalıdır.</li><li>[ ] <strong>Mengene Şartı:</strong> Küçük parçalarla çalışırken parçanın mengene ile tutturulması zorunludur.</li><li>[ ] <strong>Tahrik Sınıflandırması:</strong> El aletleri Mekanik, Elektrikli, Hidrolik ve Pnömatik (Havalı) olarak 4 gruba ayrılır.</li><li>[ ] <strong>Alet Taşıma:</strong> Keskin/sivri aletler cepte taşınmaz.</li><li>[ ] <strong>Elektrikli Alet Kontrolü:</strong> Her kullanımdan önce kullanıcısı tarafından kontrol edilmelidir.</li><li>[ ] <strong>Yangın Söndürme Cihazı:</strong> Yangın riski taşıyan ekipmanın kendisinde veya hemen yakınında yangın söndürme cihazı bulunmalıdır.</li><li>[ ] <strong>Yıldırımdan Korunma:</strong> Açık alanda yıldırım riski olan ekipman yıldırıma karşı korunmalıdır.</li><li>[ ] <strong>Yanlış İkame Eşleştirmesi:</strong> Keskilerin tornavida/manivela yapılması veya tornavidanın keski/kürek yerine kullanılması sınavlarda sorulan ana hatalı kullanımlardır.</li></ul>
-<div class="visual"><svg viewBox="0 0 900 220" role="img" aria-label="Durdurma sisteminin önceliği"><rect x="30" y="45" width="230" height="120" rx="18" fill="#fee2e2"/><text x="145" y="90" text-anchor="middle" font-size="18" font-weight="900" fill="#991b1b">TEHLİKE</text><text x="145" y="120" text-anchor="middle" font-size="13">Hareket / enerji</text><path d="M275 105 H390" stroke="#64748b" stroke-width="6"/><rect x="410" y="35" width="220" height="140" rx="22" fill="#0f172a"/><text x="520" y="82" text-anchor="middle" fill="white" font-size="19" font-weight="900">🛑 DURDUR</text><text x="520" y="112" text-anchor="middle" fill="#cbd5e1" font-size="13">öncelik</text><text x="520" y="139" text-anchor="middle" fill="#93c5fd" font-size="13">→ enerji kesilir</text><path d="M645 105 H760" stroke="#059669" stroke-width="7"/><rect x="780" y="45" width="90" height="120" rx="18" fill="#d1fae5"/><text x="825" y="98" text-anchor="middle" font-size="15" font-weight="900" fill="#065f46">GÜVENLİ</text><text x="825" y="124" text-anchor="middle" font-size="13" fill="#065f46">durum</text></svg><div class="caption">Durdurma sisteminin çalıştırma sistemine göre önceliği.</div></div>
-<div class="visual"><svg viewBox="0 0 720 300" role="img" aria-label="90 derece devrilme sınırı"><rect x="15" y="15" width="690" height="270" rx="24" fill="#f8fafc" stroke="#e2e8f0"/><line x1="105" y1="235" x2="585" y2="235" stroke="#334155" stroke-width="5"/><line x1="260" y1="235" x2="260" y2="80" stroke="#2563eb" stroke-width="8"/><path d="M260 110 A125 125 0 0 1 385 235" fill="none" stroke="#dc2626" stroke-width="7"/><line x1="260" y1="235" x2="385" y2="235" stroke="#dc2626" stroke-width="4" stroke-dasharray="9 7"/><text x="330" y="118" fill="#b91c1c" font-size="25" font-weight="900">90°</text><text x="330" y="150" fill="#b91c1c" font-size="14">bir çeyrek</text><rect x="220" y="160" width="80" height="55" rx="10" fill="#0f172a"/><circle cx="240" cy="220" r="10" fill="#0f172a"/><circle cx="280" cy="220" r="10" fill="#0f172a"/><text x="500" y="92" font-size="15" font-weight="800">Risk varsa:</text><text x="500" y="120" font-size="14">• yeterli açıklık</text><text x="500" y="146" font-size="14">• veya koruyucu yapı/sistem</text></svg><div class="caption">Hareketli iş ekipmanlarında bir çeyrek (90°) sınırı.</div></div>
-<div class="memory"><strong>🧠 SON TEKRAR KODU</strong><p><strong>4 → 4 → 90° → DUR → 5070 → OTOMATİK DUR.</strong> Dört tahrik sınıfı; dört temel kaza kök nedeni; hareketli ekipmanda 90°; durdurma sisteminin önceliği; 5070 sayılı Kanun; uzaktan kumandalı ekipmanda sınır dışına çıkınca otomatik durma.</p></div>
-<div class="footer"><span><strong>Hazırlayan: Sıraç Aksan</strong></span><span>Bölüm 3 · Konu Anlatımı</span></div>
-</article>
-<aside class="side">
-<div class="side-card"><div class="side-title">Bölüm 3 İçindekiler</div><nav class="toc"><a href="#s1">01 · Temel Esaslar</a><a href="#s2">02 · Tehlikeler</a><a href="#s3">03 · Önleyici Tedbirler</a><a href="#s4">04 · Tasarım ve Kumanda</a><a href="#s5">05 · Hareketli Ekipmanlar</a><a href="#s6">06 · Sınav ve Uygulama</a></nav></div>
-<div class="side-card"><div class="side-title">Hızlı Erişim</div><nav class="toc"><a href="bolum-03-sunum.html">📊 Bölüm 3 Sunumu</a><a href="bolum-03-sorular.html">📝 Bölüm 3 Soruları</a><a href="index.html">📚 Ders Ana Sayfası</a><a href="../index.html">🗂️ 1. Dönem</a><a href="../../index.html">🏠 Site Ana Sayfası</a></nav></div>
-</aside></div></main>
-</body></html>
+<header class="topbar">
+<div class="container nav">
+<div class="brand">Mekanik İşlerde Güvenlik · 3. Bölüm</div>
+<nav class="navlinks" aria-label="Bölüm gezinme">
+<a href="../index.html">Ders Ana Sayfası</a>
+<a href="sunum.html">Sunum</a>
+<a href="sorular.html">Sorular</a>
+<a href="../bolum-02/konu-anlatimi.html">← Bölüm 2</a>
+<a href="../bolum-04/konu-anlatimi.html">Bölüm 4 →</a>
+<a href="../../../index.html">Dönem</a>
+<a href="../../../ana-sayfa.html">Ana Sayfa</a>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<section class="hero">
+<div class="badges"><span class="badge">3. Bölüm</span><span class="badge">6–9. Haftalar</span><span class="badge">Kapsamlı Konu Anlatımı</span><span class="badge">Sınav Odaklı</span></div>
+<h1>Basınçlı Kaplarda<br>İş Sağlığı ve Güvenliği</h1>
+<p>Basınçlı kap nedir, neden tehlikelidir, hangi emniyet elemanları bulunur, nasıl kontrol edilir, hidrostatik test nasıl düşünülür, PT–UT–RT nasıl ayırt edilir ve gaz tüpleri sahada nasıl güvenli yönetilir? Bu sayfa dört haftanın tamamını tek bir öğrenme akışı içinde birleştirir.</p>
+<div class="chips"><span class="chip">0,5 bar</span><span class="chip">1,5 × P</span><span class="chip">1 yıl</span><span class="chip">PT</span><span class="chip">UT</span><span class="chip">RT</span><span class="chip">TS EN 1089-3</span><span class="chip">Grup 1–6</span></div>
+</section>
+
+<section class="card">
+<h2>Bu bölümü nasıl çalışmalısın?</h2>
+<div class="progress">
+<div class="week"><b>06. Hafta</b>Tanım → emniyet elemanları → kompresör → hava tankı</div>
+<div class="week"><b>07. Hafta</b>Kontrol → plaka → yetkili kişi → hidrostatik test</div>
+<div class="week"><b>08. Hafta</b>Test mantığı → PT → UT → RT</div>
+<div class="week"><b>09. Hafta</b>Gaz tüpleri → N → gruplar → depolama</div>
+</div>
+<p class="lead"><b>Temel mantık:</b> Önce “basınçlı kap neden tehlikeli?” sorusunu anla. Sonra “tehlikeyi hangi eleman kontrol ediyor?” diye düşün. Ardından “güvenli olduğunu nasıl doğruluyoruz?” sorusuna test ve NDT yöntemleriyle cevap ver. Son aşamada ise gaz tüplerini depolama ve saha davranışlarıyla tamamla.</p>
+</section>
+
+<nav class="card" aria-label="İçindekiler">
+<h2>İçindekiler</h2>
+<div class="toc">
+<a href="#hafta6">1. 6. Hafta — Temel Kavramlar</a>
+<a href="#emniyet">2. Emniyet Elemanları</a>
+<a href="#kompresor">3. Kompresör ve Hava Tankı</a>
+<a href="#hafta7">4. 7. Hafta — Kontroller</a>
+<a href="#plaka">5. Tip Plakası</a>
+<a href="#hidro">6. Hidrostatik Test</a>
+<a href="#hafta8">7. 8. Hafta — NDT</a>
+<a href="#pt">8. Penetran (PT)</a>
+<a href="#ut">9. Ultrasonik (UT)</a>
+<a href="#rt">10. Radyografik (RT)</a>
+<a href="#hafta9">11. 9. Hafta — Gaz Tüpleri</a>
+<a href="#n">12. TS EN 1089-3 / N</a>
+<a href="#gruplar">13. Gaz Grupları</a>
+<a href="#depolama">14. Depolama Kuralları</a>
+<a href="#senaryo">15. Saha Senaryoları</a>
+<a href="#sinav">16. Sınav Hafızası</a>
+</div>
+</nav>
+
+<section id="hafta6" class="card">
+<h2>1. 6. Hafta — Basınçlı Kap Nedir?</h2>
+<p class="lead">Kaynak metindeki temel tanım: <b>iç basıncı 0,5 bar’dan fazla olan</b> kaplar, tesisatlar ve ekipmanlar basınçlı kap kapsamına girer.</p>
+<div class="formula">Basınçlı kap → <strong>&gt; 0,5 bar</strong></div>
+<p>Basınçlı kapların tehlikesi yalnızca içindeki gazın veya sıvının miktarından kaynaklanmaz. Basınç altında tutulan akışkan, kabın içinde <b>depolanmış enerji</b> oluşturur. Kabın gövdesinde korozyon, çatlak, imalat kusuru veya uygunsuz işletme nedeniyle dayanım kaybolursa bu enerji çok kısa sürede açığa çıkabilir.</p>
+<div class="grid">
+<div class="tile"><h3>Basınçlı gaz</h3><p>Hava, azot, oksijen, hidrojen gibi gazlar sıkıştırıldığında yüksek basınçta depolanabilir.</p></div>
+<div class="tile"><h3>Sıvılaştırılmış gaz</h3><p>Bazı gazlar basınç altında sıvı fazda depolanabilir. Kap ısındığında iç basınç değişebilir.</p></div>
+<div class="tile"><h3>Basınçlı sıvı</h3><p>Basınç altında tutulan sıvılar da uygun kap ve emniyet sistemi gerektirir.</p></div>
+</div>
+<div class="note exam"><b>Sınav cümlesi:</b> “İç basıncı 0,5 bar’dan fazla olan...” ifadesini gördüğünde konu <b>basınçlı kap</b>tır. “0,5 bar veya daha fazla” ile “0,5 bar’dan fazla” ifadelerini karıştırma.</div>
+<h3>Basınç neden risk oluşturur?</h3>
+<div class="diagram">
+<svg viewBox="0 0 900 270" role="img" aria-label="Basınçlı kapta enerji ve arıza ilişkisi">
+<rect x="80" y="65" width="250" height="140" rx="65" fill="#24536b" stroke="#9be4ef" stroke-width="4"/>
+<text x="145" y="125" fill="#fff" font-size="27" font-weight="800">BASINÇLI</text><text x="155" y="158" fill="#fff" font-size="27" font-weight="800">KAP</text>
+<path d="M330 135 C420 135 430 80 510 80" fill="none" stroke="#fbbf24" stroke-width="7"/>
+<polygon points="505,65 535,80 505,95" fill="#fbbf24"/>
+<rect x="535" y="35" width="285" height="90" rx="15" fill="#7c2d12"/><text x="575" y="73" fill="#fff" font-size="20" font-weight="800">Dayanım kaybı</text><text x="575" y="102" fill="#fff" font-size="17">çatlak · korozyon · kusur</text>
+<path d="M330 150 C420 150 430 205 510 205" fill="none" stroke="#60a5fa" stroke-width="7"/>
+<polygon points="505,190 535,205 505,220" fill="#60a5fa"/>
+<rect x="535" y="160" width="285" height="90" rx="15" fill="#166534"/><text x="575" y="198" fill="#fff" font-size="20" font-weight="800">Kontrol sistemi</text><text x="575" y="227" fill="#fff" font-size="17">valf · ölçüm · test · bakım</text>
+</svg>
+</div>
+</section>
+
+<section id="emniyet" class="card">
+<h2>2. Emniyet Elemanları: “Göster – Tahliye Et – Boşalt”</h2>
+<p>Bu üç elemanı birbirine karıştırmamak için işlevlerini bir cümleyle kodla:</p>
+<div class="grid">
+<div class="tile"><div class="big-number">01</div><h3>Manometre → GÖSTERİR</h3><p>Kabın içindeki basıncı ölçer/gösterir. Operatör basıncın hangi seviyede olduğunu buradan takip eder.</p></div>
+<div class="tile"><div class="big-number">02</div><h3>Emniyet valfi → TAHLİYE EDER</h3><p>Basınç izin verilen seviyenin üzerine çıktığında açılarak fazla akışkanı tahliye ederek sistemi korur.</p></div>
+<div class="tile"><div class="big-number">03</div><h3>Blöf vanası → BOŞALTIR</h3><p>Tabanda biriken kondensat, tortu, yağ ve çamurun tahliyesine yardımcı olur.</p></div>
+</div>
+<figure>
+<img src="https://sieuthihaiminh.vn/upload/images/May-nen-khi/binh-tich-khi-pegasus-500l.jpg" alt="Dikey basınçlı hava tankı, üzerinde manometre ve bağlantılar">
+<figcaption>Gerçek ekipman örneği: dikey basınçlı hava tankı. Görselde manometre ve bağlantı elemanlarının yerleşimi görülebilir. Kaynak görsel: üretici/ürün sayfası.</figcaption>
+</figure>
+<figure>
+<img src="https://source.roboflow.com/JNBZh7hrCrf3nfPt82jyqifd8qp1/r5bCsoen1woOyXxMRKRZ/original.jpg" alt="Endüstriyel basınç göstergesi">
+<figcaption>Gerçek endüstriyel manometre örneği. Kaynak: Roboflow açık kaynak görüntü veri seti.</figcaption>
+</figure>
+<div class="note exam"><b>Manometre için kaynak metindeki kritik bilgi:</b> Kadranın üst gösterge değeri azami çalışma basıncının en az iki katı olmalı; azami çalışma basıncı da kadranda kırmızı çizgiyle belirginleştirilmelidir.</div>
+<h3>Emniyet valfinin çalışma mantığı</h3>
+<figure>
+<img src="https://www.researchgate.net/profile/Ghaith-Burhani/publication/341419798/figure/fig2/AS:891405013778432@1589436260381/Typical-direct-spring-operated-pressure-relief-valve.png" alt="Yaylı basınç tahliye valfi kesit şeması" onerror="this.style.display='none'">
+<figcaption>Yaylı basınç tahliye valfinin kesit şeması. Valfin temel mantığı, ayarlanan basınç seviyesinde açılarak fazla basıncı tahliye etmektir. Kaynak: Burhani & Hős çalışmasındaki şema.</figcaption>
+</figure>
+<div class="note success"><b>Akılda kalıcı benzetme:</b> Manometre “<b>hız göstergesi</b>” gibi sana durumu söyler; emniyet valfi “<b>otomatik tahliye kapısı</b>” gibi gerektiğinde açılır; blöf vanası ise “<b>dipteki suyu boşaltan gider</b>” gibi çalışır.</div>
+</section>
+
+<section id="kompresor" class="card">
+<h2>3. Kompresörler ve Hava Tankları</h2>
+<h3>Kompresör ne yapar?</h3>
+<p>Kompresör, atmosferden aldığı hava veya gazı mekanik enerji kullanarak sıkıştırır ve basıncını artırır. Yani temel görevini <b>“basınç üretmek/sıkıştırmak”</b> şeklinde hatırla.</p>
+<h3>Hava tankı ne yapar?</h3>
+<p>Hava tankı, kompresörün oluşturduğu basınçlı havayı depolar. Sistem içindeki ani talep değişimlerinin etkisini azaltmaya, basınç dalgalanmalarını sönümlemeye ve basınçlı havanın soğumasıyla kondensatın ayrışmasına yardımcı olur.</p>
+<figure>
+<img src="https://ptbig.com/products/air-receiver-tank" alt="Hava tankı ve temel elemanlarını gösteren şema" style="object-fit:contain" onerror="this.style.display='none'">
+<figcaption>Hava alıcı tankın temel elemanlarını gösteren üretici şeması: emniyet valfi, basınç göstergesi, tip plakası ve drenaj vanası gibi parçaların yerleşimi.</figcaption>
+</figure>
+<div class="note exam"><b>Eşleştirme:</b> “Gazı/havayı sıkıştırır” → <b>Kompresör</b>. “Basınçlı havayı depolar, dalgalanmayı sönümler” → <b>Hava tankı</b>. “Dipteki kondensatı alır” → <b>Blöf/drenaj</b>.</div>
+</section>
+
+<section id="hafta7" class="card">
+<h2>4. 7. Hafta — Periyodik Kontroller ve Olağan Dışı Durumlar</h2>
+<p>Basınçlı ekipman güvenliği, “bir kez kontrol edildi, artık güvenlidir” anlayışıyla yürütülmez. Kullanım koşulları değişebilir, korozyon ilerleyebilir, ekipman hasar görebilir. Bu nedenle kaynak metin; düzenli periyodik kontrolün yanı sıra bazı olağan dışı durumlarda yeniden kontrol yapılmasını vurgular.</p>
+<div class="grid">
+<div class="tile"><h3>Arıza veya dış etken</h3><p>Arızaya veya tehlikeli etkilere maruz kalan ekipman yeniden değerlendirilmelidir.</p></div>
+<div class="tile"><h3>Çalışma şekli değişirse</h3><p>Ekipmanın kullanım biçimindeki değişiklik güvenlik değerlendirmesini etkileyebilir.</p></div>
+<div class="tile"><h3>Kaza / doğal olay</h3><p>Kaza veya doğal olay sonrası güvenliğin bozulmadığı doğrulanmalıdır.</p></div>
+<div class="tile"><h3>Uzun süre kullanılmadıysa</h3><p>Tekrar hizmete almadan önce uygun kontrol süreci uygulanmalıdır.</p></div>
+</div>
+<div class="note success"><b>Bakım kayıtları:</b> Kaynak metinde, bakım defteri bulunan makinelerde işlemlerin günü gününe işlenmesi ve 5070 sayılı Elektronik İmza Kanununa uygun güvenli elektronik imzalı elektronik kayıtların bakım defteri niteliğinde kabul edilmesi anlatılmaktadır.</div>
+</section>
+
+<section id="plaka" class="card">
+<h2>5. Tip Plakası: Basınçlı Kabın “Kimlik Kartı”</h2>
+<p>Bir basınçlı kabı tanımak için üzerinde imalatçı tarafından kalıcı biçimde işlenmiş tip plakası/etiket bulunması önemlidir. Sınavda bu bilgiler “hangisi tip plakasında bulunur?” biçiminde sorulabilir.</p>
+<table>
+<thead><tr><th>Tip plakası bilgisi</th><th>Hatırlama sorusu</th></tr></thead>
+<tbody>
+<tr><td><b>İmalatçı adı / ticari unvan</b></td><td>“Kim yaptı?”</td></tr>
+<tr><td><b>İmal yılı + seri numarası</b></td><td>“Ne zaman ve hangi ekipman?”</td></tr>
+<tr><td><b>Tasarım / azami çalışma basıncı</b></td><td>“En fazla hangi basınç?”</td></tr>
+<tr><td><b>Test basıncı</b></td><td>“Testte hangi değer?”</td></tr>
+<tr><td><b>Kap hacmi</b></td><td>“Ne kadar hacim?”</td></tr>
+<tr><td><b>İşletme sıcaklık aralığı</b></td><td>“Hangi sıcaklık sınırları?”</td></tr>
+</tbody>
+</table>
+<div class="note memory"><b>Hafıza yöntemi:</b> <b>Kim yaptı?</b> → <b>Ne zaman/numarası?</b> → <b>Kaç bar?</b> → <b>Kaç bar test?</b> → <b>Kaç litre?</b> → <b>Kaç °C?</b></div>
+</section>
+
+<section id="hidro" class="card">
+<h2>6. Hidrostatik Test — 1,5 × P ve 1 Yıl</h2>
+<p>Hidrostatik test, basınçlı kabın dayanımını kontrol etmek amacıyla kullanılan temel zorlayıcı test olarak kaynak metinde yer alır. Genel ders kuralı olarak, standartlarda aksi belirtilmedikçe test basıncı <b>azami çalışma/tasarım basıncının 1,5 katıdır.</b></p>
+<div class="formula">P<sub>test</sub> = 1,5 × P<sub>çalışma</sub></div>
+<div class="grid">
+<div class="tile"><div class="big-number">1,5×</div><h3>Test basıncı</h3><p>Kaynak metindeki genel kural: azami çalışma/tasarım basıncının 1,5 katı.</p></div>
+<div class="tile"><div class="big-number">1 yıl</div><h3>Kontrol periyodu</h3><p>Kaynak metindeki genel kural: standartlarda farklı süre öngörülmemişse yılda en az bir kez.</p></div>
+</div>
+<h3>Örnekler</h3>
+<table><thead><tr><th>Çalışma basıncı</th><th>Hesap</th><th>Test basıncı</th></tr></thead><tbody>
+<tr><td>6 bar</td><td>1,5 × 6</td><td><b>9 bar</b></td></tr>
+<tr><td>8 bar</td><td>1,5 × 8</td><td><b>12 bar</b></td></tr>
+<tr><td>10 bar</td><td>1,5 × 10</td><td><b>15 bar</b></td></tr>
+<tr><td>12 bar</td><td>1,5 × 12</td><td><b>18 bar</b></td></tr>
+<tr><td>16 bar</td><td>1,5 × 16</td><td><b>24 bar</b></td></tr>
+</tbody></table>
+<div class="note exam"><b>Hızlı matematik:</b> 1,5 × P = P + P/2. Örneğin 14 bar için 14 + 7 = <b>21 bar</b>.</div>
+<div class="note danger"><b>Önemli:</b> Gerçek saha testinde uygulanacak basınç, süre ve yöntem ekipmanın ilgili mevzuatına, standardına ve yetkili kişinin prosedürüne göre belirlenmelidir. Buradaki hesap, kaynak çalışma metnindeki sınav kuralını öğretmek içindir.</div>
+</section>
+
+<section id="hafta8" class="card">
+<h2>7. 8. Hafta — Test Teknikleri ve NDT</h2>
+<p>Bu haftayı tek bir soru üzerinden öğren: <b>“Kabın sağlamlığını nasıl anlarız?”</b> Cevap iki ana aileye ayrılır:</p>
+<div class="diagram">
+<svg viewBox="0 0 1000 390" role="img" aria-label="Basınçlı kap test yöntemleri ağacı">
+<rect x="350" y="20" width="300" height="70" rx="16" fill="#176b87"/><text x="405" y="63" fill="#fff" font-size="25" font-weight="800">TEST / MUAYENE</text>
+<line x1="500" y1="90" x2="500" y2="135" stroke="#fff" stroke-width="4"/>
+<line x1="220" y1="135" x2="780" y2="135" stroke="#fff" stroke-width="4"/>
+<line x1="220" y1="135" x2="220" y2="180" stroke="#fff" stroke-width="4"/>
+<line x1="500" y1="135" x2="500" y2="180" stroke="#fff" stroke-width="4"/>
+<line x1="780" y1="135" x2="780" y2="180" stroke="#fff" stroke-width="4"/>
+<rect x="70" y="180" width="300" height="72" rx="14" fill="#9a4d0b"/><text x="115" y="222" fill="#fff" font-size="22" font-weight="800">HİDROSTATİK</text><text x="120" y="245" fill="#fff" font-size="15">basınçla dayanım</text>
+<rect x="350" y="180" width="300" height="72" rx="14" fill="#633f91"/><text x="435" y="222" fill="#fff" font-size="22" font-weight="800">PT</text><text x="386" y="245" fill="#fff" font-size="15">yüzeye açık kusur</text>
+<rect x="630" y="180" width="300" height="72" rx="14" fill="#177245"/><text x="745" y="222" fill="#fff" font-size="22" font-weight="800">UT</text><text x="688" y="245" fill="#fff" font-size="15">ses dalgası / iç kusur</text>
+<rect x="350" y="290" width="300" height="72" rx="14" fill="#8f2930"/><text x="453" y="332" fill="#fff" font-size="22" font-weight="800">RT</text><text x="407" y="355" fill="#fff" font-size="15">X / gama radyasyonu</text>
+<path d="M500 252 V290" stroke="#fff" stroke-width="4"/>
+</svg>
+</div>
+<div class="note"><b>Terimleri ayır:</b> “Zorlayıcı basınç testi” dendiğinde aklına <b>hidrostatik</b>; “tahribatsız muayene” dendiğinde <b>PT–UT–RT</b> gelsin.</div>
+</section>
+
+<section id="pt" class="card">
+<h2>8. Penetran Sıvı Muayenesi (PT) — “Kılcal Çatlağı Boya”</h2>
+<p>PT, yalnızca <b>malzeme yüzeyine açık</b> çatlak ve süreksizlikleri belirlemeye yönelik, kılcallık etkisinden yararlanan bir NDT yöntemidir.</p>
+<figure>
+<img src="https://image.slidesharecdn.com/ndtmodule2-181016083613/85/liquid-penetrant-inspection-lpi-ndt-7-638.jpg?cb=1666360863" alt="Sıvı penetran muayenesinin işlem adımları">
+<figcaption>PT/LPI işlem akışını gösteren eğitim görseli: temizlik → penetran → bekleme → fazla penetranı temizleme → developer → değerlendirme.</figcaption>
+</figure>
+<div class="steps">
+<div class="step"><b>Ön temizlik:</b> Yağ, pas, kir ve yüzey kirleticileri uzaklaştırılır; yüzey kurutulur.</div>
+<div class="step"><b>Penetran uygulanır:</b> Kılcal etkiye sahip penetran sıvı yüzeye sürülür veya püskürtülür.</div>
+<div class="step"><b>Beklenir:</b> Sıvının yüzeydeki süreksizliğin içine nüfuz etmesi için yeterli süre tanınır.</div>
+<div class="step"><b>Fazla penetran temizlenir:</b> Yüzeyde kalan fazla sıvı alınır; kusur içindeki penetranın mümkün olduğunca korunması gerekir.</div>
+<div class="step"><b>Developer uygulanır:</b> Geliştirici, süreksizlik içindeki penetranın yüzeye geri çıkmasına yardım eder.</div>
+<div class="step"><b>Değerlendirme:</b> Oluşan belirtiler değerlendirilir ve işlem sonrasında yüzey temizlenir.</div>
+</div>
+<div class="note exam"><b>Üçlü şifre:</b> <b>PT = Penetran + Kılcallık + Yüzeye açık çatlak.</b> İçeride kalan ve yüzeye hiç açılmayan bir kusur için PT mantığını kullanma.</div>
+<h3>Mini örnek</h3>
+<p>Bir kaynak dikişinin yüzeyinde saç teli gibi ince bir çatlak şüphesi var. Yüzey temizleniyor, renkli penetran uygulanıyor, bekleniyor ve developer ile belirti oluşturuluyor. Bu senaryo <b>PT</b>yi anlatır.</p>
+</section>
+
+<section id="ut" class="card">
+<h2>9. Ultrasonik Muayene (UT) — “Sesle İçini Dinle”</h2>
+<p>UT, yüksek frekanslı ses dalgalarının malzeme içine gönderilmesi ve geri dönen/yansıyan sinyallerin analiz edilmesi esasına dayanır. Kaynak metin 0,5–20 MHz aralığını verir ve iç çatlak, boşluk ve et kalınlığı kayıplarının tespitini vurgular.</p>
+<figure>
+<img src="https://cdn.vev.design/cdn-cgi/image/f%3Dauto%2Cq%3D82%2Cw%3D1920/private/MDn5NztIaBTfbgkYkIxdkiuvf5S2/image/vv1fftu0UJ.jpg" alt="Geleneksel ultrasonik test probu ve A-scan sinyali">
+<figcaption>UT'de probdan gönderilen ses dalgasının malzeme içindeki kusurdan yansıması ve ekranda sinyal olarak görülmesi.</figcaption>
+</figure>
+<figure>
+<img src="https://www.weldinspect.cz/assets/img/ultrazvuk_3.jpg" alt="Kaynak üzerinde açılı ultrasonik prob uygulaması">
+<figcaption>Kaynak muayenesinde açılı prob kullanımına örnek. Yüzeydeki bağlayıcı ortam, ultrasonik enerjinin malzemeye aktarılmasına yardımcı olur.</figcaption>
+</figure>
+<div class="grid">
+<div class="tile"><h3>Tek taraftan erişim</h3><p>Kaynak metnindeki önemli avantajlardan biri, birçok uygulamada parçanın yalnızca bir tarafından erişimin yeterli olabilmesidir.</p></div>
+<div class="tile"><h3>İç kusurlar</h3><p>Çatlak, boşluk ve benzeri iç süreksizlikler araştırılabilir.</p></div>
+<div class="tile"><h3>Et kalınlığı</h3><p>Et kalınlığındaki kayıpların belirlenmesinde kullanılabilir.</p></div>
+<div class="tile"><h3>Radyasyon yok</h3><p>RT'den farklı olarak iyonlaştırıcı radyasyon kullanmaz.</p></div>
+<div class="tile"><h3>Taşınabilir</h3><p>Uygun ekipmanla sahada hızlı muayene yapılabilir.</p></div>
+<div class="tile"><h3>Sinyal mantığı</h3><p>Ses gönderilir → yansıma alınır → zaman/şiddet analiz edilir → kusur hakkında bilgi elde edilir.</p></div>
+</div>
+<div class="note exam"><b>UT sınav şifresi:</b> <b>Ses dalgası + iç kusur + tek taraftan erişim + radyasyon yok.</b></div>
+</section>
+
+<section id="rt" class="card">
+<h2>10. Radyografik Muayene (RT) — “İç Yapının Röntgeni”</h2>
+<p>RT'de X ışınları veya gama ışınları gibi nüfuz edici radyasyon kullanılarak malzemenin iç yapısı film veya dijital dedektör üzerinde görüntülenir. Kaynak metin özellikle kaynak dikişleri ve döküm parçalarındaki iç kusurların görüntülenmesini vurgular.</p>
+<figure>
+<img src="https://unixray.com/wp-content/uploads/2020/12/X-ray-Radiography.jpg" alt="Kaynak dikişinin X ışını ile radyografik muayenesi">
+<figcaption>Radyografik muayenede X-ışını kaynağının malzemeden geçerek film/dedektörde görüntü oluşturma prensibi.</figcaption>
+</figure>
+<div class="grid">
+<div class="tile"><h3>Görüntüleme</h3><p>İç gözenek, cüruf kalıntısı, kök nüfuziyetsizliği ve bazı iç çatlaklar görüntülenebilir.</p></div>
+<div class="tile"><h3>Kalıcı kayıt</h3><p>Film veya dijital radyogram muayene sonucunun kayıt altına alınmasına yardımcı olur.</p></div>
+<div class="tile"><h3>Radyasyon riski</h3><p>İyonlaştırıcı radyasyon kullanıldığı için özel radyasyon güvenliği tedbirleri gerekir.</p></div>
+</div>
+<div class="note danger"><b>RT ile ilgili sınav tuzağı:</b> “Radyasyon kullanmaz” ifadesi <b>RT için yanlıştır</b>. Radyasyon kelimesini görürsen RT'yi düşün.</div>
+</section>
+
+<section class="card">
+<h2>PT – UT – RT: Tek tabloda bütün farklar</h2>
+<table>
+<thead><tr><th>Yöntem</th><th>Neyi kullanır?</th><th>Ne arar?</th><th>Hafıza kelimesi</th></tr></thead>
+<tbody>
+<tr><td><b>PT</b></td><td>Penetran sıvı + kılcallık</td><td>Yüzeye açık kusurlar</td><td>🟥 ÇATLAĞI BOYA</td></tr>
+<tr><td><b>UT</b></td><td>Yüksek frekanslı ses</td><td>İç kusurlar / et kalınlığı</td><td>🔊 İÇİNİ DİNLE</td></tr>
+<tr><td><b>RT</b></td><td>X / gama ışınları</td><td>İç yapının görüntülenmesi</td><td>☢️ RÖNTGEN ÇEK</td></tr>
+</tbody>
+</table>
+<div class="note memory"><b>Üç kelimelik ezber:</b> <b>PT = YÜZEY</b> · <b>UT = SES</b> · <b>RT = IŞIN</b>.</div>
+</section>
+
+<section id="hafta9" class="card">
+<h2>11. 9. Hafta — Basınçlı Gaz Tüpleri</h2>
+<p>Gaz tüpleri iki ayrı tehlikeyi aynı anda taşır: <b>yüksek basınç</b> ve <b>gazın kimyasal/fiziksel özelliği</b>. Bu nedenle yalnızca tüpün sağlam olması yetmez; taşıma, sabitleme, vana koruması, depolama ve gazların uyumluluğu da önemlidir.</p>
+<div class="grid">
+<div class="tile"><h3>Dik ve sabit</h3><p>Tüp devrilmeye/düşmeye karşı zincir, kelepçe veya uygun taşıma arabasıyla güvence altına alınmalıdır.</p></div>
+<div class="tile"><h3>Koruyucu başlık</h3><p>Taşıma veya kullanılmama sırasında uygun valf koruyucu başlığı kullanılmalıdır.</p></div>
+<div class="tile"><h3>Yağdan uzak</h3><p>Özellikle oksijen ekipmanlarında yağ/gres ile temas ettirilmemelidir.</p></div>
+<div class="tile"><h3>Doğru taşıma</h3><p>Tüp sürüklenmez, yuvarlanmaz; vanasından tutularak kaldırılmaz.</p></div>
+</div>
+<figure>
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQEguDDqQxWKdw/feedshare-shrink_800/B4DZuTA0TdK0Ag-/0/1767698024670?e=2147483647&t=Er63TbMjhQqLWfC-IL_L2AwqmDd2LOS3N3ZkGEChyDs&v=beta" alt="Oksijen ve asetilen tüplerinin ayrılması örneği">
+<figcaption>Oksijen ve asetilen tüplerinin ayrı tutulmasına ilişkin örnek görsel. Bu görselde 6 m mesafe fikri görselleştirilmiştir; ders metnindeki depolama kuralı için aşağıdaki özel açıklamayı esas al.</figcaption>
+</figure>
+<div class="note danger"><b>Oksijen + yağ/gres:</b> Oksijenin kendisi yanıcı değildir; ancak yanmayı kuvvetle destekleyen oksitleyici bir gazdır. Bu nedenle yağ/gres gibi yanıcı maddelerle temas ciddi tehlike oluşturabilir.</div>
+</section>
+
+<section id="n" class="card">
+<h2>12. TS EN 1089-3 ve “N” Harfi</h2>
+<p>Kaynak metinde tüplerin omuz/kavisli üst kısmındaki renk kodlamasının gazın türü ve tehlike özelliğini ayırt etmeye yardımcı olduğu ve yeni renk kodlamasına uygun tüplerde <b>“N” harfi</b> işaretinin kullanıldığı anlatılır.</p>
+<div class="diagram">
+<svg viewBox="0 0 760 350" role="img" aria-label="Gaz tüpü omuz bölgesi ve N işareti">
+<path d="M250 85 Q380 25 510 85 L510 290 Q380 335 250 290 Z" fill="#64748b" stroke="#dbeafe" stroke-width="5"/>
+<path d="M250 85 Q380 30 510 85 L510 145 Q380 190 250 145 Z" fill="#0f766e"/>
+<rect x="355" y="30" width="50" height="30" rx="5" fill="#e5e7eb"/>
+<text x="363" y="128" fill="#fff" font-size="62" font-weight="900">N</text>
+<text x="545" y="105" fill="#d9f7ff" font-size="22" font-weight="700">Tüp omzu</text>
+<text x="545" y="135" fill="#d9f7ff" font-size="17">renk kodlaması</text>
+<text x="545" y="210" fill="#fef3c7" font-size="22" font-weight="800">N = Yeni</text>
+<text x="545" y="240" fill="#d9f7ff" font-size="17">standart renk kodu</text>
+</svg>
+</div>
+<div class="note exam"><b>Sınav şifresi:</b> <b>TS EN 1089-3 → renk kodlaması → N.</b> Kaynak metindeki “N” işareti, yeni renk kodlamasına uygun tüpleri eski renk kodlamalı tüplerden ayırt etmeye yarayan işaret olarak anlatılır.</div>
+</section>
+
+<section id="gruplar" class="card">
+<h2>13. Gaz Tüplerinin 1–6 Depolama Grupları</h2>
+<table>
+<thead><tr><th>Grup</th><th>Gaz özelliği</th><th>Kaynak metindeki örnekler</th><th>Hafıza</th></tr></thead>
+<tbody>
+<tr><td><b>1</b></td><td>Yanıcı gazlar</td><td>Asetilen, hidrojen, LPG, metin kaynağında “Mitan” olarak geçen örnek</td><td>🔥 YANICI</td></tr>
+<tr><td><b>2</b></td><td>Oksitleyici / yakıcı gazlar</td><td>Oksijen, azot protoksit</td><td>🟢 YAKICI</td></tr>
+<tr><td><b>3</b></td><td>Toksik / zehirli gazlar</td><td>Klor, amonyak, karbonmonoksit</td><td>☠️ ZEHİRLİ</td></tr>
+<tr><td><b>4</b></td><td>Korozif / aşındırıcı gazlar</td><td>Kaynak metindeki korozif gaz örnekleri</td><td>🧪 AŞINDIRICI</td></tr>
+<tr><td><b>5</b></td><td>Asfiksi oluşturan / boğucu gazlar</td><td>Azot, argon, helyum, CO₂</td><td>😮‍💨 BOĞUCU</td></tr>
+<tr><td><b>6</b></td><td>Diğer / sınıflandırılmamış gazlar</td><td>Özel gaz karışımları</td><td>📦 DİĞER</td></tr>
+</tbody>
+</table>
+<div class="note memory"><b>1–6 hafıza zinciri:</b> <b>1 Yanıcı → 2 Oksitleyici → 3 Toksik → 4 Korozif → 5 Boğucu → 6 Diğer.</b></div>
+</section>
+
+<section id="depolama" class="card">
+<h2>14. Birlikte Depolama Kuralları</h2>
+<h3>En kritik çift: Grup 1 + Grup 2</h3>
+<p>Kaynak metne göre <b>Grup 1 (yanıcı)</b> ile <b>Grup 2 (oksitleyici)</b> gazlar yan yana depolanmamalıdır. Metin iki seçenek verir:</p>
+<div class="grid">
+<div class="tile"><div class="big-number">6 m</div><h3>Mesafe seçeneği</h3><p>Aralarında en az 6 metre mesafe bırakılması.</p></div>
+<div class="tile"><div class="big-number">1,5 m</div><h3>Ayırıcı duvar</h3><p>En az 1,5 m yüksekliğinde ve en az 30 dakika yangına dayanıklı bir ayırıcı duvar seçeneği.</p></div>
+<div class="tile"><div class="big-number">30 dk</div><h3>Yangın dayanımı</h3><p>Ayırıcı duvar seçeneğinde kaynak metnin verdiği yangın dayanım süresi.</p></div>
+</div>
+<div class="note exam"><b>Ezber formülü:</b> <strong>1 + 2 → AYIR</strong> → <strong>6 m</strong> veya <strong>1,5 m + 30 dk yangın dayanımı</strong>.</div>
+<h3>Dolu ve boş tüpler</h3>
+<p>Dolu ve boş tüpler ayrı bölümlerde tutulmalı ve alanlar açık biçimde <b>“DOLU”</b> / <b>“BOŞ”</b> olarak işaretlenmelidir.</p>
+<h3>Depo ortamı</h3>
+<p>Kaynak metin; iyi havalandırma, doğrudan güneş ışığından ve ısı kaynaklarından uzak tutma gibi temel depolama şartlarını vurgular.</p>
+</section>
+
+<section id="senaryo" class="card">
+<h2>15. Saha Senaryoları — “Hata Nerede?”</h2>
+<div class="quiz"><b>Senaryo A:</b> Hava tankında manometre var; ancak emniyet valfi yok.<div class="answer"><b>Problem:</b> Manometre basıncı gösterir ama tek başına aşırı basıncı otomatik tahliye etmez. <b>Gösterge ile koruma aynı şey değildir.</b></div></div>
+<div class="quiz"><b>Senaryo B:</b> Kompresör çalışıyor, hava tankının altındaki drenaj uzun süredir açılmamış.<div class="answer"><b>Risk:</b> Kondensat ve kir birikimi korozyon ve ekipman güvenliği açısından sorun oluşturabilir. Blöf/drenaj bakımının önemi burada ortaya çıkar.</div></div>
+<div class="quiz"><b>Senaryo C:</b> 10 bar çalışma basınçlı kap için ders kuralına göre hidrostatik test hesabı soruluyor.<div class="answer"><b>Çözüm:</b> 1,5 × 10 = <strong>15 bar</strong>.</div></div>
+<div class="quiz"><b>Senaryo D:</b> Yüzeye açık saç teli çatlağı aranıyor ve kılcallık prensibi kullanılıyor.<div class="answer"><b>Cevap:</b> <strong>PT</strong>.</div></div>
+<div class="quiz"><b>Senaryo E:</b> Kaynak içindeki kusurun araştırılmasında ses dalgaları kullanılıyor.<div class="answer"><b>Cevap:</b> <strong>UT</strong>.</div></div>
+<div class="quiz"><b>Senaryo F:</b> Bir kaynak dikişinin iç yapısı X ışını ile görüntüleniyor.<div class="answer"><b>Cevap:</b> <strong>RT</strong>.</div></div>
+<div class="quiz"><b>Senaryo G:</b> Asetilen tüpü ile oksijen tüpü uygun ayırma olmadan yan yana duruyor.<div class="answer"><b>Problem:</b> Kaynak metindeki Grup 1–Grup 2 depolama kuralına aykırı bir düzen söz konusudur; uygun mesafe veya belirtilen yangına dayanıklı ayırma uygulanmalıdır.</div></div>
+</section>
+
+<section class="card">
+<h2>16. Sık Karıştırılan Kavramlar</h2>
+<table>
+<thead><tr><th>Karıştırılanlar</th><th>Doğru ayrım</th></tr></thead>
+<tbody>
+<tr><td>Manometre / Emniyet valfi</td><td>Manometre <b>gösterir</b>; valf <b>tahliye eder</b>.</td></tr>
+<tr><td>Kompresör / Hava tankı</td><td>Kompresör <b>sıkıştırır</b>; tank <b>depolar ve tamponlar</b>.</td></tr>
+<tr><td>PT / UT</td><td>PT <b>yüzeye açık</b> kusur; UT <b>ses dalgasıyla iç</b> kusur.</td></tr>
+<tr><td>UT / RT</td><td>UT <b>ses</b>; RT <b>X/gama radyasyonu</b>.</td></tr>
+<tr><td>Grup 1 / Grup 2</td><td>1 <b>yanıcı</b>; 2 <b>oksitleyici</b>.</td></tr>
+<tr><td>6 m / 1,5 m + 30 dk</td><td>İki farklı ayırma seçeneği; ikisini tek bir ölçü gibi düşünme.</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="sinav" class="card">
+<h2>17. Sınavdan Önce “60 Saniyelik Hafıza Kartı”</h2>
+<table>
+<thead><tr><th>Görürsen</th><th>Düşün</th></tr></thead>
+<tbody>
+<tr><td><b>&gt; 0,5 bar</b></td><td>Basınçlı kap</td></tr>
+<tr><td><b>Fazla basınç</b></td><td>Emniyet valfi</td></tr>
+<tr><td><b>Basıncı gösterme</b></td><td>Manometre</td></tr>
+<tr><td><b>Kondensat / tortu</b></td><td>Blöf / drenaj</td></tr>
+<tr><td><b>Havayı sıkıştırma</b></td><td>Kompresör</td></tr>
+<tr><td><b>Basınçlı havayı depolama</b></td><td>Hava tankı</td></tr>
+<tr><td><b>1,5 × P</b></td><td>Hidrostatik test kuralı</td></tr>
+<tr><td><b>1 yıl</b></td><td>Kaynak metindeki genel periyodik kontrol/test kuralı</td></tr>
+<tr><td><b>Kılcallık</b></td><td>PT</td></tr>
+<tr><td><b>Yüzeye açık çatlak</b></td><td>PT</td></tr>
+<tr><td><b>Ses dalgası</b></td><td>UT</td></tr>
+<tr><td><b>Tek taraftan erişim</b></td><td>UT'nin kaynak metindeki üstünlüğü</td></tr>
+<tr><td><b>X / gama</b></td><td>RT</td></tr>
+<tr><td><b>Radyasyon</b></td><td>RT</td></tr>
+<tr><td><b>TS EN 1089-3</b></td><td>Tüp renk kodlaması</td></tr>
+<tr><td><b>N</b></td><td>Yeni renk kodlamasını ayırt eden işaret</td></tr>
+<tr><td><b>Grup 1</b></td><td>Yanıcı</td></tr>
+<tr><td><b>Grup 2</b></td><td>Oksitleyici</td></tr>
+<tr><td><b>1 + 2</b></td><td>Birlikte depolama konusunda ayırma</td></tr>
+<tr><td><b>6 m</b></td><td>Kaynak metindeki mesafe seçeneği</td></tr>
+<tr><td><b>1,5 m + 30 dk</b></td><td>Kaynak metindeki ayırıcı duvar seçeneği</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="card">
+<h2>18. Kısa Kendini Test Et</h2>
+<details><summary>1) 8 bar çalışma basıncında 1,5×P kaç bardır?</summary><div><b>12 bar.</b> 1,5 × 8 = 12.</div></details>
+<details><summary>2) Basıncı gösteren eleman?</summary><div><b>Manometre.</b></div></details>
+<details><summary>3) Fazla basıncı otomatik tahliye eden eleman?</summary><div><b>Emniyet valfi.</b></div></details>
+<details><summary>4) Kılcallık ve yüzeye açık çatlak?</summary><div><b>PT.</b></div></details>
+<details><summary>5) Ses dalgası ile iç kusur?</summary><div><b>UT.</b></div></details>
+<details><summary>6) X/gama ışınları?</summary><div><b>RT.</b></div></details>
+<details><summary>7) Yanıcı gazlar hangi grup?</summary><div><b>Grup 1.</b></div></details>
+<details><summary>8) Oksitleyici gazlar hangi grup?</summary><div><b>Grup 2.</b></div></details>
+<details><summary>9) TS EN 1089-3 ile birlikte hatırlanacak harf?</summary><div><b>N.</b></div></details>
+<details><summary>10) Grup 1 ve Grup 2 için kaynak metindeki temel ayırma ölçüsü?</summary><div><b>En az 6 m</b> veya <b>en az 1,5 m yüksekliğinde ve en az 30 dakika yangına dayanıklı ayırıcı duvar</b>.</div></details>
+</section>
+
+<section class="card">
+<h2>19. İnternetten Gömülü Eğitim Videoları</h2>
+<p>Bu bölümde videoları konu başlıklarının hemen yanında kullanmak yerine, öğrencinin önce açıklamayı okuyup sonra gerçek uygulamayı görmesi için aşağıda topladım. Videolar üçüncü taraf platformlardan gömülür; internet bağlantısı ve platformun gömme izni gerekir.</p>
+<div class="video-grid">
+<div><p class="video-title">Hidrostatik test — basınçlı kap</p><div class="video"><iframe loading="lazy" src="https://www.youtube.com/embed/w6_8evrClAw" title="Pressure vessel hydrostatic testing" allowfullscreen></iframe></div><p class="source">YouTube: “How To Inspection A Pressure Vessel For Hydrostatic Testing”.</p></div>
+<div><p class="video-title">PT — sıvı penetran testi</p><div class="video"><iframe loading="lazy" src="https://www.youtube.com/embed/k8jsgr3InV0" title="Liquid penetrant testing" allowfullscreen></iframe></div><p class="source">NDT.org üzerinde listelenen eğitim videosu.</p></div>
+<div><p class="video-title">UT — ultrasonik muayene</p><div class="video"><iframe loading="lazy" src="https://www.youtube.com/embed/QgN_KvfeD14" title="NDT Ultrasonic inspection overview" allowfullscreen></iframe></div><p class="source">NDT.org: Ultrasonic inspection overview.</p></div>
+</div>
+</section>
+
+<section class="card">
+<h2>20. Bölümün Bütününü Tek Hikâyede Hatırla</h2>
+<p><b>Bir fabrikada kompresör çalışıyor.</b> Kompresör havayı sıkıştırıyor ve hava tankına gönderiyor. Tank basınç altında olduğu için basınçlı kap güvenliği devreye giriyor. <b>Manometre</b> basıncı gösteriyor, <b>emniyet valfi</b> aşırı basınca karşı koruyor, <b>blöf/drenaj</b> tabanda biriken kondensatı uzaklaştırıyor.</p>
+<p>Tankın üzerinde tip plakası var; imalatçı, seri numarası, çalışma/tasarım basıncı, test basıncı, hacim ve sıcaklık aralığı gibi bilgiler bulunuyor. Ekipmanın kontrolü yetkili kişilerce yapılıyor. Kaynak metindeki genel sınav kuralında hidrostatik test için <b>1,5 × P</b> ve periyodik kontrol için <b>1 yıl</b> akılda tutuluyor.</p>
+<p>Sonra bir kaynak dikişinde kusur aranıyor. Kusur <b>yüzeye açıksa PT</b>; içerideki kusur için <b>UT</b>; iç yapının radyasyonla görüntülenmesi için <b>RT</b> düşünülüyor.</p>
+<p>Fabrikanın gaz tüpü deposuna geçildiğinde tüpler dik ve sabit, valfleri korunmuş ve uygun şekilde ayrılmış. <b>TS EN 1089-3 → N</b> bağlantısı hatırlanıyor. <b>Grup 1 yanıcı</b>, <b>Grup 2 oksitleyici</b> ve bu ikisinin depolamasında kaynak metindeki ayırma kuralları uygulanıyor.</p>
+<div class="note success"><b>Bu hikâyeyi hatırlarsan bölümün omurgasını hatırlarsın:</b><br>
+<b>Basınç → Emniyet → Kontrol → Test → NDT → Tüp → Depolama.</b>
+</div>
+</section>
+
+<section class="card">
+<h2>21. Kaynak ve görsel notu</h2>
+<p>Bu sayfadaki konu anlatımı, yüklediğin <b>3. Bölüm: Basınçlı Kaplarda İSG</b> çalışma metninin 6, 7, 8 ve 9. hafta kapsamı korunarak yeniden düzenlenmiştir. Tekrarlayan anlatımlar birleştirilmiş, öğrenme sırası ve örnekler genişletilmiştir.</p>
+<p>İnternetten kullanılan görseller doğrudan harici kaynak URL'lerinden yüklenmektedir. Kaynak sayfalar değişirse görsel URL'si de değişebilir. Bu nedenle internet bağlantısı açıkken görüntülenmeleri beklenir.</p>
+</section>
+
+<section class="card">
+<h2>22. Bölüm Gezinme</h2>
+<div class="pager">
+<a href="../bolum-02/konu-anlatimi.html">← 2. Bölüm</a>
+<a href="sorular.html">📝 3. Bölüm Soruları</a>
+<a href="sunum.html">📊 3. Bölüm Sunumu</a>
+<a href="../index.html">📚 Ders Ana Sayfası</a>
+<a href="../bolum-04/konu-anlatimi.html">4. Bölüm →</a>
+</div>
+<div class="note">
+<b>Site haritasındaki göreli yollar:</b><br>
+Aynı klasör: <code>bolum-03-sorular.html</code> · <code>bolum-03-sunum.html</code><br>
+Ders ana sayfası: <code>../index.html</code><br>
+Önceki bölüm: <code>bolum-02-konu.html</code><br>
+Sonraki bölüm: <code>bolum-04-konu.html</code><br>
+Dönem: <code>../../index.html</code><br>
+Ana sayfa: <code>../../../ana-sayfa.html</code>
+</div>
+</section>
+
+<footer class="footer">
+Mekanik İşlerde Güvenlik · 3. Bölüm · Basınçlı Kaplarda İSG
+</footer>
+</main>
+</body>
+</html>

@@ -1,1 +1,2122 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mekanik İşlerde Güvenlik · Bölüm 05 · Konu Anlatımı</title><style>*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#172033}a{text-decoration:none;color:inherit}.top{background:linear-gradient(135deg,#071a33,#1769aa);color:white}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:900}.brand small{display:block;color:#b9cce0;font-size:10px;margin-top:4px}.back{border:1px solid #ffffff2b;padding:9px 13px;border-radius:9px;font-size:11px;background:#ffffff0d}.hero{padding:52px 0}.eyebrow{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#b9e7ff;font-weight:800}.hero h1{font-size:clamp(30px,4vw,48px);margin:14px 0 8px;line-height:1.08}.hero p{color:#cbd9e6;font-size:13px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{font-size:10px;padding:7px 10px;border-radius:8px;background:#ffffff12;border:1px solid #ffffff18}main{padding:35px 0 70px}.head{margin-bottom:20px}.head h2{margin:0;color:#071a33}.head p{color:#64748b;font-size:11px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 5px 22px #0f172a0a}.num{width:34px;height:34px;border-radius:9px;background:#eef6fc;color:#1769aa;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}.card h3{margin:14px 0 7px;font-size:15px}.card p{font-size:10px;color:#64748b}.links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px}.links a{font-size:9px;font-weight:800;color:#1769aa;background:#f6f9fc;border:1px solid #e7edf3;border-radius:8px;padding:10px 5px;text-align:center}.empty{padding:20px;background:white;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b;font-size:11px}.footer{background:#04101f;color:#91a6bb;padding:25px 0;font-size:10px;line-height:1.7}@media(max-width:700px){.grid{grid-template-columns:1fr}.links{grid-template-columns:1fr}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}}</style></head><body><header class="top"><div class="wrap nav"><div class="brand">KTÜN · İSG Eğitim Portalı<small>2026–2027</small></div><a class="back" href="../../index.html">← Ders Ana Sayfası</a></div><div class="wrap hero"><span class="eyebrow">Mekanik İşlerde Güvenlik</span><h1>Bölüm 05</h1><p>Konu Anlatımı</p><div class="meta"><span class="pill">Bölüm 05</span><span class="pill">Konu Anlatımı</span></div></div></header><main><div class="wrap"><div class="empty">Bu alan içerik eklenmesi için hazırdır. Şu anda boş bırakılmıştır.</div></div></main><footer class="footer"><div class="wrap">Hazırlayan: Sıraç AKSAN · 0506 928 22 10 · saracaksan@gmail.com</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bölüm 5 - Bakım ve Onarım İşlerinde İş Sağlığı ve Güvenliği | Mekanik İşlerde Güvenlik</title>
+    <meta name="description" content="Bakım ve onarım işlerinde iş sağlığı ve güvenliği konusunun kapsamlı anlatımı. Bakım türleri, tehlikeler, risk analizi, güvenli çalışma prosedürleri, KKD ve periyodik kontroller.">
+    <style>
+        :root {
+            --primary: #0f4c81;
+            --primary-dark: #0a3557;
+            --primary-light: #1e6db5;
+            --accent: #e63946;
+            --accent-light: #ff6b76;
+            --success: #2a9d8f;
+            --warning: #f4a261;
+            --danger: #e76f51;
+            --bg: #f5f8fc;
+            --card-bg: #ffffff;
+            --text: #1a2332;
+            --text-light: #5a6b80;
+            --border: #dde6f0;
+            --shadow: 0 4px 20px rgba(15, 76, 129, 0.08);
+            --shadow-lg: 0 10px 40px rgba(15, 76, 129, 0.12);
+            --radius: 16px;
+            --radius-sm: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ============ TOP BAR ============ */
+        .topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            justify-content: space-between;
+        }
+
+        .topbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+
+        .topbar-brand svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .topbar-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .topbar-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: 8px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .topbar-nav a:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .topbar-nav a.primary {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .topbar-nav a.primary:hover {
+            background: var(--primary-dark);
+        }
+
+        /* ============ PROGRESS BAR ============ */
+        .progress-bar {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            width: 0%;
+            z-index: 1001;
+            transition: width 0.1s;
+        }
+
+        /* ============ HERO ============ */
+        .hero {
+            margin-top: 60px;
+            padding: 80px 24px 60px;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 60%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(230, 57, 70, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.12);
+            transition: background 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            background: rgba(255,255,255,0.25);
+        }
+
+        .breadcrumb span.sep {
+            opacity: 0.5;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero p.lead {
+            font-size: 1.1rem;
+            opacity: 0.92;
+            max-width: 700px;
+            line-height: 1.7;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-stat .num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-stat .lbl {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* ============ LAYOUT ============ */
+        .layout {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        /* ============ SIDEBAR TOC ============ */
+        .toc {
+            position: sticky;
+            top: 88px;
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 24px 20px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+        }
+
+        .toc h3 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--text-light);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc;
+        }
+
+        .toc ol li {
+            counter-increment: toc;
+            margin-bottom: 2px;
+        }
+
+        .toc ol li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .toc ol li a::before {
+            content: counter(toc);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 22px;
+            height: 22px;
+            background: var(--bg);
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--primary);
+            flex-shrink: 0;
+            transition: all 0.2s;
+        }
+
+        .toc ol li a:hover {
+            background: var(--bg);
+            color: var(--primary);
+        }
+
+        .toc ol li a.active {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .toc ol li a.active::before {
+            background: rgba(255,255,255,0.25);
+            color: #fff;
+        }
+
+        /* ============ CONTENT ============ */
+        .content {
+            min-width: 0;
+        }
+
+        .section {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            margin-bottom: 28px;
+            scroll-margin-top: 88px;
+            border: 1px solid rgba(221, 230, 240, 0.6);
+        }
+
+        .section-head {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--bg);
+        }
+
+        .section-num {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: #fff;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(15, 76, 129, 0.25);
+        }
+
+        .section-head h2 {
+            font-size: 1.45rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .section-head p.sub {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 4px;
+            font-weight: 400;
+        }
+
+        .section h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 28px 0 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section h3::before {
+            content: '';
+            width: 4px;
+            height: 18px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section h4 {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: var(--text);
+            margin: 20px 0 10px;
+        }
+
+        .section p {
+            color: var(--text);
+            margin-bottom: 14px;
+            font-size: 0.95rem;
+        }
+
+        .section ul, .section ol {
+            margin: 12px 0 18px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .section ul li, .section ol li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 10px;
+            font-size: 0.93rem;
+            color: var(--text);
+            line-height: 1.65;
+        }
+
+        .section ul li::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 11px;
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .section ol {
+            counter-reset: li;
+        }
+
+        .section ol li {
+            counter-increment: li;
+            padding-left: 36px;
+        }
+
+        .section ol li::before {
+            content: counter(li);
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 22px;
+            height: 22px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+
+        /* ============ CALLOUTS ============ */
+        .callout {
+            border-radius: var(--radius-sm);
+            padding: 18px 20px;
+            margin: 20px 0;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            font-size: 0.9rem;
+            border-left: 4px solid;
+        }
+
+        .callout-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+        }
+
+        .callout.info {
+            background: #eef6ff;
+            border-color: var(--primary);
+            color: #0a3557;
+        }
+
+        .callout.warning {
+            background: #fff7ed;
+            border-color: var(--warning);
+            color: #7c4a03;
+        }
+
+        .callout.danger {
+            background: #fef2f2;
+            border-color: var(--danger);
+            color: #7f1d1d;
+        }
+
+        .callout.success {
+            background: #ecfdf5;
+            border-color: var(--success);
+            color: #065f46;
+        }
+
+        .callout strong {
+            font-weight: 700;
+        }
+
+        /* ============ CARDS ============ */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background: var(--bg);
+            border-radius: var(--radius-sm);
+            padding: 20px;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        .card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .card h4 {
+            font-size: 0.98rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--primary-dark);
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* ============ TABLES ============ */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            background: #fff;
+        }
+
+        thead {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        }
+
+        thead th {
+            color: #fff;
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            white-space: nowrap;
+        }
+
+        tbody td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text);
+            vertical-align: top;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #fafcfe;
+        }
+
+        tbody tr:hover {
+            background: #eef6ff;
+        }
+
+        /* ============ FORMULA ============ */
+        .formula {
+            background: linear-gradient(135deg, #f0f7ff, #e6f0fa);
+            border: 1px solid #c5d9ec;
+            border-radius: var(--radius-sm);
+            padding: 18px 20px;
+            margin: 16px 0;
+            font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+            font-size: 0.9rem;
+            color: var(--primary-dark);
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        /* ============ SVG FIGURES ============ */
+        .figure {
+            background: linear-gradient(180deg, #fbfdff 0%, #f0f6fc 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 24px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .figure svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .figure-caption {
+            font-size: 0.82rem;
+            color: var(--text-light);
+            margin-top: 12px;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* ============ QUIZ ============ */
+        .quiz-section {
+            background: linear-gradient(135deg, #0a3557 0%, #0f4c81 100%);
+            border-radius: var(--radius);
+            padding: 40px;
+            margin-bottom: 28px;
+            color: #fff;
+            box-shadow: var(--shadow-lg);
+            scroll-margin-top: 88px;
+        }
+
+        .quiz-section .section-head {
+            border-bottom-color: rgba(255,255,255,0.15);
+        }
+
+        .quiz-section .section-head h2 {
+            color: #fff;
+        }
+
+        .quiz-section .section-head p.sub {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .quiz-section .section-num {
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.25);
+            box-shadow: none;
+        }
+
+        .quiz-item {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: var(--radius-sm);
+            padding: 20px;
+            margin-bottom: 14px;
+            backdrop-filter: blur(10px);
+        }
+
+        .quiz-q {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .quiz-q .qn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 28px;
+            height: 28px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-left: 40px;
+            margin-bottom: 12px;
+        }
+
+        .quiz-options label {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.05);
+            cursor: pointer;
+            font-size: 0.88rem;
+            transition: background 0.2s;
+        }
+
+        .quiz-options label:hover {
+            background: rgba(255,255,255,0.12);
+        }
+
+        .quiz-options input[type="radio"] {
+            margin-top: 4px;
+            accent-color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .quiz-answer {
+            margin-left: 40px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            display: none;
+            line-height: 1.6;
+        }
+
+        .quiz-answer.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .quiz-answer.correct {
+            background: rgba(42, 157, 143, 0.2);
+            border: 1px solid rgba(42, 157, 143, 0.4);
+            color: #a7f3d0;
+        }
+
+        .quiz-answer.incorrect {
+            background: rgba(231, 111, 81, 0.2);
+            border: 1px solid rgba(231, 111, 81, 0.4);
+            color: #fecaca;
+        }
+
+        .quiz-btn {
+            margin-left: 40px;
+            padding: 8px 20px;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .quiz-btn:hover {
+            background: #c1121f;
+            transform: translateY(-1px);
+        }
+
+        /* ============ NAV FOOTER ============ */
+        .nav-footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .nav-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 24px;
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.25s;
+            border: 1px solid rgba(221, 230, 240, 0.6);
+        }
+
+        .nav-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+
+        .nav-card .arrow {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            flex-shrink: 0;
+            transition: all 0.25s;
+        }
+
+        .nav-card:hover .arrow {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .nav-card .nav-text {
+            min-width: 0;
+        }
+
+        .nav-card .nav-label {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-light);
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .nav-card .nav-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            line-height: 1.3;
+        }
+
+        .nav-card.next {
+            text-align: right;
+            justify-content: flex-end;
+        }
+
+        .nav-card.next .nav-text {
+            text-align: right;
+        }
+
+        /* ============ FOOTER ============ */
+        .footer {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.85);
+            padding: 40px 24px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* ============ ANIMATIONS ============ */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 900px) {
+            .layout {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                padding: 24px 16px 60px;
+            }
+
+            .toc {
+                position: static;
+                max-height: none;
+                order: -1;
+            }
+
+            .toc ol {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 4px;
+            }
+
+            .section {
+                padding: 24px 20px;
+            }
+
+            .nav-footer {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-card.next {
+                flex-direction: row-reverse;
+                text-align: left;
+            }
+
+            .nav-card.next .nav-text {
+                text-align: left;
+            }
+
+            .hero {
+                padding: 60px 20px 40px;
+            }
+
+            .hero-stats {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .topbar-brand span {
+                display: none;
+            }
+
+            .topbar-nav a span.txt {
+                display: none;
+            }
+
+            .section-head {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .quiz-section {
+                padding: 24px 20px;
+            }
+
+            .quiz-options, .quiz-answer, .quiz-btn {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============ TOP BAR ============ -->
+    <header class="topbar">
+        <a href="../../../index.html" class="topbar-brand">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="10" fill="#0f4c81"/>
+                <path d="M20 8L28 14V22C28 27 24.5 31 20 32C15.5 31 12 27 12 22V14L20 8Z" fill="#fff" opacity="0.95"/>
+                <path d="M17 19L19.5 21.5L24 16" stroke="#0f4c81" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>İSG Akademi</span>
+        </a>
+        <nav class="topbar-nav">
+            <a href="../../../index.html">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span class="txt">Ana Sayfa</span>
+            </a>
+            <a href="../index.html">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                <span class="txt">Ders</span>
+            </a>
+            <a href="sunum.html" class="primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span class="txt">Sunum</span>
+            </a>
+            <a href="sorular.html" class="primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <span class="txt">Sorular</span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="breadcrumb">
+                <a href="../../../index.html">🏠 Ana Sayfa</a>
+                <span class="sep">/</span>
+                <a href="../index.html">Mekanik İşlerde Güvenlik</a>
+                <span class="sep">/</span>
+                <span>Bölüm 5</span>
+            </div>
+            <div class="hero-badge">⚙️ Bölüm 5 · Hafta 12-13</div>
+            <h1>Bakım ve Onarım İşlerinde İş Sağlığı ve Güvenliği</h1>
+            <p class="lead">
+                Bakım ve onarım faaliyetleri; iş ekipmanlarının güvenli çalışabilirliğini sürdürmek, can ve mal kayıplarını önlemek açısından hayati öneme sahiptir. Bu bölümde bakım stratejileri, başlıca tehlikeler, risk analizi, güvenli çalışma prosedürleri ve KKD kullanımı kapsamlı şekilde ele alınmaktadır.
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="num">4</span>
+                    <span class="lbl">Bakım Stratejisi</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="num">4</span>
+                    <span class="lbl">Temel Tehlike</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="num">17</span>
+                    <span class="lbl">Güvenlik Tedbiri</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ LAYOUT ============ -->
+    <div class="layout">
+
+        <!-- ============ SIDEBAR TOC ============ -->
+        <aside class="toc">
+            <h3>İçindekiler</h3>
+            <ol>
+                <li><a href="#bolum-1" class="toc-link">Bakım ve Onarım Kavramları</a></li>
+                <li><a href="#bolum-2" class="toc-link">Bakım Stratejileri ve Türleri</a></li>
+                <li><a href="#bolum-3" class="toc-link">Tehlikeler ve Risk Analizi</a></li>
+                <li><a href="#bolum-4" class="toc-link">Güvenli Çalışma Prosedürleri</a></li>
+                <li><a href="#bolum-5" class="toc-link">Ekipman Güvenliği ve KKD</a></li>
+                <li><a href="#bolum-6" class="toc-link">Bakım-Onarımda İSG Başlıkları</a></li>
+                <li><a href="#bolum-7" class="toc-link">Kazalar ve Sebepleri</a></li>
+                <li><a href="#bolum-8" class="toc-link">Güvenlik Tedbirleri</a></li>
+                <li><a href="#quiz" class="toc-link">📝 Sınav Soruları</a></li>
+            </ol>
+        </aside>
+
+        <!-- ============ CONTENT ============ -->
+        <main class="content">
+
+            <!-- ===== BÖLÜM 1 ===== -->
+            <section class="section fade-in" id="bolum-1">
+                <div class="section-head">
+                    <div class="section-num">1</div>
+                    <div>
+                        <h2>Bakım ve Onarım Kavramsal Çerçevesi</h2>
+                        <p class="sub">Tanımlar, farklar ve temel amaçlar</p>
+                    </div>
+                </div>
+
+                <p>İş sağlığı ve güvenliği literatüründe <strong>bakım</strong> ve <strong>onarım</strong> faaliyetleri, iş ekipmanlarının ve el aletlerinin güvenli çalışabilirliğini sürdürmek, can ve mal kayıplarını önlemek açısından hayati öneme sahiptir.</p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #0f4c81, #1e6db5);">🔧</div>
+                        <h4>Bakım</h4>
+                        <p>İş ekipmanlarının, el aletlerinin ve tesis bileşenlerinin ilk günkü işlerliğini, tasarım performansını ve güvenlik seviyesini korumak; arızaya, aşınmaya veya yalıtım bozulmasına sebep olabilecek etkenleri önceden tespit ederek bertaraf etmek amacıyla yürütülen periyodik ve sistematik faaliyetlerin bütünüdür.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #e63946, #ff6b76);">🛠️</div>
+                        <h4>Onarım</h4>
+                        <p>Arızalanmış, işlevini kaybetmiş, yalıtımı bozulmuş, kırılmış, çatlamış veya deforme olmuş bir ekipmanın/aletin tekrar güvenli ve standartlara uygun çalışır duruma getirilmesi ya da yetkili kişilerce parçalarının değiştirilmesi işlemidir.</p>
+                    </div>
+                </div>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Kavram</th>
+                                <th>Tanım</th>
+                                <th>Temel Amaç ve Etkisi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Bakım</strong></td>
+                                <td>Ekipman ve tesisin işlerliğini koruma, arızaları ve güvenlik risklerini önleyici periyodik kontroller yapma süreci.</td>
+                                <td>Güvenli çalışma koşullarının bozulmasını engeller, teknik ömrü korur, beklenmeyen duruşları ve iş kazalarını önler.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Onarım</strong></td>
+                                <td>Bozulmuş, arızalanmış, yalıtımı veya bütünlüğü hasar görmüş ekipmanı tekrar güvenli çalışır hale getirme işlemi.</td>
+                                <td>Ekipmanı yeniden işlevsel kılar; elektrik şoku, mekanik kırılma gibi can ve mal kaybı riski oluşturan teknik kusurları giderir.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Bakım Faaliyetlerinin 6 Temel Amacı</h3>
+                <div class="card-grid">
+                    <div class="card"><p>💰 Üretim maliyetini düşürmek</p></div>
+                    <div class="card"><p>⭐ Ürün kalitesine katkıda bulunmak</p></div>
+                    <div class="card"><p>🏭 Tesis ömrünü artırmak</p></div>
+                    <div class="card"><p>🔄 Üretimin sürekliliğini sağlamak</p></div>
+                    <div class="card"><p>🛡️ Arıza ve kaza olmadan tespit yapıp tedbir almak</p></div>
+                    <div class="card"><p>🚨 Acil durumlarda sistemin çalışır olmasını sağlamak</p></div>
+                </div>
+            </section>
+
+            <!-- ===== BÖLÜM 2 ===== -->
+            <section class="section fade-in" id="bolum-2">
+                <div class="section-head">
+                    <div class="section-num">2</div>
+                    <div>
+                        <h2>Bakım Stratejileri ve Türleri</h2>
+                        <p class="sub">Plansız, planlı, periyodik ve duruma bağlı kontroller</p>
+                    </div>
+                </div>
+
+                <p>İş yerlerinde güvenliği sağlamak, teknik ömrü korumak ve ekipman arızalarından kaynaklanan kazaları önlemek amacıyla uygulanan ana bakım ve kontrol stratejileri şunlardır:</p>
+
+                <div class="figure">
+                    <svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#e63946"/>
+                                <stop offset="100%" style="stop-color:#ff6b76"/>
+                            </linearGradient>
+                            <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0f4c81"/>
+                                <stop offset="100%" style="stop-color:#1e6db5"/>
+                            </linearGradient>
+                            <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2a9d8f"/>
+                                <stop offset="100%" style="stop-color:#4ecdc4"/>
+                            </linearGradient>
+                            <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f4a261"/>
+                                <stop offset="100%" style="stop-color:#f9c784"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Card 1 -->
+                        <rect x="20" y="20" width="180" height="140" rx="14" fill="url(#g1)" opacity="0.12"/>
+                        <rect x="20" y="20" width="180" height="140" rx="14" fill="none" stroke="url(#g1)" stroke-width="2"/>
+                        <circle cx="60" cy="60" r="20" fill="url(#g1)" opacity="0.2"/>
+                        <text x="60" y="67" text-anchor="middle" font-size="20" fill="#e63946" font-weight="bold">1</text>
+                        <text x="110" y="55" font-size="13" fill="#1a2332" font-weight="bold">Arıza Sonrası</text>
+                        <text x="110" y="73" font-size="13" fill="#1a2332" font-weight="bold">Plansız Bakım</text>
+                        <text x="35" y="105" font-size="10.5" fill="#5a6b80">Arıza meydana geldikten</text>
+                        <text x="35" y="120" font-size="10.5" fill="#5a6b80">sonra yapılan zorunlu</text>
+                        <text x="35" y="135" font-size="10.5" fill="#5a6b80">müdahaledir.</text>
+
+                        <!-- Card 2 -->
+                        <rect x="220" y="20" width="180" height="140" rx="14" fill="url(#g2)" opacity="0.12"/>
+                        <rect x="220" y="20" width="180" height="140" rx="14" fill="none" stroke="url(#g2)" stroke-width="2"/>
+                        <circle cx="260" cy="60" r="20" fill="url(#g2)" opacity="0.2"/>
+                        <text x="260" y="67" text-anchor="middle" font-size="20" fill="#0f4c81" font-weight="bold">2</text>
+                        <text x="310" y="55" font-size="13" fill="#1a2332" font-weight="bold">Planlı Bakım</text>
+                        <text x="310" y="73" font-size="13" fill="#1a2332" font-weight="bold">(Takvime Bağlı)</text>
+                        <text x="235" y="105" font-size="10.5" fill="#5a6b80">Belirlenen periyotlarda</text>
+                        <text x="235" y="120" font-size="10.5" fill="#5a6b80">ekipmanın durdurularak</text>
+                        <text x="235" y="135" font-size="10.5" fill="#5a6b80">bakımının yapılmasıdır.</text>
+
+                        <!-- Card 3 -->
+                        <rect x="420" y="20" width="180" height="140" rx="14" fill="url(#g3)" opacity="0.12"/>
+                        <rect x="420" y="20" width="180" height="140" rx="14" fill="none" stroke="url(#g3)" stroke-width="2"/>
+                        <circle cx="460" cy="60" r="20" fill="url(#g3)" opacity="0.2"/>
+                        <text x="460" y="67" text-anchor="middle" font-size="20" fill="#2a9d8f" font-weight="bold">3</text>
+                        <text x="510" y="55" font-size="13" fill="#1a2332" font-weight="bold">Periyodik /</text>
+                        <text x="510" y="73" font-size="13" fill="#1a2332" font-weight="bold">Önleyici Bakım</text>
+                        <text x="435" y="105" font-size="10.5" fill="#5a6b80">Arıza meydana gelmeden</text>
+                        <text x="435" y="120" font-size="10.5" fill="#5a6b80">önce kontrolden</text>
+                        <text x="435" y="135" font-size="10.5" fill="#5a6b80">geçirilmesidir.</text>
+
+                        <!-- Card 4 -->
+                        <rect x="620" y="20" width="160" height="140" rx="14" fill="url(#g4)" opacity="0.12"/>
+                        <rect x="620" y="20" width="160" height="140" rx="14" fill="none" stroke="url(#g4)" stroke-width="2"/>
+                        <circle cx="660" cy="60" r="20" fill="url(#g4)" opacity="0.2"/>
+                        <text x="660" y="67" text-anchor="middle" font-size="20" fill="#f4a261" font-weight="bold">4</text>
+                        <text x="705" y="55" font-size="12" fill="#1a2332" font-weight="bold">Duruma</text>
+                        <text x="705" y="73" font-size="12" fill="#1a2332" font-weight="bold">Bağlı</text>
+                        <text x="635" y="105" font-size="10.5" fill="#5a6b80">Olağanüstü</text>
+                        <text x="635" y="120" font-size="10.5" fill="#5a6b80">durumlardan sonra</text>
+                        <text x="635" y="135" font-size="10.5" fill="#5a6b80">yapılan kontroller.</text>
+
+                        <!-- Bottom flow -->
+                        <path d="M110 200 L110 240 L710 240 L710 200" fill="none" stroke="#dde6f0" stroke-width="2" stroke-dasharray="5,5"/>
+                        <text x="400" y="290" text-anchor="middle" font-size="13" fill="#0f4c81" font-weight="bold">Bakım Stratejileri — Koruyucu ve Önleyici Yaklaşım</text>
+                        <text x="400" y="310" text-anchor="middle" font-size="11" fill="#5a6b80">Amaç: Güvenli çalışma koşullarını sürdürmek, teknik ömrü korumak, kazaları önlemek</text>
+                    </svg>
+                    <div class="figure-caption">Şekil 1: Bakım stratejilerinin sınıflandırılması</div>
+                </div>
+
+                <h3>1. Arıza Sonrası / Plansız Bakım (Corrective Maintenance)</h3>
+                <ul>
+                    <li>Ekipmanda veya el aletinde bir arıza, kırık, çatlak, kablo kesiği veya yalıtım bozulması meydana geldikten sonra yapılan zorunlu müdahaledir.</li>
+                    <li><strong>Uygulama Örneği:</strong> Yalıtımı bozulmuş veya gövdesinde çatlak oluşan bir elektrikli el aletinin, arıza oluştuktan sonra derhal kullanımdan çekilip yetkili kişilerce onarılması veya değiştirilmesi.</li>
+                </ul>
+
+                <h3>2. Planlı Bakım</h3>
+                <ul>
+                    <li>İmalatçı tarafından verilen kullanma talimatları ve iş güvenliği prosedürleri doğrultusunda, belirlenen periyotlarda ekipmanın durdurularak gözden geçirilmesi ve gerekli bakımların yapılmasıdır.</li>
+                    <li><strong>Uygulama Örneği:</strong> İş ekipmanlarının bakımlarının belirli takvim aralıklarıyla yürütülmesi ve yapılan tüm işlemlerin günü gününe bakım defterine işlenmesi.</li>
+                </ul>
+
+                <h3>3. Periyodik / Önleyici Bakım (Preventive Maintenance)</h3>
+                <ul>
+                    <li>Arızaya ve tehlikeye sebep olabilecek etkilere maruz kalan iş ekipmanının, henüz kaza veya arıza meydana gelmeden yetkili kişilerce belirli aralıklarla kontrolden geçirilmesidir.</li>
+                    <li><strong>Uygulama Örneği:</strong> Üzerine vurulmak suretiyle çalışan zımba, murç ve çivi başlarında oluşan mantarlaşma ve çapakların fırlama riskine karşı zaman zaman tıraşlanarak bakımının yapılması.</li>
+                </ul>
+
+                <h3>4. Olağanüstü Durumlarda Periyodik Kontroller</h3>
+                <ul>
+                    <li>Çalışma şeklinde değişiklikler, kazalar, doğal olaylar veya ekipmanın uzun süre kullanılmaması gibi iş ekipmanındaki güvenliğin bozulmasına neden olabilecek durumlardan sonra yapılan teknik kontrollerdir.</li>
+                    <li><strong>Uygulama Örneği:</strong> Uzun süre atıl kalan veya bir kaza atlatan iş ekipmanının, arızanın zamanında belirlenip giderilmesi ve sağlık-güvenlik koşullarının korunması amacıyla tekrar işletime alınmadan önce periyodik kontrolleri yapmaya yetkili kişilerce sınanması.</li>
+                </ul>
+
+                <div class="callout info">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    <div>
+                        <strong>💡 Sınav İpucu:</strong> Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe bu deftere işlenmek zorundadır. <strong>5070 sayılı Elektronik İmza Kanunu</strong>'na uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtlar da mevzuatça geçerli bakım defteri kabul edilir.
+                    </div>
+                </div>
+
+                <h3>Bakımın Ürün Kalitesi ve Tesis Ömrüne Etkileri</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #2a9d8f, #4ecdc4);">⏳</div>
+                        <h4>Teknik Ömrün Korunması</h4>
+                        <p>Teknik ömrünü tamamlamamış ekipman ve aletlerin aşınması ve yıpranması engellenerek kullanım ömrü uzatılır.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #e63946, #ff6b76);">🛡️</div>
+                        <h4>Can ve Mal Kayıplarının Önlenmesi</h4>
+                        <p>Bakımsızlık nedeniyle oluşabilecek hafif ve ağır yaralanmalar, uzuv kayıpları ve ölümlü iş kazalarının önüne geçilir.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #0f4c81, #1e6db5);">⭐</div>
+                        <h4>Ürün ve İş Kalitesinin Sağlanması</h4>
+                        <p>Körelmiş bıçak, zımba veya matkap uçlarının kullanımından kaynaklanan imalat hataları ve ürün deformasyonları engellenir.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #f4a261, #f9c784);">⚙️</div>
+                        <h4>Operasyonel Emniyet</h4>
+                        <p>Bakımı yetkili ve ehil kişilerce yapılan ekipmanlar, tesis genelinde kontrolsüz duruşları önler ve güvenli çalışma ortamı oluşturur.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== BÖLÜM 3 ===== -->
+            <section class="section fade-in" id="bolum-3">
+                <div class="section-head">
+                    <div class="section-num">3</div>
+                    <div>
+                        <h2>Başlıca Tehlikeler ve Risk Analizi</h2>
+                        <p class="sub">Elektrik, düşme, zehirli gaz ve mekanik tehlikeler</p>
+                    </div>
+                </div>
+
+                <h3>3.1. Elektrik Çarpması Tehlikesi</h3>
+                <p>Elektrikli el aletleri ve ekipmanların bakım-onarım süreçlerinde elektrik enerjisinden kaynaklanan başlıca riskler:</p>
+                <ul>
+                    <li><strong>Kablo Hasarları ve Yalıtım Kusurları:</strong> Yalıtımı bozulmuş, çatlak veya kesik kablolar doğrudan elektrik şokuna ve can kaybına neden olur.</li>
+                    <li><strong>Gövde ve Şase Kaçakları:</strong> Alet sapında, gövdesinde veya şasesinde oluşan kırık ve çatlaklar üzerinden operatör elektrik akımına maruz kalabilir.</li>
+                </ul>
+
+                <h4>Emniyet Tedbirleri ve İkaz Standartları</h4>
+                <ul>
+                    <li>Olası arızalı haller için her kullanımdan önce elektrikli el aletleri kullanıcı tarafından detaylıca kontrol edilmelidir.</li>
+                    <li>Alet sapı ve şasesi kırık ve çatlak risklerine karşı gözden geçirilmelidir.</li>
+                    <li>Hasarlı, kesik veya yalıtımı bozulmuş kabloya sahip elektrikli el aletlerinin üzerine emniyet ikazı olarak kesinlikle <strong>"DİKKAT KABLO ARIZALIDIR KULLANMAYINIZ"</strong> etiketi asılmalı ve alet derhal kullanımdan kaldırılmalıdır.</li>
+                    <li>Elektrikli aletlerde yalıtımlı saplar ve yalıtkan kişisel koruyucu donanımlar kullanılmalıdır.</li>
+                </ul>
+
+                <h3>3.2. Yüksekten Düşme Riskleri</h3>
+                <p>Bakım-onarım işlerinde yüksekte ve saha genelinde çalışma yürütülürken karşılaşılan riskler:</p>
+                <ul>
+                    <li>Kaygan, engebeli, yağlı veya ıslak zeminlerde denge kaybı ve düşmeler.</li>
+                    <li>Sivri uçlu veya keskin kenarlı el aletlerinin ceplerde uygunsuz taşınması sonucu düşme anında saplanma yaralanmaları.</li>
+                </ul>
+
+                <div class="callout warning">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    <div>
+                        <strong>Önleyici Tedbirler:</strong> El aletleri ile çalışma yapılacak alan mutlaka kuru ve düzgün olmalı; kaygan ve engebeli olmamalıdır. Sivri uçlu ya da keskin kenarlı el aletleri kesinlikle cepte taşınmamalıdır. El aletleri kullanılmadığında takım çantaları içerisinde ya da uygun standlarda bulundurulmalıdır.
+                    </div>
+                </div>
+
+                <h3>3.3. Kapalı / Dar Alanlarda Zehirli Gaz Maruziyeti</h3>
+                <p>Tank, depo, kanal gibi kapalı ve dar alanlarda gerçekleştirilen bakım-onarım işlerinde ortam şartlarından kaynaklanan hayati riskler:</p>
+                <ul>
+                    <li>Kapalı alanlarda yürütülen işlemlerde yoğun toz, yetersiz havalandırma, yüksek gürültü, elektrik şokları ve yetersiz aydınlatma başlıca tehlike unsurlarıdır.</li>
+                    <li>Çalışanları etkileyebilecek yangın çıkma tehlikesi olan yerlerde ve iş ekipmanlarında yeterli yangın söndürme cihazları bulundurulmalıdır.</li>
+                    <li>Yapılan işi yürütmeye uygun ve çalışanların güvenliğini sağlayacak nitelikte aydınlatma sistemi kurulmalıdır.</li>
+                </ul>
+
+                <h3>3.4. Hareketli Parçalara Sıkışma ve Mekanik Tehlikeler</h3>
+                <ul>
+                    <li><strong>Durdurmadan Müdahale Yasağı:</strong> Çalışan makineler durdurulmadan el aleti ile müdahale edilmesi ezilme, sıkışma, uzuv kaybı ve ölümlü kazalara yol açar.</li>
+                    <li><strong>Uzatma Kolu Kullanma Tehlikesi:</strong> Anahtar ve el aletlerinde moment artırmak amacıyla boru ve çubuk gibi rastgele uzatma kollarının kullanılması kesinlikle yasaktır; kırılma ve fırlama riski oluşturur.</li>
+                    <li><strong>Sabitlememe Kusuru:</strong> Küçük parçalarla çalışırken mengene ile tutturulmadan işlem yapılması parçanın fırlamasına ve yaralanmaya neden olur.</li>
+                    <li><strong>Çapak Fırlaması ve Mantarlaşma:</strong> Üzerine vurulmak suretiyle çalışan aletlerin (zımba, murç, çivi) başlarında oluşan mantarlaşma ve çapaklar fırlayarak göz ve yüz yaralanmalarına sebep olur.</li>
+                </ul>
+
+                <div class="callout danger">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <div>
+                        <strong>⚠️ Sınav İpucu — El Aletlerinden Kaynaklanan Kazaların 4 Temel Nedeni:</strong>
+                        <ol style="margin-top:8px;">
+                            <li>El aletlerinin bakımsız veya arızalı olması,</li>
+                            <li>El aletlerinin amaçlarına uygun kullanılmamaları (usulüne uygun kullanılmaması),</li>
+                            <li>El aletlerinin kullanış yöntemlerinin yanlış olması (yanlış yerlerde kullanılması),</li>
+                            <li>El aletleri kullanılırken uygun kişisel koruyucu donanım (KKD) kullanılmaması veya hiçbir şekilde KKD kullanılmaması.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== BÖLÜM 4 ===== -->
+            <section class="section fade-in" id="bolum-4">
+                <div class="section-head">
+                    <div class="section-num">4</div>
+                    <div>
+                        <h2>Güvenli Çalışma Prosedürleri ve Operasyonel Kontroller</h2>
+                        <p class="sub">Enerji izolasyonu, el aletleri ve tank temizliği</p>
+                    </div>
+                </div>
+
+                <h3>4.1. İş Ekipmanlarında Güvenli Çalışma ve Kontrol Adımları</h3>
+                <ol>
+                    <li><strong>İmalatçı Talimatlarının İncelenmesi:</strong> İş ekipmanının kurulması veya sökülmesi, özellikle imalatçı tarafından verilen kullanma talimatı doğrultusunda güvenli koşullar altında yapılır.</li>
+                    <li><strong>Periyodik Kontrol Teyidi:</strong> Arızaya sebep olabilecek etkilere maruz kalan ekipmanın, periyodik kontrolleri yapmaya yetkili kişilerce kontrollerinin yapıldığı doğrulanır.</li>
+                    <li><strong>Saha ve Zemin Kontrolü:</strong> Çalışma yürütülecek alanın kuru, düzgün olduğu; kayganlık ve engebe içermediği teyit edilir.</li>
+                    <li><strong>Yetkili Personel Kontrolü:</strong> Bakım ve onarım işlerinin yalnızca bu konuda eğitimli, yetkili ve ehil kişilerce yürütüldüğü kontrol edilerek işe başlanır.</li>
+                </ol>
+
+                <h3>4.2. Enerji Kaynaklarının Kesilmesi ve Güvenli Yeniden Bağlantı</h3>
+                <div class="figure">
+                    <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="stepG" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#0f4c81"/>
+                                <stop offset="100%" style="stop-color:#1e6db5"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Steps -->
+                        <g>
+                            <circle cx="80" cy="70" r="28" fill="url(#stepG)"/>
+                            <text x="80" y="76" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">1</text>
+                            <text x="80" y="120" text-anchor="middle" font-size="11" fill="#1a2332" font-weight="bold">Durdurma</text>
+                            <text x="80" y="134" text-anchor="middle" font-size="11" fill="#1a2332" font-weight="bold">Sistemini Çalıştır</text>
+                        </g>
+                        <line x1="115" y1="70" x2="165" y2="70" stroke="#dde6f0" stroke-width="3" marker-end="url(#arr)"/>
+                        <g>
+                            <circle cx="220" cy="70" r="28" fill="url(#stepG)"/>
+                            <text x="220" y="76" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">2</text>
+                            <text x="220" y="120" text-anchor="middle" font-size="11" fill="#1a2332" font-weight="bold">Enerji Kesme</text>
+                            <text x="220" y="134" text-anchor="middle" font-size="11" fill="#1a2332" font-weight="bold">Araçlarını Kullan</text>
+                        </g>
+                        <line x1="255" y1="70" x2="305" y2="70" stroke="#dde6f0" stroke-width="3"/>
+                        <g>
+                            <circle cx="360" cy="70" r="28" fill="url(#stepG)"/>
+                            <text x="360" y="76" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">3</text>
+                            <text x="360" y="120" text-anchor="middle" font-size="11" fill="#1a2332" font-weight="bold">Harekete Geçirici</text>
+                            <text x="360" y="134" text-anchor="middle" font-size="11" fill="#1a2332" font-weight="bold">Enerjiyi Kes</text>
+                        </g>
+                        <line x1="395" y1="70" x2="445" y2="70" stroke="#dde6f0" stroke-width="3"/>
+                        <g>
+                            <circle cx="500" cy="70" r="28" fill="url(#stepG)"/>
+                            <text x="500" y="76" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">4</text>
+                            <text x="500" y="120" text-anchor="middle" font-size="11" fill="#1a2332" font-weight="bold">Sıfır Enerji</text>
+                            <text x="500" y="134" text-anchor="middle" font-size="11" fill="#1a2332" font-weight="bold">Durumunu Doğrula</text>
+                        </g>
+                        <line x1="535" y1="70" x2="585" y2="70" stroke="#dde6f0" stroke-width="3"/>
+                        <g>
+                            <circle cx="640" cy="70" r="28" fill="url(#stepG)"/>
+                            <text x="640" y="76" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">5</text>
+                            <text x="640" y="120" text-anchor="middle" font-size="11" fill="#1a2332" font-weight="bold">Güvenli Yeniden</text>
+                            <text x="640" y="134" text-anchor="middle" font-size="11" fill="#1a2332" font-weight="bold">Bağlantı Teyidi</text>
+                        </g>
+                        <text x="400" y="180" text-anchor="middle" font-size="12" fill="#5a6b80" font-style="italic">İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre her zaman önceliklidir.</text>
+                    </svg>
+                    <div class="figure-caption">Şekil 2: Enerji izolasyonu ve güvenli yeniden bağlantı adımları</div>
+                </div>
+
+                <h3>4.3. El Aletleri ve Merdivenle Çalışmalarda Emniyet Kuralları</h3>
+                <ul>
+                    <li><strong>Zemin Standartları:</strong> Çalışma yapılacak alan mutlaka kuru ve düzgün olmalı; kaygan ve engebeli zeminlerde çalışma yapılmamalıdır.</li>
+                    <li><strong>Sap ve Tutamak Emniyeti:</strong> El aletlerinin sapları uygun olmalı, kolayca çıkmamalı, çatlak ve kırık bulunmamalıdır. Alet sapları kesinlikle yağlı ve kaygan olmamalıdır.</li>
+                    <li><strong>Taşıma ve Alet Kullanımı:</strong> Sivri uçlu ve keskin kenarlı aletler cepte taşınmamalı, takım çantalarında veya standlarda saklanmalıdır.</li>
+                    <li><strong>Alet Bütünlüğü:</strong> Teknik ömrünü tamamlamış, sapı gevşemiş veya aşınmış aletler kullanılmamalı; arızalı aletler derhal değiştirilmeli veya yetkili kişilerce onarılmalıdır.</li>
+                </ul>
+
+                <h3>4.4. Tank ve Depo Temizliği Güvenlik Adımları</h3>
+                <ol>
+                    <li><strong>Enerji İzolasyonu ve Durdurma:</strong> İlgili depolama veya tank sisteminin enerjisi kesilir, durdurma sistemleri çalıştırılarak emniyete alınır.</li>
+                    <li><strong>Aydınlatma Sisteminin Kurulması:</strong> Tank ve kapalı alan içinde yapılan işi yürütmeye uygun ve çalışanların güvenliğini sağlayacak nitelikte aydınlatma sistemi kurulur.</li>
+                    <li><strong>Yangın Söndürme Ekipmanı Kontrolü:</strong> Yangın çıkma tehlikesi bulunan alanlarda yeterli yangın söndürme cihazları derhal erişilebilir durumda bulundurulur.</li>
+                    <li><strong>Uzaktan Kumanda Güvenlik Doğrulaması:</strong> Çalışmada uzaktan kumandalı iş ekipmanı kullanılıyorsa, kontrol sınırlarının dışına çıkması halinde otomatik olarak hemen duracağı kontrol edilir.</li>
+                </ol>
+
+                <div class="callout success">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <div>
+                        <strong>💡 Sınav İpucu:</strong> "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre <strong>ÖNCELİKLİDİR</strong>." Ayrıca iş ekipmanı durdurulduğunda, bunları harekete geçiren enerji de kesilecek özellikte olmak zorundadır.
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== BÖLÜM 5 ===== -->
+            <section class="section fade-in" id="bolum-5">
+                <div class="section-head">
+                    <div class="section-num">5</div>
+                    <div>
+                        <h2>Ekipman Güvenliği, KKD, Eğitim ve Denetim</h2>
+                        <p class="sub">Bakım defteri, kumanda sistemleri ve kişisel koruyucu donanım</p>
+                    </div>
+                </div>
+
+                <h3>5.1. Bakım Defteri Kayıtları ve Kumanda Sistemleri</h3>
+                <ul>
+                    <li>Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe bu deftere işlenir.</li>
+                    <li><strong>5070 sayılı Elektronik İmza Kanunu</strong>'na uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtlar da hukuken bakım defteri olarak kabul edilir.</li>
+                    <li>İş ekipmanında bulunan ve güvenliği etkileyen kumanda cihazları açıkça görülebilir ve tanınabilir özellikte olur; gerektiğinde uygun şekilde işaretlenir.</li>
+                    <li>Kumanda cihazları zorunlu haller dışında tehlikeli bölgenin dışına yerleştirilir. Operatör, ana kumanda yerinden tehlike bölgesinde kimsenin bulunmadığından emin olmalıdır.</li>
+                    <li>Her çalışma yerinde ekipmanın tamamını veya bir kısmını durdurabilecek ve güvenli durumda kalmasını sağlayacak sistem bulunur. <strong>Durdurma sistemleri çalıştırma sistemlerine göre önceliklidir.</strong></li>
+                    <li>Tehlikenin durumu ve normal durma süresinin gerektirmesi halinde acil durdurma sistemi bulundurulmalıdır.</li>
+                </ul>
+
+                <h3>5.2. Hareketli İş Ekipmanlarında Devrilme Güvenliği Standardı</h3>
+                <div class="callout info">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    <div>
+                        Üzerinde çalışan bulunan hareketli iş ekipmanı, normal çalışma koşullarında devrilme riskine karşı:<br>
+                        <strong>a)</strong> Cihaz bir çeyrekten (90 derecelik açı) fazla dönmeyecek şekilde yapılmış olur <strong>veya</strong><br>
+                        <strong>b)</strong> Bir çeyrekten fazla dönüyorsa, üzerinde bulunan çalışanın etrafında yeterli açıklık bulunur <strong>veya</strong><br>
+                        <strong>c)</strong> Aynı etkiyi sağlayacak başka koruyucu yapı veya sistem bulunur.
+                    </div>
+                </div>
+
+                <h3>5.3. Kişisel Koruyucu Donanım (KKD) Kullanımı</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>İş Türü / Ekipman</th>
+                                <th>Risk Kaynağı</th>
+                                <th>Uygun KKD ve Güvenlik Esasları</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Elektrikli El Aletleri</td>
+                                <td>Elektrik Şoku Riski</td>
+                                <td>Yalıtımlı saplı aletler, yalıtkan eldivenler ve çizmeler; her kullanım öncesi kablo/şase kontrolü.</td>
+                            </tr>
+                            <tr>
+                                <td>Vurmalı Aletler (Zımba, Murç, Çivi)</td>
+                                <td>Çapak Fırlaması</td>
+                                <td>Darbeye dayanıklı koruyucu gözlük veya yüz siperi; başı tıraşlanmış alet kullanımı.</td>
+                            </tr>
+                            <tr>
+                                <td>Kesici ve Eğelemeli Aletler (Bıçak, Keski, Eğe)</td>
+                                <td>Kesilme Riski</td>
+                                <td>Kesilmeye dayanıklı koruyucu eldivenler; aletin amacına uygun kullanımı.</td>
+                            </tr>
+                            <tr>
+                                <td>Tozlu ve Gürültülü Bakım Ortamları</td>
+                                <td>Toz ve Gürültü</td>
+                                <td>Ortam şartlarına uygun toz maskesi ve kulak koruyucu (kulak tıkacı/manşonlu kulaklık).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>5.4. El Aletlerinin Yanlış Kullanım Örnekleri</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Alet</th>
+                                <th>Yanlış / Usulüne Aykırı Kullanım</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Çekiçler</td><td>Çivi sökmek için çekicin çeneli tarafının kullanılması, demirci çekicinin doğrama işlerinde veya sert çelik dövmede kullanılması.</td></tr>
+                            <tr><td>Keskiler</td><td>Ağaç parçalamak, metal kesmek; tornavida veya manivela gibi kullanmak.</td></tr>
+                            <tr><td>Matkaplar</td><td>Yanlış matkap ucunun tatbik edilmesi.</td></tr>
+                            <tr><td>Eğeler</td><td>Malzeme eğelemek yerine eskilerden keski veya tornavida yapılması.</td></tr>
+                            <tr><td>Bıçaklar</td><td>Kesme işi yerine tornavida gibi ya da kutu kapağı açmada kullanılması.</td></tr>
+                            <tr><td>Manivelalar</td><td>Fazla ağır kaldırmak, destek veya takoz gibi kullanmak.</td></tr>
+                            <tr><td>Kazmalar</td><td>Taş veya ağaç sökmede manivela gibi kullanmak.</td></tr>
+                            <tr><td>Baltalar</td><td>Kama gibi araya sıkıştırmak veya üzerine vurarak yarmak.</td></tr>
+                            <tr><td>Tornavidalar</td><td>Vida sıkmak/gevşetmek yerine bel küreği gibi toprak yapmak.</td></tr>
+                            <tr><td>Kürekler / Bel Küreği</td><td>Sıyırma ve aktarma işlerinin birbiri yerine usulüne aykırı yapılması.</td></tr>
+                            <tr><td>Anahtarlar</td><td>Cıvata sıkma dışında çekiç yerine kullanmak, yanlış anahtar kullanmak.</td></tr>
+                            <tr><td>Rastgele Uzatma Kolu</td><td>Anahtarlara boru ve çubuk takılarak uzatma kolu yapılması.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>5.5. Aktif Saha Denetimi</h3>
+                <p>Yapılan denetimlerde teknik ömrünü tamamlamış, çatlak saplı, aşınmış, kırık, sapı yağlı/kaygan veya yalıtımı bozulmuş el aletleri <strong>derhal toplanmalı</strong>, onarılmalı veya değiştirilmelidir.</p>
+
+                <div class="callout warning">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    <div>
+                        <strong>💡 Sınav İpucu:</strong> Sınavlarda uzaktan kumandalı iş ekipmanlarının emniyet kriteri sorulduğunda: Uzaktan kumandalı iş ekipmanının, kontrol sınırlarının dışına çıkması halinde <strong>OTOMATİK</strong> olarak hemen duracak özellikte olması şarttır.
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== BÖLÜM 6 ===== -->
+            <section class="section fade-in" id="bolum-6">
+                <div class="section-head">
+                    <div class="section-num">6</div>
+                    <div>
+                        <h2>Bakım-Onarımda İş Güvenliğinin 4 Ana Başlığı</h2>
+                        <p class="sub">Makine bakımları, kaynak/kesim/taşlama, kapalı yerler ve yüksekte çalışma</p>
+                    </div>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #0f4c81, #1e6db5);">⚙️</div>
+                        <h4>1. Makine Bakımlarında İSG</h4>
+                        <p>Bakım ve onarımlar uzman kişilerce yapılmalı; makine tamamen durdurulmadan müdahale edilmemelidir.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #e63946, #ff6b76);">🔥</div>
+                        <h4>2. Kaynak, Kesim ve Taşlama</h4>
+                        <p>Elektrik ark kaynağında kuru eldiven, izole pense ve kablo; oksijen/asetilen tüplerinde güvenli depolama.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #2a9d8f, #4ecdc4);">🕳️</div>
+                        <h4>3. Kapalı Yerlerde Çalışma</h4>
+                        <p>Asla yalnız çalışılmamalı, gaz ölçümü yapılmalı, sürekli havalandırma ve gözlemci bulundurulmalıdır.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #f4a261, #f9c784);">🪜</div>
+                        <h4>4. Yüksekte Çalışma</h4>
+                        <p>Emniyet kemeri, baret, bağlama ipi; merdiven 75° açı ile yerleştirilmeli, yüz merdivene dönük olunmalıdır.</p>
+                    </div>
+                </div>
+
+                <h3>6.1. Makine Bakımlarında İş Güvenliği</h3>
+                <ul>
+                    <li>Bakım ve onarımlar <strong>UZMAN KİŞİLER</strong> tarafından yapılmalıdır.</li>
+                    <li>Personel, makine yapımcılarının önerileri hakkında yeterli bilgi sahibi olmalıdır.</li>
+                    <li>Muayene ve bakım sırasında; koruyucuların kaldırılması gerektiğinde, güç kesilmeli, şalter kilitlenmelidir.</li>
+                    <li>Çalışırken acele edilmemelidir. Çalışan makine üzerinde hiçbir surette bakım yapılmamalıdır.</li>
+                    <li>Makine tamamen durduktan sonra bakım, temizlik ve yağlama gibi işlemler yapılmalıdır.</li>
+                    <li>Bakıma alınan makinenin elektrik devresinin akımı kesilmeli ve şalter kilitlenmeli, kilitleme tertibatı yok ise sigortası alınmalıdır ve şalter üzerine ikaz levhası asılmalıdır.</li>
+                    <li>Çalışmasında sakınca görülen, koruyucusu olmayan veya yetersiz olan makineler devreye alınmamalı, çalışıyor ise hemen durdurulmalıdır.</li>
+                    <li>Makinenin dönen kısımlarına el sürülmemelidir. Kayışlar dönerken yağ, reçine vb. maddeler sürülmemelidir.</li>
+                    <li>İş Güvenliği yetkililerin öngördüğü önlemler alınmadan çalışmaya başlanmamalıdır.</li>
+                    <li>İşlenecek parçalar tezgahlara sağlam olarak bağlanmalıdır. Çıkan talaşlar elle temizlenmemelidir.</li>
+                    <li>Basınçlı hava ile temizlik yaparken kesinlikle gözlük kullanılmalıdır. Yakın çevrede bir başkasının bulunmamasına dikkat edilmelidir.</li>
+                    <li>Takımlar, temizleme malzemeleri gibi alet ve edevatlar makinelerin üzerine ve dişli kutuları içine konulmamalıdır.</li>
+                    <li>Dönen parçalar kesinlikle üstüpü bez ile silinmemelidir. Elle frenleme yapılmamalı, saç ve giysiler kaptırmaktan korunmalıdır.</li>
+                    <li>Kaldırma makinelerine üzerinde yazılı tonajdan fazla yük yüklenmemelidir.</li>
+                    <li>Yük kaldırma ve indirmesinde, yükün altında kesinlikle <strong>DURULMAMALIDIR</strong>.</li>
+                    <li>Rutubetli ve iletken ortamlarda, daha az tehlikeli olan düşük gerilimli <strong>(24 - 42 Volt)</strong> aydınlatma cihazları kullanılmalıdır.</li>
+                    <li>Bakım ve onarım işlemi yapıldıktan sonra koruyucu düzeneklerin yerlerine düzgün olarak takılıp takılmadığı kontrol edilmelidir.</li>
+                </ul>
+
+                <h3>6.2. Kaynak, Kesim ve Taşlama İşlerinde İş Güvenliği</h3>
+                <ul>
+                    <li>Enerji besleme ve kaynak kabloları, üzerinden araba, taşıt geçmesi halinde zedelenmeyecek ve bozulmayacak şekilde döşemede emniyete alınmalıdır.</li>
+                    <li>Asetilen ve oksijen tüpleri fırlatma, yuvarlama, zedelemelere ve şiddetli sarsıntılara sebebiyet verecek şekilde bırakılmamalıdır.</li>
+                    <li>Tüpler doğrudan doğruya güneş ışıklarının altında ve aşırı soğukta bırakılmamalıdır.</li>
+                    <li>Tüpler ateş bulunan yerler civarına konulmamalı ve yanma tehlikesi olan maddelerle birlikte depolanmamalıdır.</li>
+                    <li>Oksijen tüplerinin ventil gibi aksamı yağlı maddelerle temas ettirilmemelidir.</li>
+                    <li>Elektrik ark kaynağı yaparken kuru eldiven kullanılmalı ve penselerinin, kablolarının tamamen izole edilmiş olduğu kontrol edilmelidir.</li>
+                    <li>Kaynak işleri bittikten sonra, üfleci yerine kaldırmadan evvel iyice temizlemesi yapılmalı ve içinde gaz bırakılmamalıdır.</li>
+                    <li>Zemine dökülen, aşındırıcı, yanıcı ve kayganlık yapıcı maddeler hemen temizlenmelidir.</li>
+                    <li>Parça temizliğinde zorunlu olmadıkça benzin, tiner gibi patlayıcı maddeler kullanılmamalıdır. Parça temizliği mazot, gaz yağı gibi daha az yanıcılarla ve açık havada yapılmalıdır.</li>
+                    <li>Yırtık, sökük ve sarkıntılı elbiseler giyilmemeli ve bakım anında kolye, saat ve yüzük takılmamalıdır.</li>
+                </ul>
+
+                <h4>Daire Testerelerde Güvenlik</h4>
+                <ul>
+                    <li>Daire testerenin üstü ve etrafı, mafsallı ve kesilecek parçanın dokunması ile açılabilen bir koruyucu ile örtülecek ve testerenin tabla altındaki kısmı da korunacaktır.</li>
+                    <li>Kısa parçaları veya kesilmesi biten uzun parçaları itmek için itici bir çubuk kullanılmalıdır.</li>
+                    <li>Daire testereler, bakımlı, ayarlı ve keskin olacak, arıza görülenlerle çatlak olanları derhal çıkarılacak ve çatlak uçları, delinecek dahi olsa, tekrar kullanılmayacaktır.</li>
+                    <li>El kesilmelerine karşı uygun nitelikte iş eldiveni kullanılmalıdır.</li>
+                    <li>Kıvılcım ve parça sıçramasına karşı koruyucu gözlük kullanılmalıdır.</li>
+                    <li>Parça keserken el ve parmaklar bıçak üzerinden geçirilmemelidir.</li>
+                </ul>
+
+                <h4>Zımpara Taşları</h4>
+                <ul>
+                    <li>Zımpara taşları, gerekli sağlamlıkta yapılmış olacak ve taştan fırlayabilecek parçalara karşı, uygun koruyucu içine alınacaktır.</li>
+                    <li>Tezgaha bağlanacak zımpara taşları, işin ve tezgahın özelliğine uygun olacak, taşın devir sayısı, tezgahınkinden fazla olmayacaktır.</li>
+                    <li>Elle yapılan taşlama işlerinde, taşlanacak parça bir mesnet veya tabla üzerinde tutulacaktır.</li>
+                    <li>Zımpara taşı tezgahında çalışırken kesinlikle koruyucu gözlük takılmalıdır.</li>
+                    <li>Taşın mil ve yatakları sağlam olmalıdır. Taş salgısız dönmeli ve iyi dengelenmiş olmalıdır.</li>
+                    <li>Taşlama sırasında parça, taşın yüzeyinde gezdirilerek taş yüzeyinin her tarafından eşit aşınması sağlanmalıdır. Taşın yan yüzleri kullanılmamalıdır.</li>
+                    <li>İş dayama parçası ile taş arasında <strong>2 mm boşluk</strong> bırakılmalıdır.</li>
+                    <li>Zımpara taşına bakır, pirinç, alüminyum, ağaç vb. maddeler sürülmemelidir.</li>
+                </ul>
+
+                <h3>6.3. Kapalı Yerlerde Yapılan Çalışmalarda İş Güvenliği</h3>
+                <ul>
+                    <li><strong>Asla yalnız adam çalıştırılmamalıdır.</strong></li>
+                    <li>Çalışmaya başlamadan önce <strong>gaz ölçümü</strong> yapılmalıdır.</li>
+                    <li>Burada çalışanlarda <strong>"Ağır ve Tehlikeli İşlerde Çalışacaklar için Sağlık Raporu"</strong> olmalıdır.</li>
+                    <li>Patlayıcı ortam oluşturabilecek yerlerde açık alevli lamba, çakmak ve kibrit gibi malzemeler kullanılmamalıdır.</li>
+                    <li>Pis su, gaz ve dumanların bulunabileceği yerler iyice havalandırılmalı ve hava sürekli kontrol altında tutulmalıdır.</li>
+                    <li>Zararlı ve zehirli gazların bulunduğu, havalandırmanın yeterli olmadığı yerlerdeki çalışmalarda, gerekli kişisel koruyucu malzemeler kullanılmalıdır.</li>
+                    <li>Bu gibi yerlerde tecrübeli ve usta işçiler çalıştırılmalı, kişisel koruyucuları verilmeli, bir veya birkaç gözlemci görevlendirilmelidir.</li>
+                    <li>Muhtemel bir zehirlenme durumunda ilk yardım yapacak malzeme ve kişiler hazır bulundurulmalıdır.</li>
+                </ul>
+
+                <div class="callout warning">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    <div>
+                        <strong>Parlayıcı/Patlayıcı Madde Bulunan Kapların Kaynakla Tamiri:</strong> Önce tamamen temizlenmeli, daha sonra buharla temizlenmeli, içine su (veya Azot ve CO₂ gibi asal gazlar) doldurulmalı, yetkili teknik eleman nezaretinde ve en usta kişilerce işlem yaptırılmalıdır.
+                    </div>
+                </div>
+
+                <h3>6.4. Yüksekte Yapılan Çalışmalarda İş Güvenliği</h3>
+                <ul>
+                    <li>Çalışma alanındaki düşmelerle ilgili tehlikeler önceden belirlenmelidir.</li>
+                    <li>Uygun ve etkili fiziksel korumalar yapılmalı ve kontrol edilmelidir.</li>
+                    <li>Mümkün olan yerlerde sabit yürüme yolları, sabit veya hareketli merdivenler kullanılmalıdır.</li>
+                    <li>Uygun kişisel koruyucu malzemeler (emniyet kemeri, baret, bağlama ipi) kullanılmalıdır.</li>
+                    <li>El aletlerinin düşmesini önlemek için alet çantası kullanılmalıdır.</li>
+                    <li>Merdiven veya basamakta hasar olup olmadığı kontrol edilmelidir.</li>
+                    <li>Bir yere dayanan merdiven ayakları ile zemin arasındaki açıklığın <strong>75 derece</strong> olmasına dikkat edilmelidir.</li>
+                    <li>Merdivenin kaymasını ve düşmesini önleyecek önlemler (kanca vb.) alınmalıdır.</li>
+                    <li>Merdivenden iniş ve çıkışlarda yüz merdivene dönük olmalı ve her iki elle basamak tutulmalıdır.</li>
+                    <li>Merdivenden geri-geri inip çıkılmamalıdır. Merdiven üzerinde iken uzanma yalnız güvenlik sınırları içinde yapılmalıdır.</li>
+                    <li>Çalışma platformlarında zeminin yeterince geniş ve sağlam olduğu kontrol edilmelidir.</li>
+                    <li>Zeminlerdeki boşluklar gibi açıklıkların etrafının güvenli engellerle (korkuluk, döşeme tahtası, vs.) çevrilmesi ya da üstlerinin kapatılması sağlanmalıdır.</li>
+                </ul>
+            </section>
+
+            <!-- ===== BÖLÜM 7 ===== -->
+            <section class="section fade-in" id="bolum-7">
+                <div class="section-head">
+                    <div class="section-num">7</div>
+                    <div>
+                        <h2>Bakım-Onarım İşlerinde Çok Rastlanan Kazalar</h2>
+                        <p class="sub">Kaza türleri, sebepleri ve istatistiksel dağılım</p>
+                    </div>
+                </div>
+
+                <h3>Kaza Türleri</h3>
+                <div class="card-grid">
+                    <div class="card"><p>⚡ Elektriğe çarpılma</p></div>
+                    <div class="card"><p>⚙️ Hareketli kısımlarda yaralanma</p></div>
+                    <div class="card"><p>☠️ Zehirlenme ve boğulma</p></div>
+                    <div class="card"><p>🔥 Parlama, patlama ve yanma</p></div>
+                    <div class="card"><p>⬇️ Düşme</p></div>
+                    <div class="card"><p>🦺 KKD'in yanlış kullanılması</p></div>
+                </div>
+
+                <h3>Kaza Sebepleri ve Oranları</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Kaza Sebebi</th>
+                                <th>Oran (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Çalışma izni</td><td><strong>21,8</strong></td></tr>
+                            <tr><td>Kişisel koruyucular</td><td>14,3</td></tr>
+                            <tr><td>Çalışma sistemi</td><td>14,0</td></tr>
+                            <tr><td>Tesis</td><td>10,5</td></tr>
+                            <tr><td>Makine koruyucuları</td><td>9,9</td></tr>
+                            <tr><td>Çalışılan yer</td><td>8,5</td></tr>
+                            <tr><td>Eğitim, denetim, gözetim</td><td>8,2</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Kaza Nedenleri Zinciri</h3>
+                <div class="figure">
+                    <svg viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="chain" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#0f4c81"/>
+                                <stop offset="100%" style="stop-color:#e63946"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="20" y="30" width="130" height="60" rx="12" fill="#f0f7ff" stroke="#0f4c81" stroke-width="2"/>
+                        <text x="85" y="58" text-anchor="middle" font-size="11" fill="#0f4c81" font-weight="bold">İnsan Bünyesinin</text>
+                        <text x="85" y="74" text-anchor="middle" font-size="11" fill="#0f4c81" font-weight="bold">Zayıflığı</text>
+
+                        <polygon points="165,60 185,50 185,70" fill="#0f4c81"/>
+
+                        <rect x="200" y="30" width="130" height="60" rx="12" fill="#eef6ff" stroke="#1e6db5" stroke-width="2"/>
+                        <text x="265" y="58" text-anchor="middle" font-size="11" fill="#1e6db5" font-weight="bold">Kişisel Özürler</text>
+                        <text x="265" y="74" text-anchor="middle" font-size="11" fill="#1e6db5" font-weight="bold">(Kusurlar/Zaaflar)</text>
+
+                        <polygon points="345,60 365,50 365,70" fill="#1e6db5"/>
+
+                        <rect x="380" y="20" width="160" height="80" rx="12" fill="#fff7ed" stroke="#e63946" stroke-width="3"/>
+                        <text x="460" y="48" text-anchor="middle" font-size="11" fill="#e63946" font-weight="bold">Tehlikeli Durumlar</text>
+                        <text x="460" y="64" text-anchor="middle" font-size="11" fill="#e63946" font-weight="bold">ve</text>
+                        <text x="460" y="80" text-anchor="middle" font-size="11" fill="#e63946" font-weight="bold">Tehlikeli Davranışlar</text>
+                        <text x="460" y="12" text-anchor="middle" font-size="10" fill="#e63946" font-weight="bold">⚠ MÜDAHALE NOKTASI</text>
+
+                        <polygon points="555,60 575,50 575,70" fill="#e63946"/>
+
+                        <rect x="590" y="30" width="90" height="60" rx="12" fill="#fef2f2" stroke="#e76f51" stroke-width="2"/>
+                        <text x="635" y="58" text-anchor="middle" font-size="11" fill="#e76f51" font-weight="bold">Kaza Olayı</text>
+                        <text x="635" y="74" text-anchor="middle" font-size="11" fill="#e76f51" font-weight="bold">(Oluşum)</text>
+
+                        <polygon points="695,60 715,50 715,70" fill="#e76f51"/>
+
+                        <rect x="720" y="30" width="70" height="60" rx="12" fill="#fef2f2" stroke="#c1121f" stroke-width="2"/>
+                        <text x="755" y="58" text-anchor="middle" font-size="11" fill="#c1121f" font-weight="bold">Yaralanma</text>
+                        <text x="755" y="74" text-anchor="middle" font-size="11" fill="#c1121f" font-weight="bold">(Hasar)</text>
+                    </svg>
+                    <div class="figure-caption">Şekil 3: Kaza nedenleri zinciri — 5 halkadan yalnızca 3.'süne müdahale edilebilir</div>
+                </div>
+
+                <div class="callout info">
+                    <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    <div>
+                        İş Güvenliğinin temel ilkelerinin birinci maddesi: <strong>"Kaza nedenleri dizisinin beş halkadan ancak üçüncüsüne etki edilebilir. İş Güvenliğinin sağlanması çalışmaları güvensiz koşulların ve hareketlerin ortadan kaldırılması konusunda yoğunlaşır."</strong> Bu nedenle tehlikeli durumların ve tehlike kaynaklarının ortadan kaldırılması ile tehlikeli davranışların önlenmesi gerekir.
+                    </div>
+                </div>
+
+                <h3>İnsan Faktörü ve Güvenlik Bilinci</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #0f4c81, #1e6db5);">🧠</div>
+                        <h4>1. Güvenlik Bilinci</h4>
+                        <p>Kişinin güvensiz durum ve davranışları tanıyabilmesinin ve bu işlere zaman ayırmasının bir ölçüsüdür. <strong>BİLİNLİ OLMAK GÜVENLİĞİN TEMEL ANAHTARIDIR.</strong></p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #2a9d8f, #4ecdc4);">✅</div>
+                        <h4>2. Doğru ve Güvenli Çalışma Alışkanlığı</h4>
+                        <p>"Yaptığınız iş güvenli değilse doğru da değildir. Doğruluğundan emin olmadığınız işleri yapmayınız."</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #f4a261, #f9c784);">👁️</div>
+                        <h4>3. Gör-Düşün-Yap Prensibi</h4>
+                        <p>Kişi yapacağı her işi görüp ve nasıl yapacağını düşündükten sonra yapmalıdır. Bu kurala uymadan yapılan her işte kişi kaza yapmaya adaydır.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #e63946, #ff6b76);">🦺</div>
+                        <h4>4. Koruyucu Malzeme Kullanma Alışkanlığı</h4>
+                        <p>Gerekli olan yerlerde verilmiş olan koruyucu malzemeler mutlaka kullanılmalıdır. Kişi ne kadar deneyimli olursa olsun, koruyucu malzeme takmadan çalışmamalıdır.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon" style="background: linear-gradient(135deg, #0f4c81, #1e6db5);">📋</div>
+                        <h4>5. Güvenlik Kurallarına Uyma Alışkanlığı (Süreklilik)</h4>
+                        <p>Güvenlik kurallarına uyan kişilerin, kendi menfaatlerine göre hareket ettiklerini bilmeleri önemlidir. Çünkü kaza yaptığında her şeyden önce kişinin kendisi zarar görecektir.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== BÖLÜM 8 ===== -->
+            <section class="section fade-in" id="bolum-8">
+                <div class="section-head">
+                    <div class="section-num">8</div>
+                    <div>
+                        <h2>Bakım ve Onarım İşlerinde Güvenlik Tedbirleri</h2>
+                        <p class="sub">Yönergeler, muayene programı, denetim ve 17 maddelik tedbir listesi</p>
+                    </div>
+                </div>
+
+                <h3>A. Yönergeler ve Talimatlar</h3>
+                <ul>
+                    <li>İşyerlerinde, bakım onarım işlemleri için bir sistem yerleştirilmeli, talimatlar ve yönergeler hazırlanmalıdır.</li>
+                    <li>Çalışma izin şartları net olarak belirlenmeli; işi yapanların, bundan sorumlu olanların, böyle izinleri imzalayacak kişilerin açık ve net bir şekilde belirlenmesi, bu kişilerin de doğru ve etkin karar vermeleri gerekmektedir.</li>
+                </ul>
+
+                <h4>Net Bir Şekilde Belirlenmesi Gerekenler</h4>
+                <ul>
+                    <li>Yapılacak iş,</li>
+                    <li>İşi kimin denetleyeceği,</li>
+                    <li>Alınacak güvenlik tedbirleri,</li>
+                    <li>İşe başlamadan önce çalışanlar tarafından alınacak gerekli tedbirler (kilitleme aygıtlarının takılması, tehlike uyarı levhalarının asılması gibi),</li>
+                    <li>Çalışma alanının güvenli olup olmadığının tespiti ve güvenli hale getirilmesi,</li>
+                    <li>Çalışma izninin kaldırılmasından önce yapılması gerekli işlemlerin belirtilmesi ve bu işlemlerin kimler tarafından yapılacağı.</li>
+                </ul>
+
+                <h3>B. Muayene ve Bakım Programı</h3>
+                <p>Tesis, makine, alet ve koruyucuları güvenli çalışma durumunda tutacak şekilde periyodik muayene, bakım ve onarım programları yapılmalıdır. Programlanarak zamanında yapılan bakım ve onarımlar ile çalışma esnasında meydana gelebilecek olan arızalar daha önceden giderilmektedir.</p>
+
+                <h3>C. Etkili Kontrol ve Denetim</h3>
+                <p>İşyerinde bakım ve onarım işlerinin yapılması esnasında etkili bir <strong>DENETİM SİSTEMİ</strong> kurulmalıdır. Otokontrol mekanizmaları geliştirilmelidir. Çünkü insanlar sadece bilmedikleri için hata yapmazlar; daha çok bildikleri konularda hata yaparlar. Bu tür hataların yapılmaması için de uygun denetim mekanizmalarının geliştirilmesi, kurulması ve çalıştırılması gereklidir.</p>
+
+                <h3>17 Maddede Bakım-Onarım Güvenlik Tedbirleri</h3>
+                <ol>
+                    <li>İşyerinde çalışanlar; bina veya bina kısmında, inşaatta, makinada, tesisatta, alette ve edevatta göreceği noksan veya tehlikeli durumu, amirine veya bakım ve onarım işleriyle görevli olanlara hemen bildirecek ve işveren de bu kusurları en kısa zamanda ve uygun şekilde giderecektir.</li>
+                    <li>Bakım ve onarım işlerinin yapılabilmesi için, koruyucu tertibatın kaldırılması gerektiği hallerde, işlem makine durdurulduktan ve onarım işlerinden sorumlu kişilerden izin alındıktan sonra kaldırılacak ve onarım işlerinden sorumlu kişi, onarılan makine, cihaz veya tesisatın çalışmasına, koruyucu tertibatın uygun şekilde tekrar yerlerine konulup konulmadığını kontrol ettikten sonra izin verecektir.</li>
+                    <li>Bakım ve onarım işlerinde, uygun ve yeterli bir aydınlatma sağlanacak ve gerektiğinde özel aydınlatma yapılacak, bakım ve onarım işleriyle görevli işçilere, yanmaz el lambaları verilecektir.</li>
+                    <li>Bakım ve onarım işleri ile görevlendirilenlere, yapılacak işlerin gerektirdiği bütün aletleri alabilecek büyüklükte ve işyerindeki platform veya diğer yüksek yerlere tehlikesizce çekebilecek takım çantaları veya kutuları verilecek, bakım ve onarım işlerinde kullanılan büyük aletlerin taşınması için, özel el arabaları bulundurulacaktır.</li>
+                    <li>Bina ve tesisatta yapılacak bakım ve onarım işlerinde, geçici olarak uygun ve güvenli sabit merdivenler, platformlar, geçit veya iskeleler yapılacaktır.</li>
+                    <li>İşyerlerinde bakım ve onarım işleri, çalışmaların durdurulmadan yapılmasının zorunlu olduğu hallerde, gerekli güvenlik tedbirleri alınacaktır.</li>
+                    <li>Kuyu veya diğer yeraltı tesislerinde yapılacak bakım-onarım işlerinde; zararlı, zehirleyici, boğucu veya parlayıcı gaz veya sıvıların tehlikeli bir şekilde toplanacakları göz önünde bulundurularak gerekli ve yeterli güvenlik tedbirleri alınacaktır. Bu gibi yerlerde, tecrübeli ve usta işçiler çalıştırılacak, bunlara uygun kişisel koruma teçhizatı verilecek ve tecrübeli bir veya birden fazla gözlemci görevlendirilecektir.</li>
+                    <li>Hendek, çukur ve diğer kazı işlerinin yapıldığı yerlere, uygun şekilde payandalar ve korkuluklar yapılacak ve buralara, geceleri ışıklı uyarma levhaları konulacaktır.</li>
+                    <li>Sürekli olarak transmisyonla çalışılan işyerlerinde, bakım ve onarım sırasında boşa alınan kayışlar, sabit kancalara veya uygun diğer bir tertibata takılacaktır.</li>
+                    <li>Basınçlı kazanlar ve kaplar, <strong>basınç altında iken kesinlikle onarılmayacaktır</strong>.</li>
+                    <li>Tehlikeli gaz, buhar veya sislerin meydana gelebileceği tank veya depolar içinde yapılacak bakım-onarım işlerinde; işçilere maskeler, solunum cihazları ile emniyet kemerleri gibi uygun kişisel korunma araçları verilecek ve iş süresince tank veya depo ağızlarında bir gözlemci bulundurulacaktır.</li>
+                    <li>Onarılacak depo veya tanklar, başka depo veya tanklarla bağlantılı ise, bağlantı borularının vanaları, güvenli bir şekilde kapatılacak veya bu borular sökülerek bağlantı ağızları, kör tapa veya kapaklarla güvenli bir şekilde kapatılacaktır.</li>
+                    <li>Onarılacak tank veya depoların içinde mekanik karıştırma tertibatı bulunduğu hallerde, bakım-onarıma başlanmadan önce, karıştırıcı tertibatın güç kaynağı ile bağlantısı kesilecek ve karıştırıcılar, uygun şekilde takozlanacak, desteklenecek veya bağlanacaktır.</li>
+                    <li>Tehlikeli sıvıların bulunduğu tank ve depolar, en geç yılda bir defa kontrol edilecek ve onarımda bunlar tamamen boşaltılacak, bağlantı boruları sökülecek veya uygun kör tapalarla tıkanacak yada vanaları kapatılacaktır. Dışarıdan temizlenemeyen büyük depolara işçilerin girmesi gerektiği hallerde, bu işçilere; çizme, eldiven, gözlük, elbise veya temiz hava maskesi gibi uygun kişisel korunma araçları verilecek ve depo ağzında, işin süresince bir gözlemci bulundurulacaktır. İçerisinde işçilerin çalışmakta olduğu küçük depo veya kapalı yerlere, gerektiğinde sürekli ve uygun bir şekilde temiz hava verilecektir.</li>
+                    <li>Tehlikeli maddelerin taşındığı boru ve kanalların onarım işleriyle görevlendirilen işçilere, taşınan maddelerin özelliklerine uygun kişisel korunma donanımı verilecek ve işçiler bunları çalışırken kullanacaklardır.</li>
+                    <li>Parlayıcı ve patlayıcı maddeler taşınmış olan kaplara, üzerinde kaynak veya oksijenle kesme işi yapılmadan önce, bunlar buharla veya diğer bir usul ile temizlenecek, zararlı veya tehlikeli gazların, kap içinde kalıp kalmadığı kontrol edilecek ve kaplar, karbondioksit, azot, asal gazlar veya benzerleri ile doldurulacak, oksijenle kesme işleri yapıldığı sürece bu gazlardan biri, yavaş yavaş verilecektir.</li>
+                    <li>Korkuluklu platformlarla çalışılması imkanı sağlanamayan ve özellikle <strong>4 metreden fazla yüksekliği bulunan</strong> binaların dış kısımlarında, çatılarında ve benzeri yüksek yerlerde, bakım veya onarım işleriyle her türlü bina sökme ve yıkma işlerinde gerekli güvenlik tedbirleri alınacak, çalışan işçilere, uygun baret, emniyet kemerleri ve bağlama ipleri gibi kişisel korunma donanımı verilecek ve işçiler bunları kullanacaklardır.</li>
+                </ol>
+            </section>
+
+            <!-- ===== QUIZ ===== -->
+            <section class="quiz-section fade-in" id="quiz">
+                <div class="section-head">
+                    <div class="section-num">?</div>
+                    <div>
+                        <h2>📝 Sınav Soruları</h2>
+                        <p class="sub">Kendinizi test edin — cevapları görün</p>
+                    </div>
+                </div>
+
+                <!-- Soru 1 -->
+                <div class="quiz-item" data-answer="B">
+                    <div class="quiz-q">
+                        <span class="qn">1</span>
+                        <span>İş ekipmanlarında bulunan kumanda cihazları ve durdurma sistemleri ile ilgili aşağıda verilen ifadelerden hangisi DOĞRUDUR?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q1" value="A"> A) Çalıştırma sistemleri durdurma sistemlerine göre önceliklidir.</label>
+                        <label><input type="radio" name="q1" value="B"> B) İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre öncelikli olması gerekir.</label>
+                        <label><input type="radio" name="q1" value="C"> C) İş ekipmanı durdurulduğunda bunu harekete geçiren enerjinin kesilmesine gerek yoktur.</label>
+                        <label><input type="radio" name="q1" value="D"> D) Kumanda cihazları zorunlu hallerde tehlikeli bölgenin tam ortasına yerleştirilmelidir.</label>
+                    </div>
+                    <button class="quiz-btn" onclick="checkAnswer(this)">Cevabı Gör</button>
+                    <div class="quiz-answer">
+                        <strong>Doğru Cevap: B</strong><br>
+                        Kaynak metne göre: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre öncelikli olması gerekir. İş ekipmanı veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özelliğe sahip olur."
+                    </div>
+                </div>
+
+                <!-- Soru 2 -->
+                <div class="quiz-item" data-answer="D">
+                    <div class="quiz-q">
+                        <span class="qn">2</span>
+                        <span>El aletlerinden kaynaklanan iş kazalarının 4 temel nedeni değerlendirildiğinde, aşağıdakilerden hangisi bu nedenler arasında YER ALMAZ?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q2" value="A"> A) El aletlerinin bakımsız veya arızalı olması</label>
+                        <label><input type="radio" name="q2" value="B"> B) El aletlerinin amaçlarına uygun kullanılmamaları</label>
+                        <label><input type="radio" name="q2" value="C"> C) El aletlerinin kullanış yöntemlerinin yanlış olması</label>
+                        <label><input type="radio" name="q2" value="D"> D) El aletlerinin çalışma alanında kuru ve düzgün zeminde kullanılması</label>
+                    </div>
+                    <button class="quiz-btn" onclick="checkAnswer(this)">Cevabı Gör</button>
+                    <div class="quiz-answer">
+                        <strong>Doğru Cevap: D</strong><br>
+                        El aletlerinin kuru ve düzgün zeminde kullanılması kazaya neden olan bir kusur değil, aksine alınması gereken bir güvenlik tedbiridir. Kazaların 4 temel nedeni: 1) Bakımsız/arızalı olması, 2) Amaç dışı kullanılması, 3) Kullanış yöntemlerinin yanlış olması, 4) Uygun KKD kullanılmaması.
+                    </div>
+                </div>
+
+                <!-- Soru 3 -->
+                <div class="quiz-item" data-answer="C">
+                    <div class="quiz-q">
+                        <span class="qn">3</span>
+                        <span>Bakım defteri ile ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q3" value="A"> A) Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe bu deftere işlenir.</label>
+                        <label><input type="radio" name="q3" value="B"> B) 5070 sayılı Elektronik İmza Kanunu'na uygun güvenli elektronik imza ile imzalanmış kayıtlar geçerlidir.</label>
+                        <label><input type="radio" name="q3" value="C"> C) Bakım defteri kayıtları yalnızca kağıt ortamında tutulmak zorundadır.</label>
+                        <label><input type="radio" name="q3" value="D"> D) Elektronik ortamda saklanan kayıtlar da hukuken bakım defteri olarak kabul edilir.</label>
+                    </div>
+                    <button class="quiz-btn" onclick="checkAnswer(this)">Cevabı Gör</button>
+                    <div class="quiz-answer">
+                        <strong>Doğru Cevap: C</strong><br>
+                        Kaynak metne göre: "5070 sayılı Elektronik İmza Kanunu'na uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtlar da mevzuatça bakım defteri olarak kabul edilmektedir." Bu nedenle yalnızca kağıt ortamı zorunluluğu yoktur.
+                    </div>
+                </div>
+
+                <!-- Soru 4 -->
+                <div class="quiz-item" data-answer="A">
+                    <div class="quiz-q">
+                        <span class="qn">4</span>
+                        <span>Hareketli iş ekipmanlarında devrilme güvenliği standardına göre, üzerinde çalışan bulunan ekipman normal çalışma koşullarında devrilme riskine karşı en az kaç derecelik açıdan fazla dönmeyecek şekilde yapılmış olmalıdır?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q4" value="A"> A) Bir çeyrekten (90 derece) fazla dönmeyecek şekilde</label>
+                        <label><input type="radio" name="q4" value="B"> B) Yarım turdan (180 derece) fazla dönmeyecek şekilde</label>
+                        <label><input type="radio" name="q4" value="C"> C) Tam turdan (360 derece) fazla dönmeyecek şekilde</label>
+                        <label><input type="radio" name="q4" value="D"> D) 45 dereceden fazla dönmeyecek şekilde</label>
+                    </div>
+                    <button class="quiz-btn" onclick="checkAnswer(this)">Cevabı Gör</button>
+                    <div class="quiz-answer">
+                        <strong>Doğru Cevap: A</strong><br>
+                        Kaynak metne göre: "Üzerinde çalışan bulunan hareketli iş ekipmanı, normal çalışma koşullarında devrilme riskine karşı; a) Cihaz bir çeyrekten (90 derecelik açı) fazla dönmeyecek şekilde yapılmış olur..."
+                    </div>
+                </div>
+
+                <!-- Soru 5 -->
+                <div class="quiz-item" data-answer="B">
+                    <div class="quiz-q">
+                        <span class="qn">5</span>
+                        <span>Bir yere dayanan merdiven ayakları ile zemin arasındaki açıklığın kaç derece olmasına dikkat edilmelidir?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q5" value="A"> A) 45 derece</label>
+                        <label><input type="radio" name="q5" value="B"> B) 75 derece</label>
+                        <label><input type="radio" name="q5" value="C"> C) 60 derece</label>
+                        <label><input type="radio" name="q5" value="D"> D) 90 derece</label>
+                    </div>
+                    <button class="quiz-btn" onclick="checkAnswer(this)">Cevabı Gör</button>
+                    <div class="quiz-answer">
+                        <strong>Doğru Cevap: B</strong><br>
+                        Kaynak metne göre: "Bir yere dayanan merdiven ayakları ile zemin arasındaki açıklığın 75 derece olmasına dikkat edilmelidir."
+                    </div>
+                </div>
+
+                <!-- Soru 6 -->
+                <div class="quiz-item" data-answer="C">
+                    <div class="quiz-q">
+                        <span class="qn">6</span>
+                        <span>Aşağıdaki el aletlerinden hangisinin yanlış kullanımı "Vida sıkmak/gevşetmek yerine bel küreği gibi toprak yapmak" şeklinde tanımlanmıştır?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q6" value="A"> A) Keskiler</label>
+                        <label><input type="radio" name="q6" value="B"> B) Eğeler</label>
+                        <label><input type="radio" name="q6" value="C"> C) Tornavidalar</label>
+                        <label><input type="radio" name="q6" value="D"> D) Anahtarlar</label>
+                    </div>
+                    <button class="quiz-btn" onclick="checkAnswer(this)">Cevabı Gör</button>
+                    <div class="quiz-answer">
+                        <strong>Doğru Cevap: C</strong><br>
+                        Kaynak metindeki tabloya göre: "Tornavidalar: Vida sıkmak veya gevşetmek yerine bel küreği gibi toprak yapmak."
+                    </div>
+                </div>
+
+                <!-- Soru 7 -->
+                <div class="quiz-item" data-answer="D">
+                    <div class="quiz-q">
+                        <span class="qn">7</span>
+                        <span>Kaza nedenleri zincirinde iş güvenliği açısından müdahale edilebilecek halka hangisidir?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q7" value="A"> A) İnsan bünyesinin zayıflığı</label>
+                        <label><input type="radio" name="q7" value="B"> B) Kişisel özürler</label>
+                        <label><input type="radio" name="q7" value="C"> C) Kaza olayı</label>
+                        <label><input type="radio" name="q7" value="D"> D) Tehlikeli durumlar ve tehlikeli davranışlar</label>
+                    </div>
+                    <button class="quiz-btn" onclick="checkAnswer(this)">Cevabı Gör</button>
+                    <div class="quiz-answer">
+                        <strong>Doğru Cevap: D</strong><br>
+                        Kaynak metne göre: "Kaza nedenleri dizisinin beş halkadan ancak üçüncüsüne etki edilebilir. İş Güvenliğinin sağlanması çalışmaları güvensiz koşulların ve hareketlerin ortadan kaldırılması konusunda yoğunlaşır." Üçüncü halka tehlikeli durumlar ve tehlikeli davranışlardır.
+                    </div>
+                </div>
+
+                <!-- Soru 8 -->
+                <div class="quiz-item" data-answer="A">
+                    <div class="quiz-q">
+                        <span class="qn">8</span>
+                        <span>Uzaktan kumandalı iş ekipmanlarının emniyet kriteri ile ilgili aşağıdakilerden hangisi doğrudur?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q8" value="A"> A) Kontrol sınırlarının dışına çıktığında otomatik olarak hemen durmalıdır.</label>
+                        <label><input type="radio" name="q8" value="B"> B) Operatörün manuel müdahalesi ile durdurulmalıdır.</label>
+                        <label><input type="radio" name="q8" value="C"> C) Kontrol sınırları dışına çıkması durumunda uyarı vermelidir.</label>
+                        <label><input type="radio" name="q8" value="D"> D) Uzaktan kumanda mesafesi en az 100 metre olmalıdır.</label>
+                    </div>
+                    <button class="quiz-btn" onclick="checkAnswer(this)">Cevabı Gör</button>
+                    <div class="quiz-answer">
+                        <strong>Doğru Cevap: A</strong><br>
+                        Kaynak metne göre: "Çalışmada uzaktan kumandalı iş ekipmanı kullanılıyorsa, kontrol sınırlarının dışına çıkması halinde otomatik olarak hemen duracağı kontrol edilir."
+                    </div>
+                </div>
+
+                <!-- Soru 9 -->
+                <div class="quiz-item" data-answer="B">
+                    <div class="quiz-q">
+                        <span class="qn">9</span>
+                        <span>Kapalı yerlerde yapılan çalışmalarda alınacak ilk güvenlik tedbiri aşağıdakilerden hangisidir?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q9" value="A"> A) Hemen çalışmaya başlanması</label>
+                        <label><input type="radio" name="q9" value="B"> B) Çalışmaya başlamadan önce gaz ölçümü yapılması</label>
+                        <label><input type="radio" name="q9" value="C"> C) Yalnız çalışılması</label>
+                        <label><input type="radio" name="q9" value="D"> D) Açık alevli lamba kullanılması</label>
+                    </div>
+                    <button class="quiz-btn" onclick="checkAnswer(this)">Cevabı Gör</button>
+                    <div class="quiz-answer">
+                        <strong>Doğru Cevap: B</strong><br>
+                        Kaynak metne göre: "Çalışmaya başlamadan önce gaz ölçümü yapılmalıdır. Asla yalnız adam çalıştırılmamalıdır." Ayrıca patlayıcı ortam oluşturabilecek yerlerde açık alevli lamba, çakmak ve kibrit kullanılmamalıdır.
+                    </div>
+                </div>
+
+                <!-- Soru 10 -->
+                <div class="quiz-item" data-answer="C">
+                    <div class="quiz-q">
+                        <span class="qn">10</span>
+                        <span>Zımpara taşı tezgahında iş dayama parçası ile taş arasında ne kadar boşluk bırakılmalıdır?</span>
+                    </div>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q10" value="A"> A) 5 mm</label>
+                        <label><input type="radio" name="q10" value="B"> B) 10 mm</label>
+                        <label><input type="radio" name="q10" value="C"> C) 2 mm</label>
+                        <label><input type="radio" name="q10" value="D"> D) 1 mm</label>
+                    </div>
+                    <button class="quiz-btn" onclick="checkAnswer(this)">Cevabı Gör</button>
+                    <div class="quiz-answer">
+                        <strong>Doğru Cevap: C</strong><br>
+                        Kaynak metne göre: "İş dayama parçası ile taş arasında 2 mm boşluk bırakılmalıdır."
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== NAV FOOTER ===== -->
+            <div class="nav-footer">
+                <a href="../bolum-04/konu-anlatimi.html" class="nav-card">
+                    <div class="arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                    </div>
+                    <div class="nav-text">
+                        <div class="nav-label">← Önceki Bölüm</div>
+                        <div class="nav-title">Bölüm 4: Mekanik İşlerde Güvenlik</div>
+                    </div>
+                </a>
+                <a href="../bolum-06/konu-anlatimi.html" class="nav-card next">
+                    <div class="nav-text">
+                        <div class="nav-label">Sonraki Bölüm →</div>
+                        <div class="nav-title">Bölüm 6: Kaynak İşlerinde Güvenlik</div>
+                    </div>
+                    <div class="arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </div>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <p>© 2025 <a href="../../../index.html">İSG Akademi</a> — Mekanik İşlerde Güvenlik · Bölüm 5: Bakım ve Onarım İşlerinde İş Sağlığı ve Güvenliği</p>
+        <p style="margin-top:8px; opacity:0.7; font-size:0.78rem;">
+            <a href="../index.html">Ders Ana Sayfası</a> · 
+            <a href="sunum.html">Sunum</a> · 
+            <a href="sorular.html">Sorular</a> · 
+            <a href="../../../index.html">Ana Sayfa</a>
+        </p>
+    </footer>
+
+    <script>
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const h = document.documentElement;
+            const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Fade in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // TOC active link
+        const tocLinks = document.querySelectorAll('.toc-link');
+        const sections = document.querySelectorAll('.section, .quiz-section');
+
+        const tocObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    tocLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+                    });
+                }
+            });
+        }, { rootMargin: '-20% 0px -70% 0px' });
+
+        sections.forEach(s => tocObserver.observe(s));
+
+        // Quiz check
+        function checkAnswer(btn) {
+            const item = btn.closest('.quiz-item');
+            const correct = item.dataset.answer;
+            const selected = item.querySelector('input[type="radio"]:checked');
+            const answerDiv = item.querySelector('.quiz-answer');
+
+            if (!selected) {
+                answerDiv.className = 'quiz-answer show incorrect';
+                answerDiv.innerHTML = '⚠️ Lütfen bir seçenek işaretleyin.';
+                return;
+            }
+
+            answerDiv.className = 'quiz-answer show ' + (selected.value === correct ? 'correct' : 'incorrect');
+            answerDiv.innerHTML = (selected.value === correct ? '✅ <strong>Doğru!</strong> ' : '❌ <strong>Yanlış.</strong> ') + 
+                answerDiv.innerHTML;
+        }
+
+        // Smooth scroll with offset
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    const top = target.getBoundingClientRect().top + window.pageYOffset - 80;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

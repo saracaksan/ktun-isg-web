@@ -1,1 +1,1630 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mekanik İşlerde Güvenlik · Bölüm 03 · Sorular / Alıştırmalar</title><style>*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#172033}a{text-decoration:none;color:inherit}.top{background:linear-gradient(135deg,#071a33,#1769aa);color:white}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:900}.brand small{display:block;color:#b9cce0;font-size:10px;margin-top:4px}.back{border:1px solid #ffffff2b;padding:9px 13px;border-radius:9px;font-size:11px;background:#ffffff0d}.hero{padding:52px 0}.eyebrow{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#b9e7ff;font-weight:800}.hero h1{font-size:clamp(30px,4vw,48px);margin:14px 0 8px;line-height:1.08}.hero p{color:#cbd9e6;font-size:13px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{font-size:10px;padding:7px 10px;border-radius:8px;background:#ffffff12;border:1px solid #ffffff18}main{padding:35px 0 70px}.head{margin-bottom:20px}.head h2{margin:0;color:#071a33}.head p{color:#64748b;font-size:11px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 5px 22px #0f172a0a}.num{width:34px;height:34px;border-radius:9px;background:#eef6fc;color:#1769aa;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}.card h3{margin:14px 0 7px;font-size:15px}.card p{font-size:10px;color:#64748b}.links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px}.links a{font-size:9px;font-weight:800;color:#1769aa;background:#f6f9fc;border:1px solid #e7edf3;border-radius:8px;padding:10px 5px;text-align:center}.empty{padding:20px;background:white;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b;font-size:11px}.footer{background:#04101f;color:#91a6bb;padding:25px 0;font-size:10px;line-height:1.7}@media(max-width:700px){.grid{grid-template-columns:1fr}.links{grid-template-columns:1fr}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}}</style></head><body><header class="top"><div class="wrap nav"><div class="brand">KTÜN · İSG Eğitim Portalı<small>2026–2027</small></div><a class="back" href="../../index.html">← Ders Ana Sayfası</a></div><div class="wrap hero"><span class="eyebrow">Mekanik İşlerde Güvenlik</span><h1>Bölüm 03</h1><p>Sorular / Alıştırmalar</p><div class="meta"><span class="pill">Bölüm 03</span><span class="pill">Sorular / Alıştırmalar</span></div></div></header><main><div class="wrap"><div class="empty">Bu alan içerik eklenmesi için hazırdır. Şu anda boş bırakılmıştır.</div></div></main><footer class="footer"><div class="wrap">Hazırlayan: Sıraç AKSAN · 0506 928 22 10 · saracaksan@gmail.com</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bölüm 3: Basınçlı Kaplarda İSG - 60 Soruluk Çözümlü Uzman Sınav ve Çalışma Soru Bankası">
+<meta name="author" content="Sıraç Aksan">
+<title>Bölüm 3 | Basınçlı Kaplarda İSG — 60 Soruluk Çözümlü Soru Bankası</title>
+<style>
+:root{
+  --primary:#0d47a1;
+  --primary-dark:#082f6b;
+  --primary-light:#e8f0fb;
+  --accent:#1976d2;
+  --success:#1b8a3a;
+  --success-bg:#e6f5ec;
+  --success-border:#a8dbb8;
+  --danger:#c62828;
+  --danger-bg:#fdecec;
+  --danger-border:#f0b4b4;
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --text:#1f2937;
+  --muted:#5b6b7f;
+  --border:#dbe4f0;
+  --radius:14px;
+  --shadow:0 6px 22px rgba(13,71,161,.08);
+  --shadow-lg:0 14px 40px rgba(13,71,161,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  font-family:'Segoe UI',Roboto,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  font-size:16px;
+  padding-bottom:40px;
+}
+img{max-width:100%;height:auto;}
+a{color:var(--primary);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.container{max-width:1080px;margin:0 auto;padding:0 16px;}
+
+/* ===================== HEADER ===================== */
+.site-header{
+  background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 55%,var(--accent) 100%);
+  color:#fff;
+  padding:26px 0 22px;
+  box-shadow:var(--shadow-lg);
+  position:relative;
+  overflow:hidden;
+}
+.site-header::after{
+  content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;
+  background:radial-gradient(circle,rgba(255,255,255,.14),transparent 70%);
+  border-radius:50%;
+}
+.brand{display:flex;align-items:center;gap:14px;position:relative;z-index:2;}
+.brand-badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:58px;height:58px;border-radius:14px;flex:0 0 auto;
+  background:rgba(255,255,255,.16);
+  border:1.5px solid rgba(255,255,255,.4);
+  font-weight:800;font-size:17px;letter-spacing:.5px;
+  backdrop-filter:blur(4px);
+}
+.brand h1{
+  font-size:clamp(17px,2.4vw,23px);
+  font-weight:700;letter-spacing:.2px;line-height:1.25;
+}
+.brand .sub{
+  font-size:clamp(12px,1.6vw,14px);
+  opacity:.92;margin-top:3px;font-weight:500;
+}
+.top-nav{
+  display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;
+  position:relative;z-index:2;
+}
+.top-nav a{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 15px;border-radius:10px;
+  background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.22);
+  color:#fff !important;font-size:13.5px;font-weight:600;
+  text-decoration:none !important;
+  transition:all .22s ease;
+  white-space:nowrap;
+}
+.top-nav a:hover{
+  background:rgba(255,255,255,.28);
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(0,0,0,.18);
+}
+
+/* ===================== INTRO ===================== */
+.intro-box{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  border:1px solid var(--border);
+  margin-top:26px;
+  overflow:hidden;
+}
+.intro-head{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:18px 22px;cursor:pointer;
+  background:linear-gradient(90deg,#f7faff,#eef4fd);
+  border-bottom:1px solid var(--border);
+}
+.intro-head h2{
+  font-size:16px;color:var(--primary-dark);font-weight:700;
+  display:flex;align-items:center;gap:10px;
+}
+.intro-head .chev{
+  font-size:18px;color:var(--primary);transition:transform .3s ease;flex:0 0 auto;
+}
+.intro-head.closed .chev{transform:rotate(-90deg);}
+.intro-body{padding:20px 22px 24px;}
+.intro-body.hidden{display:none;}
+.intro-body p{margin-bottom:12px;font-size:15px;color:#374151;text-align:justify;}
+.intro-body h3{
+  font-size:15px;color:var(--primary-dark);margin:18px 0 10px;font-weight:700;
+}
+.intro-body ul{margin:8px 0 12px 4px;list-style:none;}
+.intro-body ul li{
+  position:relative;padding-left:22px;margin-bottom:9px;font-size:14.5px;color:#374151;
+}
+.intro-body ul li::before{
+  content:"";position:absolute;left:4px;top:10px;width:8px;height:8px;
+  border-radius:50%;background:var(--accent);
+}
+
+/* ===================== TABS ===================== */
+.tabs{
+  display:flex;gap:10px;margin-top:26px;flex-wrap:wrap;
+}
+.tab-btn{
+  flex:1 1 200px;
+  padding:14px 16px;border-radius:12px;border:2px solid var(--border);
+  background:var(--card);color:var(--muted);cursor:pointer;
+  font-size:14px;font-weight:700;text-align:left;
+  transition:all .22s ease;font-family:inherit;
+  display:flex;flex-direction:column;gap:3px;
+}
+.tab-btn .tt{font-size:15px;color:var(--primary-dark);}
+.tab-btn .ts{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;}
+.tab-btn:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow);}
+.tab-btn.active{
+  background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+  border-color:var(--primary-dark);color:#fff;
+  box-shadow:var(--shadow-lg);
+}
+.tab-btn.active .tt,.tab-btn.active .ts{color:#fff;}
+
+/* ===================== SCORE BAR ===================== */
+.score-bar{
+  position:sticky;top:0;z-index:50;
+  margin-top:18px;
+  background:linear-gradient(90deg,var(--primary-dark),var(--primary));
+  color:#fff;border-radius:var(--radius);
+  padding:12px 18px;
+  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;
+  box-shadow:var(--shadow-lg);
+  font-size:13.5px;font-weight:600;
+}
+.score-bar .grp{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+.score-bar .item{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;}
+.score-bar .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+.dot-green{background:#5ee27f;}
+.dot-red{background:#ff8181;}
+.dot-gray{background:#c8d3e3;}
+.score-bar .puan{
+  background:rgba(255,255,255,.18);padding:6px 14px;border-radius:9px;
+  border:1px solid rgba(255,255,255,.28);font-size:14px;
+}
+.score-bar .puan strong{font-size:17px;}
+
+/* ===================== NAVIGATOR ===================== */
+.navigator{
+  display:flex;flex-wrap:wrap;gap:7px;margin-top:18px;
+  padding:14px;background:var(--card);border-radius:var(--radius);
+  border:1px solid var(--border);box-shadow:var(--shadow);
+}
+.nav-chip{
+  width:38px;height:38px;border-radius:9px;border:2px solid var(--border);
+  background:#f7faff;color:var(--muted);font-weight:700;font-size:13.5px;
+  cursor:pointer;transition:all .18s ease;font-family:inherit;
+  display:inline-flex;align-items:center;justify-content:center;
+}
+.nav-chip:hover{transform:translateY(-2px);border-color:var(--accent);}
+.nav-chip.correct{background:var(--success);border-color:var(--success);color:#fff;}
+.nav-chip.wrong{background:var(--danger);border-color:var(--danger);color:#fff;}
+.nav-chip.current{
+  outline:3px solid var(--accent);outline-offset:2px;
+  box-shadow:0 0 0 2px #fff inset;
+}
+
+/* ===================== QUESTION CARD ===================== */
+.q-card{
+  margin-top:18px;background:var(--card);border-radius:var(--radius);
+  border:1px solid var(--border);box-shadow:var(--shadow);
+  padding:22px 22px 26px;
+  animation:fadeUp .35s ease;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.q-meta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  margin-bottom:14px;
+}
+.q-badge{
+  background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+  color:#fff;font-weight:800;font-size:13px;
+  padding:7px 15px;border-radius:9px;letter-spacing:.3px;
+}
+.q-topic{
+  font-size:12px;font-weight:700;color:var(--accent);
+  background:var(--primary-light);padding:6px 12px;border-radius:8px;
+  text-transform:uppercase;letter-spacing:.4px;
+}
+.q-text{
+  font-size:15.5px;color:#1f2937;line-height:1.75;
+  margin-bottom:20px;text-align:justify;
+}
+
+/* Options */
+.options{display:flex;flex-direction:column;gap:10px;}
+.option{
+  display:flex;gap:13px;align-items:flex-start;
+  padding:13px 15px;border-radius:11px;
+  border:2px solid var(--border);background:#fbfdff;
+  cursor:pointer;transition:all .2s ease;
+  text-align:left;font-family:inherit;font-size:14.5px;color:#26303d;
+  width:100%;line-height:1.6;
+}
+.option:hover:not(.disabled){
+  border-color:var(--accent);background:#f2f7ff;transform:translateX(3px);
+}
+.option .letter{
+  flex:0 0 auto;width:30px;height:30px;border-radius:8px;
+  background:var(--primary-light);color:var(--primary-dark);
+  font-weight:800;font-size:14px;
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:all .2s ease;
+}
+.option .otext{flex:1 1 auto;}
+.option.disabled{cursor:default;}
+.option.selected-correct{
+  background:var(--success-bg);border-color:var(--success-border);
+}
+.option.selected-correct .letter{background:var(--success);color:#fff;}
+.option.selected-wrong{
+  background:var(--danger-bg);border-color:var(--danger-border);
+}
+.option.selected-wrong .letter{background:var(--danger);color:#fff;}
+.option.reveal-correct{
+  background:var(--success-bg);border-color:var(--success-border);
+  box-shadow:0 0 0 2px rgba(27,138,58,.15) inset;
+}
+.option.reveal-correct .letter{background:var(--success);color:#fff;}
+.option.dim{opacity:.62;}
+
+/* Feedback */
+.feedback{
+  margin-top:16px;padding:14px 16px;border-radius:11px;
+  font-weight:700;font-size:14.5px;display:none;
+  align-items:center;gap:10px;
+}
+.feedback.show{display:flex;}
+.feedback.ok{background:var(--success-bg);color:var(--success);border:1.5px solid var(--success-border);}
+.feedback.no{background:var(--danger-bg);color:var(--danger);border:1.5px solid var(--danger-border);}
+.feedback .ico{font-size:20px;}
+
+/* ============ SOLUTION (KAPALI/İSTEĞE BAĞLI) ============ */
+.solution{
+  margin-top:16px;border-radius:12px;overflow:hidden;
+  border:1px solid var(--border);background:#fbfdff;
+}
+.solution-head{
+  background:linear-gradient(90deg,#eef4fd,#e2ecfa);
+  padding:14px 16px;font-weight:800;font-size:14px;color:var(--primary-dark);
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  user-select:none;
+}
+.solution-head.clickable{cursor:pointer;transition:background .2s ease;}
+.solution-head.clickable:hover{background:linear-gradient(90deg,#e2ecfa,#d4e3fa);}
+.solution-head .chev{
+  font-size:14px;color:var(--primary);transition:transform .3s ease;
+  display:inline-block;
+}
+.solution-head .chev.open{transform:rotate(180deg);}
+.solution-body{
+  padding:16px 18px 20px;font-size:14.5px;color:#2b3542;line-height:1.75;
+  border-top:1px solid var(--border);
+  display:none;
+}
+.solution-body.show{display:block;animation:fadeUp .3s ease;}
+.solution-body p{margin-bottom:11px;}
+.solution-body strong{color:var(--primary-dark);}
+.solution-body ul{margin:6px 0 12px 4px;list-style:none;}
+.solution-body ul li{
+  position:relative;padding-left:20px;margin-bottom:8px;font-size:14px;
+}
+.solution-body ul li::before{
+  content:"▸";position:absolute;left:3px;top:0;color:var(--accent);font-weight:800;
+}
+.answer-tag{
+  display:inline-block;background:var(--success);color:#fff;
+  padding:3px 12px;border-radius:7px;font-size:13px;font-weight:800;
+  margin-left:6px;
+}
+
+/* Controls */
+.controls{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
+  margin-top:20px;
+}
+.btn{
+  padding:12px 22px;border-radius:11px;border:none;cursor:pointer;
+  font-family:inherit;font-size:14.5px;font-weight:700;
+  transition:all .2s ease;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+  color:#fff;box-shadow:0 6px 16px rgba(13,71,161,.28);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(13,71,161,.35);}
+.btn-ghost{
+  background:#eef4fd;color:var(--primary-dark);border:1.5px solid var(--border);
+}
+.btn-ghost:hover{background:#e2ecfa;border-color:var(--accent);}
+.btn:disabled{opacity:.42;cursor:not-allowed;transform:none !important;box-shadow:none !important;}
+
+/* Result Card */
+.result-card{
+  margin-top:18px;background:var(--card);border-radius:var(--radius);
+  border:2px solid var(--success-border);box-shadow:var(--shadow-lg);
+  padding:26px 22px;text-align:center;
+  display:none;animation:fadeUp .4s ease;
+}
+.result-card.show{display:block;}
+.result-card h3{
+  font-size:19px;color:var(--primary-dark);margin-bottom:6px;
+}
+.result-card .res-sub{font-size:13.5px;color:var(--muted);margin-bottom:18px;}
+.res-grid{
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:18px;
+}
+.res-item{
+  flex:1 1 130px;max-width:180px;
+  padding:16px 12px;border-radius:12px;
+  background:#f7faff;border:1.5px solid var(--border);
+}
+.res-item .num{font-size:26px;font-weight:800;line-height:1.1;}
+.res-item .lbl{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-top:4px;}
+.res-item.ok .num{color:var(--success);}
+.res-item.no .num{color:var(--danger);}
+.res-item.score .num{color:var(--primary);}
+.res-item.score{background:var(--primary-light);border-color:#bcd4f2;}
+.res-msg{
+  font-size:14.5px;font-weight:700;padding:12px 16px;border-radius:10px;
+  background:#f7faff;border:1px dashed var(--border);color:var(--primary-dark);
+}
+
+/* ===================== FOOTER ===================== */
+.site-footer{
+  margin-top:44px;
+  background:linear-gradient(135deg,#0b1f3a,#0d47a1);
+  color:#dbe6f5;padding:32px 0 26px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1fr;gap:20px;
+}
+@media(min-width:760px){
+  .footer-grid{grid-template-columns:1.4fr 1fr;}
+}
+.footer-grid h4{
+  color:#fff;font-size:15px;margin-bottom:9px;font-weight:700;
+}
+.footer-grid p,.footer-grid a{font-size:13.5px;color:#c3d3ea;line-height:1.75;}
+.footer-grid a{color:#8fc0ff;}
+.footer-grid a:hover{color:#fff;}
+.footer-bottom{
+  margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.14);
+  font-size:12.5px;color:#9fb4d0;text-align:center;line-height:1.7;
+}
+.footer-bottom strong{color:#fff;}
+
+/* ===================== RESPONSIVE ===================== */
+@media(max-width:640px){
+  body{font-size:15px;}
+  .brand{flex-direction:row;align-items:flex-start;}
+  .brand-badge{width:48px;height:48px;font-size:14px;border-radius:12px;}
+  .top-nav a{padding:8px 12px;font-size:12.5px;}
+  .intro-head{padding:15px 16px;}
+  .intro-body{padding:16px 16px 20px;}
+  .q-card{padding:18px 15px 22px;}
+  .q-text{font-size:14.5px;text-align:left;}
+  .option{padding:11px 12px;font-size:14px;}
+  .option .letter{width:27px;height:27px;font-size:13px;}
+  .nav-chip{width:34px;height:34px;font-size:12.5px;}
+  .score-bar{padding:11px 13px;font-size:12.5px;gap:8px 12px;}
+  .score-bar .puan{font-size:13px;padding:5px 11px;}
+  .score-bar .puan strong{font-size:15px;}
+  .controls{flex-direction:column-reverse;}
+  .controls .btn{width:100%;justify-content:center;}
+  .tab-btn{padding:12px 13px;}
+  .tab-btn .tt{font-size:14px;}
+}
+@media(min-width:900px){
+  .q-text{font-size:16px;}
+  .option{font-size:15px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <span class="brand-badge">İSG</span>
+      <div>
+        <h1>Bölüm 3: Basınçlı Kaplarda İSG</h1>
+        <p class="sub">60 Soruluk Çözümlü Uzman Sınav ve Çalışma Soru Bankası</p>
+      </div>
+    </div>
+    <nav class="top-nav">
+      <a href="../../../index.html">🏠 Ana Sayfa</a>
+      <a href="../index.html">📚 Ders Ana Sayfası</a>
+      <a href="konu-anlatimi.html">📖 Konu Anlatımı</a>
+      <a href="sunum.html">📊 Sunum</a>
+      <a href="../bolum-04/sorular.html">➡️ Sonraki Bölüm</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- ================= INTRO ================= -->
+  <section class="intro-box">
+    <div class="intro-head" id="introHead">
+      <h2>📘 Modül Tanıtımı ve Analitik Giriş</h2>
+      <span class="chev">▾</span>
+    </div>
+    <div class="intro-body" id="introBody">
+      <p>Endüstriyel tesislerin operasyonel sürekliliğinde, enerji dönüştürme süreçlerinde ve proses mühendisliği uygulamalarında basınçlı kaplar, yüksek miktarda termodinamik ve akışkan enerjisi depolamaları sebebiyle stratejik bir role sahiptir. Bu ekipmanlar, bünyelerinde barındırdıkları yüksek iç basınç, sıcaklık ve potansiyel enerjiden ötürü, iş sağlığı ve güvenliği (İSG) mevzuatı ve uluslararası teknik standartlar kapsamında en yüksek tehlike sınıfında değerlendirilen iş ekipmanları arasında yer almaktadır. İşletme şartlarında meydana gelebilecek kontrolsüz basınç yükselmeleri, malzeme yorulmaları, imalat kusurları, korozyon etkileri veya emniyet donanımlarındaki mekanik/elektronik arızalar; katastrofik patlamalara, ağır can kayıplarına, uzuv yaralanmalarına ve tesis düzeyinde telafisi mümkün olmayan yıkıcı maddi hasarlara sebebiyet verebilmektedir. Bu tür felaket boyutundaki iş kazalarının önlenmesi, basınçlı kapların daha tasarım ve imalat aşamasından başlayarak uygun emniyet sistemleriyle teçhiz edilmesine, işletme parametrelerinin titizlikle izlenmesine ve basınca karşı koruma sağlayan kritik bileşenlerin hatasız çalışmasına bağlıdır.</p>
+
+      <h3>Soru bankasının kapsadığı temel haftalık ders ve mevzuat içerikleri:</h3>
+      <ul>
+        <li><strong>6. Hafta — Basınçlı Kap Temel Esasları ve Emniyet Ekipmanları:</strong> Basınçlı kap tanımı (>0,5 bar), emniyet valfleri, manometreler, sifon boruları, kırılma diskleri, blöf sistemleri, kompresör sistemleri, hava tankları, vibrasyon/pulsasyon riskleri ve çekvalf-emniyet valfi dizilimi.</li>
+        <li><strong>7. Hafta — Periyodik Kontroller, Mevzuat ve Hidrostatik Test Standartları:</strong> İmalatçı sicil plakaları, EKİPNET yetkili kişi şartları, olağan dışı kontrol tetikleyicileri, bakım defteri ve 5070 sayılı Kanun e-imza geçerliliği, 1 yıl periyodik kontrol kuralı, hidrostatik testin 1,5 kat basınç kuralı ve istisnai NDT geçişi.</li>
+        <li><strong>8. Hafta — Zorlayıcı/Zorlayıcı Olmayan Testler ve Tahribatsız Muayene Yöntemleri:</strong> Hidrostatik ve pnömatik testlerin karşılaştırılması, pnömatik test riskleri, Penetran Sıvı (PT), Ultrasonik (UT), Radyografik (RT), Manyetik Parçacık (MT) ve Görsel Muayene (VT) yöntemleri, TS EN ISO 9712 personel sertifikasyonu.</li>
+        <li><strong>9. Hafta — Basınçlı Gaz Tüpleri İSG, Renk Kodlaması ve Depolama Güvenliği:</strong> TS EN 1089-3 omuz renk kodlaması ve "N" harfi kuralı, sol diş/sağ diş valf tasarımı, güvenlik şapkası, oksijen-yağ reaksiyonu, asetilen dik konum kuralı, flashback arrestor, Grup 1-6 depolama uyumluluk matrisi, LPG ağır gaz davranışı.</li>
+      </ul>
+
+      <h3>Soru Bankasının Yapısı ve Metodolojik Kriterleri:</h3>
+      <ul>
+        <li>Dokümanda yer alan 60 soru, sahada karşılaşılan gerçek mühendislik senaryoları ve mevzuat uygulamaları üzerinden kurgulanmıştır.</li>
+        <li>Sorular; ezberci yaklaşımı tamamen dışlayarak adli kaza incelemesi, tasarım/imalat hataları ve mevzuatın somut teknik olaylara uygulanması esasına dayanır.</li>
+        <li>Çeldiriciler; sahada sıklıkla yapılan mühendislik hataları, yanlış bilinen teknik teamüller ve mevzuat esnetme girişimleri arasından yüksek eleyicilikte seçilmiştir.</li>
+        <li>Soru köklerindeki olumsuz ifadeler (değildir, olamaz, yanlıştır, söylenemez) koyu ve belirgin biçimde vurgulanmıştır.</li>
+        <li>Tüm soru ve çözümler, ilgili yönetmelik ve standart kaynak metinlerine %100 sadakatle hazırlanmıştır.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= TABS ================= -->
+  <div class="tabs" id="tabs"></div>
+
+  <!-- ================= SCORE BAR ================= -->
+  <div class="score-bar">
+    <div class="grp">
+      <span class="item"><span class="dot dot-green"></span> Doğru: <strong id="sDogru">0</strong></span>
+      <span class="item"><span class="dot dot-red"></span> Yanlış: <strong id="sYanlis">0</strong></span>
+      <span class="item"><span class="dot dot-gray"></span> Boş: <strong id="sBos">20</strong></span>
+    </div>
+    <div class="puan">Puan: <strong id="sPuan">0</strong> / 100</div>
+  </div>
+
+  <!-- ================= NAVIGATOR ================= -->
+  <div class="navigator" id="navigator"></div>
+
+  <!-- ================= TEST AREA ================= -->
+  <div id="testArea"></div>
+
+  <!-- ================= RESULT ================= -->
+  <div class="result-card" id="resultCard">
+    <h3 id="resTitle">Test Tamamlandı! 🎉</h3>
+    <p class="res-sub" id="resSub">Aşağıda bu testteki performans özetiniz yer almaktadır.</p>
+    <div class="res-grid">
+      <div class="res-item ok"><div class="num" id="rDogru">0</div><div class="lbl">Doğru</div></div>
+      <div class="res-item no"><div class="num" id="rYanlis">0</div><div class="lbl">Yanlış</div></div>
+      <div class="res-item"><div class="num" id="rBos">20</div><div class="lbl">Boş</div></div>
+      <div class="res-item score"><div class="num" id="rPuan">0</div><div class="lbl">Puan / 100</div></div>
+    </div>
+    <div class="res-msg" id="resMsg"></div>
+  </div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>📌 Bölüm 3 — Basınçlı Kaplarda İSG</h4>
+        <p>Bu soru bankası; basınçlı kap temel esasları, emniyet valfleri ve manometreler, kompresör ve hava tankı güvenliği, periyodik kontroller, hidrostatik testler, tahribatsız muayene yöntemleri ve basınçlı gaz tüpleri emniyeti konularını kapsayan 60 adet uzmanlık sorusu ve detaylı çözümlerinden oluşmaktadır.</p>
+      </div>
+      <div>
+        <h4>✉️ İletişim &amp; Telif</h4>
+        <p><strong>Hazırlayan:</strong> Sıraç Aksan</p>
+        <p><strong>E-posta:</strong> <a href="mailto:essaracaksan@gmail.com">essaracaksan@gmail.com</a></p>
+        <p>İletişim, geri bildirim, hata bildirimi ve kullanım izni talepleri için lütfen yukarıdaki e-posta adresinden iletişime geçiniz.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <strong>© Tüm Hakları Saklıdır.</strong> Bu dokümanın içeriği, soruları, çözümleri ve tasarımı <strong>Sıraç Aksan</strong>'a aittir. Yazılı izin alınmaksızın kopyalanamaz, çoğaltılamaz, değiştirilemez ve ticari amaçlarla kullanılamaz.<br>
+      © <span id="yil"></span> — İSG Uzmanlık Soru Bankası | Sürüm: Bölüm 3
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   BÖLÜM 3 — 60 SORU VERİSİ (3 TEST × 20 SORU)
+   ========================================================= */
+const TESTS = [
+  /* ======================= TEST 1 ======================= */
+  {
+    id: 1,
+    title: "Test 1",
+    subtitle: "Basınçlı Kap Temel Esasları, Emniyet Ekipmanları ve Periyodik Kontrol Giriş",
+    range: "Soru 1 – 20",
+    questions: [
+      {
+        n: 1,
+        topic: "Basınçlı Kap Tanımı ve Yasal Eşik Değeri (>0,5 bar)",
+        text: "Bir tekstil fabrikasında boyahane ve terbiye ünitelerine yüksek sıcaklıkta buhar sağlayan su borulu buhar kazanının işletme basıncı kapasite artırımı amacıyla yükseltilmek istenmektedir. Tesis teknik emniyet mühendisi ve Başmühendis, basınçlı kapların yasal ve teknik tanımı gereği, iç basıncı belirli bir eşik değerin üzerinde olan kapların özel emniyet donanımları, teknik imalat standartları ve sıkı denetim rejimine tabi olduğunu yönetim kuruluna raporlamıştır. İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği ve Basınçlı Ekipmanlar Yönetmeliği (2014/68/AB) çerçevesinde, bir kabın veya tesisat bileşeninin \"basınçlı kap\" olarak değerlendirilmesi ve mevzuat kapsamındaki teknik emniyet kurallarına tabi tutulması için azami izin verilen tasarım veya çalışma basıncının alt sınırı kaç bar olmalıdır?",
+        options: {
+          A: "0,1 bar",
+          B: "0,25 bar",
+          C: "0,5 bar",
+          D: "1,0 bar",
+          E: "1,5 bar"
+        },
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Basınçlı Ekipmanlar Yönetmeliği (2014/68/AB) ve İSG mevzuatı gereğince, azami izin verilen çalışma basıncı P_S &gt; 0,5 bar (0,05 MPa) olan kaplar, boru hatları ve emniyet donanımları yasal olarak "Basınçlı Ekipman / Basınçlı Kap" statüsüne girer ve sıkı bir teknik denetim rejimine tabi tutulur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: 0,1 bar değeri alçak basınçlı havalandırma sistemleri sınırıdır, yasal basınçlı kap eşiği değildir.</li><li>B Şıkkı Yanlıştır: 0,25 bar çeldirici olarak konulmuş, teknik dayanağı olmayan bir değerdir.</li><li>D Şıkkı Yanlıştır: 1,0 bar atmosferik basınç değeridir, teknik tanım eşiği değildir.</li><li>E Şıkkı Yanlıştır: 1,5 bar bu değer hidrostatik test katsayısıyla karıştırılan bir çeldiricidir.</li></ul>'
+      },
+      {
+        n: 2,
+        topic: "Emniyet Valflerinin Çalışma İlkesi ve Aşırı Basınç Koruması",
+        text: "Entegre bir petrokimya tesisindeki ekzotermik reaksiyon reaktörü üzerinde monte edilmiş olan orantılı etkili yaylı emniyet valfi, proses esnasında aniden açma yaparak yüksek sıcaklıktaki toksik ve yanıcı gaz buharını emniyet meşalesine (flare hattına) tahliye etmiştir. Olay sonrası Başmühendis başkanlığında toplanan teknik inceleme komisyonu, emniyet valfinin set edilen açma basıncı ile proses işletme basıncı arasındaki ilişkinin yanlış kurgulandığını tespit etmiştir. Emniyet valflerinin (güvenlik vanaları) sistem korumasındaki temel işlevselliği, kapasite tasarımı ve ayar değerleri dikkate alındığında, aşırı basınç oluştuğunda emniyet valfinin devreye girme mekanizması ve çalışma ilkesi hakkında aşağıdakilerden hangi ifade teknik olarak doğrudur?",
+        options: {
+          A: "İşletme basıncı tasarım basıncının %50 altına düştüğünde sistemi vakum oluşumundan korumak amacıyla dış ortamdan hava emişi sağlar.",
+          B: "Kabın azami izin verilen çalışma basıncına (PS) ulaşıldığında veya bu basınç önceden belirlenen emniyet marjı kadar aşıldığında akışkanı kendiliğinden tahliye ederek iç basıncı emniyetli seviyeye düşürür.",
+          C: "Sadece operatör tarafından kontrol panosundaki acil durum pnomatik butonu çekildiğinde mekanik olarak açılır, kendiliğinden otomatik açma özelliği bulunmaz.",
+          D: "İç basınç yükseldiğinde kompresör veya besleme pompasının elektrik beslemesini keserek sistemi durdurur ancak gövdeden gaz veya sıvı tahliyesi yapmaz.",
+          E: "Kazan veya tank içerisindeki sıvı seviyesi maksimum işletme kotunu aştığında fazla sıvıyı otomatik olarak drene etmek üzere tasarlanmış seviye kontrol vanasıdır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Emniyet valfleri, sistem basıncı set edilen değere (P_S) ulaştığında veya aşmaya başladığında basınca maruz kalan akışkanı (gaz, buhar veya sıvı) kütlesel olarak tahliye ederek kabı koruyan otomatik emniyet donanımlarıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Vakum kırıcı (anti-vakum) vanaların işlevidir, emniyet valfi ile ilgisi yoktur.</li><li>C Şıkkı Yanlıştır: Manuel kol sadece mekanik test amaçlıdır, ana çalışma prensibi otomatiktir.</li><li>D Şıkkı Yanlıştır: Presostat veya basınç anahtarının tanımıdır; emniyet valfi akışkan tahliyesi yapar.</li><li>E Şıkkı Yanlıştır: Seviye blöfü veya otomatik blöf vanasının tanımıdır.</li></ul>'
+      },
+      {
+        n: 3,
+        topic: "Manometre Skala Aralığı ve Kadran İşaretlemesi (TS EN 837-1)",
+        text: "Bir makine imalat fabrikasındaki ana hava tankı üzerinde yer alan analog manometrenin kadranındaki maksimum skala değeri 10 bar göstergesine sahiptir. Tesis İSG denetimi sırasında kıdemli basınçlı kap denetçisi, tankın azami çalışma basıncının 8 bar olduğunu görmüş ve manometrenin kadran işaretlemesi ile skala aralığının ilgili teknik standartlara (TS EN 837-1) uygun yapılmadığını raporda belirterek uygunsuzluk maddesi açmıştır. Basınçlı kaplarda kullanılan manometrelerin seçimi, skala aralığı ve kadran işaretlenmesi ile ilgili aşağıdakilerden hangi kural hayati emniyet gereksinimidir?",
+        options: {
+          A: "Manometre skalası sadece kırmızı renkle kaplanmalı ve üzerinde sayısal değerlerin bulunması engellenmelidir.",
+          B: "Manometrenin ölçme sınırı (tam skala değeri), azami çalışma basıncının en az 1,5 ila 2 katı olmalı ve azami çalışma basıncı değeri kadran üzerinde kırmızı bir çizgi ile net olarak işaretlenmelidir.",
+          C: "Manometre doğrudan kap gövdesine değil, her zaman tesisatın en son kullanım noktasındaki dağıtım kolektörüne takılmalıdır.",
+          D: "Manometre kadranındaki tüm değerlerin siyah renkle basılması mevzuat açısından yeterli olup azami basınç işaretlemesi yapılması yasaktır.",
+          E: "Endüstriyel basınçlı kaplarda dijital göstergeli manometrelerin kullanımı zorunlu kılınmış olup ibreli (analog) manometreler tamamen yasaklanmıştır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> TS EN 837-1 standardı uyarınca manometre kadran skala maksimum değeri, azami çalışma basıncının 1,5 ila 2 katı (tercihen 2 katı) olmalı ve azami çalışma basıncı (P_S) kadran üzerine net bir Kırmızı Çizgi ile işaretlenmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Skalanın tamamen kırmızı yapılması ölçüm okunabilirliğini bozar.</li><li>C Şıkkı Yanlıştır: Manometre kabın iç basıncını doğrudan okuyabilmek için kap gövdesine veya doğrudan bağlantılı hatta takılmalıdır.</li><li>D Şıkkı Yanlıştır: Kırmızı çizgi işaretlemesi yasal bir zorunluluktur.</li><li>E Şıkkı Yanlıştır: Analog Bourdon tüplü manometreler standartlara uygun olduğu sürece yaygın olarak kullanılır, yasak değildir.</li></ul>'
+      },
+      {
+        n: 4,
+        topic: "Blöf Sistemleri Operasyonel Emniyeti (Yanlış İfade)",
+        text: "Buhar kazanlarında ve basınçlı akışkan kaplarında işletme sürecinde dibe çöken askıdaki katı maddelerin, kireç tortularının, çamurun ve kondens birikintilerinin sistemden uzaklaştırılması, ısı iletim yüzeylerinin korunması ve korozyon riskinin önlenmesi amacıyla blöf sistemleri (dip ve yüzey blöfü) kullanılmaktadır. Otomatik dip blöf sisteminin arızalandığı bir gıda tesisinde manuel blöf vanası ile blöf işlemi yürütülmektedir. Blöf vanalarının operasyonel emniyeti ve sistem üzerindeki etkileri ile ilgili aşağıda verilen bilgilerden hangisi teknik olarak <strong>yanlıştır</strong>?",
+        options: {
+          A: "Blöf vanaları, basınçlı kap tabanında çöken katı maddelerin ve biriken birikintilerin emniyetli bir şekilde sistemden tahliyesini sağlar.",
+          B: "Blöf işlemi esnasında vanaların aniden ve çok hızlı bir şekilde açılıp kapatılması tesisatta şiddetli koç darbesine (su darbesi) ve boru hasarlarına yol açabilir.",
+          C: "Blöf vanası tahliye hatları doğrudan insan geçiş yollarına, havalandırma boşluklarına veya açık çalışma alanlarına yönlendirilmelidir.",
+          D: "Düzenli periyotlarla yürütülen blöf işlemleri, kazan metalinde yerel aşırı ısınma, kışır oluşumu ve korozyon nedeniyle mukavemet kaybı yaşanmasını önler.",
+          E: "Blöf hattının çıkış noktalarında donma, tıkanma veya karşı basınç oluşmaması için hattın sızdırmazlığı ve açıklığı periyodik olarak kontrol edilmelidir."
+        },
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Blöf tahliye hatları yüksek sıcaklık, basınç ve kimyasal birikinti içerdiğinden asla doğrudan insanların geçtiği alanlara yönlendirilemez. Emniyetli bir blöf deposuna bağlanmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Blöf vanası katı ve birikintileri uzaklaştırır.</li><li>B Şıkkı Doğrudur: Ani açma-kapama koç darbesi yaratır.</li><li>D Şıkkı Doğrudur: Düzenli blöf aşırı ısınma ve korozyonu önler.</li><li>E Şıkkı Doğrudur: Donma, tıkanma ve karşı basınç kontrolü periyodik yapılmalıdır.</li></ul>'
+      },
+      {
+        n: 5,
+        topic: "Yaylı Emniyet Valfi Kalibrasyonu ve Kararlılığı",
+        text: "Endüstriyel tesislerde kullanılan süvarili (ağırlıklı) ve yaylı emniyet valflerinin mukayese edildiği bir teknik seminerde, Başmühendis titreşimli ve sarsıntılı sahalarda yaylı emniyet valflerinin operasyonel kararlılığını vurgulamıştır. Süvarili emniyet valflerine kıyasla yaylı emniyet valflerinin kullanımında ve bakımında dikkat edilmesi gereken en kritik teknik husus aşağıdakilerden hangisidir?",
+        options: {
+          A: "Yaylı emniyet valflerinde yayın mekanik tansiyonu ve esnekliği zamanla veya yüksek sıcaklık etkisiyle değişebileceği için valfler periyodik olarak kalibre edilmeli ve test stantlarında kontrol edilmelidir.",
+          B: "Yaylı emniyet valfleri aşırı basınca karşı kendiliğinden tepki veremez, sadece üzerindeki manuel kol çekildiğinde akışkan tahliyesi gerçekleştirir.",
+          C: "Süvarili emniyet valflerinde kol üzerindeki ağırlık miktarı rastgele artırılarak kabın işletme basıncı istenildiği kadar yükseltilebilir.",
+          D: "Yaylı emniyet valfleri sadece akışkan olarak soğuk su kullanılan sistemlerde tercih edilebilir; gaz ve buhar hatlarında kullanılması yasaktır."
+        },
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yaylı emniyet valflerinde helezonik yayın mekanik gerilimi (tansiyonu) zamanla, korozyon veya termal etkilerle değişebilir. Bu nedenle periyodik olarak kalibre edilmeli ve sızdırmazlık testleri yapılmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Yaylı valfler otomatik basınca tepki verir, ifade yanlıştır.</li><li>C Şıkkı Yanlıştır: Süvarili valfte ağırlık rastgele artırılamaz, kabın patlamasına yol açar.</li><li>D Şıkkı Yanlıştır: Yaylı valfler gaz, buhar ve sıvılarda yaygın kullanılır.</li></ul>'
+      },
+      {
+        n: 6,
+        topic: "Emniyet Valfi Kapasitesi ve Redundansi İlkesi",
+        text: "Bir otobüs imalat fabrikasının gövde kaynak ve boyahane bölümüne basınçlı hava sağlayan, 1,2 MPa (12 bar) azami çalışma basıncına sahip 5000 litrelik hava deposunun emniyet donanımları teknik denetimden geçmektedir. Depo üzerinde bağımsız iki adet emniyet valfi yer almaktadır. Emniyet valflerinin yedeklenmesi, kapasite hesabı ve redundansi ilkeleri uyarınca, bu valflerin toplam tahliye debisi ve açma parametreleri nasıl kurgulanmalıdır?",
+        options: {
+          A: "Emniyet valflerinin toplam tahliye kapasitesi, kompresörün ürettiği maksimum havanın en fazla %25'ini tahliye edecek boyutta seçilmelidir.",
+          B: "Kabın aşırı basınca girmesi durumunda besleme kaynaklarından gelen maksimum debiyi, tank içi basıncın tasarım basıncını aşmasına izin vermeyecek şekilde tamamen dışarı atabilecek kapasitede olmalıdır.",
+          C: "Emniyet valflerinin tahliye debisi önemsiz olup sadece basınç yükseldiğinde ıslık sesi çıkararak sesli ikaz vermeleri yeterli kabul edilir.",
+          D: "Emniyet valfi kapasitesi sadece depo hacminin litre cinsinden değerine eşit miktarda m³/saat debi sağlayacak şekilde kurgulanır.",
+          E: "Emniyet valflerinden biri arızalanıp kapandığında diğer valf de mekanik bir kilitleme mekanizması ile otomatik olarak kilitlenmelidir."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Emniyet valflerinin toplam tahliye kapasitesi, besleme kaynaklarının sağladığı maksimum debiyi, tank iç basıncının tasarım basıncını aşmasına izin vermeyecek şekilde tamamen tahliye edebilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: %25 kapasite yetersizdir, tankın patlamasına neden olur.</li><li>C Şıkkı Yanlıştır: Sesli ikaz ikincil etkidir, ana görev basınç düşürmektir.</li><li>D Şıkkı Yanlıştır: Hacim ile debi birimleri karıştırılmıştır.</li><li>E Şıkkı Yanlıştır: Bir valfin kilitlenmesi emniyet mantığına aykırıdır.</li></ul>'
+      },
+      {
+        n: 7,
+        topic: "Sifon Borusu ve Manometre Musluğu Tertibatının Termal Koruma İşlevi",
+        text: "Endüstriyel buhar tesisatlarında ve yüksek sıcaklıktaki basınçlı kaplarda, basınç ölçüm elemanı (manometre) ile kap gövdesi arasına monte edilen \"sifon borusu\" (L, U veya dairesel kıvrımlı boru) ve manometre musluğu tertibatının temel mühendislik gerekçesi aşağıdakilerden hangisidir?",
+        options: {
+          A: "Manometrenin ölçüm mekanizmasının (Bourdon tüpü) yüksek sıcaklıktaki buhar veya kızgın akışkan ile doğrudan temas ederek termal genleşmeye maruz kalmasını, kalibrasyonunun bozulmasını ve arızalanmasını önlemek.",
+          B: "Kap içerisinden manometreye doğru ilerleyen akışkan basıncını %50 oranında düşürerek ibrenin kırılmasını engellemek.",
+          C: "Tank içerisindeki akışkan hareketini tamamen keserek sistemin sürekli olarak vakum altında kalmasını sağlamak.",
+          D: "Manometrenin yetkisiz tesisat personeli tarafından sökülmesini veya çalınmasını engellemek amacıyla mekanik kilit oluşturmak."
+        },
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Sifon boruları (U/L boru), içerisinde biriken yoğuşmuş sıvı (kondens) sayesinde yüksek sıcaklıktaki buharın doğrudan manometre içindeki Bourdon tüpüne temas etmesini engeller ve hassas mekanizmayı termal hasardan korur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Sifon borusu statik basıncı düşürmez, olduğu gibi iletir.</li><li>C Şıkkı Yanlıştır: Akışkan hareketini tamamen kesmez.</li><li>D Şıkkı Yanlıştır: Çalınmaya karşı mekanik kilit görevi görmez.</li></ul>'
+      },
+      {
+        n: 8,
+        topic: "Kırılma Diskleri (Patlama Zarları) Teknik Özellikleri",
+        text: "Aşırı basınç koruma sistemlerinde, özellikle reaktif kimyasalların, viskoz sıvıların veya ani basınç yükselmesi riski bulunan kapların emniyetinde kullanılan \"kırılma diskleri\" (patlama diskleri / emniyet zarları) ile ilgili aşağıdaki ifadelerden hangisi teknik olarak doğrudur?",
+        options: {
+          A: "Kırılma diskleri aşırı basınçta açıldıktan sonra basınç normale dönünce kendiliğinden kapanan esnek yapılı vanalardır.",
+          B: "Ani ve yüksek basınç yükselmelerinde belirlenen tasarım basıncında yırtılarak veya patlayarak basıncı derhal düşüren, hareketli parçası bulunmayan, tek kullanımlık hassas basınç sınırlandırma elemanlarıdır.",
+          C: "Kırılma diskleri dökme demir malzemeden imal edilir ve aşırı basınç durumunda bir çekiç mekanizması vasıtasıyla manuel olarak kırılır.",
+          D: "Sistemde mekanik bir emniyet valfi bulunuyorsa, aynı hat üzerine kırılma diski yerleştirilmesi uluslararası standartlarca kesinlikle yasaklanmıştır.",
+          E: "Kırılma diskleri patladığında çıkan ses ikaz amacıyla kullanılır; tank içindeki akışkanın dışarı tahliye edilmesine izin vermez."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kırılma diskleri, aşırı basınçta yırtılarak basıncı aniden düşüren, hareketli parçası olmayan, tek kullanımlık emniyet elemanlarıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Tekrar kapanma özelliği yoktur, yırtıldıktan sonra değiştirilmelidir.</li><li>C Şıkkı Yanlıştır: Özel metal alaşımlardan imal edilir, manuel kırılmaz.</li><li>D Şıkkı Yanlıştır: Emniyet valflerinin önüne korozyon koruması amacıyla kırılma diski takılabilir (hibrit sistem).</li><li>E Şıkkı Yanlıştır: Akışkanı tamamen dışarı tahliye eder.</li></ul>'
+      },
+      {
+        n: 9,
+        topic: "Kompresör Yağ Buharı Patlaması ve Önleme Tedbirleri",
+        text: "Bir makine imalat fabrikasının basınçlı hava santralinde çalışmakta olan yağ enjeksiyonlu pistonlu bir hava kompresörünün hava tankında işletme esnasında şiddetli bir patlama meydana gelmiş, tank gövdesi yırtılarak santral binasında ağır hasara yol açmıştır. Olay yeri inceleme ve kaza kırım heyetinin hazırladığı teknik raporda; patlamanın mekanik aşırı basınçtan kaynaklanmadığı, kompresör silindirlerinde aşırı ısınan karter yağının buharlaşarak hava tankına taşındığı ve tutuşma sıcaklığına ulaşan yağ buharı-hava karışımının iç patlamaya (gres/yağ oksidasyon patlaması) neden olduğu tespit edilmiştir. Pistonlu ve vidalı kompresör sistemlerinde bu tür yağ buharı patlamalarını önlemek için alınması gereken ana teknik tedbir aşağıdakilerden hangisidir?",
+        options: {
+          A: "Kompresör karterinde düşük tutuşma sıcaklığına sahip madeni yağlar kullanmak ve yağ değişim periyotlarını tamamen iptal etmek.",
+          B: "Etkin yağ ayırıcı (seperatör) sistemler kullanmak, tank tabanında biriken yağ-su emülsiyonunu düzenli olarak blöf etmek ve yüksek sıcaklık oksidasyonuna dayanıklı kompresör yağları tercih etmek.",
+          C: "Hava tankının giriş vanasını sürekli kapalı tutarak kompresörden gelen havanın tanka girmesini engellemek.",
+          D: "Kompresör motorunun çalışma devrini iki katına çıkararak yağın buharlaşmasına zaman tanımadan havayı tanka basmak.",
+          E: "Hava tankını doğrudan güneş ışığı alan açık ortama yerleştirerek tank iç sıcaklığının yükselmesini sağlamak."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kompresörlerde yağ buharı patlamaları, silindir sıcağında buharlaşan yağların tanka taşınması ve tutuşmasıyla oluşur. Yağ seperatörü, düzenli kondens/yağ blöfü ve yüksek sentetik/ısıya dayanıklı yağ kullanımı riski bertaraf eder.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Düşük tutuşma sıcaklıklı mineral yağ riski artırır.</li><li>C Şıkkı Yanlıştır: Giriş vanasının kapatılması kompresörün çalışmasını engeller.</li><li>D Şıkkı Yanlıştır: Devrin artırılması sürtünme ve sıcaklığı yükseltir.</li><li>E Şıkkı Yanlıştır: Güneş altında tutmak tutuşma riskini tetikler.</li></ul>'
+      },
+      {
+        n: 10,
+        topic: "Hava Tankı Yerleşimi ve Konumlandırma Güvenliği",
+        text: "Bir otomotiv yan sanayi tesisinde İSG Uzmanı ve Denetçi Mühendis, vida grubu ve basınçlı hava depolama alanını incelemektedir. Yapılan incelemede; 10 bar işletme basıncına sahip hava tankının, ana montaj hattında çalışan personelin hemen arkasına, bina taşıyıcı kolonuna sıfır mesafede ve zemine esnek takozlar konulmaksızın rijit şekilde cıvatalandığı tespit edilmiştir. İş Güvenliği mevzuatı ve teknik güvenlik standartları (TS 1203 EN 286-1) çerçevesinde hava tanklarının tesisteki konumu ve yerleşimi ile ilgili aşağıdakilerden hangisi doğrudur?",
+        options: {
+          A: "Hava tankları, patlama durumunda işçilerin müdahale edebilmesi için çalışanların en yoğun bulunduğu üretim alanının merkezine kurulmalıdır.",
+          B: "Hava tankları imkan dahilinde çalışanlardan ayrı, patlamaya dayanıklı özel bir kompresör odasına veya tesis dışında korunaklı bir alana yerleştirilmeli; etrafında bakım ve kontrol için yeterli açıklık bırakılmalıdır.",
+          C: "Hava tankları havalandırması bulunmayan, nem oranı yüksek ve tamamen kapalı sığınak benzeri bodrum katlarda tutulmalıdır.",
+          D: "Hava tankları çalışma sahasında yer tasarrufu sağlamak amacıyla tavan kirişlerine asılmalı ve altından personel geçişine izin verilmelidir."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Hava tankları katastrofik patlama riskine karşı korunaklı, çalışanlardan tecrit edilmiş alanlarda veya bina dışında kurulmalı; çevresinde en az 1 metrelik bakım aralığı bırakılmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Çalışanların ortasına konulması hayati risktir.</li><li>C Şıkkı Yanlıştır: Havalandırmasız ve nemli ortamlar korozyonu hızlandırır.</li><li>D Şıkkı Yanlıştır: Tavan asma uygulaması statik ve dinamik tehlike yaratır.</li></ul>'
+      },
+      {
+        n: 11,
+        topic: "Kompresör Vibrasyonu ve Pulsasyon Riskine Karşı Kompansatör Kullanımı",
+        text: "Pistonlu bir kompresörün ürettiği basınçlı hava, hava tankına aktarılırken pistonun alternatif hareketinden dolayı hat üzerinde yüksek frekanslı mekanik titreşimler (pulsasyon) ve vuruntulu akış meydana gelmektedir. Bu mekanik titreşimlerin ve pulsasyonun hava tankı gövdesi, kaynak hatları ve bağlantı boruları üzerinde oluşturacağı operasyonel riskler ve alınması gereken mühendislik önlemi aşağıdakilerden hangisinde doğru verilmiştir?",
+        options: {
+          A: "Titreşim malzeme yapısını sertleştirerek mukavemeti artırır; bu nedenle kompresör ile tank arasına esnek bağlantı elemanı konulmamalıdır.",
+          B: "Titreşim ve pulsasyon, boru kaynak hatlarında ve tank birleşim noktalarında dinamik yorulma çatlaklarına neden olabilir; kompresör ile hava tankı arasına vibrasyon emici esnek hortumlar (kompansatör) takılmalıdır.",
+          C: "Titreşim, tank üzerindeki manometrenin daha hassas ve doğru ölçüm yapmasını sağlar, ilave bir tedbir gerektirmez.",
+          D: "Titreşimi tamamen sönümlemek amacıyla hava tankının dış gövdesi en az 10 cm kalınlığında betonla kaplanmalıdır.",
+          E: "Mekanik titreşim oluşan kompresör sistemlerinde emniyet valfi kullanımı patlama riskini artırdığı için yasaktır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Pistonlu kompresörlerdeki yüksek frekanslı pulsasyon mekanik yorulmaya (fatigue) ve kaynak dikişlerinde çatlamalara yol açar. Esnek vana/hortum (kompansatör) bağlantıları bu titreşimi sönümler.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Titreşim malzemeyi güçlendirmez, aksine kırılganlaştırır.</li><li>C Şıkkı Yanlıştır: Titreşim manometre ibresini sarsarak yanlış okumaya neden olur.</li><li>D Şıkkı Yanlıştır: Betonla kaplamak denetim ve muayeneyi imkansız kılar.</li><li>E Şıkkı Yanlıştır: Emniyet valfi kullanımı zorunludur.</li></ul>'
+      },
+      {
+        n: 12,
+        topic: "Çekvalf-Emniyet Valfi Dizilimi ve Basınç Sıkışması Koruması",
+        text: "Bir endüstriyel tesiste yeni bir kompresör ve hava tankı tesisatı kurulurken teknik ekip arasında emniyet valfi ve çekvalf (geri dönüşsüz vana) montaj dizilimi konusunda görüş ayrılığı yaşanmıştır. Kompresör basma hattı ile hava tankı arasında bir çekvalf bulunması durumunda, sistem emniyetinin sağlanması açısından emniyet valfinin konumu ve yerleşimi nasıl olmalıdır?",
+        options: {
+          A: "Emniyet valfi mutlaka kompresör ile çekvalf arasındaki boru hattına veya doğrudan hava tankı gövdesi üzerine yerleştirilmeli; çekvalf kapandığında kompresör ile çekvalf arasında oluşabilecek aşırı basınç sıkışması engellenmelidir.",
+          B: "Emniyet valfi çekvalften sonra, tesisatın fabrika içindeki en son kullanım noktasına takılmalıdır.",
+          C: "Hat üzerinde çekvalf bulunması durumunda emniyet valfi kullanımına teknik olarak gerek kalmaz.",
+          D: "Emniyet valfi çekvalf gövdesinin içine entegre edilmeli ve harici vana kullanılmamalıdır."
+        },
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Çekvalf ile kompresör arasına emniyet valfi takılmalıdır. Aksi takdirde çekvalf kapandığında kompresör durmazsa aradaki boru hattında aşırı basınç birikerek boruyu patlatır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: En son noktadaki valf aradaki sıkışmayı koruyamaz.</li><li>C Şıkkı Yanlıştır: Çekvalf emniyet valfinin yerini tutamaz.</li><li>D Şıkkı Yanlıştır: Entegre mekanizma standart dışıdır.</li></ul>'
+      },
+      {
+        n: 13,
+        topic: "Kondens Suyu Birikiminin Korozyon ve Patlama Riski",
+        text: "Bir dökümhanede kullanılan kompresör hava tankının alt kısmında yer alan yoğuşma suyu (kondens) tahliye vanasının uzun süre açılmadığı ve otomatik pürjörün tıkalı olduğu fark edilmiştir. Hava tanklarında biriken kondens suyunun zamanında boşaltılmaması durumunda karşılaşılabilecek en büyük hayati tehlike ve teknik kısıt aşağıdakilerden hangisidir?",
+        options: {
+          A: "Tank iç hacminin suyla dolması sebebiyle net hava hacminin azalması ve suyun korozyona (içten paslanmaya) yol açarak tank et kalınlığını inceltip patlama riskini kritik seviyeye çıkarması.",
+          B: "Tank içerisindeki havanın basıncının su teması nedeniyle kendiliğinden sıfır bar seviyesine düşmesi.",
+          C: "Kompresör elektrik motorunun aşırı yüklenerek ters yönde dönmeye başlaması.",
+          D: "Emniyet valfinin set edilen açma basınç değerinin su basıncı sebebiyle düşmesi.",
+          E: "Tankın toplam ağırlığının azalması sonucu mekanik dengesini kaybederek yerinden fırlaması."
+        },
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Hava tankında biriken asidik yoğuşma suyu iç korozyona (pitting) neden olur, tank alt et kalınlığını inceltir ve efektif hava hacmini düşürerek patlamayı tetikler.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Basınç su varlığıyla kendiliğinden sıfırlanmaz.</li><li>C Şıkkı Yanlıştır: Elektrik motorunun dönme yönü hidrolik bir birikimle değişmez.</li><li>D Şıkkı Yanlıştır: Emniyet valfi set açma basıncı mekanik yayla sabittir.</li><li>E Şıkkı Yanlıştır: Su birikimi tankı ağırlaştırır, hafifletmez.</li></ul>'
+      },
+      {
+        n: 14,
+        topic: "Emiş Filtresi Tıkanmasının Kompresör Üzerindeki Etkileri",
+        text: "Endüstriyel kompresörlerde emiş hattında bulunan hava filtrelerinin periyodik olarak temizlenmemesi veya tıkalı kalması durumunda, kompresör ünitesinde ve basınçlı hava sisteminde ortaya çıkabilecek temel güvenlik ve operasyonel risk aşağıdakilerden hangisidir?",
+        options: {
+          A: "Kompresörün basma basıncı kontrolsüz şekilde sonsuza kadar artar ve hava tankı derhal patlar.",
+          B: "Kompresör silindirleri yeterli hava ememez, vakum oranı artar, silindir içi sıcaklık aşırı yükselir, karter yağının yanması ve performans düşüşü gerçekleşir.",
+          C: "Hava tankı üzerindeki emniyet valfi yüksek vakum sebebiyle kendiliğinden yerinden sökülür.",
+          D: "Hava tankı içerisinde biriken yoğuşma suyu miktarı aniden iki katına çıkar."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Emiş filtresi tıkandığında kompresör silindirine yeterli hava giremez, iç vakum oranı artar, sürtünme sıcaklığı yükselir ve karter yağı yanarak yanma/patlama riski oluşturur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Basma basıncı hava giremediği için artmaz, düşer.</li><li>C Şıkkı Yanlıştır: Emniyet valfi vakumla yerinden sökülmez.</li><li>D Şıkkı Yanlıştır: Hava girişi azaldığı için taşınan nem miktarı düşer.</li></ul>'
+      },
+      {
+        n: 15,
+        topic: "Presostat Arızasında Nihai Emniyet Donanımı",
+        text: "Bir ahşap mobilya fabrikasındaki hava kompresörünün basınç şalteri (presostat) kontaklarının yapışması sonucu arızalanmış ve kompresör motoru set edilen durma basıncına (8 bar) ulaştığı halde durmayarak havayı basmaya devam etmiştir. Sistemde katastrofik bir tank patlamasını önleyecek nihai ve en kritik güvenlik donanımı aşağıdakilerden hangisidir?",
+        options: {
+          A: "Manuel dip blöf vanası",
+          B: "Manometre altı sifon borusu",
+          C: "Emniyet valfi (Aşırı Basınç Tahliye Vanası)",
+          D: "Hava emiş filtresi"
+        },
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Presostat arızasında kompresör durmazsa tank içi basınç sürekli yükselir. Bu durumda aşırı basıncı tahliye edecek tek ikincil mekanik güvenlik donanımı Emniyet Valfidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Manuel blöf vanası otomatik devreye giremez.</li><li>B Şıkkı Yanlıştır: Sifon borusu sadece koruyucudur, basınç düşürmez.</li><li>D Şıkkı Yanlıştır: Emiş filtresi aşırı basınç koruması yapmaz.</li></ul>'
+      },
+      {
+        n: 16,
+        topic: "İmalatçı Sicil Plakasında Bulunması Gereken Bilgiler",
+        text: "İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği uyarınca, endüstriyel bir basınçlı kabın gövdesi üzerine imalatçı firma tarafından perçinlenmiş, kaynaklanmış veya silinmez biçimde kazınmış olarak bulunması zorunlu olan \"İmalatçı Etiketi / Sicil Plakası\" üzerinde aşağıdakilerden hangisinin bulunması yasal bir zorunluluk <strong>değildir</strong>?",
+        options: {
+          A: "İmalatçı firmanın ticari unvanı ve adresi",
+          B: "Ekipmanın seri numarası ve imal yılı",
+          C: "Ekipmanın azami izin verilen çalışma basıncı (PS) ve test basıncı (PT)",
+          D: "Ekipmanın hacmi (V) ve tasarım sıcaklığı aralığı",
+          E: "Ekipmanı satın alan işletmenin İSG Uzmanının T.C. kimlik numarası"
+        },
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> İmalatçı etiketinde ekipmanın teknik imalat parametreleri (P_S, P_T, V, T, Seri No, İmal Yılı) yer almak zorundadır. Alıcı firmanın İSG uzmanının kimlik verileri etikette yer almaz.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C, D Şıkları Doğrudur: Yönetmelik uyarınca etikette bulunması zorunlu olan imalat verileridir.</li></ul>'
+      },
+      {
+        n: 17,
+        topic: "EKİPNET Periyodik Kontrol Kayıt Sistemi",
+        text: "Türkiye'de yürürlükte olan İSG mevzuatı uyarınca, basınçlı kapların ve tesisatların periyodik kontrollerini yapmaya, test protokollerini hazırlamaya ve yetkili kontrol raporu düzenlemeye haiz kişilerin Çalışma ve Sosyal Güvenlik Bakanlığı veritabanına kayıtlı olmaları gerekmektedir. Yetkili personelin kayıtlı olduğu, yetki numaralarının tanımlandığı ve periyodik kontrol raporlarının elektronik ortamda takip edildiği resmi kayıt sistemi aşağıdakilerden hangisidir?",
+        options: {
+          A: "İSG-KATİP",
+          B: "EKİPNET",
+          C: "SGK-MEDULA",
+          D: "UYAP",
+          E: "E-DEVLET KAPISI"
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Çalışma ve Sosyal Güvenlik Bakanlığı tarafından periyodik kontrol yapmaya yetkili kişilerin kayıt altına alındığı ve raporların takip edildiği resmi veritabanı EKİPNET\'tir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: İSG-KATİP işyeri hekimi ve İSG uzmanı atama sistemidir.</li><li>C Şıkkı Yanlıştır: SGK-MEDULA sağlık provizyon sistemidir.</li><li>D Şıkkı Yanlıştır: UYAP yargı ağı bilişim sistemidir.</li><li>E Şıkkı Yanlıştır: E-DEVLET genel kamu hizmetleri portalıdır.</li></ul>'
+      },
+      {
+        n: 18,
+        topic: "Basınçlı Kap Periyodik Kontrolünde Yetkili Meslek Grupları",
+        text: "İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği hükümleri çerçevesinde, basınçlı kapların periyodik muayene, test ve kontrollerini gerçekleştirmeye yetkili olan teknik meslek disiplinleri aşağıdakilerden hangisinde eksiksiz ve doğru olarak verilmiştir?",
+        options: {
+          A: "Makine Mühendisleri, Metalurji ve Malzeme Mühendisleri, Makine Teknikerleri veya Yüksek Teknikerleri",
+          B: "Elektrik Mühendisleri, Elektrik Teknikerleri ve İnşaat Mühendisleri",
+          C: "Kimya Mühendisleri, Fizikçiler ve Maden Teknikerleri",
+          D: "Biyomedikal Mühendisleri, İş Güvenliği Uzmanları (Meslekten bağımsız) ve Çevre Teknikerleri",
+          E: "Mimarlar, Şehir Plancıları ve Harita Mühendisleri"
+        },
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yönetmelik Ek-III uyarınca basınçlı kapların periyodik kontrollerini yapmaya Makine Mühendisleri, Metalurji ve Malzeme Mühendisleri ile Makine Teknikerleri/Yüksek Teknikerleri yetkilidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D, E Şıkları Yanlıştır: Basınçlı kap periyodik kontrol yetkisi bulunmayan meslek gruplarını içerir.</li></ul>'
+      },
+      {
+        n: 19,
+        topic: "Periyodik Kontrolü Tetiklemeyen Kapsam Dışı Durumlar",
+        text: "İş ekipmanlarının güvenliğinin bozulmasına neden olabilecek olağan dışı durumlar sonrasında periyodik kontrollerin yapılması esastır. 05. Hafta İş Ekipmanlarının Tasarım, İmalat ve Kullanımında ISG kaynak belgesindeki Madde b) 2) hükümleri uyarınca, aşağıdakilerden hangisi basınçlı kabın standart periyodik kontrol süresi beklenmeksizin kontrolün derhal tekrarlanmasını gerektiren durumlardan biri <strong>değildir</strong>?",
+        options: {
+          A: "Basınçlı kapta veya bağlı tesisatta güvenliği tehlikeye düşürecek büyük bir arıza veya kaza meydana gelmesi",
+          B: "Deprem, sel, yangın gibi doğal olaylara maruz kalınması",
+          C: "Ekipmanın çalışma şeklinde veya proses parametrelerinde önemli değişiklikler yapılması",
+          D: "Ekipmanın uzun süre (örneğin 6 ay veya daha fazla) kullanılmayıp tekrar işletmeye alınması",
+          E: "Tesis bünyesinde vardiya değişiminde yeni operatörün göreve başlaması"
+        },
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> 05. Hafta İş Ekipmanlarının Tasarım, İmalat ve Kullanımında ISG Madde b) 2) uyarınca; kazalar, doğal olaylar, çalışma şekli değişiklikleri veya uzun süreli duruşlar (6 ay+) sonrasında periyodik kontrol tekrarlanır. Vardiya değişimi rutin bir operasyondur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C, D Şıkları Doğrudur: Yönetmelikte açıkça belirtilen olağan dışı kontrol gerektiren durumlardır.</li></ul>'
+      },
+      {
+        n: 20,
+        topic: "Bakım Defteri ve 5070 Sayılı Kanun Kapsamında E-İmza Geçerliliği",
+        text: "Bir basınçlı kabın bakımlarının ve kontrollerinin kayıt altına alındığı \"Bakım Defteri\" veya elektronik kayıtların hukuki geçerliliği ile ilgili mevzuat hükümlerine (05. Hafta İş Ekipmanlarının Tasarım, İmalat ve Kullanımında ISG Madde 2.13.1) göre aşağıdakilerden hangi ifade doğrudur?",
+        options: {
+          A: "Bakım defterleri sadece matbu kağıt formatında tutulabilir, dijital ortamda tutulan kayıtlar hukuken geçersizdir.",
+          B: "5070 sayılı Elektronik İmza Kanununa uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtlar da bakım defteri olarak kabul edilir.",
+          C: "Bakım defteri tutma zorunluluğu sadece imal yılı 10 yılı aşmış basınçlı kaplar için geçerlidir.",
+          D: "Bakım defteri her gün mesai bitiminde İl İşkur Müdürlüğüne ıslak imza ile onaylatılmalıdır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Madde 2.13.1 uyarınca, 5070 sayılı Elektronik İmza Kanununa uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan dijital kayıtlar bakım defteri olarak kabul edilir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Sadece kağıt zorunluluğu yoktur.</li><li>C Şıkkı Yanlıştır: Bakım defteri tüm ekipmanlar için yaştan bağımsız zorunludur.</li><li>D Şıkkı Yanlıştır: İŞKUR onayı gereksinimi yoktur.</li></ul>'
+      }
+    ]
+  },
+
+  /* ======================= TEST 2 ======================= */
+  {
+    id: 2,
+    title: "Test 2",
+    subtitle: "Hidrostatik Test, Zorlayıcı/Zorlayıcı Olmayan Muayene ve NDT Yöntemleri",
+    range: "Soru 21 – 40",
+    questions: [
+      {
+        n: 21,
+        topic: "İmalatçı Plakası Eksikliğinde Periyodik Kontrol Kararı",
+        text: "Bir kimya tesisinde periyodik kontrol gerçekleştiren yetkili mühendis, 15 bar işletme basıncına sahip buhar separatörünün gövdesinde okunabilir bir imalatçı sicil plakasının bulunmadığını, et kalınlığı korozyon verilerinin belirsiz olduğunu tespit etmiştir. Bu durumda denetçinin düzenleyeceği periyodik kontrol raporunun sonuç ve kanaat bölümü nasıl yapılandırılmalıdır?",
+        options: {
+          A: "Ekipmanın çalışmasında görsel bir engel bulunmadığı için onay verilmeli, plaka eksikliği önemsiz kabul edilmelidir.",
+          B: "Ekipmanın bu haliyle kullanımı emniyetsizdir; teknik kimliklendirme ve tahribatsız testlerle (NDT) gövde mukavemeti kanıtlanana kadar durum \"Ağır Kusur / Uygunsuz\" olarak işlenmeli ve ekipman kullanım dışı bırakılmalıdır.",
+          C: "Rapora sadece \"Plaka eksiktir\" notu düşülerek 5 yıl süreyle geçerli çalışma izni verilmelidir.",
+          D: "Plaka yerine tükenmez kalemle yazılan bir etiket yapıştırılarak kontrol onaylanmalıdır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> İmalatçı plakası bulunmayan ve et kalınlığı/mukavemet verileri kanıtlanamayan basınçlı kaplar güvenli kabul edilemez. Durum "Ağır Kusur / Uygunsuz" olarak rapora işlenir ve eksiklik giderilene kadar ekipman mühürlenir/kullanım dışı bırakılır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D Şıkları Yanlıştır: İSG emniyet felsefesine ve mevzuata aykırı güvensiz yaklaşımlardır.</li></ul>'
+      },
+      {
+        n: 22,
+        topic: "Durdurma Sistemlerinin Çalıştırma Sistemlerine Önceliği",
+        text: "İş ekipmanlarında güvenliği etkileyen kumanda cihazları ve durdurma sistemleri ile ilgili yönetmelik hükümlerine (05. Hafta İş Ekipmanlarının Tasarım, İmalat ve Kullanımında ISG Madde 2.1.3 / 2.3) göre, \"durdurma sistemleri\" ile \"çalıştırma sistemleri\" arasındaki hiyerarşik ilişki nasıl olmalıdır?",
+        options: {
+          A: "Çalıştırma sistemleri, üretim sürekliliği açısından durdurma sistemlerine göre her zaman önceliklidir.",
+          B: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre her zaman öncelikli olması gerekir.",
+          C: "İki sisteme aynı anda basıldığında çalıştırma sistemi aktif kalmalı, durdurma sistemi devre dışı kalmalıdır.",
+          D: "Durdurma sistemleri sadece tesisteki ana elektrik kesildiğinde aktifleşen ikincil sistemlerdir.",
+          E: "Durdurma ve çalıştırma sistemleri karmaşayı önlemek amacıyla tek bir butonda birleştirilmelidir."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Madde 2.1.3 / 2.3 uyarınca iş ekipmanlarında durdurma sistemleri, çalıştırma sistemlerine göre her zaman hiyerarşik olarak öncelikli olmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Çalıştırma öncelikli olamaz.</li><li>C Şıkkı Yanlıştır: Aynı anda basıldığında durdurma aktif kalmalıdır.</li><li>D Şıkkı Yanlıştır: Durdurma her zaman aktif olmalıdır.</li><li>E Şıkkı Yanlıştır: İki sistemin tek butonda birleştirilmesi kararsızlık yaratır.</li></ul>'
+      },
+      {
+        n: 23,
+        topic: "Basınçlı Kaplarda 1 Yıl Periyodik Kontrol Kuralı",
+        text: "Bir boya fabrikasında İş Sağlığı ve Güvenliği Kurul toplantısında konuşan Başmühendis, tesisteki kompresör hava tankları, hidroforlar ve buhar kazanlarının periyodik kontrol takvimini sunmaktadır. İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği uyarınca, ilgili standartlarda (TS EN 12952, TS EN 13445 vb.) daha kısa bir süre belirtilmediği takdirde, basınçlı kapların standart periyodik kontrol azami muayene periyodu ne kadardır?",
+        options: {
+          A: "6 Ay",
+          B: "1 Yıl",
+          C: "2 Yıl",
+          D: "3 Yıl",
+          E: "5 Yıl"
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği uyarınca, standartlarda aksi belirtilmedikçe basınçlı kapların periyodik kontrol süresi azami 1 yıldır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Yönetmelikteki standart periyot dışındaki yanlış sürelerdir.</li></ul>'
+      },
+      {
+        n: 24,
+        topic: "Hidrostatik Test Basıncının 1,5 Kat Kuralı",
+        text: "Bir rafine petrol tesisinde Başmühendis ve lider denetçi, hydro-cracking (hidro-kırma) ünitesinde bulunan yüksek basınçlı reaktörün periyodik kontrol prosedürünü incelemektedir. Mühendislik ekibi tarafından hazırlanan test prosedüründe hidrostatik test basıncı oranı önerilmiştir. İlgili standartlar ve yönetmelik hükümleri uyarınca, aksine bir kural bulunmadıkça, periyodik kontrollerde uygulanması gereken standart Hidrostatik Test Basıncı (P_T), kabın Tasarım / İzin Verilen Azami Çalışma Basıncının (P_S) kaç katı olarak hesaplanmalıdır?",
+        options: {
+          A: "1,1 Katı",
+          B: "1,25 Katı",
+          C: "1,5 Katı",
+          D: "2,0 Katı",
+          E: "2,5 Katı"
+        },
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Basınçlı kap standartlarında (TS EN 13445, TS 1203 EN 286-1) periyodik test basıncı, aksine bir hüküm yoksa işletme/tasarım basıncının 1,5 katı (P_T = 1,5 × P_S) olarak uygulanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D, E Şıkları Yanlıştır: Yanlış test katsayılarıdır.</li></ul>'
+      },
+      {
+        n: 25,
+        topic: "Hidrostatik Test Uygulanamayan İstisnai Durumlarda NDT Yolu",
+        text: "Bir gübre fabrikasındaki amonyak depolama tankının periyodik kontrolü gerçekleştirilecektir. Tesis yönetimi, devasa boyuttaki bu tankın temeline su doldurulması halinde yapının aşırı statik yük altına gireceğini ve iç yüzeydeki katalizörlerin su ile temas etmesinin prosesi tamamen bozacağını beyan etmiştir. İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği uyarınca, hidrostatik testin yapılamadığı bu gibi zorunlu ve istisnai hallerde izlenmesi gereken yasal ve teknik yol aşağıdakilerden hangisidir?",
+        options: {
+          A: "Hidrostatik test tamamen iptal edilir ve kap hiçbir teste tabi tutulmaksızın periyodik kontrol raporu onaylanır.",
+          B: "Hidrostatik test yerine standartlarda belirtilen zorlayıcı olmayan Tahribatsız Muayene (NDT) yöntemleri uygulanır ve teknik gerekçesi raporda açıkça belirtilir.",
+          C: "Test yerine sadece dış gözle muayene yapılır ve 10 yıl süreli geçerlilik raporu tanzim edilir.",
+          D: "Test basıncı işletme basıncının yarısına düşürülerek tanka yanıcı gaz basılır.",
+          E: "Reaktörün dış yüzeyi boyanarak kontrol tamamlanmış sayılır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yönetmelik gereğince, tesis altyapısının veya proses şartlarının hidrostatik teste izin vermediği istisnai durumlarda, standartlarda belirtilen Tahribatsız Muayene (NDT) yöntemleri uygulanır ve teknik gerekçesi raporda belirtilir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Muayeneyi tamamen iptal etmek veya usulsüz onay vermek mevzuata aykırıdır.</li></ul>'
+      },
+      {
+        n: 26,
+        topic: "Hidrostatik Testte Su Kullanımı ve Hava Tahliyesi Kuralı",
+        text: "Hidrostatik test uygulaması esnasında basınçlı kabın güvenli bir şekilde test edilmesi, aşırı basınç altında kaza yaşanmaması için test akışkanının türü ve havanın tahliyesi ile ilgili aşağıdakilerden hangi kurala uyulması zorunludur?",
+        options: {
+          A: "Test akışkanı olarak yanıcı gazlar kullanılmalı, tankın havası boşaltılmamalıdır.",
+          B: "Test akışkanı olarak genellikle su kullanılmalı, kap en yüksek noktasından pürjör açılarak sıkıştırılabilir hava tamamen boşaltıldıktan sonra basınçlandırılmalıdır.",
+          C: "Test akışkanı olarak benzin veya tiner gibi çözücüler tercih edilmelidir.",
+          D: "Kap içerisine yarı yarıya hidrolik yağ ve yüksek basınçlı hava basılmalıdır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Hidrostatik test sıkıştırılamaz sıvı olan su ile yapılır. Test öncesinde kap en yüksek noktadaki pürjör vanasından tamamen havalandırılarak içindeki hava boşaltılmalıdır; çünkü sıkışmış hava test anında patlama tehlikesi yaratır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D Şıkları Yanlıştır: Yanıcı maddelerle test yapmak veya havayı boşaltmamak hayati İSG ihlalidir.</li></ul>'
+      },
+      {
+        n: 27,
+        topic: "Hidrostatik Test Bekleme Süresinin Amacı",
+        text: "Hidrostatik test prosedüründe, belirlenmiş test basıncına (P_T = 1,5 × P_S) ulaşıldıktan sonra sistem bu basınçta belirli bir bekleme süresine (en az 10-30 dakika) tabi tutulur. Bu bekleme süresinin temel teknik amacı aşağıdakilerden hangisidir?",
+        options: {
+          A: "Kap içerisindeki suyun soğumasını ve buharlaşmasını beklemek.",
+          B: "Kabın kaynak hatlarında, flanş birleşimlerinde ve gövde metalinde kalıcı deformasyon, sızıntı, terleme veya basınç düşüşü olup olmadığını gözlemlemek.",
+          C: "Test manometresinin ibresinin kendiliğinden sıfır noktasına dönmesini sağlamak.",
+          D: "Tank içerisindeki havanın su moleküllerine dönüşmesini beklemek."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Hidrostatik test basıncında beklemenin amacı; gövde metalinde kalıcı plastik deformasyon, kaynak dikişlerinde mikro sızıntılar veya terleme olup olmadığını incelemektir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D Şıkları Yanlıştır: Test tekniğiyle ilgisi olmayan yanlış iddialardır.</li></ul>'
+      },
+      {
+        n: 28,
+        topic: "Hidrostatik Test Basıncı Hesaplama (Sayısal Uygulama)",
+        text: "Bir un fabrikasının paketleme ünitesinde yer alan ve azami işletme basıncı (P_S) 10 bar olan bir hava tankının periyodik kontrolünde hidrostatik test gerçekleştirilecektir. Herhangi bir özel standart kısıtı bulunmadığına göre, uygulanması gereken Hidrostatik Test Basıncı (P_T) kaç bar olarak ayarlanmalıdır?",
+        options: {
+          A: "10 bar",
+          B: "12,5 bar",
+          C: "15 bar",
+          D: "20 bar",
+          E: "25 bar"
+        },
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Test Basıncı katsayısı 1,5 olduğu için: P_T = 1,5 × P_S = 1,5 × 10 bar = 15 bar olarak hesaplanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D, E Şıkları Yanlıştır: Hatalı katsayı hesaplama sonuçlarıdır.</li></ul>'
+      },
+      {
+        n: 29,
+        topic: "Hidrostatik Test Öncesi Hazırlık Adımları (Kapsam Dışı İşlem)",
+        text: "Hidrostatik test gerçekleştirilmeden önce basınçlı kap üzerinde yürütülmesi gereken ön hazırlık adımları değerlendirildiğinde, aşağıdakilerden hangisi yapılması gereken işlemlerden biri <strong>değildir</strong>?",
+        options: {
+          A: "Kabın içerisindeki proses akışkanının tamamen boşaltılması ve iç yüzey temizliğinin yapılması",
+          B: "Emniyet valflerinin test hattından izole edilmesi, körlenmesi veya tapa ile kapatılması",
+          C: "Kabın üzerindeki manometrenin kalibre edilmiş hassas test manometresi ile değiştirilmesi",
+          D: "Kabın basınç taşıyan gövde metaline yüksek sıcaklıkta kaynak işlemi yapılarak yama ilave edilmesi",
+          E: "Kör tapalar ve kör flanşlar ile tüm çıkış noktalarının sızdırmaz şekilde kapatılması"
+        },
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Test öncesinde basınç taşıyan gövdeye kaynakla yama yapmak malzemenin ısıdan etkilenen bölge (HAZ) yapısını bozarak zayıflatır ve son derece yasaktır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C, E Şıkları Doğrudur: Hidrostatik test öncesi yapılması zorunlu doğru hazırlık adımlarıdır.</li></ul>'
+      },
+      {
+        n: 30,
+        topic: "Hidrostatik Test Esnasında İSG İhlali (Çekiçle Vurma Yasağı)",
+        text: "Hidrostatik test esnasında yüksek basınç altında tehlikeli bir durum yaşanmaması için test sahasında alınması gereken İSG tedbirleri ile ilgili aşağıdakilerden hangisi <strong>yanlıştır</strong>?",
+        options: {
+          A: "Test sahası emniyet şeridi ile çevrilmeli, uyarı levhaları asılmalı ve yetkisiz personel alandan uzaklaştırılmalıdır.",
+          B: "Test esnasında basınç kademeli olarak artırılmalı, ani ve aşırı basınç yüklemelerinden kaçınılmalıdır.",
+          C: "Ekipman yüksek test basıncı altındayken kaynak dikişlerinin sağlamlığını kontrol etmek amacıyla gövdeye çekiçle vurularak ses analizi yapılmalıdır.",
+          D: "Testi gerçekleştiren teknik personel siperlik, koruyucu gözlük ve emniyet ayakkabısı gibi KKD'leri kullanmalıdır.",
+          E: "Basınç tamamen düşürülmeden flanş cıvataları kesinlikle sıkılmamalı veya gevşetilmemelidir."
+        },
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yüksek test basıncı altındaki bir kaba çekiçle vurmak gevrekleşmiş noktada aniden çentik etkisi yaratarak katastrofik patlamaya yol açar; kesinlikle yasaktır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D, E Şıkları Doğrudur: Test sahasında alınması gereken doğru İSG önlemleridir.</li></ul>'
+      },
+      {
+        n: 31,
+        topic: "Zorlayıcı ve Zorlayıcı Olmayan Testlerin Karşılaştırması",
+        text: "Bir enerji santralindeki denetim esnasında Başmühendis, basınçlı kaplara uygulanan \"Zorlayıcı Testler\" (Hidrostatik/Pnömatik) ile \"Zorlayıcı Olmayan Testler\" (NDT) arasındaki temel farkı ve mühendislik amacını stajyer mühendislere açıklamaktadır. Aşağıdaki kıyaslamalardan hangisi teknik olarak doğrudur?",
+        options: {
+          A: "Zorlayıcı testler kap gövdesinden parça kesilerek yapılır, NDT ise sadece boya kaplamasıyla gerçekleştirilir.",
+          B: "Zorlayıcı testler (örneğin hidrostatik test) kabı azami çalışma basıncının üzerindeki gerilmelere maruz bırakarak genel mekanik mukavemeti doğrular; Zorlayıcı Olmayan testler (NDT) ise kabı mekanik olarak zorlamadan malzeme ve kaynaklardaki iç/yüzey hatalarını tespit eder.",
+          C: "NDT testleri kabın patlamasına neden olur, hidrostatik test ise sıfır risk taşıyan bir yöntemdir.",
+          D: "Pnömatik test en tehlikesiz zorlayıcı test olup hidrostatik testin yerine koşulsuz tercih edilir.",
+          E: "Zorlayıcı testler sadece kompozit malzemeden yapılmış kaplara uygulanır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Zorlayıcı testler kabı basınçla yükleyerek genel makro mukavemeti ölçer; zorlayıcı olmayan testler (NDT) ise kabı zorlamadan iç ve yüzey kusurlarını tespit eder.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: NDT ve zorlayıcı testlerin tanımlarını saptıran yanlış ifadelerdir.</li></ul>'
+      },
+      {
+        n: 32,
+        topic: "Pnömatik Testin Temel Tehlikesi (Genleşme Enerjisi)",
+        text: "Hidrostatik test yapılması gereken bir basınçlı kaba su bulunamaması veya tesis şartları sebebiyle Pnömatik Test (basınçlı gaz/hava ile test) uygulanması gündeme gelmiştir. Pnömatik test esnasında ortaya çıkabilecek en hayati risk ve İSG tehlikesi aşağıdakilerden hangisidir?",
+        options: {
+          A: "Gazların yüksek sıkıştırılabilirlik özelliğinden ötürü, bir kırılma durumunda depolanan muazzam genleşme enerjisinin aniden açığa çıkarak şiddetli patlamaya, şok dalgasına ve parça fırlamasına yol açması.",
+          B: "Pnömatik testte kullanılan havanın tank iç yüzeyini paslandırması.",
+          C: "Pnömatik testin uygulama süresinin hidrostatik teste göre 10 kat daha yavaş gerçekleşmesi.",
+          D: "Gazın tank içinde donarak gövdeyi çatlatması."
+        },
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Gazlar yüksek oranda sıkıştırılabilir olduğu için pnömatik test esnasında oluşacak bir yırtılmada depolanan tüm genleşme enerjisi bir anda açığa çıkarak muazzam bir patlama dalgası ve parça fırlaması yaratır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D Şıkları Yanlıştır: Pnömatik testin ikincil veya ilgisiz hususlarıdır.</li></ul>'
+      },
+      {
+        n: 33,
+        topic: "Zorlayıcı Test Yerine NDT Uygulamasının Uygun Gerekçesi",
+        text: "Endüstriyel bir tesiste bulunan basınçlı kaba zorlayıcı test (hidrostatik test) yerine zorlayıcı olmayan tahribatsız muayene (NDT) yöntemlerinin uygulanması süreci değerlendirilmektedir. Aşağıdaki durumların hangisinde NDT uygulaması mevzuat ve teknik standartlar açısından en uygun gerekçeyi oluşturur?",
+        options: {
+          A: "Kabın yeni imal edildiği ve ilk kez sahaya kurulacağı durumlarda.",
+          B: "Tesis altyapısının test suyunun ağır statik yükünü taşıyamayacak olması veya suyun temizlenmesinin imkansız olduğu hassas proses reaktörlerinde.",
+          C: "Tankın çok küçük hacimli ve kolay taşınabilir olduğu durumlarda.",
+          D: "Tesis işvereninin test maliyetlerinden kaçınmak istediği tüm durumlarda.",
+          E: "Basınçlı kabın işletme basıncının 0,1 bar olduğu durumlarda."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Tankın su ağırlığını taşıyamayacağı devasa yapılar veya su girmesinin prosesi zehirleyeceği kaplarda hidrostatik test yerine NDT metodolojisi uygulanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Hidrostatik testi iptal etmek için geçerli yasal gerekçeler değildir.</li></ul>'
+      },
+      {
+        n: 34,
+        topic: "Pnömatik Test Esnasında Alınacak Ekstra İSG Önlemleri",
+        text: "Basınçlı kapların periyodik kontrolünde teknik zorunluluklar nedeniyle pnömatik test uygulanması kararlaştırılmıştır. Bu son derece tehlikeli test esnasında sahadaki patlama riskine karşı alınması gereken ekstra güvenlik tedbiri aşağıdakilerden hangisidir?",
+        options: {
+          A: "Test esnasında teknik personelin tankın hemen yanında durarak sabun köpüğü ile elle sızıntı araması.",
+          B: "Test basıncının doğrudan tasarım basıncının 2 katına bir anda çıkarılması.",
+          C: "Testin uzaktan kumandalı veya korunaklı sığınak arkasından yürütülmesi, basıncın çok küçük kademelerle artırılması ve sahanın tamamen tahliye edilmesi.",
+          D: "Test gazı olarak sıkıştırılmış LPG veya Asetilen gazının kullanılması.",
+          E: "Test sırasında ortam havalandırma fanlarının tamamen kapatılması."
+        },
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Pnömatik test aşırı risk barındırdığı için test sahası boşaltılmalı, kontrol uzaktan kumandayla siper arkasından yapılmalı ve basınç kademeli artırılmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D, E Şıkları Yanlıştır: Ölümcül kaza riskini artıran hatalı davranışlardır.</li></ul>'
+      },
+      {
+        n: 35,
+        topic: "NDT Yöntemlerinin Zorlayıcı Testlere Karşı Mühendislik Avantajı",
+        text: "Bir kimya kompleksinde baş denetçi olarak görev yapan Başmühendis, tesis müdürüne zorlayıcı olmayan test yöntemlerinin (NDT) hidrostatik teste kıyasla sunduğu teknik avantajları raporlamaktadır. Zorlayıcı olmayan testlerin (NDT) zorlayıcı testlere göre sağladığı en büyük mühendislik avantajı aşağıdakilerden hangisinde açıklanmıştır?",
+        options: {
+          A: "NDT yöntemlerinin hiçbir teknik uzmanlık veya sertifikasyon gerektirmeden vasıfsız personelce yapılabilmesi.",
+          B: "Ekipmanın mekanik yapısına, korozyon direncine ve kullanım ömrüne zarar vermeksizin, imalat veya işletme kaynaklı mikro seviyedeki iç ve yüzey kusurlarını tespit edebilmesi.",
+          C: "Muayene maliyetinin zorlayıcı testlere göre her zaman sıfıra yakın olması.",
+          D: "Test sonucunda kabın işletme basınç kapasitesinin kendiliğinden iki katına çıkması.",
+          E: "Test esnasında kap içerisindeki kimyasal akışkanın boşaltılmasına hiçbir zaman gerek duyulmaması."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> NDT yöntemleri ekipmanın geometrisine, et kalınlığına ve malzeme yapısına hiçbir zarar vermeden mikro düzeydeki çatlak ve korozyon hatalarını tespit etme imkanı sağlar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: NDT\'nin niteliğiyle bağdaşmayan yanlış iddialardır.</li></ul>'
+      },
+      {
+        n: 36,
+        topic: "Tahribatsız Muayene Yöntemleri (Kapsam Dışı Yöntem)",
+        text: "Aşağıdakilerden hangisi basınçlı kaplarda ve kaynaklı imalatlarda kullanılan zorlayıcı olmayan (NDT) muayene yöntemlerinden biri <strong>değildir</strong>?",
+        options: {
+          A: "Penetran Sıvı Muayenesi (PT)",
+          B: "Ultrasonik Muayene (UT)",
+          C: "Radyografik Muayene (RT)",
+          D: "Görsel Muayene (VT)",
+          E: "Çekme-Kopma (Tensile) Testi"
+        },
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Çekme-Kopma (Tensile) testi numuneyi koparana kadar zorlayan tahribatlı bir mekanik testtir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C, D Şıkları Doğrudur: Standart Tahribatsız Muayene (NDT) yöntemleridir.</li></ul>'
+      },
+      {
+        n: 37,
+        topic: "Penetran Sıvı Muayenesi (PT) Uygulama Adım Sırası",
+        text: "Basınçlı bir kabın kaynak dikişlerinde meydana gelen yüzey çatlaklarını ve gözenekleri tespit etmek amacıyla Penetran Sıvı (Sıvı Emprenye) Muayenesi uygulanacaktır. Doğru bir test sonucu elde etmek için penetran sıvı muayene adımlarının uygulama sırası aşağıdakilerden hangisinde doğru olarak verilmiştir?<br><br>1. Geliştirici (Püskürtücü / Developer) Uygulanması<br>2. Yüzey Temizliği (Ön Temizlik)<br>3. Penetran Sıvının Sürülmesi / Püskürtülmesi ve Penetrasyon Süresi Bekleme<br>4. Değerlendirme ve İnceleme<br>5. Ara Temizlik (Kılcal kanallar dışındaki fazla penetran sıvının uzaklaştırılması)",
+        options: {
+          A: "2 - 3 - 5 - 1 - 4",
+          B: "1 - 2 - 3 - 4 - 5",
+          C: "3 - 2 - 1 - 5 - 4",
+          D: "2 - 1 - 3 - 5 - 4",
+          E: "5 - 4 - 3 - 2 - 1"
+        },
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Penetran sıvı muayenesi doğru adımları: 1. Ön Temizlik (2), 2. Penetran Sıvı Uygulaması (3), 3. Ara Temizlik (5), 4. Geliştirici/Developer (1), 5. İnceleme/Değerlendirme (4). Doğru sıra: 2-3-5-1-4.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D, E Şıkları Yanlıştır: İşlem adımlarını karıştıran hatalı sıralamalardır.</li></ul>'
+      },
+      {
+        n: 38,
+        topic: "Penetran Sıvı Muayenesinin Teknik Kısıtlaması",
+        text: "Penetran sıvı muayenesi (PT) tekniği ile basınçlı kap denetimi yapan bir kalite kontrol uzmanın göz önünde bulundurması gereken en temel teknik kısıtlama aşağıdakilerden hangisidir?",
+        options: {
+          A: "Malzemenin derinliklerinde yer alan döküm boşluklarını ve iç çatlakları yüksek hassasiyetle gösterir.",
+          B: "Sadece dış yüzeye açık kılcal çatlak ve süreksizlikleri tespit edebilir; yüzeye kapalı iç hataları tespit edemez ve gözenekli malzemelerde uygulanması zordur.",
+          C: "Sadece mıknatıs tarafından çekilen ferromanyetik malzemelerde geçerli bir yöntemdir.",
+          D: "Sıvı uygulandıktan sonra malzeme gövdesi en az 500°C sıcaklığa kadar fırınlanmalıdır.",
+          E: "Plastik ve kompozit kaplarda kesinlikle sonuç vermez."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Penetran sıvı kılcallık prensibiyle çalıştığı için sadece dış yüzeye açık çatlakları bulabilir; iç boşlukları gösteremez.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Yöntemin teknik kapasitesi hakkındaki yanlış ifadelerdir.</li></ul>'
+      },
+      {
+        n: 39,
+        topic: "Ultrasonik Muayene (UT) Yönteminin Temel Prensibi",
+        text: "Bir petrol rafinerisindeki küresel gaz depolama tankının et kalınlığı kayıplarını ve kaynak dikişlerinin iç yapısındaki cüruf kalıntılarını tespit etmek üzere yüksek frekanslı ses dalgalarının malzeme içinde yayılması ve yansıması prensibine dayanan NDT yöntemi kullanılacaktır. Söz konusu muayene yöntemi aşağıdakilerden hangisidir?",
+        options: {
+          A: "Penetran Sıvı Muayenesi",
+          B: "Ultrasonik Muayene (UT)",
+          C: "Radyografik Muayene",
+          D: "Görsel Muayene"
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yüksek frekanslı ses dalgalarının (0,5-20 MHz) malzeme içinde ilerlemesi ve yankılanması prensibiyle çalışan yöntem Ultrasonik Muayenedir (UT).</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Penetran sıvı emdirme yöntemidir.</li><li>C Şıkkı Yanlıştır: Radyografik ışınım yöntemidir.</li><li>D Şıkkı Yanlıştır: Görsel yüzey bakışıdır.</li></ul>'
+      },
+      {
+        n: 40,
+        topic: "Ultrasonik Muayenede Kuplaj Jeli Kullanımının Teknik Gerekçesi",
+        text: "Ultrasonik muayene (UT) cihazı ile basınçlı kap gövdesinde ölçüm yapılırken muayene probu ile metal yüzey arasına \"Kuplaj Sıvısı / Jel\" sürülmektedir. Bu uygulamanın temel teknik gerekçesi aşağıdakilerden hangisidir?",
+        options: {
+          A: "Metal yüzeyin korozyona uğramasını ve paslanmasını önlemek.",
+          B: "Prob ile yüzey arasındaki havayı elimine ederek yüksek frekanslı ses dalgalarının ortamsal kayba uğramadan malzemeye etkin şekilde iletilmesini sağlamak.",
+          C: "Metal yüzeyi eriterek ses dalgalarının içeri nüfuz etmesini kolaylaştırmak.",
+          D: "Ses dalgalarının frekansını düşürerek insan kulağının duyabileceği seviyeye getirmek.",
+          E: "Yüzeydeki koruyucu boya tabakasını kimyasal olarak kazımak."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Ultrasonik dalgalar hava-metal sınırında yüksek empedans farkı nedeniyle geri yansır. Kuplaj jeli aradaki havayı yok ederek sesin metale geçmesini sağlar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Jel kullanımının teknik amacıyla ilgisiz şıklardır.</li></ul>'
+      }
+    ]
+  },
+
+  /* ======================= TEST 3 ======================= */
+  {
+    id: 3,
+    title: "Test 3",
+    subtitle: "NDT Yöntemleri ve Basınçlı Gaz Tüpleri Depolama Güvenliği",
+    range: "Soru 41 – 60",
+    questions: [
+      {
+        n: 41,
+        topic: "Radyografik Muayenede İSG (Radyasyon Güvenliği)",
+        text: "Radyografik Muayene (RT) yöntemi ile basınçlı kap kaynak dikişleri denetlenirken X-ışınları veya Gama ışınları üreten radyasyon kaynakları kullanılır. Bu test esnasında alınması gereken en kritik İş Sağlığı ve Güvenliği (İSG) tedbiri aşağıdakilerden hangisidir?",
+        options: {
+          A: "Test sahasının radyasyon yayılım riskine karşı güvenlik kordonu altına alınması, radyasyon uyarı levhalarının asılması ve sertifikalı operatör dışındaki tüm personelin alandan tahliye edilmesi (radyasyon güvenliği).",
+          B: "Test sahasına yüksek debili soğuk su tutularak ışınların soğurulmasını sağlamak.",
+          C: "Test esnasında tank gövdesine megafonla vurularak sesli ikaz yapılması.",
+          D: "Radyografi filmi çekilirken tankın içine girilerek filmin elle tutulması.",
+          E: "Muayene esnasında ortamdaki tüm aydınlatma armatürlerinin kapatılması."
+        },
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Radyografik muayene yüksek enerjili X veya Gama radyasyonu yaydığı için en büyük risk radyasyon zehirlenmesidir; saha kordon altına alınmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D, E Şıkları Yanlıştır: Radyasyondan koruma sağlamayan ilgisiz eylemlerdir.</li></ul>'
+      },
+      {
+        n: 42,
+        topic: "Radyografik Muayenenin Kalıcı Arşiv Avantajı",
+        text: "Radyografik muayene (RT) tekniğinin, basınçlı kap kaynak denetimlerinde diğer NDT yöntemlerine kıyasla sağladığı en büyük mühendislik avantajı aşağıdakilerden hangisidir?",
+        options: {
+          A: "Maliyetinin son derece ucuz olması ve özel koruyucu donanım gerektirmemesi.",
+          B: "Muayene sonuçlarının film veya dijital görüntü (radyogram) şeklinde kalıcı bir arşiv ve kayıt belgesine dönüştürülebilmesi.",
+          C: "Operatör ve çevre çalışanları için hiçbir radyasyon riski taşımaması.",
+          D: "Sıcak malzemelere hiçbir hazırlık yapılmaksızın elle uygulanabilmesi.",
+          E: "Yalnızca yüzeysel çatlakları gösterip iç hataları tamamen süzebilmesi."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Radyografik muayene sonuçları filmler (radyogram) veya dijital dosyalar halinde süresiz saklanabilir kalıcı arşiv belgesi oluşturur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: RT tekniği ile uyuşmayan yanlış beyanlardır.</li></ul>'
+      },
+      {
+        n: 43,
+        topic: "Korozyon Et Kalınlığı Ölçümünde Ultrasonik Yöntem",
+        text: "Bir kimya tesisinde korozyon riski yüksek olan bir asit depolama tankının gövde et kalınlığı azalmalarını noktasal ve hassas olarak ölçmek için kullanılması gereken en pratik NDT tekniği aşağıdakilerden hangisidir?",
+        options: {
+          A: "Penetran Sıvı Testi",
+          B: "Ultrasonik Et Kalınlığı Ölçümü",
+          C: "Görsel Muayene",
+          D: "Radyografik Muayene",
+          E: "Manyetik Parçacık Testi"
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Korozyon kaynaklı et kalınlığı incelmelerini noktasal olarak en hızlı ve tahribatsız ölçen yöntem Ultrasonik Et Kalınlığı Ölçümüdür (UT-Thickness Gauge).</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Et kalınlığı haritalandırmasında pratik olmayan yöntemlerdir.</li></ul>'
+      },
+      {
+        n: 44,
+        topic: "Manyetik Parçacık Muayenesi (MT)",
+        text: "Basınçlı kap imalatında kullanılan ferritik çelik malzemelerin yüzey ve yüzeye yakın kılcal çatlaklarının tespiti amacıyla ortama manyetik akı uygulanması ve demir tozu püskürtülmesi esasına dayanan NDT yöntemi aşağıdakilerden hangisidir?",
+        options: {
+          A: "Manyetik Parçacık Muayenesi (MT)",
+          B: "Ultrasonik Muayene",
+          C: "Penetran Sıvı Testi",
+          D: "Eddy-Current (Girdap Akımları) Testi",
+          E: "Sertlik Ölçümü"
+        },
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Manyetik Parçacık Muayenesi (MT), manyetik akı kaçakları prensibiyle sadece ferromanyetik (mıknatıslanan) malzemelerde yüzey çatlaklarını tespit eder.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D, E Şıkları Yanlıştır: Manyetik kısıtlamaya doğrudan bağlı olmayan testlerdir.</li></ul>'
+      },
+      {
+        n: 45,
+        topic: "NDT Personel Sertifikasyonu (TS EN ISO 9712)",
+        text: "Tahribatsız muayene (NDT) yapan personelin yetkilendirilmesi, raporların hukuki geçerliliği ve uluslararası standartlar (TS EN ISO 9712) çerçevesinde aşağıdakilerden hangi kural geçerlidir?",
+        options: {
+          A: "NDT muayeneleri tesisteki herhangi bir deneyimli bakım işçisi tarafından göz kararı yapılabilir.",
+          B: "NDT muayeneleri ilgili standarda (TS EN ISO 9712) göre eğitim almış ve sertifikalandırılmış Seviye 1, Seviye 2 veya Seviye 3 NDT uzmanı personelce yapılmalı ve raporlanmalıdır.",
+          C: "NDT raporları sadece işletme sahibi tarafından imzalandığında geçerlilik kazanır.",
+          D: "NDT personel sertifikaları her ay yeniden sınavla yenilenmek zorundadır.",
+          E: "NDT uzmanlarının mühendislik eğitimi almış olması kanunen yasaklanmıştır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Uluslararası standartlar (TS EN ISO 9712) uyarınca NDT uygulamaları yetkili Seviye 1, 2 veya 3 sertifikalı personel tarafından yapılmalı ve onaylanmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Personel yetkilendirme kurallarına aykırı şıklardır.</li></ul>'
+      },
+      {
+        n: 46,
+        topic: "TS EN 1089-3 Gaz Tüpü Omuz Renk Kodlaması",
+        text: "Bir tersanede denetim yapan Başmühendis, gaz depolama alanındaki tüplerin tanımlanması süreçlerini incelemektedir. TS EN 1089-3 standardına göre basınçlı gaz tüplerinin tanınmasında ve içeriğindeki gazın birincil tehlike sınıfının anlaşılmasında tüpün hangi bölümündeki renk kodlaması esas alınır?",
+        options: {
+          A: "Tüpün taban kısmı",
+          B: "Tüpün silindirik gövde kısmı",
+          C: "Tüpün omuz (kavisli üst) kısmı",
+          D: "Sadece tüpün valf açma kolu",
+          E: "Tüpün taşıma arabası"
+        },
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> TS EN 1089-3 standardına göre gaz tüplerinin içerisindeki gazın birincil tehlike sınıfını belirten standart renk kodlaması tüpün kavisli Omuz kısmına uygulanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D, E Şıkları Yanlıştır: Standartta renk kodlaması için esas alınan bölgeler değildir.</li></ul>'
+      },
+      {
+        n: 47,
+        topic: "Gaz Tüpleri Omuz Renk Kodlaması (Yanlış Eşleştirme)",
+        text: "TS EN 1089-3 standardı uyarınca endüstride yaygın kullanılan gaz tüplerinin omuz renk kodlaması eşleştirmelerinden hangisi <strong>yanlıştır</strong>?",
+        options: {
+          A: "Oksijen -> Beyaz",
+          B: "Asetilen -> Kestane Rengi / Bordo (RAL 3009)",
+          C: "Argon -> Koyu Yeşil",
+          D: "Azot -> Siyah",
+          E: "Karbondioksit -> Kırmızı"
+        },
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> TS EN 1089-3 standardında Karbondioksit (CO₂) tüplerinin omuz rengi Gri olarak tanımlanmıştır. Kırmızı renk yanıcı gazlara (LPG, H₂) aittir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C, D Şıkları Doğrudur: Doğru omuz rengi eşleşmeleridir.</li></ul>'
+      },
+      {
+        n: 48,
+        topic: "TS EN 1089-3 Yeni Renk Kodlaması Sembolü (N Harfi)",
+        text: "TS EN 1089-3 standardına göre yeni renk kodlama sistemine uygun olarak boyanmış gaz tüplerinin omuz kısmına iki adet zıt renkte basılan ve tüpün yeni standarda göre renklendirildiğini gösteren simge/harf aşağıdakilerden hangisidir?",
+        options: {
+          A: "\"E\" Harfi",
+          B: "\"N\" Harfi",
+          C: "\"S\" Harfi",
+          D: "\"G\" Harfi",
+          E: "\"V\" Harfi"
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yeni renk standardına (TS EN 1089-3) göre boyanmış tüplerin omuz bölgesine iki adet zıt renkte "N" (New / Yeni) harfi basılır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Standartta yer almayan harf simgeleridir.</li></ul>'
+      },
+      {
+        n: 49,
+        topic: "Gaz Tüpü Valf Diş Yönü Emniyet Kuralı (Sol Diş/Sağ Diş)",
+        text: "Yanıcı bir gaz olan Asetilen tüpleri ile yakıcı bir gaz olan Oksijen tüplerinin valf çıkış cıvata diş yapıları (yiv yönleri) ile ilgili İSG emniyet kuralı aşağıdakilerden hangisidir?",
+        options: {
+          A: "Tüm gaz tüplerinin valf dişleri standart olarak sağa doğru (sağ diş) açılır.",
+          B: "Yanıcı gaz tüplerinin (Asetilen, LPG vb.) valf çıkış dişleri sol diş (sol yiv); yanıcı olmayan/yakıcı gazların (Oksijen vb.) ise sağ diş olarak imal edilir.",
+          C: "Oksijen tüpleri sol diş, Asetilen tüpleri düz diştir.",
+          D: "Valf diş yönleri imalatçı firmanın tercihine göre rastgele belirlenir.",
+          E: "Gaz tüplerinde dişli bağlantı kullanılması uluslararası standartlarca yasaklanmıştır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yanıcı gaz tüplerinde (Asetilen vb.) yanlışlıkla yakıcı gaz regülatörü takılmasını önlemek amacıyla valf dişleri Sol Diş (sol yiv); yakıcı/yanıcı olmayan gazlarda (Oksijen vb.) ise Sağ Diş yapılır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Mekanik karıştırılmayı önleme ilkesine aykırı şıklardır.</li></ul>'
+      },
+      {
+        n: 50,
+        topic: "Gaz Tüpü Valf Koruyucu Güvenlik Şapkası",
+        text: "Gaz tüplerinin taşınması ve depolanması esnasında valflerin darbe alarak kırılmasını ve tüpün roket etkisiyle fırlamasını önlemek amacıyla valf üzerine takılan koruyucu donanım aşağıdakilerden hangisidir?",
+        options: {
+          A: "Manometre kılıfı",
+          B: "Güvenlik Şapkası (Mekanik Koruyucu Şapka / Kaval Kapak)",
+          C: "Tüp altlığı",
+          D: "Asetilen alev geri tepme emniyet valfi",
+          E: "Basınç düşürücü regülatör"
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Tüp devrildiğinde valfin kırılarak yüksek basınçlı gazın tüpü bir roket gibi fırlatmasını önlemek için valf üzerine Güvenlik Şapkası (Kaval Kapak) takılır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Valf darbe emniyetini sağlayan ana kapak elemanı değildir.</li></ul>'
+      },
+      {
+        n: 51,
+        topic: "Oksijen-Yağ Reaksiyonu ve Oksidasyon Patlaması Tehlikesi",
+        text: "Oksijen gazı tüpleri ve regülatörleri ile çalışılırken ellerin, eldivenlerin veya ekipmanın gres yağı, makine yağı veya yağlı maddelerle temas etmesi durumunda karşılaşılacak en büyük tehlike aşağıdakilerden hangisidir?",
+        options: {
+          A: "Tüp dış yüzeyinin paslanması.",
+          B: "Yüksek basınçlı saf oksijenin yağ ile temas ettiğinde kıvılcım olmaksızın kendiliğinden şiddetli patlamaya ve patlamalı yanmaya (oksidasyon patlaması) neden olması.",
+          C: "Oksijen gazının tüp içerisinde aniden sıvılaşması.",
+          D: "Regülatörün donarak gaz akışını kesmesi.",
+          E: "Oksijen gazının kokusunun değişmesi."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yüksek basınçlı saf oksijen, hidrokarbon esaslı gres ve makine yağları ile temas ettiğinde tutuşma sıcaklığı aniden düşer ve kıvılcım olmadan şiddetli oksidasyon patlaması gerçekleşir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Oksijen-yağ reaksiyonunun hayati tehlikesini açıklamayan şıklardır.</li></ul>'
+      },
+      {
+        n: 52,
+        topic: "Asetilen Tüpü Dik Konum Kullanım Kuralı",
+        text: "Asetilen tüplerinin kullanımı ve çalışma sahasındaki duruş pozisyonu ile ilgili aşağıda verilen İSG kurallarından hangisi doğrudur?",
+        options: {
+          A: "Asetilen tüpleri yatay konumda yere yatırılarak kullanılmalıdır.",
+          B: "Asetilen tüpleri içinde çözünmüş asetilen ve aseton bulunduğu için kesinlikle dik konumda tutulmalı ve dik kullanılmalıdır.",
+          C: "Asetilen tüpleri kullanımdan hemen önce ters çevrilip sallanmalıdır.",
+          D: "Asetilen tüpleri 100°C sıcaklıktaki su banyosunda ısıtılarak kullanılmalıdır.",
+          E: "Asetilen tüplerinin üzerine çekiçle vurularak gaz seviyesi ölçülmelidir."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Asetilen tüpleri içinde sıvı aseton ve gözenekli kütle barındırır. Yatık tutulursa aseton dışarı kaçarak alev geri tepmesine ve patlamaya yol açar. Bu yüzden Asetilen tüpleri daima DİK tutulmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Asetilen tüp kullanımında patlamayı tetikleyecek ölümcül hatalardır.</li></ul>'
+      },
+      {
+        n: 53,
+        topic: "Alev Geri Tepme Emniyet Valfi (Flashback Arrestor)",
+        text: "Oksi-asetilen kaynak ve kesme işlerinde kullanılan gaz tesisatlarında, şerit (hortum) patlaması veya alevin tüpe doğru geri yürümesi durumunda yangın ve tüp patlamasını önleyen hayati güvenlik elemanı aşağıdakilerden hangisidir?",
+        options: {
+          A: "Basınç manometresi",
+          B: "Alev Geri Tepme Emniyet Valfi (Flashback Arrestor)",
+          C: "Tüp sabitleme kelepçesi",
+          D: "Kör tapa",
+          E: "Küresel vana"
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Oksi-asetilen hatlarında alevin hortumdan geçip tüp içine ulaşmasını ve tüpün patlamasını önleyen donanım Alev Geri Tepme Emniyet Valfidir (Flashback Arrestor).</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Alev yürütmesini durdurma özelliği olmayan elemanlardır.</li></ul>'
+      },
+      {
+        n: 54,
+        topic: "Yanıcı ve Yakıcı Gaz Tüplerinin Birlikte Depolanma Kuralı",
+        text: "Bir kimya fabrikasında gaz tüpleri depolanırken tehlike sınıflarına göre ayırım yapılacaktır. Gaz tüpleri depolama matrisinde \"Grup 1\" (Yanıcı Gazlar) ile \"Grup 2\" (Yakıcı / Oksitleyici Gazlar) tüplerinin aynı kapalı alanda arada hiçbir engel olmadan yan yana depolanması İSG açısından yasaktır. Bu iki grup tüp aynı depoda tutulacaksa aralarına konulması gereken yangın duvarının teknik özellikleri nasıl olmalıdır?",
+        options: {
+          A: "En az 1 metre yüksekliğinde ahşap paravan konulmalıdır.",
+          B: "En az 1.5 metre yüksekliğinde, en az 30 dakika yangına dayanıklı bir duvar yapılmalıdır.",
+          C: "Tüpler arasına en az 6 metre mesafe bırakılmalı veya aralarına en az 1,5 - 2 metre yüksekliğinde, en az 30 (veya 60) dakika yangına dayanıklı, gaz geçirmeyen bir yangın duvarı örülmelidir.",
+          D: "Aralarına bez perde çekilmesi yeterlidir.",
+          E: "Tüpler yan yana konulup üzerlerine plastik yanmaz örtü serilmelidir."
+        },
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yanıcı (Grup 1) ve Yakıcı (Grup 2) gaz tüpleri aynı depoda tutulacaksa aralarında en az 6 metre mesafe bırakılmalı veya en az 1,5-2 m yüksekliğinde en az 30 (veya 60) dakika yangına dayanıklı Yangın Duvarı örülmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D, E Şıkları Yanlıştır: Yangın yayılımını engelleyemeyecek yetersiz ayırma yöntemleridir.</li></ul>'
+      },
+      {
+        n: 55,
+        topic: "Gaz Tüplerinin Sabitlenmesi ve Devrilme Önleme Standardı",
+        text: "Bir şantiyede İSG auditoru olarak görev yapan Başmühendis, saha deposunu incelerken tüplerin rastgele duvara yaslandığını tespit etmiştir. Gaz tüplerinin açık veya kapalı depolama alanlarında devrilmelerini, düşmelerini ve mekanik darbeye maruz kalmalarını önlemek amacıyla uygulanması gereken temel sabitleme standardı aşağıdakilerden hangisidir?",
+        options: {
+          A: "Tüpleri birbirine halatla sarmak.",
+          B: "Tüpleri gövde kısımlarından zincir, kelepçe veya esnemeyen kayışlarla dik konumda sabitlemek.",
+          C: "Tüpleri üst üste yatay olarak istiflemek.",
+          D: "Tüpleri tahta takozların üzerine dengesizce dizmek.",
+          E: "Tüpleri boş bırakıp duvara yaslamak."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Gaz tüpleri devrilme ve düşmelere karşı orta gövde hizasından zincir, kelepçe veya esnemeyen dokuma kayışlarla sabit bir yapıya dik olarak bağlanmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Tüplerin devrilerek valf kırılmasına sebep olacak güvensiz uygulamalardır.</li></ul>'
+      },
+      {
+        n: 56,
+        topic: "Boş ve Dolu Gaz Tüplerinin Depolama Yönetimi",
+        text: "Boş gaz tüpleri ile dolu gaz tüplerinin depolanması ve sahadaki yönetimi ile ilgili aşağıda verilen kurallardan hangisi teknik olarak doğrudur?",
+        options: {
+          A: "Dolu ve boş tüpler karışık olarak aynı rafta tutulmalıdır.",
+          B: "Dolu ve boş tüpler birbirinden ayrı alanlarda depolanmalı ve üzerlerine \"DOLU\" veya \"BOŞ\" etiketleri asılmalıdır.",
+          C: "Boş tüplerin valfleri sonuna kadar açık bırakılmalıdır.",
+          D: "Boş tüplerin güvenlik şapkaları sökülüp atılmalıdır.",
+          E: "Boş tüpler yatay olarak yuvarlanarak depolanmalıdır."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Karışıklığı ve acil durumda hatalı kullanımı önlemek için dolu ve boş tüpler ayrı bölümlerde depolanmalı ve üzerleri "DOLU" - "BOŞ" olarak etiketlenmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Depo yönetim kurallarına aykırı güvensiz davranışlardır.</li></ul>'
+      },
+      {
+        n: 57,
+        topic: "Gaz Tüpü Deposu Yapısal ve Havalandırma Özellikleri (Yanlış İfade)",
+        text: "Gaz tüplerinin depolandığı kapalı alanların havalandırılması ve yapısal teknik özellikleri ile ilgili aşağıdakilerden hangisi <strong>yanlıştır</strong>?",
+        options: {
+          A: "Depo alanı doğal veya cebri (mekanik) havalandırma sistemine sahip olmalıdır.",
+          B: "Depo tabanında patlayıcı/ağır gaz birikimini önleyecek havalandırma menfezleri bulunmalıdır.",
+          C: "Depo içerisinde elektrik tesisatı ex-proof (patlamaya dayanıklı) olmalıdır.",
+          D: "Depo alanı doğrudan yüksek ısı kaynaklarının ve açık alevli çalışmaların yanı başında kurulmalıdır.",
+          E: "Depo zemin kaplaması kıvılcım çıkarmayan malzemeden yapılmalıdır."
+        },
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Gaz tüp depoları patlama ve aşırı basınç riskine karşı ısı kaynaklarından, açık alevli operasyonlardan ve direkt güneş ışığından uzak tutulmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C, E Şıkları Doğrudur: Depo sahalarında bulunması zorunlu doğru teknik özelliklerdir.</li></ul>'
+      },
+      {
+        n: 58,
+        topic: "Gaz Tüplerinin Taşınmasında Yasak Yöntemler",
+        text: "Gaz tüplerinin fabrika içerisinde bir yerden başka bir yere emniyetli bir şekilde taşınması esnasında aşağıdaki yöntemlerden hangisinin kullanılması kesinlikle yasaktır?",
+        options: {
+          A: "Tüpleri koruyucu şapkası takılı ve zincirle sabitlenmiş özel tüp taşıma arabalarıyla taşımak.",
+          B: "Tüpleri vana veya şapkalarından tutarak vinçle kancaya takıp tek başına kaldırmak ya da yerde yuvarlayarak taşımak.",
+          C: "Tüpleri özel taşıma sepetleri (kafesleri) ile vinç vasıtasıyla kaldırmak.",
+          D: "Tüpleri dik konumda taşımak.",
+          E: "Taşıma esnasında regülatörleri sökmek."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Tüplerin valf veya şapkalarından tutularak vinç kancasına takılması veya yerde yuvarlanması valf kırılmasına yol açacağı için kesinlikle yasaktır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Doğrudur: Güvenli tüp taşıma prosedürü adımlarıdır.</li></ul>'
+      },
+      {
+        n: 59,
+        topic: "Zehirli Gaz Tüplerinin Depolanmasında İlave Güvenlik Tedbirleri",
+        text: "Zehirli (Toksik) veya aşındırıcı gaz içeren tüplerin depolanması esnasında İSG açısından alınması gereken en önemli ilave tedbir nedir?",
+        options: {
+          A: "Tüpleri suyun içine batırarak depolamak.",
+          B: "Sızıntı durumunda personeli uyaracak gaz detektörleri bulundurmak ve uygun kaçış solunum cihazları/maskeleri temin etmek.",
+          C: "Depo kapısını sürekli kilitli tutup anahtarını kaybetmek.",
+          D: "Tüpleri doğrudan fabrika yemekhanesinde tutmak.",
+          E: "Tüplerin üzerine yağ sürmek."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Zehirli (Toksik) gaz depolama alanlarında muhtemel sızıntıları anında teşhis edecek gaz detektörleri ve personeli koruyacak acil durum solunum cihazları/maskeleri hazır bulundurulmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D, E Şıkları Yanlıştır: Toksik gaz emniyetiyle ilgisi olmayan mantıksız şıklardır.</li></ul>'
+      },
+      {
+        n: 60,
+        topic: "LPG Gazının Havadan Ağır Olma Özelliği ve Depolama Riski",
+        text: "LPG tüplerinin (sıvılaştırılmış petrol gazı) depolandığı alanlarda LPG gazının havadan ağır olması sebebiyle sızıntı durumunda izleyeceği yol ve yaratacağı risk hakkında aşağıdakilerden hangisi doğrudur?",
+        options: {
+          A: "LPG havadan hafif olduğu için hızla tavana yükselir ve çatıdan uçar.",
+          B: "LPG havadan ağır olduğu için tabana, çukurlara ve drenaj kanallarına çöker; birikerek patlama riski oluşturur.",
+          C: "LPG sızıntısı durumunda gaz derhal yok olur.",
+          D: "LPG tüpleri maden ocaklarının alt kotlarında depolanmalıdır.",
+          E: "LPG gazı suyla temas ettiğinde zehirli klor gazına dönüşür."
+        },
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> LPG gazı (Bütan/Propan) havadan ağır olduğu için kaçak durumunda dibe, çukurlara ve kanalizasyon menfezlerine çöker; hava ile karışarak patlayıcı atmosfer (ATEX) oluşturur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: LPG havadan hafif değildir.</li><li>C Şıkkı Yanlıştır: Gaz kendiliğinden yok olmaz.</li><li>D Şıkkı Yanlıştır: Madenlerde tabana çökerek boğulma ve patlama yaratır, depolanamaz.</li><li>E Şıkkı Yanlıştır: Klor gazına dönüşmez.</li></ul>'
+      }
+    ]
+  }
+];
+
+/* =========================================================
+   UYGULAMA MANTIĞI
+   ========================================================= */
+const state = {
+  currentTest: 0,
+  currentQ: [0, 0, 0],
+  answers: TESTS.map(t => t.questions.map(() => null))
+};
+
+const tabsEl = document.getElementById('tabs');
+const navEl = document.getElementById('navigator');
+const areaEl = document.getElementById('testArea');
+const resultEl = document.getElementById('resultCard');
+
+/* ---- TABS ---- */
+function buildTabs(){
+  tabsEl.innerHTML = TESTS.map((t, i) =>
+    `<button class="tab-btn ${i===0?'active':''}" data-test="${i}">
+       <span class="tt">${t.title}</span>
+       <span class="ts">${t.range}</span>
+     </button>`
+  ).join('');
+  tabsEl.querySelectorAll('.tab-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      state.currentTest = parseInt(btn.dataset.test, 10);
+      tabsEl.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      render();
+      window.scrollTo({top: tabsEl.offsetTop - 20, behavior:'smooth'});
+    });
+  });
+}
+
+/* ---- NAVIGATOR ---- */
+function buildNav(){
+  const test = TESTS[state.currentTest];
+  const ans = state.answers[state.currentTest];
+  navEl.innerHTML = test.questions.map((q, i)=>{
+    let cls = 'nav-chip';
+    if (ans[i] !== null){
+      cls += (ans[i] === q.answer) ? ' correct' : ' wrong';
+    }
+    if (i === state.currentQ[state.currentTest]) cls += ' current';
+    return `<button class="${cls}" data-idx="${i}">${q.n}</button>`;
+  }).join('');
+  navEl.querySelectorAll('.nav-chip').forEach(chip=>{
+    chip.addEventListener('click', ()=>{
+      state.currentQ[state.currentTest] = parseInt(chip.dataset.idx, 10);
+      render();
+      window.scrollTo({top: navEl.offsetTop - 80, behavior:'smooth'});
+    });
+  });
+}
+
+/* ---- HELPERS ---- */
+function calculateStats(testIdx){
+  const test = TESTS[testIdx];
+  const ans = state.answers[testIdx];
+  let dogru=0, yanlis=0, bos=0;
+  test.questions.forEach((q,i)=>{
+    if (ans[i] === null) bos++;
+    else if (ans[i] === q.answer) dogru++;
+    else yanlis++;
+  });
+  const puan = Math.round((dogru / test.questions.length) * 100);
+  return {dogru, yanlis, bos, puan, total: test.questions.length};
+}
+
+function updateScoreBar(){
+  const s = calculateStats(state.currentTest);
+  document.getElementById('sDogru').textContent = s.dogru;
+  document.getElementById('sYanlis').textContent = s.yanlis;
+  document.getElementById('sBos').textContent = s.bos;
+  document.getElementById('sPuan').textContent = s.puan;
+}
+
+/* ---- RENDER QUESTION ---- */
+function render(){
+  const testIdx = state.currentTest;
+  const qIdx = state.currentQ[testIdx];
+  const test = TESTS[testIdx];
+  const q = test.questions[qIdx];
+  const ans = state.answers[testIdx];
+  const userAnswer = ans[qIdx];
+  const answered = userAnswer !== null;
+
+  buildNav();
+  updateScoreBar();
+
+  /* Sadece var olan şıklar için harf listesi */
+  const optionLetters = Object.keys(q.options);
+  const optionsHtml = optionLetters.map(L=>{
+    let cls = 'option';
+    if (answered){
+      cls += ' disabled';
+      if (L === q.answer){
+        cls += (userAnswer === L) ? ' selected-correct' : ' reveal-correct';
+      } else if (L === userAnswer){
+        cls += ' selected-wrong';
+      } else {
+        cls += ' dim';
+      }
+    }
+    return `<button class="${cls}" data-letter="${L}">
+              <span class="letter">${L}</span>
+              <span class="otext">${q.options[L]}</span>
+            </button>`;
+  }).join('');
+
+  const feedbackHtml = answered
+    ? (userAnswer === q.answer
+        ? `<div class="feedback ok show"><span class="ico">✅</span> Doğru Cevap! Tebrikler.</div>`
+        : `<div class="feedback no show"><span class="ico">❌</span> Yanlış Cevap. Doğru cevap: <strong>${q.answer}</strong></div>`)
+    : '';
+
+  /* ==== ÇÖZÜM: Sadece cevap verildiğinde göster, KAPALI halde ==== */
+  const solutionHtml = answered
+    ? `<div class="solution">
+         <div class="solution-head clickable" id="solutionToggle">
+           <span>📖 Detaylı Çözümü Göster</span>
+           <span class="chev" id="solutionChev">▼</span>
+         </div>
+         <div class="solution-body" id="solutionBody">
+           <p><strong>Doğru Cevap:</strong> <span class="answer-tag">${q.answer}</span></p>
+           ${q.solution}
+         </div>
+       </div>`
+    : `<div class="solution">
+         <div class="solution-head">
+           <span>🔒 Çözümü Görmek İçin Bir Şık Seçiniz</span>
+         </div>
+       </div>`;
+
+  const prevDisabled = qIdx === 0 ? 'disabled' : '';
+  const nextDisabled = qIdx === test.questions.length - 1 ? 'disabled' : '';
+
+  areaEl.innerHTML = `
+    <div class="q-card">
+      <div class="q-meta">
+        <span class="q-badge">Soru ${q.n}</span>
+        <span class="q-topic">${q.topic}</span>
+      </div>
+      <div class="q-text">${q.text}</div>
+      <div class="options">${optionsHtml}</div>
+      ${feedbackHtml}
+      ${solutionHtml}
+      <div class="controls">
+        <button class="btn btn-ghost" id="btnPrev" ${prevDisabled}>⬅️ Önceki Soru</button>
+        <button class="btn btn-primary" id="btnNext" ${nextDisabled}>Sonraki Soru ➡️</button>
+      </div>
+    </div>
+  `;
+
+  /* Şık seçimi */
+  if (!answered){
+    areaEl.querySelectorAll('.option').forEach(opt=>{
+      opt.addEventListener('click', ()=>{
+        state.answers[testIdx][qIdx] = opt.dataset.letter;
+        render();
+        checkCompletion();
+      });
+    });
+  } else {
+    /* Detaylı çözüm aç/kapa - SADECE kullanıcı tıklarsa açılır */
+    const toggle = document.getElementById('solutionToggle');
+    const body = document.getElementById('solutionBody');
+    const chev = document.getElementById('solutionChev');
+    if (toggle && body){
+      toggle.addEventListener('click', ()=>{
+        const isOpen = body.classList.contains('show');
+        if (isOpen){
+          body.classList.remove('show');
+          if (chev) chev.classList.remove('open');
+          toggle.querySelector('span').textContent = '📖 Detaylı Çözümü Göster';
+        } else {
+          body.classList.add('show');
+          if (chev) chev.classList.add('open');
+          toggle.querySelector('span').textContent = '📖 Detaylı Çözümü Gizle';
+        }
+      });
+    }
+  }
+
+  /* Önceki / Sonraki */
+  const btnPrev = document.getElementById('btnPrev');
+  const btnNext = document.getElementById('btnNext');
+  if (btnPrev) btnPrev.addEventListener('click', ()=>{
+    if (state.currentQ[testIdx] > 0){
+      state.currentQ[testIdx]--;
+      render();
+      window.scrollTo({top: navEl.offsetTop - 80, behavior:'smooth'});
+    }
+  });
+  if (btnNext) btnNext.addEventListener('click', ()=>{
+    if (state.currentQ[testIdx] < test.questions.length - 1){
+      state.currentQ[testIdx]++;
+      render();
+      window.scrollTo({top: navEl.offsetTop - 80, behavior:'smooth'});
+    }
+  });
+}
+
+/* ---- COMPLETION CHECK ---- */
+function checkCompletion(){
+  const testIdx = state.currentTest;
+  const test = TESTS[testIdx];
+  const ans = state.answers[testIdx];
+  const allAnswered = ans.every(a => a !== null);
+  if (!allAnswered){
+    resultEl.classList.remove('show');
+    return;
+  }
+  const s = calculateStats(testIdx);
+  document.getElementById('rDogru').textContent = s.dogru;
+  document.getElementById('rYanlis').textContent = s.yanlis;
+  document.getElementById('rBos').textContent = s.bos;
+  document.getElementById('rPuan').textContent = s.puan;
+  document.getElementById('resTitle').textContent = `${test.title} Tamamlandı! 🎉`;
+  document.getElementById('resSub').textContent = `${test.subtitle} — ${test.range}`;
+  let msg = '';
+  if (s.puan >= 90) msg = '🏆 Mükemmel! Bu bölümdeki bilginiz uzmanlık düzeyinde.';
+  else if (s.puan >= 70) msg = '👍 İyi! Birkaç konuyu tekrar ederek mükemmelliğe ulaşabilirsiniz.';
+  else if (s.puan >= 50) msg = '📘 Fena değil. Konu anlatımını ve sunumu tekrar gözden geçirmenizi öneririz.';
+  else msg = '📖 Konu anlatımını ve detaylı çözümleri dikkatlice tekrar çalışmanız faydalı olacaktır.';
+  document.getElementById('resMsg').innerHTML = msg;
+  resultEl.classList.add('show');
+  resultEl.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+/* ---- INTRO TOGGLE ---- */
+document.getElementById('introHead').addEventListener('click', function(){
+  this.classList.toggle('closed');
+  document.getElementById('introBody').classList.toggle('hidden');
+});
+
+/* ---- INIT ---- */
+document.getElementById('yil').textContent = new Date().getFullYear();
+buildTabs();
+render();
+</script>
+
+</body>
+</html>
