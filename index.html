@@ -3,187 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="robots" content="noindex, nofollow">
-
+    <meta name="theme-color" content="#0a1628">
     <title>İSG Eğitim Portalı | Konya Teknik Üniversitesi</title>
-
-    <!-- GitHub Pages için güvenilir fallback yönlendirmesi -->
-    <meta http-equiv="refresh" content="0; url=login.html">
-
     <style>
-        :root {
-            --navy: #071a33;
-            --blue: #1769aa;
-            --cyan: #0ea5e9;
-            --text: #172033;
-            --muted: #64748b;
+        :root{
+            --navy:#0a1628;
+            --navy-2:#0f2444;
+            --blue:#1769aa;
+            --cyan:#0ea5e9;
+            --aqua:#22d3ee;
         }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        body {
-            font-family:
-                Inter,
-                "Segoe UI",
-                Roboto,
-                Arial,
-                sans-serif;
-
+        *{box-sizing:border-box;margin:0;padding:0;}
+        html,body{width:100%;height:100%;overflow:hidden;}
+        body{
+            font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif;
             background:
-                radial-gradient(
-                    circle at 20% 20%,
-                    rgba(23, 105, 170, .18),
-                    transparent 35%
-                ),
-                linear-gradient(
-                    135deg,
-                    #071a33 0%,
-                    #0b2948 55%,
-                    #1769aa 100%
-                );
-
-            color: white;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            min-height: 100vh;
+                radial-gradient(circle at 20% 30%, rgba(34,211,238,.18), transparent 45%),
+                radial-gradient(circle at 80% 70%, rgba(23,105,170,.28), transparent 50%),
+                linear-gradient(135deg, #04101f 0%, #0a1628 45%, #103d68 100%);
+            color:#fff;
+            min-height:100vh;
+            display:flex;align-items:center;justify-content:center;
+            position:relative;
         }
-
-        .loading {
-            width: min(460px, calc(100% - 40px));
-            text-align: center;
+        /* Yüzen partiküller */
+        .particle{
+            position:absolute;border-radius:50%;
+            background:radial-gradient(circle, rgba(34,211,238,.55), transparent 70%);
+            animation:float linear infinite;
+            pointer-events:none;
         }
-
-        .logo {
-            width: 68px;
-            height: 68px;
-
-            margin: 0 auto 22px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 20px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--blue),
-                    var(--cyan)
-                );
-
-            box-shadow:
-                0 18px 45px rgba(0,0,0,.25);
-
-            font-size: 22px;
-            font-weight: 900;
-            letter-spacing: -1px;
+        @keyframes float{
+            0%{transform:translateY(0) scale(1);opacity:0;}
+            10%{opacity:.7;}
+            90%{opacity:.7;}
+            100%{transform:translateY(-100vh) scale(1.4);opacity:0;}
         }
-
-        h1 {
-            margin: 0 0 10px;
-
-            font-size: 23px;
-            font-weight: 800;
+        .loading{
+            width:min(520px, calc(100% - 40px));
+            text-align:center;
+            position:relative;z-index:10;
         }
-
-        p {
-            margin: 0;
-
-            color: #cbd8e7;
-
-            font-size: 14px;
-            line-height: 1.7;
+        .logo-wrap{position:relative;margin:0 auto 28px;width:96px;height:96px;}
+        .logo-ring{
+            position:absolute;inset:0;border-radius:26px;
+            background:conic-gradient(from 0deg, #0ea5e9, #22d3ee, #1769aa, #0ea5e9);
+            animation:spin 3s linear infinite;
+            filter:blur(14px);opacity:.7;
         }
-
-        .loader {
-            width: 34px;
-            height: 34px;
-
-            margin: 28px auto 0;
-
-            border: 3px solid rgba(255,255,255,.22);
-            border-top-color: white;
-
-            border-radius: 50%;
-
-            animation:
-                spin .8s linear infinite;
+        @keyframes spin{to{transform:rotate(360deg);}}
+        .logo{
+            position:relative;
+            width:96px;height:96px;
+            border-radius:26px;
+            background:linear-gradient(135deg, #1769aa 0%, #0ea5e9 60%, #22d3ee 100%);
+            display:flex;align-items:center;justify-content:center;
+            font-size:30px;font-weight:900;letter-spacing:-1.5px;
+            box-shadow:0 20px 60px rgba(14,165,233,.45), inset 0 1px 0 rgba(255,255,255,.35);
+            border:1px solid rgba(255,255,255,.25);
         }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
+        .logo::after{
+            content:"";position:absolute;inset:0;border-radius:26px;
+            background:radial-gradient(circle at 30% 20%, rgba(255,255,255,.4), transparent 55%);
+            pointer-events:none;
         }
-
-        .manual {
-            margin-top: 24px;
-
-            font-size: 12px;
+        h1{
+            font-size:clamp(22px,3vw,28px);
+            font-weight:850;letter-spacing:-.5px;
+            background:linear-gradient(135deg, #ffffff 0%, #a9e4ff 100%);
+            -webkit-background-clip:text;background-clip:text;
+            -webkit-text-fill-color:transparent;
+            margin-bottom:12px;
         }
-
-        .manual a {
-            color: #fff;
-            text-decoration: underline;
-            text-underline-offset: 3px;
+        .sub{
+            color:#b9cfe8;font-size:14px;line-height:1.85;
         }
+        .sub strong{color:#fff;font-weight:800;}
+        .loader-bar{
+            margin:34px auto 0;
+            width:220px;height:4px;
+            background:rgba(255,255,255,.10);
+            border-radius:99px;overflow:hidden;position:relative;
+        }
+        .loader-bar::after{
+            content:"";position:absolute;left:-40%;
+            width:40%;height:100%;
+            background:linear-gradient(90deg, transparent, #22d3ee, #0ea5e9, transparent);
+            animation:slide 1.3s ease-in-out infinite;
+            border-radius:99px;
+        }
+        @keyframes slide{
+            0%{left:-40%;}
+            100%{left:100%;}
+        }
+        .status{
+            margin-top:20px;color:#7a9bc0;font-size:11.5px;
+            font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+            display:flex;align-items:center;justify-content:center;gap:10px;
+        }
+        .status .dot{
+            width:7px;height:7px;border-radius:50%;
+            background:#22d3ee;
+            box-shadow:0 0 0 0 rgba(34,211,238,.7);
+            animation:pulse 1.6s infinite;
+        }
+        @keyframes pulse{
+            0%{box-shadow:0 0 0 0 rgba(34,211,238,.7);}
+            70%{box-shadow:0 0 0 12px rgba(34,211,238,0);}
+            100%{box-shadow:0 0 0 0 rgba(34,211,238,0);}
+        }
+        .manual{margin-top:26px;font-size:12px;color:#8aa5c2;}
+        .manual a{color:#7fd8ff;text-decoration:underline;text-underline-offset:3px;}
     </style>
 </head>
-
 <body>
+    <div id="particles"></div>
 
     <main class="loading">
-
-        <div class="logo">
-            KT
+        <div class="logo-wrap">
+            <div class="logo-ring"></div>
+            <div class="logo">KT</div>
         </div>
 
-        <h1>
-            İSG Eğitim Portalı
-        </h1>
+        <h1>İSG Eğitim Portalı</h1>
 
-        <p>
-            Konya Teknik Üniversitesi<br>
+        <p class="sub">
+            <strong>Konya Teknik Üniversitesi</strong><br>
             İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans<br>
             2026–2027 Eğitim Öğretim Yılı
         </p>
 
-        <div class="loader"></div>
+        <div class="loader-bar"></div>
 
-        <div class="manual">
-            Giriş sayfası açılmazsa
-            <a href="login.html">
-                buraya tıklayın
-            </a>.
+        <div class="status">
+            <span class="dot"></span>
+            <span id="statusText">Oturum kontrol ediliyor</span>
         </div>
 
+        <div class="manual">
+            Yönlendirme gerçekleşmezse
+            <a href="login.html">buraya tıklayın</a>.
+        </div>
     </main>
 
     <script>
-        /*
-         * GitHub Pages uyumlu yönlendirme.
-         *
-         * replace() kullanıldığı için kullanıcı
-         * geri tuşuna bastığında gereksiz bir
-         * index.html döngüsü oluşmaz.
-         */
+        /* =========================================================
+           AKILLI YÖNLENDİRME
+           Oturum varsa → ana-sayfa.html
+           Oturum yoksa → login.html
+        ========================================================= */
+        (function(){
+            const authenticated = sessionStorage.getItem("ktun_isg_authenticated");
+            const target = (authenticated === "true") ? "ana-sayfa.html" : "login.html";
 
-        window.location.replace("login.html");
+            // Durum metnini güncelle
+            const st = document.getElementById("statusText");
+            if (st) {
+                st.textContent = (authenticated === "true")
+                    ? "Oturum aktif — yönlendiriliyor"
+                    : "Giriş sayfasına yönlendiriliyor";
+            }
+
+            // Kısa bir gecikme ile animasyonun görünmesini sağla
+            setTimeout(function(){
+                window.location.replace(target);
+            }, 700);
+        })();
+
+        /* =========================================================
+           PARTİKÜL EFEKTİ
+        ========================================================= */
+        (function(){
+            const container = document.getElementById("particles");
+            const count = 18;
+            for (let i = 0; i < count; i++) {
+                const p = document.createElement("div");
+                p.className = "particle";
+                const size = Math.random() * 4 + 2;
+                p.style.width = size + "px";
+                p.style.height = size + "px";
+                p.style.left = Math.random() * 100 + "%";
+                p.style.bottom = "-20px";
+                p.style.animationDuration = (Math.random() * 12 + 12) + "s";
+                p.style.animationDelay = (Math.random() * 8) + "s";
+                container.appendChild(p);
+            }
+        })();
     </script>
-
 </body>
 </html>

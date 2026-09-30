@@ -1,2583 +1,876 @@
 <!DOCTYPE html>
-
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-
-```
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
-
-<meta
-    name="description"
-    content="Konya Teknik Üniversitesi İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans 2026-2027 Eğitim Portalı"
->
-
-<meta name="theme-color" content="#071a33">
-
-<title>
-    İSG Eğitim Portalı | Konya Teknik Üniversitesi
-</title>
-
-<style>
-
-    /* =====================================================
-       TEMEL DEĞİŞKENLER
-    ===================================================== */
-
-    :root {
-
-        --navy: #071a33;
-        --navy-2: #0b2948;
-
-        --blue: #1769aa;
-        --blue-dark: #12588f;
-
-        --cyan: #0ea5e9;
-
-        --bg: #f4f7fb;
-        --white: #ffffff;
-
-        --text: #172033;
-        --text-2: #334155;
-        --muted: #64748b;
-
-        --border: #e2e8f0;
-
-        --green: #15803d;
-        --green-bg: #ecfdf3;
-
-        --orange: #c2410c;
-        --orange-bg: #fff7ed;
-
-        --shadow:
-            0 10px 35px rgba(15, 23, 42, .08);
-
-        --radius: 18px;
-    }
-
-
-    /* =====================================================
-       RESET
-    ===================================================== */
-
-    * {
-        box-sizing: border-box;
-    }
-
-
-    html {
-        scroll-behavior: smooth;
-    }
-
-
-    body {
-
-        margin: 0;
-
-        min-height: 100vh;
-
-        font-family:
-            Inter,
-            "Segoe UI",
-            Roboto,
-            Arial,
-            sans-serif;
-
-        background: var(--bg);
-
-        color: var(--text);
-    }
-
-
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-
-    button,
-    input {
-        font-family: inherit;
-    }
-
-
-    /* =====================================================
-       ÜST HEADER
-    ===================================================== */
-
-    .header {
-
-        position: sticky;
-
-        top: 0;
-
-        z-index: 1000;
-
-        background:
-            rgba(7, 26, 51, .96);
-
-        backdrop-filter:
-            blur(16px);
-
-        border-bottom:
-            1px solid
-            rgba(255,255,255,.08);
-    }
-
-
-    .header-inner {
-
-        width: min(
-            1400px,
-            calc(100% - 40px)
-        );
-
-        min-height: 76px;
-
-        margin: 0 auto;
-
-        display: flex;
-
-        align-items: center;
-
-        justify-content: space-between;
-
-        gap: 25px;
-    }
-
-
-    .brand {
-
-        display: flex;
-
-        align-items: center;
-
-        gap: 13px;
-
-        color: white;
-
-        min-width: 0;
-    }
-
-
-    .brand-logo {
-
-        width: 45px;
-        height: 45px;
-
-        flex: 0 0 45px;
-
-        border-radius: 13px;
-
-        display: flex;
-
-        align-items: center;
-        justify-content: center;
-
-        background:
-            linear-gradient(
-                135deg,
-                var(--blue),
-                var(--cyan)
-            );
-
-        font-size: 14px;
-
-        font-weight: 900;
-
-        box-shadow:
-            0 8px 20px
-            rgba(14,165,233,.20);
-    }
-
-
-    .brand-text {
-
-        min-width: 0;
-    }
-
-
-    .brand-title {
-
-        display: block;
-
-        font-size: 14px;
-
-        font-weight: 850;
-
-        white-space: nowrap;
-    }
-
-
-    .brand-subtitle {
-
-        display: block;
-
-        margin-top: 2px;
-
-        color: #9fb2c8;
-
-        font-size: 10px;
-
-        white-space: nowrap;
-    }
-
-
-    .header-actions {
-
-        display: flex;
-
-        align-items: center;
-
-        gap: 9px;
-    }
-
-
-    .header-button {
-
-        min-height: 38px;
-
-        padding:
-            0 14px;
-
-        border:
-            1px solid
-            rgba(255,255,255,.13);
-
-        border-radius: 9px;
-
-        background:
-            rgba(255,255,255,.06);
-
-        color: #e6eef7;
-
-        font-size: 11px;
-
-        font-weight: 750;
-
-        cursor: pointer;
-
-        transition:
-            background .18s,
-            transform .18s;
-    }
-
-
-    .header-button:hover {
-
-        background:
-            rgba(255,255,255,.12);
-
-        transform:
-            translateY(-1px);
-    }
-
-
-    .logout-button {
-
-        border-color:
-            rgba(255,255,255,.20);
-    }
-
-
-    /* =====================================================
-       HERO
-    ===================================================== */
-
-    .hero {
-
-        position: relative;
-
-        overflow: hidden;
-
-        background:
-            linear-gradient(
-                135deg,
-                var(--navy),
-                var(--navy-2) 55%,
-                #1769aa
-            );
-
-        color: white;
-    }
-
-
-    .hero::before {
-
-        content: "";
-
-        position: absolute;
-
-        width: 500px;
-        height: 500px;
-
-        right: -220px;
-        top: -280px;
-
-        border-radius: 50%;
-
-        background:
-            rgba(14,165,233,.13);
-    }
-
-
-    .hero::after {
-
-        content: "";
-
-        position: absolute;
-
-        width: 300px;
-        height: 300px;
-
-        left: -160px;
-        bottom: -210px;
-
-        border-radius: 50%;
-
-        background:
-            rgba(255,255,255,.035);
-    }
-
-
-    .hero-inner {
-
-        position: relative;
-
-        z-index: 2;
-
-        width: min(
-            1400px,
-            calc(100% - 40px)
-        );
-
-        margin: 0 auto;
-
-        padding:
-            65px 0 58px;
-    }
-
-
-    .eyebrow {
-
-        display: inline-flex;
-
-        align-items: center;
-
-        gap: 7px;
-
-        padding:
-            7px 11px;
-
-        border:
-            1px solid
-            rgba(255,255,255,.13);
-
-        border-radius: 999px;
-
-        background:
-            rgba(255,255,255,.06);
-
-        color: #b9e7ff;
-
-        font-size: 10px;
-
-        font-weight: 800;
-
-        letter-spacing: .09em;
-
-        text-transform: uppercase;
-    }
-
-
-    .hero h1 {
-
-        max-width: 850px;
-
-        margin:
-            20px 0 0;
-
-        font-size:
-            clamp(
-                31px,
-                4.2vw,
-                53px
-            );
-
-        line-height: 1.05;
-
-        letter-spacing: -1.8px;
-    }
-
-
-    .hero-description {
-
-        max-width: 720px;
-
-        margin:
-            20px 0 0;
-
-        color: #cfdeed;
-
-        font-size: 14px;
-
-        line-height: 1.8;
-    }
-
-
-    .hero-meta {
-
-        display: flex;
-
-        flex-wrap: wrap;
-
-        gap: 9px;
-
-        margin-top: 27px;
-    }
-
-
-    .meta-item {
-
-        padding:
-            8px 12px;
-
-        border-radius: 9px;
-
-        background:
-            rgba(255,255,255,.07);
-
-        border:
-            1px solid
-            rgba(255,255,255,.09);
-
-        color: #d7e5f2;
-
-        font-size: 11px;
-    }
-
-
-    /* =====================================================
-       ANA İÇERİK
-    ===================================================== */
-
-    .main {
-
-        width: min(
-            1400px,
-            calc(100% - 40px)
-        );
-
-        margin: 0 auto;
-
-        padding:
-            40px 0 70px;
-    }
-
-
-    /* =====================================================
-       KONTROL ALANI
-    ===================================================== */
-
-    .controls {
-
-        display: grid;
-
-        grid-template-columns:
-            minmax(250px, 1fr)
-            auto;
-
-        gap: 15px;
-
-        margin-bottom: 35px;
-    }
-
-
-    .search-box {
-
-        position: relative;
-    }
-
-
-    .search-icon {
-
-        position: absolute;
-
-        left: 16px;
-        top: 50%;
-
-        transform:
-            translateY(-50%);
-
-        color: #94a3b8;
-
-        font-size: 16px;
-
-        pointer-events: none;
-    }
-
-
-    .search {
-
-        width: 100%;
-
-        height: 52px;
-
-        padding:
-            0 18px 0 45px;
-
-        border:
-            1px solid
-            var(--border);
-
-        border-radius: 12px;
-
-        outline: none;
-
-        background: white;
-
-        color: var(--text);
-
-        box-shadow:
-            0 3px 12px
-            rgba(15,23,42,.03);
-
-        transition:
-            border-color .18s,
-            box-shadow .18s;
-    }
-
-
-    .search:focus {
-
-        border-color:
-            var(--cyan);
-
-        box-shadow:
-            0 0 0 4px
-            rgba(14,165,233,.09);
-    }
-
-
-    .filters {
-
-        display: flex;
-
-        gap: 7px;
-
-        padding: 5px;
-
-        border:
-            1px solid
-            var(--border);
-
-        border-radius: 12px;
-
-        background: white;
-    }
-
-
-    .filter {
-
-        height: 40px;
-
-        padding:
-            0 15px;
-
-        border: none;
-
-        border-radius: 8px;
-
-        background: transparent;
-
-        color: var(--muted);
-
-        font-size: 11px;
-
-        font-weight: 800;
-
-        cursor: pointer;
-    }
-
-
-    .filter.active {
-
-        background:
-            var(--navy);
-
-        color: white;
-
-        box-shadow:
-            0 4px 10px
-            rgba(7,26,51,.15);
-    }
-
-
-    /* =====================================================
-       İSTATİSTİKLER
-    ===================================================== */
-
-    .statistics {
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(4, 1fr);
-
-        gap: 13px;
-
-        margin-bottom: 42px;
-    }
-
-
-    .stat {
-
-        min-height: 105px;
-
-        padding: 18px;
-
-        background: white;
-
-        border:
-            1px solid
-            var(--border);
-
-        border-radius: 14px;
-
-        box-shadow:
-            0 4px 18px
-            rgba(15,23,42,.035);
-    }
-
-
-    .stat-label {
-
-        color: var(--muted);
-
-        font-size: 10px;
-
-        font-weight: 800;
-
-        text-transform: uppercase;
-
-        letter-spacing: .07em;
-    }
-
-
-    .stat-number {
-
-        margin-top: 8px;
-
-        color: var(--navy);
-
-        font-size: 28px;
-
-        line-height: 1;
-
-        font-weight: 900;
-    }
-
-
-    /* =====================================================
-       DÖNEM BÖLÜMÜ
-    ===================================================== */
-
-    .semester {
-
-        margin-bottom: 55px;
-    }
-
-
-    .semester-header {
-
-        display: flex;
-
-        align-items: flex-end;
-
-        justify-content: space-between;
-
-        gap: 20px;
-
-        margin-bottom: 20px;
-
-        padding-bottom: 14px;
-
-        border-bottom:
-            1px solid
-            var(--border);
-    }
-
-
-    .semester-title-area {
-
-        display: flex;
-
-        align-items: center;
-
-        gap: 14px;
-    }
-
-
-    .semester-number {
-
-        width: 42px;
-        height: 42px;
-
-        flex: 0 0 42px;
-
-        border-radius: 12px;
-
-        display: flex;
-
-        align-items: center;
-        justify-content: center;
-
-        background:
-            linear-gradient(
-                135deg,
-                var(--blue),
-                var(--cyan)
-            );
-
-        color: white;
-
-        font-size: 13px;
-
-        font-weight: 900;
-
-        box-shadow:
-            0 7px 16px
-            rgba(23,105,170,.18);
-    }
-
-
-    .semester h2 {
-
-        margin: 0;
-
-        color: var(--navy);
-
-        font-size: 22px;
-
-        letter-spacing: -.5px;
-    }
-
-
-    .semester-subtitle {
-
-        margin-top: 4px;
-
-        color: var(--muted);
-
-        font-size: 11px;
-    }
-
-
-    .semester-count {
-
-        color: var(--muted);
-
-        font-size: 11px;
-
-        font-weight: 700;
-    }
-
-
-    /* =====================================================
-       DERS GRID
-    ===================================================== */
-
-    .course-grid {
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(3, 1fr);
-
-        gap: 15px;
-    }
-
-
-    .course {
-
-        position: relative;
-
-        min-height: 205px;
-
-        padding: 23px;
-
-        display: flex;
-
-        flex-direction: column;
-
-        background: white;
-
-        border:
-            1px solid
-            var(--border);
-
-        border-radius:
-            var(--radius);
-
-        box-shadow:
-            0 5px 22px
-            rgba(15,23,42,.045);
-
-        overflow: hidden;
-
-        transition:
-            transform .18s,
-            box-shadow .18s,
-            border-color .18s;
-    }
-
-
-    .course::before {
-
-        content: "";
-
-        position: absolute;
-
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 3px;
-
-        background:
-            linear-gradient(
-                90deg,
-                var(--blue),
-                var(--cyan)
-            );
-    }
-
-
-    .course:hover {
-
-        transform:
-            translateY(-3px);
-
-        border-color:
-            #cbd5e1;
-
-        box-shadow:
-            0 14px 35px
-            rgba(15,23,42,.09);
-    }
-
-
-    .course-number {
-
-        width: 32px;
-        height: 32px;
-
-        border-radius: 9px;
-
-        display: flex;
-
-        align-items: center;
-        justify-content: center;
-
-        background:
-            #eef6fc;
-
-        color:
-            var(--blue);
-
-        font-size: 10px;
-
-        font-weight: 900;
-
-        margin-bottom: 17px;
-    }
-
-
-    .course h3 {
-
-        margin: 0;
-
-        color: var(--navy);
-
-        font-size: 15px;
-
-        line-height: 1.4;
-
-        letter-spacing: -.15px;
-    }
-
-
-    .instructor {
-
-        margin-top: 8px;
-
-        color: var(--muted);
-
-        font-size: 11px;
-
-        line-height: 1.5;
-    }
-
-
-    .course-footer {
-
-        display: flex;
-
-        align-items: center;
-
-        justify-content: space-between;
-
-        gap: 10px;
-
-        margin-top: auto;
-
-        padding-top: 18px;
-    }
-
-
-    .course-badge {
-
-        padding:
-            5px 8px;
-
-        border-radius: 7px;
-
-        background:
-            var(--green-bg);
-
-        color:
-            var(--green);
-
-        font-size: 9px;
-
-        font-weight: 800;
-    }
-
-
-    .course-link {
-
-        color:
-            var(--blue);
-
-        font-size: 10px;
-
-        font-weight: 850;
-    }
-
-
-    .course-link::after {
-
-        content: " →";
-    }
-
-
-    /* =====================================================
-       GİZLENEN DERSLER
-    ===================================================== */
-
-    .course.hidden {
-
-        display: none;
-    }
-
-
-    .semester.hidden {
-
-        display: none;
-    }
-
-
-    .no-results {
-
-        display: none;
-
-        padding: 50px 20px;
-
-        text-align: center;
-
-        background: white;
-
-        border:
-            1px solid
-            var(--border);
-
-        border-radius: 16px;
-
-        color: var(--muted);
-    }
-
-
-    .no-results strong {
-
-        display: block;
-
-        margin-bottom: 6px;
-
-        color: var(--navy);
-
-        font-size: 16px;
-    }
-
-
-    /* =====================================================
-       BİLGİ / HAZIRLAYAN
-    ===================================================== */
-
-    .info-panel {
-
-        margin-top: 10px;
-
-        padding: 30px;
-
-        background:
-            linear-gradient(
-                135deg,
-                #071a33,
-                #0d3155
-            );
-
-        color: white;
-
-        border-radius: 18px;
-
-        display: grid;
-
-        grid-template-columns:
-            1fr auto;
-
-        gap: 30px;
-
-        align-items: center;
-    }
-
-
-    .info-panel h3 {
-
-        margin: 0 0 8px;
-
-        font-size: 17px;
-    }
-
-
-    .info-panel p {
-
-        margin: 0;
-
-        color: #b9cce0;
-
-        font-size: 11px;
-
-        line-height: 1.7;
-    }
-
-
-    .creator {
-
-        text-align: right;
-    }
-
-
-    .creator strong {
-
-        display: block;
-
-        color: white;
-
-        font-size: 13px;
-    }
-
-
-    .creator span {
-
-        display: block;
-
-        margin-top: 4px;
-
-        color: #a9bfd4;
-
-        font-size: 10px;
-    }
-
-
-    /* =====================================================
-       FOOTER
-    ===================================================== */
-
-    .footer {
-
-        background:
-            #04101f;
-
-        color: #94a9bf;
-
-        padding: 28px 0;
-    }
-
-
-    .footer-inner {
-
-        width: min(
-            1400px,
-            calc(100% - 40px)
-        );
-
-        margin: 0 auto;
-
-        display: flex;
-
-        align-items: center;
-
-        justify-content: space-between;
-
-        gap: 20px;
-    }
-
-
-    .footer-text {
-
-        font-size: 10px;
-
-        line-height: 1.7;
-    }
-
-
-    .footer-name {
-
-        color: #d9e6f2;
-
-        font-weight: 800;
-    }
-
-
-    .logout-footer {
-
-        color: #b9cee1;
-
-        font-size: 10px;
-
-        font-weight: 750;
-
-        cursor: pointer;
-
-        background: none;
-
-        border: none;
-    }
-
-
-    .logout-footer:hover {
-
-        color: white;
-    }
-
-
-    /* =====================================================
-       TABLET
-    ===================================================== */
-
-    @media (max-width: 1100px) {
-
-        .course-grid {
-
-            grid-template-columns:
-                repeat(2, 1fr);
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans Eğitim Portalı">
+    <meta name="theme-color" content="#0a1628">
+    <title>İSG Eğitim Portalı | Konya Teknik Üniversitesi</title>
+    <style>
+        :root{
+            --navy:#071a33;
+            --navy-2:#0b2948;
+            --blue:#1769aa;
+            --cyan:#0ea5e9;
+            --aqua:#22d3ee;
+            --bg:#f4f7fb;
+            --white:#fff;
+            --text:#172033;
+            --muted:#64748b;
+            --border:#e2e8f0;
+            --green:#15803d;
+            --green-bg:#ecfdf3;
+            --shadow:0 10px 35px rgba(15,23,42,.08);
+            --radius:18px;
+        }
+        *{box-sizing:border-box;margin:0;padding:0;}
+        html{scroll-behavior:smooth;}
+        body{
+            font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif;
+            background:var(--bg);color:var(--text);min-height:100vh;
+        }
+        a{color:inherit;text-decoration:none;}
+        button,input{font-family:inherit;}
+
+        /* ============ HEADER ============ */
+        .header{
+            position:sticky;top:0;z-index:1000;
+            background:rgba(7,26,51,.96);
+            backdrop-filter:blur(16px);
+            border-bottom:1px solid rgba(255,255,255,.08);
+        }
+        .header-inner{
+            width:min(1400px, calc(100% - 40px));
+            min-height:76px;margin:0 auto;
+            display:flex;align-items:center;justify-content:space-between;gap:25px;
+        }
+        .brand{display:flex;align-items:center;gap:13px;color:#fff;min-width:0;}
+        .brand-logo{
+            width:45px;height:45px;flex:0 0 45px;
+            border-radius:13px;
+            display:flex;align-items:center;justify-content:center;
+            background:linear-gradient(135deg,var(--blue),var(--cyan) 70%,var(--aqua));
+            font-size:14px;font-weight:900;
+            box-shadow:0 8px 20px rgba(14,165,233,.28);
+        }
+        .brand-text{min-width:0;}
+        .brand-title{display:block;font-size:14px;font-weight:850;white-space:nowrap;}
+        .brand-subtitle{display:block;margin-top:2px;color:#9fb2c8;font-size:10px;white-space:nowrap;}
+
+        .header-actions{display:flex;align-items:center;gap:9px;}
+        .user-chip{
+            display:flex;align-items:center;gap:9px;
+            padding:6px 14px 6px 6px;
+            border:1px solid rgba(255,255,255,.14);
+            border-radius:99px;
+            background:rgba(255,255,255,.06);
+            color:#e6eef7;font-size:11.5px;font-weight:750;
+        }
+        .user-avatar{
+            width:28px;height:28px;border-radius:50%;
+            display:flex;align-items:center;justify-content:center;
+            background:linear-gradient(135deg,var(--cyan),var(--aqua));
+            font-size:11px;font-weight:900;color:#04101f;
+        }
+        .header-button{
+            min-height:38px;padding:0 14px;
+            border:1px solid rgba(255,255,255,.13);
+            border-radius:9px;
+            background:rgba(255,255,255,.06);
+            color:#e6eef7;font-size:11px;font-weight:750;cursor:pointer;
+            transition:background .18s, transform .18s;
+        }
+        .header-button:hover{background:rgba(255,255,255,.12);transform:translateY(-1px);}
+        .logout-button{border-color:rgba(255,255,255,.20);}
+
+        /* ============ HERO ============ */
+        .hero{
+            position:relative;overflow:hidden;
+            background:linear-gradient(135deg,var(--navy),var(--navy-2) 55%,#1769aa);
+            color:#fff;
+        }
+        .hero::before{
+            content:"";position:absolute;width:520px;height:520px;
+            right:-240px;top:-300px;border-radius:50%;
+            background:radial-gradient(circle, rgba(34,211,238,.16), transparent 65%);
+            animation:orb 20s ease-in-out infinite;
+        }
+        .hero::after{
+            content:"";position:absolute;width:340px;height:340px;
+            left:-180px;bottom:-240px;border-radius:50%;
+            background:radial-gradient(circle, rgba(23,105,170,.35), transparent 70%);
+        }
+        @keyframes orb{
+            0%,100%{transform:translate(0,0) scale(1);}
+            50%{transform:translate(30px,-25px) scale(1.08);}
+        }
+        .hero-inner{
+            position:relative;z-index:2;
+            width:min(1400px, calc(100% - 40px));
+            margin:0 auto;padding:65px 0 58px;
+        }
+        .eyebrow{
+            display:inline-flex;align-items:center;gap:8px;
+            padding:7px 12px;
+            border:1px solid rgba(255,255,255,.14);
+            border-radius:99px;
+            background:rgba(255,255,255,.06);
+            color:#b9e7ff;font-size:10px;font-weight:800;
+            letter-spacing:.10em;text-transform:uppercase;
+        }
+        .eyebrow .pulse{
+            width:7px;height:7px;border-radius:50%;background:var(--aqua);
+            box-shadow:0 0 0 0 rgba(34,211,238,.8);
+            animation:pulse 1.8s infinite;
+        }
+        @keyframes pulse{
+            0%{box-shadow:0 0 0 0 rgba(34,211,238,.8);}
+            70%{box-shadow:0 0 0 12px rgba(34,211,238,0);}
+            100%{box-shadow:0 0 0 0 rgba(34,211,238,0);}
+        }
+        .hero h1{
+            max-width:850px;margin:22px 0 0;
+            font-size:clamp(31px, 4.2vw, 54px);
+            line-height:1.05;letter-spacing:-1.8px;
+            background:linear-gradient(135deg, #ffffff 0%, #a9e4ff 60%, #7fd8ff 100%);
+            -webkit-background-clip:text;background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+        .hero-description{
+            max-width:720px;margin:20px 0 0;
+            color:#cfdeed;font-size:14px;line-height:1.85;
+        }
+        .hero-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:27px;}
+        .meta-item{
+            display:inline-flex;align-items:center;gap:8px;
+            padding:9px 14px;border-radius:10px;
+            background:rgba(255,255,255,.07);
+            border:1px solid rgba(255,255,255,.10);
+            color:#d7e5f2;font-size:11.5px;font-weight:600;
+            transition:background .2s, transform .2s;
+        }
+        .meta-item:hover{background:rgba(34,211,238,.13);transform:translateY(-2px);}
+        .meta-item .dot{
+            width:7px;height:7px;border-radius:50%;background:var(--aqua);
         }
 
-        .statistics {
-
-            grid-template-columns:
-                repeat(2, 1fr);
-        }
-    }
-
-
-    /* =====================================================
-       MOBİL
-    ===================================================== */
-
-    @media (max-width: 760px) {
-
-        .header-inner,
-        .hero-inner,
-        .main,
-        .footer-inner {
-
-            width:
-                min(
-                    100% - 28px,
-                    1400px
-                );
+        /* ============ MAIN ============ */
+        .main{
+            width:min(1400px, calc(100% - 40px));
+            margin:0 auto;padding:40px 0 70px;
         }
 
-
-        .header-inner {
-
-            min-height: 67px;
+        /* ============ KONTROLLER ============ */
+        .controls{
+            display:grid;
+            grid-template-columns:minmax(250px, 1fr) auto;
+            gap:15px;margin-bottom:30px;
+        }
+        .search-box{position:relative;}
+        .search-icon{
+            position:absolute;left:17px;top:50%;transform:translateY(-50%);
+            color:#94a3b8;font-size:16px;pointer-events:none;
+        }
+        .search{
+            width:100%;height:54px;
+            padding:0 18px 0 47px;
+            border:1px solid var(--border);
+            border-radius:13px;outline:none;background:#fff;
+            color:var(--text);font-size:14px;
+            box-shadow:0 4px 14px rgba(15,23,42,.04);
+            transition:border-color .18s, box-shadow .18s;
+        }
+        .search:focus{
+            border-color:var(--cyan);
+            box-shadow:0 0 0 4px rgba(14,165,233,.10);
+        }
+        .filters{
+            display:flex;gap:7px;padding:5px;
+            border:1px solid var(--border);border-radius:13px;
+            background:#fff;
+        }
+        .filter{
+            height:42px;padding:0 17px;border:none;border-radius:9px;
+            background:transparent;color:var(--muted);
+            font-size:11.5px;font-weight:800;cursor:pointer;
+            transition:all .22s ease;
+        }
+        .filter:hover{color:var(--navy);}
+        .filter.active{
+            background:linear-gradient(135deg,var(--navy),var(--navy-2));
+            color:#fff;
+            box-shadow:0 6px 14px rgba(7,26,51,.22);
         }
 
-
-        .brand-title {
-
-            font-size: 12px;
+        /* ============ İSTATİSTİKLER ============ */
+        .statistics{
+            display:grid;grid-template-columns:repeat(4,1fr);
+            gap:14px;margin-bottom:42px;
+        }
+        .stat{
+            position:relative;
+            min-height:112px;padding:20px;
+            background:#fff;border:1px solid var(--border);
+            border-radius:16px;overflow:hidden;
+            box-shadow:0 5px 20px rgba(15,23,42,.04);
+            transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+        }
+        .stat::before{
+            content:"";position:absolute;top:0;left:0;
+            width:100%;height:3px;
+            background:linear-gradient(90deg,var(--blue),var(--cyan),var(--aqua));
+            opacity:.9;
+        }
+        .stat:hover{
+            transform:translateY(-4px);
+            box-shadow:0 14px 34px rgba(15,23,42,.10);
+            border-color:#cbd5e1;
+        }
+        .stat-label{
+            color:var(--muted);font-size:10px;font-weight:800;
+            text-transform:uppercase;letter-spacing:.08em;
+        }
+        .stat-number{
+            margin-top:10px;color:var(--navy);
+            font-size:30px;line-height:1;font-weight:900;
+            background:linear-gradient(135deg,var(--navy),var(--blue) 60%,var(--cyan));
+            -webkit-background-clip:text;background-clip:text;
+            -webkit-text-fill-color:transparent;
         }
 
-
-        .brand-subtitle {
-
-            display: none;
+        /* ============ DÖNEM ============ */
+        .semester{margin-bottom:55px;}
+        .semester-header{
+            display:flex;align-items:flex-end;justify-content:space-between;
+            gap:20px;margin-bottom:22px;padding-bottom:16px;
+            border-bottom:1px solid var(--border);
+            position:relative;
+        }
+        .semester-header::after{
+            content:"";position:absolute;left:0;bottom:-1px;
+            width:80px;height:3px;
+            background:linear-gradient(90deg,var(--cyan),var(--aqua));
+            border-radius:99px;
+        }
+        .semester-title-area{display:flex;align-items:center;gap:14px;}
+        .semester-number{
+            width:46px;height:46px;flex:0 0 46px;
+            border-radius:13px;display:flex;align-items:center;justify-content:center;
+            background:linear-gradient(135deg,var(--blue),var(--cyan) 70%,var(--aqua));
+            color:#fff;font-size:14px;font-weight:900;
+            box-shadow:0 9px 20px rgba(23,105,170,.24);
+        }
+        .semester h2{
+            margin:0;color:var(--navy);
+            font-size:23px;letter-spacing:-.6px;font-weight:850;
+        }
+        .semester-subtitle{margin-top:4px;color:var(--muted);font-size:11.5px;font-weight:600;}
+        .semester-count{
+            color:var(--muted);font-size:11.5px;font-weight:750;
+            padding:6px 12px;border-radius:8px;
+            background:#eef4fb;border:1px solid #dde9f7;
         }
 
+        /* ============ DERS GRID ============ */
+        .course-grid{
+            display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+        }
+        .course{
+            position:relative;min-height:215px;padding:24px;
+            display:flex;flex-direction:column;
+            background:#fff;border:1px solid var(--border);
+            border-radius:var(--radius);overflow:hidden;
+            box-shadow:0 5px 22px rgba(15,23,42,.045);
+            transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+        }
+        .course::before{
+            content:"";position:absolute;top:0;left:0;
+            width:100%;height:3px;
+            background:linear-gradient(90deg,var(--blue),var(--cyan),var(--aqua));
+            transform:scaleX(0);transform-origin:left;
+            transition:transform .35s ease;
+        }
+        .course::after{
+            content:"";position:absolute;
+            width:180px;height:180px;
+            right:-90px;bottom:-90px;
+            border-radius:50%;
+            background:radial-gradient(circle, rgba(34,211,238,.14), transparent 70%);
+            opacity:0;transition:opacity .35s ease;
+            pointer-events:none;
+        }
+        .course:hover{
+            transform:translateY(-5px);
+            border-color:#cbd5e1;
+            box-shadow:0 18px 42px rgba(15,23,42,.10);
+        }
+        .course:hover::before{transform:scaleX(1);}
+        .course:hover::after{opacity:1;}
 
-        .header-actions {
+        .course-number{
+            width:34px;height:34px;border-radius:10px;
+            display:flex;align-items:center;justify-content:center;
+            background:linear-gradient(135deg,#eef6fc,#e0f2fe);
+            color:var(--blue);font-size:11px;font-weight:900;
+            margin-bottom:17px;
+            position:relative;z-index:2;
+        }
+        .course h3{
+            margin:0;color:var(--navy);
+            font-size:15px;line-height:1.42;letter-spacing:-.15px;
+            position:relative;z-index:2;
+        }
+        .instructor{
+            margin-top:9px;color:var(--muted);font-size:11.5px;line-height:1.55;
+            position:relative;z-index:2;
+        }
+        .course-footer{
+            display:flex;align-items:center;justify-content:space-between;
+            gap:10px;margin-top:auto;padding-top:18px;
+            position:relative;z-index:2;
+        }
+        .course-badge{
+            padding:5px 9px;border-radius:7px;
+            background:var(--green-bg);color:var(--green);
+            font-size:9.5px;font-weight:850;
+        }
+        .course-link{
+            color:var(--blue);font-size:10.5px;font-weight:850;
+            transition:color .2s, transform .2s;
+            display:inline-flex;align-items:center;gap:3px;
+        }
+        .course:hover .course-link{
+            color:var(--cyan);
+            transform:translateX(3px);
+        }
+        .course-link::after{content:"→";}
 
-            gap: 5px;
+        .course.hidden{display:none;}
+        .semester.hidden{display:none;}
+
+        .no-results{
+            display:none;padding:56px 20px;text-align:center;
+            background:#fff;border:1px solid var(--border);
+            border-radius:16px;color:var(--muted);
+        }
+        .no-results strong{
+            display:block;margin-bottom:6px;
+            color:var(--navy);font-size:16px;
         }
 
+        /* ============ BİLGİ PANELİ ============ */
+        .info-panel{
+            margin-top:10px;padding:32px;
+            background:linear-gradient(135deg,#071a33,#0d3155 70%,#1769aa);
+            color:#fff;border-radius:18px;
+            display:grid;grid-template-columns:1fr auto;
+            gap:30px;align-items:center;
+            position:relative;overflow:hidden;
+        }
+        .info-panel::before{
+            content:"";position:absolute;
+            width:300px;height:300px;
+            right:-120px;top:-120px;border-radius:50%;
+            background:radial-gradient(circle, rgba(34,211,238,.16), transparent 65%);
+        }
+        .info-panel h3{margin:0 0 8px;font-size:17px;position:relative;z-index:2;}
+        .info-panel p{
+            margin:0;color:#b9cce0;font-size:12px;line-height:1.75;
+            position:relative;z-index:2;
+        }
+        .creator{text-align:right;position:relative;z-index:2;}
+        .creator strong{display:block;color:#fff;font-size:13.5px;}
+        .creator span{display:block;margin-top:5px;color:#a9bfd4;font-size:10.5px;}
 
-        .header-button {
+        /* ============ FOOTER ============ */
+        .footer{background:#04101f;color:#94a9bf;padding:30px 0;}
+        .footer-inner{
+            width:min(1400px, calc(100% - 40px));
+            margin:0 auto;
+            display:flex;align-items:center;justify-content:space-between;gap:20px;
+        }
+        .footer-text{font-size:10.5px;line-height:1.75;}
+        .footer-name{color:#d9e6f2;font-weight:800;}
+        .logout-footer{
+            color:#b9cee1;font-size:10.5px;font-weight:750;
+            cursor:pointer;background:none;border:none;
+        }
+        .logout-footer:hover{color:#fff;}
 
-            padding:
-                0 10px;
-
-            font-size: 10px;
+        /* ============ TABLET ============ */
+        @media (max-width:1100px){
+            .course-grid{grid-template-columns:repeat(2,1fr);}
+            .statistics{grid-template-columns:repeat(2,1fr);}
         }
 
-
-        .hero-inner {
-
-            padding:
-                48px 0 45px;
+        /* ============ MOBİL ============ */
+        @media (max-width:760px){
+            .header-inner,.hero-inner,.main,.footer-inner{
+                width:min(100% - 28px, 1400px);
+            }
+            .header-inner{min-height:67px;}
+            .brand-title{font-size:12px;}
+            .brand-subtitle,.user-chip span{display:none;}
+            .header-actions{gap:5px;}
+            .header-button{padding:0 10px;font-size:10px;}
+            .hero-inner{padding:48px 0 45px;}
+            .hero h1{font-size:34px;}
+            .controls{grid-template-columns:1fr;}
+            .filters{width:100%;}
+            .filter{flex:1;}
+            .statistics{grid-template-columns:repeat(2,1fr);gap:9px;}
+            .stat{min-height:98px;padding:16px;}
+            .stat-number{font-size:25px;}
+            .course-grid{grid-template-columns:1fr;}
+            .semester-header{align-items:flex-start;flex-direction:column;gap:10px;}
+            .info-panel{grid-template-columns:1fr;gap:18px;}
+            .creator{text-align:left;}
+            .footer-inner{flex-direction:column;align-items:flex-start;}
         }
-
-
-        .hero h1 {
-
-            font-size: 34px;
+        @media (max-width:420px){
+            .brand-logo{width:40px;height:40px;flex-basis:40px;}
+            .brand-title{white-space:normal;line-height:1.2;}
+            .hero h1{font-size:30px;}
+            .hero-description{font-size:13px;}
+            .statistics{grid-template-columns:1fr 1fr;}
+            .stat-label{font-size:9px;}
         }
-
-
-        .controls {
-
-            grid-template-columns: 1fr;
-        }
-
-
-        .filters {
-
-            width: 100%;
-        }
-
-
-        .filter {
-
-            flex: 1;
-        }
-
-
-        .statistics {
-
-            grid-template-columns:
-                repeat(2, 1fr);
-
-            gap: 9px;
-        }
-
-
-        .stat {
-
-            min-height: 95px;
-
-            padding: 15px;
-        }
-
-
-        .stat-number {
-
-            font-size: 24px;
-        }
-
-
-        .course-grid {
-
-            grid-template-columns: 1fr;
-        }
-
-
-        .semester-header {
-
-            align-items: flex-start;
-
-            flex-direction: column;
-
-            gap: 8px;
-        }
-
-
-        .info-panel {
-
-            grid-template-columns: 1fr;
-
-            gap: 18px;
-        }
-
-
-        .creator {
-
-            text-align: left;
-        }
-
-
-        .footer-inner {
-
-            flex-direction: column;
-
-            align-items: flex-start;
-        }
-    }
-
-
-    @media (max-width: 420px) {
-
-        .brand-logo {
-
-            width: 40px;
-            height: 40px;
-
-            flex-basis: 40px;
-        }
-
-
-        .brand-title {
-
-            white-space:
-                normal;
-
-            line-height: 1.2;
-        }
-
-
-        .hero h1 {
-
-            font-size: 30px;
-        }
-
-
-        .hero-description {
-
-            font-size: 13px;
-        }
-
-
-        .statistics {
-
-            grid-template-columns:
-                1fr 1fr;
-        }
-
-
-        .stat-label {
-
-            font-size: 9px;
-        }
-    }
-
-</style>
-```
-
+    </style>
 </head>
-
 <body>
 
 <!-- =========================================================
      HEADER
 ========================================================= -->
-
 <header class="header">
+    <div class="header-inner">
+        <a href="ana-sayfa.html" class="brand">
+            <div class="brand-logo">KT</div>
+            <div class="brand-text">
+                <span class="brand-title">İSG Eğitim Portalı</span>
+                <span class="brand-subtitle">Konya Teknik Üniversitesi · 2026–2027</span>
+            </div>
+        </a>
 
-```
-<div class="header-inner">
-
-
-    <a
-        href="ana-sayfa.html"
-        class="brand"
-    >
-
-        <div class="brand-logo">
-            KT
+        <div class="header-actions">
+            <div class="user-chip">
+                <div class="user-avatar">SA</div>
+                <span>Sıraç AKSAN</span>
+            </div>
+            <button class="header-button logout-button" type="button" onclick="logout()">
+                Çıkış Yap
+            </button>
         </div>
-
-
-        <div class="brand-text">
-
-            <span class="brand-title">
-                İSG Eğitim Portalı
-            </span>
-
-            <span class="brand-subtitle">
-                Konya Teknik Üniversitesi · 2026–2027
-            </span>
-
-        </div>
-
-    </a>
-
-
-    <div class="header-actions">
-
-        <button
-            class="header-button logout-button"
-            type="button"
-            onclick="logout()"
-        >
-            Çıkış Yap
-        </button>
-
     </div>
-
-</div>
-```
-
 </header>
 
 <!-- =========================================================
      HERO
 ========================================================= -->
-
 <section class="hero">
-
-```
-<div class="hero-inner">
-
-    <span class="eyebrow">
-        KONYA TEKNİK ÜNİVERSİTESİ
-    </span>
-
-
-    <h1>
-        İş Sağlığı ve Güvenliği
-        Eğitim Portalı
-    </h1>
-
-
-    <p class="hero-description">
-
-        2026–2027 eğitim öğretim yılı İş Sağlığı ve
-        Güvenliği Tezsiz Yüksek Lisans derslerini
-        dönem, ders ve bölüm bazında düzenli bir
-        çalışma sistemi içerisinde takip edin.
-
-    </p>
-
-
-    <div class="hero-meta">
-
-        <span class="meta-item">
-            1. Dönem · 6 Ders
+    <div class="hero-inner">
+        <span class="eyebrow">
+            <span class="pulse"></span>
+            KONYA TEKNİK ÜNİVERSİTESİ · LİSANSÜSTÜ EĞİTİM ENSTİTÜSÜ
         </span>
 
-        <span class="meta-item">
-            2. Dönem · 7 Ders
-        </span>
+        <h1>İş Sağlığı ve Güvenliği<br>Eğitim Portalı</h1>
 
-        <span class="meta-item">
-            Ders · Bölüm · Materyal
-        </span>
+        <p class="hero-description">
+            2026–2027 eğitim öğretim yılı İş Sağlığı ve Güvenliği Tezsiz Yüksek
+            Lisans derslerini; dönem, ders ve bölüm bazında düzenli bir çalışma
+            sistemi içerisinde takip edin.
+        </p>
 
+        <div class="hero-meta">
+            <span class="meta-item"><span class="dot"></span>1. Dönem · 6 Ders</span>
+            <span class="meta-item"><span class="dot"></span>2. Dönem · 7 Ders</span>
+            <span class="meta-item"><span class="dot"></span>Ders · Bölüm · Materyal</span>
+        </div>
     </div>
-
-</div>
-```
-
 </section>
 
 <!-- =========================================================
      MAIN
 ========================================================= -->
-
 <main class="main">
 
-```
-<!-- KONTROLLER -->
-
-<section class="controls">
-
-    <div class="search-box">
-
-        <span class="search-icon">
-            🔎
-        </span>
-
-        <input
-            id="searchInput"
-            class="search"
-            type="search"
-            placeholder="Ders veya öğretim üyesi ara..."
-            autocomplete="off"
-            aria-label="Ders arama"
-        >
-
-    </div>
-
-
-    <div
-        class="filters"
-        role="tablist"
-        aria-label="Dönem filtreleri"
-    >
-
-        <button
-            class="filter active"
-            type="button"
-            data-filter="all"
-        >
-            Tümü
-        </button>
-
-        <button
-            class="filter"
-            type="button"
-            data-filter="first"
-        >
-            1. Dönem
-        </button>
-
-        <button
-            class="filter"
-            type="button"
-            data-filter="second"
-        >
-            2. Dönem
-        </button>
-
-    </div>
-
-</section>
-
-
-
-<!-- İSTATİSTİKLER -->
-
-<section class="statistics">
-
-    <div class="stat">
-
-        <div class="stat-label">
-            Toplam Ders
+    <!-- KONTROLLER -->
+    <section class="controls">
+        <div class="search-box">
+            <span class="search-icon">🔎</span>
+            <input
+                id="searchInput" class="search" type="search"
+                placeholder="Ders veya öğretim üyesi ara..."
+                autocomplete="off" aria-label="Ders arama"
+            >
         </div>
 
-        <div
-            class="stat-number"
-            id="totalCourses"
-        >
-            13
+        <div class="filters" role="tablist" aria-label="Dönem filtreleri">
+            <button class="filter active" type="button" data-filter="all">Tümü</button>
+            <button class="filter" type="button" data-filter="first">1. Dönem</button>
+            <button class="filter" type="button" data-filter="second">2. Dönem</button>
         </div>
+    </section>
 
-    </div>
-
-
-    <div class="stat">
-
-        <div class="stat-label">
-            1. Dönem
+    <!-- İSTATİSTİKLER -->
+    <section class="statistics">
+        <div class="stat">
+            <div class="stat-label">Toplam Ders</div>
+            <div class="stat-number" id="totalCourses">13</div>
         </div>
-
-        <div
-            class="stat-number"
-            id="firstCourses"
-        >
-            6
+        <div class="stat">
+            <div class="stat-label">1. Dönem</div>
+            <div class="stat-number" id="firstCourses">6</div>
         </div>
-
-    </div>
-
-
-    <div class="stat">
-
-        <div class="stat-label">
-            2. Dönem
+        <div class="stat">
+            <div class="stat-label">2. Dönem</div>
+            <div class="stat-number" id="secondCourses">7</div>
         </div>
-
-        <div
-            class="stat-number"
-            id="secondCourses"
-        >
-            7
+        <div class="stat">
+            <div class="stat-label">Ders Bölümleri</div>
+            <div class="stat-number">10</div>
         </div>
+    </section>
 
-    </div>
-
-
-    <div class="stat">
-
-        <div class="stat-label">
-            Ders Bölümleri
-        </div>
-
-        <div class="stat-number">
-            10
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     1. DÖNEM
-====================================================== -->
-
-<section
-    class="semester"
-    data-semester="first"
->
-
-    <div class="semester-header">
-
-        <div class="semester-title-area">
-
-            <div class="semester-number">
-                01
-            </div>
-
-            <div>
-
-                <h2>
-                    1. Dönem
-                </h2>
-
-                <div class="semester-subtitle">
-                    Güz Yarıyılı
+    <!-- =====================================================
+         1. DÖNEM
+    ====================================================== -->
+    <section class="semester" data-semester="first">
+        <div class="semester-header">
+            <div class="semester-title-area">
+                <div class="semester-number">01</div>
+                <div>
+                    <h2>1. Dönem</h2>
+                    <div class="semester-subtitle">Güz Yarıyılı</div>
                 </div>
-
             </div>
-
+            <div class="semester-count">6 ders</div>
         </div>
 
-
-        <div class="semester-count">
-            6 ders
-        </div>
-
-    </div>
-
-
-
-    <div class="course-grid">
-
-
-        <!-- DERS 1 -->
-
-        <a
-            class="course"
-            href="birinci-donem/mekanik-islerde-guvenlik/index.html"
-            data-course
-            data-semester="first"
-            data-search="mekanik işlerde güvenlik yusuf yılmaz"
-        >
-
-            <div class="course-number">
-                01
-            </div>
-
-            <h3>
-                Mekanik İşlerde Güvenlik
-            </h3>
-
-            <div class="instructor">
-                Prof. Dr. Yusuf Yılmaz
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 2 -->
-
-        <a
-            class="course"
-            href="birinci-donem/is-sagligi-ve-guvenligi-mevzuati/index.html"
-            data-course
-            data-semester="first"
-            data-search="iş sağlığı ve güvenliği mevzuatı ahmet peker"
-        >
-
-            <div class="course-number">
-                02
-            </div>
-
-            <h3>
-                İş Sağlığı ve Güvenliği Mevzuatı
-            </h3>
-
-            <div class="instructor">
-                Doç. Dr. Ahmet Peker
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 3 -->
-
-        <a
-            class="course"
-            href="birinci-donem/calisma-ortami-gozetimi/index.html"
-            data-course
-            data-semester="first"
-            data-search="çalışma ortamı gözetimi bilgehan kekeç"
-        >
-
-            <div class="course-number">
-                03
-            </div>
-
-            <h3>
-                Çalışma Ortamı Gözetimi
-            </h3>
-
-            <div class="instructor">
-                Prof. Dr. Bilgehan Kekeç
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 4 -->
-
-        <a
-            class="course"
-            href="birinci-donem/arastirma-yontemleri-ve-veri-analizi/index.html"
-            data-course
-            data-semester="first"
-            data-search="araştırma yöntemleri veri analizi saadettin erhan kesen"
-        >
-
-            <div class="course-number">
-                04
-            </div>
-
-            <h3>
-                Araştırma Yöntemleri ve Veri Analizi
-            </h3>
-
-            <div class="instructor">
-                Prof. Dr. Saadettin Erhan Kesen
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 5 -->
-
-        <a
-            class="course"
-            href="birinci-donem/madencilikte-guvenlik-ve-acil-durum-yonetimi/index.html"
-            data-course
-            data-semester="first"
-            data-search="madencilikte güvenlik acil durum yönetimi niyazi bilim"
-        >
-
-            <div class="course-number">
-                05
-            </div>
-
-            <h3>
-                Madencilikte Güvenlik ve Acil Durum Yönetimi
-            </h3>
-
-            <div class="instructor">
-                Prof. Dr. Niyazi Bilim
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 6 -->
-
-        <a
-            class="course"
-            href="birinci-donem/is-kazalari-ve-korunma-politikalari/index.html"
-            data-course
-            data-semester="first"
-            data-search="iş kazaları korunma politikaları yakup kara"
-        >
-
-            <div class="course-number">
-                06
-            </div>
-
-            <h3>
-                İş Kazaları ve Korunma Politikaları
-            </h3>
-
-            <div class="instructor">
-                Prof. Dr. Yakup Kara
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     2. DÖNEM
-====================================================== -->
-
-<section
-    class="semester"
-    data-semester="second"
->
-
-    <div class="semester-header">
-
-        <div class="semester-title-area">
-
-            <div class="semester-number">
-                02
-            </div>
-
-            <div>
-
-                <h2>
-                    2. Dönem
-                </h2>
-
-                <div class="semester-subtitle">
-                    Bahar Yarıyılı
+        <div class="course-grid">
+
+            <a class="course" href="birinci-donem/mekanik-islerde-guvenlik/index.html"
+               data-course data-semester="first"
+               data-search="mekanik işlerde güvenlik yusuf yılmaz">
+                <div class="course-number">01</div>
+                <h3>Mekanik İşlerde Güvenlik</h3>
+                <div class="instructor">Prof. Dr. Yusuf Yılmaz</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
                 </div>
+            </a>
 
-            </div>
+            <a class="course" href="birinci-donem/is-sagligi-ve-guvenligi-mevzuati/index.html"
+               data-course data-semester="first"
+               data-search="iş sağlığı ve güvenliği mevzuatı ahmet peker">
+                <div class="course-number">02</div>
+                <h3>İş Sağlığı ve Güvenliği Mevzuatı</h3>
+                <div class="instructor">Doç. Dr. Ahmet Peker</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+            <a class="course" href="birinci-donem/calisma-ortami-gozetimi/index.html"
+               data-course data-semester="first"
+               data-search="çalışma ortamı gözetimi bilgehan kekeç">
+                <div class="course-number">03</div>
+                <h3>Çalışma Ortamı Gözetimi</h3>
+                <div class="instructor">Prof. Dr. Bilgehan Kekeç</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+            <a class="course" href="birinci-donem/arastirma-yontemleri-ve-veri-analizi/index.html"
+               data-course data-semester="first"
+               data-search="araştırma yöntemleri veri analizi saadettin erhan kesen">
+                <div class="course-number">04</div>
+                <h3>Araştırma Yöntemleri ve Veri Analizi</h3>
+                <div class="instructor">Prof. Dr. Saadettin Erhan Kesen</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+            <a class="course" href="birinci-donem/madencilikte-guvenlik-ve-acil-durum-yonetimi/index.html"
+               data-course data-semester="first"
+               data-search="madencilikte güvenlik acil durum yönetimi niyazi bilim">
+                <div class="course-number">05</div>
+                <h3>Madencilikte Güvenlik ve Acil Durum Yönetimi</h3>
+                <div class="instructor">Prof. Dr. Niyazi Bilim</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+            <a class="course" href="birinci-donem/is-kazalari-ve-korunma-politikalari/index.html"
+               data-course data-semester="first"
+               data-search="iş kazaları korunma politikaları yakup kara">
+                <div class="course-number">06</div>
+                <h3>İş Kazaları ve Korunma Politikaları</h3>
+                <div class="instructor">Prof. Dr. Yakup Kara</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
 
         </div>
+    </section>
 
-
-        <div class="semester-count">
-            7 ders
+    <!-- =====================================================
+         2. DÖNEM
+    ====================================================== -->
+    <section class="semester" data-semester="second">
+        <div class="semester-header">
+            <div class="semester-title-area">
+                <div class="semester-number">02</div>
+                <div>
+                    <h2>2. Dönem</h2>
+                    <div class="semester-subtitle">Bahar Yarıyılı</div>
+                </div>
+            </div>
+            <div class="semester-count">7 ders</div>
         </div>
 
+        <div class="course-grid">
+
+            <a class="course" href="ikinci-donem/is-sagligi-ve-guvenligi-yonetim-sistemleri/index.html"
+               data-course data-semester="second"
+               data-search="iş sağlığı ve güvenliği yönetim sistemleri">
+                <div class="course-number">07</div>
+                <h3>İş Sağlığı ve Güvenliği Yönetim Sistemleri</h3>
+                <div class="instructor">Öğretim Üyesi</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+            <a class="course" href="ikinci-donem/elektrikle-calismalarda-guvenlik/index.html"
+               data-course data-semester="second"
+               data-search="elektrikle çalışmalarda güvenlik">
+                <div class="course-number">08</div>
+                <h3>Elektrikle Çalışmalarda Güvenlik</h3>
+                <div class="instructor">Öğretim Üyesi</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+            <a class="course" href="ikinci-donem/risk-degerlendirmesi/index.html"
+               data-course data-semester="second"
+               data-search="risk değerlendirmesi">
+                <div class="course-number">09</div>
+                <h3>Risk Değerlendirmesi</h3>
+                <div class="instructor">Öğretim Üyesi</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+            <a class="course" href="ikinci-donem/yapi-islerinde-guvenlik/index.html"
+               data-course data-semester="second"
+               data-search="yapı işlerinde güvenlik">
+                <div class="course-number">10</div>
+                <h3>Yapı İşlerinde Güvenlik</h3>
+                <div class="instructor">Öğretim Üyesi</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+            <a class="course" href="ikinci-donem/ileri-endustriyel-ergonomi/index.html"
+               data-course data-semester="second"
+               data-search="ileri endüstriyel ergonomi">
+                <div class="course-number">11</div>
+                <h3>İleri Endüstriyel Ergonomi</h3>
+                <div class="instructor">Öğretim Üyesi</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+            <a class="course" href="ikinci-donem/tehlikeli-maddelerle-calismalarda-guvenlik/index.html"
+               data-course data-semester="second"
+               data-search="tehlikeli maddelerle çalışmalarda güvenlik">
+                <div class="course-number">12</div>
+                <h3>Tehlikeli Maddelerle Çalışmalarda Güvenlik</h3>
+                <div class="instructor">Öğretim Üyesi</div>
+                <div class="course-footer">
+                    <span class="course-badge">10 Bölüm</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+            <a class="course" href="ikinci-donem/donem-uygulama-projesi/index.html"
+               data-course data-semester="second"
+               data-search="dönem uygulama projesi mezuniyet çalışması">
+                <div class="course-number">13</div>
+                <h3>Dönem (Uygulama) Projesi</h3>
+                <div class="instructor">Kredisiz · Zorunlu Mezuniyet Çalışması</div>
+                <div class="course-footer">
+                    <span class="course-badge">Zorunlu</span>
+                    <span class="course-link">Derse Git</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- SONUÇ BULUNAMADI -->
+    <div id="noResults" class="no-results">
+        <strong>Ders bulunamadı</strong>
+        Arama kriterlerinizi veya dönem filtresini değiştirerek tekrar deneyebilirsiniz.
     </div>
 
-
-
-    <div class="course-grid">
-
-
-        <!-- DERS 7 -->
-
-        <a
-            class="course"
-            href="ikinci-donem/is-sagligi-ve-guvenligi-yonetim-sistemleri/index.html"
-            data-course
-            data-semester="second"
-            data-search="iş sağlığı ve güvenliği yönetim sistemleri"
-        >
-
-            <div class="course-number">
-                07
-            </div>
-
-            <h3>
-                İş Sağlığı ve Güvenliği Yönetim Sistemleri
-            </h3>
-
-            <div class="instructor">
-                Öğretim Üyesi
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 8 -->
-
-        <a
-            class="course"
-            href="ikinci-donem/elektrikle-calismalarda-guvenlik/index.html"
-            data-course
-            data-semester="second"
-            data-search="elektrikle çalışmalarda güvenlik"
-        >
-
-            <div class="course-number">
-                08
-            </div>
-
-            <h3>
-                Elektrikle Çalışmalarda Güvenlik
-            </h3>
-
-            <div class="instructor">
-                Öğretim Üyesi
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 9 -->
-
-        <a
-            class="course"
-            href="ikinci-donem/risk-degerlendirmesi/index.html"
-            data-course
-            data-semester="second"
-            data-search="risk değerlendirmesi"
-        >
-
-            <div class="course-number">
-                09
-            </div>
-
-            <h3>
-                Risk Değerlendirmesi
-            </h3>
-
-            <div class="instructor">
-                Öğretim Üyesi
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 10 -->
-
-        <a
-            class="course"
-            href="ikinci-donem/yapi-islerinde-guvenlik/index.html"
-            data-course
-            data-semester="second"
-            data-search="yapı işlerinde güvenlik"
-        >
-
-            <div class="course-number">
-                10
-            </div>
-
-            <h3>
-                Yapı İşlerinde Güvenlik
-            </h3>
-
-            <div class="instructor">
-                Öğretim Üyesi
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 11 -->
-
-        <a
-            class="course"
-            href="ikinci-donem/ileri-endustriyel-ergonomi/index.html"
-            data-course
-            data-semester="second"
-            data-search="ileri endüstriyel ergonomi"
-        >
-
-            <div class="course-number">
-                11
-            </div>
-
-            <h3>
-                İleri Endüstriyel Ergonomi
-            </h3>
-
-            <div class="instructor">
-                Öğretim Üyesi
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 12 -->
-
-        <a
-            class="course"
-            href="ikinci-donem/tehlikeli-maddelerle-calismalarda-guvenlik/index.html"
-            data-course
-            data-semester="second"
-            data-search="tehlikeli maddelerle çalışmalarda güvenlik"
-        >
-
-            <div class="course-number">
-                12
-            </div>
-
-            <h3>
-                Tehlikeli Maddelerle Çalışmalarda Güvenlik
-            </h3>
-
-            <div class="instructor">
-                Öğretim Üyesi
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    10 Bölüm
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-
-        <!-- DERS 13 -->
-
-        <a
-            class="course"
-            href="ikinci-donem/donem-uygulama-projesi/index.html"
-            data-course
-            data-semester="second"
-            data-search="dönem uygulama projesi mezuniyet çalışması"
-        >
-
-            <div class="course-number">
-                13
-            </div>
-
-            <h3>
-                Dönem (Uygulama) Projesi
-            </h3>
-
-            <div class="instructor">
-                Kredisiz · Zorunlu Mezuniyet Çalışması
-            </div>
-
-            <div class="course-footer">
-
-                <span class="course-badge">
-                    Zorunlu
-                </span>
-
-                <span class="course-link">
-                    Derse Git
-                </span>
-
-            </div>
-
-        </a>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- SONUÇ BULUNAMADI -->
-
-<div
-    id="noResults"
-    class="no-results"
->
-
-    <strong>
-        Ders bulunamadı
-    </strong>
-
-    Arama kriterlerinizi veya dönem filtresini
-    değiştirerek tekrar deneyebilirsiniz.
-
-</div>
-
-
-
-<!-- =====================================================
-     PORTAL BİLGİSİ
-====================================================== -->
-
-<section class="info-panel">
-
-    <div>
-
-        <h3>
-            Akademik Çalışma Portalı
-        </h3>
-
-        <p>
-
-            Her ders kendi klasörü içerisinde;
-            ders ana sayfası, bölüm bazlı konu anlatımları,
-            sunumlar ve soru/alıştırma materyallerinden
-            oluşacak şekilde düzenlenmiştir.
-
-        </p>
-
-    </div>
-
-
-    <div class="creator">
-
-        <strong>
-            Hazırlayan: Sıraç AKSAN
-        </strong>
-
-        <span>
-            0506 928 22 10
-        </span>
-
-        <span>
-            saracaksan@gmail.com
-        </span>
-
-    </div>
-
-</section>
-```
-
+    <!-- BİLGİ PANELİ -->
+    <section class="info-panel">
+        <div>
+            <h3>Akademik Çalışma Portalı</h3>
+            <p>
+                Her ders kendi klasörü içerisinde; ders ana sayfası, bölüm bazlı
+                konu anlatımları, sunumlar ve soru/alıştırma materyallerinden
+                oluşacak şekilde düzenlenmiştir.
+            </p>
+        </div>
+
+        <div class="creator">
+            <strong>Hazırlayan: Sıraç AKSAN</strong>
+            <span>0506 928 22 10</span>
+            <span>saracaksan@gmail.com</span>
+        </div>
+    </section>
 </main>
 
 <!-- =========================================================
      FOOTER
 ========================================================= -->
-
 <footer class="footer">
-
-```
-<div class="footer-inner">
-
-    <div class="footer-text">
-
-        <span class="footer-name">
-            Konya Teknik Üniversitesi
-        </span>
-        · İş Sağlığı ve Güvenliği Eğitim Portalı<br>
-
-        2026–2027 Eğitim Öğretim Yılı
-
+    <div class="footer-inner">
+        <div class="footer-text">
+            <span class="footer-name">Konya Teknik Üniversitesi</span>
+            · İş Sağlığı ve Güvenliği Eğitim Portalı<br>
+            2026–2027 Eğitim Öğretim Yılı
+        </div>
+        <button class="logout-footer" type="button" onclick="logout()">
+            Güvenli Çıkış
+        </button>
     </div>
-
-
-    <button
-        class="logout-footer"
-        type="button"
-        onclick="logout()"
-    >
-        Güvenli Çıkış
-    </button>
-
-</div>
-```
-
 </footer>
 
 <script>
-
     /* =====================================================
        OTURUM KONTROLÜ
+       (Bu sayfa sadece giriş yapılmışsa açılır.)
     ===================================================== */
-
-    const authenticated =
-        sessionStorage.getItem(
-            "ktun_isg_authenticated"
-        );
-
-
-    /*
-     * Kullanıcı giriş yapmadan
-     * ana-sayfa.html adresine gelirse
-     * login.html'e gönder.
-     */
-
+    const authenticated = sessionStorage.getItem("ktun_isg_authenticated");
     if (authenticated !== "true") {
-
-        window.location.replace(
-            "login.html"
-        );
-
+        window.location.replace("login.html");
     }
-
-
 
     /* =====================================================
        ÇIKIŞ
     ===================================================== */
-
     function logout() {
-
-        sessionStorage.removeItem(
-            "ktun_isg_authenticated"
-        );
-
-
-        window.location.replace(
-            "login.html"
-        );
-
+        sessionStorage.removeItem("ktun_isg_authenticated");
+        window.location.replace("login.html");
     }
 
-
-
     /* =====================================================
-       DERS ARAMA VE FİLTRELEME
+       ARAMA + FİLTRELEME
     ===================================================== */
-
-    const searchInput =
-        document.getElementById(
-            "searchInput"
-        );
-
-
-    const filterButtons =
-        document.querySelectorAll(
-            ".filter"
-        );
-
-
-    const courses =
-        document.querySelectorAll(
-            "[data-course]"
-        );
-
-
-    const semesters =
-        document.querySelectorAll(
-            ".semester"
-        );
-
-
-    const noResults =
-        document.getElementById(
-            "noResults"
-        );
-
+    const searchInput = document.getElementById("searchInput");
+    const filterButtons = document.querySelectorAll(".filter");
+    const courses = document.querySelectorAll("[data-course]");
+    const semesters = document.querySelectorAll(".semester");
+    const noResults = document.getElementById("noResults");
 
     let activeFilter = "all";
 
-
-
     function normalizeText(text) {
-
         return text
-
-            .toLocaleLowerCase(
-                "tr-TR"
-            )
-
+            .toLocaleLowerCase("tr-TR")
             .normalize("NFD")
-
-            .replace(
-                /[\u0300-\u036f]/g,
-                ""
-            );
+            .replace(/[\u0300-\u036f]/g, "");
     }
-
-
 
     function filterCourses() {
-
-        const query =
-            normalizeText(
-                searchInput.value.trim()
-            );
-
-
+        const query = normalizeText(searchInput.value.trim());
         let visibleCount = 0;
 
+        courses.forEach(function(course){
+            const semester = course.dataset.semester;
+            const searchData = normalizeText(course.dataset.search || "");
+            const semesterMatch = activeFilter === "all" || activeFilter === semester;
+            const searchMatch = query === "" || searchData.includes(query);
+            const visible = semesterMatch && searchMatch;
 
-        courses.forEach(
-            function(course) {
-
-                const semester =
-                    course.dataset.semester;
-
-
-                const searchData =
-                    normalizeText(
-                        course.dataset.search
-                    );
-
-
-                const semesterMatch =
-                    activeFilter === "all" ||
-                    activeFilter === semester;
-
-
-                const searchMatch =
-                    query === "" ||
-                    searchData.includes(
-                        query
-                    );
-
-
-                const visible =
-                    semesterMatch &&
-                    searchMatch;
-
-
-                if (visible) {
-
-                    course.classList.remove(
-                        "hidden"
-                    );
-
-                    visibleCount++;
-
-                }
-
-                else {
-
-                    course.classList.add(
-                        "hidden"
-                    );
-
-                }
-
+            if (visible) {
+                course.classList.remove("hidden");
+                visibleCount++;
+            } else {
+                course.classList.add("hidden");
             }
-        );
+        });
 
+        semesters.forEach(function(semester){
+            const visibleCourses = semester.querySelectorAll(".course:not(.hidden)").length;
+            semester.classList.toggle("hidden", visibleCourses === 0);
+        });
 
-
-        semesters.forEach(
-            function(semester) {
-
-                const visibleCourses =
-                    semester.querySelectorAll(
-                        ".course:not(.hidden)"
-                    ).length;
-
-
-                if (visibleCourses === 0) {
-
-                    semester.classList.add(
-                        "hidden"
-                    );
-
-                }
-
-                else {
-
-                    semester.classList.remove(
-                        "hidden"
-                    );
-
-                }
-
-            }
-        );
-
-
-
-        noResults.style.display =
-            visibleCount === 0
-                ? "block"
-                : "none";
-
+        noResults.style.display = visibleCount === 0 ? "block" : "none";
     }
 
+    searchInput.addEventListener("input", filterCourses);
 
-
-    /* =====================================================
-       ARAMA
-    ===================================================== */
-
-    searchInput.addEventListener(
-        "input",
-        filterCourses
-    );
-
-
-
-    /* =====================================================
-       DÖNEM FİLTRELERİ
-    ===================================================== */
-
-    filterButtons.forEach(
-        function(button) {
-
-            button.addEventListener(
-                "click",
-                function() {
-
-                    filterButtons.forEach(
-                        function(btn) {
-
-                            btn.classList.remove(
-                                "active"
-                            );
-
-                        }
-                    );
-
-
-                    button.classList.add(
-                        "active"
-                    );
-
-
-                    activeFilter =
-                        button.dataset.filter;
-
-
-                    filterCourses();
-
-                }
-            );
-
-        }
-    );
-
-
-
-    /* =====================================================
-       SAYFA YÜKLENDİĞİNDE
-    ===================================================== */
+    filterButtons.forEach(function(button){
+        button.addEventListener("click", function(){
+            filterButtons.forEach(function(btn){ btn.classList.remove("active"); });
+            button.classList.add("active");
+            activeFilter = button.dataset.filter;
+            filterCourses();
+        });
+    });
 
     filterCourses();
 
+    /* =====================================================
+       İSTATİSTİK SAYAÇLARI (Animasyonlu)
+    ===================================================== */
+    (function animateStats(){
+        const targets = [
+            { id: "totalCourses", value: 13 },
+            { id: "firstCourses", value: 6 },
+            { id: "secondCourses", value: 7 }
+        ];
+
+        targets.forEach(function(t){
+            const el = document.getElementById(t.id);
+            if (!el) return;
+            let current = 0;
+            const step = Math.max(1, Math.ceil(t.value / 25));
+            const timer = setInterval(function(){
+                current += step;
+                if (current >= t.value) {
+                    current = t.value;
+                    clearInterval(timer);
+                }
+                el.textContent = current;
+            }, 30);
+        });
+    })();
 </script>
 
 </body>
