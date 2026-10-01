@@ -42,7 +42,6 @@ a{color:var(--primary);text-decoration:none;}
 a:hover{text-decoration:underline;}
 .container{max-width:1080px;margin:0 auto;padding:0 16px;}
 
-/* ===================== HEADER ===================== */
 .site-header{
   background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 55%,var(--accent) 100%);
   color:#fff;
@@ -93,7 +92,6 @@ a:hover{text-decoration:underline;}
   box-shadow:0 6px 16px rgba(0,0,0,.18);
 }
 
-/* ===================== INTRO ===================== */
 .intro-box{
   background:var(--card);
   border-radius:var(--radius);
@@ -131,7 +129,6 @@ a:hover{text-decoration:underline;}
   border-radius:50%;background:var(--accent);
 }
 
-/* ===================== TABS ===================== */
 .tabs{
   display:flex;gap:10px;margin-top:26px;flex-wrap:wrap;
 }
@@ -153,7 +150,6 @@ a:hover{text-decoration:underline;}
 }
 .tab-btn.active .tt,.tab-btn.active .ts{color:#fff;}
 
-/* ===================== SCORE BAR ===================== */
 .score-bar{
   position:sticky;top:0;z-index:50;
   margin-top:18px;
@@ -176,7 +172,6 @@ a:hover{text-decoration:underline;}
 }
 .score-bar .puan strong{font-size:17px;}
 
-/* ===================== NAVIGATOR ===================== */
 .navigator{
   display:flex;flex-wrap:wrap;gap:7px;margin-top:18px;
   padding:14px;background:var(--card);border-radius:var(--radius);
@@ -196,7 +191,6 @@ a:hover{text-decoration:underline;}
   box-shadow:0 0 0 2px #fff inset;
 }
 
-/* ===================== QUESTION CARD ===================== */
 .q-card{
   margin-top:18px;background:var(--card);border-radius:var(--radius);
   border:1px solid var(--border);box-shadow:var(--shadow);
@@ -223,7 +217,6 @@ a:hover{text-decoration:underline;}
   margin-bottom:20px;text-align:justify;
 }
 
-/* Options */
 .options{display:flex;flex-direction:column;gap:10px;}
 .option{
   display:flex;gap:13px;align-items:flex-start;
@@ -260,7 +253,6 @@ a:hover{text-decoration:underline;}
 .option.reveal-correct .letter{background:var(--success);color:#fff;}
 .option.dim{opacity:.62;}
 
-/* Feedback */
 .feedback{
   margin-top:16px;padding:14px 16px;border-radius:11px;
   font-weight:700;font-size:14.5px;display:none;
@@ -271,7 +263,6 @@ a:hover{text-decoration:underline;}
 .feedback.no{background:var(--danger-bg);color:var(--danger);border:1.5px solid var(--danger-border);}
 .feedback .ico{font-size:20px;}
 
-/* ============ SOLUTION (KAPALI/İSTEĞE BAĞLI) ============ */
 .solution{
   margin-top:16px;border-radius:12px;overflow:hidden;
   border:1px solid var(--border);background:#fbfdff;
@@ -310,7 +301,6 @@ a:hover{text-decoration:underline;}
   margin-left:6px;
 }
 
-/* Controls */
 .controls{
   display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
   margin-top:20px;
@@ -331,7 +321,6 @@ a:hover{text-decoration:underline;}
 .btn-ghost:hover{background:#e2ecfa;border-color:var(--accent);}
 .btn:disabled{opacity:.42;cursor:not-allowed;transform:none !important;box-shadow:none !important;}
 
-/* Result Card */
 .result-card{
   margin-top:18px;background:var(--card);border-radius:var(--radius);
   border:2px solid var(--success-border);box-shadow:var(--shadow-lg);
@@ -362,7 +351,6 @@ a:hover{text-decoration:underline;}
   background:#f7faff;border:1px dashed var(--border);color:var(--primary-dark);
 }
 
-/* ===================== FOOTER ===================== */
 .site-footer{
   margin-top:44px;
   background:linear-gradient(135deg,#0b1f3a,#0d47a1);
@@ -386,7 +374,6 @@ a:hover{text-decoration:underline;}
 }
 .footer-bottom strong{color:#fff;}
 
-/* ===================== RESPONSIVE ===================== */
 @media(max-width:640px){
   body{font-size:15px;}
   .brand{flex-direction:row;align-items:flex-start;}
@@ -415,7 +402,6 @@ a:hover{text-decoration:underline;}
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="container">
     <div class="brand">
@@ -437,7 +423,6 @@ a:hover{text-decoration:underline;}
 
 <main class="container">
 
-  <!-- ================= INTRO ================= -->
   <section class="intro-box">
     <div class="intro-head" id="introHead">
       <h2>📘 Giriş ve Sınava Hazırlık Kılavuzu</h2>
@@ -458,16 +443,16 @@ a:hover{text-decoration:underline;}
         <li>Dokümanda yer alan 60 sorunun tamamı 5 seçenekli (A, B, C, D, E) olarak kurgulanmıştır.</li>
         <li>Sorular, ezberci yaklaşımı tamamen dışlayarak gerçek saha denetimleri, adli kaza inceleme senaryoları, tasarım/imalat hataları ve mevzuatın somut teknik olaylara uygulanması esasına dayanır.</li>
         <li>Çeldiriciler; basit beyanlar yerine, sahada sıklıkla yapılan mühendislik hataları, yanlış bilinen teknik teamüller ve mevzuat esnetme girişimleri arasından yüksek eleyicilikte seçilmiştir.</li>
+        <li>Her testte doğru cevaplar A, B, C, D ve E seçeneklerine eşit sayıda (dörder adet) dağıtılmıştır.</li>
+        <li>Seçeneklerin uzunlukları birbirine yakın tutularak, yalnızca seçenek uzunluğuna bakılarak doğru cevabın tahmin edilmesi engellenmiştir.</li>
         <li>Soru köklerindeki olumsuz ifadeler (değildir, olamaz, beklenmez, yanlıştır) koyu ve belirgin biçimde vurgulanmıştır.</li>
         <li>Tüm soru ve çözümler, ilgili yönetmelik ve standart kaynak metinlerine %100 sadakatle hazırlanmıştır.</li>
       </ul>
     </div>
   </section>
 
-  <!-- ================= TABS ================= -->
   <div class="tabs" id="tabs"></div>
 
-  <!-- ================= SCORE BAR ================= -->
   <div class="score-bar">
     <div class="grp">
       <span class="item"><span class="dot dot-green"></span> Doğru: <strong id="sDogru">0</strong></span>
@@ -477,13 +462,10 @@ a:hover{text-decoration:underline;}
     <div class="puan">Puan: <strong id="sPuan">0</strong> / 100</div>
   </div>
 
-  <!-- ================= NAVIGATOR ================= -->
   <div class="navigator" id="navigator"></div>
 
-  <!-- ================= TEST AREA ================= -->
   <div id="testArea"></div>
 
-  <!-- ================= RESULT ================= -->
   <div class="result-card" id="resultCard">
     <h3 id="resTitle">Test Tamamlandı! 🎉</h3>
     <p class="res-sub" id="resSub">Aşağıda bu testteki performans özetiniz yer almaktadır.</p>
@@ -498,7 +480,6 @@ a:hover{text-decoration:underline;}
 
 </main>
 
-<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -523,6 +504,8 @@ a:hover{text-decoration:underline;}
 <script>
 /* =========================================================
    BÖLÜM 2 — 60 SORU VERİSİ (3 TEST × 20 SORU)
+   Her testte A, B, C, D, E doğru cevapları eşit (4'er) dağıtılmıştır.
+   Seçenek uzunlukları dengelenmiştir.
    ========================================================= */
 const TESTS = [
   /* ======================= TEST 1 ======================= */
@@ -537,140 +520,140 @@ const TESTS = [
         topic: "Çekiçlerin Amacı Dışında Kullanımı",
         text: "Bir makine imalat fabrikasının montaj hattında yapılan adli kaza incelemesinde; ahşap ambalaj kasalarının sökümünde çalışan bir işçinin, çivi çıkarma işlemi için ağır demirci çekicini kullandığı ve vurma esnasında fırlayan çeliğin işçiyi yaraladığı; ağaç doğrama ve hassas ahşap montajında ise işçilerin çeneli/sivri tarafı bulunan çekiç yerine standart doğrama çekici kullanmak yerine dövme demir çekici tercih ettiği saptanmıştır. El aletlerinin tasarım ve kullanım standartları çerçevesinde bu saha senaryosu değerlendirildiğinde aşağıdakilerden hangisi doğrudur?",
         options: {
-          A: "İnce ahşap doğrama işlerinde darbe gücünü artırmak amacıyla ağır demirci çekici kullanmak doğru bir teknik yöntemdir.",
-          B: "Çivi sökme işleminde çekicin çeneli tarafının kullanılması amaca aykırı olup bu işlem sadece demirci çekici ile yapılmalıdır.",
-          C: "Demirci çekicinin ahşap doğrama işlerinde kullanılması ve çivi sökme işleminde çeneli/sivri tarafı olmayan çekiç aksamı ile zorlama yapılması el aletlerinin amacına aykırı kullanımıdır.",
-          D: "Sert çelik parçaların dövülmesinde gevrek kırılmayı önlemek adına ahşap saplı doğrama çekiçleri tercih edilmelidir.",
-          E: "Ağır demir dövme işlemlerinde hassasiyeti sağlamak adına ince doğrama çekiçlerinin kullanılması emniyetli çalışma kuralıdır."
+          A: "Demirci çekicinin ahşap doğrama işlerinde kullanılması ve çivi sökme işleminde çeneli tarafı olmayan çekiç aksamı ile zorlama yapılması el aletinin amacına aykırı kullanımıdır.",
+          B: "İnce ahşap doğrama işlerinde darbe gücünü artırmak amacıyla ağır demirci çekicinin kullanılması son derece doğru ve emniyetli bir teknik yöntem olarak kabul edilmektedir.",
+          C: "Çivi sökme işleminde çekicin çeneli tarafının kullanılması amaca aykırı olup bu işlem sadece ağır demirci çekici ile yapılması gereken bir uygulama olarak kabul edilmektedir.",
+          D: "Sert çelik parçaların dövülmesi esnasında gevrek kırılmayı önlemek adına ahşap saplı ince doğrama çekiçlerinin tercih edilmesi gereken bir yöntem olduğu belirtilmektedir.",
+          E: "Ağır demir dövme işlemlerinde yüksek hassasiyet sağlamak adına ince doğrama çekiçlerinin kullanılması emniyetli çalışmanın en temel kurallarından biri olarak ifade edilmektedir."
         },
-        answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metinde "Çekiçler" kullanım tablosunda açıkça belirtildiği üzere: Çivi sökmek için çekicin çeneli/sivri tarafının kullanılması, ağır demir dövmede ise ağır demirci çekicinin kullanılması amaca uygun doğru kullanımdır. Demirci çekicini ahşap doğrama işlerinde veya çivi sökme amacıyla zorlayarak kullanmak ise aletin imalat amacına aykırı kullanımıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: İnce ahşap doğrama işlerinde ağır demirci çekici kullanmak ahşabı ezerek tahrip eder ve ergonomik yaralanma yaratır.</li><li>B Şıkkı Yanlıştır: Çivi sökme işlemi için çeneli çekiç tasarımı uygundur, demirci çekici çivi sökmek için tasarlanmamıştır.</li><li>D Şıkkı Yanlıştır: Sert çelik dövmede ahşap saplı ince çekiçler yetersiz kalır ve kırılır; ağır demirci çekici kullanılmalıdır.</li><li>E Şıkkı Yanlıştır: Ağır demir dövmede ince doğrama çekici kullanmak yetersiz darbe enerjisi üretir ve aletin bozulmasına neden olur.</li></ul>'
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metinde "Çekiçler" kullanım tablosunda açıkça belirtildiği üzere: Çivi sökmek için çekicin çeneli/sivri tarafının kullanılması, ağır demir dövmede ise ağır demirci çekicinin kullanılması amaca uygun doğru kullanımdır. Demirci çekicini ahşap doğrama işlerinde veya çivi sökme amacıyla zorlayarak kullanmak ise aletin imalat amacına aykırı kullanımıdır. Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B: İnce ahşap doğrama işlerinde ağır demirci çekici kullanmak ahşabı ezerek tahrip eder ve ergonomik yaralanma yaratır.</li><li>C: Çivi sökme işlemi için çeneli çekiç tasarımı uygundur, demirci çekici çivi sökmek için tasarlanmamıştır.</li><li>D: Sert çelik dövmede ahşap saplı ince çekiçler yetersiz kalır ve kırılır; ağır demirci çekici kullanılmalıdır.</li><li>E: Ağır demir dövmede ince doğrama çekici kullanmak yetersiz darbe enerjisi üretir ve aletin bozulmasına neden olur.</li></ul>'
       },
       {
         n: 2,
         topic: "Keskilerin Malzeme ve Fonksiyon Sınırları",
         text: "Bir endüstriyel bakım tesisinde görevli tekniker, birleşim noktasında paslanmış bir metali ayırmak için elindeki soğuk keskiyi tornavida gibi kanırtarak kullanmış ve keskinin ucunun kırılması sonucu elinden yaralanmıştır. Diğer bir hatta ise marangoz ustası ahşap bir bloğu yarmak amacıyla metal keskisini ahşaba çakarak kullanmaya çalışmıştır. Keskilerin kullanım standartları ve mekanik zorlanma sınırları dikkate alındığında, yapılan değerlendirmelerden hangisi <strong>yanlıştır</strong>?",
         options: {
-          A: "Keskiler temel tasarım amacı itibarıyla metal malzemelerin kesilmesi ve yontulması için üretilmiş el aletleridir.",
-          B: "Keskilerin tornavida, manivela veya kama niyetine kullanılması alette eğilme momentumu oluşturarak kırılma riskini artırır.",
-          C: "Keskiler ahşap malzemeleri parçalamak ve şekillendirmek amacıyla da güvenle kullanılabilen çok amaçlı el aletleridir.",
-          D: "Amacına uygun olmayan yanal kuvvet uygulamaları keski uçlarında mikron düzeyde çatlak ilerlemesine ve aniden parça fırlamasına yol açar.",
-          E: "Keskilerin manivela gibi kullanılması teğet tork uygulayarak el aletinin mekanik bütünlüğünü bozar."
+          A: "Keskiler temel tasarım amacı itibarıyla metal malzemelerin kesilmesi ve yontulması için üretilmiş olan çok özel el aletleri olduğu bilinmektedir.",
+          B: "Keskilerin ahşap malzemeleri parçalamak ve şekillendirmek amacıyla da güvenle kullanılabildiği çok amaçlı bir el aleti olduğu bilinmektedir.",
+          C: "Keskilerin tornavida, manivela veya kama niyetine kullanılması alette eğilme momentumu oluşturarak ciddi kırılma riskini artırmaktadır.",
+          D: "Amacına uygun olmayan yanal kuvvet uygulamaları keski uçlarında mikron düzeyinde çatlak ilerlemesine ve aniden parça fırlamasına yol açar.",
+          E: "Keskilerin manivela gibi kullanılması teğet tork uygulayarak el aletinin mekanik bütünlüğünü ciddi biçimde bozan bir etki yaratmaktadır."
         },
-        answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metinde "Keskiler" tablosunda kullanım amacı "Metal kesmek" olarak tanımlanmıştır. "Ağaç parçalamak, tornavida veya manivela gibi kullanmak" ise açıkça hatalı/yanlış kullanım olarak sınıflandırılmıştır. Dolayısıyla C şıkkındaki "keskilerin ahşap parçalamak için tasarlanmış çok amaçlı alet olduğu" beyanı teknik ve mevzuatsal olarak yanlıştır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Keskilerin ana imalat amacı metalleri kesmek ve yontmaktır.</li><li>B Şıkkı Doğrudur: Keskileri manivela gibi kanırtmak eğilme momenti oluşturur.</li><li>D Şıkkı Doğrudur: Yanal zorlamalar gevrekleşmiş keski ucundan parça kopmasına sebep olur.</li><li>E Şıkkı Doğrudur: Manivela gibi kullanmak tork etkisiyle mekanik yapıyı bozar.</li></ul>'
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metinde "Keskiler" tablosunda kullanım amacı "Metal kesmek" olarak tanımlanmıştır. "Ağaç parçalamak, tornavida veya manivela gibi kullanmak" ise açıkça hatalı/yanlış kullanım olarak sınıflandırılmıştır. Dolayısıyla B seçeneğindeki "keskilerin ahşap parçalamak için tasarlanmış çok amaçlı alet olduğu" beyanı teknik ve mevzuatsal olarak yanlıştır. Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Keskilerin ana imalat amacı metalleri kesmek ve yontmaktır (doğru beyan).</li><li>C: Keskileri manivela gibi kanırtmak eğilme momenti oluşturur (doğru beyan).</li><li>D: Yanal zorlamalar gevrekleşmiş keski ucundan parça kopmasına sebep olur (doğru beyan).</li><li>E: Manivela gibi kullanmak tork etkisiyle mekanik yapıyı bozar (doğru beyan).</li></ul>'
       },
       {
         n: 3,
         topic: "Eğeler ve Bıçaklarda Standart Dışı Uygulamalar",
         text: "Bir ağır sanayi fabrikasında gerçekleştirilen İSG denetiminde aşağıdaki saha uygulamaları tespit edilmiştir:<br>I. Eğeleme performansını kaybettiği düşünülen eski bir eğenin, taşlama çarkında bilenerek metal kesme keskisine dönüştürülmesi,<br>II. Paketleme hattında çalışan bir işçinin, kalın mukavva koli kapaklarını açmak amacıyla elindeki kesme bıçağını düz uçlu tornavida gibi kullanıp kapağı zorlaması,<br>III. Bakım personelinin vidalama işleminde vida başının hatvesine ve formuna tam uyumlu, yalıtımlı tornavida tercih etmesi.<br>Klasik el aletlerinde hatalı ve amacına aykırı kullanım kriterlerine göre, yukarıdaki durumlardan hangileri arızalı, standart dışı veya amacına aykırı kullanım kapsamında değerlendirilir?",
         options: {
-          A: "Yalnız I",
-          B: "Yalnız II",
-          C: "I ve II",
-          D: "II ve III",
-          E: "I, II ve III"
+          A: "Yalnızca I numaralı öncül arızalı ve amacına aykırı kullanım kapsamında değerlendirilir.",
+          B: "Yalnızca II numaralı öncül arızalı ve amacına aykırı kullanım kapsamında değerlendirilir.",
+          C: "I ve II numaralı öncüller arızalı ve amacına aykırı kullanım kapsamında değerlendirilir.",
+          D: "II ve III numaralı öncüller arızalı ve amacına aykırı kullanım kapsamında değerlendirilir.",
+          E: "I, II ve III numaralı öncüller arızalı ve amacına aykırı kullanım kapsamında değerlendirilir."
         },
         answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "Eğeler" ve "Bıçaklar" kullanım tablosuna göre; "Eğelerden keski veya tornavida yapmak" (I. öncül) ve "Bıçakları tornavida gibi ya da kutu kapağı açmada kullanmak" (II. öncül) standart dışı, arızalı ve amacına aykırı kullanım örnekleridir. III. öncüldeki "vidaya uygun tornavida seçimi" ise tamamen doğru ve standart bir uygulamadır. Bu nedenle I ve II hatalı durumları kapsar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Eksiktir: Yalnız I seçeneği II. öncüldeki bıçak suiistimalini dışarıda bırakır.</li><li>B Şıkkı Eksiktir: Yalnız II seçeneği I. öncüldeki eğe tahrifatını kapsamaz.</li><li>D Şıkkı Yanlıştır: III. öncül doğru bir uygulama olduğu için arızalı/aykırı kullanıma girmez.</li><li>E Şıkkı Yanlıştır: III. öncülü aykırı kabul ettiği için elenir.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "Eğeler" ve "Bıçaklar" kullanım tablosuna göre; "Eğelerden keski veya tornavida yapmak" (I. öncül) ve "Bıçakları tornavida gibi ya da kutu kapağı açmada kullanmak" (II. öncül) standart dışı, arızalı ve amacına aykırı kullanım örnekleridir. III. öncüldeki "vidaya uygun tornavida seçimi" ise tamamen doğru ve standart bir uygulamadır. Bu nedenle I ve II hatalı durumları kapsar. Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Yalnız I seçeneği II. öncüldeki bıçak suiistimalini dışarıda bırakır.</li><li>B: Yalnız II seçeneği I. öncüldeki eğe tahrifatını kapsamaz.</li><li>D: III. öncül doğru bir uygulama olduğu için arızalı/aykırı kullanıma girmez.</li><li>E: III. öncülü aykırı kabul ettiği için elenir.</li></ul>'
       },
       {
         n: 4,
         topic: "Kazma ve Baltalarda Mekanik Zorlama",
         text: "Altyapı kazı sahasında çalışan bir işçi, zemindeki sertleşmiş taş ve ağaç köklerini sökebilmek için elindeki kazmayı manivela gibi takoz üzerine koyup bastırmış; diğer bir çalışan ise kalın bir kütüğü yarabilmek için baltayı kama gibi yarığa sıkıştırıp üzerine balyozla şiddetle vurmuştur. El aletlerinin doğru teknik kullanımı ilkeleri uyarınca, bu çalışanların davranışları için aşağıdakilerden hangisi <strong>söylenemez</strong>?",
         options: {
-          A: "Baltanın kama gibi araya sıkıştırılıp üzerine vurulması metalde çapaklanma ve gevrek kırılma yaratacağı için doğru bir kullanım şeklidir.",
-          B: "Kazmaların temel kullanım amacı toprağın yumuşatılması ve kazılmasıdır.",
-          C: "Kazmanın taş veya ağaç sökmede manivela gibi zorlanması sap eğilmesine ve sapın kovan kısmından kırılmasına neden olur.",
-          D: "Baltalar ağaç kesmek, yontmak ve yarmak amacıyla tasarlanmış kesici ve yarman araçlardır.",
-          E: "Her iki çalışan da el aletlerini imalat tasarım amaçlarının dışında kullanarak hayati kaza riski oluşturmuştur."
+          A: "Kazmaların temel kullanım amacı toprağın yumuşatılması ve kazılması işlemlerinin güvenli bir şekilde yapılmasını sağlamaktır.",
+          B: "Kazmanın taş veya ağaç sökmede manivela gibi zorlanması sap eğilmesine ve sapın kovan kısmından kırılmasına neden olmaktadır.",
+          C: "Baltalar ağaç kesmek, yontmak ve yarmak amacıyla tasarlanmış olan kesici ve yarman el aletleri olarak bilinmektedir.",
+          D: "Baltanın kama gibi araya sıkıştırılıp üzerine vurulması metalde çapaklanma ve gevrek kırılma yaratacağı için doğru bir kullanım şeklidir.",
+          E: "Her iki çalışan da el aletlerini imalat tasarım amaçlarının tamamen dışında kullanarak ciddi ve hayati kaza riski oluşturmuştur."
         },
-        answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metinde "Baltalar" tablosuna göre baltaların doğru kullanımı "Ağaç kesmek, yontmak ve yarmak", yanlış kullanımı ise "Kama gibi araya sıkıştırmak veya üzerine vurarak yarmak" olarak tanımlanmıştır. A şıkkında bu yanlış kullanım teknik olarak doğruymuş gibi sunulmuştur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Doğrudur: Kazmaların temel işlevi toprak kazmaktır.</li><li>C Şıkkı Doğrudur: Kazmayı manivela gibi taş/ağaç sökmede kullanmak hatalı kullanımdır.</li><li>D Şıkkı Doğrudur: Baltanın kullanım alanı ağaç kesme, yontma ve yarimadır.</li><li>E Şıkkı Doğrudur: Tasarım amacı dışı kullanım kaza sebebidir.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metinde "Baltalar" tablosuna göre baltaların doğru kullanımı "Ağaç kesmek, yontmak ve yarmak", yanlış kullanımı ise "Kama gibi araya sıkıştırmak veya üzerine vurarak yarmak" olarak tanımlanmıştır. D seçeneğinde bu yanlış kullanım teknik olarak doğruymuş gibi sunulmuştur. Soru "söylenemez" olduğu için doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Kazmaların temel işlevi toprak kazmaktır (doğru beyan).</li><li>B: Kazmayı manivela gibi taş/ağaç sökmede kullanmak hatalı kullanımdır (doğru beyan).</li><li>C: Baltanın kullanım alanı ağaç kesme, yontma ve yarmadır (doğru beyan).</li><li>E: Tasarım amacı dışı kullanım kaza sebebidir (doğru beyan).</li></ul>'
       },
       {
         n: 5,
         topic: "Anahtarların Darbeli Kullanımı ve Sertleşme Riski",
         text: "Bir makine montaj atölyesinde, sıkışan bir somunu sökmeye çalışan operatör, açık ağızlı anahtarın sapına darbe uygulamak için yakındaki diğer bir kombine anahtarı çekiç gibi kullanmış; vurma esnasında saptan kopan sertleştirilmiş metal çapağı çalışanın gözüne isabet etmiştir. Anahtarların kullanım ilkeleri ve iş güvenliği kuralları açısından aşağıdakilerden hangisi <strong>yanlıştır</strong>?",
         options: {
-          A: "Cıvata ve somunların sıkılması veya gevşetilmesi için uygun ölçüde anahtar kullanılmalıdır.",
-          B: "Anahtarların çekiç olarak kullanılması, vurma yüzeyinde aşırı sertleşme ve gevrek çapak fırlamalarına sebep olur.",
-          C: "Somunu sıkmak veya gevşetmek için cıvata başına tam oturan doğru ölçülü anahtar seçilmelidir.",
-          D: "Lokma ve kombine anahtarlar darbe emici yüksek alaşımlı çelikten yapıldığı için ihtiyaç halinde çekiç yerine kullanılabilir.",
-          E: "Yanlış el aleti seçimi ve aletin fonksiyonu dışında kullanılması yüksek riskli yaralanma sebebidir."
+          A: "Cıvata ve somunların sıkılması veya gevşetilmesi işlemleri için mutlaka uygun ölçüde anahtar kullanılması gerekmektedir.",
+          B: "Anahtarların çekiç olarak kullanılması, vurma yüzeyinde aşırı sertleşme ve gevrek çapak fırlamalarına sebep olmaktadır.",
+          C: "Somunu sıkmak veya gevşetmek için cıvata başına tam oturan doğru ölçülü bir anahtarın seçilmesi gerekmektedir.",
+          D: "Yanlış el aleti seçimi ve aletin fonksiyonu dışında kullanılması yüksek riskli yaralanmalara sebep olan bir davranıştır.",
+          E: "Lokma ve kombine anahtarlar darbe emici yüksek alaşımlı çelikten yapıldığı için ihtiyaç halinde çekiç yerine kullanılabilir."
         },
-        answer: "D",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "Anahtarlar" tablosunda kullanım amacı "Cıvataların sıkılması veya gevşetilmesi", yanlış kullanımı ise "Çekiç yerine kullanmak, yanlış anahtar kullanmak" olarak ifade edilmiştir. Anahtarlar vurma yüklerine dayanıklı gevrek olmayan yapıda tasarlanmaz; çekiç gibi vurulduğunda vurma yüzeyi çapaklanır ve parçalanır. D şıkkındaki iddia tamamen yanlıştır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Cıvata ve somun sıkma temel işlevdir.</li><li>B Şıkkı Doğrudur: Çekiç yerine kullanmak çapaklanma ve yaralanmaya yol açar.</li><li>C Şıkkı Doğrudur: Somun toleransına uygun anahtar seçilmelidir.</li><li>E Şıkkı Doğrudur: Amacı dışında kullanım ciddi kaza sebebidir.</li></ul>'
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "Anahtarlar" tablosunda kullanım amacı "Cıvataların sıkılması veya gevşetilmesi", yanlış kullanımı ise "Çekiç yerine kullanmak, yanlış anahtar kullanmak" olarak ifade edilmiştir. Anahtarlar vurma yüklerine dayanıklı gevrek olmayan yapıda tasarlanmaz; çekiç gibi vurulduğunda vurma yüzeyi çapaklanır ve parçalanır. E seçeneğindeki iddia tamamen yanlıştır. Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Cıvata ve somun sıkma temel işlevdir (doğru beyan).</li><li>B: Çekiç yerine kullanmak çapaklanma ve yaralanmaya yol açar (doğru beyan).</li><li>C: Somun toleransına uygun anahtar seçilmelidir (doğru beyan).</li><li>D: Amacı dışında kullanım ciddi kaza sebebidir (doğru beyan).</li></ul>'
       },
       {
         n: 6,
         topic: "Kürek, Bel Küreği, Manivela ve Tornavida Doğru Kullanım İlkeleri",
         text: "Şantiye ortamında yürütülen denetimlerde; bir işçinin toprağı şekilli kesip çıkarmak için bel küreği kullanmak yerine yayvan malzeme aktarma küreğini toprağa saplamaya çalıştığı; dökme malzemeyi sıyırmak ve aktarmakla görevli diğer çalışanın ise engebeli zeminde bel küreği ile malzeme aktarmaya çalışarak bel zorlanması yaşadığı tespit edilmiştir. Aynı zamanda tornavida ve manivelaların amacına aykırı biçimde birbirinin yerine kullanıldığı görülmüştür. El aletlerinin doğru kullanım eşleşmeleri dikkate alındığında aşağıdakilerden hangisi doğrudur?",
         options: {
-          A: "Toprağın şekilli kesilip çıkarılması işleminde sıyırma ve aktarma küreği kullanılmalıdır.",
-          B: "Sıyırmak suretiyle malzemenin kaldırılması ve aktarılması işlerinde bel küreği kullanılması doğru tekniktir.",
-          C: "Bel küreği toprağın şekilli kesilip çıkarılması amaca uygun kullanımı iken, sıyırma ve aktarma işlerinde kullanılması hatalı kullanımdır.",
-          D: "Tornavidalar fazla ağır yükleri kaldırmak için destek veya takoz gibi kullanılabilir.",
-          E: "Manivelalar yalnızca küçük vidaların gevşetilmesi ve sıkılması amacıyla tasarlanmıştır."
+          A: "Bel küreği toprağın şekilli kesilip çıkarılması amaca uygun kullanımı iken, sıyırma ve aktarma işlerinde kullanılması hatalı kullanımdır.",
+          B: "Toprağın şekilli bir biçimde kesilip çıkarılması işleminde sıyırma ve aktarma küreğinin kullanılması en doğru teknik yöntemdir.",
+          C: "Sıyırmak suretiyle malzemenin kaldırılması ve aktarılması işlerinde bel küreği kullanılması son derece doğru olan bir tekniktir.",
+          D: "Tornavidalar fazla ağır olan yükleri kaldırmak amacıyla destek veya takoz gibi güvenle kullanılabilen el aletleri olarak bilinir.",
+          E: "Manivelalar yalnızca küçük vidaların gevşetilmesi ve sıkılması amacıyla tasarlanmış olan özel el aletleri olarak bilinmektedir."
         },
-        answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin tablosuna göre:</p><ul><li>Bel küreği: Toprağın şekilli kesilip çıkarılması (Doğru kullanım) / Sıyırma ve aktarma işlerinde kullanma (Yanlış kullanım).</li><li>Kürekler: Sıyırmak suretiyle malzemeyi kaldırmak (Doğru kullanım) / Bel küreği gibi toprak yapmak (Yanlış kullanım).</li><li>Tornavidalar: Vida sıkmak veya gevşetmek (Doğru kullanım) / Bel küreği veya manivela gibi kullanmak (Yanlış kullanım).</li><li>Manivelalar: Uygun şekilde yük kaldırmak, sandık açmak (Doğru kullanım) / Destek, takoz veya çekiç gibi kullanmak (Yanlış kullanım).</li></ul><p>Dolayısıyla C seçeneği bel küreğinin kaynak metindeki doğru ve yanlış kullanım ayrımını tam olarak vermektedir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Toprağı şekilli kesmek için aktarma küreği değil bel küreği kullanılır.</li><li>B Şıkkı Yanlıştır: Sıyırma ve aktarma işinde bel küreği değil normal kürek kullanılır.</li><li>D Şıkkı Yanlıştır: Tornavidalar takoz veya manivela gibi kullanılamaz.</li><li>E Şıkkı Yanlıştır: Manivelalar vidalama için değil yük kaldırma/sandık açma içindir.</li></ul>'
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin tablosuna göre:</p><ul><li>Bel küreği: Toprağın şekilli kesilip çıkarılması (Doğru kullanım) / Sıyırma ve aktarma işlerinde kullanma (Yanlış kullanım).</li><li>Kürekler: Sıyırmak suretiyle malzemeyi kaldırmak (Doğru kullanım) / Bel küreği gibi toprak yapmak (Yanlış kullanım).</li><li>Tornavidalar: Vida sıkmak veya gevşetmek (Doğru kullanım) / Bel küreği veya manivela gibi kullanmak (Yanlış kullanım).</li><li>Manivelalar: Uygun şekilde yük kaldırmak, sandık açmak (Doğru kullanım) / Destek, takoz veya çekiç gibi kullanmak (Yanlış kullanım).</li></ul><p>Dolayısıyla A seçeneği bel küreğinin kaynak metindeki doğru ve yanlış kullanım ayrımını tam olarak vermektedir. Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B: Toprağı şekilli kesmek için aktarma küreği değil bel küreği kullanılır.</li><li>C: Sıyırma ve aktarma işinde bel küreği değil normal kürek kullanılır.</li><li>D: Tornavidalar takoz veya manivela gibi kullanılamaz.</li><li>E: Manivelalar vidalama için değil yük kaldırma/sandık açma içindir.</li></ul>'
       },
       {
         n: 7,
         topic: "Uzatma Kolu (Boru/Çubuk) Kullanım Yasağı",
         text: "Bir vana bakım atölyesinde mekaniker, paslanmış büyük bir vananın cıvatasını sökerken açık ağızlı anahtarın sapına uzun bir çelik boru geçirerek uzatma kolu yapmış ve tüm gücüyle yüklenmiştir. Uygulanan aşırı tork nedeniyle cıvata başı kopmuş ve anahtar fırlayarak çalışanın çenesine çarpmıştır. Klasik el aletlerinde genel güvenlik tedbirleri uyarınca bu vaka için aşağıdakilerden hangisi söylenebilir?",
         options: {
-          A: "Anahtar sapına boru veya çubuk takılarak rastgele uzatma kolu yapılması kesinlikle yasaktır; momentum artıran bu uygulama aletin ve bağlantının kırılmasına yol açar.",
-          B: "Paslı cıvatalarda uzatma kolu uzunluğu anahtar boyunun en az 3 katı olacak şekilde ayarlanmalıdır.",
-          C: "Uzatma kolu kullanımı sadece cıvata sıkma işlemlerinde yasak olup gevşetme işlemlerinde standart bir yöntemdir.",
-          D: "Boru takılarak yapılan uzatma kolu uygulamalarında çelik borunun et kalınlığı artırıldığı sürece kaza riski oluşmaz.",
-          E: "Tork artırıcı boru kullanımı, kişisel koruyucu donanım kullanıldığı takdirde mevzuata uygun hale gelir."
+          A: "Paslı cıvatalarda uzatma kolunun uzunluğu anahtar boyunun en az üç katı olacak şekilde ayarlanarak kullanılması uygun bir yöntem olarak görülmektedir.",
+          B: "Anahtar sapına boru veya çubuk takılarak rastgele uzatma kolu yapılması kesinlikle yasaktır; momentum artıran bu uygulama aletin ve bağlantının kırılmasına yol açar.",
+          C: "Uzatma kolu kullanımı sadece cıvata sıkma işlemlerinde yasak olup gevşetme işlemlerinde standart ve güvenli bir yöntem olarak kabul edilmektedir.",
+          D: "Boru takılarak yapılan uzatma kolu uygulamalarında çelik borunun et kalınlığı yeterince artırıldığı sürece herhangi bir kaza riski oluşmayacağı belirtilmektedir.",
+          E: "Tork artırıcı boru kullanımı, kişisel koruyucu donanım usulüne uygun bir şekilde kullanıldığı takdirde tamamen mevzuata uygun hale gelmektedir."
         },
-        answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "El Aletlerinde Alınması Gereken Genel Tedbirler" başlığı altında "Boru ve çubuk gibi rastgele uzatma kolu kullanılmamalı" maddesi kesin hüküm olarak yer almaktadır. Uzatma kolu moment kolunu artırarak anahtar ağzının açılmasına, cıvata başının kopmasına veya borunun kayarak yaralanmaya yol açmasına neden olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Uzatma kolu boyu ile ilgili bir tolerans mevzuatta yoktur, tamamen yasaktır.</li><li>C Şıkkı Yanlıştır: Gevşetme işleminde de uzatma kolu kullanımı yasaktır.</li><li>D Şıkkı Yanlıştır: Borunun et kalınlığı artırılsa bile anahtara binen tork momentini aşırı artıracağı için kaza riskini engellemez.</li><li>E Şıkkı Yanlıştır: KKD kullanımı kural ihlalini meşrulaştırmaz.</li></ul>'
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "El Aletlerinde Alınması Gereken Genel Tedbirler" başlığı altında "Boru ve çubuk gibi rastgele uzatma kolu kullanılmamalı" maddesi kesin hüküm olarak yer almaktadır. Uzatma kolu moment kolunu artırarak anahtar ağzının açılmasına, cıvata başının kopmasına veya borunun kayarak yaralanmaya yol açmasına neden olur. Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Uzatma kolu boyu ile ilgili bir tolerans mevzuatta yoktur, tamamen yasaktır.</li><li>C: Gevşetme işleminde de uzatma kolu kullanımı yasaktır.</li><li>D: Borunun et kalınlığı artırılsa bile anahtara binen tork momentini aşırı artıracağı için kaza riskini engellemez.</li><li>E: KKD kullanımı kural ihlalini meşrulaştırmaz.</li></ul>'
       },
       {
         n: 8,
         topic: "Küçük Parçaların Sabitlenmesi ve Mengene Zorunluluğu",
         text: "Bir talaşlı imalat imalathanesinde stajyer teknisyen, 30 mm çapındaki küçük bir metal parçayı sol eliyle kavrayıp sağ elindeki el testeresi ve eğe ile işlemeye çalışmıştır. Eyenin parçadan kayması sonucu testere ağzı çalışanın sol el başparmağını ağır şekilde kesmiştir. Bu tür yaralanmaların önlenmesi amacıyla klasik el aletleri genel güvenlik kurallarına göre alınması gereken kesin tedbir aşağıdakilerden hangisidir?",
         options: {
-          A: "Küçük parçalarla çalışılırken parça el ile tutulmamalı, mutlaka bir tezgah mengenesi veya uygun sabitleme aparatları ile sabitlenmelidir.",
-          B: "Tek elle çalışma yapılırken mutlaka çelik örgülü kesilmez eldiven takılarak parça el ile tutulmaya devam edilmelidir.",
-          C: "Eğe kullanımı esnasında kesme sıvısı dökülerek kayma engellenmelidir.",
-          D: "Küçük parçalar el testeresi yerine yüksek devirli el spiraline tutturularak kesilmelidir.",
-          E: "Sabitleme yapılmadan çalışılan durumlarda eğeleme hızı iki katına çıkarılmalıdır."
+          A: "Tek elle çalışma yapılırken mutlaka çelik örgülü kesilmez eldiven takılarak iş parçası el ile tutulmaya devam edilmesi uygun görülmektedir.",
+          B: "Eğe kullanımı esnasında kesme sıvısı dökülerek malzeme yüzeyinde kaymanın engellenmesi yeterli bir güvenlik önlemi olarak kabul edilmektedir.",
+          C: "Küçük parçalarla çalışılırken parça el ile tutulmamalı, mutlaka bir tezgah mengenesi veya uygun sabitleme aparatları ile sabitlenmelidir.",
+          D: "Küçük parçalar el testeresi yerine yüksek devirli el spiraline uygun şekilde tutturularak güvenli biçimde kesilmesi gerekmektedir.",
+          E: "Sabitleme yapılmadan çalışılan durumlarda eğeleme hızının iki katına çıkarılması güvenlik seviyesini önemli ölçüde artırmaktadır."
         },
-        answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "El Aletlerinde Alınması Gereken Genel Tedbirler" maddesi: "Küçük parçalarla çalışırken mengene ile tutturulmadan çalışılmamalıdır." İş parçası elle tutulduğunda el aletinin kayması doğrudan uzuv kesilmelerine yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Eldiven takılması parçanın elle tutularak işlenmesine izin vermez, temel kural mengene kullanımıdır.</li><li>C Şıkkı Yanlıştır: Kesme sıvısı kaymayı engellemez, aksine yüzeyi kayganlaştırabilir.</li><li>D Şıkkı Yanlıştır: Parçayı spirale bağlamak tehlikeyi katlar.</li><li>E Şıkkı Yanlıştır: Hızı artırmak kaza şiddetini artırır.</li></ul>'
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "El Aletlerinde Alınması Gereken Genel Tedbirler" maddesi: "Küçük parçalarla çalışırken mengene ile tutturulmadan çalışılmamalıdır." İş parçası elle tutulduğunda el aletinin kayması doğrudan uzuv kesilmelerine yol açar. Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Eldiven takılması parçanın elle tutularak işlenmesine izin vermez, temel kural mengene kullanımıdır.</li><li>B: Kesme sıvısı kaymayı engellemez, aksine yüzeyi kayganlaştırabilir.</li><li>D: Parçayı spirale bağlamak tehlikeyi katlar.</li><li>E: Hızı artırmak kaza şiddetini artırır.</li></ul>'
       },
       {
         n: 9,
         topic: "Hareketli/Çalışan Makineye Müdahale Yasağı",
         text: "Tekstil fabrikasında çalışan bir operatör, döner merdaneli silindir alanına kumaş sıkışması üzerine makinenin şalterini kapatmadan elindeki uzun torna tornavidası ile dönen aksam arasına müdahale etmiştir. Tornavidanın dönen silindire kaptırılmasıyla operatörün eli mekanizmanın içine çekilmiştir. Çalışan makineler ve el aletleri ile müdahale prensipleri açısından bu kazayı önleyici temel kural aşağıdakilerden hangisidir?",
         options: {
-          A: "Dönen aksama müdahale edilirken esnek yapıda ahşap saplı el aletleri tercih edilmelidir.",
-          B: "Hareketli/çalışan makineler durdurulmadan ve enerji kesilmeden el aleti ile hiçbir şekilde müdahale edilmemelidir.",
-          C: "Müdahale esnasında el aletinin boyu en az 1 metre uzunluğunda seçilmelidir.",
-          D: "Makine hızı en düşük devire getirilerek el aleti ile müdahaleye devam edilmelidir.",
-          E: "Dönen silindirlere müdahale esnasında bez eldiven kullanılması yeterli güvenlik sağlar."
+          A: "Dönen aksama müdahale edilirken esnek yapıda ahşap saplı el aletlerinin tercih edilmesi uygun ve güvenli bir yöntemdir.",
+          B: "Müdahale esnasında el aletinin boyu en az bir metre uzunluğunda seçilerek gerekli güvenlik sağlanması gerekmektedir.",
+          C: "Makine hızı en düşük devire getirilerek el aleti ile müdahaleye güvenli bir şekilde devam edilmesi uygun görülmektedir.",
+          D: "Hareketli veya çalışan makineler mutlaka durdurulmadan ve enerjisi kesilmeden el aleti ile hiçbir şekilde müdahale edilmemelidir.",
+          E: "Dönen silindirlere müdahale esnasında bez eldiven kullanılmasının yeterli güvenlik sağladığı genel olarak kabul edilmektedir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "El Aletlerinde Alınması Gereken Genel Tedbirler" maddesi: "Çalışan makineler durdurulmadan el aleti ile müdahale edilmemeli." Dönen aksama el aleti ile müdahale edildiğinde aletin sıkışması ve çalışanın makineye çekilmesi kaçınılmazdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Ahşap saplı el aleti kullanımı dönen aksama müdahale yasağını ortadan kaldırmaz.</li><li>C Şıkkı Yanlıştır: Uzun el aleti kullanmak tork geri tepmesiyle yaralanmayı engellemez.</li><li>D Şıkkı Yanlıştır: Düşük devirde de sıkışma ve uzuv kaybı riski devam eder.</li><li>E Şıkkı Yanlıştır: Dönen aksam yanında bez eldiven takmak yakalanma/kaptırma riskini daha da artırır.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "El Aletlerinde Alınması Gereken Genel Tedbirler" maddesi: "Çalışan makineler durdurulmadan el aleti ile müdahale edilmemeli." Dönen aksama el aleti ile müdahale edildiğinde aletin sıkışması ve çalışanın makineye çekilmesi kaçınılmazdır. Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Ahşap saplı el aleti kullanımı dönen aksama müdahale yasağını ortadan kaldırmaz.</li><li>B: Uzun el aleti kullanmak tork geri tepmesiyle yaralanmayı engellemez.</li><li>C: Düşük devirde de sıkışma ve uzuv kaybı riski devam eder.</li><li>E: Dönen aksam yanında bez eldiven takmak yakalanma/kaptırma riskini daha da artırır.</li></ul>'
       },
       {
         n: 10,
         topic: "Vurmalı Alet Başlarında Mantarlaşma ve Tıraşlama",
         text: "Taşlama ve döküm temizleme atölyesinde kullanılan zımba, murç ve çivilerin başlarının uzun süreli darbe etkisiyle mantarlaştığı (çapaklandığı/yayvanlaştığı) tespit edilmiştir. İş güvenliği uzmanı bu aletlerin bu şekilde kullanılmasının hayati risk taşıdığını belirtmiştir. Çapak fırlama ve yaralanma risklerine karşı bu tür vurmalı el aletlerinde yapılması gereken standart bakım işlemi aşağıdakilerden hangisidir?",
         options: {
-          A: "Mantarlaşan başlıklar yüksek sıcaklıkta ısıtılarak tekrar çekiçle dövülmelidir.",
-          B: "Üzerine vurulmak suretiyle çalışan zımba, murç ve çivilerin başları belirli aralıklarla taşlanarak/tıraşlanarak çapak fırlamalarının önüne geçilmelidir.",
-          C: "Vurma başlarına kauçuk kılıf geçirilerek çapak fırlaması engellenmelidir.",
-          D: "Mantarlaşmış başlıklar sert lehim ile kaplanarak gevrekliği alınmalıdır.",
-          E: "Bu aletler mantarlaşma gösterdiğinde sadece ahşap tokmaklarla kullanılmalıdır."
+          A: "Mantarlaşan başlıkların yüksek sıcaklıkta ısıtılarak tekrar çekiçle dövülmesi suretiyle düzeltilmesi uygun ve güvenli bir yöntem olarak kabul edilmektedir.",
+          B: "Vurma başlarına kauçuk kılıf geçirilerek çapak fırlamasının güvenli bir biçimde engellenmesinin mümkün olduğu belirtilmektedir.",
+          C: "Mantarlaşmış başlıkların sert lehim ile kaplanması suretiyle çeliğin gevrekliğinin tamamen giderilmesinin mümkün olduğu ifade edilmektedir.",
+          D: "Bu aletler mantarlaşma gösterdiğinde sadece ahşap tokmaklarla kullanılarak gerekli güvenliğin sağlanması gerektiği belirtilmektedir.",
+          E: "Üzerine vurulmak suretiyle çalışan zımba, murç ve çivilerin başları belirli aralıklarla taşlanarak tıraşlanmalı ve çapak fırlamalarının önüne geçilmelidir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletlerinde Kazaların Önlenmesi": "Üzerine vurulmak suretiyle çalışan zımbalar, murçlar, çivilerin başları zaman zaman tıraşlanarak çapak fırlamalarının önüne geçilmelidir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Vurma başını ısıtıp dövmek çelik yapısını bozar ve gevrekleştirir.</li><li>C Şıkkı Yanlıştır: Kauçuk kılıf darbe enerjisiyle parçalanır ve çapak fırlamasını durduramaz.</li><li>D Şıkkı Yanlıştır: Kaynakla doldurma gerilme yığılmalarına yol açar.</li><li>E Şıkkı Yanlıştır: Mantarlaşmış alet ahşap tokmakla da kullanılsa çapak fırlatma potansiyelini korur.</li></ul>'
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletlerinde Kazaların Önlenmesi": "Üzerine vurulmak suretiyle çalışan zımbalar, murçlar, çivilerin başları zaman zaman tıraşlanarak çapak fırlamalarının önüne geçilmelidir." Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Vurma başını ısıtıp dövmek çelik yapısını bozar ve gevrekleştirir.</li><li>B: Kauçuk kılıf darbe enerjisiyle parçalanır ve çapak fırlamasını durduramaz.</li><li>C: Kaynakla doldurma gerilme yığılmalarına yol açar.</li><li>D: Mantarlaşmış alet ahşap tokmakla da kullanılsa çapak fırlatma potansiyelini korur.</li></ul>'
       },
       {
         n: 11,
@@ -678,139 +661,139 @@ const TESTS = [
         text: "Şantiye ortamında elektrik panosu montajı yapan bir tekniker, kablo soyma bıçağını ve sivri uçlu düz tornavidayı iş tulumunun cebine koyarak seyyar merdivene tırmanmıştır. Merdivenden basamak kayması sonucu düşen teknikerin cebindeki bıçak uyluk arterine saplanarak ağır yaralanmaya neden olmuştur. Saha şartları, taşıma ve depolama ilkeleri çerçevesinde doğru uygulama aşağıdakilerden hangisidir?",
         options: {
           A: "Keskin ve sivri uçlu el aletleri cepte taşınmamalı; özel kılıflarında, takım kılıflarında veya taşıma çantalarında nakledilmelidir.",
-          B: "Keskin aletler cebe koyulurken uç kısımlarına izole bant sarılması yeterlidir.",
-          C: "Yüksekte çalışırken el aletleri pantolonun arka ceplerine kesici yüzü dışarı bakacak şekilde yerleştirilmelidir.",
-          D: "Bıçak ve tornavidalar tulum ceplerinde taşınabilir ancak merdiven çıkarken tek el serbest tutulmalıdır.",
-          E: "Keskin aletlerin cepte taşınması durumunda sadece plastik saplı olanlar tercih edilmelidir."
+          B: "Keskin aletler cebe koyulurken uç kısımlarına yalıtkan izole bant sarılması yeterli bir güvenlik önlemi olarak kabul edilmektedir.",
+          C: "Yüksekte çalışırken el aletleri pantolonun arka ceplerine kesici yüzü dışarı bakacak şekilde yerleştirilmesi uygun görülmektedir.",
+          D: "Bıçak ve tornavidalar tulum ceplerinde taşınabilir ancak merdiven çıkarken tek elin serbest tutulması yeterli olmaktadır.",
+          E: "Keskin aletlerin cepte taşınması durumunda sadece plastik saplı olan modellerin tercih edilmesi yeterli güvenliği sağlamaktadır."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletleri Tedbirleri": "Sivri uçlu ya da keskin kenarlı el aletleri cepte taşınmamalıdır." Düşme veya kayma anında cepteki kesiciler vücuda saplanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Uca bant sarılması düşme kinetiği altında saplanmayı engellemez.</li><li>C Şıkkı Yanlıştır: Arka cepte taşımak da aynı hayati riski taşır.</li><li>D Şıkkı Yanlıştır: Yüksekte çalışırken cebe koymak yasaktır, takım kılıfı veya çantası zorunludur.</li><li>E Şıkkı Yanlıştır: Plastik saplı olması kesici/sivri ucun saplanma riskini değiştirmez.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletleri Tedbirleri": "Sivri uçlu ya da keskin kenarlı el aletleri cepte taşınmamalıdır." Düşme veya kayma anında cepteki kesiciler vücuda saplanır. Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B: Uca bant sarılması düşme kinetiği altında saplanmayı engellemez.</li><li>C: Arka cepte taşımak da aynı hayati riski taşır.</li><li>D: Yüksekte çalışırken cebe koymak yasaktır, takım kılıfı veya çantası zorunludur.</li><li>E: Plastik saplı olması kesici/sivri ucun saplanma riskini değiştirmez.</li></ul>'
       },
       {
         n: 12,
         topic: "Çalışma Alanı Zemin Fiziki Şartları",
         text: "Bir ağır bakım atölyesinin zeminine sızan hidrolik yağlar nedeniyle yüzeyin son derece kayganlaştığı ve düzensiz malzeme atıkları nedeniyle engebelerin oluştuğu gözlemlenmiştir. Çalışanlar bu zeminde tork anahtarları ve ağır çekiçlerle montaj yapmaktadır. Klasik el aletleri ile çalışma yapılacak alanın fiziki zemin şartları açısından mevzuattaki kesin zorunluluk aşağıdakilerden hangisidir?",
         options: {
-          A: "Çalışma alanı eğimli ve nemli olmalı, statik elektriği iletmelidir.",
+          A: "Çalışma alanı eğimli ve nemli olmalı, statik elektriği güvenli bir şekilde iletmesi gerekmektedir.",
           B: "El aletleri ile çalışma yapılacak alan kuru ve düzgün olmalı; kaygan ve engebeli olmamalıdır.",
-          C: "Kaygan zeminlerde çalışma yapılırken alanın üzerine kuru talaş serpilmesi yeterlidir.",
+          C: "Kaygan zeminlerde çalışma yapılırken alanın üzerine kuru talaş serpilmesi yeterli bir önlem olarak kabul edilmektedir.",
           D: "Zemin yapısı nasıl olursa olsun çalışanların çelik burunlu kaymaz ayakkabı giymesi alan şartı zorunluluğunu ortadan kaldırır.",
-          E: "Kaygan zeminlerde el aleti kullanımında aletlerin sapı katran ile kaplanmalıdır."
+          E: "Kaygan zeminlerde el aleti kullanımında aletlerin sapının katran ile kaplanması gerekli güvenliği sağlamaktadır."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletleri Tedbirleri": "El aletleri ile çalışma yapılacak alan kuru ve düzgün olmalıdır. Kaygan ve engebeli olmamalıdır."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Eğimli ve nemli alan kayma ve düşme riskini artırır.</li><li>C Şıkkı Yanlıştır: Yağın üzerine talaş sermek geçici ve yetersiz bir önlemdir, zemin tamamen temizlenmelidir.</li><li>D Şıkkı Yanlıştır: Ayakkabı faktörü zeminin düzgün ve kuru olması zorunluluğunu ortadan kaldırmaz.</li><li>E Şıkkı Yanlıştır: Sapın katranlanması zemin kayganlığı riskini bertaraf etmez.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletleri Tedbirleri": "El aletleri ile çalışma yapılacak alan kuru ve düzgün olmalıdır. Kaygan ve engebeli olmamalıdır." Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Eğimli ve nemli alan kayma ve düşme riskini artırır.</li><li>C: Yağın üzerine talaş sermek geçici ve yetersiz bir önlemdir, zemin tamamen temizlenmelidir.</li><li>D: Ayakkabı faktörü zeminin düzgün ve kuru olması zorunluluğunu ortadan kaldırmaz.</li><li>E: Sapın katranlanması zemin kayganlığı riskini bertaraf etmez.</li></ul>'
       },
       {
         n: 13,
         topic: "El Aletlerinin Depolanması ve Muhafaza Standartları",
         text: "Vardiya değişimi sırasında yapılan incelemede, işçilerin kullandıkları hassas kumpasları, eğeleri, kiknotları ve özel anahtarları tezgah üzerlerine rasgele bıraktıkları, bazılarının nemli zeminde korozyona uğradığı tespit edilmiştir. El aletlerinin muhafazası, depolanması ve teknik ömürlerinin korunması ile ilgili standart kural aşağıdakilerden hangisidir?",
         options: {
-          A: "El aletleri paslanmayı önlemek amacıyla su dolu kaplar içerisinde muhafaza edilmelidir.",
-          B: "El aletleri kullanılmadığında takım çantaları içerisinde, özel dolaplarda veya uygun standlarda bulundurulmalıdır.",
-          C: "Kesici ve vurucu aletler çalışma tezgahının altında açıkta karmaşık şekilde istiflenmelidir.",
-          D: "Bıçak ve keskiler yağlı bezlere sarılarak kapalı ahşap sandıklarda üst üste yığılmalıdır.",
-          E: "El aletleri yüksek raf sistemlerine üzerlerinde hiçbir sabitleme olmadan açıkta dizilmelidir."
+          A: "El aletlerinin paslanmayı önlemek amacıyla su dolu kaplar içerisinde muhafaza edilmesi uygun görülmektedir.",
+          B: "Kesici ve vurucu aletlerin çalışma tezgahının altında açıkta karmaşık şekilde istiflenmesi gerekmektedir.",
+          C: "El aletleri kullanılmadığında takım çantaları içerisinde, özel dolaplarda veya uygun standlarda bulundurulmalıdır.",
+          D: "Bıçak ve keskilerin yağlı bezlere sarılarak kapalı ahşap sandıklarda üst üste yığılması uygun olmaktadır.",
+          E: "El aletlerinin yüksek raf sistemlerine üzerlerinde hiçbir sabitleme olmadan açıkta dizilmesi gerekmektedir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletleri Tedbirleri": "El aletleri kullanılmadığında takım çantaları içerisinde ya da uygun standlarda bulundurulmalıdır."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Su dolu kapta tutmak paslanmaya ve aletin bozulmasına yol açar.</li><li>C Şıkkı Yanlıştır: Düzensiz açıkta istifleme düşme ve kesilme riskleri yaratır.</li><li>D Şıkkı Yanlıştır: Kılıfsız kutuya doldurmak kesici kenarların birbirini körletmesine ve yaralanmaya neden olur.</li><li>E Şıkkı Yanlıştır: Yüksek raflara korumasız koymak baş üstüne düşme riski yaratır.</li></ul>'
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletleri Tedbirleri": "El aletleri kullanılmadığında takım çantaları içerisinde ya da uygun standlarda bulundurulmalıdır." Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Su dolu kapta tutmak paslanmaya ve aletin bozulmasına yol açar.</li><li>B: Düzensiz açıkta istifleme düşme ve kesilme riskleri yaratır.</li><li>D: Kılıfsız kutuya doldurmak kesici kenarların birbirini körletmesine ve yaralanmaya neden olur.</li><li>E: Yüksek raflara korumasız koymak baş üstüne düşme riski yaratır.</li></ul>'
       },
       {
         n: 14,
         topic: "Teknik Ömrünü Tamamlamış ve Çatlak Aletlerin Iskartası",
         text: "Saha denetçisi, boru işleme atölyesinde kullanılan bir çektirmenin vida dişlerinin tamamen aşındığını, gövdesinde gözle görülebilir kılcal çatlaklar oluştuğunu belirlemiştir. Atölye amiri aletin hala iş gördüğünü ve ıskartaya çıkarılmasının maliyet yaratacağını iddia etmektedir. İSG teknik esasları ve ekipman güvenliği açısından bu durum için aşağıdakilerden hangisi söylenebilir?",
         options: {
-          A: "Kılcal çatlak barındıran aletler yalnızca düşük yüklerde kullanılmaya devam edilebilir.",
-          B: "Teknik ömrünü tamamlamış, deforme olmuş veya çatlamış el aletleri kesinlikle kullanılmamalı, derhal ıskarta edilmelidir.",
-          C: "Aşınmış vida dişleri kaynakla doldurulup yeniden diş açılarak sahada kullanılmalıdır.",
-          D: "Çatlak gövde dıştan çelik kelepçe ile sıkılarak mukavemeti artırılmalıdır.",
-          E: "Aletin üzerine \"Dikkatli Kullan\" etiketi yapıştırılarak kullanımına izin verilmelidir."
+          A: "Kılcal çatlak barındıran aletler yalnızca düşük yükler altında kullanılmaya devam edilebilir olarak görülmektedir.",
+          B: "Aşınmış vida dişleri kaynakla doldurulup yeniden diş açılarak sahada güvenle kullanılabilir hale getirilmektedir.",
+          C: "Çatlak gövde dıştan çelik kelepçe ile sıkılarak mukavemetinin artırılması uygun bir çözüm olarak kabul edilir.",
+          D: "Teknik ömrünü tamamlamış, deforme olmuş veya çatlamış el aletleri kesinlikle kullanılmamalı, derhal ıskarta edilmelidir.",
+          E: "Aletin üzerine \"Dikkatli Kullan\" etiketi yapıştırılarak kullanımına devam edilmesinde sakınca görülmemektedir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletleri Tedbirleri": "Teknik ömrünü tamamlamış el aletleri kullanılmamalıdır." Dişleri aşınmış veya çatlamış aletler ani yük altında kırılarak fırlama yapar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Çatlamış veya ömrünü tamamlamış alet bakımla düzeltilemez, ıskartaya ayrılmalıdır.</li><li>C Şıkkı Yanlıştır: Kaynakla diş yenilemek malzemenin ısıl işlemini bozar ve kırılganlaştırır.</li><li>D Şıkkı Yanlıştır: Kelepçe takmak gerilme birikimini engellemez.</li><li>E Şıkkı Yanlıştır: Etiket koymak aletin mekanik olarak kırılmasını önlemez.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletleri Tedbirleri": "Teknik ömrünü tamamlamış el aletleri kullanılmamalıdır." Dişleri aşınmış veya çatlamış aletler ani yük altında kırılarak fırlama yapar. Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Çatlamış veya ömrünü tamamlamış alet bakımla düzeltilemez, ıskartaya ayrılmalıdır.</li><li>B: Kaynakla diş yenilemek malzemenin ısıl işlemini bozar ve kırılganlaştırır.</li><li>C: Kelepçe takmak gerilme birikimini engellemez.</li><li>E: Etiket koymak aletin mekanik olarak kırılmasını önlemez.</li></ul>'
       },
       {
         n: 15,
         topic: "Körelmiş Kesici Uçların Yaratacağı Fırlama Riski",
         text: "Ahşap atölyesinde körelmiş matkap uçları ve bileylenmemiş daire testere bıçakları ile kesim yapmaya çalışan işçilerin, malzemeyi aşırı baskı uygulayarak ittiği, bu sırada ahşabın geri tepmesi (kickback) sonucu bir işçinin göğsünden yaralandığı saptanmıştır. El aletleri güvenlik kurallarında yer alan temel ilke uyarınca bu kazanın ana nedeni aşağıdakilerden hangisidir?",
         options: {
-          A: "Körelmiş bıçak, zımba ve matkap uçlarının kullanımı baskı kuvvetini artırarak malzeme fırlamasına yol açacağından kullanılmamalıdır.",
-          B: "Körelmiş uçlarla çalışırken fırlama riskini azaltmak için makine devri en yüksek seviyeye çıkarılmalıdır.",
-          C: "Ahşap kesiminde körelmiş bıçaklar daha yavaş kesim yaptığı için güvenlik açısından daha avantajlıdır.",
-          D: "Körelmiş matkap uçları kullanılırken su ile soğutma yapılması malzeme fırlamasını tamamen engeller.",
-          E: "Kesici uçlar köreldiğinde kişisel koruyucu donanım seviyesi artırılarak kullanıma devam edilir."
+          A: "Körelmiş uçlarla çalışırken fırlama riskini azaltmak için makine devrinin en yüksek seviyeye çıkarılması gerekmektedir.",
+          B: "Ahşap kesiminde körelmiş bıçaklar daha yavaş kesim yaptığı için güvenlik açısından daha avantajlı kabul edilmektedir.",
+          C: "Körelmiş matkap uçları kullanılırken su ile soğutma yapılması malzeme fırlamasını tamamen engellemektedir.",
+          D: "Kesici uçlar köreldiğinde kişisel koruyucu donanım seviyesi artırılarak kullanıma devam edilebilmektedir.",
+          E: "Körelmiş bıçak, zımba ve matkap uçlarının kullanımı baskı kuvvetini artırarak malzeme fırlamasına yol açacağından kullanılmamalıdır."
         },
-        answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletleri Tedbirleri": "Körelmiş bıçak, zımba ve matkap uçları kullanılmamalıdır." Körelmiş uçlar kesme yerine sürtünme ve zorlanma yaratarak eksenel yükü artırır, aletin kaymasına veya malzemenin fırlamasına sebep olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Devri artırmak körelmiş uçta aşırı ısınma ve kırılma yaratır.</li><li>C Şıkkı Yanlıştır: Körelmiş aletler daha güvenli değil, daha tehlikelidir.</li><li>D Şıkkı Yanlıştır: Su ile soğutma körelmiş ucun yarattığı fiziksel geri tepmeyi engellemez.</li><li>E Şıkkı Yanlıştır: KKD artırılsa dahi körelmiş uç kullanımı temel güvenlik kuralına aykırıdır.</li></ul>'
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Klasik El Aletleri Tedbirleri": "Körelmiş bıçak, zımba ve matkap uçları kullanılmamalıdır." Körelmiş uçlar kesme yerine sürtünme ve zorlanma yaratarak eksenel yükü artırır, aletin kaymasına veya malzemenin fırlamasına sebep olur. Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Devri artırmak körelmiş uçta aşırı ısınma ve kırılma yaratır.</li><li>B: Körelmiş aletler daha güvenli değil, daha tehlikelidir.</li><li>C: Su ile soğutma körelmiş ucun yarattığı fiziksel geri tepmeyi engellemez.</li><li>D: KKD artırılsa dahi körelmiş uç kullanımı temel güvenlik kuralına aykırıdır.</li></ul>'
       },
       {
         n: 16,
         topic: "Elektrikli El Aletlerinde Kablo İzolasyon Bütünlüğü",
         text: "Bir bina inşaatının şantiye alanında kullanılan kablolu seyyar el matkabının elektrik kablosunun dış kılıfının zedelendiği, içteki faz ve nötr iletkenlerinin yalıtkanlarının soyularak açıkta kaldığı ve kablonun ıslak betona temas ettiği tespit edilmiştir. Elektrikli el aletlerinde kablo emniyeti ve elektrik izolasyonu açısından aşağıdakilerden hangisi zorunlu bir kuraldır?",
         options: {
-          A: "Soyulmuş kablo iletkenleri birbirine bükülüp bez bantla sarılarak sahada kullanılmaya devam edilebilir.",
-          B: "Elektrikli el aletlerinde kablo hasarlarına dikkat edilmeli; yalıtımı bozulmuş, çatlak veya kesik olan kablolar kesinlikle kullanılmamalıdır.",
-          C: "Kablonun soyulan kısmı ıslak zemine temas etmediği sürece elektrik çarpma riski bulunmaz.",
-          D: "Düşük voltajlı cihazlarda kablo izolasyon hasarları hayati tehlike oluşturmaz.",
-          E: "Kablo izolasyonu bozuk cihazlar kaçak akım rölesi bulunan panolara doğrudan bağlanarak çalıştırılabilir."
+          A: "Elektrikli el aletlerinde kablo hasarlarına dikkat edilmeli; yalıtımı bozulmuş, çatlak veya kesik olan kablolar kesinlikle kullanılmamalıdır.",
+          B: "Soyulmuş kablo iletkenleri birbirine bükülüp bez bantla sarılarak sahada güvenle kullanılmaya devam edilebilmektedir.",
+          C: "Kablonun soyulan kısmı ıslak zemine temas etmediği sürece elektrik çarpma riski bulunmadığı kabul edilmektedir.",
+          D: "Düşük voltajlı cihazlarda kablo izolasyon hasarları hayati tehlike oluşturmayan durumlar olarak görülmektedir.",
+          E: "Kablo izolasyonu bozuk cihazlar kaçak akım rölesi bulunan panolara doğrudan bağlanarak çalıştırılabilmektedir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Elektrikli El Aletlerinin Bakımı": "Kablo hasarlarına dikkat edilmeli, yalıtımı bozulmuş çatlak yada kesik olan kablolar kullanılmamalıdır."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Kabloları büküp bantlamak geçici ve tehlikeli bir yöntemdir, izolasyon garantisi vermez.</li><li>C Şıkkı Yanlıştır: Islak zemine temas etmese bile çalışanın elinin iletkene teması elektrik çarpmasına yol açar.</li><li>D Şıkkı Yanlıştır: Her türlü voltajda izolasyon hasarı yangın ve şok riski taşır.</li><li>E Şıkkı Yanlıştır: Kaçak akım rölesine güvenerek bozuk kablolu aleti sahada tutmak kural ihlalidir.</li></ul>'
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Elektrikli El Aletlerinin Bakımı": "Kablo hasarlarına dikkat edilmeli, yalıtımı bozulmuş çatlak yada kesik olan kablolar kullanılmamalıdır." Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B: Kabloları büküp bantlamak geçici ve tehlikeli bir yöntemdir, izolasyon garantisi vermez.</li><li>C: Islak zemine temas etmese bile çalışanın elinin iletkene teması elektrik çarpmasına yol açar.</li><li>D: Her türlü voltajda izolasyon hasarı yangın ve şok riski taşır.</li><li>E: Kaçak akım rölesine güvenerek bozuk kablolu aleti sahada tutmak kural ihlalidir.</li></ul>'
       },
       {
         n: 17,
         topic: "Şase ve Sap Kırık/Çatlak Kontrolleri",
         text: "Bir metal döküm temizleme atölyesinde taşlama yapan operatör, avuç içi taşlama makinesinin (spiral) gövde plastik şasesinde derin bir çatlak olduğunu ve yan tutma sapının bağlantı yerinden kırılarak çıkarıldığını fark etmiştir. Operatör makineyi tek elle tutarak taşlamaya devam etmiştir. Elektrikli el aletlerinde şase ve sap bütünlüğü kontrolü hususunda yapılması gereken doğru uygulama aşağıdakilerden hangisidir?",
         options: {
-          A: "Kırık tutma sapı yerine metal bir çubuk kaynaklanarak iş tamamlanmalıdır.",
+          A: "Kırık tutma sapı yerine metal bir çubuk kaynaklanarak işin güvenle tamamlanması gerekmektedir.",
           B: "Elektrikli el aletinin sapı ve şasesi olası kırık ve çatlak risklerine karşı kontrol edilmeli; hasarlı ve sapı eksik aletler derhal kullanım dışı bırakılmalıdır.",
-          C: "Plastik şasedeki çatlaklar epoksi yapıştırıcı ile kapatılarak makine teste tabi tutulmadan sahaya verilmelidir.",
-          D: "Taşlama diskinde çatlak yoksa gövdedeki plastik kırıklar elektrik ve mekanik güvenlik açısından önem taşımaz.",
-          E: "Çatlak şaseli cihazlar sadece kauçuk tabanlı yalıtkan paspas üzerinde kullanılabilir."
+          C: "Plastik şasedeki çatlaklar epoksi yapıştırıcı ile kapatılarak makine teste tabi tutulmadan sahaya verilebilmektedir.",
+          D: "Taşlama diskinde çatlak yoksa gövdedeki plastik kırıklar elektrik ve mekanik güvenlik açısından önem taşımamaktadır.",
+          E: "Çatlak şaseli cihazlar sadece kauçuk tabanlı yalıtkan paspas üzerinde güvenle kullanılabilmektedir."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Elektrikli El Aletlerinin Bakımı": "Alet sapı ve şasesi olası kırık ve çatlak risklerine karşı kontrol edilmelidir." Kırık sap kontrol kaybına, çatlak şase ise içteki elektrikli kısımlara temas edilerek şok yaşanmasına neden olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Tutma sapı yerine rod kaynaklamak cihazın çift yalıtım özelliğini bozar.</li><li>C Şıkkı Yanlıştır: Epoksi yapıştırma mekanik dayanım sağlamaz.</li><li>D Şıkkı Yanlıştır: Taşlama diskinde çatlak olmasa da gövde kırıklığı elektriksel ve mekanik tehlike yaratır.</li><li>E Şıkkı Yanlıştır: Yalıtkan paspas üzerinde çalışmak kırık şaseli aleti kullanmayı haklı çıkarmaz.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Elektrikli El Aletlerinin Bakımı": "Alet sapı ve şasesi olası kırık ve çatlak risklerine karşı kontrol edilmelidir." Kırık sap kontrol kaybına, çatlak şase ise içteki elektrikli kısımlara temas edilerek şok yaşanmasına neden olur. Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Tutma sapı yerine rod kaynaklamak cihazın çift yalıtım özelliğini bozar.</li><li>C: Epoksi yapıştırma mekanik dayanım sağlamaz.</li><li>D: Taşlama diskinde çatlak olmasa da gövde kırıklığı elektriksel ve mekanik tehlike yaratır.</li><li>E: Yalıtkan paspas üzerinde çalışmak kırık şaseli aleti kullanmayı haklı çıkarmaz.</li></ul>'
       },
       {
         n: 18,
         topic: "Kullanıcının Her Kullanımdan Önce Kontrol Yükümlülüğü",
         text: "Elektrikli el aletlerinin sahada güvenle işletilmesi, kaçak akım ve mekanik arızaların zamanında tespiti için ilk kontrol sorumluluğu kimdedir ve bu kontrol hangi sıklıkla yapılmalıdır?",
         options: {
-          A: "Bakım mühendisi tarafından 6 ayda bir periyodik olarak yapılmalıdır.",
-          B: "İSG uzmanı tarafından vardiya başlangıçlarında haftalık denetimlerle yürütülmelidir.",
-          C: "Olası arızalı haller için her kullanımdan önce elektrikli el aletleri doğrudan kullanıcı (çalışan) tarafından kontrol edilmelidir.",
-          D: "Tesis elektrikçisi tarafından yılda bir kez ölçüm cihazları ile yapılmalıdır.",
-          E: "İmalatçı servis personeli tarafından cihazın garanti sürelerinde yapılmalıdır."
+          A: "Bakım mühendisi tarafından altı ayda bir periyodik olarak yapılması yeterli kabul edilmektedir.",
+          B: "İSG uzmanı tarafından vardiya başlangıçlarında haftalık denetimlerle yürütülmesi uygun görülmektedir.",
+          C: "Olası arızalı haller için her kullanımdan önce elektrikli el aletleri doğrudan kullanıcı çalışan tarafından kontrol edilmelidir.",
+          D: "Tesis elektrikçisi tarafından yılda bir kez ölçüm cihazları ile yapılması yeterli olmaktadır.",
+          E: "İmalatçı servis personeli tarafından cihazın garanti sürelerinde yapılması gerekmektedir."
         },
         answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Elektrikli El Aletlerinin Bakımı": "Olası arızalı haller için her kullanımdan önce elektrikli el aletleri kullanıcı tarafından kontrol edilmelidir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D ve E Şıkları Yanlıştır: Bu şıklardaki periyotlar veya mühendis/uzman/servis kontrolü şartı, kaynağın emrettiği "her kullanımdan önce kullanıcı (operatör) tarafından kontrol edilmelidir" kuralının yerini tutamaz. İlk güvenlik halkası her kullanım öncesi kullanan çalışandır.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "Elektrikli El Aletlerinin Bakımı": "Olası arızalı haller için her kullanımdan önce elektrikli el aletleri kullanıcı tarafından kontrol edilmelidir." Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D ve E: Bu şıklardaki periyotlar veya mühendis/uzman/servis kontrolü şartı, kaynağın emrettiği "her kullanımdan önce kullanıcı (operatör) tarafından kontrol edilmelidir" kuralının yerini tutamaz. İlk güvenlik halkası her kullanım öncesi kullanan çalışandır.</li></ul>'
       },
       {
         n: 19,
         topic: "El Aletlerinde Tehlike Türleri ve Kapsam Dışı Unsurlar",
         text: "Aşağıdakilerden hangisi el aletlerinin (klasik, elektrikli, pnömatik, hidrolik) kullanımı esnasında doğabilecek potansiyel tehlike kaynakları arasında <strong>yer almaz</strong>?",
         options: {
-          A: "Yüksek düzeyde gürültü ve titreşim",
+          A: "Yüksek düzeyde gürültü ve titreşim maruziyeti",
           B: "Sivri uçlar, keskin kenarlar ve fırlayan çapaklar",
-          C: "İzolasyon bozulması sonucu elektrik şokları",
-          D: "Temas sonucu meydana gelen kesilmeler ve sıyrılmalar",
-          E: "Cihaz gövdesinden çevreye yayılan iyonlaştırıcı yüksek radyasyon"
+          C: "İzolasyon bozulması sonucu oluşan elektrik şokları",
+          D: "Cihazdan çevreye yayılan iyonlaştırıcı radyasyon",
+          E: "Temas sonucu meydana gelen kesilme ve sıyrılmalar"
         },
-        answer: "E",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "El Aletlerinde Güvenlik - El aletlerinin genellikle yarattığı tehlikeler": Gürültü, Sivri uçlar, Elektrik şokları, Toz, Keskin kenarlar, Kesilmeler, Sıyrılmalar. "Yüksek radyasyon" el aletleri tehlike listesinde yer almaz.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve D Şıkları Doğrudur: Bu şıklardaki unsurlar kaynak slaytta birebir el aleti tehlikeleri arasında sayılmıştır.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "El Aletlerinde Güvenlik - El aletlerinin genellikle yarattığı tehlikeler": Gürültü, Sivri uçlar, Elektrik şokları, Toz, Keskin kenarlar, Kesilmeler, Sıyrılmalar. "İyonlaştırıcı radyasyon" el aletleri tehlike listesinde yer almaz. Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve E: Bu şıklardaki unsurlar kaynak slaytta birebir el aleti tehlikeleri arasında sayılmıştır.</li></ul>'
       },
       {
         n: 20,
         topic: "El Aletleri Kaynaklı İş Kazalarının Kök Nedenleri",
         text: "El aletlerinden kaynaklanan iş kazalarının kök nedenleri analiz edildiğinde, aşağıdakilerden hangisi bu kaza nedenlerinden biri <strong>değildir</strong>?",
         options: {
-          A: "El aletlerinin bakımsız, yıpranmış veya arızalı olması",
+          A: "El aletlerinin bakımsız, yıpranmış veya arızalı durumda olması",
           B: "El aletlerinin tasarım amaçları dışında ve usulüne aykırı kullanılması",
           C: "El aletlerinin kullanım yöntemlerinin ve uygulama açılarının yanlış olması",
-          D: "Kullanım sırasında yapay/uygun kişisel koruyucu donanım kullanılmaması veya eksik kullanılması",
-          E: "El aletlerinin ergonomik standartlara, uluslararası imalat kriterlerine ve CE normlarına tam uygun imal edilmiş olması"
+          D: "Kullanım sırasında uygun kişisel koruyucu donanımın hiç kullanılmaması",
+          E: "El aletlerinin ergonomik standartlara ve CE normlarına tam uygun imal edilmiş olması"
         },
         answer: "E",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "El Aletlerinde Alınması Gereken Genel Tedbirler - Kazaların temel nedenleri": Arızalı ve bakımsız olması, Usulüne uygun kullanılmaması, Yanlış yerlerde kullanılması, Kullanım sırasında KKD kullanılmaması. CE belgeli ve ergonomik imalat kaza nedeni değil, aksine kazayı önleyen standart niteliktir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve D Şıkları Doğrudur: Bu şıklardaki durumlar kaynak metinde kazaların temel 4 kök nedeni olarak verilmiştir.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak slayt "El Aletlerinde Alınması Gereken Genel Tedbirler - Kazaların temel nedenleri": Arızalı ve bakımsız olması, Usulüne uygun kullanılmaması, Yanlış yerlerde kullanılması, Kullanım sırasında KKD kullanılmaması. CE belgeli ve ergonomik imalat kaza nedeni değil, aksine kazayı önleyen standart niteliktir. Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve D: Bu şıklardaki durumlar kaynak metinde kazaların temel 4 kök nedeni olarak verilmiştir.</li></ul>'
       }
     ]
   },
@@ -827,14 +810,14 @@ const TESTS = [
         topic: "Kumanda Cihazlarının Görünürlüğü ve İşaretlenmesi (Madde 2.1.1)",
         text: "Bir hidrolik pres tezgahını denetleyen İSG uzmanı, operatör panelindeki acil stop butonunun üzerindeki kırmızı rengin solduğunu, çalıştırma ve yönlendirme butonlarındaki sembollerin aşınarak okunmaz hale geldiğini ve butonların birbirine çok yakın tasarlandığını saptamıştır. İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği (Madde 2.1.1) gereğince kumanda cihazlarının taşıması gereken temel nitelik aşağıdakilerden hangisidir?",
         options: {
-          A: "Kumanda cihazları yetkisiz kişilerin erişimini engellemek için kilitli kapak arkasına gizlenmelidir.",
-          B: "İş ekipmanında bulunan ve güvenliği etkileyen kumanda cihazları açıkça görülebilir ve tanınabilir özellikte olmalı; gerektiğinde uygun şekilde işaretlenmelidir.",
-          C: "Kumanda butonları sadece dokunmatik dijital ekranlar üzerinden kodlanarak çalıştırılmalıdır.",
+          A: "İş ekipmanında bulunan ve güvenliği etkileyen kumanda cihazları açıkça görülebilir ve tanınabilir özellikte olmalı; gerektiğinde uygun şekilde işaretlenmelidir.",
+          B: "Kumanda cihazları yetkisiz kişilerin erişimini engellemek amacıyla kilitli kapak arkasına gizlenmesi gerekir.",
+          C: "Kumanda butonları sadece dokunmatik dijital ekranlar üzerinden kodlanarak çalıştırılması gerekmektedir.",
           D: "Kumanda cihazlarının işaretlenmesi ve renklendirilmesi imalatçının insiyatifinde olup yasal zorunluluk taşımaz.",
           E: "Tüm kumanda butonları aynı renkte ve boyutta imal edilerek pano karmaşası engellenmelidir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.1: "İş ekipmanında bulunan ve güvenliği etkileyen kumanda cihazları açıkça görülebilir ve tanınabilir özellikte olur. Gerektiğinde uygun şekilde işaretlenir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Kumanda cihazlarının gizlenmesi acil durumlarda müdahaleyi engeller.</li><li>C Şıkkı Yanlıştır: Dokunmatik ekran zorunluluğu yoktur, görünürlük esastır.</li><li>D Şıkkı Yanlıştır: İşaretleme isteğe bağlı değil yasal zorunluluktur.</li><li>E Şıkkı Yanlıştır: Tüm butonların aynı renkte yapılması tanınabilirliği yok eder.</li></ul>'
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.1: "İş ekipmanında bulunan ve güvenliği etkileyen kumanda cihazları açıkça görülebilir ve tanınabilir özellikte olur. Gerektiğinde uygun şekilde işaretlenir." Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B: Kumanda cihazlarının gizlenmesi acil durumlarda müdahaleyi engeller.</li><li>C: Dokunmatik ekran zorunluluğu yoktur, görünürlük esastır.</li><li>D: İşaretleme isteğe bağlı değil yasal zorunluluktur.</li><li>E: Tüm butonların aynı renkte yapılması tanınabilirliği yok eder.</li></ul>'
       },
       {
         n: 22,
@@ -842,41 +825,41 @@ const TESTS = [
         text: "Bir giyotin makasında, kesim işlemini başlatan ayak pedalı hiçbir koruyucu muhafaza (başlık) olmadan açıkta durmakta ve dökülen sac parçalarının düşebileceği tehlikeli bölgenin doğrudan altında bulunmaktadır. Bir çalışanın düşen parçayı alırken kazara pedala basması sonucu giyotin bıçağı inmiş ve kaza meydana gelmiştir. Kumanda cihazlarının konumlandırılması ve istem dışı hareket riskleri (Madde 2.1.2) açısından aşağıdakilerden hangisi zorunlu teknik şarttır?",
         options: {
           A: "Kumanda cihazları operasyonel kolaylık sağlamak adına her zaman tehlikeli bölgenin tam ortasına yerleştirilmelidir.",
-          B: "Kumanda cihazları zorunlu haller dışında tehlikeli bölgenin dışına yerleştirilmeli; kullanımı ek bir tehlike oluşturmamalı ve istem dışı hareketlerde tehlikeye neden olmayacak şekilde muhafazalı/tasarlanmış olmalıdır.",
+          B: "Kumanda cihazları zorunlu haller dışında tehlikeli bölgenin dışına yerleştirilmeli; kullanımı ek bir tehlike oluşturmamalı ve istem dışı hareketlerde tehlikeye neden olmayacak şekilde muhafazalı tasarlanmalıdır.",
           C: "Ayak pedallarının üzeri açık olmalı, pedal mukavemeti artırılarak istem dışı basmalar engellenmelidir.",
           D: "İstem dışı hareket riski bulunan pedallar sökülerek yerine sadece manuel el anahtarı konulmalıdır.",
           E: "Kumanda cihazları tehlikeli bölge içinde yer alsa dahi operatörün baret takması yeterli güvenlik sağlar."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.2: "Kumanda cihazları zorunlu haller dışında, tehlikeli bölgenin dışına yerleştirilir ve bunların kullanımı ek bir tehlike oluşturmaz. Kumanda cihazları, istem dışı hareketlerde tehlikeye neden olmaması gerekir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Kumanda cihazları zorunlu olmadıkça tehlikeli bölge dışına konmalıdır.</li><li>C Şıkkı Yanlıştır: Pedalların üzerinin açık olması istem dışı basma riskini davet eder, muhafaza şarttır.</li><li>D Şıkkı Yanlıştır: Operatörün müdahale edemeyeceği kadar uzak odaya kurulması saçmadır.</li><li>E Şıkkı Yanlıştır: Baret takmak pedal sıkışmasından kaynaklı uzuv kesilmesini önlemez.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.2: "Kumanda cihazları zorunlu haller dışında, tehlikeli bölgenin dışına yerleştirilir ve bunların kullanımı ek bir tehlike oluşturmaz. Kumanda cihazları, istem dışı hareketlerde tehlikeye neden olmaması gerekir." Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Kumanda cihazları zorunlu olmadıkça tehlikeli bölge dışına konmalıdır.</li><li>C: Pedalların üzerinin açık olması istem dışı basma riskini davet eder, muhafaza şarttır.</li><li>D: Operatörün müdahale edemeyeceği kadar uzak odaya kurulması saçmadır.</li><li>E: Baret takmak pedal sıkışmasından kaynaklı uzuv kesilmesini önlemez.</li></ul>'
       },
       {
         n: 23,
         topic: "Operatör Görüş Alanı Kısıtı ve Otomatik İkaz Sistemi (Madde 2.1.3)",
         text: "Geniş bir alana yayılan otomatik ambalaj ve konveyör hattında, ana kumanda masasındaki operatörün görüş açısı, yüksek istifler nedeniyle konveyörün sonundaki tehlike bölgesini kapatmaktadır. Operatör butona bastığı anda, hattın sonundaki silindire sıkışan paketini düzeltmeye çalışan bir işçi dönen aksama sıkışarak yaralanmıştır. İş ekipmanında operatörün görüş alanı ve tehlike bölgesi emniyeti (Madde 2.1.3) ile ilgili mevzuattaki asgari zorunluluk aşağıdakilerden hangisidir?",
         options: {
-          A: "Operatör, ana kumanda yerinden tehlike bölgesinde kimsenin bulunmadığından emin olmalı; bu imkansızsa makine çalışmaya başlamadan önce otomatik olarak devreye girecek sesli ve/veya görsel ikaz sistemi bulunmalıdır.",
-          B: "Görüş alanının kapalı olduğu durumlarda operatör 15 saniye boyunca yüksek sesle bağırarak sistemi çalıştırmalıdır.",
-          C: "Kör noktaların bulunduğu hatlarda ikaz sistemine gerek bulunmayıp sorumluluk tamamen tehlike bölgesindeki çalışanlara aittir.",
+          A: "Görüş alanının kapalı olduğu durumlarda operatör on beş saniye boyunca yüksek sesle bağırarak sistemi çalıştırmalıdır.",
+          B: "Kör noktaların bulunduğu hatlarda ikaz sistemine gerek bulunmayıp sorumluluk tamamen tehlike bölgesindeki çalışanlara aittir.",
+          C: "Operatör ana kumanda yerinden tehlike bölgesinde kimsenin bulunmadığından emin olmalı; bu imkânsızsa makine çalışmaya başlamadan önce otomatik devreye girecek sesli ve/veya görsel ikaz sistemi bulunmalıdır.",
           D: "Operatör ana kumanda masasından ayrılarak hattı yürüyerek kontrol etmeli ve yürürken uzaktan kumanda ile çalıştırmalıdır.",
           E: "Görüş açısı kapalı makinelerde ikaz sisteminin kurulması işverenin takdirine bağlı opsiyonel bir uygulamadır."
         },
-        answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.3: "Operatör, ana kumanda yerinden tehlike bölgesinde herhangi bir kimsenin bulunmadığından emin olması gerekir. Bu mümkün değilse makine çalışmaya başlamadan önce otomatik olarak devreye girecek sesli ve/veya görsel ikaz sistemi bulunur."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Bağırmak mühendislik kontrolü veya ikaz donanımı yerine geçmez.</li><li>C Şıkkı Yanlıştır: Kör noktalarda teknik ikaz donanımı zorunludur.</li><li>D Şıkkı Yanlıştır: Ana kumanda yerini terk edip yürürken çalıştırmak kontrol kaybı yaratır.</li><li>E Şıkkı Yanlıştır: İkaz sistemi kurulması işverenin takdirinde değil, amir mevzuat zorunluluğudur.</li></ul>'
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.3: "Operatör, ana kumanda yerinden tehlike bölgesinde herhangi bir kimsenin bulunmadığından emin olması gerekir. Bu mümkün değilse makine çalışmaya başlamadan önce otomatik olarak devreye girecek sesli ve/veya görsel ikaz sistemi bulunur." Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Bağırmak mühendislik kontrolü veya ikaz donanımı yerine geçmez.</li><li>B: Kör noktalarda teknik ikaz donanımı zorunludur.</li><li>D: Ana kumanda yerini terk edip yürürken çalıştırmak kontrol kaybı yaratır.</li><li>E: İkaz sistemi kurulması işverenin takdirinde değil, amir mevzuat zorunluluğudur.</li></ul>'
       },
       {
         n: 24,
         topic: "İkaz Sonrası Maruz Kalana Kaçış/Engelleme Süresi",
         text: "Saha denetimi yapan bir mekanik İSG uzmanı, konveyör hattında görüş açısının kapalı olduğunu ve ikaz sisteminin devreye girdiğini gözlemlemiştir. Mevzuat uyarınca (Madde 2.1.3), sesli ve/veya görsel ikaz sistemi devreye girdikten sonra tehlike bölgesinde bulunan maruz kalan çalışana sağlanması gereken temel imkan aşağıdakilerden hangisidir?",
         options: {
-          A: "Çalışan derhal kulak koruyucusunu takarak çalışma pozisyonunu korumalıdır.",
-          B: "İkaz sistemi devreye girdiğinde maruz kalan çalışanın tehlike bölgesinden uzaklaşması veya ekipmanın çalışmasını önleyecek yeterli zamanı ve imkanı (acil stop vb.) olmalıdır.",
-          C: "İkaz sesi başladığı anda makine 0.5 saniye içinde tam hıza ulaşarak üretim kesintisi engellenmelidir.",
-          D: "Çalışan ikaz ışığını gördüğü anda olduğu yerde çömelerek makinenin çalışmasını beklemelidir.",
+          A: "Çalışan derhal kulak koruyucusunu takarak çalışma pozisyonunu koruması gerekmektedir.",
+          B: "İkaz sesi başladığı anda makine yarım saniye içinde tam hıza ulaşarak üretim kesintisi engellenmelidir.",
+          C: "Çalışan ikaz ışığını gördüğü anda olduğu yerde çömelerek makinenin çalışmasını beklemesi gerekir.",
+          D: "İkaz sistemi devreye girdiğinde maruz kalan çalışanın tehlike bölgesinden uzaklaşması veya ekipmanın çalışmasını önleyecek yeterli zamanı ve imkanı olmalıdır.",
           E: "İkaz sisteminin süresi makine operatörü tarafından manuel olarak istendiği an kesilebilmelidir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.3 son cümle: "Maruz kalan çalışanın tehlike bölgesinden uzaklaşması veya ekipmanın çalışmasını önleyecek yeterli zamanı ve imkanı olur."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Kulak koruyucusu takıp beklemek çalışanı tehlike bölgesinde korumasız bırakır.</li><li>C Şıkkı Yanlıştır: İkazın hemen ardından 0.5 saniyede makinenin çalışması çalışana kaçış imkanı vermez.</li><li>D Şıkkı Yanlıştır: Çömelerek beklemek ezilme riskini engellemez.</li><li>E Şıkkı Yanlıştır: İkaz süresi operatörün isteğine göre kesilemez, otomatik röleye bağlı olmalıdır.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.3 son cümle: "Maruz kalan çalışanın tehlike bölgesinden uzaklaşması veya ekipmanın çalışmasını önleyecek yeterli zamanı ve imkanı olur." Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Kulak koruyucusu takıp beklemek çalışanı tehlike bölgesinde korumasız bırakır.</li><li>B: İkazın hemen ardından yarım saniyede makinenin çalışması çalışana kaçış imkanı vermez.</li><li>C: Çömelerek beklemek ezilme riskini engellemez.</li><li>E: İkaz süresi operatörün isteğine göre kesilemez, otomatik röleye bağlı olmalıdır.</li></ul>'
       },
       {
         n: 25,
@@ -885,12 +868,12 @@ const TESTS = [
         options: {
           A: "İş ekipmanlarında çalıştırma sistemleri, acil durumlarda üretimi korumak adına durdurma sistemlerine göre her zaman önceliklidir.",
           B: "Durdurma ve çalıştırma sistemleri aynı devre üzerinde olup birbiri üzerinde öncelik hakkına sahip değildir.",
-          C: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre her zaman öncelikli olması gerekir.",
-          D: "Manuel modda durdurma sistemi öncelikli iken, otomatik üretim modunda çalıştırma sistemi öncelik kazanır.",
-          E: "Hangi sistemin öncelikli olacağı teftiş esnasında operatörün tercihine göre anlık olarak ayarlanır."
+          C: "Manuel modda durdurma sistemi öncelikli iken, otomatik üretim modunda çalıştırma sistemi öncelik kazanır.",
+          D: "Hangi sistemin öncelikli olacağı teftiş esnasında operatörün tercihine göre anlık olarak ayarlanır.",
+          E: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre her zaman öncelikli olması gerekir."
         },
-        answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1 durdurma fıkrası: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre öncelikli olması gerekir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Çalıştırmanın durdurmaya üstün kılınması temel güvenlik ilkesini ihlal eder.</li><li>B Şıkkı Yanlıştır: Durdurma sistemi çalıştırmaya baskın olmak zorundadır.</li><li>D Şıkkı Yanlıştır: Otomatik modda da durdurma sistemi önceliklidir.</li><li>E Şıkkı Yanlıştır: Öncelik sırası operatör tercihine bırakılamaz.</li></ul>'
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1 durdurma fıkrası: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre öncelikli olması gerekir." Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Çalıştırmanın durdurmaya üstün kılınması temel güvenlik ilkesini ihlal eder.</li><li>B: Durdurma sistemi çalıştırmaya baskın olmak zorundadır.</li><li>C: Otomatik modda da durdurma sistemi önceliklidir.</li><li>D: Öncelik sırası operatör tercihine bırakılamaz.</li></ul>'
       },
       {
         n: 26,
@@ -904,7 +887,7 @@ const TESTS = [
           E: "Hidrolik fren sistemlerinde enerjinin kesilmesi mekanik sıkışmaya yol açacağı için mevzuata aykırı kabul edilir."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1 durdurma fıkrası: "İş ekipmanı veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özelliğe sahip olur." Elektrik kesilse dahi dönmeye devam eden atalet hareketleri için enerjinin kesilmesi ve frenlenmesi zorunludur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Kalıcı enerjilerin hatta tutulması makinenin durdurulması kuralına aykırıdır.</li><li>C Şıkkı Yanlıştır: Durdurma işlemi ana panodan elle değil, durdurma kumandasına basıldığı an otomasyonla enerjiyi kesmelidir.</li><li>D Şıkkı Yanlıştır: Durdurma sistemi makine emniyetinin temel direğidir.</li><li>E Şıkkı Yanlıştır: Hidrolik sistemlerde de enerjinin kesilmesi ve güvenli duruş sağlanması şarttır.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1 durdurma fıkrası: "İş ekipmanı veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özelliğe sahip olur." Elektrik kesilse dahi dönmeye devam eden atalet hareketleri için enerjinin kesilmesi ve frenlenmesi zorunludur. Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B: Kalıcı enerjilerin hatta tutulması makinenin durdurulması kuralına aykırıdır.</li><li>C: Durdurma işlemi ana panodan elle değil, durdurma kumandasına basıldığı an otomasyonla enerjiyi kesmelidir.</li><li>D: Durdurma sistemi makine emniyetinin temel direğidir.</li><li>E: Hidrolik sistemlerde de enerjinin kesilmesi ve güvenli duruş sağlanması şarttır.</li></ul>'
       },
       {
         n: 27,
@@ -914,25 +897,25 @@ const TESTS = [
           A: "Durdurma sistemleri sadece ana kumanda panosunda bulunmalı, istasyonlara dağıtılmamalıdır.",
           B: "Her bir çalışma yerinde, tehlikenin durumuna göre, iş ekipmanının tamamını veya bir kısmını durdurabilecek ve bu ekipmanın güvenli bir durumda kalmasını sağlayacak kumanda sistemi bulunmalıdır.",
           C: "Tek bir istasyondaki durdurma butonu tüm fabrikanın elektriğini ana kesiciden kesmek zorundadır.",
-          D: "İş ekipmanının bölümlerini durduran butonların tuşlandıktan 3 saniye sonra kendiliğinden resetlenip çalışmaya geçmesi şarttır.",
-          E: "Durdurma sistemlerinin çalışma yerlerine kurulması opsiyonel olup ana şalter yeterli görülür."
+          D: "İş ekipmanının bölümlerini durduran butonların tuşlandıktan üç saniye sonra kendiliğinden resetlenip çalışmaya geçmesi şarttır.",
+          E: "Durdurma sistemlerinin çalışma yerlerine kurulması opsiyonel olup ana şalter yeterli görülmektedir."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1 durdurma fıkrası: "Her bir çalışma yerinde, tehlikenin durumuna göre, iş ekipmanının tamamını veya bir kısmını durdurabilecek ve bu ekipmanın güvenli bir durumda kalmasını sağlayacak kumanda sistemi bulunur."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Durdurma kumandası sadece ana panoda olursa uzak çalışma noktalarındaki kazalara müdahale edilemez.</li><li>C Şıkkı Yanlıştır: Lokal tehlikelerde sadece ilgili kısmın veya tamamının durdurulması esnektir, her buton ana kovanı patlatmak zorunda değildir.</li><li>D Şıkkı Yanlıştır: Durdurma butonları kendiliğinden resetlenemez, manuel reset gerektirir.</li><li>E Şıkkı Yanlıştır: Çalışma yerlerine durdurma sistemi kurulması zorunludur.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1 durdurma fıkrası: "Her bir çalışma yerinde, tehlikenin durumuna göre, iş ekipmanının tamamını veya bir kısmını durdurabilecek ve bu ekipmanın güvenli bir durumda kalmasını sağlayacak kumanda sistemi bulunur." Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Durdurma kumandası sadece ana panoda olursa uzak çalışma noktalarındaki kazalara müdahale edilemez.</li><li>C: Lokal tehlikelerde sadece ilgili kısmın veya tamamının durdurulması esnektir, her buton ana kovanı patlatmak zorunda değildir.</li><li>D: Durdurma butonları kendiliğinden resetlenemez, manuel reset gerektirir.</li><li>E: Çalışma yerlerine durdurma sistemi kurulması zorunludur.</li></ul>'
       },
       {
         n: 28,
         topic: "Acil Durdurma Cihazı Zorunluluğu (Madde 2.4)",
         text: "Bir rulo sac dilme hattında, kesme bıçaklarının bulunduğu tehlikeli bölgede bant hızı yüksek olup, bir arıza veya kapılma anında makinenin normal durma süresi çalışanın ağır yaralanmasını önlemeye yetmemektedir. Bu tür yüksek riskli ve normal durma süresi uzun olan iş ekipmanlarına ilave edilmesi zorunlu olan güvenlik donanımı (Madde 2.4) aşağıdakilerden hangisidir?",
         options: {
-          A: "Daha yüksek torklu bir ana tahrik motoru",
-          B: "İş ekipmanının tehlikesi ve normal durma süresinin gerektirmesi halinde acil durdurma cihazı (acil stop)",
-          C: "Makine hızını sabitleyen mekanik regülatör",
+          A: "Daha yüksek torklu ve güçlü bir ana tahrik motoru",
+          B: "Makine hızını sabitleyen mekanik regülatör tertibatı",
+          C: "İş ekipmanının tehlikesi ve normal durma süresinin gerektirmesi halinde acil durdurma cihazı bulunması",
           D: "Operatörün elini bağlayan mekanik çekme halatları",
-          E: "Manuel çalışan hidrolik el freni kolu"
+          E: "Manuel çalışan hidrolik el freni kolu ve pedal sistemi"
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.4: "İş ekipmanının tehlikesi ve normal durma süresinin gerektirmesi halinde iş ekipmanında acil durdurma cihazı bulunur."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Motor gücünü artırmak durma süresini kısaltmaz.</li><li>C Şıkkı Yanlıştır: Mekanik regülatör acil stop işlevi görmez.</li><li>D Şıkkı Yanlıştır: Çekme halatları çağ dışı olup acil durdurma cihazı standardını karşılamaz.</li><li>E Şıkkı Yanlıştır: Manuel el freni acil stop aygıtının yerini tutamaz.</li></ul>'
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.4: "İş ekipmanının tehlikesi ve normal durma süresinin gerektirmesi halinde iş ekipmanında acil durdurma cihazı bulunur." Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Motor gücünü artırmak durma süresini kısaltmaz.</li><li>B: Mekanik regülatör acil stop işlevi görmez.</li><li>D: Çekme halatları çağ dışı olup acil durdurma cihazı standardını karşılamaz.</li><li>E: Manuel el freni acil stop aygıtının yerini tutamaz.</li></ul>'
       },
       {
         n: 29,
@@ -940,41 +923,41 @@ const TESTS = [
         text: "Bir fabrikadaki ana dağıtım panosu ve makinelerin lokal elektrik kesici şalterleri denetlenmektedir. Şalterlerin panoların arka tarafına saklandığı, üzerlerinde hangi makineyi kestiğine dair hiçbir ibarenin bulunmadığı ve kilitlenme (LOTO) mekanizmasının olmadığı görülmüştür. İş ekipmanlarının enerji kaynaklarının kesilmesine ilişkin mevzuat hükmü (Madde 2.14) aşağıdakilerden hangisidir?",
         options: {
           A: "Enerji kesme araçları yetkisiz müdahaleleri önlemek için pano içine kilitlenip gizlenmelidir.",
-          B: "İş ekipmanlarının enerji kaynaklarını kesecek araç ve gereçler kolayca görülebilir ve tanınabilir özellikte olur.",
-          C: "Enerji kesici şalterlerin işaretlenmesi fabrika içi iç düzenleme olup mevzuatta karşılığı yoktur.",
-          D: "Enerji kesme araçları sadece tesis bakım mühendisinin erişebileceği ana kumanda odasında toplanmalıdır.",
+          B: "Enerji kesici şalterlerin işaretlenmesi fabrika içi iç düzenleme olup mevzuatta karşılığı yoktur.",
+          C: "Enerji kesme araçları sadece tesis bakım mühendisinin erişebileceği ana kumanda odasında toplanmalıdır.",
+          D: "İş ekipmanlarının enerji kaynaklarını kesecek araç ve gereçler kolayca görülebilir ve tanınabilir özellikte olur.",
           E: "Şalterlerin üzerine renkli etiket konulması mevzuatça yasaklanmıştır."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.14: "İş ekipmanlarının enerji kaynaklarını kesecek araç ve gereçler kolayca görülebilir ve tanınabilir özellikte olur."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Enerji kesicilerin gizlenmesi kaza anında müdahaleyi geciktirir.</li><li>C Şıkkı Yanlıştır: İşaretleme açık mevzuat zorunluluğudur.</li><li>D Şıkkı Yanlıştır: Kesicilerin sadece uzak ana odada olması makine başındaki acil müdahaleyi imkansız kılar.</li><li>E Şıkkı Yanlıştır: Etiketleme (LOTO) mevzuatın teşvik ettiği ve emrettiği güvenlik standardıdır.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.14: "İş ekipmanlarının enerji kaynaklarını kesecek araç ve gereçler kolayca görülebilir ve tanınabilir özellikte olur." Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Enerji kesicilerin gizlenmesi kaza anında müdahaleyi geciktirir.</li><li>B: İşaretleme açık mevzuat zorunluluğudur.</li><li>C: Kesicilerin sadece uzak ana odada olması makine başındaki acil müdahaleyi imkansız kılar.</li><li>E: Etiketleme (LOTO) mevzuatın teşvik ettiği ve emrettiği güvenlik standardıdır.</li></ul>'
       },
       {
         n: 30,
         topic: "Enerjinin Yeniden Bağlanmasında Sıfır Enerji Güvenliği",
         text: "Bir arıza giderme çalışması sonrasında elektrik bakım teknisyeni, makinenin ana şalterini tekrar \"ON\" konumuna getirdiğinde, panodaki kumanda butonu basılı kaldığı için makine aniden yüksek devirde dönmeye başlamış ve o sırada sistem içinde el aleti unutmuş olan mekaniker yaralanmıştır. Enerji kaynaklarına yeniden bağlanma emniyeti (Madde 2.14) açısından aşağıdakilerden hangisi kesin kuraldır?",
         options: {
-          A: "Ekipmanın enerji kaynaklarına yeniden bağlanması çalışanlar için tehlikeye sebep olmayacak özellikte (Sıfır Enerji Durumu / İstem dışı yeniden çalışmama kilitli) olmalıdır.",
-          B: "Enerji bağlandığında makinelerin kilitli butonlar sebebiyle kendiliğinden çalışması beklenen bir durumdur.",
-          C: "Yeniden enerji verme işleminde sahada sesli ikaz yapılması yasal olarak gerekli değildir.",
-          D: "Enerji bağlanması esnasında çalışanların tesisi 100 metre terk etmesi zorunludur.",
-          E: "Enerji kesme donanımları sadece pnömatik sistemlerde yeniden bağlanma emniyeti arar."
+          A: "Enerji bağlandığında makinelerin kilitli butonlar sebebiyle kendiliğinden çalışması beklenen bir durumdur.",
+          B: "Yeniden enerji verme işleminde sahada sesli ikaz yapılması yasal olarak gerekli değildir.",
+          C: "Enerji bağlanması esnasında çalışanların tesisi yüz metre terk etmesi zorunludur.",
+          D: "Enerji kesme donanımları sadece pnömatik sistemlerde yeniden bağlanma emniyeti arar.",
+          E: "Ekipmanın enerji kaynaklarına yeniden bağlanması çalışanlar için tehlikeye sebep olmayacak özellikte olmalıdır."
         },
-        answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.14 ikinci cümle: "Ekipmanın enerji kaynaklarına yeniden bağlanması çalışanlar için tehlikeye sebep olmayacak özellikte olur." Şalter açıldığında makine basılı buton nedeniyle aniden çalışmamalı (Sıfır Enerji / Volt Düşme Koruması - Undervoltage release) bulunmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Kendiliğinden çalışma kabul edilemez bir otomasyon hatasıdır.</li><li>C Şıkkı Yanlıştır: Yeniden enerji vermede çalışma alanının emniyeti esastır.</li><li>D Şıkkı Yanlıştır: 100 metre uzaklaşma şartı pratik dışı ve mevzuatsız bir beyandır.</li><li>E Şıkkı Yanlıştır: Yeniden bağlanma emniyeti elektrikli, pnömatik ve hidrolik tüm sistemlerde zorunludur.</li></ul>'
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.14 ikinci cümle: "Ekipmanın enerji kaynaklarına yeniden bağlanması çalışanlar için tehlikeye sebep olmayacak özellikte olur." Şalter açıldığında makine basılı buton nedeniyle aniden çalışmamalı (Sıfır Enerji / Volt Düşme Koruması - Undervoltage release) bulunmalıdır. Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Kendiliğinden çalışma kabul edilemez bir otomasyon hatasıdır.</li><li>B: Yeniden enerji vermede çalışma alanının emniyeti esastır.</li><li>C: Yüz metre uzaklaşma şartı pratik dışı ve mevzuatsız bir beyandır.</li><li>D: Yeniden bağlanma emniyeti elektrikli, pnömatik ve hidrolik tüm sistemlerde zorunludur.</li></ul>'
       },
       {
         n: 31,
         topic: "İkaz Donanımlarının Anlaşılabilirliği (Madde 2.15)",
         text: "İş ekipmanlarında bulunan ikaz, uyarı ve sinyalizasyon donanımları (ışıklı, sesli, renkli) ile ilgili olarak mevzuat şartları (Madde 2.15) göz önüne alındığında aşağıdakilerden hangisi <strong>yanlıştır</strong>?",
         options: {
-          A: "İkaz donanımları kolayca görülebilir özellikte olmalıdır.",
-          B: "İkaz donanımları kolayca anlaşılabilir özellikte olmalıdır.",
-          C: "İkaz donanımları çalışanların güvenliğinin sağlanmasında esas nitelik taşır.",
-          D: "İkaz donanımları karmaşık, yalnızca yüksek mühendislik eğitimi almış kişilerin anlayabileceği özel kodlama ve şifrelerden oluşmalıdır.",
+          A: "İkaz donanımları karmaşık, yalnızca yüksek mühendislik eğitimi almış kişilerin anlayabileceği özel kodlama ve şifrelerden oluşmalıdır.",
+          B: "İkaz donanımları kolayca görülebilir özellikte olmalıdır.",
+          C: "İkaz donanımları kolayca anlaşılabilir özellikte olmalıdır.",
+          D: "İkaz donanımları çalışanların güvenliğinin sağlanmasında esas nitelik taşır.",
           E: "İkaz donanımları şüpheye yer bırakmayacak şekilde net uyarılar sunmalıdır."
         },
-        answer: "D",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.15: "İkaz donanımları kolayca görülebilir ve anlaşılabilir olur." İkaz donanımlarının karmaşık ve şifreli olması çalışanlarca anlaşılamamasına ve kazaya yol açar. D şıkkı bu kurala tamamen zıttır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve E Şıkları Doğrudur: Bu şıklar Madde 2.15 kapsamındaki ikaz donanımı temel niteliklerini doğru ifade etmektedir.</li></ul>'
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.15: "İkaz donanımları kolayca görülebilir ve anlaşılabilir olur." İkaz donanımlarının karmaşık ve şifreli olması çalışanlarca anlaşılamamasına ve kazaya yol açar. A şıkkı bu kurala tamamen zıttır. Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E: Bu şıklar Madde 2.15 kapsamındaki ikaz donanımı temel niteliklerini doğru ifade etmektedir.</li></ul>'
       },
       {
         n: 32,
@@ -988,7 +971,7 @@ const TESTS = [
           E: "Öncelik sırası operatörün panodaki anahtarı çevirmesiyle manuel olarak değiştirilebilmelidir."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre öncelikli olması gerekir." Bu prensip otomasyon yazılımlarında ve donanımsal güvenlik rölelerinde durdurma komutunun çalıştırma komutunu baskılamasını zorunlu kılar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Çalıştırmanın baskın kılınması güvenlik felsefesine aykırıdır.</li><li>C Şıkkı Yanlıştır: Döngüsel yer değiştirme belirsizlik yaratır.</li><li>D Şıkkı Yanlıştır: Durdurma komutu sistemi tamamen durdurmalı ve enerjiyi kesmelidir.</li><li>E Şıkkı Yanlıştır: Durdurma önceliği operatörün mod seçimine bırakılamaz, sabittir.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre öncelikli olması gerekir." Bu prensip otomasyon yazılımlarında ve donanımsal güvenlik rölelerinde durdurma komutunun çalıştırma komutunu baskılamasını zorunlu kılar. Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Çalıştırmanın baskın kılınması güvenlik felsefesine aykırıdır.</li><li>C: Döngüsel yer değiştirme belirsizlik yaratır.</li><li>D: Durdurma komutu sistemi tamamen durdurmalı ve enerjiyi kesmelidir.</li><li>E: Durdurma önceliği operatörün mod seçimine bırakılamaz, sabittir.</li></ul>'
       },
       {
         n: 33,
@@ -996,27 +979,27 @@ const TESTS = [
         text: "Bir konveyör bandının acil durdurma teli (ip anahtarı) çekilerek sistem durdurulmuştur. Arıza giderildikten sonra operatör acil durdurma telini eski konumuna getirdiği (resetlediği) an, başkaca hiçbir çalıştırma butonuna basılmadan konveyör bandı kendiliğinden hareket etmeye başlamıştır. Kumanda ve durdurma sistemlerinin güvenlik mantığı açısından bu durum nasıl değerlendirilmelidir?",
         options: {
           A: "Durdurma cihazının resetlenmesiyle makinenin kendiliğinden çalışması otomasyonda istenen doğru bir özelliktir.",
-          B: "Durdurma sistemleri serbest bırakıldığında veya resetlendiğinde makine kendiliğinden çalışmamalı; ayrı bir çalıştırma kumandasına basılması zorunlu olmalıdır.",
-          C: "İstem dışı çalışma riski yalnızca hidrolik preslerde geçerli bir kuraldır.",
+          B: "İstem dışı çalışma riski yalnızca hidrolik preslerde geçerli olan özel bir kuraldır.",
+          C: "Durdurma sistemleri serbest bırakıldığında veya resetlendiğinde makine kendiliğinden çalışmamalı; ayrı bir çalıştırma kumandasına basılması zorunlu olmalıdır.",
           D: "Bu durum, acil durdurma sisteminin çalıştırma sistemine göre öncelikli olduğunu gösterir.",
           E: "Resetleme ile kendiliğinden çalışma durumu, sesli ikaz verildiği sürece İSG kurallarına uygundur."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1 ve makine emniyeti standartları uyarınca; durdurma cihazı serbest bırakıldığında veya resetlendiğinde iş ekipmanı kendiliğinden çalışmaya başlamamalıdır. Çalıştırma ancak çalıştırma kumandasına yeniden ve kasıtlı olarak basılmasıyla gerçekleşmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Resetleme ile kendiliğinden çalışma ciddi yaralanma riskidir.</li><li>C Şıkkı Yanlıştır: Bu kural tüm iş ekipmanları için geçerlidir.</li><li>D Şıkkı Yanlıştır: Resetleme ile çalışma, durdurmanın öncelikli olmadığını aksine ihlal edildiğini gösterir.</li><li>E Şıkkı Yanlıştır: İkaz verilse dahi kendiliğinden başlama kabul edilemez.</li></ul>'
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1 ve makine emniyeti standartları uyarınca; durdurma cihazı serbest bırakıldığında veya resetlendiğinde iş ekipmanı kendiliğinden çalışmaya başlamamalıdır. Çalıştırma ancak çalıştırma kumandasına yeniden ve kasıtlı olarak basılmasıyla gerçekleşmelidir. Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Resetleme ile kendiliğinden çalışma ciddi yaralanma riskidir.</li><li>B: Bu kural tüm iş ekipmanları için geçerlidir.</li><li>D: Resetleme ile çalışma, durdurmanın öncelikli olmadığını aksine ihlal edildiğini gösterir.</li><li>E: İkaz verilse dahi kendiliğinden başlama kabul edilemez.</li></ul>'
       },
       {
         n: 34,
         topic: "Durdurmada Depolanmış Kalıcı/Artık Enerjinin Tahliyesi",
         text: "Tehlikeli bir iş ekipmanının acil stop butonuna basılarak durdurulması sonrasında, makineye güç sağlayan elektrik kesilmiş fakat sistemdeki basınçlı hava tüpünde akümüle kalmış yüksek basınçlı hava tahliye edilmediği için pnömatik piston aniden fırlamıştır. Durdurma sistemleri ve depolanmış kalıcı/artık enerji emniyeti (Madde 2.1) gereğince alınması gereken tedbir aşağıdakilerden hangisidir?",
         options: {
-          A: "Ekipman veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren tüm enerji kaynakları kesilmeli ve akümüle olmuş artık enerji güvenli şekilde tahliye edilecek özellikte olmalıdır.",
-          B: "Basınçlı hava tüplerindeki enerjinin saklanması sistemin tekrar kolay çalışması için zorunludur, tahliye edilemez.",
-          C: "Elektrik kesildiği sürece pnömatik ve hidrolik kalıcı enerjiler tehlike oluşturmaz.",
-          D: "Artık enerjinin tahliye edilmesi sadece yıllık periyodik bakımlarda yapılan bir işlemdir.",
+          A: "Basınçlı hava tüplerindeki enerjinin saklanması sistemin tekrar kolay çalışması için zorunludur, tahliye edilemez.",
+          B: "Elektrik kesildiği sürece pnömatik ve hidrolik kalıcı enerjiler tehlike oluşturmaz.",
+          C: "Artık enerjinin tahliye edilmesi sadece yıllık periyodik bakımlarda yapılan bir işlemdir.",
+          D: "Ekipman veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren tüm enerji kaynakları kesilmeli ve akümüle olmuş artık enerji güvenli şekilde tahliye edilmelidir.",
           E: "Akümüle enerjiler sadece mekanik kilit takılarak sistemde hapsedilmelidir."
         },
-        answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1: "İş ekipmanı veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özelliğe sahip olur." Bu kural sadece ana elektrik enerjisini değil, sistemde akümüle olmuş hidrolik, pnömatik veya mekanik (yay/yerçekimi) kalıcı enerjilerin de tahliye edilmesini veya bloke edilmesini kapsar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Basınçlı havanın hatta tutulması pnömatik hareket riskini devam ettirir.</li><li>C Şıkkı Yanlıştır: Kalıcı akümüle enerjiler en az elektrik kadar ölümcül tehlike yaratır.</li><li>D Şıkkı Yanlıştır: Artık enerji tahliyesi her durdurma prosedüründe otomasyonla sağlanmalıdır.</li><li>E Şıkkı Yanlıştır: Sadece kilit takmak yetersizdir, basınç tahliye valfleri otomasyona bağlanmalıdır.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1: "İş ekipmanı veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özelliğe sahip olur." Bu kural sadece ana elektrik enerjisini değil, sistemde akümüle olmuş hidrolik, pnömatik veya mekanik (yay/yerçekimi) kalıcı enerjilerin de tahliye edilmesini veya bloke edilmesini kapsar. Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Basınçlı havanın hatta tutulması pnömatik hareket riskini devam ettirir.</li><li>B: Kalıcı akümüle enerjiler en az elektrik kadar ölümcül tehlike yaratır.</li><li>C: Artık enerji tahliyesi her durdurma prosedüründe otomasyonla sağlanmalıdır.</li><li>E: Sadece kilit takmak yetersizdir, basınç tahliye valfleri otomasyona bağlanmalıdır.</li></ul>'
       },
       {
         n: 35,
@@ -1024,27 +1007,27 @@ const TESTS = [
         text: "Bir makine emniyeti denetçisi, fabrikanın robotik kaynak hücresini denetlemektedir. Denetçi, hücre kapısı açıldığında durdurma emrinin devreye girdiğini ancak güvenlik rölesinin çalıştırma devresini kilitlemediğini (interlock mekanizmasının eksik olduğunu) tespit etmiştir. Denetçi hazırladığı raporda mevzuatın temel hiyerarşi kuralına atıf yapmıştır. Buna göre denetçinin raporunda belirttiği ve iş ekipmanlarının durdurma ve çalıştırma donanımları arasındaki ilişkiyi düzenleyen temel mevzuat ilkesi aşağıdakilerden hangisidir?",
         options: {
           A: "İş ekipmanlarının çalıştırma sistemleri, durdurma sistemlerinin komutlarını her koşulda geçersiz kılacak yetki seviyesinde tasarlanmalıdır.",
-          B: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre her zaman öncelikli olması gerekir.",
-          C: "İş ekipmanlarında durdurma ve çalıştırma sistemleri eş zamanlı sinyal aldığında çalıştırma fonksiyonu aktif kalmalıdır.",
-          D: "İş ekipmanlarında soğutma ve yağlama sistemleri durdurma sistemlerine göre öncelikli kılınmalıdır.",
-          E: "Durdurma sistemlerinin önceliği sadece makinenin manuel kullanım modunda geçerli olan bir standarttır."
+          B: "İş ekipmanlarında durdurma ve çalıştırma sistemleri eş zamanlı sinyal aldığında çalıştırma fonksiyonu aktif kalmalıdır.",
+          C: "İş ekipmanlarında soğutma ve yağlama sistemleri durdurma sistemlerine göre öncelikli kılınmalıdır.",
+          D: "Durdurma sistemlerinin önceliği sadece makinenin manuel kullanım modunda geçerli olan bir standarttır.",
+          E: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre her zaman öncelikli olması gerekir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1 lafzı: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre öncelikli olması gerekir." Soru kökündeki vaka, çalıştırma devresinin kilitlenmediği ve durdurmanın öncelikli kılınmadığı bir tasarım hatasıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Çalıştırma sistemlerinin durdurmaya yetkelendirilmesi mevzuata aykırıdır.</li><li>C Şıkkı Yanlıştır: Eş zamanlı sinyalde durdurma komutu baskın olmalıdır.</li><li>D Şıkkı Yanlıştır: Soğutma/yağlama ikincil yardımcı sistemlerdir, esas hiyerarşi durdurma/çalıştırma arasındadır.</li><li>E Şıkkı Yanlıştır: Durdurma önceliği tüm işletim modlarında (manuel/otomatik) geçerlidir.</li></ul>'
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1 lafzı: "İş ekipmanlarının durdurma sistemleri, çalıştırma sistemlerine göre öncelikli olması gerekir." Soru kökündeki vaka, çalıştırma devresinin kilitlenmediği ve durdurmanın öncelikli kılınmadığı bir tasarım hatasıdır. Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Çalıştırma sistemlerinin durdurmaya yetkelendirilmesi mevzuata aykırıdır.</li><li>B: Eş zamanlı sinyalde durdurma komutu baskın olmalıdır.</li><li>C: Soğutma/yağlama ikincil yardımcı sistemlerdir, esas hiyerarşi durdurma/çalıştırma arasındadır.</li><li>D: Durdurma önceliği tüm işletim modlarında (manuel/otomatik) geçerlidir.</li></ul>'
       },
       {
         n: 36,
-        topic: "İstem Dışı Hareketleri Önleyici Pedal Muhafazası/Sipali",
+        topic: "İstem Dışı Hareketleri Önleyici Pedal Muhafazası",
         text: "Bir eksantrik presin kumanda pedalına tavan vinci ile taşınan ağır bir metal parçanın kazaen düşmesi sonucu pedal aşağı çökmüş ve pres koç başı hızla inerek kalıp arasındaki işçinin elini ezmiştir. Bu kazanın kök nedeni dikkate alındığında, kumanda cihazlarında istem dışı hareketleri ve dış darbeleri önlemek için tasarımda bulunması gereken zorunlu yapı aşağıdakilerden hangisidir?",
         options: {
-          A: "Pedalların ve kumanda butonlarının üstünü ve yanlarını kapsayan koruyucu muhafaza (ayak sipali/pedal zırhı) ve güvenli konumlandırma.",
-          B: "Pedalların basma kuvvetinin 500 kg seviyesine çıkarılması.",
-          C: "Pedalların tamamen kaldırılıp yerine uzaktan kumandalı radyo frekanslı el kumandası konulması.",
-          D: "Pres tezgahının elektrik voltajının düşürülmesi.",
-          E: "Pedal yüzeyinin kaygan kauçuk malzeme ile kaplanması."
+          A: "Pedalların ve kumanda butonlarının üstünü ve yanlarını kapsayan koruyucu muhafaza ve güvenli konumlandırma",
+          B: "Pedalların basma kuvvetinin beş yüz kilogram seviyesine çıkarılması",
+          C: "Pedalların tamamen kaldırılıp yerine uzaktan kumandalı radyo frekanslı el kumandası konulması",
+          D: "Pres tezgahının elektrik voltajının düşürülerek güvenli hale getirilmesi",
+          E: "Pedal yüzeyinin kaygan kauçuk malzeme ile kaplanarak kaymanın engellenmesi"
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.2: "Kumanda cihazları, istem dışı hareketlerde tehlikeye neden olmaması gerekir." Ayak pedallarında üzerine parça düşmesi veya kazara basılmasını önlemek için üstü ve yanları kapalı pedal koruyucu muhafazası (pedal zırhı) konulması zorunlu bir mühendislik tedbiridir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Basma kuvvetini artırmak çalışanın ayağını yorar ve parça düşme riskini engellemez.</li><li>C Şıkkı Yanlıştır: Radyo frekanslı el kumandası pedal ihtiyacını ortadan kaldırsa da kaza nedenini doğrudan çözmez.</li><li>D Şıkkı Yanlıştır: Voltajı düşürmek mekanik darbe sıkışmasını engellemez.</li><li>E Şıkkı Yanlıştır: Kauçuk kaplama dikey düşen parçanın pedala basmasını önleyemez.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.2: "Kumanda cihazları, istem dışı hareketlerde tehlikeye neden olmaması gerekir." Ayak pedallarında üzerine parça düşmesi veya kazara basılmasını önlemek için üstü ve yanları kapalı pedal koruyucu muhafazası (pedal zırhı) konulması zorunlu bir mühendislik tedbiridir. Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B: Basma kuvvetini artırmak çalışanın ayağını yorar ve parça düşme riskini engellemez.</li><li>C: Radyo frekanslı el kumandası pedal ihtiyacını ortadan kaldırsa da kaza nedenini doğrudan çözmez.</li><li>D: Voltajı düşürmek mekanik darbe sıkışmasını engellemez.</li><li>E: Kauçuk kaplama dikey düşen parçanın pedala basmasını önleyemez.</li></ul>'
       },
       {
         n: 37,
@@ -1053,26 +1036,26 @@ const TESTS = [
         options: {
           A: "İkaz donanımları arızalandığında makine üretimi aksatmamak adına ikazsız çalıştırılabilir.",
           B: "İkaz donanımları çalışanların güvenliğinde esas olup her zaman çalışır, kolayca görülebilir ve anlaşılabilir durumda tutulması zorunludur.",
-          C: "İkaz sistemleri sadece makinenin ilk kurulum kabul testinde 1 kez kontrol edilir.",
+          C: "İkaz sistemleri sadece makinenin ilk kurulum kabul testinde bir kez kontrol edilir.",
           D: "Görsel ikazlar arızalandığında çalışana baret taktırılarak risk bertaraf edilmiş sayılır.",
           E: "İkaz donanımlarının çalışır durumda tutulması operatörün kişisel isteğine bağlıdır."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.15: "İş ekipmanlarında, çalışanların güvenliğinin sağlanmasında esas olan ikaz donanımları bulunması..." Bu donanımların sürekli çalışır, görülebilir ve anlaşılabilir tutulması işverenin temel yükümlülüğüdür.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Arızalı ikaz donanımı ile makine çalıştırılamaz.</li><li>C Şıkkı Yanlıştır: İkaz donanımları sürekli faal olmak zorundadır.</li><li>D Şıkkı Yanlıştır: Baret takmak kör noktadaki çalışanı hareketli aksam çarpmasından korumaz.</li><li>E Şıkkı Yanlıştır: İkaz donanımının işletilmesi operatör keyfiyetine bırakılamaz.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.15: "İş ekipmanlarında, çalışanların güvenliğinin sağlanmasında esas olan ikaz donanımları bulunması..." Bu donanımların sürekli çalışır, görülebilir ve anlaşılabilir tutulması işverenin temel yükümlülüğüdür. Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Arızalı ikaz donanımı ile makine çalıştırılamaz.</li><li>C: İkaz donanımları sürekli faal olmak zorundadır.</li><li>D: Baret takmak kör noktadaki çalışanı hareketli aksam çarpmasından korumaz.</li><li>E: İkaz donanımının işletilmesi operatör keyfiyetine bırakılamaz.</li></ul>'
       },
       {
         n: 38,
         topic: "İkaz Gecikme Süresinin Güvenli Kaçışa Göre Belirlenmesi",
         text: "Operatörün ana kumanda masasından tehlike bölgesinin tamamını göremediği karmaşık bir iş ekipmanında, çalıştırma butonuna basılması ile makinenin fiili harekete geçmesi arasındaki zaman aralığı (gecikme rölesi) neye göre belirlenmelidir?",
         options: {
-          A: "Zaman aralığı sabit olarak her makinede 1 saniye olmalıdır.",
-          B: "Zaman aralığı, ikaz sistemi devreye girdikten sonra tehlike bölgesinde kalan maruz çalışanların bölgeyi güvenle terk etmesine veya durdurma butonuna basarak tehlikeyi önlemesine yetecek sürede olmalıdır.",
-          C: "Zaman aralığı vardiya amirinin o günkü üretim hedefine göre değiştirilebilir.",
+          A: "Zaman aralığı sabit olarak her makinede bir saniye olacak şekilde ayarlanmalıdır.",
+          B: "Zaman aralığı vardiya amirinin o günkü üretim hedefine göre değiştirilebilir.",
+          C: "Zaman aralığı, ikaz sistemi devreye girdikten sonra tehlike bölgesinde kalan maruz çalışanların bölgeyi güvenle terk etmesine veya durdurma butonuna basarak tehlikeyi önlemesine yetecek sürede olmalıdır.",
           D: "Zaman aralığının belirlenmesine gerek yoktur, ikaz çalar çalmaz makine derhal dönmelidir.",
-          E: "Zaman aralığı makine motorunun ısınma süresine eşit olmalıdır."
+          E: "Zaman aralığı makine motorunun ısınma süresine eşit olacak şekilde ayarlanmalıdır."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.3 uyarınca; görüş alanının kapatıldığı durumlarda devreye giren otomatik ikaz sistemi ile makine hareketi arasındaki zaman gecikmesi, maruz kalan çalışanın tehlike bölgesinden uzaklaşmasına veya durdurma sistemini çalıştırmasına "yeterli zamanı ve imkanı" verecek şekilde ayarlanmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: 1 saniyelik sabit süre geniş hatlarda çalışanın kaçmasına yetmez.</li><li>C Şıkkı Yanlıştır: Üretim hedefine göre emniyet süresi kısaltılamaz.</li><li>D Şıkkı Yanlıştır: İkaz çalar çalmaz hareket başlarsa ikazın hiçbir koruyucu anlamı kalmaz.</li><li>E Şıkkı Yanlıştır: Süre motor ısınmasına göre değil insan kaçış fiziğine göre belirlenir.</li></ul>'
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.3 uyarınca; görüş alanının kapatıldığı durumlarda devreye giren otomatik ikaz sistemi ile makine hareketi arasındaki zaman gecikmesi, maruz kalan çalışanın tehlike bölgesinden uzaklaşmasına veya durdurma sistemini çalıştırmasına "yeterli zamanı ve imkanı" verecek şekilde ayarlanmalıdır. Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Bir saniyelik sabit süre geniş hatlarda çalışanın kaçmasına yetmez.</li><li>B: Üretim hedefine göre emniyet süresi kısaltılamaz.</li><li>D: İkaz çalar çalmaz hareket başlarsa ikazın hiçbir koruyucu anlamı kalmaz.</li><li>E: Süre motor ısınmasına göre değil insan kaçış fiziğine göre belirlenir.</li></ul>'
       },
       {
         n: 39,
@@ -1080,13 +1063,13 @@ const TESTS = [
         text: "Bir hidrolik giyotin makasın acil durdurma butonunun konumu incelenmiş ve butonun makinenin arkasındaki pano içine yerleştirildiği, operatörün çalışma pozisyonundan ulaşmasının imkansız olduğu görülmüştür. Acil durdurma cihazlarının (Madde 2.4) ergonomik ve teknik yerleşimi açısından doğru şart aşağıdakilerden hangisidir?",
         options: {
           A: "Acil durdurma cihazları kaza anında zarar görmemesi için makine gövdesinin iç kısmına saklanmalıdır.",
-          B: "Acil durdurma cihazları, risk taşıyan her çalışma noktasında kolayca ulaşılabilir, engelsiz ve hızlıca müdahale edilebilir konumda olmalıdır.",
-          C: "Acil durdurma butonları sadece makine imalatçısının anahtar ile açabileceği kutularda bulunmalıdır.",
-          D: "Acil durdurma butonlarının yerleşimi standartlara tabi olmayıp estetik kaygılara göre belirlenir.",
-          E: "Acil durdurma cihazı sadece elektrik panosunun üzerinde 2 metre yükseklikte olmalıdır."
+          B: "Acil durdurma butonları sadece makine imalatçısının anahtar ile açabileceği kutularda bulunmalıdır.",
+          C: "Acil durdurma butonlarının yerleşimi standartlara tabi olmayıp estetik kaygılara göre belirlenir.",
+          D: "Acil durdurma cihazları, risk taşıyan her çalışma noktasında kolayca ulaşılabilir, engelsiz ve hızlıca müdahale edilebilir konumda olmalıdır.",
+          E: "Acil durdurma cihazı sadece elektrik panosunun üzerinde iki metre yükseklikte olmalıdır."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.4 ve ergonomi standartları: Acil durdurma cihazları risk taşıyan çalışma noktalarında kolayca ulaşılabilir, engelsiz ve hızlı müdahaleye uygun konuma yerleştirilmelidir. Pano içine gizlenmesi açık mevzuat ihlalidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Acil stop cihazı asla gövde içine saklanamaz.</li><li>C Şıkkı Yanlıştır: İmalatçı kilitli kutusuna koymak acil müdahaleyi imkansız kılar.</li><li>D Şıkkı Yanlıştır: Yerleşim estetiğe değil insan ergonomisine ve risk noktasına bağlıdır.</li><li>E Şıkkı Yanlıştır: 2 metre yükseklik ortalama insan erişim sınırının üzerindedir.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.4 ve ergonomi standartları: Acil durdurma cihazları risk taşıyan çalışma noktalarında kolayca ulaşılabilir, engelsiz ve hızlı müdahaleye uygun konuma yerleştirilmelidir. Pano içine gizlenmesi açık mevzuat ihlalidir. Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Acil stop cihazı asla gövde içine saklanamaz.</li><li>B: İmalatçı kilitli kutusuna koymak acil müdahaleyi imkansız kılar.</li><li>C: Yerleşim estetiğe değil insan ergonomisine ve risk noktasına bağlıdır.</li><li>E: İki metre yükseklik ortalama insan erişim sınırının üzerindedir.</li></ul>'
       },
       {
         n: 40,
@@ -1095,12 +1078,12 @@ const TESTS = [
         options: {
           A: "Üzerindeki fonksiyon işaretleri silinmiş, açma-kapama simgesi bulunmayan butonlar",
           B: "Tehlikeli bölgenin tam içine yerleştirilmiş, müdahale esnasında kapılma riski yaratan şalterler",
-          C: "Zorunlu haller dışında tehlikeli bölgenin dışına yerleştirilmiş, açıkça görülebilir, tanınabilir ve istem dışı harekete karşı korumalı kumanda cihazları",
-          D: "Açıkta duran, üzerine parça düşmesiyle makineyi harekete geçirebilen korumasız pedallar",
-          E: "Durdurma butonuna basıldığında enerjisi kesilmeyen, hareketi devam eden pres sistemleri"
+          C: "Açıkta duran, üzerine parça düşmesiyle makineyi harekete geçirebilen korumasız pedallar",
+          D: "Durdurma butonuna basıldığında enerjisi kesilmeyen, hareketi devam eden pres sistemleri",
+          E: "Tehlikeli bölgenin dışına yerleştirilmiş, görünür, tanınabilir ve istem dışı harekete karşı korumalı kumanda cihazları"
         },
-        answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.1 ve 2.1.2 kuralları: Kumanda cihazları açıkça görülebilir, tanınabilir, işaretlenmiş ve zorunlu haller dışında tehlikeli bölgenin dışına yerleştirilmiş olmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Simgeleri silinmiş buton Madde 2.1.1\'e aykırıdır.</li><li>B Şıkkı Yanlıştır: Tehlikeli bölge içindeki şalter Madde 2.1.2\'ye aykırıdır.</li><li>D Şıkkı Yanlıştır: Korumasız pedal istem dışı hareket riski yaratır.</li><li>E Şıkkı Yanlıştır: Durdurulduğunda enerjisi kesilmeyen pres Madde 2.1 durdurma ilkesine aykırıdır.</li></ul>'
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.1.1 ve 2.1.2 kuralları: Kumanda cihazları açıkça görülebilir, tanınabilir, işaretlenmiş ve zorunlu haller dışında tehlikeli bölgenin dışına yerleştirilmiş olmalıdır. Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Simgeleri silinmiş buton Madde 2.1.1\'e aykırıdır.</li><li>B: Tehlikeli bölge içindeki şalter Madde 2.1.2\'ye aykırıdır.</li><li>C: Korumasız pedal istem dışı hareket riski yaratır.</li><li>D: Durdurulduğunda enerjisi kesilmeyen pres Madde 2.1 durdurma ilkesine aykırıdır.</li></ul>'
       }
     ]
   },
@@ -1115,44 +1098,44 @@ const TESTS = [
       {
         n: 41,
         topic: "Periyodik Kontrollerde Yetkili Kişi (EKİPNET) Şartı",
-        text: "Bir kimya tesisinde bulunan yüksek basınçlı otoklavın ve tavan vincinin periyodik kontrol zamanı gelmiştir. Şirket yönetimi, dışarıdan akredite muayene kuruluşu çağırmak yerine maliyeti düşürmek amacıyla kontrolleri tesisin tecrübeli vasıfsız üretim işçisine yaptırmış ve kendi aralarında imzalı rapor düzenlemişlerdir. İş Ekipmanının Kontrolü mevzuat hükümleri (İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği) çerçevesinde bu uygulama için aşağıdakilerden hangisi doğrudur?",
+        text: "Bir kimya tesisinde bulunan yüksek basınçlı otoklavın ve tavan vincinin periyodik kontrol zamanı gelmiştir. Şirket yönetimi, dışarıdan akredite muayene kuruluşu çağırmak yerine maliyeti düşürmek amacıyla kontrolleri tesisin tecrübeli vasıfsız üretim işçisine yaptırmış ve kendi aralarında imzalı rapor düzenlemişlerdir. İş Ekipmanının Kontrolü mevzuat hükümleri çerçevesinde bu uygulama için aşağıdakilerden hangisi doğrudur?",
         options: {
-          A: "Vasıfsız işçi makineyi yıllardır çalıştırdığı için düzenlediği periyodik kontrol raporu hukuken ve teknik olarak geçerlidir.",
-          B: "İş ekipmanının periyodik kontrolleri, mevzuatla belirlenmiş \"periyodik kontrolleri yapmaya yetkili kişiler\" (EKİPNET sistemine kayıtlı yetkili mühendis/teknikerler) tarafından yapılmak zorundadır.",
+          A: "İş ekipmanının periyodik kontrolleri, mevzuatla belirlenmiş periyodik kontrolleri yapmaya yetkili kişiler tarafından yapılmak zorundadır.",
+          B: "Vasıfsız işçi makineyi yıllardır çalıştırdığı için düzenlediği periyodik kontrol raporu hukuken ve teknik olarak geçerlidir.",
           C: "Periyodik kontroller yalnızca tesisin en kıdemli ustabaşısı tarafından yürütülebilir.",
           D: "Kontrollerin yetkili kişilerce yapılması zorunluluğu sadece ithal makineler için geçerlidir.",
-          E: "İşveren, onaylı bir yazı yazarak tesisindeki her çalışana periyodik kontrol yetkisi devredebilir."
+          E: "İşveren onaylı bir yazı yazarak tesisindeki her çalışana periyodik kontrol yetkisi devredebilir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "İş Ekipmanının Kontrolü" b/1 bendi: İş ekipmanının "Periyodik kontrolleri yapmaya yetkili kişilerce periyodik kontrollerinin yapılması..." sağlanır. Yetkili kişiler, Bakanlığın EKİPNET sistemine kayıtlı, ilgili mühendislik/teknikerlik yetki belgesine sahip kişilerden oluşur. Tesisin vasıfsız işçisinin yaptığı kontrol hukuken geçersizdir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Ekipmanı işletmek periyodik kontrol yapma yetkisi kazandırmaz.</li><li>C Şıkkı Yanlıştır: Fabrika sahibi olmak yetkili kişi vasfı sağlamaz.</li><li>D Şıkkı Yanlıştır: Yetkili kişi şartı tüm kapsama giren iş ekipmanları için geçerlidir.</li><li>E Şıkkı Yanlıştır: İşveren yetkili kişi belgesi olmayan çalışana devir yapamaz.</li></ul>'
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "İş Ekipmanının Kontrolü" b/1 bendi: İş ekipmanının "Periyodik kontrolleri yapmaya yetkili kişilerce periyodik kontrollerinin yapılması..." sağlanır. Yetkili kişiler, Bakanlığın EKİPNET sistemine kayıtlı, ilgili mühendislik/teknikerlik yetki belgesine sahip kişilerden oluşur. Tesisin vasıfsız işçisinin yaptığı kontrol hukuken geçersizdir. Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B: Ekipmanı işletmek periyodik kontrol yapma yetkisi kazandırmaz.</li><li>C: Kıdem tek başına yetkili kişi vasfı sağlamaz.</li><li>D: Yetkili kişi şartı tüm kapsama giren iş ekipmanları için geçerlidir.</li><li>E: İşveren yetkili kişi belgesi olmayan çalışana devir yapamaz.</li></ul>'
       },
       {
         n: 42,
         topic: "Olağan Dışı Durum Kontrolleri (Kazalar, Doğal Olaylar)",
-        text: "Bir liman işletmesinde kullanılan mobil vinç, çalışma esnasında bom devrilmesi şeklinde tehlikeli bir kaza atlatmış ve şiddetli bir fırtınada deniz suyu korozyonuna maruz kalmıştır. Şantiye şefi, \"Bu vincin yıllık periyodik kontrolüne daha 8 ay var, vakit kaybetmeden kaldırma işlemlerine devam edelim\" talimatı vermiştir. İş ekipmanının olağan dışı durumlarda kontrolü ilkesi (İş Ekipmanının Kontrolü b/2 bendi) gereğince bu yaklaşım hakkında aşağıdakilerden hangisi söylenebilir?",
+        text: "Bir liman işletmesinde kullanılan mobil vinç, çalışma esnasında bom devrilmesi şeklinde tehlikeli bir kaza atlatmış ve şiddetli bir fırtınada deniz suyu korozyonuna maruz kalmıştır. Şantiye şefi, \"Bu vincin yıllık periyodik kontrolüne daha 8 ay var, vakit kaybetmeden kaldırma işlemlerine devam edelim\" talimatı vermiştir. İş ekipmanının olağan dışı durumlarda kontrolü ilkesi gereğince bu yaklaşım hakkında aşağıdakilerden hangisi söylenebilir?",
         options: {
           A: "Şantiye şefinin kararı mevzuata uygundur; yıllık kontrol süresi dolmadan ek kontrol yapılamaz.",
-          B: "Çalışma şeklinde değişiklikler, kazalar, doğal olaylar veya ekipmanın uzun süre kullanılmaması gibi durumlardan sonra, arızanın tespiti ve güvenliğin korunması için periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontroller derhal yapılmalıdır.",
+          B: "Çalışma şeklinde değişiklikler, kazalar, doğal olaylar veya ekipmanın uzun süre kullanılmaması gibi durumlardan sonra arızanın tespiti için periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontroller derhal yapılmalıdır.",
           C: "Yalnızca yangın çıkması durumunda kontrol yapılır, bom kazası veya fırtına olağan dışı durum sayılmaz.",
           D: "Mobil vinç kontrole gerek olmaksızın derhal hurdaya ayrılmalı ve limandan atılmalıdır.",
           E: "Olağan dışı durum kontrolleri yetkili mühendisler yerine sadece makine operatörü tarafından gözle yapılmalıdır."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "İş Ekipmanının Kontrolü" b/2 bendi: "Çalışma şeklinde değişiklikler, kazalar, doğal olaylar veya ekipmanın uzun süre kullanılmaması gibi iş ekipmanındaki güvenliğin bozulmasına neden olabilecek durumlardan sonra, arızanın zamanında belirlenip giderilmesi ve sağlık ve güvenlik koşullarının korunması için periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontrollerin yapılması sağlanır." Vincin bom kazası geçirmesi ve fırtınaya maruz kalması olağan dışı kontrol tetikleyicisidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Rutin periyodik kontrol süresi beklenemez, derhal olağan dışı kontrol yapılmalıdır.</li><li>C Şıkkı Yanlıştır: Kazalar ve doğal olaylar açıkça kontrol sebebi olarak düzenlenmiştir.</li><li>D Şıkkı Yanlıştır: Doğrudan hurdaya atmak yerine yetkili kontrolü ile durum tespiti yapılır.</li><li>E Şıkkı Yanlıştır: Olağan dışı kontroller de sadece yetkili kişilerce yapılır, gözle yüzeysel kontrol yetersizdir.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "İş Ekipmanının Kontrolü" b/2 bendi: "Çalışma şeklinde değişiklikler, kazalar, doğal olaylar veya ekipmanın uzun süre kullanılmaması gibi iş ekipmanındaki güvenliğin bozulmasına neden olabilecek durumlardan sonra, arızanın zamanında belirlenip giderilmesi ve sağlık ve güvenlik koşullarının korunması için periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontrollerin yapılması sağlanır." Vincin bom kazası geçirmesi ve fırtınaya maruz kalması olağan dışı kontrol tetikleyicisidir. Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Rutin periyodik kontrol süresi beklenemez, derhal olağan dışı kontrol yapılmalıdır.</li><li>C: Kazalar ve doğal olaylar açıkça kontrol sebebi olarak düzenlenmiştir.</li><li>D: Doğrudan hurdaya atmak yerine yetkili kontrolü ile durum tespiti yapılır.</li><li>E: Olağan dışı kontroller de sadece yetkili kişilerce yapılır, gözle yüzeysel kontrol yetersizdir.</li></ul>'
       },
       {
         n: 43,
         topic: "Arızaya Sebep Olacak Etkilerde Kontrol Yükümlülüğü",
-        text: "Aşındırıcı kimyasallarla çalışan, yüksek sıcaklık ve titreşime maruz kalan bir reaktör tankının periyodik kontrolleri ile ilgili işverenin yasal yükümlülüğü (İş Ekipmanının Kontrolü b/1 bendi) aşağıdakilerden hangisidir?",
+        text: "Aşındırıcı kimyasallarla çalışan, yüksek sıcaklık ve titreşime maruz kalan bir reaktör tankının periyodik kontrolleri ile ilgili işverenin yasal yükümlülüğü aşağıdakilerden hangisidir?",
         options: {
           A: "Ekipmanı arızalanıp durana kadar hiçbir kontrole tabi tutmadan çalıştırmak.",
-          B: "Arızaya sebep olabilecek etkilere maruz kalarak tehlike yaratabilecek iş ekipmanının, periyodik kontrolleri yapmaya yetkili kişilerce periyodik kontrollerinin yapılmasını sağlamak.",
-          C: "Kontrol sorumluluğunu makinenin yabancı imalatçısına devredip yerel takibi sonlandırmak.",
+          B: "Kontrol sorumluluğunu makinenin yabancı imalatçısına devredip yerel takibi sonlandırmak.",
+          C: "Arızaya sebep olabilecek etkilere maruz kalarak tehlike yaratabilecek iş ekipmanının periyodik kontrollerinin yetkili kişilerce yapılmasını sağlamak.",
           D: "Yalnızca ekipman sızıntı yaptığında dış servis çağırmak.",
           E: "Reaktör garanti süresi boyunca periyodik kontrollerden muaf tutulur."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "İş Ekipmanının Kontrolü" b/1 bendi: "İşverence, arızaya sebep olabilecek etkilere maruz kalarak tehlike yaratabilecek iş ekipmanının; 1) Periyodik kontrolleri yapmaya yetkili kişilerce periyodik kontrollerinin yapılması... sağlanır."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Arızalanana kadar çalıştırmak "kaza bekleme" yaklaşımıdır ve mevzuata aykırıdır.</li><li>C Şıkkı Yanlıştır: İşverenin kontrol yükümlülüğü devredilemez.</li><li>D Şıkkı Yanlıştır: Sadece sızıntıda müdahale etmek önleyici kontrol ilkesine aykırıdır.</li><li>E Şıkkı Yanlıştır: Garanti süresi periyodik kontrol muafiyeti sağlamaz.</li></ul>'
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "İş Ekipmanının Kontrolü" b/1 bendi: "İşverence, arızaya sebep olabilecek etkilere maruz kalarak tehlike yaratabilecek iş ekipmanının; periyodik kontrolleri yapmaya yetkili kişilerce periyodik kontrollerinin yapılması... sağlanır." Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Arızalanana kadar çalıştırmak "kaza bekleme" yaklaşımıdır ve mevzuata aykırıdır.</li><li>B: İşverenin kontrol yükümlülüğü devredilemez.</li><li>D: Sadece sızıntıda müdahale etmek önleyici kontrol ilkesine aykırıdır.</li><li>E: Garanti süresi periyodik kontrol muafiyeti sağlamaz.</li></ul>'
       },
       {
         n: 44,
@@ -1160,13 +1143,13 @@ const TESTS = [
         text: "Bir tekstil fabrikasının deposunda 3 yıl boyunca atıl vaziyette bekletilen ve hiç çalıştırılmayan kumaş serim ve kesim makinesi, artan siparişler üzerine tekrar üretime alınacaktır. Mevzuata göre uzun süre kullanılmayan iş ekipmanlarının tekrar üretime alınması öncesinde yapılması gereken yasal işlem nedir?",
         options: {
           A: "Makine tozu alındıktan sonra hiçbir teknik kontrole gerek duyulmadan doğrudan çalıştırılır.",
-          B: "Ekipmanın uzun süre kullanılmaması nedeniyle güvenliğinin bozulup bozulmadığının tespiti ve sağlık/güvenlik koşullarının korunması için periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontrolleri yapılmalıdır.",
-          C: "Makineye sadece yeni yağ ilave edilip operatöre teslim edilir.",
-          D: "5 yıllık süre dolmadığı için kontrol yapılması yasal olarak yasaktır.",
+          B: "Makineye sadece yeni yağ ilave edilip operatöre teslim edilmesi yeterli olmaktadır.",
+          C: "Beş yıllık süre dolmadığı için kontrol yapılması yasal olarak yasaktır.",
+          D: "Ekipmanın uzun süre kullanılmaması nedeniyle güvenliğinin bozulup bozulmadığının tespiti için periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontroller yapılmalıdır.",
           E: "Uzun süre bekleyen makinelerin kontrolü sadece Bakanlık müfettişlerince yapılabilir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "İş Ekipmanının Kontrolü" b/2 bendi: "ekipmanın uzun süre kullanılmaması gibi iş ekipmanındaki güvenliğin bozulmasına neden olabilecek durumlardan sonra... periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontrollerin yapılması sağlanır." 3 yıl atıl kalan makine uzun süre kullanılmama kapsamındadır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Kontrolsüz çalıştırmak kaza riskidir.</li><li>C Şıkkı Yanlıştır: Sadece yağ değişimi emniyet aksamının (acil stop, muhafazalar vb.) kontrolünü sağlamaz.</li><li>D Şıkkı Yanlıştır: Uzun süre atıl kalma durumunda periyodik süreye bakılmaksızın kontrol zorunludur.</li><li>E Şıkkı Yanlıştır: Bakanlık müfettişi kontrol yapmaz, yetkili kişilerce yapılması sağlanır.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin "İş Ekipmanının Kontrolü" b/2 bendi: "ekipmanın uzun süre kullanılmaması gibi iş ekipmanındaki güvenliğin bozulmasına neden olabilecek durumlardan sonra... periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontrollerin yapılması sağlanır." 3 yıl atıl kalan makine uzun süre kullanılmama kapsamındadır. Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Kontrolsüz çalıştırmak kaza riskidir.</li><li>B: Sadece yağ değişimi emniyet aksamının (acil stop, muhafazalar vb.) kontrolünü sağlamaz.</li><li>C: Uzun süre atıl kalma durumunda periyodik süreye bakılmaksızın kontrol zorunludur.</li><li>E: Bakanlık müfettişi kontrol yapmaz, yetkili kişilerce yapılması sağlanır.</li></ul>'
       },
       {
         n: 45,
@@ -1177,42 +1160,42 @@ const TESTS = [
           B: "İş ekipmanının çalışma şeklinde veya kullanım amacında önemli değişiklikler yapıldığında",
           C: "Ekipmanın karıştığı bir iş kazası veya ramak kala olay sonrasında",
           D: "Deprem, sel, fırtına gibi doğal olaylar veya uzun süre kullanılmama durumlarından sonra",
-          E: "Ekipmanın vardiya değişiminde çalışanların 15 dakikalık çay molasına girmesinde"
+          E: "Ekipmanın vardiya değişiminde çalışanların on beş dakikalık çay molasına girmesinde"
         },
         answer: "E",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> İş Ekipmanının Kontrolü b/1 ve b/2 bentlerinde yetkili kontrol durumları: Rutin periyodik süreler, çalışma şekli değişiklikleri, kazalar, doğal olaylar ve uzun süre kullanılmama olarak sayılmıştır. Vardiya değişimindeki 15 dakikalık çay molası olağan dışı bir durum veya yetkili periyodik kontrol tetikleyicisi değildir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve D Şıkları Doğrudur: Bu şıklardaki durumlar kaynak metinde yetkili kontrolü gerektiren durumlar olarak birebir yer almaktadır.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> İş Ekipmanının Kontrolü b/1 ve b/2 bentlerinde yetkili kontrol durumları: Rutin periyodik süreler, çalışma şekli değişiklikleri, kazalar, doğal olaylar ve uzun süre kullanılmama olarak sayılmıştır. Vardiya değişimindeki on beş dakikalık çay molası olağan dışı bir durum veya yetkili periyodik kontrol tetikleyicisi değildir. Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve D: Bu şıklardaki durumlar kaynak metinde yetkili kontrolü gerektiren durumlar olarak birebir yer almaktadır.</li></ul>'
       },
       {
         n: 46,
         topic: "Bakım Defteri ve 5070 Sayılı Kanun E-İmza Geçerliliği (Madde 2.13.1)",
         text: "Bir makine imalat tesisini denetleyen Çalışma Müfettişi, makinelerin bakım kayıtlarını talep etmiştir. İşveren, tüm bakım işlemlerinin dijital otomasyon yazılımına günü gününe kaydedildiğini ve kayıtların 5070 sayılı Elektronik İmza Kanunu'na uygun Nitelikli Elektronik Sertifika (NES) ile imzalandığını beyan ederek dijital verileri sunmuştur. Makinelerde bakım defteri tutulması ve elektronik kayıtların geçerliliği (Madde 2.13.1) açısından bu durumun hukuki değerlendirmesi aşağıdakilerden hangisidir?",
         options: {
-          A: "Bakım defterleri mutlaka elle yazılmış ıslak imzalı kağıt olmak zorundadır; dijital kayıtlar geçersizdir.",
-          B: "Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe işlenir; 5070 sayılı Kanuna uygun güvenli elektronik imza ile imzalanmış ve saklanan kayıtlar da hukuken bakım defteri kabul edilir.",
+          A: "Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe işlenir; 5070 sayılı Kanuna uygun güvenli elektronik imza ile imzalanmış ve saklanan kayıtlar da hukuken bakım defteri kabul edilir.",
+          B: "Bakım defterleri mutlaka elle yazılmış ıslak imzalı kağıt olmak zorundadır; dijital kayıtlar geçersizdir.",
           C: "Dijital bakım kayıtları yalnızca Noter onayı alındığı takdirde geçerli sayılır.",
           D: "Bakım kayıtlarının günü gününe işlenmesi zorunlu olmayıp yıl sonunda topluca e-imzalanması yeterlidir.",
           E: "Bakım defterinin e-imzalı tutulması için Bakanlıktan özel izin alınması şarttır."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.13.1: "Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe bu deftere işlenir. 5070 sayılı Elektronik İmza Kanununa uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtlar da bakım defteri olarak kabul edilir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Dijital kayıtların e-imzalı olması halinde geçerli olduğu maddede açıkça belirtilmiştir.</li><li>C Şıkkı Yanlıştır: Noter onayı şartı mevzuatta yoktur, 5070 sayılı Kanun e-imzası yeterlidir.</li><li>D Şıkkı Yanlıştır: İşlemler günü gününe işlenmek zorundadır.</li><li>E Şıkkı Yanlıştır: Bakanlıktan özel izin alma şartı düzenlenmemiştir.</li></ul>'
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.13.1: "Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe bu deftere işlenir. 5070 sayılı Elektronik İmza Kanununa uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtlar da bakım defteri olarak kabul edilir." Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B: Dijital kayıtların e-imzalı olması halinde geçerli olduğu maddede açıkça belirtilmiştir.</li><li>C: Noter onayı şartı mevzuatta yoktur, 5070 sayılı Kanun e-imzası yeterlidir.</li><li>D: İşlemler günü gününe işlenmek zorundadır.</li><li>E: Bakanlıktan özel izin alma şartı düzenlenmemiştir.</li></ul>'
       },
       {
         n: 47,
         topic: "5070 Sayılı Elektronik İmza Kanunu Referansı",
         text: "Bir işletmede kullanılan iş makinelerinin bakım defteri kayıtlarının fiziki kağıt yerine elektronik ortamda saklanması durumunda, bu kayıtların bakım defteri yerine geçebilmesi için mevzuatta (Madde 2.13.1) şart koşulan kanun ve imza standardı aşağıdakilerden hangisidir?",
         options: {
-          A: "6331 sayılı İş Sağlığı ve Güvenliği Kanunu - Mobil İpza",
-          B: "4857 sayılı İş Kanunu - Şirket Kaşesi",
-          C: "5070 sayılı Elektronik İmza Kanunu - Güvenli Elektronik İmza",
+          A: "6331 sayılı İş Sağlığı ve Güvenliği Kanunu - Mobil İmza",
+          B: "5070 sayılı Elektronik İmza Kanunu - Güvenli Elektronik İmza",
+          C: "4857 sayılı İş Kanunu - Şirket Kaşesi",
           D: "5510 sayılı Sosyal Sigortalar Kanunu - Zaman Damgası",
           E: "6098 sayılı Türk Borçlar Kanunu - Biyometrik İmza"
         },
-        answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.13.1 metninde açıkça "...5070 sayılı Elektronik İmza Kanununa uygun olarak güvenli elektronik imza ile imzalanmış..." ifadesi geçmektedir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D ve E Şıkları Yanlıştır: Bu kanunlar kaynak metinde bakım defteri elektronik kaydı bağlamında atıf yapılan kanunlar değildir.</li></ul>'
+        answer: "B",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.13.1 metninde açıkça "...5070 sayılı Elektronik İmza Kanununa uygun olarak güvenli elektronik imza ile imzalanmış..." ifadesi geçmektedir. Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E: Bu kanunlar kaynak metinde bakım defteri elektronik kaydı bağlamında atıf yapılan kanunlar değildir.</li></ul>'
       },
       {
         n: 48,
-        topic: "Bakım Defterine İşlemlerin \"Günü Gününe\" Yazılma Şartı",
+        topic: "Bakım Defterine İşlemlerin Günü Gününe Yazılma Şartı",
         text: "Bakım defteri tutulan makinelerde bakımla ilgili yapılan onarım, parça değişimi ve periyodik müdahalelerin deftere işlenme zamanlaması mevzuata göre (Madde 2.13.1) nasıl olmak zorundadır?",
         options: {
           A: "Ayda bir defa toplu olarak",
@@ -1222,21 +1205,21 @@ const TESTS = [
           E: "Çalışma Müfettişi teftişe geldiğinde geriye dönük olarak"
         },
         answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.13.1 ilk cümlesi: "Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe bu deftere işlenir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D ve E Şıkları Yanlıştır: Ayda bir, yıl sonunda veya geriye dönük kayıt tutulması "günü gününe" emredici kuralına aykırıdır ve tahrifata açıktır.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.13.1 ilk cümlesi: "Bakım defteri bulunan makinelerde bakımla ilgili işlemler günü gününe bu deftere işlenir." Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, D ve E: Ayda bir, yıl sonunda veya geriye dönük kayıt tutulması "günü gününe" emredici kuralına aykırıdır ve tahrifata açıktır.</li></ul>'
       },
       {
         n: 49,
         topic: "Güvenli Elektronik İmza Saklama ve Bütünlük Koşulları",
         text: "Elektronik ortamda tutulan makine bakım kayıtlarının bir iş kazası sonrasında adli ve idari incelemelerde resmi \"bakım defteri\" olarak kabul edilebilmesi için aşağıdakilerden hangisi zorunlu şarttır?",
         options: {
-          A: "Kayıtların 5070 sayılı Kanuna uygun güvenli elektronik imza ile imzalanmış ve bütünlüğü bozulmayacak şekilde elektronik ortamda saklanıyor olması",
-          B: "Kayıtların her akşam düzenli olarak yazıcıdan çıktısının alınıp mavi kalemle paraf edilip dosyalanması",
-          C: "Kayıtların şifresiz bir Excel tablosunda bulut sürücüde tutulması",
-          D: "Kayıtların sadece şirket bilgi işlem müdürünün e-postası ile arşivlenmesi",
-          E: "Kayıtların sadece ekran görüntüsü (screenshot) alınarak saklanması"
+          A: "Kayıtların her akşam düzenli olarak yazıcıdan çıktısının alınıp mavi kalemle paraf edilip dosyalanması",
+          B: "Kayıtların şifresiz bir Excel tablosunda bulut sürücüde tutulması",
+          C: "Kayıtların sadece şirket bilgi işlem müdürünün e-postası ile arşivlenmesi",
+          D: "Kayıtların 5070 sayılı Kanuna uygun güvenli elektronik imza ile imzalanmış ve bütünlüğü bozulmayacak şekilde saklanıyor olması",
+          E: "Kayıtların sadece ekran görüntüsü alınarak saklanması"
         },
-        answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.13.1 uyarınca elektronik kayıtların yasal bakım defteri sayılması için "5070 sayılı Elektronik İmza Kanununa uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtlar" olması şarttır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Kağıt çıktı almak güvenli e-imzalı dijital saklama şartının yerini tutmaz.</li><li>C Şıkkı Yanlıştır: Şifresiz Excel tablosu veri bütünlüğü sağlamaz ve e-imzasızdır.</li><li>D Şıkkı Yanlıştır: E-posta arşivi veya ekran görüntüsü güvenli e-imza niteliği taşımaz.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 2.13.1 uyarınca elektronik kayıtların yasal bakım defteri sayılması için "5070 sayılı Elektronik İmza Kanununa uygun olarak güvenli elektronik imza ile imzalanmış ve elektronik ortamda saklanan kayıtlar" olması şarttır. Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Kağıt çıktı almak güvenli e-imzalı dijital saklama şartının yerini tutmaz.</li><li>B: Şifresiz Excel tablosu veri bütünlüğü sağlamaz ve e-imzasızdır.</li><li>C: E-posta arşivi güvenli e-imza niteliği taşımaz.</li><li>E: Ekran görüntüsü hukuki delil niteliği taşımaz.</li></ul>'
       },
       {
         n: 50,
@@ -1246,11 +1229,11 @@ const TESTS = [
           A: "Bakımla ilgili işlemler günü gününe bakım defterine işlenmelidir.",
           B: "5070 sayılı Kanuna uygun güvenli e-imzalı kayıtlar bakım defteri sayılır.",
           C: "Bakım defteri makinenin kronik arıza geçmişini ve yapılan teknik müdahaleleri gösterir.",
-          D: "Düzenli bakım defteri tutan ve bakımlarını aksatmayan makinelerde mevzuatsal periyodik kontrollerin yapılması zorunluluğu ortadan kalkar.",
-          E: "Bakım defterinin tutulması işverenin ekipman güvenliğini izleme yükümlülüğünün bir parçasıdır."
+          D: "Bakım defterinin tutulması işverenin ekipman güvenliğini izleme yükümlülüğünün bir parçasıdır.",
+          E: "Düzenli bakım defteri tutan ve bakımlarını aksatmayan makinelerde mevzuatsal periyodik kontrollerin yapılması zorunluluğu ortadan kalkar."
         },
-        answer: "D",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Bakım defteri tutulması (iç bakım takibi), periyodik kontrolleri yapmaya yetkili kişilerce yürütülen bağımsız dış periyodik kontrol zorunluluğunu ortadan kaldırmaz. Her ikisi de mevzuatın ayrı ayrı emrettiği farklı yükümlülüklerdir. D şıkkındaki iddia tamamen yanlıştır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve E Şıkları Doğrudur: Bu şıklardaki ifadeler Madde 2.13.1 ve bakım yönetimi ilkeleri ile tam uyumludur.</li></ul>'
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Bakım defteri tutulması (iç bakım takibi), periyodik kontrolleri yapmaya yetkili kişilerce yürütülen bağımsız dış periyodik kontrol zorunluluğunu ortadan kaldırmaz. Her ikisi de mevzuatın ayrı ayrı emrettiği farklı yükümlülüklerdir. E şıkkındaki iddia tamamen yanlıştır. Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve D: Bu şıklardaki ifadeler Madde 2.13.1 ve bakım yönetimi ilkeleri ile tam uyumludur.</li></ul>'
       },
       {
         n: 51,
@@ -1264,21 +1247,21 @@ const TESTS = [
           E: "Açı sınırı bulunmayıp araç ağırlığının artırılması yeterlidir."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 3.1.4.a: "Üzerinde çalışan bulunan hareketli iş ekipmanı, normal çalışma koşullarında devrilme riskine karşı; a) Cihaz bir çeyrekten (90 derecelik açı) fazla dönmeyecek şekilde yapılmış olur..."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E Şıkları Yanlıştır: Madde 3.1.4.a bendindeki devrilme açı limiti kesin olarak 90 derece (bir çeyrek) olarak belirlenmiştir. Diğer açılar mevzuata aykırıdır.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 3.1.4.a: "Üzerinde çalışan bulunan hareketli iş ekipmanı, normal çalışma koşullarında devrilme riskine karşı; a) Cihaz bir çeyrekten (90 derecelik açı) fazla dönmeyecek şekilde yapılmış olur..." Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B, C, D ve E: Madde 3.1.4.a bendindeki devrilme açı limiti kesin olarak 90 derece (bir çeyrek) olarak belirlenmiştir. Diğer açılar mevzuata aykırıdır.</li></ul>'
       },
       {
         n: 52,
-        topic: "Çeyrekten Fazla Dönmede Yeterli Açıklık ve ROPS/FOPS (Madde 3.1.4.b-c)",
+        topic: "Çeyrekten Fazla Dönmede Yeterli Açıklık ve ROPS/FOPS",
         text: "Arazi şartlarında çalışan üzerinde sürücü bulunan bir iş makinesi (dozer), tasarım gereği devrilme esnasında çeyrekten (90 derecelik açıdan) fazla dönmektedir (tam yuvarlanma riski taşımaktadır). Bu durumda, üzerinde bulunan çalışanın ezilmesini önlemek amacıyla mevzuat gereğince (Madde 3.1.4.b ve c) ekipmanda bulunması gereken zorunlu yapı/sistem aşağıdakilerden hangisidir?",
         options: {
           A: "Sürücüye sadece emniyet gözlüğü ve baret verilmesi yeterlidir.",
-          B: "Üzerinde bulunan çalışanın etrafında yeterli açıklık bulunmalı (ROPS - Devrilmeye karşı koruyucu yapı) veya aynı etkiyi sağlayacak başka koruyucu yapı/sistem bulunmalıdır.",
-          C: "İş makinesinin hızı elektronik olarak 10 km/s sınırına düşürülmelidir.",
+          B: "Üzerinde bulunan çalışanın etrafında yeterli açıklık bulunmalı veya aynı etkiyi sağlayacak başka koruyucu yapı veya sistem bulunmalıdır.",
+          C: "İş makinesinin hızı elektronik olarak on km/s sınırına düşürülmelidir.",
           D: "Sürücü devrilme başladığı an araçtan dışarı atlaması için eğitilmelidir.",
           E: "İş makinesinin kabin camları tamamen sökülerek sürücünün kaçışı kolaylaştırılmalıdır."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 3.1.4.b ve c: "b) Bir çeyrekten fazla dönüyorsa, üzerinde bulunan çalışanın etrafında yeterli açıklık bulunur veya c) Aynı etkiyi sağlayacak başka koruyucu yapı veya sistem bulunur." (ROPS - Rollover Protective Structure).</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Baret ve gözlük tonlarca ağırlıktaki iş makinesinin ezme kuvvetine karşı koruma sağlamaz.</li><li>C Şıkkı Yanlıştır: Hız düşürmek devrilme anındaki kabin ezilmesini engellemez.</li><li>D Şıkkı Yanlıştır: Devrilme anında araçtan atlamaya çalışmak en çok ölüme yol açan hatalı davranıştır, çalışanı kabin içinde tutan koruyucu yapı şarttır.</li><li>E Şıkkı Yanlıştır: Camların sökülmesi koruyucu yapı yerini tutmaz.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 3.1.4.b ve c: "b) Bir çeyrekten fazla dönüyorsa, üzerinde bulunan çalışanın etrafında yeterli açıklık bulunur veya c) Aynı etkiyi sağlayacak başka koruyucu yapı veya sistem bulunur." (ROPS - Rollover Protective Structure). Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Baret ve gözlük tonlarca ağırlıktaki iş makinesinin ezme kuvvetine karşı koruma sağlamaz.</li><li>C: Hız düşürmek devrilme anındaki kabin ezilmesini engellemez.</li><li>D: Devrilme anında araçtan atlamaya çalışmak en çok ölüme yol açan hatalı davranıştır, çalışanı kabin içinde tutan koruyucu yapı şarttır.</li><li>E: Camların sökülmesi koruyucu yapı yerini tutmaz.</li></ul>'
       },
       {
         n: 53,
@@ -1286,13 +1269,13 @@ const TESTS = [
         text: "Hareketli iş ekipmanlarında devrilme riskine karşı kullanılan devrilmeye karşı koruyucu yapıların (ROPS) entegrasyonu ve yapısı ile ilgili olarak mevzuat (Madde 3.1.4.1) aşağıdakilerden hangisine izin vermektedir?",
         options: {
           A: "Koruyucu yapı mutlaka harici bir çelik kafes olarak sonradan kelepçeyle takılmalıdır.",
-          B: "Bu koruyucu yapı veya sistem iş ekipmanının kendi parçası (şaseye entegre kabin) olabilir.",
-          C: "Koruyucu yapının iş ekipmanı gövdesine kaynaklanması yasaktır.",
+          B: "Koruyucu yapının iş ekipmanı gövdesine kaynaklanması yasaktır.",
+          C: "Bu koruyucu yapı veya sistem iş ekipmanının kendi parçası olabilir.",
           D: "Koruyucu yapılar aracın ağırlığını artırdığı için sadece hafif iş makinelerinde kullanılır.",
           E: "Koruyucu yapıların alüminyum malzemeden imal edilmesi zorunludur."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 3.1.4.1: "Bu koruyucu yapı veya sistem iş ekipmanının kendi parçası olabilir." Yani ROPS kabini imalat aşamasında şaseye entegre edilmiş orijinal yapı olabilir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Koruyucu yapının harici fason parça olma zorunluluğu yoktur, orijinal parça olması idealdir.</li><li>C Şıkkı Yanlıştır: Gövdeye monte edilmesi veya entegre olması mevzuatça açıkça desteklenir.</li><li>D Şıkkı Yanlıştır: Ağırlık artışı güvenlik ihtiyacının önüne geçemez.</li><li>E Şıkkı Yanlıştır: Malzeme çelik veya yüksek mukavemetli alaşım olmalıdır, alüminyum zorunluluğu yoktur.</li></ul>'
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 3.1.4.1: "Bu koruyucu yapı veya sistem iş ekipmanının kendi parçası olabilir." Yani ROPS kabini imalat aşamasında şaseye entegre edilmiş orijinal yapı olabilir. Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Koruyucu yapının harici fason parça olma zorunluluğu yoktur, orijinal parça olması idealdir.</li><li>B: Gövdeye monte edilmesi veya entegre olması mevzuatça açıkça desteklenir.</li><li>D: Ağırlık artışı güvenlik ihtiyacının önüne geçemez.</li><li>E: Malzeme çelik veya yüksek mukavemetli alaşım olmalıdır, alüminyum zorunluluğu yoktur.</li></ul>'
       },
       {
         n: 54,
@@ -1306,7 +1289,7 @@ const TESTS = [
           E: "Koruyucu yapının iş ekipmanının kendi parçası olarak donatılabilmesi"
         },
         answer: "D",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Madde 3.1.4 devrilme emniyeti kuralları: (a) Çeyrekten fazla dönmeme, (b) Yeterli açıklık sağlama, (c) Koruyucu yapı/sistem bulundurma ve (3.1.4.1) bunun ekipmanın kendi parçası olabilmesidir. D şıkkındaki tekerlekleri söküp sabitleme gibi hareketli iş ekipmanının işlevini yok eden absürt bir kural mevzuatta yoktur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve E Şıkları Doğrudur: Bu şıklar Madde 3.1.4 ve 3.1.4.1 hükümlerinin birebir doğru özetleridir.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Madde 3.1.4 devrilme emniyeti kuralları: (a) Çeyrekten fazla dönmeme, (b) Yeterli açıklık sağlama, (c) Koruyucu yapı/sistem bulundurma ve (3.1.4.1) bunun ekipmanın kendi parçası olabilmesidir. D seçeneğindeki tekerlekleri söküp sabitleme gibi hareketli iş ekipmanının işlevini yok eden absürt bir kural mevzuatta yoktur. Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve E: Bu şıklar Madde 3.1.4 ve 3.1.4.1 hükümlerinin birebir doğru özetleridir.</li></ul>'
       },
       {
         n: 55,
@@ -1314,41 +1297,41 @@ const TESTS = [
         text: "Bir şantiyede çalışan forkliftin devrilmesi esnasında, operatörün kabin dışına fırlayıp aracın altında ezilmesini önleyen sağlam koruyucu kabin (ROPS) ve emniyet kemeri entegrasyonu, mevzuattaki hangi temel ilkenin uygulanmasıdır?",
         options: {
           A: "Uzaktan kumanda kontrol sınırı kuralı",
-          B: "90 derece/çeyrek tur dönme kuralı veya çalışan etrafında yeterli açıklık/koruyucu yapı sağlama ilkesi",
-          C: "Yıldırım düşmesine karşı paratoner koruması kuralı",
-          D: "Bakım defterinin e-imza ile saklanması kuralı",
-          E: "Pnömatik el aletlerinde hava basıncı sınırlama kuralı"
+          B: "Yıldırım düşmesine karşı paratoner koruması kuralı",
+          C: "Bakım defterinin e-imza ile saklanması kuralı",
+          D: "Pnömatik el aletlerinde hava basıncı sınırlama kuralı",
+          E: "90 derece/çeyrek tur dönme kuralı veya çalışan etrafında yeterli açıklık ve koruyucu yapı sağlama ilkesi"
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Forkliftlerde uygulanan ROPS koruyucu kafesi ve emniyet kemeri; aracın 90 dereceden fazla devrilmesi durumunda operatörün etrafında yaşam hacmi (yeterli açıklık) bırakarak zemin ile araç arasında ezilmesini önleyen, Madde 3.1.4.b ve c ilkelerinin tam uygulamasıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E Şıkları Yanlıştır: Bu şıklardaki mevzuat maddeleri devrilme emniyeti ve kabin koruması ile ilgili değildir.</li></ul>'
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Forkliftlerde uygulanan ROPS koruyucu kafesi ve emniyet kemeri; aracın 90 dereceden fazla devrilmesi durumunda operatörün etrafında yaşam hacmi (yeterli açıklık) bırakarak zemin ile araç arasında ezilmesini önleyen, Madde 3.1.4.b ve c ilkelerinin tam uygulamasıdır. Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, B, C ve D: Bu şıklardaki mevzuat maddeleri devrilme emniyeti ve kabin koruması ile ilgili değildir.</li></ul>'
       },
       {
         n: 56,
         topic: "Uzaktan Kumandada Sinyal/Menzil Dışında Otomatik Durma",
-        text: "Bir liman sahasında işletilen uzaktan kumandalı gezer köprülü vinç, operatörün radyo frekans kumandası ile haberleştiği sinyal kapsama alanının (kontrol sınırlarının) dışına çıkmıştır. Uzaktan kumandalı iş ekipmanları güvenlik kuralı (Madde f) gereğince vincin vermesi gereken otomatik reaksiyon aşağıdakilerden hangisidir?",
+        text: "Bir liman sahasında işletilen uzaktan kumandalı gezer köprülü vinç, operatörün radyo frekans kumandası ile haberleştiği sinyal kapsama alanının (kontrol sınırlarının) dışına çıkmıştır. Uzaktan kumandalı iş ekipmanları güvenlik kuralı gereğince vincin vermesi gereken otomatik reaksiyon aşağıdakilerden hangisidir?",
         options: {
-          A: "Vincin en son aldığı komut yönünde hareketine devam etmesi gerekir.",
-          B: "Vincin otomatik olarak hemen duracak şekilde donatılmış olması gerekir.",
+          A: "Vincin otomatik olarak hemen duracak şekilde donatılmış olması gerekir.",
+          B: "Vincin en son aldığı komut yönünde hareketine devam etmesi gerekir.",
           C: "Vincin kendi kendine başlangıç yükleme noktasına geri dönmesi gerekir.",
           D: "Vincin hızını iki katına çıkararak sinyal alanına girmeye çalışması gerekir.",
           E: "Vincin üzerindeki yükü derhal yere bırakması gerekir."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde f: "Uzaktan kumandalı iş ekipmanının, kontrol sınırlarının dışına çıkması halinde otomatik olarak hemen duracak şekilde olması gerekir." Sinyal kopması veya menzil aşımında ekipmanın kontrolsüz hareket etmesi felaket yaratacağı için hemen otomatik duruş şarttır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Sinyalsiz harekete devam etmek kontrolsüz çarpışmaya sebep olur.</li><li>C Şıkkı Yanlıştır: Sinyalsiz ortamda kendi kendine geri dönme otomasyonu güvenli değildir, asıl olan hemen durmadır.</li><li>D Şıkkı Yanlıştır: Hız artırmak kaza riskini artırır.</li><li>E Şıkkı Yanlıştır: Yükü kontrolsüz yere bırakmak alandakileri ezer.</li></ul>'
+        answer: "A",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde f: "Uzaktan kumandalı iş ekipmanının, kontrol sınırlarının dışına çıkması halinde otomatik olarak hemen duracak şekilde olması gerekir." Sinyal kopması veya menzil aşımında ekipmanın kontrolsüz hareket etmesi felaket yaratacağı için hemen otomatik duruş şarttır. Doğru cevap <strong>A</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B: Sinyalsiz harekete devam etmek kontrolsüz çarpışmaya sebep olur.</li><li>C: Sinyalsiz ortamda kendi kendine geri dönme otomasyonu güvenli değildir, asıl olan hemen durmadır.</li><li>D: Hız artırmak kaza riskini artırır.</li><li>E: Yükü kontrolsüz yere bırakmak alandakileri ezer.</li></ul>'
       },
       {
         n: 57,
         topic: "Uzaktan Kumandada Çarpma ve Ezilme Koruması",
-        text: "Depo içerisinde çalışan uzaktan kumandalı veya insansız otonom bir taşıma aracının (AGV/Forklift) tasarımı ve donatılması esnasında mevzuatsal şart (Madde g) aşağıdakilerden hangisidir?",
+        text: "Depo içerisinde çalışan uzaktan kumandalı veya insansız otonom bir taşıma aracının (AGV/Forklift) tasarımı ve donatılması esnasında mevzuatsal şart aşağıdakilerden hangisidir?",
         options: {
           A: "Araç sadece gündüz vardiyasında çalıştırılmalıdır.",
-          B: "Uzaktan kumandalı iş ekipmanı, normal şartlarda çarpma ve ezilme risklerine karşı korumalı (tampon sensörü, lazer tarayıcı vb.) olacak şekilde tasarlanır ve donatılır.",
-          C: "Araçların çalışma esnasında siren çalması yeterli olup fiziksel/sensörel korumaya gerek yoktur.",
+          B: "Uzaktan kumandalı iş ekipmanı, normal şartlarda çarpma ve ezilme risklerine karşı korumalı olacak şekilde tasarlanır ve donatılır.",
+          C: "Araçların çalışma esnasında siren çalması yeterli olup fiziksel veya sensörel korumaya gerek yoktur.",
           D: "Uzaktan kumandalı araçların insan bulunan kapalı alanlarda işletilmesi tamamen yasaktır.",
           E: "Araçların sadece dış gövdesinin fosforlu renge boyanması yeterli korumadır."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde g: "Uzaktan kumandalı iş ekipmanı, normal şartlarda çarpma ve ezilme risklerine karşı korumalı olacak şekilde tasarlanır/donatılır." (Örn: Alan tarama lazerleri, çarpışma önleyici tampon sensörleri).</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Vardiya kısıtlaması çarpma/ezilme emniyeti sağlamaz.</li><li>C Şıkkı Yanlıştır: Sadece siren çalmak araç önündeki engeli algılayıp durmasını sağlamaz, sensörel koruma şarttır.</li><li>D Şıkkı Yanlıştır: İnsan bulunan alanlarda da gerekli sensör donanımıyla kullanılabilirler.</li><li>E Şıkkı Yanlıştır: Gövde rengi fiziksel çarpma engelleyici donanım sayılmaz.</li></ul>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde g: "Uzaktan kumandalı iş ekipmanı, normal şartlarda çarpma ve ezilme risklerine karşı korumalı olacak şekilde tasarlanır/donatılır." (Örn: Alan tarama lazerleri, çarpışma önleyici tampon sensörleri). Doğru cevap <strong>B</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Vardiya kısıtlaması çarpma/ezilme emniyeti sağlamaz.</li><li>C: Sadece siren çalmak araç önündeki engeli algılayıp durmasını sağlamaz, sensörel koruma şarttır.</li><li>D: İnsan bulunan alanlarda da gerekli sensör donanımıyla kullanılabilirler.</li><li>E: Gövde rengi fiziksel çarpma engelleyici donanım sayılmaz.</li></ul>'
       },
       {
         n: 58,
@@ -1356,13 +1339,13 @@ const TESTS = [
         text: "Bir tersanede dev kule vincin montajı ve iş bitiminde sökümü gerçekleştirilecektir. Şantiye şefi kullanma kılavuzunu incelemeden kendi yöntemleriyle söküm yapmaya çalışmış ve bom devrilmiştir. İş ekipmanının kurulması ve sökülmesi ile ilgili İSG kuralı (Madde 1.2) aşağıdakilerden hangisidir?",
         options: {
           A: "Kurulum ve söküm işlemleri şantiye şefinin tecrübesine ve kararlarına göre yürütülür.",
-          B: "İş ekipmanının kurulması veya sökülmesi, özellikle imalatçı tarafından verilen kullanma talimatı doğrultusunda güvenli koşullar altında yapılır.",
-          C: "İmalatçı talimatları sadece garanti süresince bağlayıcı olup sonrasında dikkate alınmaz.",
+          B: "İmalatçı talimatları sadece garanti süresince bağlayıcı olup sonrasında dikkate alınmaz.",
+          C: "İş ekipmanının kurulması veya sökülmesi, özellikle imalatçı tarafından verilen kullanma talimatı doğrultusunda güvenli koşullar altında yapılır.",
           D: "Söküm işlemleri en hızlı şekilde yapılabilmesi için yetkisiz her taşeron tarafından yürütülebilir.",
           E: "Kurulum esnasında kullanma talimatına uyulması sadece elektrikli cihazlarda zorunludur."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 1.2: "İş ekipmanının kurulması veya sökülmesi, özellikle imalatçı tarafından verilen kullanma talimatı doğrultusunda güvenli koşullar altında yapılır."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Kurulum/söküm kişisel tecrübeyle değil yazılı imalatçı talimatıyla yapılır.</li><li>C Şıkkı Yanlıştır: İmalatçı talimatları ekipmanın tüm kullanım ömrü boyunca bağlayıcıdır.</li><li>D Şıkkı Yanlıştır: Söküm rastgele yetkisiz taşeronca yürütülemez.</li><li>E Şıkkı Yanlıştır: İmalatçı talimatı kuralı tüm iş ekipmanları için geçerlidir.</li></ul>'
+        answer: "C",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 1.2: "İş ekipmanının kurulması veya sökülmesi, özellikle imalatçı tarafından verilen kullanma talimatı doğrultusunda güvenli koşullar altında yapılır." Doğru cevap <strong>C</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Kurulum/söküm kişisel tecrübeyle değil yazılı imalatçı talimatıyla yapılır.</li><li>B: İmalatçı talimatları ekipmanın tüm kullanım ömrü boyunca bağlayıcıdır.</li><li>D: Söküm rastgele yetkisiz taşeronca yürütülemez.</li><li>E: İmalatçı talimatı kuralı tüm iş ekipmanları için geçerlidir.</li></ul>'
       },
       {
         n: 59,
@@ -1370,13 +1353,13 @@ const TESTS = [
         text: "Açık arazide ve yüksek bir tepe üzerinde kurulan petrokimya sondaj kulesi ve vinç sistemleri için mevsimsel doğa olayları dikkate alındığında mevzuatsal yükümlülük (Madde 1.3) aşağıdakilerden hangisidir?",
         options: {
           A: "Ekipmanın etrafı ahşap bariyerlerle çevrilmelidir.",
-          B: "Kullanımı sırasında yıldırım düşmesi ihtimali bulunan iş ekipmanı yıldırımın etkilerine karşı korunur.",
-          C: "Yağmur yağdığı anda ekipmanın üzeri plastik branda ile kaplanmalıdır.",
-          D: "Yıldırım riskine karşı ekipmanın elektrik bağlantıları sökülüp yakıt deposu boşaltılmalıdır.",
+          B: "Yağmur yağdığı anda ekipmanın üzeri plastik branda ile kaplanmalıdır.",
+          C: "Yıldırım riskine karşı ekipmanın elektrik bağlantıları sökülüp yakıt deposu boşaltılmalıdır.",
+          D: "Kullanımı sırasında yıldırım düşmesi ihtimali bulunan iş ekipmanı yıldırımın etkilerine karşı korunur.",
           E: "Yıldırımdan korunma tedbirleri sadece binalar için geçerli olup iş ekipmanlarında uygulanmaz."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 1.3: "Kullanımı sırasında yıldırım düşmesi ihtimali bulunan iş ekipmanı yıldırımın etkilerine karşı korunur." (Paratoner, topraklama sistemleri).</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Ahşap çit yıldırım deşarjını engellemez.</li><li>C Şıkkı Yanlıştır: Branda örtmek elektriksel yıldırım çarpmasını önlemez.</li><li>D Şıkkı Yanlıştır: Yakıt boşaltmak veya elektrik sökmek pratik değildir, doğru önlem paratoner/topraklama korumasıdır.</li><li>E Şıkkı Yanlıştır: Madde 1.3 açıkça iş ekipmanlarında yıldırım korumasını emretmektedir.</li></ul>'
+        answer: "D",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 1.3: "Kullanımı sırasında yıldırım düşmesi ihtimali bulunan iş ekipmanı yıldırımın etkilerine karşı korunur." (Paratoner, topraklama sistemleri). Doğru cevap <strong>D</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Ahşap çit yıldırım deşarjını engellemez.</li><li>B: Branda örtmek elektriksel yıldırım çarpmasını önlemez.</li><li>C: Yakıt boşaltmak veya elektrik sökmek pratik değildir, doğru önlem paratoner/topraklama korumasıdır.</li><li>E: Madde 1.3 açıkça iş ekipmanlarında yıldırım korumasını emretmektedir.</li></ul>'
       },
       {
         n: 60,
@@ -1384,13 +1367,13 @@ const TESTS = [
         text: "Bir imalathanede yeni alınan bir CNC tezgahı, arkasındaki döner biyel kolu ile duvardaki beton kolon arasında sadece 10 cm boşluk kalacak şekilde yerleştirilmiştir. Geçiş yapan bir işçi dönen kol ile kolon arasında sıkışmıştır. İş ekipmanlarının yerleştirilmesi, kurulması ve kullanımı esnasında hareketli kısımlar ile çevre arasındaki mesafe kuralı (Madde 1.1) aşağıdakilerden hangisidir?",
         options: {
           A: "Ekipmanlar alandan tasarruf etmek için bina kolonlarına sıfır mesafede monte edilmelidir.",
-          B: "İş ekipmanının hareketli kısımları ile çevresinde bulunan sabit veya hareketli kısımlar arasında çalışanların güvenliğini riske atmayacak yeterli mesafe bulundurulur.",
-          C: "Hareketli kısımlar ile duvar arasındaki mesafe standartlara tabi değildir.",
-          D: "Geçiş yolları üzerindeki ekipmanların hareketli kısımları sarı çizgilerle çizildiği sürece mesafe bırakılmasına gerek yoktur.",
-          E: "Yeterli emniyet mesafesi bırakılması kuralı sadece raylı sistemlerde uygulanır."
+          B: "Hareketli kısımlar ile duvar arasındaki mesafe standartlara tabi değildir.",
+          C: "Geçiş yolları üzerindeki ekipmanların hareketli kısımları sarı çizgilerle çizildiği sürece mesafe bırakılmasına gerek yoktur.",
+          D: "Yeterli emniyet mesafesi bırakılması kuralı sadece raylı sistemlerde uygulanır.",
+          E: "İş ekipmanının hareketli kısımları ile çevresinde bulunan sabit veya hareketli kısımlar arasında çalışanların güvenliğini riske atmayacak yeterli mesafe bulundurulur."
         },
-        answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 1.1: "...iş ekipmanının hareketli kısımları ile çevresinde bulunan sabit veya hareketli kısımlar arasında yeterli mesafe bulundurulur."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Sıfır mesafede monte etmek sıkışma ve ezilme alanları (ezilme noktaları) yaratır.</li><li>C Şıkkı Yanlıştır: Hareketli kısım ile çevre arasındaki mesafe iş güvenliğinin temel geometrik kuralıdır.</li><li>D Şıkkı Yanlıştır: Çizgi çizmek fiziksel ezilme riskini ortadan kaldırmaz, emniyet mesafesi bırakılması şarttır.</li><li>E Şıkkı Yanlıştır: Yeterli mesafe kuralı tüm iş ekipmanları için geçerlidir.</li></ul>'
+        answer: "E",
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak metin Madde 1.1: "...iş ekipmanının hareketli kısımları ile çevresinde bulunan sabit veya hareketli kısımlar arasında yeterli mesafe bulundurulur." Doğru cevap <strong>E</strong> seçeneğidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A: Sıfır mesafede monte etmek sıkışma ve ezilme alanları (ezilme noktaları) yaratır.</li><li>B: Hareketli kısım ile çevre arasındaki mesafe iş güvenliğinin temel geometrik kuralıdır.</li><li>C: Çizgi çizmek fiziksel ezilme riskini ortadan kaldırmaz, emniyet mesafesi bırakılması şarttır.</li><li>D: Yeterli mesafe kuralı tüm iş ekipmanları için geçerlidir.</li></ul>'
       }
     ]
   }
@@ -1410,7 +1393,6 @@ const navEl = document.getElementById('navigator');
 const areaEl = document.getElementById('testArea');
 const resultEl = document.getElementById('resultCard');
 
-/* ---- TABS ---- */
 function buildTabs(){
   tabsEl.innerHTML = TESTS.map((t, i) =>
     `<button class="tab-btn ${i===0?'active':''}" data-test="${i}">
@@ -1429,7 +1411,6 @@ function buildTabs(){
   });
 }
 
-/* ---- NAVIGATOR ---- */
 function buildNav(){
   const test = TESTS[state.currentTest];
   const ans = state.answers[state.currentTest];
@@ -1450,7 +1431,6 @@ function buildNav(){
   });
 }
 
-/* ---- HELPERS ---- */
 function calculateStats(testIdx){
   const test = TESTS[testIdx];
   const ans = state.answers[testIdx];
@@ -1472,7 +1452,6 @@ function updateScoreBar(){
   document.getElementById('sPuan').textContent = s.puan;
 }
 
-/* ---- RENDER QUESTION ---- */
 function render(){
   const testIdx = state.currentTest;
   const qIdx = state.currentQ[testIdx];
@@ -1510,7 +1489,6 @@ function render(){
         : `<div class="feedback no show"><span class="ico">❌</span> Yanlış Cevap. Doğru cevap: <strong>${q.answer}</strong></div>`)
     : '';
 
-  /* ==== ÇÖZÜM: Sadece cevap verildiğinde göster, KAPALI halde ==== */
   const solutionHtml = answered
     ? `<div class="solution">
          <div class="solution-head clickable" id="solutionToggle">
@@ -1548,7 +1526,6 @@ function render(){
     </div>
   `;
 
-  /* Şık seçimi */
   if (!answered){
     areaEl.querySelectorAll('.option').forEach(opt=>{
       opt.addEventListener('click', ()=>{
@@ -1558,7 +1535,6 @@ function render(){
       });
     });
   } else {
-    /* Detaylı çözüm aç/kapa - SADECE kullanıcı tıklarsa açılır */
     const toggle = document.getElementById('solutionToggle');
     const body = document.getElementById('solutionBody');
     const chev = document.getElementById('solutionChev');
@@ -1578,7 +1554,6 @@ function render(){
     }
   }
 
-  /* Önceki / Sonraki */
   const btnPrev = document.getElementById('btnPrev');
   const btnNext = document.getElementById('btnNext');
   if (btnPrev) btnPrev.addEventListener('click', ()=>{
@@ -1597,7 +1572,6 @@ function render(){
   });
 }
 
-/* ---- COMPLETION CHECK ---- */
 function checkCompletion(){
   const testIdx = state.currentTest;
   const test = TESTS[testIdx];
@@ -1624,13 +1598,11 @@ function checkCompletion(){
   resultEl.scrollIntoView({behavior:'smooth', block:'center'});
 }
 
-/* ---- INTRO TOGGLE ---- */
 document.getElementById('introHead').addEventListener('click', function(){
   this.classList.toggle('closed');
   document.getElementById('introBody').classList.toggle('hidden');
 });
 
-/* ---- INIT ---- */
 document.getElementById('yil').textContent = new Date().getFullYear();
 buildTabs();
 render();

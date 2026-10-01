@@ -42,7 +42,6 @@ a{color:var(--primary);text-decoration:none;}
 a:hover{text-decoration:underline;}
 .container{max-width:1080px;margin:0 auto;padding:0 16px;}
 
-/* ===================== HEADER ===================== */
 .site-header{
   background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 55%,var(--accent) 100%);
   color:#fff;
@@ -93,7 +92,6 @@ a:hover{text-decoration:underline;}
   box-shadow:0 6px 16px rgba(0,0,0,.18);
 }
 
-/* ===================== INTRO ===================== */
 .intro-box{
   background:var(--card);
   border-radius:var(--radius);
@@ -131,7 +129,6 @@ a:hover{text-decoration:underline;}
   border-radius:50%;background:var(--accent);
 }
 
-/* ===================== TABS ===================== */
 .tabs{
   display:flex;gap:10px;margin-top:26px;flex-wrap:wrap;
 }
@@ -153,7 +150,6 @@ a:hover{text-decoration:underline;}
 }
 .tab-btn.active .tt,.tab-btn.active .ts{color:#fff;}
 
-/* ===================== SCORE BAR ===================== */
 .score-bar{
   position:sticky;top:0;z-index:50;
   margin-top:18px;
@@ -176,7 +172,6 @@ a:hover{text-decoration:underline;}
 }
 .score-bar .puan strong{font-size:17px;}
 
-/* ===================== NAVIGATOR ===================== */
 .navigator{
   display:flex;flex-wrap:wrap;gap:7px;margin-top:18px;
   padding:14px;background:var(--card);border-radius:var(--radius);
@@ -196,7 +191,6 @@ a:hover{text-decoration:underline;}
   box-shadow:0 0 0 2px #fff inset;
 }
 
-/* ===================== QUESTION CARD ===================== */
 .q-card{
   margin-top:18px;background:var(--card);border-radius:var(--radius);
   border:1px solid var(--border);box-shadow:var(--shadow);
@@ -223,7 +217,6 @@ a:hover{text-decoration:underline;}
   margin-bottom:20px;text-align:justify;
 }
 
-/* Options */
 .options{display:flex;flex-direction:column;gap:10px;}
 .option{
   display:flex;gap:13px;align-items:flex-start;
@@ -260,7 +253,6 @@ a:hover{text-decoration:underline;}
 .option.reveal-correct .letter{background:var(--success);color:#fff;}
 .option.dim{opacity:.62;}
 
-/* Feedback */
 .feedback{
   margin-top:16px;padding:14px 16px;border-radius:11px;
   font-weight:700;font-size:14.5px;display:none;
@@ -271,7 +263,6 @@ a:hover{text-decoration:underline;}
 .feedback.no{background:var(--danger-bg);color:var(--danger);border:1.5px solid var(--danger-border);}
 .feedback .ico{font-size:20px;}
 
-/* ============ SOLUTION (KAPALI/İSTEĞE BAĞLI) ============ */
 .solution{
   margin-top:16px;border-radius:12px;overflow:hidden;
   border:1px solid var(--border);background:#fbfdff;
@@ -310,7 +301,6 @@ a:hover{text-decoration:underline;}
   margin-left:6px;
 }
 
-/* Controls */
 .controls{
   display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
   margin-top:20px;
@@ -331,7 +321,6 @@ a:hover{text-decoration:underline;}
 .btn-ghost:hover{background:#e2ecfa;border-color:var(--accent);}
 .btn:disabled{opacity:.42;cursor:not-allowed;transform:none !important;box-shadow:none !important;}
 
-/* Result Card */
 .result-card{
   margin-top:18px;background:var(--card);border-radius:var(--radius);
   border:2px solid var(--success-border);box-shadow:var(--shadow-lg);
@@ -362,7 +351,6 @@ a:hover{text-decoration:underline;}
   background:#f7faff;border:1px dashed var(--border);color:var(--primary-dark);
 }
 
-/* ===================== FOOTER ===================== */
 .site-footer{
   margin-top:44px;
   background:linear-gradient(135deg,#0b1f3a,#0d47a1);
@@ -386,7 +374,6 @@ a:hover{text-decoration:underline;}
 }
 .footer-bottom strong{color:#fff;}
 
-/* ===================== RESPONSIVE ===================== */
 @media(max-width:640px){
   body{font-size:15px;}
   .brand{flex-direction:row;align-items:flex-start;}
@@ -415,7 +402,6 @@ a:hover{text-decoration:underline;}
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="container">
     <div class="brand">
@@ -437,7 +423,6 @@ a:hover{text-decoration:underline;}
 
 <main class="container">
 
-  <!-- ================= INTRO ================= -->
   <section class="intro-box">
     <div class="intro-head" id="introHead">
       <h2>📘 Modül Tanıtımı ve Analitik Giriş</h2>
@@ -459,14 +444,13 @@ a:hover{text-decoration:underline;}
         <li>Çeldiriciler; sahada sıklıkla yapılan mühendislik hataları, yanlış bilinen teknik teamüller ve mevzuat esnetme girişimleri arasından yüksek eleyicilikte seçilmiştir.</li>
         <li>Soru köklerindeki olumsuz ifadeler (değildir, olamaz, yanlıştır, söylenemez) koyu ve belirgin biçimde vurgulanmıştır.</li>
         <li>Tüm soru ve çözümler, ilgili yönetmelik ve standart kaynak metinlerine %100 sadakatle hazırlanmıştır.</li>
+        <li>Seçenekler görsel uzunluk bakımından dengelenmiş; doğru cevabın uzunluğundan ipucu vermesi engellenmiştir.</li>
       </ul>
     </div>
   </section>
 
-  <!-- ================= TABS ================= -->
   <div class="tabs" id="tabs"></div>
 
-  <!-- ================= SCORE BAR ================= -->
   <div class="score-bar">
     <div class="grp">
       <span class="item"><span class="dot dot-green"></span> Doğru: <strong id="sDogru">0</strong></span>
@@ -476,13 +460,10 @@ a:hover{text-decoration:underline;}
     <div class="puan">Puan: <strong id="sPuan">0</strong> / 100</div>
   </div>
 
-  <!-- ================= NAVIGATOR ================= -->
   <div class="navigator" id="navigator"></div>
 
-  <!-- ================= TEST AREA ================= -->
   <div id="testArea"></div>
 
-  <!-- ================= RESULT ================= -->
   <div class="result-card" id="resultCard">
     <h3 id="resTitle">Test Tamamlandı! 🎉</h3>
     <p class="res-sub" id="resSub">Aşağıda bu testteki performans özetiniz yer almaktadır.</p>
@@ -497,7 +478,6 @@ a:hover{text-decoration:underline;}
 
 </main>
 
-<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -522,6 +502,8 @@ a:hover{text-decoration:underline;}
 <script>
 /* =========================================================
    BÖLÜM 5 — 40 SORU VERİSİ (2 TEST × 20 SORU)
+   Seçenekler görsel uzunluk bakımından dengelenmiş;
+   doğru cevap harfleri korunmuş, uzunluk ipucu kaldırılmıştır.
    ========================================================= */
 const TESTS = [
   /* ======================= TEST 1 ======================= */
@@ -551,7 +533,7 @@ const TESTS = [
         text: "Bir tekstil fabrikasındaki buhar kazanları ve basınçlı kapların yıllık periyodik kontrollerinin zamanı gelmiştir. İşveren, maliyetleri düşürmek amacıyla periyodik kontrol işlemini tesis bünyesinde çalışan ve 15 yıllık mekanik bakım tecrübesine sahip kıdemli bakım ustasına yaptırmak ve raporlatmak istemektedir. İş ekipmanlarının kontrolü mevzuatına (Madde b/1) göre, bu uygulama ile ilgili aşağıdaki değerlendirmelerden hangisi kesinlikle doğrudur?",
         options: {
           A: "Ekipmanı yakından tanıyan kıdemli bakım personelinin yaptığı kontroller, yetkili servis onayladığı sürece periyodik kontrol yerine geçer.",
-          B: "Periyodik kontroller, yalnızca ilgili mevzuat çerçevesinde yetkilendirilmiş ve periyodik kontrolleri yapmaya yetkili kişilerce gerçekleştirilmelidir.",
+          B: "Periyodik kontroller, yalnızca mevzuat çerçevesinde yetkilendirilmiş ve periyodik kontrol yapmaya yetkili kişilerce gerçekleştirilmelidir.",
           C: "Tesis içindeki teknik personelin mühendislik diploması bulunması halinde, yetkilendirme veri tabanına kayıtlı olmasa da kontrol raporu düzenleyebilir.",
           D: "Ekipmanda herhangi bir görünür arıza veya sızıntı yoksa, periyodik kontrol zorunluluğu ertelenerek iç bakım raporu ile süreç tamamlanabilir.",
           E: "İşverenin yazılı talimatı ve sorumluluk beyanı ile tesis çalışanlarının yaptığı periyodik kontroller hukuki geçerlilik kazanır."
@@ -566,7 +548,7 @@ const TESTS = [
         options: {
           A: "Uzun süre kullanılmayan ekipmanlarda periyodik kontrol zorunluluğu kalktığından, sadece yüksüz çalıştırma testi yapılarak üretime başlanmalıdır.",
           B: "Ekipman uzun süre kullanılmamış olsa dahi, üretici garantisi devam ediyorsa herhangi bir teknik kontrole gerek duyulmaksızın devreye alınır.",
-          C: "Ekipmanın uzun süre kullanılmaması nedeniyle arızanın zamanında belirlenip giderilmesi ve güvenlik koşullarının korunması amacıyla, periyodik kontrolleri yapmaya yetkili kişilerce gerekli kontroller yapılmalıdır.",
+          C: "Uzun süre kullanılmayan ekipman, tekrar devreye alınmadan önce periyodik kontrol yapmaya yetkili kişilerce kontrol edilmelidir.",
           D: "Ekipmanın genel kontrolleri tesisin bir sonraki rutin yıllık periyodik kontrol tarihine kadar ertelenmeli, bu süreçte düşük hızda çalıştırılmalıdır.",
           E: "Sadece ekipmanın hidrolik yağ seviyesi ve vites kutusu kontrol edilerek operatörün görsel onayı ile üretime geçilmelidir."
         },
@@ -579,7 +561,7 @@ const TESTS = [
         text: "Bir kimya endüstrisi tesisinde meydana gelen orta büyüklükteki bir deprem sonrasında, reaktör besleme pompalarında ve basınçlı boru hatlarında dışarıdan belirgin bir hasar görülmemiştir. Tesis yönetimi, üretimin aksamaması adına sistemleri derhal tam kapasite çalıştırmak istemektedir. Doğal olaylar, kazalar veya çalışma şeklinde değişiklikler sonrasında mevzuatın (Madde b/2) zorunlu kıldığı uygulama aşağıdakilerden hangisidir?",
         options: {
           A: "Dışarıdan yapılan görsel incelemede sızıntı veya kırık saptanmadığı sürece sistemlerin periyodik kontrolden geçirilme zorunluluğu bulunmamaktadır.",
-          B: "Deprem gibi doğal olayların ardından iş ekipmanındaki güvenliğin bozulmasına neden olabilecek durumları saptamak ve güvenliği korumak için periyodik kontrolleri yapmaya yetkili kişilerce kontrollerin yapılması sağlanmalıdır.",
+          B: "Deprem gibi doğal olaylar sonrasında, güvenliğin bozulup bozulmadığını saptamak için periyodik kontrolü yapmaya yetkili kişilerce kontrol yapılmalıdır.",
           C: "Doğal olay sonrasında sistemlerin denetimi, makine imalatçısı sahaya çağrılana kadar ertelenmeli ve bu sürede yarım kapasite ile çalışmaya devam edilmelidir.",
           D: "Ekipmanların emniyet vanaları manuel olarak test edilip basınç düşürüldüğü takdirde yetkili kontrol zorunluluğu ortadan kalkar.",
           E: "Kaza veya doğal olay sonrası kontroller yalnızca ekipman tamamen işlevsiz kaldığında veya parçalandığında mevzuatsal yükümlülük oluşturur."
@@ -607,7 +589,7 @@ const TESTS = [
         text: "Bir konveyör bant sisteminin tahrik motorunda mekanik rulman değişimi yapılacaktır. Bakım ekibi, ana dağıtım panosu üzerinde enerji izolasyonu gerçekleştirmek üzere panoya yaklaşmıştır. Panoda birden fazla şalter ve anahtar bulunmaktadır. İş ekipmanlarında bulunan enerji kaynaklarını kesecek araç ve gereçlerin özellikleri ile ilgili olarak mevzuatın 2.14 maddesinde öngörülen temel kural aşağıdakilerden hangisidir?",
         options: {
           A: "Enerji kesme araçları, yetkisiz müdahaleleri önlemek amacıyla pano içinde gizlenmeli ve üzerleri kapaklarla kapatılmalıdır.",
-          B: "İş ekipmanlarının enerji kaynaklarını kesecek araç ve gereçler kolayca görülebilir ve tanınabilir özellikte olmalıdır.",
+          B: "İş ekipmanlarının enerji kaynaklarını kesecek araç ve gereçler, kolayca görülebilir ve tanınabilir özellikte olmalıdır.",
           C: "Enerji izolasyon anahtarlarının fiziksel olarak etiketlenmesi gerekmez; pano kapağındaki genel uyarı sembolü yeterli kabul edilir.",
           D: "Enerji kesme donanımları yalnızca tesisin ana trafo merkezinden kumanda edilebilir yapıda tasarlanmalıdır.",
           E: "Ana şalterlerin üzerine kilit takılması yerine, sadece panonun genel anahtarının bakım amirinde durması enerji izolasyonu için yeterlidir."
@@ -649,7 +631,7 @@ const TESTS = [
         text: "Mekanik bakım personeli, çalışmakta olan bir konveyörün tamburuna sıkışan yabancı maddeyi el aleti (levye) kullanarak çıkarmaya çalışmaktadır. Teknisyen, el aletinin sapının yalıtkan kauçuk kaplı olmasının kendisini koruyacağını savunmaktadır. Mekanik tehlikeler ve el aletleri kullanım kuralları çerçevesinde bu uygulama ile ilgili aşağıdaki değerlendirmelerden hangisi doğrudur?",
         options: {
           A: "Yalıtımlı el aletleri kullanıldığı sürece çalışan makineye müdahale edilmesi emniyetli bir yöntemdir.",
-          B: "Çalışan makineler durdurulmadan el aleti ile müdahale edilmemelidir; aksi takdirde kapma, sıkışma ve ağır yaralanma riski oluşur.",
+          B: "Çalışan makineler durdurulmadan el aletiyle müdahale edilmemelidir; aksi halde kapma, sıkışma ve ağır yaralanma riski doğar.",
           C: "Makine hızı en düşük seviyeye (frekans konvertöründen) düşürüldüğü takdirde el aletiyle müdahale edilebilir.",
           D: "Müdahale esnasında vardiya amirinin gözetim yapması durumunda hareketli parçalara el aleti uzatılabilir.",
           E: "Döner tamburlara müdahalede levye yerine ahşap çubuk kullanılması tüm mekanik riskleri ortadan kaldırır."
@@ -719,7 +701,7 @@ const TESTS = [
         text: "Bir fabrikanın İş İzin Formu denetiminde, dikey bakım hattında kullanılan elektrikli ve mekanik el aletlerinin kontrol, muhafaza ve bakım sorumlulukları incelenmektedir. Bakım süreci izin formunda yetkili imzalarla onaylanmıştır. İş ekipmanları ve el aletlerinin bakımı ile yetkili personel sorumluluğu konusunda aşağıdaki ifadelerden hangisi mevzuata ve teknik kurallara uygundur?",
         options: {
           A: "El aletlerinin bakım ve onarımları, arıza anında sahada bulunan herhangi bir yardımcı personel tarafından yapılabilir.",
-          B: "El aletlerinin bakım ve onarımları yalnızca ehil kişiler tarafından yapılmalıdır.",
+          B: "El aletlerinin her türlü bakım ve onarım işlemleri, yalnızca ehil ve yetkili kişiler tarafından yapılmalıdır.",
           C: "İş izin formu alınan sahalarda el aletlerinin arızalı olması operasyonel güvenliği etkilemez.",
           D: "Elektrikli el aletlerinin kablosundaki yalıtım hasarları elektrik bandı ile sarılarak iş izin süresince kullanılabilir.",
           E: "El aletlerinin periyodik muayenesi gerekmez; yalnızca kırıldıklarında yenisi ile değiştirilmelidirler."
@@ -736,7 +718,7 @@ const TESTS = [
           B: "Güvenliği etkileyen muhafazalar ve aksamlar kesinlikle devre dışı bırakılamaz; arızalı ve emniyetsiz ekipman derhal kullanımdan çekilmelidir.",
           C: "Taşlama tezgahının devir sayısı düşürüldüğü takdirde muhafazasız çalışmaya vardiya amirince onay verilebilir.",
           D: "Teknisyenden \"tüm sorumluluk tarafıma aittir\" şeklinde yazılı taahhütname alınarak işe izin verilir.",
-          E: "Taşlama diski yeni değiştirilmişse muhafazanın takılması zorunlu değildir."
+          E: "Taşlama diski yeni değiştirilmiş olduğu için muhafazanın takılmasına gerek olmadığı kabul edilir."
         },
         answer: "B",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Güvenliği etkileyen aksamların ve muhafazaların sökülmesi Yönetmeliğin Madde 2.1.2 ve ilgili muhafaza hükümlerine aykırıdır. Arızalı, koruyucusuz ve güvenli olmayan ekipman derhal kullanımdan çekilmeli ve giderilmeden çalıştırılmamalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: İş izin formuna not düşülerek emniyetsiz çalışmaya izin verilemez.</li><li>C Şıkkı Yanlıştır: Devir sayısı düşürülse bile diskin patlaması veya parçalaması durumunda muhafazasız tezgah hayati risk taşır.</li><li>D Şıkkı Yanlıştır: İSG sorumluluğu devredilemez; çalışandan taahhütname almak hukuki/teknik koruma sağlamaz.</li><li>E Şıkkı Yanlıştır: Diskin yeni olması muhafaza ihtiyacını ortadan kaldırmaz.</li></ul>'
@@ -761,7 +743,7 @@ const TESTS = [
         text: "Bir tesiste yerden 4 metre yüksekteki bir platformda ve taşınabilir merdivenler üzerinde boru flanşı sıkma işlemi yürüten bakım teknisyeninin elindeki sivri uçlu murç ve keskileri iş elbisesinin ceplerine koyduğu tespit edilmiştir. Yüksekte yapılan bakım işleri ve el aletlerinin taşınması/muhafazası ile ilgili doğru İSG kuralı aşağıdakilerden hangisidir?",
         options: {
           A: "Yüksekte çalışırken el aletlerine hızlı ulaşmak amacıyla sivri ve keskin aletler ceplerde taşınmalıdır.",
-          B: "Sivri uçlu ya da keskin kenarlı el aletleri cepte taşınmamalıdır; kullanılmadığında takım çantaları içerisinde ya da uygun standlarda bulundurulmalıdır.",
+          B: "Sivri uçlu ya da keskin kenarlı el aletleri cepte taşınmamalı; kullanılmadığında takım çantasında bulundurulmalıdır.",
           C: "Keskin aletler düşmeyi önlemek için emniyet kemerinin halatına bağlanarak serbestçe sarkıtılmalıdır.",
           D: "Yüksekte çalışma yapılırken el aletleri platform ızgaralarının üzerine serbestçe dizilmelidir.",
           E: "Takım çantası kullanımı merdiven dengesini bozduğu için aletler pantolon bel bandına takılmalıdır."
@@ -774,7 +756,7 @@ const TESTS = [
         topic: "Yüksekte Çalışmada Zemin Koşulları",
         text: "Yüksekte platform veya merdiven üzerinde bakım-onarım faaliyeti yürüten çalışanların kullandığı zemin yüzeyinde sızan yağlar ve solvent kalıntıları bulunmaktadır. Bakım personeli kaymayı önlemek için zemine talaş serpip çalışmaya devam etmektedir. Mevzuat ve teknik standartlara göre el aletleri ve yüksekte çalışma yapılan zemin koşulları nasıl olmalıdır?",
         options: {
-          A: "Çalışma yapılacak alan kuru ve düzgün olmalıdır; kaygan ve engebeli olmamalıdır.",
+          A: "El aletleri ile çalışma yapılacak alan kuru ve düzgün olmalı; kaygan ve engebeli zeminlerde çalışılmamalıdır.",
           B: "Kaygan zeminlerde çalışma yapılırken zemine emici talaş serpilmesi mevzuatsal açıdan yeterli güvenlik tedbiridir.",
           C: "Zemin koşulları yalnızca yürüyüş yollarında önem taşır; bakım yapılan yüksek platform zeminleri dikkate alınmaz.",
           D: "Eğimli ve yağlı zeminlerde kaymaz tabanlı iş ayakkabısı giyilmesi halinde zemin temizliği zorunluluğu kalkar.",
@@ -788,7 +770,7 @@ const TESTS = [
         topic: "Hareketli İş Ekipmanında Devrilme Koruması (Madde 3.1.4)",
         text: "Bir tesisin dış sahasında yüksekte bakım amacıyla işletilen tekerlekli ve kendinden tahrikli hareketli bir yükseltici çalışma platformunun (ekipmanın) engebeli arazide devrilme riski bulunmaktadır. Üzerinde çalışan bulunan hareketli iş ekipmanının devrilme riskine karşı taşıması gereken teknik özellikler ile ilgili mevzuatın 3.1.4 maddesi neyi emreder?",
         options: {
-          A: "Cihaz bir çeyrekten (90 derecelik açı) fazla dönmeyecek şekilde yapılmış olur veya bir çeyrekten fazla dönüyorsa üzerinde bulunan çalışanın etrafında yeterli açıklık bulunur.",
+          A: "Cihaz bir çeyrekten fazla dönmeyecek şekilde yapılmış olur veya dönüyorsa çalışanın etrafında yeterli açıklık bulunur.",
           B: "Ekipmanın devrilmesini önleyici sistemlerin ekipmanın kendi parçası olması yasaktır; harici destek ayakları zorunludur.",
           C: "Hareketli platformlarda devrilme koruması aranmaz; yalnızca çalışan personelin emniyet kemeri takması yeterlidir.",
           D: "Devrilme riski bulunan ekipmanlar en az iki tam tur (720 derece) dönse dahi operatör kabini kapalıysa güvenli sayılır.",
@@ -806,7 +788,7 @@ const TESTS = [
           B: "Yüksekte çalışma yapılan alanlarda alan tasarrufu sağlamak için hareketli parçalar ile bina kolonları sıfır toleransla teğet geçebilir.",
           C: "Ekipmanlar arasındaki mesafe kuralı yalnızca sabit tezgahlar için geçerli olup hareketli yüksekte çalışma platformlarını kapsamaz.",
           D: "Sıkışma riskine karşı uyarı levhası asıldığı takdirde sabit yapılarla emniyet mesafesi bırakma zorunluluğu kalkar.",
-          E: "Mesafe kuralı yalnızca ekipmanın azami hızda çalışması durumunda uygulanır."
+          E: "Yeterli mesafe kuralı yalnızca ekipmanın azami hızda çalıştırıldığı durumlarda uygulanması gereken bir kuraldır."
         },
         answer: "A",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yönetmeliğin Madde 1.1 hükmüne göre; "İş ekipmanının hareketli kısımları ile çevresinde bulunan sabit veya hareketli kısımlar arasında yeterli mesafe bulundurulur."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Sıfır toleransla teğet geçmek çalışanların ezilme ve sıkışma riskini doğurur.</li><li>C Şıkkı Yanlıştır: Mesafe kuralı yüksekte çalışan hareketli platformlar ve tüm iş ekipmanları için geçerlidir.</li><li>D Şıkkı Yanlıştır: İkaz levhası asılması emniyet mesafesi bırakma zorunluluğunu esnetemez.</li><li>E Şıkkı Yanlıştır: Yeterli mesafe kuralı ekipmanın çalışma hızından bağımsız olarak daima uygulanır.</li></ul>'
@@ -829,8 +811,8 @@ const TESTS = [
           A: "El aletleri yapılacak işe uygun seçilmeli, çalışma alanı kuru/düzgün olmalı ve el aletleri amacına uygun kullanılmalıdır.",
           B: "Yüksekte yapılan çalışmalarda vida sökmek için kürek kullanılması torku artırdığından doğru bir tekniktir.",
           C: "Düşen el aletinin kimseye çarpmamış olması durumunda İSG açısından ihlal oluşmadığı kabul edilir.",
-          D: "Platform zeminindeki yağlar sürtünmeyi artırdığı için temizlenmesine gerek yoktur.",
-          E: "Yüksekte el aleti düşmesini önlemek için aletler bileğe çelik telle sabitlenmelidir."
+          D: "Platform zeminindeki yağlar sürtünme katsayısını artırdığı için temizlenmesine gerek olmadığı düşünülmektedir.",
+          E: "Yüksekte el aleti düşmesini önlemek amacıyla aletler çelik tel ile bileğe sabitlenerek taşınmalıdır."
         },
         answer: "A",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Vaka analizinde üç temel kural ihlal edilmiştir: 1- Küreğin vida sökmek için kullanılması (yanlış tatbik/amaç dışı kullanım), 2- Zeminin yağlı olması (zemin kuru/düzgün olmalı), 3- Aletlerin usulüne uygun seçilmemesi.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Kürek vida sökmek için tasarlanmamıştır; uygun el aleti (tornavida/anahtar) kullanılmalıdır.</li><li>C Şıkkı Yanlıştır: Ramak kala durumlar ve kural ihlalleri doğrudan İSG riski teşkil eder.</li><li>D Şıkkı Yanlıştır: Yağlı zeminler sürtünmeyi düşürür ve kaymaya yol açar.</li><li>E Şıkkı Yanlıştır: Aletleri çelik telle bileğe bağlamak sıkışma ve takılma risklerini artırır.</li></ul>'
@@ -842,7 +824,7 @@ const TESTS = [
         options: {
           A: "Yangın söndürme cihazlarının kapalı alan içine veya tank yakınına konulması patlama riski yarattığından yasaktır.",
           B: "Ekipmanın kendisinin veya kullanıldığı yerin hemen yakınında yeterli yangın söndürme cihazları bulunur.",
-          C: "Yangın söndürme ekipmanları sadece tesisin ana güvenlik binasında muhafaza edilmelidir.",
+          C: "Yangın söndürme ekipmanları yalnızca tesisin ana güvenlik binasında muhafaza edilmesi yeterli kabul edilir.",
           D: "Kapalı tank çalışmalarında yangın söndürme cihazı yerine yalnızca basınçlı su hortumu bulundurulması yeterlidir.",
           E: "Yangın söndürme cihazları periyodik teste tabi tutulmaksızın tank girişinde bekletilmelidir."
         },
@@ -857,8 +839,8 @@ const TESTS = [
           A: "Kontrol sınırlarının dışına çıktığında en son komut verilen yönde hareketine devam etmelidir.",
           B: "Kontrol sınırlarının dışına çıkması halinde otomatik olarak hemen duracak şekilde olması gerekir.",
           C: "Sınır dışına çıktığında operatörün manuel acil durdurma şalterini bulup basması beklenmelidir.",
-          D: "Ekipman kontrol alanına dönene kadar kendi etrafında dairesel hareketler çizmelidir.",
-          E: "Otomatik durma özelliği yalnızca patlayıcı gaz bulunmayan ortamlarda zorunludur."
+          D: "Ekipman, kontrol alanına geri dönene kadar kendi etrafında dairesel hareketler çizerek beklemesi sağlanmalıdır.",
+          E: "Otomatik durma özelliği yalnızca patlayıcı gaz bulunmayan ortamlarda zorunlu olup diğerlerinde aranmaz."
         },
         answer: "B",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yönetmeliğin Genel Gerekler (f) maddesi emreder: "Uzaktan kumandalı iş ekipmanının, kontrol sınırlarının dışına çıkması halinde otomatik olarak hemen duracak şekilde olması gerekir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Sınır dışına çıktığında harekete devam etmesi tank içindeki borulara ve duvarlara çarpma riski yaratır.</li><li>C Şıkkı Yanlıştır: Sistem operatörün müdahalesini beklemeden "otomatik olarak hemen" durmalıdır.</li><li>D Şıkkı Yanlıştır: Dairesel hareket yapması kapalı alanda denetimsiz çarpışmalara yol açar.</li><li>E Şıkkı Yanlıştır: Otomatik durma kuralı ortamın patlayıcılık durumundan bağımsız olarak tüm uzaktan kumandalı ekipmanlar için geçerlidir.</li></ul>'
@@ -896,11 +878,11 @@ const TESTS = [
         topic: "Kumanda Cihazlarının İşaretlenmesi (Madde 2.1.1)",
         text: "Bir depolama tankının dış kumanda panosunda yer alan acil durdurma ve yönlendirme butonlarının üzerindeki sembollerin silindiği, buton renklerinin solduğu tespit edilmiştir. Kumanda cihazlarının açıkça görülebilir ve tanınabilir olması kuralı (Madde 2.1.1) gereğince yapılması gereken doğru uygulama aşağıdakilerden hangisidir?",
         options: {
-          A: "İş ekipmanında bulunan ve güvenliği etkileyen kumanda cihazları açıkça görülebilir ve tanınabilir özellikte olur; gerektiğinde uygun şekilde işaretlenir.",
+          A: "İş ekipmanında bulunan ve güvenliği etkileyen kumanda cihazları açıkça görülebilir ve tanınabilir özellikte olur.",
           B: "Deneyimli operatörler buton yerlerini ezbere bildiği için işaretlemelerin yenilenmesine gerek yoktur.",
           C: "Butonların üzerine tükenmez kalemle geçici notlar yazılması mevzuatsal olarak yeterlidir.",
           D: "Panodaki buton işaretlemeleri yalnızca makinenin ilk satışında zorunlu olup kullanım ömrü boyunca yenilenmez.",
-          E: "Silinmiş butonlar denenerek işlevi tespit edilmeli ve çalışmaya devam edilmelidir."
+          E: "Silinmiş butonların işlevleri tek tek denenerek tespit edilmeli ve çalışmaya bu şekilde devam edilmelidir."
         },
         answer: "A",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yönetmeliğin Madde 2.1.1 hükmüne göre; "İş ekipmanında bulunan ve güvenliği etkileyen kumanda cihazları açıkça görülebilir ve tanınabilir özellikte olur. Gerektiğinde uygun şekilde işaretlenir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Operatörün ezberine güvenilemez; butonların açıkça görülebilir ve işaretlenmiş olması yasal kuraldır.</li><li>C Şıkkı Yanlıştır: Tükenmez kalemle yazılan geçici notlar açıkça görülebilir ve kalıcı işaretleme kuralını karşılamaz.</li><li>D Şıkkı Yanlıştır: İşaretlemelerin silinmesi durumunda derhal yenilenmesi gerekir.</li><li>E Şıkkı Yanlıştır: Butonları deneyerek bulmaya çalışmak yanlış butona basılarak kazaya sebebiyet verilmesine yol açar.</li></ul>'
@@ -911,7 +893,7 @@ const TESTS = [
         text: "Bir makine bakım atölyesinde kullanılan elektrikli avuç taşlama ve matkapların kablolarında kesikler olduğu ve gövdelerinde çatlaklar bulunduğu tespit edilmiştir. Bakım personeli kablodaki kesik yeri elektrik bandı ile sararak kullanmaya devam etmektedir. Elektrikli el aletlerinin bakımı ve kullanımı öncesinde yapılması gereken kontrollerle ilgili aşağıdakilerden hangisi doğrudur?",
         options: {
           A: "Yalıtımı bozulmuş, çatlak ya da kesik olan kablolar elektrik bandı ile sarılarak emniyetli hale getirilebilir.",
-          B: "Olası arızalı haller için her kullanımdan önce elektrikli el aletleri kullanıcı tarafından kontrol edilmeli; alet sapı, şasesi kırık/çatlak riskine karşı incelenmeli ve kablo hasarlarına dikkat edilerek yalıtımı bozulmuş kablolar kesinlikle kullanılmamalıdır.",
+          B: "Elektrikli el aletleri her kullanımdan önce kontrol edilmeli; yalıtımı bozulmuş kablolar kesinlikle kullanılmamalıdır.",
           C: "Elektrikli el aletlerinin şasesindeki çatlaklar motor çalışmasını etkilemiyorsa kontrole gerek duyulmaz.",
           D: "Kablo ve yalıtım kontrolleri yalnızca yıllık periyodik bakımlarda yapılır; günlük kontrole ihtiyaç yoktur.",
           E: "Elektrikli el aletlerinin topraklama hattı sökülerek çift yalıtımlı hale getirilmesi tavsiye edilir."
@@ -924,10 +906,10 @@ const TESTS = [
         topic: "El Aletlerinin Yarattığı Tehlikeler (Kapsam Dışı)",
         text: "El aletlerinden kaynaklanan tehlikeler ve kaza nedenleri İSG literatüründe detaylıca sınıflandırılmıştır. Aşağıdakilerden hangisi el aletlerinin genellikle yarattığı tehlikeler arasında <strong>YER ALMAZ</strong>?",
         options: {
-          A: "Gürültü ve Toz",
-          B: "Sivri uçlar ve Keskin kenarlar",
-          C: "Elektrik şokları",
-          D: "Kesilmeler ve Sıyrılmalar",
+          A: "Gürültü ve toz ile zararlı emisyonlar",
+          B: "Sivri uçlar ve keskin kenarlı yüzeyler",
+          C: "Elektrik şokları ve kaçak akımlar",
+          D: "Kesilmeler ve sıyrılmalar ile çizikler",
           E: "İyonlaştırıcı radyoaktif işınım emisyonu"
         },
         answer: "E",
@@ -938,10 +920,10 @@ const TESTS = [
         topic: "Çalışan Torna Tezgahına Müdahale Riski",
         text: "Bir talaşlı imalat atölyesinde, çalışmakta olan bir torna tezgahının döner aynasına uzun bir metal talaşı sarmıştır. Operatör tezgahı durdurmadan elindeki bir kancalı çubuk ile talaşı çekip almaya çalışmıştır. Mekanik tehlikeler ve el aletleri kullanım kuralları çerçevesinde bu vaka ile ilgili doğru değerlendirme aşağıdakilerden hangisidir?",
         options: {
-          A: "Çalışan makineler durdurulmadan el aleti ile müdahale edilmemelidir; aksi takdirde dönen parçalara kapılma ve ağır yaralanma riski doğar.",
+          A: "Çalışan makineler durdurulmadan el aleti ile müdahale edilmemelidir; aksi halde kapma ve yaralanma riski doğar.",
           B: "Kancalı çubuk kullanıldığı sürece çalışan torna tezgahına müdahale edilmesi standart bir güvenlik yöntemidir.",
           C: "Operatörün elinde deri eldiven bulunması halinde çalışan tezgahtan talaş temizlenebilir.",
-          D: "Torna tezgahının devri düşürüldüğü takdirde el aletiyle müdahale edilebilir.",
+          D: "Torna tezgahının devir sayısı düşürüldüğü takdirde el aletiyle müdahale edilmesinde sakınca yoktur.",
           E: "Döner aynaya el aletiyle müdahalede acil durdurma butonuna basılması mekanik aksama zarar verir."
         },
         answer: "A",
@@ -955,8 +937,8 @@ const TESTS = [
           A: "Durdurma butonuna basıldığında motorun sürücüsü hazırda beklemeli, besleme enerjisi kesilmemelidir.",
           B: "İş ekipmanı veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özellikte olur.",
           C: "Durdurma sistemleri yalnızca mekanik frenlemeyi sağlamalı, elektriksel izolasyona karışmamalıdır.",
-          D: "Enerjinin kesilmesi kuralı yalnızca ana şalterden manuel yapıldığında geçerlidir.",
-          E: "Durdurma ve çalıştırma sistemleri eşzamanlı bağımsız çalışmalıdır."
+          D: "Enerjinin kesilmesi kuralı yalnızca ana şalter üzerinden manuel işlem yapıldığında geçerli kabul edilir.",
+          E: "Durdurma ve çalıştırma sistemlerinin eşzamanlı ve birbirinden bağımsız olarak çalışması gerekir."
         },
         answer: "B",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yönetmeliğin Madde 2.3 hükmü gereğince; "İş ekipmanı veya tehlikeli kısımları durdurulduğunda, bunları harekete geçiren enerji de kesilecek özelliğe sahip olur."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Sürücünün hazırda beklemesi ve enerjinin kesilmemesi tork boşalmalarında veya yanlışlıkla ikaz gelmesinde sistemin aniden dönmesine neden olur.</li><li>C Şıkkı Yanlıştır: Durdurma sistemi sadece mekanik freni değil, harekete geçiren enerjinin de kesilmesini sağlamalıdır.</li><li>D Şıkkı Yanlıştır: Enerji kesme özelliği durdurma kumandasının kendisine entegre yapıda olmalıdır.</li><li>E Şıkkı Yanlıştır: Durdurma sistemi çalıştırma sistemine göre önceliklidir ve enerjiyi kesmelidir.</li></ul>'
@@ -966,11 +948,11 @@ const TESTS = [
         topic: "El Aletleri Kazalarının Temel Nedenleri",
         text: "El aletleri kullanımında meydana gelen iş kazalarının kök nedenleri incelenmektedir. Aşağıdakilerden hangisi el aletlerindeki kazaların <strong>TEMEL NEDENLERİ</strong> arasında yer alır?",
         options: {
-          A: "El aletlerinin ehil kişilerce düzenli bakımının yapılması",
-          B: "El aletlerinin arızalı/bakımsız olması, usulüne uygun ve doğru yerlerde kullanılmaması ve KKD kullanılmaması",
-          C: "El aletlerinin kullanım öncesinde kullanıcı tarafından kontrol edilmesi",
-          D: "El aletlerinin uygun takım çantalarında ve standlarda saklanması",
-          E: "El aletlerinin amacına ve imalatçı talimatına uygun kullanılması"
+          A: "El aletlerinin düzenli olarak ehil kişilerce bakıma tabi tutulması ve kontrol edilmesi",
+          B: "El aletlerinin arızalı/bakımsız olması, usulüne uygun kullanılmaması ve KKD kullanılmaması",
+          C: "El aletlerinin kullanım öncesinde kullanıcılar tarafından kontrol edilmesi ve denetlenmesi",
+          D: "El aletlerinin uygun takım çantalarında ve standlar üzerinde muhafaza edilmesi",
+          E: "El aletlerinin amacına ve imalatçı talimatına uygun şekilde kullanılması"
         },
         answer: "B",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> 01. Hafta dokümanında "El Aletlerindeki Kazaların Temel Nedenleri" başlığı altında açıkça belirtilmiştir: 1- Arızalı ve bakımsız olması, 2- Usulüne uygun kullanılmaması, 3- Yanlış yerlerde kullanılması, 4- Kullanım sırasında KKD kullanılmaması.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A, C, D ve E Şıkları: Kazaların nedenleri değil, aksine kazaları önlemek için yapılması gereken emniyetli çalışma tedbirleridir.</li></ul>'
@@ -994,11 +976,11 @@ const TESTS = [
         topic: "Mantarlaşmış Alet Başlarının Tıraşlanması",
         text: "Atölyede yürütülen yontma ve çapak alma işlerinde kullanılan murç, zımba ve keski başlarının zamanla darbe etkisiyle ezilerek genişlediği, kenarlarında \"mantarlaşma\" (çapaklanma) oluştuğu görülmüştür. Üzerine vurulmak suretiyle çalışan bu el aletlerinin başlarında oluşan deformasyona karşı yapılması gereken doğru uygulama aşağıdakilerden hangisidir?",
         options: {
-          A: "Mantarlaşan başlara daha ağır çekiçle vurularak ezilen kısımlar düzeltilmelidir.",
-          B: "Üzerine vurulmak suretiyle çalışan zımbalar, murçlar ve keskilerin başları zaman zaman tıraşlanarak çapak fırlamalarının önüne geçilmelidir.",
-          C: "Mantarlaşmış başlar yağlanarak çekiç darbesinin kayması sağlanmalıdır.",
+          A: "Mantarlaşan başlara daha ağır bir çekiçle vurularak ezilen kısımların düzeltilmesi gerekmektedir.",
+          B: "Üzerine vurulmak suretiyle çalışan zımba, murç ve keskilerin başları zaman zaman tıraşlanmalıdır.",
+          C: "Mantarlaşmış başların yağlanarak çekiç darbesinin kaymasının sağlanması uygun bir yöntemdir.",
           D: "Tıraşlama işlemi aletin çelik sertliğini bozacağından çapaklı halde kullanılmaya devam edilmelidir.",
-          E: "Mantarlaşan aletler yüksek ısıda ısıtılarak tekrar çekiçle dövülmelidir."
+          E: "Mantarlaşan aletlerin yüksek ısıda ısıtılarak tekrar çekiçle dövülmesi ve düzeltilmesi gerekir."
         },
         answer: "B",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> 01. Hafta "Klasik El Aletleri Güvenlik Tedbirleri" dokümanına göre; "Üzerine vurulmak suretiyle çalışan zımbalar, murçlar, çivilerin başları zaman zaman tıraşlanarak çapak fırlamalarının önüne geçilmelidir."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Yanlıştır: Çapaklı başa çekiçle vurmaya devam etmek, çapak parçalarının yüksek hızla göze veya vücuda saplanmasına yol açar.</li><li>C Şıkkı Yanlıştır: Başların yağlanması çekicin kaymasına ve el yaralanmalarına sebep olur.</li><li>D Şıkkı Yanlıştır: Tıraşlama işlemi aletin güvenli kullanımını sağlar; çapaklı kullanmak ağır yaralanma riskidir.</li><li>E Şıkkı Yanlıştır: Isıtıp dövmek çeliğin suyunun kaçmasına ve gevrekleşmesine yol açabilir; düzgün tıraşlama yapılmalıdır.</li></ul>'
@@ -1022,11 +1004,11 @@ const TESTS = [
         topic: "Küçük Parçaların Mengeneye Sabitlenmesi",
         text: "Bir teknisyen, delik açacağı küçük bir metal parçayı tezgah mengenesine sabitlemek yerine sol eliyle sıkıca tutmuş, sağ eliyle matkap kullanmaya çalışmıştır. Matkap ucu parçaya takılmış ve parçayı kontrolden çıkararak teknisyenin elini kesmiştir. Küçük parçalarla yapılan çalışmalarda el aletleri güvenlik kuralı aşağıdakilerden hangisidir?",
         options: {
-          A: "Küçük parçalarla çalışırken mengene ile tutturulmadan çalışılmamalıdır.",
-          B: "Küçük parçalar ele deri eldiven takılarak sıkıca tutulmalıdır.",
+          A: "Küçük parçalarla çalışırken parça mutlaka mengene ile tutturulmadan işleme başlanmamalıdır.",
+          B: "Küçük parçalar ele deri eldiven takılarak sıkıca tutulmalı ve bu şekilde işlenmelidir.",
           C: "Parçanın dönmesini önlemek için ikinci bir çalışanın parçayı penseyle tutması gerekir.",
-          D: "Küçük parçalar çalışma tezgahına ayakla basılarak sabitlenmelidir.",
-          E: "Mengene kullanımı yalnızca 5 kg'dan ağır parçalarda zorunludur."
+          D: "Küçük parçaların çalışma tezgahına ayakla basılarak sabitlenmesi uygun bir yöntemdir.",
+          E: "Mengene kullanımı yalnızca 5 kg'dan ağır parçalarla çalışılırken zorunlu tutulmaktadır."
         },
         answer: "A",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> 01. Hafta "Klasik El Aletleri Güvenlik Tedbirleri" dokümanında emredilmiştir: "Küçük parçalarla çalışırken mengene ile tutturulmadan çalışılmamalıdır."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Eldiven takarak elle tutmak matkap ucunun parçayı döndürmesini önleyemez ve matkabın eldiveni kapma riskini yaratır.</li><li>C Şıkkı Yanlıştır: İkinci bir kişinin parçayı elle/penseyle tutması tehlikeye ikinci bir çalışanı ortak etmektir.</li><li>D Şıkkı Yanlıştır: Ayakla basarak sabitlemeye çalışmak kayma ve ayak yaralanması riski doğurur.</li><li>E Şıkkı Yanlıştır: Mengene kullanımı parçanın boyutuna bakılmaksızın matkap/taşlama işlemlerinde küçüklük nedeniyle tutulamayan tüm parçalarda zorunludur.</li></ul>'
@@ -1036,11 +1018,11 @@ const TESTS = [
         topic: "Çatlak ve Kırık Saplı Aletlerin Kullanımı (Aykırı)",
         text: "El aletlerinin sap kısımlarında meydana gelen çatlaklar, gevşemeler ve yağlanmalar ciddi iş kazalarına sebep olmaktadır. Klasik el aletlerinin sapları ile ilgili olarak aşağıdakilerden hangisi güvenlik kurallarına <strong>KESİNLİKLE AYKIRIDIR</strong>?",
         options: {
-          A: "Sapların yağlı ve kaygan olmaması sağlanmalıdır.",
+          A: "El aletlerinin saplarının yağlı ve kaygan olmaması her zaman sağlanmalıdır.",
           B: "Saplar yapılan işe ve alete uygun olmalı, kolayca çıkmamalıdır.",
-          C: "Çatlamış veya kırılmış ahşap saplar tel, koli bandı veya ip ile sarılarak kullanılmaya devam edilebilir.",
+          C: "Çatlamış veya kırılmış ahşap saplar tel veya bantla sarılarak kullanılmaya devam edilebilir.",
           D: "Çatlak saplı, aşınmış, kırık ve sapı gevşemiş el aletleri kullanılmamalıdır.",
-          E: "Alet saplarının kontrolü kullanım öncesinde yapılmalıdır."
+          E: "El aletlerinin saplarının kontrolü her kullanım öncesinde mutlaka yapılmalıdır."
         },
         answer: "C",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Klasik el aletlerinde çatlak, kırık veya gevşemiş sapların tel, bant veya ip ile sarılarak kullanılması kesinlikle yasaktır; arızalı el aleti derhal değiştirilmeli veya yetkili kişilerce onarılmalıdır. (Aykırı olan seçenek C\'dir).</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Sapların yağlı ve kaygan olmaması gerekliliği temel kuraldır.</li><li>B Şıkkı Doğrudur: Saplar işe uygun olmalı ve kolayca çıkmamalıdır.</li><li>D Şıkkı Doğrudur: Çatlak ve kırık saplı aletler kullanılmamalıdır.</li><li>E Şıkkı Doğrudur: Sap kontrolü kullanım öncesinde yapılmalıdır.</li></ul>'
@@ -1054,7 +1036,7 @@ const TESTS = [
           B: "Teknik ömrü dolan aletler hurdaya ayrılmayıp yalnızca hafif temizlik işlerinde kullanılmalıdır.",
           C: "Arızalı el aletleri gece vardiyasında yük az olduğu için kullanılmaya devam edilebilir.",
           D: "Aletlerin teknik ömrü dolup dolmadığı hususu tamamen kullanıcının kişisel takdirine bırakılır.",
-          E: "Arızalı el aletleri depoya kaldırılmalı ve denetimlerden gizlenmelidir."
+          E: "Arızalı el aletleri depoya kaldırılmalı ve denetimlerden gizlenerek saklanmalıdır."
         },
         answer: "A",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> 01. Hafta "Klasik El Aletleri Güvenlik Tedbirleri" dokümanı gereğince; "Teknik ömrünü tamamlamış el aletleri kullanılmamalıdır" ve "Arızalı olan el aletleri derhal değiştirilmeli veya onarılmalıdır."</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Teknik ömrü dolan alet hafif işte de kullanılsa kırılma ve yaralanma riski taşır.</li><li>C Şıkkı Yanlıştır: Vardiya ayrımı yapılmaksızın ömrü dolmuş aletin kullanımı yasaktır.</li><li>D Şıkkı Yanlıştır: Teknik ömür ve arıza durumu İSG standartlarına göre değerlendirilir, kişisel keyfiyete bırakılamaz.</li><li>E Şıkkı Yanlıştır: Arızalı aletlerin denetimden gizlenmesi kaza riskini büyütür.</li></ul>'
@@ -1082,7 +1064,7 @@ const TESTS = [
           B: "Körelmiş matkap uçları matkaba daha fazla baskı uygulanarak bastırılmak suretiyle kullanılmalıdır.",
           C: "Bıçak ve kesici uçlar köreldikçe torna tezgahında rastgele bileylenerek kullanılmalıdır.",
           D: "El aletlerinin bakımı tesis bünyesindeki vasıfsız yardımcı personelce yapılabilir.",
-          E: "Körelmiş uçların yaralanma riski taşımadığı kabul edilir."
+          E: "Körelmiş uçların yaralanma riski taşımadığı ve güvenle kullanılabileceği kabul edilir."
         },
         answer: "A",
         solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> 01. Hafta dokümanında belirtildiği üzere; "Körelmiş bıçak, zımba ve matkap uçları kullanılmamalıdır" ve el aletlerinin "Bakımı ehil kişiler tarafından yapılmalı" hükümleri esastır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı Yanlıştır: Körelmiş uca fazla bastırmak matkap ucunun kırılmasına ve fırlamasına yol açar.</li><li>C Şıkkı Yanlıştır: Kesici uçların bileylenmesi belirli açılar ve ehil kişilerce yapılmalıdır; bilinçsiz bileyleme alet geometrisini bozar.</li><li>D Şıkkı Yanlıştır: Bakım işlemleri ehil kişilerce yürütülmelidir, vasıfsız personele devredilemez.</li><li>E Şıkkı Yanlıştır: Körelmiş uçlar daha fazla kuvvet uygulanmasına neden olduğu için kayma ve kontrol kaybı riskini artırır.</li></ul>'
@@ -1092,8 +1074,8 @@ const TESTS = [
         topic: "Emniyetsiz Davranışların Önlenmesi ve Eğitim",
         text: "İSG Uzmanı, sahada yaptığı denetimde bir çalışanın körelmiş bıçak kullandığını, diğer bir çalışanın tornavidayı keski gibi kullandığını ve el aletlerini ceplerinde taşıdıklarını görmüştür. Saha denetimi sonucunda tespit edilen bu emniyetsiz davranışların ve kazaların önlenmesi için yapılması gereken <strong>TEMEL YAKLAŞIM</strong> aşağıdakilerden hangisidir?",
         options: {
-          A: "Çalışanlara el aletlerinin doğru kullanımı, riskleri, KKD kullanımı ve muhafaza kurallarını içeren emniyetli davranış ve teknik eğitimler verilerek denetimler artırılmalıdır.",
-          B: "Tesis bünyesinde tüm el aletlerinin kullanımı derhal yasaklanmalıdır.",
+          A: "Çalışanlara el aletlerinin doğru kullanımı, riskleri ve KKD kullanımı konusunda eğitimler verilmelidir.",
+          B: "Tesis bünyesinde tüm el aletlerinin kullanımı derhal ve tamamen yasaklanmalıdır.",
           C: "Uygunsuz kullanım yapan çalışanların iş akitleri eğitim verilmeden feshedilmelidir.",
           D: "Ceplerde el aleti taşınmasını kolaylaştırmak için geniş cepli iş elbiseleri dağıtılmalıdır.",
           E: "El aletlerinden kaynaklanan riskler kaçınılmaz olduğundan durum olduğu gibi kabul edilmelidir."
@@ -1119,7 +1101,6 @@ const navEl = document.getElementById('navigator');
 const areaEl = document.getElementById('testArea');
 const resultEl = document.getElementById('resultCard');
 
-/* ---- TABS ---- */
 function buildTabs(){
   tabsEl.innerHTML = TESTS.map((t, i) =>
     `<button class="tab-btn ${i===0?'active':''}" data-test="${i}">
@@ -1138,7 +1119,6 @@ function buildTabs(){
   });
 }
 
-/* ---- NAVIGATOR ---- */
 function buildNav(){
   const test = TESTS[state.currentTest];
   const ans = state.answers[state.currentTest];
@@ -1159,7 +1139,6 @@ function buildNav(){
   });
 }
 
-/* ---- HELPERS ---- */
 function calculateStats(testIdx){
   const test = TESTS[testIdx];
   const ans = state.answers[testIdx];
@@ -1181,7 +1160,6 @@ function updateScoreBar(){
   document.getElementById('sPuan').textContent = s.puan;
 }
 
-/* ---- RENDER QUESTION ---- */
 function render(){
   const testIdx = state.currentTest;
   const qIdx = state.currentQ[testIdx];
@@ -1302,7 +1280,6 @@ function render(){
   });
 }
 
-/* ---- COMPLETION CHECK ---- */
 function checkCompletion(){
   const testIdx = state.currentTest;
   const test = TESTS[testIdx];
@@ -1329,13 +1306,11 @@ function checkCompletion(){
   resultEl.scrollIntoView({behavior:'smooth', block:'center'});
 }
 
-/* ---- INTRO TOGGLE ---- */
 document.getElementById('introHead').addEventListener('click', function(){
   this.classList.toggle('closed');
   document.getElementById('introBody').classList.toggle('hidden');
 });
 
-/* ---- INIT ---- */
 document.getElementById('yil').textContent = new Date().getFullYear();
 buildTabs();
 render();

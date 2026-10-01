@@ -43,7 +43,6 @@ a{color:var(--primary);text-decoration:none;}
 a:hover{text-decoration:underline;}
 .container{max-width:1080px;margin:0 auto;padding:0 16px;}
 
-/* ===================== HEADER ===================== */
 .site-header{
   background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 55%,var(--accent) 100%);
   color:#fff;
@@ -94,7 +93,6 @@ a:hover{text-decoration:underline;}
   box-shadow:0 6px 16px rgba(0,0,0,.18);
 }
 
-/* ===================== INTRO ===================== */
 .intro-box{
   background:var(--card);
   border-radius:var(--radius);
@@ -132,7 +130,6 @@ a:hover{text-decoration:underline;}
   border-radius:50%;background:var(--accent);
 }
 
-/* ===================== TABS ===================== */
 .tabs{
   display:flex;gap:10px;margin-top:26px;flex-wrap:wrap;
 }
@@ -154,7 +151,6 @@ a:hover{text-decoration:underline;}
 }
 .tab-btn.active .tt,.tab-btn.active .ts{color:#fff;}
 
-/* ===================== SCORE BAR ===================== */
 .score-bar{
   position:sticky;top:0;z-index:50;
   margin-top:18px;
@@ -177,7 +173,6 @@ a:hover{text-decoration:underline;}
 }
 .score-bar .puan strong{font-size:17px;}
 
-/* ===================== NAVIGATOR ===================== */
 .navigator{
   display:flex;flex-wrap:wrap;gap:7px;margin-top:18px;
   padding:14px;background:var(--card);border-radius:var(--radius);
@@ -197,7 +192,6 @@ a:hover{text-decoration:underline;}
   box-shadow:0 0 0 2px #fff inset;
 }
 
-/* ===================== QUESTION CARD ===================== */
 .q-card{
   margin-top:18px;background:var(--card);border-radius:var(--radius);
   border:1px solid var(--border);box-shadow:var(--shadow);
@@ -219,7 +213,6 @@ a:hover{text-decoration:underline;}
   background:var(--primary-light);padding:6px 12px;border-radius:8px;
   text-transform:uppercase;letter-spacing:.4px;
 }
-/* SORU KÖKÜ — KALIN VE KOYU RENK */
 .q-text{
   font-size:15.5px;color:var(--text-dark);line-height:1.75;
   margin-bottom:20px;text-align:justify;
@@ -233,7 +226,6 @@ a:hover{text-decoration:underline;}
   font-weight:800;
 }
 
-/* Options */
 .options{display:flex;flex-direction:column;gap:10px;}
 .option{
   display:flex;gap:13px;align-items:flex-start;
@@ -271,7 +263,6 @@ a:hover{text-decoration:underline;}
 .option.reveal-correct .letter{background:var(--success);color:#fff;}
 .option.dim{opacity:.62;}
 
-/* Feedback */
 .feedback{
   margin-top:16px;padding:14px 16px;border-radius:11px;
   font-weight:700;font-size:14.5px;display:none;
@@ -282,7 +273,6 @@ a:hover{text-decoration:underline;}
 .feedback.no{background:var(--danger-bg);color:var(--danger);border:1.5px solid var(--danger-border);}
 .feedback .ico{font-size:20px;}
 
-/* ============ SOLUTION (KAPALI/İSTEĞE BAĞLI) ============ */
 .solution{
   margin-top:16px;border-radius:12px;overflow:hidden;
   border:1px solid var(--border);background:#fbfdff;
@@ -328,7 +318,6 @@ a:hover{text-decoration:underline;}
   margin-left:6px;
 }
 
-/* Controls */
 .controls{
   display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
   margin-top:20px;
@@ -349,7 +338,6 @@ a:hover{text-decoration:underline;}
 .btn-ghost:hover{background:#e2ecfa;border-color:var(--accent);}
 .btn:disabled{opacity:.42;cursor:not-allowed;transform:none !important;box-shadow:none !important;}
 
-/* Result Card */
 .result-card{
   margin-top:18px;background:var(--card);border-radius:var(--radius);
   border:2px solid var(--success-border);box-shadow:var(--shadow-lg);
@@ -380,7 +368,6 @@ a:hover{text-decoration:underline;}
   background:#f7faff;border:1px dashed var(--border);color:var(--primary-dark);
 }
 
-/* ===================== FOOTER ===================== */
 .site-footer{
   margin-top:44px;
   background:linear-gradient(135deg,#0b1f3a,#0d47a1);
@@ -404,7 +391,6 @@ a:hover{text-decoration:underline;}
 }
 .footer-bottom strong{color:#fff;}
 
-/* ===================== RESPONSIVE ===================== */
 @media(max-width:640px){
   body{font-size:15px;}
   .brand{flex-direction:row;align-items:flex-start;}
@@ -433,7 +419,6 @@ a:hover{text-decoration:underline;}
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="container">
     <div class="brand">
@@ -456,7 +441,6 @@ a:hover{text-decoration:underline;}
 
 <main class="container">
 
-  <!-- ================= INTRO ================= -->
   <section class="intro-box">
     <div class="intro-head" id="introHead">
       <h2>📘 Bölüm Tanıtımı ve Kapsam Rehberi</h2>
@@ -484,14 +468,13 @@ a:hover{text-decoration:underline;}
         <li>Çeldiriciler; sahada sıklıkla yapılan mühendislik hataları, yanlış bilinen teknik teamüller ve mevzuat esnetme girişimleri arasından yüksek eleyicilikte seçilmiştir.</li>
         <li>Soru köklerindeki olumsuz ifadeler (değildir, olamaz, yanlıştır, söylenemez) koyu ve belirgin biçimde vurgulanmıştır.</li>
         <li>Tüm soru ve çözümler, ilgili yönetmelik ve standart kaynak metinlerine %100 sadakatle hazırlanmıştır.</li>
+        <li>Seçenekler görsel uzunluk bakımından dengelenmiş; doğru cevabın uzunluğundan ipucu vermesi engellenmiştir.</li>
       </ul>
     </div>
   </section>
 
-  <!-- ================= TABS ================= -->
   <div class="tabs" id="tabs"></div>
 
-  <!-- ================= SCORE BAR ================= -->
   <div class="score-bar">
     <div class="grp">
       <span class="item"><span class="dot dot-green"></span> Doğru: <strong id="sDogru">0</strong></span>
@@ -501,13 +484,10 @@ a:hover{text-decoration:underline;}
     <div class="puan">Puan: <strong id="sPuan">0</strong> / 100</div>
   </div>
 
-  <!-- ================= NAVIGATOR ================= -->
   <div class="navigator" id="navigator"></div>
 
-  <!-- ================= TEST AREA ================= -->
   <div id="testArea"></div>
 
-  <!-- ================= RESULT ================= -->
   <div class="result-card" id="resultCard">
     <h3 id="resTitle">Test Tamamlandı! 🎉</h3>
     <p class="res-sub" id="resSub">Aşağıda bu testteki performans özetiniz yer almaktadır.</p>
@@ -522,7 +502,6 @@ a:hover{text-decoration:underline;}
 
 </main>
 
-<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -548,9 +527,10 @@ a:hover{text-decoration:underline;}
 /* =========================================================
    BÖLÜM 6 — KAYNAK İŞLERİNDE İSG · 40 SORU VERİSİ
    2 TEST × 20 SORU
+   Seçenekler görsel uzunluk bakımından dengelenmiş;
+   doğru cevap harfleri korunmuş, uzunluk ipucu kaldırılmıştır.
    ========================================================= */
 const TESTS = [
-  /* ======================= TEST 1 ======================= */
   {
     id: 1,
     title: "Test 1",
@@ -562,14 +542,14 @@ const TESTS = [
         topic: "Bölüm 1 · Ergitme ve Basınç Kaynağı Karşılaştırması",
         text: "Bir ağır sanayi tesisinde yürütülen imalat sürecinde, kalın çelik levhaların atomik düzeyde birleştirilmesi amacıyla ergitme ve basınç kaynak yöntemleri değerlendirilmektedir. Kaynak metalurjisi ve birleştirme prensipleri açısından yapılan risk değerlendirmesinde, yöntemlerin uyguladığı termal ve mekanik parametrelerin iş sağlığı ve güvenliği üzerindeki etkileri incelenmektedir. Metallerin moleküler birleşme karakteristikleri ve yöntem bazlı risk profilleri dikkate alındığında, aşağıdakilerden hangisi ergitme ve basınç kaynak yöntemlerinin karşılaştırılmasında teknik ve İSG açısından <u>yanlış</u> bir tespittir?",
         options: {
-          A: "Ergitme kaynağında birleşme bölgesindeki metaller sıvı faza kadar ısıtılırken, basınç kaynağında ana metal erime sıcaklığına ulaşmadan veya plastik kıvamda mekanik kuvvetle birleştirilir.",
-          B: "Ergitme kaynağında ek dolgu metali (elektrot/tel) kullanımı yaygınken, basınç kaynağında birleşme genellikle plastisite ve dış basınç etkisiyle sağlandığından ek dolgu maddesine ihtiyaç duyulmaz.",
+          A: "Ergitme kaynağında metaller sıvı faza kadar ısıtılırken, basınç kaynağında ana metal erime sıcaklığına ulaşmadan plastik kıvamda mekanik kuvvetle birleştirilir.",
+          B: "Ergitme kaynağında ek dolgu metali kullanımı yaygınken, basınç kaynağında birleşme plastisite ve dış basınç etkisiyle sağlandığından dolgu maddesine ihtiyaç duyulmaz.",
           C: "Ergitme kaynağında oluşan erimiş metal banyosu, yüksek sıcaklıkta atmosferik gazlarla reaksiyona girerek daha fazla toksik gaz ve duman açığa çıkarır.",
-          D: "Basınç kaynağında termal enerji girdisi ergitmeye göre daha düşük olduğundan, ultraviyole (UV) ışıma riski ergitme ark kaynağına kıyasla tamamen ortadan kalkar ve havalandırma ihtiyacı oluşmaz.",
-          E: "Ergitme kaynağında yüksek ısı girdisi nedeniyle ana metalde geniş bir Isıdan Etkilenen Bölge (ITAB/HAZ) oluşurken, bu durum iç gerilmelere ve yapısal gevrekleşmeye yol açabilir."
+          D: "Basınç kaynağında termal enerji girdisi ergitmeye göre daha düşük olduğundan, ultraviyole ışıma riski tamamen ortadan kalkar ve havalandırma ihtiyacı oluşmaz.",
+          E: "Ergitme kaynağında yüksek ısı girdisi nedeniyle ana metalde geniş bir Isıdan Etkilenen Bölge oluşurken, bu durum iç gerilmelere ve gevrekleşmeye yol açabilir."
         },
         answer: "D",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Basınç kaynağında (örneğin direnç nokta kaynağı veya sürtünme kaynağı) ana metal erime sıcaklığına ulaşmadan ya da dar bir bölgede plastik deformasyon sıcaklığına getirilerek mekanik kuvvetle birleştirilir. Ancak sürtünme veya elektriksel direnç sebebiyle yüksek termal enerji açığa çıkar; çapak sıçramaları, kızgın metal partikülleri, optik emisyonlar ve gaz/duman salınımı gerçekleşir. "UV riski tamamen ortadan kalkar ve havalandırma ihtiyacı oluşmaz" ifadesi teknik olarak <u>yanlış</u> ve tehlikeli bir yanılsamadır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Ergitme ve basınç kaynağı arasındaki faz durumunu (sıvı faz vs. plastik/katı faz) doğru tanımlamaktadır.</li><li>B Şıkkı Doğrudur: Ergitme kaynağındaki dolgu metali ihtiyacı ile basınç kaynağındaki mekanik kenetlenme ilkesini doğru açıklar.</li><li>C Şıkkı Doğrudur: Sıvı metal banyosunun ortam atmosferindeki oksijen ve azot ile yüksek sıcaklıkta yaptığı reaksiyonların duman yükünü artırdığı tespiti doğrudur.</li><li>E Şıkkı Doğrudur: Yüksek ısı girdisinin ana metal tane yapısını bozarak geniş bir Isıdan Etkilenen Bölge (ITAB/HAZ) oluşturması kaynak metalurjisinin temel kuralıdır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN ISO 4063 (Kaynak ve ilgili proseslerin numaralandırılması ve terimler).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Basınç kaynağında (örneğin direnç nokta kaynağı veya sürtünme kaynağı) ana metal erime sıcaklığına ulaşmadan ya da dar bir bölgede plastik deformasyon sıcaklığına getirilerek mekanik kuvvetle birleştirilir. Ancak sürtünme veya elektriksel direnç sebebiyle yüksek termal enerji açığa çıkar; çapak sıçramaları, kızgın metal partikülleri, optik emisyonlar ve gaz/duman salınımı gerçekleşir. "UV riski tamamen ortadan kalkar ve havalandırma ihtiyacı oluşmaz" ifadesi teknik olarak <u>yanlış</u> ve tehlikeli bir yanılsamadır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Ergitme ve basınç kaynağı arasındaki faz durumunu doğru tanımlamaktadır.</li><li>B Şıkkı Doğrudur: Ergitme kaynağındaki dolgu metali ihtiyacı ile basınç kaynağındaki mekanik kenetlenme ilkesini doğru açıklar.</li><li>C Şıkkı Doğrudur: Sıvı metal banyosunun ortam atmosferiyle reaksiyonunun duman yükünü artırdığı tespiti doğrudur.</li><li>E Şıkkı Doğrudur: Yüksek ısı girdisinin ana metal tane yapısını bozarak geniş bir ITAB oluşturması kaynak metalurjisinin temel kuralıdır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN ISO 4063 (Kaynak ve ilgili proseslerin numaralandırılması ve terimler).</p>'
       },
       {
         n: 2,
@@ -577,27 +557,27 @@ const TESTS = [
         text: "Bir tersanenin bakım-onarım atölyesinde, oksijen ve asetilen gazlarının karışımıyla elde edilen yüksek sıcaklıktaki alev ile kesme ve kaynak operasyonu yürütülmektedir. Operasyon sırasında yanıcı ve yakıcı gaz hatlarındaki basınç dengesizlikleri ve olası sızıntı riskleri İSG uzmanı tarafından denetlenmektedir. Oksijen-Asetilen gaz kaynağı operasyonunda kullanılan gazların termal karakteristikleri ve sistem güvenlik riskleri ile ilgili olarak aşağıdakilerden hangisi doğrudur?",
         options: {
           A: "Asetilen gazı yüksek basınç altında kendiliğinden patlama eğiliminde olduğundan tüp içerisinde serbest gaz halinde 15 barın üzerinde depolanabilir.",
-          B: "Oksijen yakıcı bir gaz olup, sistemdeki organik yağ veya gres maddeleriyle temas ettiğinde yüksek ısı açığa çıkararak kendiliğinden patlamaya (otooksidasyon) neden olabilir.",
+          B: "Oksijen yakıcı bir gaz olup, sistemdeki organik yağ veya gres maddeleriyle temas ettiğinde yüksek ısı açığa çıkararak kendiliğinden patlamaya neden olabilir.",
           C: "Gaz kaynağında kullanılan alevin sıcaklığı elektrik ark kaynağındaki ark sıcaklığından daha yüksek olduğundan optik radyasyon tehlikesi daha fazladır.",
-          D: "Asetilen tüplerinden sızan gaz havadandan hafif olduğu için daima zeminde toplanır ve alt havalandırma kanallarıyla tahliye edilmelidir.",
+          D: "Asetilen tüplerinden sızan gaz havadan hafif olduğu için daima zeminde toplanır ve alt havalandırma kanallarıyla tahliye edilmelidir.",
           E: "Oksijen gazı sızıntısı durumunda ortamdaki oksijen oranının artması yangın riskini etkilemez, yalnızca zehirlenme riski yaratır."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Oksijen yüksek basınç altında son derece reaktif yakıcı bir gazdır. Regülatör, vana veya tesisat elemanlarında bulunan organik yağlar veya gres ile temas ettiğinde kütlesel otooksidasyon reaksiyonu tetiklenir. Bu reaksiyon dışarıdan bir tutuşturucu kaynak (kıvılcım/alev) olmadan bile ani sıcaklık ve basınç artışıyla patlamaya yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Asetilen serbest halde 1,5 barın üzerindeki basınçlarda kararsızlaşıp patlayabileceğinden tüp içinde gözenekli dolgu kütlesi ve aseton çözeltisiyle saklanır; serbest halde 15 barda depolanamaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Oksijen-asetilen alev sıcaklığı (~3100°C), elektrik ark kaynağındaki ark sütunu sıcaklığından (3000°C – 6000°C) daha düşüktür ve ürettiği optik radyasyon (UV) ark kaynağına kıyasla çok daha azdır.</li><li>D Şıkkı <u>Yanlıştır</u>: Asetilen gazının molekül ağırlığı havanınkinden küçük olduğu için (d_asetilen ≈ 0,9) havadan hafiftir ve tavanda toplanır; zeminde toplanmaz.</li><li>E Şıkkı <u>Yanlıştır</u>: Oksijen zenginleşmesi ortamdaki maddelerin tutuşma sıcaklığını düşürür ve yangın riskini katlanarak artırır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği &amp; TS EN ISO 14114.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Oksijen yüksek basınç altında son derece reaktif yakıcı bir gazdır. Regülatör, vana veya tesisat elemanlarında bulunan organik yağlar veya gres ile temas ettiğinde kütlesel otooksidasyon reaksiyonu tetiklenir. Bu reaksiyon dışarıdan bir tutuşturucu kaynak olmadan bile ani sıcaklık ve basınç artışıyla patlamaya yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Asetilen serbest halde 1,5 barın üzerindeki basınçlarda kararsızlaşıp patlayabileceğinden tüp içinde gözenekli dolgu kütlesi ve aseton çözeltisiyle saklanır.</li><li>C Şıkkı <u>Yanlıştır</u>: Oksijen-asetilen alev sıcaklığı elektrik ark kaynağındaki ark sıcaklığından daha düşüktür ve ürettiği optik radyasyon çok daha azdır.</li><li>D Şıkkı <u>Yanlıştır</u>: Asetilen gazı havadan hafiftir ve tavanda toplanır; zeminde toplanmaz.</li><li>E Şıkkı <u>Yanlıştır</u>: Oksijen zenginleşmesi ortamdaki maddelerin tutuşma sıcaklığını düşürür ve yangın riskini artırır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği &amp; TS EN ISO 14114.</p>'
       },
       {
         n: 3,
         topic: "Bölüm 1 · Elektrik Ark Kaynağı Termal-Elektriksel Tehlikeleri",
         text: "Bir makine imalat fabrikasında, manuel örtülü elektrot elektrik ark kaynağı yapılmaktadır. Elektrot ucu ile iş parçası arasında kurulan elektrik arkı esnasında, ark sütununda yaklaşık 3000°C - 6000°C civarında yüksek sıcaklıklar oluşmakta ve yoğun bir iyonizasyon meydana gelmektedir. Elektrik ark kaynağındaki termal-elektriksel etkileşim ve çevreye yayılan tehlikeler ile ilgili aşağıda verilen ifadelerden hangisi <u>yanlıştır</u>?",
         options: {
-          A: "Elektrik arkı, görünür ışığın yanı sıra göz ve cilt üzerinde yıkıcı etkilere sahip Ultraviyole (UV) ve Kızılötesi (IR) radyasyon yayar.",
-          B: "Ark sütunundaki yüksek sıcaklık, elektrot örtüsünün ve koruyucu gazların yanmasıyla havada bulunan azotu ve oksijeni reaksiyona sokarak toksik azot oksitler (NOₓ) oluşturur.",
+          A: "Elektrik arkı, görünür ışığın yanı sıra göz ve cilt üzerinde yıkıcı etkilere sahip Ultraviyole ve Kızılötesi radyasyon yayar.",
+          B: "Ark sütunundaki yüksek sıcaklık, elektrot örtüsünün ve koruyucu gazların yanmasıyla havadaki azotu ve oksijeni reaksiyona sokarak toksik azot oksitler oluşturur.",
           C: "Elektrik ark kaynağında kullanılan alternatif veya doğru akım, operatör üzerinde elektrot değişimi sırasında doğrudan temas halinde elektrik çarpması riski taşır.",
           D: "Açık ark kaynağı sırasında oluşan sıçramalar ve çapaklar, 10-15 metre yarıçaplı alandaki tutuşabilir malzemeleri yakabilecek termal enerjiye sahiptir.",
-          E: "Ark kaynağında açığa çıkan optik radyasyon şiddeti, kaynak akımı (amper) arttıkça azalır; bu nedenle yüksek akımlarda daha açık renkli koruyucu camlar kullanılır."
+          E: "Ark kaynağında açığa çıkan optik radyasyon şiddeti, kaynak akımı arttıkça azalır; bu nedenle yüksek akımlarda daha açık renkli koruyucu camlar kullanılır."
         },
         answer: "E",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Elektrik ark kaynağında kaynak akımı (amper) arttıkça ark plazmasının sıcaklığı, parlaklığı ve ortama yaydığı optik radyasyon (özellikle UV-B, UV-C ve IR) kütlesel olarak artar. Bu nedenle yüksek amperlerde gözü korumak için DAHA KOYU (daha yüksek DIN numaralı) filtre camları kullanılır. "Amper arttıkça açık renkli cam kullanılır" ifadesi optik fizik ve iş hijyeni ilkelerine tamamen <u>aykırıdır</u>.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Elektrik arkı geniş bir spektrumda ultraviyole ve kızılötesi ışınım yayar.</li><li>B Şıkkı Doğrudur: Yüksek ark sıcaklığı havadaki N₂ ve O₂ moleküllerini birleştirerek toksik NOₓ gazları oluşturur.</li><li>C Şıkkı Doğrudur: Boşta çalışma gerilimi nedeniyle elektrot değişimi esnasında temas elektrik çarpması riski yaratır.</li><li>D Şıkkı Doğrudur: Sıçrayan erimiş çapak parçacıkları 10-15 metre yarıçapındaki tutuşabilir alanlara ulaşabilir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 169 (Kişisel göz koruması - Kaynakçılık için filtreler).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Elektrik ark kaynağında kaynak akımı (amper) arttıkça ark plazmasının sıcaklığı, parlaklığı ve ortama yaydığı optik radyasyon kütlesel olarak artar. Bu nedenle yüksek amperlerde gözü korumak için DAHA KOYU filtre camları kullanılır. "Amper arttıkça açık renkli cam kullanılır" ifadesi optik fizik ve iş hijyeni ilkelerine tamamen <u>aykırıdır</u>.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Elektrik arkı geniş bir spektrumda ultraviyole ve kızılötesi ışınım yayar.</li><li>B Şıkkı Doğrudur: Yüksek ark sıcaklığı havadaki N₂ ve O₂ moleküllerini birleştirerek toksik NOₓ gazları oluşturur.</li><li>C Şıkkı Doğrudur: Boşta çalışma gerilimi nedeniyle elektrot değişimi esnasında temas elektrik çarpması riski yaratır.</li><li>D Şıkkı Doğrudur: Sıçrayan erimiş çapak parçacıkları 10-15 metre yarıçapındaki tutuşabilir alanlara ulaşabilir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 169 (Kişisel göz koruması - Kaynakçılık için filtreler).</p>'
       },
       {
         n: 4,
@@ -606,40 +586,40 @@ const TESTS = [
         options: {
           A: "Lazer odak noktasındaki aşırı yüksek enerji yoğunluğu, malzemenin aniden buharlaşmasına ve yüksek konsantrasyonda ince metal dumanı oluşmasına neden olur.",
           B: "Doğrudan veya yansıyan lazer ışını, göze ulaşması halinde kornea ve retinada kalıcı körlüğe yol açabilecek termal hasar oluşturur.",
-          C: "Lazer kaynak sistemleri dalga boylarına göre sınıflandırılır ve Sınıf 4 (Class 4) lazerler hem doğrudan hem de dağılmış yansımalarda cilt ve göz için aşırı tehlikelidir.",
-          D: "Lazer demet kaynağında kullanılan lazer ışınımı İyonlaştırıcı Radyasyon (X-ışını, Gama) kategorisinde yer aldığından çalışanlarda genetik mutasyona yol açar.",
-          E: "Lazer kaynak kapalı hücreleri (enclosure), lazer ışınının dışarıya sızmasını engelleyecek interlock (güvenlik kilidi) sistemleriyle donatılmalıdır."
+          C: "Lazer kaynak sistemleri dalga boylarına göre sınıflandırılır ve Sınıf 4 lazerler hem doğrudan hem de dağılmış yansımalarda cilt ve göz için aşırı tehlikelidir.",
+          D: "Lazer demet kaynağında kullanılan lazer ışınımı iyonlaştırıcı radyasyon kategorisinde yer aldığından çalışanlarda genetik mutasyona yol açar.",
+          E: "Lazer kaynak kapalı hücreleri, lazer ışınının dışarıya sızmasını engelleyecek interlock güvenlik kilidi sistemleriyle donatılmalıdır."
         },
         answer: "D",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Lazer ışınımı, elektromanyetik spektrumun görünür ışık veya kızılötesi (IR) bölgesinde yer alan İyonlaştırıcı Olmayan Radyasyon (Non-ionizing radiation) türüdür. X-ışınları veya Gama ışınları gibi hücresel iyonizasyon yapan ve DNA yapısını doğrudan kırarak genetik mutasyona yol açan iyonlaştırıcı radyasyon sınıfına girmez. Lazerin ana tehlikesi hücresel iyonizasyon değil, termal ve optik doku yıkımıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Lazer odağındaki yüksek enerji malzemenin aniden buharlaşarak submikron ince duman açığa çıkarmasına neden olur.</li><li>B Şıkkı Doğrudur: Odaklanmış lazer ışını retina ve korneada anında geri dönüşsüz termal yanıklara ve körlüğe yol açar.</li><li>C Şıkkı Doğrudur: Sınıf 4 lazerler en yüksek risk grubundadır, dağılmış yansımaları bile tehlikelidir.</li><li>E Şıkkı Doğrudur: Hücre kapıları açıldığında lazeri anında kesen interlock emniyet kilitleri zorunludur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 60825-1 (Lazer ürünlerinin güvenliği).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Lazer ışınımı, elektromanyetik spektrumun görünür ışık veya kızılötesi bölgesinde yer alan İyonlaştırıcı Olmayan Radyasyon türüdür. X-ışınları veya Gama ışınları gibi hücresel iyonizasyon yapan ve DNA yapısını doğrudan kırarak genetik mutasyona yol açan iyonlaştırıcı radyasyon sınıfına girmez. Lazerin ana tehlikesi hücresel iyonizasyon değil, termal ve optik doku yıkımıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Lazer odağındaki yüksek enerji malzemenin aniden buharlaşarak ince duman açığa çıkarmasına neden olur.</li><li>B Şıkkı Doğrudur: Odaklanmış lazer ışını retina ve korneada anında geri dönüşsüz termal yanıklara yol açar.</li><li>C Şıkkı Doğrudur: Sınıf 4 lazerler en yüksek risk grubundadır, dağılmış yansımaları bile tehlikelidir.</li><li>E Şıkkı Doğrudur: Hücre kapıları açıldığında lazeri anında kesen interlock emniyet kilitleri zorunludur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 60825-1 (Lazer ürünlerinin güvenliği).</p>'
       },
       {
         n: 5,
         topic: "Bölüm 1 · Elektron Demeti Kaynağı (EBW) Radyasyon Riski",
         text: "Havacılık ve uzay sanayiinde kullanılan Elektron Demeti Kaynağı (EBW) yönteminde, yüksek voltaj altında hızlandırılmış elektronlar vakum odası içerisindeki iş parçasına çarptırılarak kinetik enerji ısı enerjisine dönüştürülmektedir. Bu proses esnasında karşılaşılan İSG risk parametreleri değerlendirildiğinde, aşağıdakilerden hangisi Elektron Demeti Kaynağına özgü en kritik tehlike ve alınması gereken emniyet tedbiridir?",
         options: {
-          A: "Yüksek hızlı elektronların metal hedefe çarpması sonucu yan ürün olarak ikincil X-ışınları (Röntgen radyasyonu) oluşur; bu nedenle çalışma odası kurşun zırhla kaplanmalıdır.",
-          B: "Vakum ortamı nedeniyle sistemde yüksek miktarda patron tipi patlayıcı gaz birikimi olur ve sürekli havalandırma yapılmalıdır.",
+          A: "Yüksek hızlı elektronların metal hedefe çarpması sonucu yan ürün olarak ikincil X-ışınları oluşur; bu nedenle çalışma odası kurşun zırhla kaplanmalıdır.",
+          B: "Vakum ortamı nedeniyle sistemde yüksek miktarda patlayıcı gaz birikimi olur ve sürekli havalandırma yapılması gerekir.",
           C: "Elektron demeti kaynağında açık ark oluştuğundan operatörün EN 175 standardına uygun kaynakçı maskesi takması yeterlidir.",
-          D: "Proseste kullanılan yüksek basınçlı aseton gazı vakum odasından sızarak ortamda patlayıcı atmosfer (ATEX) oluşturur.",
-          E: "Vakum odasının aniden basınçlandırılması durumunda açığa çıkan yüksek desibeldeki ultrasonik ses dalgaları işitme kaybına yol açar."
+          D: "Proseste kullanılan yüksek basınçlı aseton gazı vakum odasından sızarak ortamda patlayıcı atmosfer oluşturur ve tehlike yaratır.",
+          E: "Vakum odasının aniden basınçlandırılması durumunda açığa çıkan yüksek desibeldeki ses dalgaları işitme kaybına yol açar."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Elektron Demeti Kaynağında (EBW) yüksek voltajla (100-200 kV) hızlandırılan elektronlar metal iş parçasına çarptığında aniden yavaşlar. Bu ani ivme değişimi fiziğin temel kurallarından biri olan Bremsstrahlung (Frenleme) Radyasyonunu doğurur ve ortama ikincil iyonlaştırıcı X-ışınları (Röntgen ışınımı) yayılır. Bu sebeple EBW odaları ve gözetleme pencereleri kurşun zırhla veya eşdeğer kurşun camlarla koruma altına alınmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: İşlemler yüksek vakum altında (10⁻⁴ mbar) yürütüldüğünden patron tipi gaz birikimi kurgusu tamamen mantıksızdır.</li><li>C Şıkkı <u>Yanlıştır</u>: Vakum hücresi içerisinde açık atmosferik ark oluşmaz; standart maske X-ışınlarına karşı koruma sağlamaz.</li><li>D Şıkkı <u>Yanlıştır</u>: Vakum ortamında aseton gazı kullanılmaz, ATEX kurgusu bu proses için geçersizdir.</li><li>E Şıkkı <u>Yanlıştır</u>: Vakum odasında hava molekülü bulunmadığından ses dalgaları yayılamaz; ultrasonik ses patlaması fiziksel olarak imkansızdır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Radyasyon Güvenliği Yönetmeliği &amp; TS EN ISO 14744.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Elektron Demeti Kaynağında (EBW) yüksek voltajla hızlandırılan elektronlar metal iş parçasına çarptığında aniden yavaşlar. Bu ani ivme değişimi fiziğin temel kurallarından biri olan Bremsstrahlung (Frenleme) Radyasyonunu doğurur ve ortama ikincil iyonlaştırıcı X-ışınları yayılır. Bu sebeple EBW odaları ve gözetleme pencereleri kurşun zırhla veya eşdeğer kurşun camlarla koruma altına alınmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: İşlemler yüksek vakum altında yürütüldüğünden patlayıcı gaz birikimi kurgusu mantıksızdır.</li><li>C Şıkkı <u>Yanlıştır</u>: Vakum hücresi içerisinde açık atmosferik ark oluşmaz; standart maske X-ışınlarına karşı koruma sağlamaz.</li><li>D Şıkkı <u>Yanlıştır</u>: Vakum ortamında aseton gazı kullanılmaz, ATEX kurgusu bu proses için geçersizdir.</li><li>E Şıkkı <u>Yanlıştır</u>: Vakum odasında hava molekülü bulunmadığından ses dalgaları yayılamaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Radyasyon Güvenliği Yönetmeliği &amp; TS EN ISO 14744.</p>'
       },
       {
         n: 6,
         topic: "Bölüm 2 · Metal Buharı Humması (Galvanizli Malzeme Kaynağı)",
         text: "Bir çelik konstrüksiyon fabrikasında galvaniz kaplı (çinko çeperli) boruların örtülü elektrot ark kaynağı ile birleştirilmesi işleminde çalışan bir kaynak operatörü; vardiya sonuna doğru titreme, yüksek ateş, kas ağrıları, ağızda metalik tat, bulantı ve halsizlik şikayetleriyle işyeri hekimine başvurmuştur. Tıbbi değerlendirmede semptomların kaynak dumanı solunmasına bağlı geliştiği saptanmıştır. Bu tabloyu oluşturan klinik durum ve etken madde ile ilgili aşağıdakilerden hangisi doğrudur?",
         options: {
-          A: "Tablo, galvaniz kaplamadaki Çinko (Zn) buharının solunması sonucu oluşan akut \"Metal Buharı Humması\"dır (Metal Fume Fever).",
-          B: "Hastalık, çelik içerisindeki Kurşun (Pb) elementinin neden olduğu kronik Satürnizasyon zehirlenmesidir.",
-          C: "Tablo, ark ışığının cilde teması sonucu oluşan akut eritem ve sistemik toksisite reaksiyonudur.",
-          D: "Durum, kaplamadaki Kadmiyum (Cd) maddesinin akciğerde oluşturduğu kalıcı Silikozis fibrozis hastalığıdır.",
+          A: "Tablo, galvaniz kaplamadaki Çinko buharının solunması sonucu oluşan akut karakterli Metal Buharı Humması tablosudur.",
+          B: "Hastalık, çelik içerisindeki Kurşun elementinin neden olduğu kronik karakterli Satürnizasyon zehirlenmesidir.",
+          C: "Tablo, ark ışığının cilde teması sonucu oluşan akut eritem ve buna eşlik eden sistemik toksisite reaksiyonudur.",
+          D: "Durum, kaplamadaki Kadmiyum maddesinin akciğerde oluşturduğu kalıcı Silikozis fibrozis hastalığı tablosudur.",
           E: "Şikayetler, kaynak esnasında açığa çıkan Ozon gazının kan alyuvarlarını yıkmasıyla oluşan akut hemoliz krizidir."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Galvanizli (çinko kaplı) metallerin kaynağında çinko 907°C\'de buharlaşır ve havada hızla çinko oksit (ZnO) dumanına dönüşür. Bu dumanın solunması, maruziyetten 4-12 saat sonra klinik tabloda "Metal Buharı Humması" (Metal Fume Fever) olarak bilinen titreme, yüksek ateş, kas ağrısı, bulantı ve ağızda metalik tat ile seyreden akut toksikolojik reaksiyonu başlatır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Satürnizasyon kronik kurşun zehirlenmesidir; senaryodaki galvaniz (çinko) tablosuna uymaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Olay ciltteki optik radyasyon yanığı değil, dumanın sistemik solunması reaksiyonudur.</li><li>D Şıkkı <u>Yanlıştır</u>: Kadmiyum akciğerde Silikozis yapmaz (silikozis serbest kristalin kuvars tozu ile olur).</li><li>E Şıkkı <u>Yanlıştır</u>: Şikayetlerin sebebi ozon gazının hemoliz krizi yaratması değildir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Kanserojen veya Mutajen Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Galvanizli (çinko kaplı) metallerin kaynağında çinko 907°C\'de buharlaşır ve havada hızla çinko oksit dumanına dönüşür. Bu dumanın solunması, maruziyetten 4-12 saat sonra klinik tabloda "Metal Buharı Humması" olarak bilinen titreme, yüksek ateş, kas ağrısı, bulantı ve ağızda metalik tat ile seyreden akut toksikolojik reaksiyonu başlatır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Satürnizasyon kronik kurşun zehirlenmesidir; senaryodaki galvaniz tablosuna uymaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Olay ciltteki optik radyasyon yanığı değil, dumanın sistemik solunması reaksiyonudur.</li><li>D Şıkkı <u>Yanlıştır</u>: Kadmiyum akciğerde Silikozis yapmaz (silikozis serbest kuvars tozu ile olur).</li><li>E Şıkkı <u>Yanlıştır</u>: Şikayetlerin sebebi ozon gazının hemoliz krizi yaratması değildir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Kanserojen veya Mutajen Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik.</p>'
       },
       {
         n: 7,
@@ -648,12 +628,12 @@ const TESTS = [
         options: {
           A: "Ozon (O₃): Elektrik arkından yayılan UV ışınlarının atmosferik oksijeni parçalamasıyla oluşur; akciğerde ödem ve iritasyona neden olur.",
           B: "Azot Dioksit (NO₂): Hava azotu ve oksijeninin yüksek ark sıcaklığında birleşmesiyle oluşur; derin solunum yollarını tahriş eder.",
-          C: "Fosgen (COCl₂): Kaynak öncesi parçada kalan trikloretilen vb. klorlu solventlerin UV ışını altında parçalanmasıyla oluşan, son derece toksik ve ölümcül bir gazdır.",
+          C: "Fosgen (COCl₂): Kaynak öncesi parçada kalan trikloretilen gibi klorlu solventlerin UV ışını altında parçalanmasıyla oluşan ölümcül gazdır.",
           D: "Karbonmonoksit (CO): Koruyucu gaz olarak kullanılan CO₂'nin ark sıcaklığında ayrışmasıyla oluşur; doku hipoksisine yol açar.",
           E: "Argon (Ar): Toksik etkisi çok yüksek bir gaz olup, solunduğunda doğrudan merkezi sinir sistemini felç ederek anında öldürür."
         },
         answer: "E",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Argon (Ar) helyum gibi soy (asal) bir gazdır. Toksikolojik açıdan zehirli veya kimyasal olarak reaktif değildir. Argonun İSG açısından ana tehlikesi, havadan ağır olması (d ≈ 1,38) sebebiyle kapalı ortamlarda veya çukurlarda birikerek atmosferik oksijenin yerini alması ve çalışanı boğmasıdır (Basit Boğucu Gaz). "Doğrudan merkezi sinir sistemini felç eden toksik gaz" tanımı <u>yanlıştır</u>.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Ozon (O₃) UV ışınının oksijeni parçalamasıyla oluşur ve akciğer ödemi yapar.</li><li>B Şıkkı Doğrudur: Azot dioksit (NO₂) ark sıcaklığında oluşur ve derin solunum yollarını tahriş eder.</li><li>C Şıkkı Doğrudur: Klorlu solventlerin UV bozunması sonucu ölümcül Fosgen (COCl₂) gazı oluşur.</li><li>D Şıkkı Doğrudur: CO₂ gazının ısı ile parçalanması sonucu Karbonmonoksit (CO) oluşur ve hücresel hipoksi yaratır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Kimyasal Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Argon (Ar) helyum gibi soy (asal) bir gazdır. Toksikolojik açıdan zehirli veya kimyasal olarak reaktif değildir. Argonun İSG açısından ana tehlikesi, havadan ağır olması sebebiyle kapalı ortamlarda birikerek atmosferik oksijenin yerini alması ve çalışanı boğmasıdır. "Doğrudan merkezi sinir sistemini felç eden toksik gaz" tanımı <u>yanlıştır</u>.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Ozon (O₃) UV ışınının oksijeni parçalamasıyla oluşur ve akciğer ödemi yapar.</li><li>B Şıkkı Doğrudur: Azot dioksit (NO₂) ark sıcaklığında oluşur ve derin solunum yollarını tahriş eder.</li><li>C Şıkkı Doğrudur: Klorlu solventlerin UV bozunması sonucu ölümcül Fosgen (COCl₂) gazı oluşur.</li><li>D Şıkkı Doğrudur: CO₂ gazının ısı ile parçalanması sonucu Karbonmonoksit (CO) oluşur ve hücresel hipoksi yaratır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Kimyasal Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik.</p>'
       },
       {
         n: 8,
@@ -667,133 +647,133 @@ const TESTS = [
           E: "Koryoretinal Yanık (Retina tabakasında termal tahribat) - Yüksek yoğunluklu görünür ışık ve IR-A ışınımı"
         },
         answer: "D",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Presbiyopi, yaşlanmaya bağlı olarak göz merceğinin uyum yeteneğini (esnekliğini) kaybetmesi neticesinde gelişen doğal bir fizyolojik kırma kusurudur. Kaynak ışığı, ultraviyole veya kızılötesi radyasyon maruziyeti ile doğrudan bir nedensellik ilişkisi yoktur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Fotokeratit (kaynak alması/kum hissi) UV-B ve UV-C ışınlarının kornea tabakasını yakmasıyla oluşur.</li><li>B Şıkkı Doğrudur: Camcı kataraktı veya kaynakçı kataraktı uzun süreli IR ve UV maruziyetinin mercek proteinlerini koagüle etmesiyle oluşur.</li><li>C Şıkkı Doğrudur: Eritem, UV radyasyonun cilt hücrelerinde oluşturduğu güneş yanığı benzeri birinci/ikinci derece yanıklardır.</li><li>E Şıkkı Doğrudur: Koryoretinal yanık, yüksek yoğunluklu görünür ışık ve yakın IR ışınlarının retinada yaptığı termal tahribattır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Çalışanların Radyasyon Risklerinden Korunmalarına Dair Yönetmelik.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Presbiyopi, yaşlanmaya bağlı olarak göz merceğinin uyum yeteneğini kaybetmesi neticesinde gelişen doğal bir fizyolojik kırma kusurudur. Kaynak ışığı, ultraviyole veya kızılötesi radyasyon maruziyeti ile doğrudan bir nedensellik ilişkisi yoktur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Fotokeratit, UV-B ve UV-C ışınlarının kornea tabakasını yakmasıyla oluşur.</li><li>B Şıkkı Doğrudur: Camcı kataraktı, uzun süreli IR ve UV maruziyetinin mercek proteinlerini koagüle etmesiyle oluşur.</li><li>C Şıkkı Doğrudur: Eritem, UV radyasyonun cilt hücrelerinde oluşturduğu güneş yanığı benzeri yanıklardır.</li><li>E Şıkkı Doğrudur: Koryoretinal yanık, yüksek yoğunluklu ışığın retinada yaptığı termal tahribattır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Çalışanların Radyasyon Risklerinden Korunmalarına Dair Yönetmelik.</p>'
       },
       {
         n: 9,
         topic: "Bölüm 2 · Elektrik Çarpması ve Ventriküler Fibrilasyon",
         text: "Açık saha yapım işlerinde alternatif akım (AC) kaynak makinesi ile örtülü elektrot kaynağı yapan bir kaynakçı, terli eldivenleriyle elektrot değiştirirken pensesindeki izolasyonu zedelenmiş kısma dokunmuş ve vücudundan akım geçmiştir. Elektrik çarpması ve insan fizyolojisi üzerindeki etkileri göz önüne alındığında, aşağıdakilerden hangisi bu kaza senaryosunda ortaya çıkabilecek en tehlikeli klinik durumdur?",
         options: {
-          A: "Akımın geçtiği noktalarda yalnızca deri yüzeyinde birinci derece yüzeysel yanıklar oluşması",
-          B: "Alternatif akımın kalpten geçmesi sonucu kalbin işleyişinin bozulmasıyla gelişen Ventriküler Fibrilasyon ve kardiyak arrest (kalp durması)",
-          C: "Kasların aniden kasılması sonucu kaynakçının geriye doğru sıçrayarak yaralanmadan kurtulması",
-          D: "Akımın sinir hatlarını uyararak vücut sıcaklığını aniden 42°C'ye çıkarması",
-          E: "Kan basıncının aniden düşmesiyle böbreklerde geçici süzme fonksiyonu kaybı yaşanması"
+          A: "Akımın geçtiği noktalarda yalnızca deri yüzeyinde birinci derece yüzeysel yanıklar oluşması ve geçici hassasiyet",
+          B: "Alternatif akımın kalpten geçmesi sonucu kalbin işleyişinin bozulmasıyla gelişen Ventriküler Fibrilasyon ve kardiyak arrest",
+          C: "Kasların aniden kasılması sonucu kaynakçının geriye doğru sıçrayarak yaralanmadan kurtulması ve çalışmaya devam etmesi",
+          D: "Akımın sinir hatlarını uyararak vücut sıcaklığını aniden 42°C'ye çıkarması ve yüksek ateş oluşması",
+          E: "Kan basıncının aniden düşmesiyle böbreklerde geçici süzme fonksiyonu kaybı yaşanması ve idrar azalması"
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Elektrik ark kaynağında kullanılan Alternatif Akım (AC), özellikle 50 Hz şebeke frekansında insan vücudundan geçtiğinde (sol el-sağ ayak veya el-el yoluyla kalpten akarak) kalbin miyokard uyarım düzenini bozar. Kalp kasının kontrolsüz, dağınık ve işlevsiz titremesi olan Ventriküler Fibrilasyonu tetikler. Bu durum kan pompalanmasını anında durdurarak kardiyak arreste ve dakikalar içinde ölüme sebep olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Yüzeysel yanıklar ikincil hasardır; kalbin fibrilasyona girmesinin yanında hayati tehdit seviyesi düşüktür.</li><li>C Şıkkı <u>Yanlıştır</u>: Alternatif akım kaslarda tetanik kasılmaya (kilitlenmeye) yol açarak çalışanın elektrot pensesini BIRAKAMAMASINA neden olur; geriye sıçrayarak kurtulmasını engeller.</li><li>D Şıkkı <u>Yanlıştır</u>: Akımın birincil öldürücü etkisi vücut sıcaklığını 42°C\'ye çıkarmak değildir.</li><li>E Şıkkı <u>Yanlıştır</u>: Böbrek yetmezliği elektrik şoklarında daha sonra (miyoglobinüri sonucu) gelişebilecek bir tablodur, ani ölümün ana nedeni değildir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Elektrik İç Tesisleri Yönetmeliği &amp; TS EN 60974-1.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Elektrik ark kaynağında kullanılan Alternatif Akım (AC), özellikle 50 Hz şebeke frekansında insan vücudundan geçtiğinde kalbin miyokard uyarım düzenini bozar. Kalp kasının kontrolsüz, dağınık ve işlevsiz titremesi olan Ventriküler Fibrilasyonu tetikler. Bu durum kan pompalanmasını anında durdurarak kardiyak arreste ve dakikalar içinde ölüme sebep olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Yüzeysel yanıklar ikincil hasardır; kalbin fibrilasyona girmesinin yanında hayati tehdit seviyesi düşüktür.</li><li>C Şıkkı <u>Yanlıştır</u>: Alternatif akım kaslarda tetanik kasılmaya yol açarak çalışanın elektrot pensesini bırakamamasına neden olur.</li><li>D Şıkkı <u>Yanlıştır</u>: Akımın birincil öldürücü etkisi vücut sıcaklığını 42°C\'ye çıkarmak değildir.</li><li>E Şıkkı <u>Yanlıştır</u>: Böbrek yetmezliği elektrik şoklarında daha sonra gelişebilecek bir tablodur, ani ölümün ana nedeni değildir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Elektrik İç Tesisleri Yönetmeliği &amp; TS EN 60974-1.</p>'
       },
       {
         n: 10,
         topic: "Bölüm 2 · Sıcak Çalışma Yangın Riski ve Kök Neden",
-        text: "Bir endüstriyel tesiste yürütülen sıcak çalışma (welding/hot work) sırasında, elektrik ark kaynağından sıçrayan kor halindeki çapak ve kıvılcımlar 12 metre uzaklıkta istiflenmiş olan çözücü solvent kaplarının üzerindeki jüt çuvallara düşmüştür. Başlayan örtülü yangın kısa sürede solvent kaplarının patlamasına yol açmıştır. Sıcak çalışma güvenlik protokolleri açısından bu kazanın kök nedeni aşağıdakilerden hangisidir?",
+        text: "Bir endüstriyel tesiste yürütülen sıcak çalışma sırasında, elektrik ark kaynağından sıçrayan kor halindeki çapak ve kıvılcımlar 12 metre uzaklıkta istiflenmiş olan çözücü solvent kaplarının üzerindeki jüt çuvallara düşmüştür. Başlayan örtülü yangın kısa sürede solvent kaplarının patlamasına yol açmıştır. Sıcak çalışma güvenlik protokolleri açısından bu kazanın kök nedeni aşağıdakilerden hangisidir?",
         options: {
-          A: "Sıcak çalışma alanındaki havalandırma fanlarının dönme hızının yetersiz olması",
-          B: "Kaynak yapılan iş parçasının topraklama kablosunun kesitinin küçük seçilmesi",
+          A: "Sıcak çalışma alanındaki havalandırma fanlarının dönme hızının yetersiz olması ve dumanın tahliye edilememesi",
+          B: "Kaynak yapılan iş parçasının topraklama kablosunun kesitinin küçük seçilmesi ve aşırı ısınarak kıvılcım üretmesi",
           C: "Sıcak çalışma yapılmadan önce 10-15 metre yarıçaplı alandaki tutuşabilir malzemelerin temizlenmemesi veya üzerlerinin yanmaz branda ile kapatılmaması",
-          D: "Kaynakçının anti-statik iş ayakkabısı giymemiş olması",
-          E: "Kaynak makinesinin giriş geriliminin 380V Trifaze olarak seçilmiş olması"
+          D: "Kaynakçının anti-statik iş ayakkabısı giymemiş olması ve ortamda statik elektrik birikmesi yaşanması",
+          E: "Kaynak makinesinin giriş geriliminin 380V trifaze olarak seçilmiş olması ve aşırı yüklenerek arızalanması"
         },
         answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Sıcak Çalışma (Hot Work) güvenlik protokollerinin ilk ve en temel kuralı; kaynak/kesme operasyonu başlamadan önce, çalışma merkezli 11 ila 15 metre yarıçaplı dairesel alandaki tüm tutuşabilir, parlayıcı, patlayıcı maddelerin temizlenmesi, bu mümkün değilse üzerlerinin onaylı yangın battaniyesi (welding blanket) veya yanmaz perdelerle eksiksiz kapatılmasıdır. Çapakların 12 metreye ulaşması ve yangın çıkarması doğrudan bu kuralın ihlal edildiğini gösterir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Havalandırma hızı kıvılcımın düşmesini engellemez, yangının kök nedeni değildir.</li><li>B Şıkkı <u>Yanlıştır</u>: Topraklama kablosu kesiti elektriksel devreyi ilgilendirir; fırlayan çapağın solventi yakmasının kök nedeni değildir.</li><li>D Şıkkı <u>Yanlıştır</u>: Anti-statik ayakkabı statik deşarj içindir; sıcak kor çapağının jüt çuvalı tutuşturmasıyla ilgisizdir.</li><li>E Şıkkı <u>Yanlıştır</u>: Makinenin trifaze beslenmesi kıvılcım fırlama fiziğini değiştirmez.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Binaların Yangından Korunması Hakkında Yönetmelik.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Sıcak Çalışma güvenlik protokollerinin ilk ve en temel kuralı; kaynak/kesme operasyonu başlamadan önce, çalışma merkezli 11 ila 15 metre yarıçaplı dairesel alandaki tüm tutuşabilir, parlayıcı, patlayıcı maddelerin temizlenmesi, bu mümkün değilse üzerlerinin onaylı yangın battaniyesi veya yanmaz perdelerle eksiksiz kapatılmasıdır. Çapakların 12 metreye ulaşması ve yangın çıkarması doğrudan bu kuralın ihlal edildiğini gösterir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Havalandırma hızı kıvılcımın düşmesini engellemez, yangının kök nedeni değildir.</li><li>B Şıkkı <u>Yanlıştır</u>: Topraklama kablosu kesiti elektriksel devreyi ilgilendirir; fırlayan çapağın solventi yakmasının kök nedeni değildir.</li><li>D Şıkkı <u>Yanlıştır</u>: Anti-statik ayakkabı statik deşarj içindir; sıcak kor çapağının jüt çuvalı tutuşturmasıyla ilgisizdir.</li><li>E Şıkkı <u>Yanlıştır</u>: Makinenin trifaze beslenmesi kıvılcım fırlama fiziğini değiştirmez.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Binaların Yangından Korunması Hakkında Yönetmelik.</p>'
       },
       {
         n: 11,
         topic: "Bölüm 3 · Lokal Cebri Havalandırma Emiş Hızı-Mesafe İlişkisi",
         text: "Lokal cebri havalandırma sistemlerinde emiş davlumbazının kaynak noktasına olan mesafesi ile dumanı yakalama etkinliği arasındaki ilişki akış dinamiği prensipleriyle açıklanmaktadır. Bir atölyede yapılan ölçümde, emiş davlumbazının kaynak noktasından olan mesafesi D birimden 2D birime çıkarıldığında, kaynak noktasındaki emiş hızı (V) ve duman yakalama performansı nasıl değişir?",
         options: {
-          A: "Emiş hızı yarıya (V/2) düşer, duman yakalama performansı etkilenmez.",
-          B: "Emiş hızı mesafenin karesiyle ters orantılı değiştiğinden yaklaşık olarak dörtte birine (V/4) düşer ve duman yakalama etkinliği dramatik şekilde azalır.",
-          C: "Emiş hızı doğrusal olarak artar, duman davlumbaza daha hızlı çekilir.",
-          D: "Emiş hızı sabit kalır ancak davlumbazın kapladığı alan genişlediği için yakalama verimi artar.",
-          E: "Emiş hızı mesafenin küpüyle (V/8) azalarak havalandırma motorunun yanmasına sebep olur."
+          A: "Emiş hızı yarıya düşer, duman yakalama performansı ise bu değişimden hiç etkilenmez ve aynı kalır.",
+          B: "Emiş hızı mesafenin karesiyle ters orantılı değiştiğinden yaklaşık olarak dörtte birine düşer ve duman yakalama etkinliği dramatik şekilde azalır.",
+          C: "Emiş hızı doğrusal olarak artar, duman davlumbaza daha hızlı çekilir ve yakalama verimi yükselir.",
+          D: "Emiş hızı sabit kalır ancak davlumbazın kapladığı alan genişlediği için yakalama verimi de artar.",
+          E: "Emiş hızı mesafenin küpüyle azalarak havalandırma motorunun yanmasına sebep olur ve sistem durur."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Akışkanlar mekaniği ve lokal cebri havalandırma matematiğine göre; flanşsız dairesel emiş davlumbazlarında kirletici kaynağındaki emiş hızı (V), kaynak noktasının davlumbaz ağzına olan mesafesinin (D) karesiyle ters orantılıdır (V ∝ Q / (10D² + A)). Dolayısıyla mesafe iki katına çıkarıldığında (D → 2D), kaynaktaki etkili emiş hızı yaklaşık dörtte birine (V/4) düşer. Bu durum dumanın davlumbaza çekilemeyerek ortama dağılmasına ve maruziyetin katlanmasına yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Değişim doğrusal (yarıya düşme) değildir; mesafenin karesiyle değişir.</li><li>C Şıkkı <u>Yanlıştır</u>: Mesafe arttıkça emiş hızı artmaz, azalır.</li><li>D Şıkkı <u>Yanlıştır</u>: Emiş hızı sabit kalmaz; mesafe arttıkça yakalama verimi düşer.</li><li>E Şıkkı <u>Yanlıştır</u>: Hız mesafenin küpüyle azalmaz ve bu durum fan motorunu yakmaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> ACGIH Industrial Ventilation: A Manual of Recommended Practice.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Akışkanlar mekaniği ve lokal cebri havalandırma matematiğine göre; flanşsız dairesel emiş davlumbazlarında kirletici kaynağındaki emiş hızı (V), kaynak noktasının davlumbaz ağzına olan mesafesinin karesiyle ters orantılıdır. Dolayısıyla mesafe iki katına çıkarıldığında, kaynaktaki etkili emiş hızı yaklaşık dörtte birine düşer. Bu durum dumanın davlumbaza çekilemeyerek ortama dağılmasına ve maruziyetin katlanmasına yol açar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Değişim doğrusal değildir; mesafenin karesiyle değişir.</li><li>C Şıkkı <u>Yanlıştır</u>: Mesafe arttıkça emiş hızı artmaz, azalır.</li><li>D Şıkkı <u>Yanlıştır</u>: Emiş hızı sabit kalmaz; mesafe arttıkça yakalama verimi düşer.</li><li>E Şıkkı <u>Yanlıştır</u>: Hız mesafenin küpüyle azalmaz ve bu durum fan motorunu yakmaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> ACGIH Industrial Ventilation: A Manual of Recommended Practice.</p>'
       },
       {
         n: 12,
         topic: "Bölüm 3 · Emiş Davlumbazının Solunum Konumuna Yerleştirilmesi Hatası",
-        text: "İSG Denetçisi bir imalat atölyesinde yaptığı gözlemde; akrobat kollu lokal emiş sistemine sahip bir kaynak atölyesinde, kaynakçının emiş emniyet karterini/davlumbazını doğrudan kaynak yaptığı noktanın üst kısmına, kendi yüzü ile kaynak noktası arasına gelecek şekilde konumlandırdığını tespit etmiştir. Bu hatalı konumlandırmanın yaratacağı temel İSG riski aşağıdakilerden hangisidir?",
+        text: "İSG Denetçisi bir imalat atölyesinde yaptığı gözlemde; akrobat kollu lokal emiş sistemine sahip bir kaynak atölyesinde, kaynakçının emiş davlumbazını doğrudan kaynak yaptığı noktanın üst kısmına, kendi yüzü ile kaynak noktası arasına gelecek şekilde konumlandırdığını tespit etmiştir. Bu hatalı konumlandırmanın yaratacağı temel İSG riski aşağıdakilerden hangisidir?",
         options: {
-          A: "Emiş kolu akım düzenini bozarak kaynak kalitesinin düşmesine neden olur.",
-          B: "Yükselen sıcak kaynak dumanı, dumanın emiş akıntısı nedeniyle tam da kaynakçının solunum konumundan (yüzünün önünden) geçerek davlumbaza çekilir ve maruziyet artar.",
-          C: "Davlumbazın yüksek vakum gücü kaynak pensesini çekerek el kazasına yol açar.",
-          D: "Akrobat kolun dikey konumda durması hat kablosunda yüksek voltaj indüklenmesine sebep olur.",
-          E: "Kirli hava filtreyi tıkadığı için fan motoru ters dönmeye başlar."
+          A: "Emiş kolu akım düzenini bozarak kaynak kalitesinin düşmesine ve nüfuziyet kaybına neden olur.",
+          B: "Yükselen sıcak kaynak dumanı, emiş akıntısı nedeniyle tam da kaynakçının solunum konumundan geçerek davlumbaza çekilir ve maruziyet artar.",
+          C: "Davlumbazın yüksek vakum gücü kaynak pensesini çekerek el kazasına ve kontrol kaybına yol açar.",
+          D: "Akrobat kolun dikey konumda durması hat kablosunda yüksek voltaj indüklenmesine sebep olur ve çarpma riski doğar.",
+          E: "Kirli hava filtreyi tıkadığı için fan motoru ters dönmeye başlar ve sistem tamamen arızalanır."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Akrobat kollu lokal emiş davlumbazı kaynakçının tam baş üstüne veya yüzü ile kaynak noktası arasına yerleştirilirse, dumanın doğal yükselme eğilimi emiş fanının vakum gücüyle birleşir. Sonuç olarak yükselen tüm toksik duman matrisi, doğrudan kaynakçının solunum bölgesinden (burun ve ağız çevresindeki hayali küreden) geçerek yukarı çekilir. Bu durum lokal havalandırma varlığına rağmen çalışanın maruziyetini en üst seviyeye çıkarır. Davlumbaz, dumanı kaynakçıdan UZAKLAŞTIRACAK şekilde, yan çapraz konuma yerleştirilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Davlumbazın konumu ark akımını bozarak ana İSG riskini kaynak kalitesine indirgemez.</li><li>C Şıkkı <u>Yanlıştır</u>: Lokasyon hatalı olsa da emiş davlumbazlarının vakumu metal pensesi çekecek bir mekanik kuvvet üretmez.</li><li>D Şıkkı <u>Yanlıştır</u>: Akrobat kolun dikey konumlanması kabloda voltaj indüklemez.</li><li>E Şıkkı <u>Yanlıştır</u>: Davlumbazın kaynakçının yüzü önünde durması fan motorunun ters dönmesine sebep olmaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Tozla Mücadele Yönetmeliği.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Akrobat kollu lokal emiş davlumbazı kaynakçının tam baş üstüne veya yüzü ile kaynak noktası arasına yerleştirilirse, dumanın doğal yükselme eğilimi emiş fanının vakum gücüyle birleşir. Sonuç olarak yükselen tüm toksik duman matrisi, doğrudan kaynakçının solunum bölgesinden geçerek yukarı çekilir. Bu durum lokal havalandırma varlığına rağmen çalışanın maruziyetini en üst seviyeye çıkarır. Davlumbaz, dumanı kaynakçıdan uzaklaştıracak şekilde yan çapraz konuma yerleştirilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Davlumbazın konumu ark akımını bozarak ana İSG riskini kaynak kalitesine indirgemez.</li><li>C Şıkkı <u>Yanlıştır</u>: Lokasyon hatalı olsa da emiş davlumbazlarının vakumu metal pensesi çekecek bir mekanik kuvvet üretmez.</li><li>D Şıkkı <u>Yanlıştır</u>: Akrobat kolun dikey konumlanması kabloda voltaj indüklemez.</li><li>E Şıkkı <u>Yanlıştır</u>: Davlumbazın kaynakçının yüzü önünde durması fan motorunun ters dönmesine sebep olmaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Tozla Mücadele Yönetmeliği.</p>'
       },
       {
         n: 13,
         topic: "Bölüm 3 · Genel (Seyreltme) Havalandırmanın Yetersizliği",
         text: "Kapalı bir üretim holünde genel havalandırma (seyreltme havalandırması) fanları çalıştırılmaktadır. Ancak kaynak yapılan istasyonlarda spesifik duman ölçümlerinde TWA sınır değerlerinin aşıldığı saptanmıştır. Genel havalandırmanın kaynak dumanı kontrolündeki sınırlılığı ve uygulanması gereken mühendislik yaklaşımı ile ilgili aşağıdakilerden hangisi doğrudur?",
         options: {
-          A: "Genel havalandırma toksik maddeleri kaynağından yakalamaz; ortam havasıyla seyreltir. Kaynak dumanı gibi ağır metal toksisitesi yüksek kirleticilerde asıl çözüm lokal cebri (kaynağında) emiş sistemleridir.",
-          B: "Genel havalandırma fanlarının üfleme yönü yukarıdan aşağıya doğru değiştirilirse lokal havalandırmaya gerek kalmaz.",
-          C: "Seyreltme havalandırması yalnızca yanıcı gazları uzaklaştırmada yetersizdir, metal dumanını tamamen bertaraf eder.",
-          D: "Genel havalandırmada kullanılan ortam sıcaklığı 0°C'ye düşürülürse duman çöker ve solunmaz.",
+          A: "Genel havalandırma toksik maddeleri kaynağından yakalamaz, ortam havasıyla seyreltir; ağır metal toksisitesi yüksek kirleticilerde asıl çözüm lokal cebri emiş sistemleridir.",
+          B: "Genel havalandırma fanlarının üfleme yönü yukarıdan aşağıya doğru değiştirilirse lokal havalandırmaya gerek kalmaz ve sorun çözülür.",
+          C: "Seyreltme havalandırması yalnızca yanıcı gazları uzaklaştırmada yetersizdir, metal dumanını ise tamamen bertaraf eder.",
+          D: "Genel havalandırmada kullanılan ortam sıcaklığı 0°C'ye düşürülürse duman çöker ve solunma riski ortadan kalkar.",
           E: "Lokal havalandırma sistemleri hava akımı yaratarak koruyucu gazı süpürdüğü için hiçbir kaynak yönteminde kesinlikle kullanılmamalıdır."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Genel havalandırma (seyreltme), ortama yayılan kirletici taze hava ile karıştırarak konsantrasyonu düşürme ilkesiyle çalışır. Ancak kaynak dumanı gibi ağır metaller (Cr⁺⁶, Ni, Pb, Cd) içeren oldukça toksik ve kanserojen partiküller henüz ortama yayılmadan, kaynağında (lokal cebri emişle) tutulmalıdır. Seyreltme havalandırması tek başına çalışan solunum bölgesindeki TWA sınır değerlerini düşürmede yetersiz kalır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Fan yönünün yukarıdan aşağıya değiştirilmesi dumanı çalışanın solunum konumuna bastırır ve durumu kötüleştirir.</li><li>C Şıkkı <u>Yanlıştır</u>: Seyreltme havalandırması metal dumanını tamamen bertaraf edemez.</li><li>D Şıkkı <u>Yanlıştır</u>: Çalışma ortamını 0°C\'ye düşürmek hem termal konfor mevzuatına aykırıdır hem de dumanın solunmasını engellemez.</li><li>E Şıkkı <u>Yanlıştır</u>: Lokal havalandırma doğru debide ayarlandığında koruyucu gazı bozmaz; kullanılması zorunludur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Kanserojen veya Mutajen Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Genel havalandırma (seyreltme), ortama yayılan kirletici taze hava ile karıştırarak konsantrasyonu düşürme ilkesiyle çalışır. Ancak kaynak dumanı gibi ağır metaller içeren oldukça toksik ve kanserojen partiküller henüz ortama yayılmadan, kaynağında (lokal cebri emişle) tutulmalıdır. Seyreltme havalandırması tek başına çalışan solunum bölgesindeki TWA sınır değerlerini düşürmede yetersiz kalır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Fan yönünün yukarıdan aşağıya değiştirilmesi dumanı çalışanın solunum konumuna bastırır ve durumu kötüleştirir.</li><li>C Şıkkı <u>Yanlıştır</u>: Seyreltme havalandırması metal dumanını tamamen bertaraf edemez.</li><li>D Şıkkı <u>Yanlıştır</u>: Çalışma ortamını 0°C\'ye düşürmek hem termal konfor mevzuatına aykırıdır hem de dumanın solunmasını engellemez.</li><li>E Şıkkı <u>Yanlıştır</u>: Lokal havalandırma doğru debide ayarlandığında koruyucu gazı bozmaz; kullanılması zorunludur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Kanserojen veya Mutajen Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik.</p>'
       },
       {
         n: 14,
         topic: "Bölüm 3 · Re-sirkülasyonlu Sistemlerde HEPA + Aktif Karbon Filtre",
         text: "Lokal havalandırma sisteminden çekilen dumanlı havanın temizlenerek tekrar atölye ortamına geri verildiği (re-sirkülasyon) kapalı devre iklimlendirme sistemlerinde, filtrelendirme teknolojileri son derece kritiktir. Kanserojen nitelikteki submikron kaynak partiküllerinin tutulması ve hava kalitesinin korunması için bu sistemlerde bulunması gereken standart filtre kombinasyonu aşağıdakilerden hangisidir?",
         options: {
-          A: "Yalnızca kaba toz tutucu yıkanabilir metal filtreler",
-          B: "Ön filtre (G4/F7) arkasına entegre edilmiş HEPA (H13/H14) ve gaz fazı için Aktif Karbon filtre kombinasyonu",
-          C: "Su perdesi tanklı santrifüj separatörler",
-          D: "Yalnızca elektrostatik çöktürücü plaka üniteleri",
-          E: "Siklon tipi toz tutucu mekanik separatörler"
+          A: "Yalnızca kaba toz tutucu yıkanabilir metal filtreler kullanılması hava kalitesi için yeterlidir.",
+          B: "Ön filtre arkasına entegre edilmiş HEPA ve gaz fazı için Aktif Karbon filtre kombinasyonu kullanılmalıdır.",
+          C: "Su perdesi tanklı santrifüj separatörlerin kullanılması submikron partikülleri tutmak için yeterlidir.",
+          D: "Yalnızca elektrostatik çöktürücü plaka ünitelerinin kullanılması hem partikül hem gazları tamamen tutar.",
+          E: "Siklon tipi toz tutucu mekanik separatörlerin kullanılması submikron dumanı tutmada son derece etkilidir."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak dumanı aerosolu 0,01 μm ile 1 μm arasında değişen solunabilir submikron partiküller barındırır. Kirli havanın temizlenerek ortama tekrar verildiği (re-sirküle edildiği) iklimlendirme ünitelerinde; iri taneleri tutan ön filtrelerin (G4/F7) ardına, %99,97 üzerisinde tutuculuk sağlayan HEPA (H13 veya H14) filtre yerleştirilmelidir. Ayrıca gaz fazındaki toksik gazları (NOₓ, O₃) yakalamak için Aktif Karbon filtre entegre edilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Yıkanabilir metal kaba filtreler mikron altı duman partiküllerini ve gazları tutamaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Su perdesi separatörleri ince metal dumanında gerekli süzme verimini sağlayamaz.</li><li>D Şıkkı <u>Yanlıştır</u>: Elektrostatik çöktürücüler gaz fazındaki kirleticileri tutmada yetersizdir, ozon üretebilir.</li><li>E Şıkkı <u>Yanlıştır</u>: Siklon separatörler sadece iri kaba tozlar içindir, submikron kaynak dumanını tutamaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 1822 (Yüksek verimli hava filtreleri - HEPA/ULPA).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak dumanı aerosolu 0,01 μm ile 1 μm arasında değişen solunabilir submikron partiküller barındırır. Kirli havanın temizlenerek ortama tekrar verildiği iklimlendirme ünitelerinde; iri taneleri tutan ön filtrelerin ardına, yüksek tutuculuk sağlayan HEPA filtre yerleştirilmelidir. Ayrıca gaz fazındaki toksik gazları yakalamak için Aktif Karbon filtre entegre edilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Yıkanabilir metal kaba filtreler mikron altı duman partiküllerini ve gazları tutamaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Su perdesi separatörleri ince metal dumanında gerekli süzme verimini sağlayamaz.</li><li>D Şıkkı <u>Yanlıştır</u>: Elektrostatik çöktürücüler gaz fazındaki kirleticileri tutmada yetersizdir, ozon üretebilir.</li><li>E Şıkkı <u>Yanlıştır</u>: Siklon separatörler sadece iri kaba tozlar içindir, submikron kaynak dumanını tutamaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 1822 (Yüksek verimli hava filtreleri - HEPA/ULPA).</p>'
       },
       {
         n: 15,
         topic: "Bölüm 3 · TWA Aşımında KKD Seçimi ve Yasal Uyum",
         text: "İş hijyeni laboratuvarı tarafından kaynak atölyesinde yapılan 8 saatlik kişisel maruziyet ölçümünde; ortamdaki kaynak dumanı partikül konsantrasyonu Zaman Ağırlıklı Ortalama (TWA) değerinin üzerinde çıkmıştır. İşveren İSG uzmanından acil önlem planı istemiştir. TWA sınır değerleri ve hijyen yönetimi ile ilgili aşağıdakilerden hangisi <u>yanlıştır</u>?",
         options: {
-          A: "TWA (Time Weighted Average), 8 saatlik vardiya süresince çalışanın maruz kaldığı madde konsantrasyonunun zaman ağırlıklı ortalamasıdır.",
-          B: "Ölçüm değerinin TWA sınırını aşması durumunda ilk olarak mühendislik kontrolleri (havalandırma, proses değişimi) devreye sokulmalıdır.",
-          C: "TWA değeri aşıldığında çalışanlara yalnızca standart bez toz maskesi verilmesi yasal uyum için yeterlidir.",
+          A: "TWA, 8 saatlik vardiya süresince çalışanın maruz kaldığı madde konsantrasyonunun zaman ağırlıklı ortalamasıdır.",
+          B: "Ölçüm değerinin TWA sınırını aşması durumunda ilk olarak mühendislik kontrolleri devreye sokulmalıdır.",
+          C: "TWA değeri aşıldığında çalışanlara yalnızca standart bez toz maskesi verilmesi yasal uyum için yeterlidir ve başka önlem gerekmez.",
           D: "Ölçümler çalışanın solunum bölgesinden (burun ve ağza 30 cm yarıçaplı hayali küre) alınmalıdır.",
-          E: "STEL (Short Term Exposure Limit) ise çalışanın 15 dakikalık sürede maruz kalabileceği azami sınır değerdir."
+          E: "STEL ise çalışanın 15 dakikalık sürede maruz kalabileceği azami sınır değerdir ve kısa süreli zirveleri kontrol eder."
         },
         answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Ölçüm sonuçlarının TWA sınır değerlerini aşması durumunda yasal olarak ilk devreye sokulması gereken hiyerarşi "Mühendislik Kontrolleri ve Toplu Koruma" adımlarıdır. Bakiye risk durumunda verilecek KKD ise asla basit bez toz maskesi olamaz. Bez toz maskeleri submikron boyutlu duman partiküllerini süzmez; en az FFP2/FFP3 sınıfı solunum koruyucular veya PAPR sistemleri verilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: TWA (8 saatlik Zaman Ağırlıklı Ortalama) tanımı tamamen doğrudur.</li><li>B Şıkkı Doğrudur: Sınır değer aşıldığında ilk mühendislik önlemlerine başvurulması yasal hiyerarşi kuralıdır.</li><li>D Şıkkı Doğrudur: Solunum bölgesi ölçüm numunesi tanımı (ağız/burun 30 cm küre) doğrudur.</li><li>E Şıkkı Doğrudur: STEL (15 dakikalık Kısa Süreli Maruziyet Sınır Değeri) tanımı doğrudur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Kimyasal Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Ölçüm sonuçlarının TWA sınır değerlerini aşması durumunda yasal olarak ilk devreye sokulması gereken hiyerarşi "Mühendislik Kontrolleri ve Toplu Koruma" adımlarıdır. Bakiye risk durumunda verilecek KKD ise asla basit bez toz maskesi olamaz. Bez toz maskeleri submikron boyutlu duman partiküllerini süzmez; en az FFP2/FFP3 sınıfı solunum koruyucular verilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: TWA (8 saatlik Zaman Ağırlıklı Ortalama) tanımı tamamen doğrudur.</li><li>B Şıkkı Doğrudur: Sınır değer aşıldığında ilk mühendislik önlemlerine başvurulması yasal hiyerarşi kuralıdır.</li><li>D Şıkkı Doğrudur: Solunum bölgesi ölçüm numunesi tanımı doğrudur.</li><li>E Şıkkı Doğrudur: STEL (15 dakikalık Kısa Süreli Maruziyet Sınır Değeri) tanımı doğrudur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Kimyasal Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik.</p>'
       },
       {
         n: 16,
         topic: "Bölüm 4 · Kaynak Filtre Camı DIN Skalası ve Amper İlişkisi",
-        text: "Bir kaynak atölyesinde yürütülen TIG (GTAW) ve MIG/MAG (GMAW) kaynak operasyonlarında çalışma amperleri değişmektedir. Amper değerine ve kaynak yöntemine göre seçilmesi gereken kaynak maskesi camı koyuluk dereceleri (DIN skalası) ile ilgili aşağıda verilen ilkelerden hangisi doğrudur?",
+        text: "Bir kaynak atölyesinde yürütülen TIG ve MIG/MAG kaynak operasyonlarında çalışma amperleri değişmektedir. Amper değerine ve kaynak yöntemine göre seçilmesi gereken kaynak maskesi camı koyuluk dereceleri (DIN skalası) ile ilgili aşağıda verilen ilkelerden hangisi doğrudur?",
         options: {
-          A: "Kaynak akımı (Amper) arttıkça açığa çıkan ışınım şiddeti artacağından, seçilen filtre camının DIN koyuluk numarası (şeffaflıktan koyuluğa) büyütülmelidir (Örn: DIN 9'dan DIN 13'e).",
+          A: "Kaynak akımı arttıkça açığa çıkan ışınım şiddeti artacağından, seçilen filtre camının DIN koyuluk numarası büyütülmelidir.",
           B: "TIG kaynağı düşük amperde yapılsa dahi açık arklı olduğu için daima en yüksek derece olan DIN 16 sabit cam kullanılmalıdır.",
-          C: "Akım türünün (DC veya AC) değişmesi filtre camı numarasını etkilemez, yalnızca maske dış plastik malzemesi değişir.",
+          C: "Akım türünün değişmesi filtre camı numarasını etkilemez, yalnızca maske dış plastik malzemesi değişir ve yeterlidir.",
           D: "Tüm kaynak yöntemlerinde standart olarak tek tip DIN 10 şeffaf cam kullanılması mevzuatça zorunludur.",
           E: "DIN filtre camı numarası büyüdükçe camın ışık geçirgenliği artar ve ortam daha parlak görünür."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak işleminde amper değeri (akım şiddeti) arttıkça ark plazmasının sıcaklığı ve ortama yaydığı optik radyasyonun (UV ve IR) foton yoğunluğu artar. Çalışanın gözünü kornea ve retina yanıklarından korumak için kullanılan koruyucu filtre camının koyuluk derecesi (DIN skala numarası) amper artışına paralel olarak büyütülmelidir (örneğin 100 A için DIN 10 kullanılırken, 300 A için DIN 12 veya DIN 13 seçilmelidir).</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: TIG kaynağında amper düşükse en koyu olan DIN 16 kullanılması görüşü tamamen kapatır ve kaza riskini artırır.</li><li>C Şıkkı <u>Yanlıştır</u>: Akım türü ve yöntemin ark kararlılığı filtre camı seçim parametrelerini doğrudan etkiler.</li><li>D Şıkkı <u>Yanlıştır</u>: Tüm yöntemler için tek tip DIN 10 cam kullanılması yüksek amperli işlerde körleşmeye sebep olur.</li><li>E Şıkkı <u>Yanlıştır</u>: DIN skala numarası büyüdükçe camın ışık geçirgenliği azalır ve cam koyulaşır; parlaklık artmaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 169 (Kişisel göz koruması - Filtreler).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak işleminde amper değeri (akım şiddeti) arttıkça ark plazmasının sıcaklığı ve ortama yaydığı optik radyasyonun foton yoğunluğu artar. Çalışanın gözünü kornea ve retina yanıklarından korumak için kullanılan koruyucu filtre camının koyuluk derecesi (DIN skala numarası) amper artışına paralel olarak büyütülmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: TIG kaynağında amper düşükse en koyu olan DIN 16 kullanılması görüşü tamamen kapatır ve kaza riskini artırır.</li><li>C Şıkkı <u>Yanlıştır</u>: Akım türü ve yöntemin ark kararlılığı filtre camı seçim parametrelerini doğrudan etkiler.</li><li>D Şıkkı <u>Yanlıştır</u>: Tüm yöntemler için tek tip DIN 10 cam kullanılması yüksek amperli işlerde körleşmeye sebep olur.</li><li>E Şıkkı <u>Yanlıştır</u>: DIN skala numarası büyüdükçe camın ışık geçirgenliği azalır ve cam koyulaşır; parlaklık artmaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 169 (Kişisel göz koruması - Filtreler).</p>'
       },
       {
         n: 17,
         topic: "Bölüm 4 · ADF Otomatik Kararan Maske Arıza Senaryosu",
-        text: "Ağır sanayi imalatında kullanılan Otomatik Kararan Kaynak Maskeleri (ADF - Auto Darkening Filter), kaynak arkı çaktığı anda milisaniyeler içerisinde şeffaf durumdan ayarlanan koyuluk derecesine geçmektedir. ADF maskelerin optik radyasyon ve kullanım güvenliği parametreleriyle ilgili aşağıdakilerden hangisi <u>yanlıştır</u>?",
+        text: "Ağır sanayi imalatında kullanılan Otomatik Kararan Kaynak Maskeleri (ADF), kaynak arkı çaktığı anda milisaniyeler içerisinde şeffaf durumdan ayarlanan koyuluk derecesine geçmektedir. ADF maskelerin optik radyasyon ve kullanım güvenliği parametreleriyle ilgili aşağıdakilerden hangisi <u>yanlıştır</u>?",
         options: {
-          A: "ADF maskeler kapalı (karanlık değil) durumdayken dahi Ultraviyole (UV) ve Kızılötesi (IR) ışınları sürekli olarak filtreleme yeteneğine sahip olmalıdır.",
-          B: "Maske üzerindeki optik sensörlerin önünün çapak veya kirle kapanması, kararma süresinde gecikmeye (switching time hatasına) yol açarak gözün ark ışığını almasına neden olur.",
+          A: "ADF maskeler kapalı durumdayken dahi Ultraviyole ve Kızılötesi ışınları sürekli olarak filtreleme yeteneğine sahip olmalıdır.",
+          B: "Maske üzerindeki optik sensörlerin önünün çapak veya kirle kapanması, kararma süresinde gecikmeye yol açarak gözün ark ışığını almasına neden olur.",
           C: "ADF maskelerde pil bittiğinde veya sensör arızalandığında maske otomatik olarak en koyu moda geçerek çalışanı %100 korur, çalışma aksamaz.",
-          D: "Tepkime süresi (switching time) standartlara göre oda sıcaklığında 0,1 milisaniyenin altında olmalıdır.",
+          D: "Tepkime süresi standartlara göre oda sıcaklığında 0,1 milisaniyenin altında olmalıdır ve bu süre hayati önem taşır.",
           E: "ADF filtre sınıflandırması EN 379 standardına göre optik sınıf, ışık saçılması, homojenlik ve açısal bağımlılık kriterlerine göre derecelendirilir."
         },
         answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Otomatik Kararan Kaynak Maskelerinde (ADF) pil tükendiğinde veya optik sensör devresi arızalandığında likit kristal ekran kararma yapamaz ve en açık (şeffaf - DIN 3/4) durumda çakılı kalabilir. Bu durumda operatör ark çaktığında maskenin karardığını varsayarak çalışmaya devam ederse doğrudan göz kataraktı ve fotokeratit riskiyle karşı karşıya kalır. "Otomatik kaza engeller, karanlık moda geçer" ifadesi teknik olarak <u>yanlıştır</u>.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: ADF kasetleri kararma yapmasa dahi üzerindeki kalıcı UV/IR filtresi sayesinde zararlı radyasyonu keser.</li><li>B Şıkkı Doğrudur: Sensörlerin çapakla kapanması tepkime süresini geciktirir ve gözü açıkta bırakır.</li><li>D Şıkkı Doğrudur: Standartlara göre anahtarlama süresi (switching time) 0,1 milisaniyenin altında olmalıdır.</li><li>E Şıkkı Doğrudur: EN 379 normu optik sınıflandırmayı 4 temel parametreye göre yapar.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 379 (Otomatik kararan kaynak filtreleri).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Otomatik Kararan Kaynak Maskelerinde (ADF) pil tükendiğinde veya optik sensör devresi arızalandığında likit kristal ekran kararma yapamaz ve en açık durumda çakılı kalabilir. Bu durumda operatör ark çaktığında maskenin karardığını varsayarak çalışmaya devam ederse doğrudan göz kataraktı ve fotokeratit riskiyle karşı karşıya kalır. "Otomatik kaza engeller, karanlık moda geçer" ifadesi teknik olarak <u>yanlıştır</u>.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: ADF kasetleri kararma yapmasa dahi üzerindeki kalıcı UV/IR filtresi sayesinde zararlı radyasyonu keser.</li><li>B Şıkkı Doğrudur: Sensörlerin çapakla kapanması tepkime süresini geciktirir ve gözü açıkta bırakır.</li><li>D Şıkkı Doğrudur: Standartlara göre anahtarlama süresi 0,1 milisaniyenin altında olmalıdır.</li><li>E Şıkkı Doğrudur: EN 379 normu optik sınıflandırmayı 4 temel parametreye göre yapar.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 379 (Otomatik kararan kaynak filtreleri).</p>'
       },
       {
         n: 18,
@@ -801,27 +781,27 @@ const TESTS = [
         text: "Kaynak operatörlerinin gövde, kol ve el korumasında kullanılan deri önlük, kaynakçı kolluğu ve uzun konçlu eldivenlerin malzeme standartları ve tasarım özellikleri incelenmektedir. EN 12477 (Kaynakçılar için koruyucu eldivenler) ve EN 407 standartları kapsamında aşağıdakilerden hangisi <u>yanlış</u> bir bilgidir?",
         options: {
           A: "Kaynakçı eldivenlerinin dikişleri yüksek sıcaklığa ve sıçramalara dayanıklı Kevlar/Aramid ipliklerle dikilmiş olmalıdır.",
-          B: "Tip A eldivenler yüksek termal koruma sağlarken daha az el becerisi sunar; Tip B eldivenler ise (Örn. TIG kaynağı için) yüksek el becerisi ancak daha düşük termal koruma sunar.",
+          B: "Tip A eldivenler yüksek termal koruma sağlarken daha az el becerisi sunar; Tip B eldivenler ise yüksek el becerisi ancak daha düşük termal koruma sunar.",
           C: "Deri önlük ve kolluklar, erimiş metal sıçramalarının kıvrımlarda birikmesini engellemek için cebi ve belirgin kıvrımı olmayan düz yapıda tasarlanmalıdır.",
           D: "Kaynakçı eldivenleri ıslandığında veya terlediğinde elektriksel yalıtkanlık özelliğini artırır, bu nedenle ıslak kullanılması önerilir.",
-          E: "Deri malzemeler doğal krom-tabaklanmış (split leather) yapısıyla tutuşmaya ve erimeye karşı yüksek direnç gösterir."
+          E: "Deri malzemeler doğal krom-tabaklanmış yapısıyla tutuşmaya ve erimeye karşı yüksek direnç göstererek çalışanı korur."
         },
         answer: "D",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Deri önlükler ve deri eldivenler ıslandığında, ıslandığı suyun veya terin içerdiği tuzlar sebebiyle elektriksel iletkenlik kazanır. Islak eldiven giyen bir kaynakçının elektrik akımına kapılma riski son derece yüksektir. "Eldiven ıslandığında yalıtkanlığı artar" ifadesi fiziksel olarak tamamen <u>yanlıştır</u>; deri donanımlar daima kuru tutulmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Eldiven dikişleri erimeyen ve kopmayan Kevlar (Aramid) ipliklerle yapılmalıdır.</li><li>B Şıkkı Doğrudur: EN 12477\'ye göre Tip A yüksek termal/düşük hassasiyet, Tip B ise yüksek el becerisi/düşük termal koruma sunar.</li><li>C Şıkkı Doğrudur: Deri kıyafetlerde çapak birikmesini önlemek için açık cep bulunmamalıdır.</li><li>E Şıkkı Doğrudur: Yarma deri (split leather) yapısı gereği erimelere ve kıvılcımlara dayanıklıdır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 12477 (Kaynakçılar için koruyucu eldivenler).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Deri önlükler ve deri eldivenler ıslandığında, suyun veya terin içerdiği tuzlar sebebiyle elektriksel iletkenlik kazanır. Islak eldiven giyen bir kaynakçının elektrik akımına kapılma riski son derece yüksektir. "Eldiven ıslandığında yalıtkanlığı artar" ifadesi fiziksel olarak tamamen <u>yanlıştır</u>; deri donanımlar daima kuru tutulmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Eldiven dikişleri erimeyen ve kopmayan Kevlar ipliklerle yapılmalıdır.</li><li>B Şıkkı Doğrudur: EN 12477\'ye göre Tip A yüksek termal/düşük hassasiyet, Tip B ise yüksek el becerisi/düşük termal koruma sunar.</li><li>C Şıkkı Doğrudur: Deri kıyafetlerde çapak birikmesini önlemek için açık cep bulunmamalıdır.</li><li>E Şıkkı Doğrudur: Yarma deri yapısı gereği erimelere ve kıvılcımlara dayanıklıdır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 12477 (Kaynakçılar için koruyucu eldivenler).</p>'
       },
       {
         n: 19,
         topic: "Bölüm 4 · Sentetik Kıyafet Tehlikesi ve Kaynakçı Botu",
-        text: "İSG Denetçisi saha incelemesinde bir kaynakçının ayağında sentetik kumaşlı sporsu iş ayakkabısı ve üzerinde %100 polyester sentetik iş elbisesi olduğunu tespit etmiştir. Bu durumun yaratacağı hayati risk faktörleri ve standart kaynakçı ayakkabı/kıyafet gereksinimleri ile ilgili aşağıdakilerden hangisi doğrudur?",
+        text: "İSG Denetçisi saha incelemesinde bir kaynakçının ayağında sentetik kumaşlı spor iş ayakkabısı ve üzerinde %100 polyester sentetik iş elbisesi olduğunu tespit etmiştir. Bu durumun yaratacağı hayati risk faktörleri ve standart kaynakçı ayakkabı/kıyafet gereksinimleri ile ilgili aşağıdakilerden hangisi doğrudur?",
         options: {
-          A: "Sentetik kıyafetler sıcak çapak temasıyla aniden eriyerek çalışanın cildine yapışır ve derin 3. derece yanıklara yol açar; bu nedenle %100 pamuklu/alev almaz (proboban) veya deri kıyafet giyilmelidir.",
+          A: "Sentetik kıyafetler sıcak çapak temasıyla aniden eriyerek çalışanın cildine yapışır ve derin 3. derece yanıklara yol açar; bu nedenle %100 pamuklu veya deri kıyafet giyilmelidir.",
           B: "Polyester kıyafetler elektrik akımını mükemmel yalıttığı için ark kaynağında deri giysilere tercih edilmelidir.",
-          C: "Kaynakçı botlarında bağcıkların açıkta kalması önemlidir, böylece çapak düştüğünde hızlıca görülür.",
+          C: "Kaynakçı botlarında bağcıkların açıkta kalması önemlidir, böylece çapak düştüğünde hızlıca görülür ve temizlenir.",
           D: "Kaynakçı botlarında çelik burun bulunması elektrik çarpma riskini %100 artırdığı için burun korumasız ayakkabılar kullanılmalıdır.",
-          E: "Sentetik kumaşlar dumanı emmediği için iş hijyeni açısından en güvenli tekstil malzemesidir."
+          E: "Sentetik kumaşlar dumanı emmediği için iş hijyeni açısından en güvenli tekstil malzemesi olarak kabul edilir."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Polyester, naylon ve akrilik gibi sentetik lifler termoplastik polimerlerdir. Kaynak çapağı veya kızgın erimiş metal damlası bu kumaşlara değdiğinde kumaş tutuşmak yerine anında erir ve sıvılaşarak çalışanın cildine yapışır. Bu durum derin, tedavisi çok zor 3. derece deri yanıklarına neden olur. Kaynakçılar alev almayan %100 pamuklu (proboban işlemeli) veya deri kıyafetler giymelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Polyester eritilip cilde yapıştığı için elektrik yalıtkanı gerekçesiyle tercih edilemez.</li><li>C Şıkkı <u>Yanlıştır</u>: Kaynakçı botlarında bağcıkların üzerine koruyucu deri dil (bilek koruma) gelmelidir; bağcıkların açıkta kalması çapağın içeri düşmesine sebep olur.</li><li>D Şıkkı <u>Yanlıştır</u>: Botlarda çelik/kompozit burun düşen ağır parçalara karşı zorunludur; taban izolasyonu ayrı sağlanır.</li><li>E Şıkkı <u>Yanlıştır</u>: Sentetik kumaşlar ergime riski sebebiyle iş hijyeni ve güvenliği açısından en tehlikeli tekstildir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN ISO 11611 (Koruyucu giysiler - Kaynak ve ilgili işlemler).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Polyester, naylon ve akrilik gibi sentetik lifler termoplastik polimerlerdir. Kaynak çapağı veya kızgın erimiş metal damlası bu kumaşlara değdiğinde kumaş tutuşmak yerine anında erir ve sıvılaşarak çalışanın cildine yapışır. Bu durum derin, tedavisi çok zor 3. derece deri yanıklarına neden olur. Kaynakçılar alev almayan %100 pamuklu veya deri kıyafetler giymelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Polyester eritilip cilde yapıştığı için elektrik yalıtkanı gerekçesiyle tercih edilemez.</li><li>C Şıkkı <u>Yanlıştır</u>: Kaynakçı botlarında bağcıkların üzerine koruyucu deri dil gelmelidir; bağcıkların açıkta kalması çapağın içeri düşmesine sebep olur.</li><li>D Şıkkı <u>Yanlıştır</u>: Botlarda çelik/kompozit burun düşen ağır parçalara karşı zorunludur; taban izolasyonu ayrı sağlanır.</li><li>E Şıkkı <u>Yanlıştır</u>: Sentetik kumaşlar ergime riski sebebiyle iş hijyeni ve güvenliği açısından en tehlikeli tekstildir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN ISO 11611 (Koruyucu giysiler - Kaynak ve ilgili işlemler).</p>'
       },
       {
         n: 20,
@@ -829,18 +809,17 @@ const TESTS = [
         text: "Kapalı boru imalatı ve dar tank içlerinde yapılan yoğun kaynak operasyonlarında, ortamdaki duman konsantrasyonu çok yüksektir. Yüzey maskelerinin (FFP2/FFP3) yetersiz kaldığı bu yüksek riskli alanlarda PAPR (Powered Air-Purifying Respirator - Motorlu Hava Temizleyici Solunum Sistemi) kullanımı kararlaştırılmıştır. PAPR sistemlerinin özellikleri ve kullanımı ile ilgili aşağıdakilerden hangisi <u>yanlıştır</u>?",
         options: {
           A: "Bel ünitesindeki motorlu fan, ortam havasını P3 filtrelerden geçirerek kaynak kaskı içine pozitif basınçlı temiz hava sağlar.",
-          B: "Pozitif basınç sayesinde kask içine dış ortamdaki kirlenmiş havanın ve dumanın sızması (içe sızıntı) engellenir.",
-          C: "PAPR sistemleri, ortamda Oksijen eksikliği (<%19,5) olan kapalı alanlarda oksijen üreteci olarak güvenle kullanılabilir.",
+          B: "Pozitif basınç sayesinde kask içine dış ortamdaki kirlenmiş havanın ve dumanın sızması engellenir ve konfor artar.",
+          C: "PAPR sistemleri, ortamda Oksijen eksikliği olan kapalı alanlarda oksijen üreteci olarak güvenle kullanılabilir.",
           D: "Filtrelerin doymuşluk durumu ve batarya seviyesi cihaz üzerindeki sesli/titreşimli alarmlarla takip edilir.",
           E: "PAPR başlıkları, kaynak kaskı ile entegre edilerek hem solunum hem de optik radyasyon korumasını tek gövdede birleştirir."
         },
         answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> PAPR (Motorlu Hava Temizleyici) sistemleri ortamdaki kirli havayı kendi fanı ve P3 filtreleri vasıtasıyla süzerek kask içine veren cihazlardır. PAPR cihazları bir OKSİJEN ÜRETECİ DEĞİLDİR! Oksijen oranı %19,5\'in altında olan oksijen eksikliği bulunan dar/kapalı alanlarda PAPR kullanılmaz; bu alanlarda dışarıdan temiz hava beslemeli tüplü solunum sistemleri (SCBA) zorunludur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: PAPR bel fiti motoru havayı P3 filtreden geçirerek maskeye pozitif basınçla verir.</li><li>B Şıkkı Doğrudur: Kask içindeki pozitif basınç dışarıdaki dumanın içeri sızmasını önler.</li><li>D Şıkkı Doğrudur: Filtre doyum noktası ve pil durumu sesli/titreşimli alarmlarla bildirilir.</li><li>E Şıkkı Doğrudur: PAPR sistemleri kaynak kaskıyla entegre edilerek hem optik hem solunum koruması sağlar.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 12941 (Solunum koruyucular - Motorlu filtreli cihazlar).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> PAPR (Motorlu Hava Temizleyici) sistemleri ortamdaki kirli havayı kendi fanı ve P3 filtreleri vasıtasıyla süzerek kask içine veren cihazlardır. PAPR cihazları bir OKSİJEN ÜRETECİ DEĞİLDİR! Oksijen oranı %19,5\'in altında olan oksijen eksikliği bulunan dar/kapalı alanlarda PAPR kullanılmaz; bu alanlarda dışarıdan temiz hava beslemeli tüplü solunum sistemleri zorunludur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: PAPR bel fiti motoru havayı P3 filtreden geçirerek maskeye pozitif basınçla verir.</li><li>B Şıkkı Doğrudur: Kask içindeki pozitif basınç dışarıdaki dumanın içeri sızmasını önler.</li><li>D Şıkkı Doğrudur: Filtre doyum noktası ve pil durumu sesli/titreşimli alarmlarla bildirilir.</li><li>E Şıkkı Doğrudur: PAPR sistemleri kaynak kaskıyla entegre edilerek hem optik hem solunum koruması sağlar.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 12941 (Solunum koruyucular - Motorlu filtreli cihazlar).</p>'
       }
     ]
   },
 
-  /* ======================= TEST 2 ======================= */
   {
     id: 2,
     title: "Test 2",
@@ -853,111 +832,111 @@ const TESTS = [
         text: "Oksijen-Asetilen gaz kaynağı setinde çalışma yapılırken, şaloma ucundaki tıkanma veya hatalı gaz basıncı ayarı nedeniyle alevin hortum boyunca tüplere doğru yüksek hızla geri yürümesi (alev geri tepmesi) riski doğmuştur. Bu tehlikeyi bertaraf etmek amacıyla hatta bağlanan Alev Geri Tepme Valfinin (Flashback Arrestor) iç yapısı ve montaj ilkesi ile ilgili aşağıdakilerden hangisi doğrudur?",
         options: {
           A: "İçerisinde sıkıştırılmış sinterlenmiş gözenekli metal filtre ve gaz akışını tek yönde tutan çekvalf mekanizması bulunur; hem şaloma çıkışına hem de regülatör çıkışına takılmalıdır.",
-          B: "Alev geri tepme valfi yalnızca gazın basıncını artırmaya yarar, alev söndürme özelliği yoktur.",
+          B: "Alev geri tepme valfi yalnızca gazın basıncını artırmaya yarar, alev söndürme özelliği bulunmaz ve tüp patlamasını engellemez.",
           C: "Alev geri tepme valfleri yalnızca Oksijen hatlarına takılır, Asetilen hattına takılması gaz akışını tıkadığı için yasaktır.",
           D: "Alev geri tepme valfi yerine hortuma düğüm atılması alevin tüpe ulaşmasını engelleyen geçerli bir mühendislik yöntemidir.",
-          E: "Alev geri tepme valfleri yılda bir kez yağlanarak mekanizmanın takılması engellenmelidir."
+          E: "Alev geri tepme valfleri yılda bir kez yağlanarak mekanizmanın takılması engellenmeli ve alev söndürme performansı artırılmalıdır."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Alev geri tepme emniyet valfi (Flashback Arrestor); içerisinde mikron mertebesinde sıkıştırılmış gözenekli sinterlenmiş metal filtre (alevin ısısını emerek söndürür), gazın ters akmasını engelleyen çekvalf ve yüksek sıcaklıkta gazı kesen termik valf barındırır. Maksimum güvenlik için hem şaloma çıkışına hem de regülatör çıkışına takılmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Valfin ana görevi alevi söndürmek ve hat patlamasını önlemektir; sadece basınç artırmaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Valf hem yanıcı (Asetilen) hem yakıcı (Oksijen) hatlarına takılmalıdır.</li><li>D Şıkkı <u>Yanlıştır</u>: Hortuma düğüm atmak alevin süpersonik hızla ilerlemesini engellemez, kabul edilemez bir cehalettir.</li><li>E Şıkkı <u>Yanlıştır</u>: Emniyet valfleri asla yağlanmamalıdır; yağlanması patlamaya yol açar.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN ISO 5175-1 (Gaz kaynağı ekipmanları - Emniyet tertibatları).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Alev geri tepme emniyet valfi (Flashback Arrestor); içerisinde mikron mertebesinde sıkıştırılmış gözenekli sinterlenmiş metal filtre (alevin ısısını emerek söndürür), gazın ters akmasını engelleyen çekvalf ve yüksek sıcaklıkta gazı kesen termik valf barındırır. Maksimum güvenlik için hem şaloma çıkışına hem de regülatör çıkışına takılmalıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Valfin ana görevi alevi söndürmek ve hat patlamasını önlemektir.</li><li>C Şıkkı <u>Yanlıştır</u>: Valf hem yanıcı (Asetilen) hem yakıcı (Oksijen) hatlarına takılmalıdır.</li><li>D Şıkkı <u>Yanlıştır</u>: Hortuma düğüm atmak alevin süpersonik hızla ilerlemesini engellemez.</li><li>E Şıkkı <u>Yanlıştır</u>: Emniyet valfleri asla yağlanmamalıdır; yağlanması patlamaya yol açar.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN ISO 5175-1 (Gaz kaynağı ekipmanları - Emniyet tertibatları).</p>'
       },
       {
         n: 22,
         topic: "Bölüm 5 · Asetilen Tüpünün Dik Konum Kuralı",
         text: "Bir şantiyede Asetilen (C₂H₂) tüplerinin depolanması ve kullanımı denetlenmektedir. Asetilen gazının kimyasal kararsızlığı (dekompozisyon riski) ve depolama ilkeleri göz önüne alındığında, asetilen tüplerinin kullanımı ile ilgili aşağıda verilen kurallardan hangisi hayati önem taşır?",
         options: {
-          A: "Asetilen tüpleri yatay konumda istiflenmeli ve kullanılmadan hemen önce çalkalanmalıdır.",
-          B: "Asetilen tüpleri içinde aseton çözeltisi ve poröz (gözenekli) dolgu kütlesi bulunduğundan, sıvı asetonun regülatörden sürüklenmesini önlemek için daima dik konumda tutulmalı ve zincirle sabitlenmelidir.",
-          C: "Asetilen tüpleri doğrudan güneş altında 70°C sıcaklığa kadar ısıtılarak basıncı artırılmalıdır.",
-          D: "Asetilen tüplerinin vana çıkışlarında standart olarak sağ dişli (düz) rekorlar kullanılır.",
-          E: "Boşalan asetilen tüplerinin içine bas basıncını korumak için kompresörle basınçlı hava doldurulmalıdır."
+          A: "Asetilen tüpleri yatay konumda istiflenmeli ve kullanılmadan hemen önce iyice çalkalanarak homojen hale getirilmelidir.",
+          B: "Asetilen tüpleri içinde aseton çözeltisi ve poröz dolgu kütlesi bulunduğundan, sıvı asetonun regülatörden sürüklenmesini önlemek için daima dik konumda tutulmalı ve zincirle sabitlenmelidir.",
+          C: "Asetilen tüpleri doğrudan güneş altında 70°C sıcaklığa kadar ısıtılarak basıncı artırılmalı ve verim yükseltilmelidir.",
+          D: "Asetilen tüplerinin vana çıkışlarında standart olarak sağ dişli rekorlar kullanılır ve hat karışması bu şekilde önlenir.",
+          E: "Boşalan asetilen tüplerinin içine basıncını korumak için kompresörle basınçlı hava doldurulmalı ve depolanmalıdır."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Asetilen (C₂H₂) kararsız yapısı nedeniyle tüp içerisinde gözenekli dolgu kütlesi (poröz kütle) ve çözücü olarak aseton sıvısı ile birlikte saklanır. Asetilen tüpü yatık konumda tutulur veya kullanılırsa, içindeki sıvı aseton vana ve regülatöre sürüklenir. Bu durum hem gaz kararsızlığı yaratıp patlama riski doğurur hem de tesisat armatürlerini bozar. Asetilen tüpleri DAİMA DİK tutulmalı ve zincirlenmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Asetilen tüpleri yatay saklanmaz ve çalkalanmaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Tüpler güneş altında 70°C\'ye ısıtılamaz; tüp sıcaklığı 40°C\'yi aşmamalıdır.</li><li>D Şıkkı <u>Yanlıştır</u>: Yanıcı gaz tüplerinde (Asetilen) sol dişli bağlantılar kullanılır; sağ diş yakıcı gazlar içindir.</li><li>E Şıkkı <u>Yanlıştır</u>: Asetilen tüplerine hava basılması patlayıcı gaz karışımı oluşturur ve kesinlikle yasaktır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN ISO 14114 &amp; Binaların Yangından Korunması Hakkında Yönetmelik.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Asetilen kararsız yapısı nedeniyle tüp içerisinde gözenekli dolgu kütlesi (poröz kütle) ve çözücü olarak aseton sıvısı ile birlikte saklanır. Asetilen tüpü yatık konumda tutulur veya kullanılırsa, içindeki sıvı aseton vana ve regülatöre sürüklenir. Bu durum hem gaz kararsızlığı yaratıp patlama riski doğurur hem de tesisat armatürlerini bozar. Asetilen tüpleri daima dik tutulmalı ve zincirlenmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Asetilen tüpleri yatay saklanmaz ve çalkalanmaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Tüpler güneş altında 70°C\'ye ısıtılamaz; tüp sıcaklığı 40°C\'yi aşmamalıdır.</li><li>D Şıkkı <u>Yanlıştır</u>: Yanıcı gaz tüplerinde (Asetilen) sol dişli bağlantılar kullanılır; sağ diş yakıcı gazlar içindir.</li><li>E Şıkkı <u>Yanlıştır</u>: Asetilen tüplerine hava basılması patlayıcı gaz karışımı oluşturur ve kesinlikle yasaktır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN ISO 14114 &amp; Binaların Yangından Korunması Hakkında Yönetmelik.</p>'
       },
       {
         n: 23,
         topic: "Bölüm 5 · Gaz Tüplerinin Vinçle Taşınması",
         text: "Basınçlı gaz tüplerinin fabrika saha içi nakliyesi ve vinçlerle yüksek noktalara kaldırılması operasyonu sırasında meydana gelen iş kazaları incelenmektedir. Gaz tüplerinin güvenli taşınması ile ilgili aşağıdakilerden hangisi mevzuata <u>aykırı</u> bir uygulamadır?",
         options: {
-          A: "Tüpler taşınırken koruyucu vanalık kapaklarının (başlıklarının) kapalı ve takılı olması",
-          B: "Tüplerin saha içinde özel tekerlekli tüp arabalarında zincire bağlı olarak taşınması",
-          C: "Tüplerin vinçle kaldırılması sırasında valflerinden veya koruyucu kapaklarından sapanla/halatla doğrudan bağlanarak kaldırılması",
-          D: "Vinçle taşımada tüplerin özel tasarlanmış korumalı sepet/palet içerisine koyularak sabitlenmesi",
-          E: "Tüplerin araçlara yüklenirken atılmaması, yuvarlanmaması ve darbelere karşı korunması"
+          A: "Tüpler taşınırken koruyucu vanalık kapaklarının kapalı ve takılı olması ve bu şekilde muhafaza edilmesi",
+          B: "Tüplerin saha içinde özel tekerlekli tüp arabalarında zincire bağlı olarak taşınması ve sabitlenmesi",
+          C: "Tüplerin vinçle kaldırılması sırasında valflerinden veya koruyucu kapaklarından sapanla doğrudan bağlanarak kaldırılması",
+          D: "Vinçle taşımada tüplerin özel tasarlanmış korumalı sepet veya palet içerisine koyularak sabitlenmesi",
+          E: "Tüplerin araçlara yüklenirken atılmaması, yuvarlanmaması ve darbelere karşı mutlaka korunması"
         },
         answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Basınçlı gaz tüpleri vinç, maça veya kalıp yardımıyla kaldırılırken KESİNLİKLE vanalarından, koruyucu kapaklarından veya etrafından sapan/halat dolayarak doğrudan kaldırılmaz. Vananın kopması tüpün yüksek basınçla roket gibi fırlamasına sebep olur. Vinçle taşımada tüpler özel olarak tasarlanmış, devrilmez kilitli sepet veya paletler içerisine konularak sabitlenmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Taşıma sırasında koruyucu vana kapağının takılı olması zorunlu güvenlik kuralıdır.</li><li>B Şıkkı Doğrudur: Saha içi nakliyede tekerlekli ve zincirli tüp arabası kullanılması esastır.</li><li>D Şıkkı Doğrudur: Sepet/palet ile sabitleyerek kaldırma onaylanmış tek vinçle taşıma metodudur.</li><li>E Şıkkı Doğrudur: Tüplerin araçlara yüklenirken atılmaması, yuvarlanmaması emredilmiştir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Basınçlı gaz tüpleri vinç, maça veya kalıp yardımıyla kaldırılırken kesinlikle vanalarından, koruyucu kapaklarından veya etrafından sapan/halat dolayarak doğrudan kaldırılmaz. Vananın kopması tüpün yüksek basınçla roket gibi fırlamasına sebep olur. Vinçle taşımada tüpler özel olarak tasarlanmış, devrilmez kilitli sepet veya paletler içerisine konularak sabitlenmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Taşıma sırasında koruyucu vana kapağının takılı olması zorunlu güvenlik kuralıdır.</li><li>B Şıkkı Doğrudur: Saha içi nakliyede tekerlekli ve zincirli tüp arabası kullanılması esastır.</li><li>D Şıkkı Doğrudur: Sepet/palet ile sabitleyerek kaldırma onaylanmış tek vinçle taşıma metodudur.</li><li>E Şıkkı Doğrudur: Tüplerin araçlara yüklenirken atılmaması, yuvarlanmaması emredilmiştir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği.</p>'
       },
       {
         n: 24,
         topic: "Bölüm 5 · Yanıcı/Yakıcı Gaz Hortum ve Diş Standartları",
         text: "Oksijen-Asetilen kaynak ve kesme takımlarında yanıcı ve yakıcı gaz hatlarının karışmasını önlemek amacıyla uluslararası renk ve vida dişi standartları uygulanmaktadır. Yanıcı ve yakıcı gaz hortum ve rekor bağlantı standartları eşleştirmesinden hangisi doğrudur?",
         options: {
-          A: "Asetilen (Yanıcı): Kırmızı Hortum - Sol Diş (Çentikli Rekor) / Oksijen (Yakıcı): Mavi veya Yeşil Hortum - Sağ Diş",
+          A: "Asetilen (Yanıcı): Kırmızı Hortum - Sol Diş / Oksijen (Yakıcı): Mavi veya Yeşil Hortum - Sağ Diş",
           B: "Asetilen (Yanıcı): Mavi Hortum - Sağ Diş / Oksijen (Yakıcı): Kırmızı Hortum - Sol Diş",
           C: "Asetilen (Yanıcı): Sarı Hortum - Düz Diş / Oksijen (Yakıcı): Siyah Hortum - Dişsiz",
-          D: "Her iki gaz hattı da Kırmızı renkli hortum ve Sağ dişli rekor kullanmalıdır.",
-          E: "Oksijen hortumu kırmızı, Asetilen hortumu yeşil renkli olup rekor dişleri aynıdır."
+          D: "Her iki gaz hattı da Kırmızı renkli hortum ve Sağ dişli rekor kullanmalıdır ve fark yoktur.",
+          E: "Oksijen hortumu kırmızı, Asetilen hortumu yeşil renkli olup rekor dişleri aynı standarttadır."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Uluslararası standartlara göre (EN 560); yanıcı gaz hatlarında (Asetilen, LPG) KIRMIZI renkli hortumlar ve yerleşimi karıştırmamak adına SOL DİŞ (rekorda çentik izi olan) rakorlar kullanılır. Yakıcı gaz hatlarında (Oksijen) MAVİ veya YEŞİL renkli hortumlar ve SAĞ DİŞ (çentiksiz) rakorlar kullanılır. Bu fiziki fark mekanik olarak yanlış bağlantı yapılmasını engeller.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Renk ve diş yönleri tam ters verilmiştir.</li><li>C Şıkkı <u>Yanlıştır</u>: Sarı/Siyah hortum ve dişsiz rakor standardı gaz kaynağında yoktur.</li><li>D Şıkkı <u>Yanlıştır</u>: Her iki hat kırmızı ve sağ diş yapılamaz; hatlar karışır.</li><li>E Şıkkı <u>Yanlıştır</u>: Oksijen kırmızı, asetilen yeşil değildir; rekor dişleri aynı olamaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 560 (Gaz kaynağı ekipmanları - Hortum bağlantıları).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Uluslararası standartlara göre; yanıcı gaz hatlarında (Asetilen, LPG) KIRMIZI renkli hortumlar ve yerleşimi karıştırmamak adına SOL DİŞ rakorlar kullanılır. Yakıcı gaz hatlarında (Oksijen) MAVİ veya YEŞİL renkli hortumlar ve SAĞ DİŞ rakorlar kullanılır. Bu fiziki fark mekanik olarak yanlış bağlantı yapılmasını engeller.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Renk ve diş yönleri tam ters verilmiştir.</li><li>C Şıkkı <u>Yanlıştır</u>: Sarı/Siyah hortum ve dişsiz rakor standardı gaz kaynağında yoktur.</li><li>D Şıkkı <u>Yanlıştır</u>: Her iki hat kırmızı ve sağ diş yapılamaz; hatlar karışır.</li><li>E Şıkkı <u>Yanlıştır</u>: Oksijen kırmızı, asetilen yeşil değildir; rekor dişleri aynı olamaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 560 (Gaz kaynağı ekipmanları - Hortum bağlantıları).</p>'
       },
       {
         n: 25,
         topic: "Bölüm 5 · Oksijen-Yağ Otooksidasyon Patlaması",
         text: "Bir bakım personeli, oksijen tüpü regülatörünü değiştirmeden önce elindeki yoğun gres yağını silmeden vanayı açmış ve montajı tamamlamıştır. Vananın açılmasıyla birlikte regülatör bölgesinde şiddetli bir patlama ve yangın meydana gelmiştir. Bu kazanın gerçekleşme mekanizması ve tüp sızdırmazlık test kuralları ile ilgili aşağıdakilerden hangisi doğrudur?",
         options: {
-          A: "Yüksek basınçlı oksijen gazı, organik yağ veya gres ile temas ettiğinde vuruntulu otooksidasyon reaksiyonu göstererek kıvılcım olmaksızın patlar; sızdırmazlık kontrolleri sabun köpüğü/özel sprey ile yapılmalıdır.",
+          A: "Yüksek basınçlı oksijen gazı, organik yağ veya gres ile temas ettiğinde otooksidasyon reaksiyonu göstererek kıvılcım olmaksızın patlar; sızdırmazlık kontrolleri sabun köpüğü ile yapılmalıdır.",
           B: "Gres yağı oksijenin yanmasını engellediği için patlama regülatördeki statik elektrikten kaynaklanmıştır; yağlama periyodik yapılmalıdır.",
-          C: "Oksijen vanaları her kullanımdan önce gres yağı ile yağlanarak sıkışması önlenmelidir.",
-          D: "Tüp sızdırmazlık kontrolleri açık alev (çakmak) tutularak yapılmalıdır.",
-          E: "Patlama, oksijen gazının su ile reaksiyona girerek hidrojen gazına dönüşmesinden kaynaklanmıştır."
+          C: "Oksijen vanaları her kullanımdan önce gres yağı ile yağlanarak sıkışması önlenmeli ve montaj kolaylaştırılmalıdır.",
+          D: "Tüp sızdırmazlık kontrolleri açık alev tutularak yapılmalıdır ve bu yöntem en güvenilir yöntemdir.",
+          E: "Patlama, oksijen gazının su ile reaksiyona girerek hidrojen gazına dönüşmesinden kaynaklanmıştır ve kimyasal bir olaydır."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Saf oksijen gazı yüksek basınç altında hidrokarbon molekülleriyle (yağ, gres, katran vb.) temas ettiğinde, herhangi bir harici tutuşturucu kıvılcım olmaksızın anında kütlesel otooksidasyon reaksiyonuna girer. Bu durum regülatörün patlamasına ve şiddetli yangına yol açar. Oksijen sistemlerinin sızdırmazlık testleri KESİNLİKLE açık alevle yapılmaz; özel sabun köpüğü veya sızdırmazlık spreyleri kullanılır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Gres yağı patlamayı engellemez, otooksidasyonu doğrudan tetikleyen ana etkendir.</li><li>C Şıkkı <u>Yanlıştır</u>: Oksijen vanalarına yağlı elle dokunulması veya gres sürülmesi kesinlikle yasaktır.</li><li>D Şıkkı <u>Yanlıştır</u>: Sızdırmazlık testinde çakmak/açık alev kullanılması büyük bir felakete yol açar.</li><li>E Şıkkı <u>Yanlıştır</u>: Patlamanın sebebi oksijenin suyla reaksiyonu değil, yağ ile ekzotermik oksidasyonudur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Binaların Yangından Korunması Hakkında Yönetmelik &amp; TS EN ISO 2503.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Saf oksijen gazı yüksek basınç altında hidrokarbon molekülleriyle (yağ, gres, katran vb.) temas ettiğinde, herhangi bir harici tutuşturucu kıvılcım olmaksızın anında kütlesel otooksidasyon reaksiyonuna girer. Bu durum regülatörün patlamasına ve şiddetli yangına yol açar. Oksijen sistemlerinin sızdırmazlık testleri kesinlikle açık alevle yapılmaz; özel sabun köpüğü veya sızdırmazlık spreyleri kullanılır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Gres yağı patlamayı engellemez, otooksidasyonu doğrudan tetikleyen ana etkendir.</li><li>C Şıkkı <u>Yanlıştır</u>: Oksijen vanalarına yağlı elle dokunulması veya gres sürülmesi kesinlikle yasaktır.</li><li>D Şıkkı <u>Yanlıştır</u>: Sızdırmazlık testinde çakmak/açık alev kullanılması büyük bir felakete yol açar.</li><li>E Şıkkı <u>Yanlıştır</u>: Patlamanın sebebi oksijenin suyla reaksiyonu değil, yağ ile ekzotermik oksidasyonudur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Binaların Yangından Korunması Hakkında Yönetmelik &amp; TS EN ISO 2503.</p>'
       },
       {
         n: 26,
         topic: "Bölüm 6 · Boşta Çalışma Gerilimi (OCV) ve VRD Cihazı",
-        text: "Elektrik ark kaynak makinelerinde elektrot tutucusu (pense) ile şase/iş parçası arasında, ark tutuşmadan önce var olan potansiyel farka Boşta Çalışma Gerilimi (OCV) denir. Standartlara göre (EN 60974-1) yüksek riskli (dar, nemli, iletken) ortamlarda çalışan AC veya DC kaynak makinelerinde çarpılma riskini azaltmak için kullanılan voltaj düşürücü güvenlik cihazı aşağıdakilerden hangisidir?",
+        text: "Elektrik ark kaynak makinelerinde elektrot tutucusu (pense) ile şase/iş parçası arasında, ark tutuşmadan önce var olan potansiyel farka Boşta Çalışma Gerilimi (OCV) denir. Standartlara göre yüksek riskli (dar, nemli, iletken) ortamlarda çalışan AC veya DC kaynak makinelerinde çarpılma riskini azaltmak için kullanılan voltaj düşürücü güvenlik cihazı aşağıdakilerden hangisidir?",
         options: {
           A: "VRD (Voltage Reduction Device - Gerilim Düşürme Cihazı)",
-          B: "UPS (Uninterruptible Power Supply)",
-          C: "PWM (Pulse Width Modulator)",
-          D: "AVR (Automatic Voltage Regulator)",
-          E: "KVAR (Kilo Volt Ampere Reactive Controller)"
+          B: "UPS (Uninterruptible Power Supply - Kesintisiz Güç Kaynağı)",
+          C: "PWM (Pulse Width Modulator - Darbe Genişlik Modülatörü)",
+          D: "AVR (Automatic Voltage Regulator - Otomatik Gerilim Regülatörü)",
+          E: "KVAR (Kilo Volt Ampere Reactive Controller - Reaktif Güç Kontrolörü)"
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> VRD (Voltage Reduction Device - Gerilim Düşürme Cihazı), kaynak makinesi açık olduğu halde kaynak yapılmadığı (boşta çalışma) anlarda, elektrot pensesi ile iş parçası arasındaki Boşta Çalışma Gerilimini (OCV) insan hayatı için güvenli kabul edilen seviyelere (12V - 24V) düşüren bir güvenlik devre elemanıdır. Operatör elektrotu iş parçasına değdirdiği an (ark çakarken) cihaz milisaniyeler içinde voltajı normal çalışma seviyesine çıkarır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: UPS (Uninterruptible Power Supply) kesintisiz güç kaynağıdır; voltaj düşürmez.</li><li>C Şıkkı <u>Yanlıştır</u>: PWM (Pulse Width Modulator) darbe genişlik modülasyonu sağlayan elektronik anahtarlamadır.</li><li>D Şıkkı <u>Yanlıştır</u>: AVR (Automatic Voltage Regulator) şebeke voltajını sabitleyen regülatördür.</li><li>E Şıkkı <u>Yanlıştır</u>: KVAR reaktif güç kompanzasyon kontrolörüdür.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 60974-1 (Ark kaynağı donanımı - Güç kaynakları).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> VRD (Voltage Reduction Device - Gerilim Düşürme Cihazı), kaynak makinesi açık olduğu halde kaynak yapılmadığı anlarda, elektrot pensesi ile iş parçası arasındaki Boşta Çalışma Gerilimini insan hayatı için güvenli kabul edilen seviyelere düşüren bir güvenlik devre elemanıdır. Operatör elektrotu iş parçasına değdirdiği an cihaz milisaniyeler içinde voltajı normal çalışma seviyesine çıkarır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: UPS kesintisiz güç kaynağıdır; voltaj düşürmez.</li><li>C Şıkkı <u>Yanlıştır</u>: PWM darbe genişlik modülasyonu sağlayan elektronik anahtarlamadır.</li><li>D Şıkkı <u>Yanlıştır</u>: AVR şebeke voltajını sabitleyen regülatördür.</li><li>E Şıkkı <u>Yanlıştır</u>: KVAR reaktif güç kompanzasyon kontrolörüdür.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 60974-1 (Ark kaynağı donanımı - Güç kaynakları).</p>'
       },
       {
         n: 27,
         topic: "Bölüm 6 · Topraklama ve Şase Kablosu Köprüleme Yasağı",
         text: "Bir üretim atölyesinde kullanılan elektrik ark kaynak makinesinin şebeke besleme hattı ve gövde koruma sistemleri İSG uzmanı tarafından kontrol edilmektedir. Kaynak makinelerinin elektriksel güvenliği ile ilgili aşağıdakilerden hangisi <u>yanlış</u> bir uygulamadır?",
         options: {
-          A: "Kaynak makinesinin metal dış gövdesi koruyucu topraklama hattına bağlı olmalıdır.",
-          B: "Makine besleme hattında uygun anma akımına sahip Kaçak Akım Rölesi (KAR - 30mA) bulunmalıdır.",
-          C: "Makine gövde topraklama kablosu ile kaynak geri dönüş (şase) kablosu makine içinde birbirine köprülenerek tek hat yapılmalıdır.",
-          D: "Makinenin şebeke kablosunda aşınma veya yalıtım zedelenmesi bulunmamalıdır.",
+          A: "Kaynak makinesinin metal dış gövdesi koruyucu topraklama hattına bağlı olmalıdır ve izolasyon sürekli kontrol edilmelidir.",
+          B: "Makine besleme hattında uygun anma akımına sahip Kaçak Akım Rölesi bulunmalıdır ve periyodik test edilmelidir.",
+          C: "Makine gövde topraklama kablosu ile kaynak geri dönüş kablosu makine içinde birbirine köprülenerek tek hat yapılmalıdır.",
+          D: "Makinenin şebeke kablosunda aşınma veya yalıtım zedelenmesi bulunmamalıdır ve düzenli kontrol edilmelidir.",
           E: "Islak ve nemli ortamlarda çalışırken elektrik çarpmalarına karşı izolasyon matı veya ahşap ızgara kullanılmalıdır."
         },
         answer: "C",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak makinesinin şebeke koruma topraklaması (dış metal gövdenin bağlı olduğu koruma hattı) ile kaynak sekonder devresinin geri dönüş kablosu (şase kablosu) makine içerisinde KESİNLİKLE birbirine köprülenmemeli veya birleştirilmemelidir. Bu iki hat köprülenirse, kaynak akımı bina topraklama iletkenleri üzerinden akar; nötr/toprak hatlarını yakar, Kaçak Akım Rölelerini açtırır ve elektrik çarpma riskini katlar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Dış gövdenin topraklanması zorunlu bir güvenlik katmanıdır.</li><li>B Şıkkı Doğrudur: Besleme hattında 30 mA Kaçak Akım Rölesi bulunması yasal kuraldır.</li><li>D Şıkkı Doğrudur: Şebeke kablo yalıtımının sağlam olması gerekliliği doğrudur.</li><li>E Şıkkı Doğrudur: Islak ortamda kauçuk/ahşap izolasyon matı kullanımı elektriksel emniyet kuralıdır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Elektrik Tesislerinde Topraklamalar Yönetmeliği.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak makinesinin şebeke koruma topraklaması ile kaynak sekonder devresinin geri dönüş kablosu makine içerisinde kesinlikle birbirine köprülenmemeli veya birleştirilmemelidir. Bu iki hat köprülenirse, kaynak akımı bina topraklama iletkenleri üzerinden akar; nötr/toprak hatlarını yakar, Kaçak Akım Rölelerini açtırır ve elektrik çarpma riskini katlar.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Dış gövdenin topraklanması zorunlu bir güvenlik katmanıdır.</li><li>B Şıkkı Doğrudur: Besleme hattında 30 mA Kaçak Akım Rölesi bulunması yasal kuraldır.</li><li>D Şıkkı Doğrudur: Şebeke kablo yalıtımının sağlam olması gerekliliği doğrudur.</li><li>E Şıkkı Doğrudur: Islak ortamda kauçuk/ahşap izolasyon matı kullanımı elektriksel emniyet kuralıdır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Elektrik Tesislerinde Topraklamalar Yönetmeliği.</p>'
       },
       {
         n: 28,
         topic: "Bölüm 6 · Islak/Nemli Ortamda Kaynak Emniyeti",
         text: "Sulu ve nemli bir zemin üzerinde, metal konstrüksiyon platform içerisinde ark kaynağı yapmak zorunda kalan bir kaynak operatörünün güvenliği için aşağıdakilerden hangisi alınması gereken tedbirlerden biri <u>değildir</u>?",
         options: {
-          A: "Kaynakçının altına kauçuk paspas veya kuru ahşap izolasyon platformu konulması",
-          B: "Kaynakçının deri eldivenlerinin ve iş ayakkabılarının tamamen kuru olması",
-          C: "Elektrot pensesinin dış yalıtımının çataksız ve tam izolasyonlu olması",
-          D: "Gerilimi düşürmek için kaynak makinesinin şase kablosunun kesilerek küçültülmesi",
-          E: "Tehlikeli ortamlarda Boşta Çalışma Gerilimi (OCV) sınırı düşük olan veya VRD donanımlı makinelerin tercih edilmesi"
+          A: "Kaynakçının altına kauçuk paspas veya kuru ahşap izolasyon platformu konulması ve zeminin izole edilmesi",
+          B: "Kaynakçının deri eldivenlerinin ve iş ayakkabılarının tamamen kuru olması ve ıslaklığa izin verilmemesi",
+          C: "Elektrot pensesinin dış yalıtımının çataksız ve tam izolasyonlu olması ve düzenli kontrol edilmesi",
+          D: "Gerilimi düşürmek için kaynak makinesinin şase kablosunun kesilerek küçültülmesi ve hattın kısaltılması",
+          E: "Tehlikeli ortamlarda Boşta Çalışma Gerilimi sınırı düşük olan veya VRD donanımlı makinelerin tercih edilmesi"
         },
         answer: "D",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak makinesinin şase kablosunu keserek küçültmek, kablo kesitini veya boyunu rastgele değiştirmek voltajı düşürmez. Aksine yetersiz kesit elektriksel direnci artırır, kablonun aşırı ısınmasına ve ark oluşumuna sebep olur. Voltaj kontrolü ancak makinadaki VRD devresi veya şebeke transformatörü ile sağlanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: İzolasyon platformu (kauçuk/ahşap) ortamın iletkenliğini keser; alınması gereken tedbirdir.</li><li>B Şıkkı Doğrudur: Kuru eldiven ve kuru ayakkabı vücut direncini yüksek tutar; alınması gereken tedbirdir.</li><li>C Şıkkı Doğrudur: Tam izolasyonlu penseler operatörün canlı uca temasını engeller; alınması gereken tedbirdir.</li><li>E Şıkkı Doğrudur: VRD donanımlı makine kullanımı nemli/iletken zeminlerde zorunludur; alınması gereken tedbirdir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 60974-11 (Ark kaynağı donanımı - Elektrot tutucular).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak makinesinin şase kablosunu keserek küçültmek, kablo kesitini veya boyunu rastgele değiştirmek voltajı düşürmez. Aksine yetersiz kesit elektriksel direnci artırır, kablonun aşırı ısınmasına ve ark oluşumuna sebep olur. Voltaj kontrolü ancak makinadaki VRD devresi veya şebeke transformatörü ile sağlanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: İzolasyon platformu ortamın iletkenliğini keser.</li><li>B Şıkkı Doğrudur: Kuru eldiven ve kuru ayakkabı vücut direncini yüksek tutar.</li><li>C Şıkkı Doğrudur: Tam izolasyonlu penseler operatörün canlı uca temasını engeller.</li><li>E Şıkkı Doğrudur: VRD donanımlı makine kullanımı nemli/iletken zeminlerde zorunludur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 60974-11 (Ark kaynağı donanımı - Elektrot tutucular).</p>'
       },
       {
         n: 29,
@@ -965,69 +944,69 @@ const TESTS = [
         text: "Bir şantiyede yapılan denetimde, kaynak kablosunun kesitinin çekilen akıma göre yetersiz olduğu, kablonun birden fazla noktasından ek yapıldığı ve ek yerlerinin açıkta bandajsız durduğu tespit edilmiştir. Bu durumun yol açacağı tehlikelerle ilgili aşağıdakilerden hangisi doğrudur?",
         options: {
           A: "Kablonun aşırı ısınarak yalıtkanının erimesi, kısa devre, yangın ve operatörün elektrik akımına kapılma riski oluşur.",
-          B: "Kablo kesitinin küçük olması ark sıcaklığını artırarak kaynak kalitesini mükemmelleştirir.",
-          C: "Ekli kablolar elektrik akımını hızlandırdığı için enerji tasarrufu sağlar.",
-          D: "Kablo yalıtımının bozuk olması yalnızca doğru akım (DC) kaynaklarında tehlikelidir, AC'de tehlike yaratmaz.",
-          E: "Akım kablodan sızarak ortama ultraviyole ışın yayılmasına sebep olur."
+          B: "Kablo kesitinin küçük olması ark sıcaklığını artırarak kaynak kalitesini mükemmelleştirir ve nüfuziyeti yükseltir.",
+          C: "Ekli kablolar elektrik akımını hızlandırdığı için enerji tasarrufu sağlar ve verimliliği artırır.",
+          D: "Kablo yalıtımının bozuk olması yalnızca doğru akım kaynaklarında tehlikelidir, AC'de tehlike yaratmaz.",
+          E: "Akım kablodan sızarak ortama ultraviyole ışın yayılmasına sebep olur ve göz hasarı yaratır."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yetersiz kesitli veya ek yerleri açıkta kalmış kaynak kablolarından yüksek amperli kaynak akımı geçtiğinde Joule ısınması (P = I²R) meydana gelir. Aşırı ısınan kablo yalıtkanı erir, yangın çıkarır veya açıkta duran ek yerleri metal konstrüksiyona temas ederek kısa devre yaratır. Kaynakçının bu ek yerlerine dokunması doğrudan çarpılmasına neden olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Kesiti küçük kablo voltaj düşümüne sebep olur, kaynak kalitesini bozar; mükemmelleştirmez.</li><li>C Şıkkı <u>Yanlıştır</u>: Ekli kablolar direnci artırır, enerji kaybına (ısınmaya) yol açar; tasarruf sağlamaz.</li><li>D Şıkkı <u>Yanlıştır</u>: Hem AC hem DC kaynaklarında açık elektrik hatları hayati tehlike yaratır.</li><li>E Şıkkı <u>Yanlıştır</u>: Elektrik kablosundan dışarıya ultraviyole ışın sızmaz (UV sadece ark plazmasında oluşur).</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Elektrik İç Tesisleri Yönetmeliği &amp; TS EN 60974-12.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Yetersiz kesitli veya ek yerleri açıkta kalmış kaynak kablolarından yüksek amperli kaynak akımı geçtiğinde Joule ısınması meydana gelir. Aşırı ısınan kablo yalıtkanı erir, yangın çıkarır veya açıkta duran ek yerleri metal konstrüksiyona temas ederek kısa devre yaratır. Kaynakçının bu ek yerlerine dokunması doğrudan çarpılmasına neden olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Kesiti küçük kablo voltaj düşümüne sebep olur, kaynak kalitesini bozar.</li><li>C Şıkkı <u>Yanlıştır</u>: Ekli kablolar direnci artırır, enerji kaybına yol açar; tasarruf sağlamaz.</li><li>D Şıkkı <u>Yanlıştır</u>: Hem AC hem DC kaynaklarında açık elektrik hatları hayati tehlike yaratır.</li><li>E Şıkkı <u>Yanlıştır</u>: Elektrik kablosundan dışarıya ultraviyole ışın sızmaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Elektrik İç Tesisleri Yönetmeliği &amp; TS EN 60974-12.</p>'
       },
       {
         n: 30,
         topic: "Bölüm 6 · Şase Pensesinin Hatalı/Uzak Bağlanması",
         text: "İSG denetiminde bir kaynakçının, şase pensesini kaynak yaptığı metal iş parçasına doğrudan bağlamak yerine, 15 metre uzaklıktaki bina çelik kolonuna bağladığı tespit edilmiştir. Şase pensesinin iş parçasına uzak veya hatalı bağlanmasının (kaçak akım yolları) yaratacağı risk aşağıdakilerden hangisidir?",
         options: {
-          A: "Akım bina strüktürü, vinç rayları veya topraklama hatları üzerinden kontrolsüz döner; bu durum ark sıçramalarına, diğer ekipmanların elektronik kart hasarlarına ve yangınlara yol açabilir.",
-          B: "Makine voltajı 1000V'a çıkarak makine invertörünü patlatır.",
-          C: "Elektrot tutuşmaz ve kaynak yapmak imkansız hale gelir.",
-          D: "Şase kablosu uzadıkça şebekeden çekilen aktif güç sıfıra düşer.",
-          E: "Bu uygulama yasal olarak önerilen standart güvenlik yöntemidir."
+          A: "Akım bina strüktürü, vinç rayları veya topraklama hatları üzerinden kontrolsüz döner; bu durum ark sıçramalarına, elektronik kart hasarlarına ve yangınlara yol açabilir.",
+          B: "Makine voltajı 1000V'a çıkarak makine invertörünü patlatır ve tamir edilemez hasar verir.",
+          C: "Elektrot tutuşmaz ve kaynak yapmak imkansız hale gelir; hiçbir kaynak dikişi oluşturulamaz.",
+          D: "Şase kablosu uzadıkça şebekeden çekilen aktif güç sıfıra düşer ve makine çalışmaz hale gelir.",
+          E: "Bu uygulama yasal olarak önerilen standart güvenlik yöntemidir ve herhangi bir sakıncası yoktur."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Şase pensesi kaynak yapılan parçaya doğrudan bağlanmadığında, elektrik akımı devreyi tamamlamak için en düşük dirençli alternatif yolları (bina çelik konstrüksiyonu, tavan vinci kaldırma halatları, doğalgaz boruları veya koruma topraklama hatları) kullanır. Bu kaçak akım yolları vinç halatlarında ark kaynaklı çentiklenmelere ve halat kopmalarına, bina elektronik ünitelerinin yanmasına ve yangınlara sebep olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Şase pensesinin uzağa bağlanması makine voltajını 1000V\'a çıkarmaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Kaçak yollardan devre tamamlandığında ark tutuşabilir ancak tehlikeli akım yolları oluşur.</li><li>D Şıkkı <u>Yanlıştır</u>: Kablo uzadıkça aktif güç sıfıra düşmez, hat direnci artar.</li><li>E Şıkkı <u>Yanlıştır</u>: Şase pensesini uzak metal strüktüre bağlamak standart değil, ağır bir İSG kusurudur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 60974-13 (Ark kaynağı donanımı - Şase klipsleri).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Şase pensesi kaynak yapılan parçaya doğrudan bağlanmadığında, elektrik akımı devreyi tamamlamak için en düşük dirençli alternatif yolları (bina çelik konstrüksiyonu, tavan vinci kaldırma halatları, doğalgaz boruları veya koruma topraklama hatları) kullanır. Bu kaçak akım yolları vinç halatlarında ark kaynaklı çentiklenmelere ve halat kopmalarına, bina elektronik ünitelerinin yanmasına ve yangınlara sebep olur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Şase pensesinin uzağa bağlanması makine voltajını 1000V\'a çıkarmaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Kaçak yollardan devre tamamlandığında ark tutuşabilir ancak tehlikeli akım yolları oluşur.</li><li>D Şıkkı <u>Yanlıştır</u>: Kablo uzadıkça aktif güç sıfıra düşmez, hat direnci artar.</li><li>E Şıkkı <u>Yanlıştır</u>: Şase pensesini uzak metal strüktüre bağlamak ağır bir İSG kusurudur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 60974-13 (Ark kaynağı donanımı - Şase klipsleri).</p>'
       },
       {
         n: 31,
         topic: "Bölüm 7 · Kapalı Alanda Multi-Gaz Dedektörü Ölçüm Sırası",
         text: "Bir kimya tesisindeki kapalı depolama tankı içerisinde çatlak onarımı amacıyla kaynak yapılacaktır. Çalışanların kapalı alana girmesinden önce yürütülecek gaz ölçüm protokolünde, multi-gaz dedektörü ile yapılması gereken ölçüm sırası ve güvenli kabul edilebilir seviyeler aşağıdakilerden hangisinde doğru verilmiştir?",
         options: {
-          A: "Önce Yanıcı Gazlar (LEL) → Sonra Toksik Gazlar → En son Oksijen",
-          B: "1. Oksijen Seviyesi (%19,5 - %23,5) → 2. Yanıcı/Patlayıcı Gazlar (<%10 LEL) → 3. Toksik Gazlar (CO, H₂S vb. TWA altı)",
-          C: "Önce Toksik Gazlar → Sonra Oksijen → En son Toz yoğunluğu",
-          D: "Yalnızca sıcaklık ölçümü yapılması kapalı alana girmek için yeterlidir.",
-          E: "1. Karbonmonoksit → 2. Karbondioksit → 3. Oksijen zenginliği (>%25)"
+          A: "Önce Yanıcı Gazlar → Sonra Toksik Gazlar → En son Oksijen ölçümü yapılması ve bu sıraya uyulması gerekir.",
+          B: "1. Oksijen Seviyesi (%19,5 - %23,5) → 2. Yanıcı Gazlar (<%10 LEL) → 3. Toksik Gazlar (TWA altı) ölçülmelidir.",
+          C: "Önce Toksik Gazlar → Sonra Oksijen → En son Toz yoğunluğu ölçülmesi ve raporlanması gerekir.",
+          D: "Yalnızca sıcaklık ölçümü yapılması kapalı alana girmek için yeterlidir; gaz ölçümüne gerek yoktur.",
+          E: "1. Karbonmonoksit → 2. Karbondioksit → 3. Oksijen zenginliği (>%25) şeklinde ölçüm yapılmalıdır."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kapalı alanlara (Confined Spaces) girmeden önce kalibre edilmiş multi-gaz dedektörü ile yapılacak gaz ölçüm hiyerarşisi uluslararası standartlarda belirlenmiştir:</p><ul><li>1. Oksijen Ölçümü: %19,5 - %23,5 arasında olduğu doğrulanmalıdır (Çünkü yanıcı gaz sensörlerinin doğru çalışması için ortamda yeterli oksijen olmalıdır).</li><li>2. Yanıcı/Patlayıcı Gaz Ölçümü: Ototutuşma ve patlama riskine karşı LEL oranının %10\'un altında olduğu doğrulanmalıdır.</li><li>3. Toksik Gaz Ölçümü: CO, H₂S, NO₂ gibi toksik gazların TWA sınır değerlerinin altında olduğu doğrulanmalıdır.</li></ul><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Oksijen ölçülmeden yanıcı gaz ölçümü yapılırsa katalitik sensörler yanlış sonuç verir.</li><li>C Şıkkı <u>Yanlıştır</u>: Ölçüm sırası terstir.</li><li>D Şıkkı <u>Yanlıştır</u>: Yalnızca sıcaklık ölçümü gaz zehirlenmelerini ve patlamaları engelleyemez.</li><li>E Şıkkı <u>Yanlıştır</u>: Oksijen zenginliği (>%23,5) güvenli seviye değildir, patlama yaratır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Çalışanların Patlayıcı Ortamların Tehlikelerinden Korunmalarına Dair Yönetmelik.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kapalı alanlara girmeden önce kalibre edilmiş multi-gaz dedektörü ile yapılacak gaz ölçüm hiyerarşisi uluslararası standartlarda belirlenmiştir: 1. Oksijen Ölçümü (%19,5 - %23,5 arası), 2. Yanıcı/Patlayıcı Gaz Ölçümü (LEL %10\'un altı), 3. Toksik Gaz Ölçümü (CO, H₂S, NO₂ TWA altı).</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Oksijen ölçülmeden yanıcı gaz ölçümü yapılırsa katalitik sensörler yanlış sonuç verir.</li><li>C Şıkkı <u>Yanlıştır</u>: Ölçüm sırası terstir.</li><li>D Şıkkı <u>Yanlıştır</u>: Yalnızca sıcaklık ölçümü gaz zehirlenmelerini ve patlamaları engelleyemez.</li><li>E Şıkkı <u>Yanlıştır</u>: Oksijen zenginliği (>%23,5) güvenli seviye değildir, patlama yaratır.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Çalışanların Patlayıcı Ortamların Tehlikelerinden Korunmalarına Dair Yönetmelik.</p>'
       },
       {
         n: 32,
         topic: "Bölüm 7 · Kapalı Alanda Saf Oksijen Verilmesinin Yasaklığı",
         text: "Kapalı bir tank içerisinde kaynak yapan personelin ferahlaması veya dumanın dağılması amacıyla havalandırma hortumundan ortama SAF OKSİJEN verilmiştir. Bu tehlikeli uygulamanın yaratacağı patlamalı sonuç ve mevzuat kısıtlaması ile ilgili aşağıdakilerden hangisi doğrudur?",
         options: {
-          A: "Kapalı alan havalandırmasında KESİNLİKLE saf oksijen kullanılmaz; ortamda oksijen oranının %23,5'in üzerine çıkması (oksijen zenginleşmesi) elbiselerin, saçların ve malzemelerin tutuşma sıcaklığını düşürerek patlamalı yangına yol açar.",
-          B: "Oksijen verilmesi çalışanın performansını artırdığı için kapalı alanda standart uygulamadır.",
-          C: "Oksijen gazı patlamaz, yalnızca havadaki nemi kurutarak kaynak kalitesini düşürür.",
-          D: "Oksijen seviyesi ne kadar artarsa artsın statik kıvılcım olmadığı sürece yangın çıkmaz.",
-          E: "Kapalı alana verilen oksijen duman partiküllerini yok ederek ortamı sterilize eder."
+          A: "Kapalı alan havalandırmasında kesinlikle saf oksijen kullanılmaz; oksijen oranının %23,5'in üzerine çıkması elbiselerin tutuşma sıcaklığını düşürerek patlamalı yangına yol açar.",
+          B: "Oksijen verilmesi çalışanın performansını artırdığı için kapalı alanda standart uygulamadır ve sakıncası yoktur.",
+          C: "Oksijen gazı patlamaz, yalnızca havadaki nemi kurutarak kaynak kalitesini düşürür ve zarar vermez.",
+          D: "Oksijen seviyesi ne kadar artarsa artsın statik kıvılcım olmadığı sürece yangın çıkmaz ve tehlike oluşmaz.",
+          E: "Kapalı alana verilen oksijen duman partiküllerini yok ederek ortamı sterilize eder ve solunumu rahatlatır."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kapalı alan havalandırmasında KESİNLİKLE saf oksijen kullanılmaz; sadece temiz atmosferik hava üflenir. Ortamda oksijen konsantrasyonunun %23,5\'i aşması "Oksijen Zenginleşmesi" (Oxygen Enrichment) olarak adlandırılır. Oksijen oranının artması, tekstil ürünlerinin, elbiselerin, yağlı maddelerin ve hatta vücut kıllarının tutuşma sıcaklığını dramatik şekilde düşürür. En küçük bir statik kıvılcımda elbise patlamalı şekilde alev alır ve çalışanın kurtulması imkansız hale gelir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Kapalı alana saf oksijen basılması bir ferahlatma yöntemi değil, ölümcül bir ihlaldir.</li><li>C Şıkkı <u>Yanlıştır</u>: Oksijen kendisi yanmasa da tutuşmayı patlamalı hale getirir.</li><li>D Şıkkı <u>Yanlıştır</u>: Oksijen zengin ortamda en ufak sıcak çapak veya sürtünme kıvılcımı patlamaya yeterlidir.</li><li>E Şıkkı <u>Yanlıştır</u>: Oksijen duman partiküllerini yok etmez veya sterilize etmez.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kapalı alan havalandırmasında kesinlikle saf oksijen kullanılmaz; sadece temiz atmosferik hava üflenir. Ortamda oksijen konsantrasyonunun %23,5\'i aşması "Oksijen Zenginleşmesi" olarak adlandırılır. Oksijen oranının artması, tekstil ürünlerinin, elbiselerin, yağlı maddelerin ve hatta vücut kıllarının tutuşma sıcaklığını dramatik şekilde düşürür. En küçük bir statik kıvılcımda elbise patlamalı şekilde alev alır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Kapalı alana saf oksijen basılması ölümcül bir ihlaldir.</li><li>C Şıkkı <u>Yanlıştır</u>: Oksijen kendisi yanmasa da tutuşmayı patlamalı hale getirir.</li><li>D Şıkkı <u>Yanlıştır</u>: Oksijen zengin ortamda en ufak sıcak çapak patlamaya yeterlidir.</li><li>E Şıkkı <u>Yanlıştır</u>: Oksijen duman partiküllerini yok etmez veya sterilize etmez.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği.</p>'
       },
       {
         n: 33,
         topic: "Bölüm 7 · Emniyet Gözlemcisi (Dış Nöbetçi) Görevleri",
-        text: "Kapalı alanda (Örn. Buhar kazanı içi) yürütülen kaynak işlerinde kapalı alan dışında sürekli görev yapan \"Emniyet Gözlemcisi\"nin (Dış Nöbetçi) görev ve yetkileriyle ilgili aşağıdakilerden hangisi <u>yanlıştır</u>?",
+        text: "Kapalı alanda yürütülen kaynak işlerinde kapalı alan dışında sürekli görev yapan \"Emniyet Gözlemcisi\"nin (Dış Nöbetçi) görev ve yetkileriyle ilgili aşağıdakilerden hangisi <u>yanlıştır</u>?",
         options: {
-          A: "İçerideki çalışanla sürekli iletişim (görsel, sesli veya telsiz) halinde kalmalıdır.",
+          A: "İçerideki çalışanla sürekli iletişim halinde kalmalıdır ve bu iletişim görsel, sesli veya telsizle olmalıdır.",
           B: "Acil bir durum oluştuğunda hemen kapalı alanın içine atlayarak kazazedeyi kucağında dışarı taşımalıdır.",
-          C: "Acil durumda onaylanmış kurtarma planını devreye sokmalı ve dışarıdan kurtarma ekipmanlarını (tripod, vinç, solunum seti) kullanmalıdır.",
-          D: "İçeriye yetkisiz kişilerin girmesini engellemeli ve giriş-çıkış kaydını tutmalıdır.",
+          C: "Acil durumda onaylanmış kurtarma planını devreye sokmalı ve dışarıdan kurtarma ekipmanlarını kullanmalıdır.",
+          D: "İçeriye yetkisiz kişilerin girmesini engellemeli ve giriş-çıkış kaydını düzenli olarak tutmalıdır.",
           E: "Kapalı alandaki havalandırma ve gaz izleme sistemlerinin durumunu dışarıdan takip etmelidir."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kapalı alan Emniyet Gözlemcisi (Dış Nöbetçi), acil bir durum geliştiğinde KESİNLİKLE kendisi korunmasız ve ekipmansız olarak kapalı alanın içine girmemelidir. İstatistiklere göre kapalı alandaki ölümlerin %60\'ı, kazazedeyi kurtarmak için kapalı alana şuursuzca giren eğitimli/eğitimsiz gözlemcilerden oluşmaktadır. Gözlemcinin görevi dışarıda kalmak, iletişimi sürdürmek ve acil durum kurtarma planını (tripod/vinç/solunum seti ile dışarıdan kurtarma) devreye sokmaktır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: İçerideki çalışanla sürekli iletişim tutmak gözlemcinin asli görevidir.</li><li>C Şıkkı Doğrudur: Dışarıdan onaylı kurtarma ekipmanlarını kullanmak gözlemcinin asli görevidir.</li><li>D Şıkkı Doğrudur: Giriş-çıkış kaydı tutmak ve yetkisiz girişi engellemek gözlemcinin asli görevidir.</li><li>E Şıkkı Doğrudur: Gaz izleme ve havalandırma sistemlerini dışarıdan kontrol etmek gözlemcinin görevidir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kapalı alan Emniyet Gözlemcisi, acil bir durum geliştiğinde kesinlikle kendisi korunmasız ve ekipmansız olarak kapalı alanın içine girmemelidir. İstatistiklere göre kapalı alandaki ölümlerin büyük kısmı, kazazedeyi kurtarmak için kapalı alana şuursuzca giren gözlemcilerden oluşmaktadır. Gözlemcinin görevi dışarıda kalmak, iletişimi sürdürmek ve acil durum kurtarma planını devreye sokmaktır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: İçerideki çalışanla sürekli iletişim tutmak asli görevdir.</li><li>C Şıkkı Doğrudur: Dışarıdan onaylı kurtarma ekipmanlarını kullanmak asli görevdir.</li><li>D Şıkkı Doğrudur: Giriş-çıkış kaydı tutmak ve yetkisiz girişi engellemek asli görevdir.</li><li>E Şıkkı Doğrudur: Gaz izleme ve havalandırma sistemlerini kontrol etmek asli görevdir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği.</p>'
       },
       {
         n: 34,
@@ -1035,97 +1014,97 @@ const TESTS = [
         text: "Kapalı alanlarda toksik kaynak dumanının uzaklaştırılması ve çalışana temiz hava sağlanması için Cebri Havalandırma ve Taze Hava Beslemeli Solunum Cihazları kullanılır. Bu sistemlerin kurulumu ve atmosferik basınç dengesi ile ilgili aşağıdakilerden hangisi doğrudur?",
         options: {
           A: "Kapalı alana sadece kirli havayı dışarı atan emiş havalandırması yapılmalı, içeri taze hava verilmemelidir.",
-          B: "Solunum maskesine hava sağlayan kompresörlerin hava emiş hatları, egzoz gazlarının bulunmadığı temiz dış ortamdan beslenmeli ve Yağ/Toz filtrelerinden geçirilmelidir.",
-          C: "Kapalı alan içine yerleştirilen jeneratörlerle havalandırma fanı çalıştırılmalıdır.",
-          D: "Taze hava yerine tüpten saf azot gazı basılarak duman boğulmalıdır.",
-          E: "Kapalı alandaki hava hızı 15 m/s'nin üzerine çıkarılarak personel serinletilmelidir."
+          B: "Solunum maskesine hava sağlayan kompresörlerin hava emiş hatları, egzoz gazlarının bulunmadığı temiz dış ortamdan beslenmeli ve filtrelerden geçirilmelidir.",
+          C: "Kapalı alan içine yerleştirilen jeneratörlerle havalandırma fanı çalıştırılmalı ve elektrik ihtiyacı karşılanmalıdır.",
+          D: "Taze hava yerine tüpten saf azot gazı basılarak duman boğulmalı ve ortam temizlenmelidir.",
+          E: "Kapalı alandaki hava hızı 15 m/s'nin üzerine çıkarılarak personel serinletilmeli ve hava sirkülasyonu artırılmalıdır."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kapalı alanlarda temiz hava beslemeli maskelere veya ortama taze hava sağlayan kompresörlerin hava emiş noktaları son derece kritiktir. Kompresör emiş vanası; dizel/benzinli motor egzozlarından, kaynak dumanından veya gaz salınım noktalarından tamamen uzak, temiz dış atmosferden beslenmelidir. Ayrıca hatta biriken yağ buharını, nemi ve partikülleri tutmak için kompresör çıkışına özel yağ/su separatörleri ve aktif karbon filtreler yerleştirilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Sadece emiş yapıp taze hava vermemek kapalı alanda yüksek vakum ve oksijen çökmesine yol açar; taze hava beslemesi şarttır.</li><li>C Şıkkı <u>Yanlıştır</u>: Kapalı alana benzinli/dizel jeneratör konulması ortama Karbonmonoksit (CO) basar ve öldürür.</li><li>D Şıkkı <u>Yanlıştır</u>: Azot basılması ortamdaki oksijeni tamamen yok ederek anında boğulmaya yol açar.</li><li>E Şıkkı <u>Yanlıştır</u>: 15 m/s hava hızı kasırga şiddetindedir; koruyucu gazı süpürür ve kaynak yapmayı imkansız kılar.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 14594 (Solunum koruyucular - Temiz hava beslemeli cihazlar).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kapalı alanlarda temiz hava beslemeli maskelere veya ortama taze hava sağlayan kompresörlerin hava emiş noktaları son derece kritiktir. Kompresör emiş vanası; dizel/benzinli motor egzozlarından, kaynak dumanından veya gaz salınım noktalarından tamamen uzak, temiz dış atmosferden beslenmelidir. Ayrıca hatta biriken yağ buharını, nemi ve partikülleri tutmak için kompresör çıkışına özel yağ/su separatörleri ve filtreler yerleştirilmelidir.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: Sadece emiş yapıp taze hava vermemek kapalı alanda yüksek vakum ve oksijen çökmesine yol açar.</li><li>C Şıkkı <u>Yanlıştır</u>: Kapalı alana jeneratör konulması ortama Karbonmonoksit basar ve öldürür.</li><li>D Şıkkı <u>Yanlıştır</u>: Azot basılması ortamdaki oksijeni tamamen yok ederek anında boğulmaya yol açar.</li><li>E Şıkkı <u>Yanlıştır</u>: 15 m/s hava hızı kasırga şiddetindedir; koruyucu gazı süpürür ve kaynak yapmayı imkansız kılar.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> TS EN 14594 (Solunum koruyucular - Temiz hava beslemeli cihazlar).</p>'
       },
       {
         n: 35,
         topic: "Bölüm 7 · Kapalı Alanda Ekipman Konumlandırma ve Mola Kuralları",
         text: "Kapalı ve dar alanlarda yapılacak kaynak operasyonlarında ekipmanların konumlandırılması ve çalışma molaları ile ilgili iş güvenliği kuralı aşağıdakilerden hangisidir?",
         options: {
-          A: "Basınçlı gaz tüpleri ve kaynak makineleri kapalı alan DIŞINDA tutulmalı; öğle arası ve uzun molalarda şaloma ve hortumlar kapalı alan dışına çıkarılmalıdır.",
+          A: "Basınçlı gaz tüpleri ve kaynak makineleri kapalı alan dışında tutulmalı; öğle arası ve uzun molalarda şaloma ve hortumlar kapalı alan dışına çıkarılmalıdır.",
           B: "Asetilen tüpleri daha kolay ulaşmak için kaynakçının hemen yanına kapalı alan içine yerleştirilmelidir.",
-          C: "Uzun molalarda şaloma vanaları kapatılarak kapalı alan içinde bırakılabilir.",
-          D: "Kaynak makinesi kapalı alanın tam ortasına kurularak kablo mesafesi kısaltılmalıdır.",
-          E: "Molalarda kapalı alanın kapısı kapatılıp kilitlenmeli, havalandırma kapatılmalıdır."
+          C: "Uzun molalarda şaloma vanaları kapatılarak kapalı alan içinde bırakılabilir ve sakıncası yoktur.",
+          D: "Kaynak makinesi kapalı alanın tam ortasına kurularak kablo mesafesi kısaltılmalı ve verim artırılmalıdır.",
+          E: "Molalarda kapalı alanın kapısı kapatılıp kilitlenmeli, havalandırma kapatılarak enerji tasarrufu sağlanmalıdır."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kapalı ve dar alan kaynak işlerinde patlama ve boğulma risklerini bertaraf etmek amacıyla; basınçlı gaz tüpleri (asetilen, oksijen, argon) ve kaynak jeneratörleri/trafoları KESİNLİKLE kapalı alanın dışında konuşlandırılmalıdır. Ayrıca yemek molası, vardiya değişimi gibi çalışma duraklamalarında şaloma, gaz hortumları ve elektrot kabloları kapalı alan dışına çıkarılmalıdır. Bu uygulama, mola esnasında içeriye sızabilecek gazların birikerek patlama yaratmasını önler.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Asetilen tüpünün kapalı alan içine yerleştirilmesi felakete davetiyedir.</li><li>C Şıkkı <u>Yanlıştır</u>: Molalarda şalomanın vanasını kapatıp içeride bırakmak sızıntı riskini sıfırlamaz; dışarı çıkarılmalıdır.</li><li>D Şıkkı <u>Yanlıştır</u>: Kaynak makinesi kapalı alana kurulamaz.</li><li>E Şıkkı <u>Yanlıştır</u>: Molalarda kapının kilitlenip havalandırmanın kapatılması içeride gaz birikmesine neden olur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği Ek-4.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kapalı ve dar alan kaynak işlerinde patlama ve boğulma risklerini bertaraf etmek amacıyla; basınçlı gaz tüpleri ve kaynak jeneratörleri kesinlikle kapalı alanın dışında konuşlandırılmalıdır. Ayrıca yemek molası, vardiya değişimi gibi çalışma duraklamalarında şaloma, gaz hortumları ve elektrot kabloları kapalı alan dışına çıkarılmalıdır. Bu uygulama, mola esnasında içeriye sızabilecek gazların birikerek patlama yaratmasını önler.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Asetilen tüpünün kapalı alan içine yerleştirilmesi felakete davetiyedir.</li><li>C Şıkkı <u>Yanlıştır</u>: Molalarda şalomanın vanasını kapatıp içeride bırakmak sızıntı riskini sıfırlamaz.</li><li>D Şıkkı <u>Yanlıştır</u>: Kaynak makinesi kapalı alana kurulamaz.</li><li>E Şıkkı <u>Yanlıştır</u>: Molalarda kapının kilitlenip havalandırmanın kapatılması içeride gaz birikmesine neden olur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği Ek-4.</p>'
       },
       {
         n: 36,
         topic: "Bölüm 8 · Genç Çalışanların Kaynak İşlerinde Çalıştırılma Yasağı",
         text: "6331 sayılı İş Sağlığı ve Güvenliği Kanunu ve ilgili ikincil mevzuata göre, 18 yaşını doldurmamış genç çalışanların kaynak işlerinde çalıştırılması ile ilgili hukuki durum aşağıdakilerden hangisidir?",
         options: {
-          A: "Genç çalışanlar gerekli kişisel koruyucu donanım verildiği takdirde her türlü kaynak işinde çalıştırılabilir.",
-          B: "Genç çalışanların kaynak işlerinde (ağır ve tehlikeli iş niteliğinde olduğundan) çalıştırılmaması esastır; Ancak mesleki ve teknik eğitimin gerektirdiği pratik uygulamalar hariç çalıştırılmaları yasaktır.",
-          C: "Genç çalışanlar günde 10 saati geçmemek şartıyla sadece gaz kaynağında çalışabilir.",
+          A: "Genç çalışanlar gerekli kişisel koruyucu donanım verildiği takdirde her türlü kaynak işinde rahatlıkla çalıştırılabilir.",
+          B: "Genç çalışanların kaynak işlerinde çalıştırılmaması esastır; ancak mesleki ve teknik eğitimin gerektirdiği pratik uygulamalar hariç çalıştırılmaları yasaktır.",
+          C: "Genç çalışanlar günde 10 saati geçmemek şartıyla sadece gaz kaynağında çalışabilir ve diğer yöntemlere giremez.",
           D: "Genç çalışanlar velisinin yazılı izniyle tehlikeli sınıftaki kaynak atölyelerinde gece vardiyasında çalışabilir.",
-          E: "15 yaşını bitirmiş her çocuk hiçbir kısıtlama olmaksızın kaynakçı çırağı olarak çalıştırılabilir."
+          E: "15 yaşını bitirmiş her çocuk hiçbir kısıtlama olmaksızın kaynakçı çırağı olarak çalıştırılabilir ve ücret alabilir."
         },
         answer: "B",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> 6331 sayılı İSG Kanunu ve "Çocuk ve Genç İşçilerin Çalıştırılma Usul ve Esasları Hakkında Yönetmelik" hükümleri uyarınca; 18 yaşını doldurmamış genç çalışanların Tehlikeli ve Çok Tehlikeli sınıfta yer alan Ağır ve Tehlikeli iş niteliğindeki kaynak işlerinde çalıştırılmaları KESİNLİKLE YASAKTIR. Bu kuralın tek istisnası; mesleki ve teknik eğitim alan öğrencilerin eğitim müfredatının gerektirdiği pratik staj uygulamalarıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: KKD verilse dahi 18 yaş altı genç çalışanlar kaynak işinde çalıştırılamaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Süre kısıtlaması konularak gaz kaynağında çalıştırılmalarına izin verilemez.</li><li>D Şıkkı <u>Yanlıştır</u>: Veli izni olsa dahi gece vardiyasında ve tehlikeli sınıfta kaynak işi yasaktır.</li><li>E Şıkkı <u>Yanlıştır</u>: 15 yaşındaki çocukların hiçbir kısıtlama olmadan çalıştırılabileceği ifadesi yasal olarak tamamen geçersizdir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Çocuk ve Genç İşçilerin Çalıştırılma Usul ve Esasları Hakkında Yönetmelik (Ek-3).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> 6331 sayılı İSG Kanunu ve "Çocuk ve Genç İşçilerin Çalıştırılma Usul ve Esasları Hakkında Yönetmelik" hükümleri uyarınca; 18 yaşını doldurmamış genç çalışanların Tehlikeli ve Çok Tehlikeli sınıfta yer alan Ağır ve Tehlikeli iş niteliğindeki kaynak işlerinde çalıştırılmaları kesinlikle yasaktır. Bu kuralın tek istisnası; mesleki ve teknik eğitim alan öğrencilerin eğitim müfredatının gerektirdiği pratik staj uygulamalarıdır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı <u>Yanlıştır</u>: KKD verilse dahi 18 yaş altı genç çalışanlar kaynak işinde çalıştırılamaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Süre kısıtlaması konularak gaz kaynağında çalıştırılmalarına izin verilemez.</li><li>D Şıkkı <u>Yanlıştır</u>: Veli izni olsa dahi gece vardiyasında ve tehlikeli sınıfta kaynak işi yasaktır.</li><li>E Şıkkı <u>Yanlıştır</u>: 15 yaşındaki çocukların hiçbir kısıtlama olmadan çalıştırılabileceği ifadesi yasal olarak tamamen geçersizdir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Çocuk ve Genç İşçilerin Çalıştırılma Usul ve Esasları Hakkında Yönetmelik (Ek-3).</p>'
       },
       {
         n: 37,
         topic: "Bölüm 8 · Gebe ve Emziren Çalışanların Kaynak İşlerinde Çalıştırılması",
         text: "Gebe ve Emziren Kadın Çalışanların Çalıştırılma Şartları ve Emzirme Odaları Hakkında Yönetmelik uyarınca, gebe veya emziren kadın çalışanların kaynak atölyelerindeki çalışma koşulları ile ilgili yasal hüküm aşağıdakilerden hangisidir?",
         options: {
-          A: "Gebe çalışanlar kaynak dumanı, toksik gazlar ve radyasyon içeren kaynak işlerinde kesinlikle çalıştırılamaz.",
-          B: "Gebe çalışanlar günde 4 saati geçmemek üzere TIG kaynağı yapabilirler.",
+          A: "Gebe çalışanlar kaynak dumanı, toksik gazlar ve radyasyon içeren kaynak işlerinde kesinlikle çalıştırılamaz ve hafif işlere atanmalıdır.",
+          B: "Gebe çalışanlar günde 4 saati geçmemek üzere TIG kaynağı yapabilir ve bu süre yasal olarak uygundur.",
           C: "Emziren kadın çalışanlar doğumdan sonraki 3. aydan itibaren kapalı alan kaynak işlerine geri dönerler.",
-          D: "Gebe çalışanlara kurşun önlük giydirilerek ark kaynağında çalıştırılmalarına izin verilir.",
-          E: "Kadın çalışanların kaynak işlerinde çalıştırılması medeni kanuna göre tamamen yasaktır."
+          D: "Gebe çalışanlara kurşun önlük giydirilerek ark kaynağında çalıştırılmalarına izin verilir ve sakıncası yoktur.",
+          E: "Kadın çalışanların kaynak işlerinde çalıştırılması medeni kanuna göre tamamen yasaktır ve mümkün değildir."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> "Gebe veya Emziren Kadınların Çalıştırılma Şartları ve Emzirme Odaları Hakkında Yönetmelik" uyarınca; gebe çalışanların tabiatı gereği toksik duman, ağır metaller (Pb, Cr, Ni, Zn), iritan gazlar (NOₓ, O₃) ve iyonlaştırıcı/iyonlaştırıcı olmayan optik radyasyon barındıran kaynak işlerinde çalıştırılmaları KESİNLİKLE YASAKTIR. İşveren gebe çalışanı sağlık durumuna uygun hafif işlere atamakla yükümlüdür.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Gebe kadınlara süreli de olsa (4 saat) TIG kaynağı yaptırılamaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Emziren kadınlar toksik duman içeren kapalı alan kaynak işlerinde çalıştırılamaz.</li><li>D Şıkkı <u>Yanlıştır</u>: Gebe çalışanlara kurşun önlük giydirilerek kaynak yaptırılması kabul edilemez bir mevzuat ihlalidir.</li><li>E Şıkkı <u>Yanlıştır</u>: Gebe/emziren durumunda olmayan yetişkin kadınların kaynakçı olarak çalışması genel olarak yasak değildir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Gebe veya Emziren Kadınların Çalıştırılma Şartları ve Emzirme Odaları Hakkında Yönetmelik (Madde 9).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> "Gebe veya Emziren Kadınların Çalıştırılma Şartları ve Emzirme Odaları Hakkında Yönetmelik" uyarınca; gebe çalışanların tabiatı gereği toksik duman, ağır metaller, iritan gazlar ve radyasyon barındıran kaynak işlerinde çalıştırılmaları kesinlikle yasaktır. İşveren gebe çalışanı sağlık durumuna uygun hafif işlere atamakla yükümlüdür.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Gebe kadınlara süreli de olsa TIG kaynağı yaptırılamaz.</li><li>C Şıkkı <u>Yanlıştır</u>: Emziren kadınlar toksik duman içeren kapalı alan kaynak işlerinde çalıştırılamaz.</li><li>D Şıkkı <u>Yanlıştır</u>: Gebe çalışanlara kurşun önlük giydirilerek kaynak yaptırılması kabul edilemez bir mevzuat ihlalidir.</li><li>E Şıkkı <u>Yanlıştır</u>: Gebe/emziren durumunda olmayan yetişkin kadınların kaynakçı olarak çalışması genel olarak yasak değildir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Gebe veya Emziren Kadınların Çalıştırılma Şartları ve Emzirme Odaları Hakkında Yönetmelik (Madde 9).</p>'
       },
       {
         n: 38,
         topic: "Bölüm 8 · Kaynak İşlerinde 7,5 Saat Kuralı ve Fazla Mesai Yasağı",
         text: "\"Sağlık Kuralları Bakımından Günde Azami 7,5 Saat veya Daha Az Çalışılması Gereken İşler Hakkında Yönetmelik\" kapsamında yer alan kaynak işlerinde günlük azami çalışma süreleri ve fazla mesai uygulamaları ile ilgili aşağıdakilerden hangisi doğrudur?",
         options: {
-          A: "Kaynak işlerinde günlük çalışma süresi azami 7,5 saattir ve bu süreyi aşan fazla çalışma (fazla mesai) yapılması yasal olarak yasaktır.",
-          B: "Kaynakçılar günde 12 saat çalıştırılabilir, aşan 4 saat normal ücretle ödenir.",
-          C: "Günde 7,5 saatten fazla çalışan kaynakçılara çift maske verilerek 11 saate kadar izin verilir.",
-          D: "Vardiyalı çalışmada gece döneminde kaynak işleri kesintisiz 10 saat sürdürülebilir.",
-          E: "Çalışma süresi kısıtlaması sadece su altı kaynakçıları için geçerlidir, karada sınır yoktur."
+          A: "Kaynak işlerinde günlük çalışma süresi azami 7,5 saattir ve bu süreyi aşan fazla çalışma yapılması yasal olarak yasaktır.",
+          B: "Kaynakçılar günde 12 saat çalıştırılabilir ve aşan 4 saat normal ücretle ödenerek mesai tamamlanabilir.",
+          C: "Günde 7,5 saatten fazla çalışan kaynakçılara çift maske verilerek 11 saate kadar izin verilir ve yasal sınır aşılabilir.",
+          D: "Vardiyalı çalışmada gece döneminde kaynak işleri kesintisiz 10 saat sürdürülebilir ve sınırlama uygulanmaz.",
+          E: "Çalışma süresi kısıtlaması sadece su altı kaynakçıları için geçerlidir, karada herhangi bir sınır yoktur."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> "Sağlık Kuralları Bakımından Günde Azami 7,5 Saat veya Daha Az Çalışılması Gereken İşler Hakkında Yönetmelik" Madde 4 hükümleri gereğince; kaynak işleri "Günde Azami 7,5 Saat Çalışılabilecek İşler" kategorisindedir. Bu işlerde çalışan personelin günlük çalışma süresi 7,5 saati geçemez ve bu sürenin üzerine FAZLA ÇALIŞMA (fazla mesai) yaptırılması kanunen KESİNLİKLE YASAKTIR.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Günde 12 saat çalıştırma 7,5 saat kuralını ve fazla çalışma yasağını açıkça ihlal eder.</li><li>C Şıkkı <u>Yanlıştır</u>: Çift maske verilerek fazla mesai yaptırılamaz; mevzuatta böyle bir muafiyet yoktur.</li><li>D Şıkkı <u>Yanlıştır</u>: Gece döneminde de kaynak işi 7,5 saati aşamaz.</li><li>E Şıkkı <u>Yanlıştır</u>: Sınırlama sadece su altı değil, tüm karasal kaynak işleri için geçerlidir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Sağlık Kuralları Bakımından Günde Azami 7,5 Saat veya Daha Az Çalışılması Gereken İşler Hakkında Yönetmelik (Madde 4 ve Madde 7).</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> "Sağlık Kuralları Bakımından Günde Azami 7,5 Saat veya Daha Az Çalışılması Gereken İşler Hakkında Yönetmelik" Madde 4 hükümleri gereğince; kaynak işleri "Günde Azami 7,5 Saat Çalışılabilecek İşler" kategorisindedir. Bu işlerde çalışan personelin günlük çalışma süresi 7,5 saati geçemez ve bu sürenin üzerine fazla çalışma yaptırılması kanunen kesinlikle yasaktır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: Günde 12 saat çalıştırma 7,5 saat kuralını ve fazla çalışma yasağını açıkça ihlal eder.</li><li>C Şıkkı <u>Yanlıştır</u>: Çift maske verilerek fazla mesai yaptırılamaz; mevzuatta böyle bir muafiyet yoktur.</li><li>D Şıkkı <u>Yanlıştır</u>: Gece döneminde de kaynak işi 7,5 saati aşamaz.</li><li>E Şıkkı <u>Yanlıştır</u>: Sınırlama sadece su altı değil, tüm karasal kaynak işleri için geçerlidir.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> Sağlık Kuralları Bakımından Günde Azami 7,5 Saat veya Daha Az Çalışılması Gereken İşler Hakkında Yönetmelik (Madde 4 ve Madde 7).</p>'
       },
       {
         n: 39,
         topic: "Bölüm 8 · Kaynakçılarda Periyodik Sağlık Muayenesi",
         text: "Kaynak işlerinde çalışan personelin işe giriş ve periyodik sağlık muayenelerinde, kaynak dumanı ve ağır metal maruziyetinin erken tanısı için yapılması zorunlu tıbbi tetkikler ve sağlık gözetimi ile ilgili aşağıdakilerden hangisi <u>yanlıştır</u>?",
         options: {
-          A: "Akciğer Grafisi (ILO standartlarında Pnömokonyoz okuması)",
-          B: "Solunum Fonksiyon Testi (SFT - FVC, FEV1 değerleri)",
-          C: "Kanda veya idrarda Ağır Metal Analizi (Çinko, Krom, Nikel, Kurşun, Manganez)",
-          D: "İşitme Testi (Odyometri) ve Göz Muayenesi",
-          E: "Yalnızca rutin kan grubu tespiti yapılması periyodik sağlık gözetimi için yeterlidir."
+          A: "Akciğer Grafisi (ILO standartlarında Pnömokonyoz okuması) ve radyolojik değerlendirme yapılmalıdır.",
+          B: "Solunum Fonksiyon Testi (SFT - FVC, FEV1 değerleri) ve spirometrik inceleme yapılmalıdır.",
+          C: "Kanda veya idrarda Ağır Metal Analizi (Çinko, Krom, Nikel, Kurşun, Manganez) yapılmalıdır.",
+          D: "İşitme Testi (Odyometri) ve Göz Muayenesi düzenli olarak yapılmalı ve kayıt altına alınmalıdır.",
+          E: "Yalnızca rutin kan grubu tespiti yapılması periyodik sağlık gözetimi için yeterlidir ve başka tetkik gerekmez."
         },
         answer: "E",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak işlerinde çalışan personelin işe giriş ve periyodik sağlık muayeneleri; dumanın, ağır metallerin ve radyasyonun hedef organlarda yarattığı tahribatı izlemeye yönelik çok yönlü klinik tetkikleri gerektirir. Yalnızca rutin kan grubu tespiti yapılması yasal ve tıbbi açıdan hiçbir geçerliliği olmayan ağır bir periyodik muayene kusurudur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Akciğer grafisi (ILO standartlarında okuma) pnömokonyoz ve karsinom tanısı için zorunludur.</li><li>B Şıkkı Doğrudur: Solunum Fonksiyon Testleri (SFT) astım ve obstrüktif akciğer hastalıkları için zorunludur.</li><li>C Şıkkı Doğrudur: Kanda/idrarda ağır metal analizi toksisite izlemi için zorunludur.</li><li>D Şıkkı Doğrudur: Odyometri ve göz muayenesi optik ve gürültü riskleri için zorunludur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> 6331 sayılı İSG Kanunu Madde 15 &amp; Biyolojik Etkenlere Maruziyet Risklerinin Önlenmesi Hakkında Yönetmelik.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> Kaynak işlerinde çalışan personelin işe giriş ve periyodik sağlık muayeneleri; dumanın, ağır metallerin ve radyasyonun hedef organlarda yarattığı tahribatı izlemeye yönelik çok yönlü klinik tetkikleri gerektirir. Yalnızca rutin kan grubu tespiti yapılması yasal ve tıbbi açıdan hiçbir geçerliliği olmayan ağır bir periyodik muayene kusurudur.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>A Şıkkı Doğrudur: Akciğer grafisi pnömokonyoz ve karsinom tanısı için zorunludur.</li><li>B Şıkkı Doğrudur: Solunum Fonksiyon Testleri astım ve obstrüktif akciğer hastalıkları için zorunludur.</li><li>C Şıkkı Doğrudur: Kanda/idrarda ağır metal analizi toksisite izlemi için zorunludur.</li><li>D Şıkkı Doğrudur: Odyometri ve göz muayenesi optik ve gürültü riskleri için zorunludur.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> 6331 sayılı İSG Kanunu Madde 15 &amp; Biyolojik Etkenlere Maruziyet Risklerinin Önlenmesi Hakkında Yönetmelik.</p>'
       },
       {
         n: 40,
         topic: "Bölüm 8 · MYK Mesleki Yeterlilik Belgesi Zorunluluğu",
-        text: "5544 sayılı Mesleki Yeterlilik Kurumu Kanunu kapsamında, Tehlikeli ve Çok Tehlikeli işler sınıfında yer alan \"Kaynakçı\" (Seviye 3/4) mesleğinde çalışanların belgelendirilmesi ile ilgili aşağıdakilerden hangisi yasal zorunluluktur?",
+        text: "5544 sayılı Mesleki Yeterlilik Kurumu Kanunu kapsamında, Tehlikeli ve Çok Tehlikeli işler sınıfında yer alan \"Kaynakçı\" mesleğinde çalışanların belgelendirilmesi ile ilgili aşağıdakilerden hangisi yasal zorunluluktur?",
         options: {
-          A: "Kaynak işlerinde çalışanların MYK Mesleki Yeterlilik Belgesine veya ilgili alanda mesleki diplomaya/ustalık belgesine sahip olması zorunludur; belgesiz eleman çalıştıran işverene idari para cezası uygulanır.",
-          B: "MYK belgesi sadece yabancı uyruklu çalışanlar için zorunludur.",
-          C: "İşverenin kendi düzenlediği 2 saatlik katılım belgesi MYK belgesi yerine geçer.",
-          D: "Kaynakçı belgesi olan çalışanlar İSG eğitimlerinden muaf tutulur.",
-          E: "10 yıldan fazla kaynak yapanlardan hiçbir belge istenmez."
+          A: "Kaynak işlerinde çalışanların MYK Mesleki Yeterlilik Belgesine veya ilgili alanda mesleki diplomaya sahip olması zorunludur; belgesiz eleman çalıştıran işverene idari para cezası uygulanır.",
+          B: "MYK belgesi sadece yabancı uyruklu çalışanlar için zorunludur ve Türk vatandaşlarından istenmez.",
+          C: "İşverenin kendi düzenlediği 2 saatlik katılım belgesi MYK belgesi yerine geçer ve yeterlidir.",
+          D: "Kaynakçı belgesi olan çalışanlar İSG eğitimlerinden muaf tutulur ve eğitim almalarına gerek kalmaz.",
+          E: "10 yıldan fazla kaynak yapanlardan hiçbir belge istenmez ve tecrübe belge yerine geçer."
         },
         answer: "A",
-        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> 5544 sayılı Mesleki Yeterlilik Kurumu (MYK) Kanunu gereğince; Tehlikeli ve Çok Tehlikeli işler sınıfında yer alan "Kaynakçı" (Seviye 3/4) ve "Çelik Kaynakçısı" mesleklerinde çalışanların MYK Mesleki Yeterlilik Belgesine veya ilgili alanda mesleki diplomaya/ustalık belgesine sahip olmaları yasal zorunluluktur. Belgesiz eleman çalıştıran işverenlere 6331 sayılı Kanun uyarınca çalıştığı her bir kişi için idari para cezası uygulanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: MYK belgesi sadece yabancılar için değil, tüm Türkiye Cumhuriyeti vatandaşı çalışanlar için zorunludur.</li><li>C Şıkkı <u>Yanlıştır</u>: İşverenin kendi düzenlediği süreli katılım belgeleri MYK belgesi yerine geçmez.</li><li>D Şıkkı <u>Yanlıştır</u>: MYK belgesi olması çalışanı 6331 sayılı Kanun kapsamındaki zorunlu İSG eğitimlerinden muaf tutmaz.</li><li>E Şıkkı <u>Yanlıştır</u>: Mesleki kıdem/tecrübe belgelendirme muafiyeti sağlamaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> 5544 sayılı Mesleki Yeterlilik Kurumu Kanunu &amp; Mesleki Yeterlilik Kurumu Sınav ve Belgelendirme Yönetmeliği.</p>'
+        solution: '<p><strong>Gerekçe ve Kaynak Dayanağı:</strong> 5544 sayılı Mesleki Yeterlilik Kurumu Kanunu gereğince; Tehlikeli ve Çok Tehlikeli işler sınıfında yer alan "Kaynakçı" mesleğinde çalışanların MYK Mesleki Yeterlilik Belgesine veya ilgili alanda mesleki diplomaya/ustalık belgesine sahip olmaları yasal zorunluluktur. Belgesiz eleman çalıştıran işverenlere idari para cezası uygulanır.</p><p><strong>Çeldirici Analizi:</strong></p><ul><li>B Şıkkı <u>Yanlıştır</u>: MYK belgesi sadece yabancılar için değil, tüm çalışanlar için zorunludur.</li><li>C Şıkkı <u>Yanlıştır</u>: İşverenin kendi düzenlediği katılım belgeleri MYK belgesi yerine geçmez.</li><li>D Şıkkı <u>Yanlıştır</u>: MYK belgesi olması çalışanı zorunlu İSG eğitimlerinden muaf tutmaz.</li><li>E Şıkkı <u>Yanlıştır</u>: Mesleki kıdem/tecrübe belgelendirme muafiyeti sağlamaz.</li></ul><p><strong>Mevzuat ve Teknik Standart Dayanağı:</strong> 5544 sayılı Mesleki Yeterlilik Kurumu Kanunu &amp; MYK Sınav ve Belgelendirme Yönetmeliği.</p>'
       }
     ]
   }
@@ -1145,7 +1124,6 @@ const navEl = document.getElementById('navigator');
 const areaEl = document.getElementById('testArea');
 const resultEl = document.getElementById('resultCard');
 
-/* ---- TABS ---- */
 function buildTabs(){
   tabsEl.innerHTML = TESTS.map((t, i) =>
     `<button class="tab-btn ${i===0?'active':''}" data-test="${i}">
@@ -1164,7 +1142,6 @@ function buildTabs(){
   });
 }
 
-/* ---- NAVIGATOR ---- */
 function buildNav(){
   const test = TESTS[state.currentTest];
   const ans = state.answers[state.currentTest];
@@ -1185,7 +1162,6 @@ function buildNav(){
   });
 }
 
-/* ---- HELPERS ---- */
 function calculateStats(testIdx){
   const test = TESTS[testIdx];
   const ans = state.answers[testIdx];
@@ -1207,7 +1183,6 @@ function updateScoreBar(){
   document.getElementById('sPuan').textContent = s.puan;
 }
 
-/* ---- RENDER QUESTION ---- */
 function render(){
   const testIdx = state.currentTest;
   const qIdx = state.currentQ[testIdx];
@@ -1328,7 +1303,6 @@ function render(){
   });
 }
 
-/* ---- COMPLETION CHECK ---- */
 function checkCompletion(){
   const testIdx = state.currentTest;
   const test = TESTS[testIdx];
@@ -1355,13 +1329,11 @@ function checkCompletion(){
   resultEl.scrollIntoView({behavior:'smooth', block:'center'});
 }
 
-/* ---- INTRO TOGGLE ---- */
 document.getElementById('introHead').addEventListener('click', function(){
   this.classList.toggle('closed');
   document.getElementById('introBody').classList.toggle('hidden');
 });
 
-/* ---- INIT ---- */
 document.getElementById('yil').textContent = new Date().getFullYear();
 buildTabs();
 render();
