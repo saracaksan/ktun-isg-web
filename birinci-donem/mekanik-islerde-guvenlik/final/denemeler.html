@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Mekanik İşlerde Güvenlik — Final Denemeleri | 3 Deneme × 20 Soru | KTÜN İSG">
@@ -531,8 +532,876 @@ img{max-width:100%;height:auto;}
   .option{font-size:15px;}
 }
 </style>
+
+<style>
+/* =========================================================
+   TEK DOSYA PORTAL KABUĞU
+   Orijinal deneme HTML'sinin CSS'i değiştirilmeden korunur.
+   Aşağıdaki stiller yalnızca konu anlatımı ve portal menüsü içindir.
+   ========================================================= */
+#tek-dosya-portal{
+  position:sticky;top:0;z-index:9999;
+  background:#071a33;color:#fff;border-bottom:1px solid #18385c;
+  box-shadow:0 5px 18px rgba(0,0,0,.16);
+}
+#tek-dosya-portal .portal-inner{
+  max-width:1180px;margin:auto;padding:8px 16px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+}
+#tek-dosya-portal a{
+  color:#fff;text-decoration:none;padding:8px 12px;border-radius:8px;
+  font-weight:700;background:rgba(255,255,255,.08);
+}
+#tek-dosya-portal a:hover{background:#1769aa}
+#tek-dosya-portal .portal-title{font-weight:800;margin-right:auto}
+
+.study-mode{
+  background:#f4f7fb;color:#172033;
+  padding:34px 0 60px;
+  font-family:Inter,Segoe UI,Arial,sans-serif;
+  line-height:1.7;
+}
+.study-wrap{max-width:1180px;margin:auto;padding:0 18px}
+.study-mode *{box-sizing:border-box}
+.study-mode h1{font-size:clamp(30px,5vw,48px);margin:0 0 10px;color:#12356b}
+.study-mode h2{font-size:clamp(23px,3vw,32px);color:#174ea6;margin:0 0 16px;border-bottom:2px solid #dce7f4;padding-bottom:10px}
+.study-mode h3{color:#20527d;margin-top:25px}
+.study-mode p{margin:10px 0}
+.study-section{
+  background:#fff;border:1px solid #dce3ec;border-radius:16px;
+  padding:28px;margin:20px 0;box-shadow:0 5px 22px rgba(23,51,93,.07);
+}
+.study-hero{
+  background:linear-gradient(135deg,#12356b,#176b9e);color:#fff;
+  border-radius:0;padding:48px 0;
+}
+.study-hero h1{color:#fff}
+.study-hero p{color:#eaf4ff;font-size:17px}
+.study-nav{
+  position:sticky;top:49px;z-index:1000;background:#fff;border-bottom:1px solid #dce3ec;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+.study-nav .study-wrap{display:flex;gap:7px;overflow:auto;padding-top:9px;padding-bottom:9px}
+.study-nav a{white-space:nowrap;color:#174ea6;text-decoration:none;font-weight:700;padding:7px 10px;border-radius:8px}
+.study-nav a:hover{background:#eef5ff}
+.priority-grid,.mechanic-grid,.four-grid,.five-grid,.welding-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;
+}
+.priority-grid>div,.mechanic-card,.four-grid>div,.five-grid>div,.welding-grid>div{
+  border:1px solid #dce3ec;border-radius:12px;padding:16px;background:#fbfcfe;
+}
+.priority-grid b,.four-grid b,.five-grid b,.welding-grid b{display:block;color:#174ea6;margin-bottom:5px}
+.mechanic-card span{
+  width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;
+  border-radius:50%;background:#174ea6;color:#fff;font-weight:800;
+}
+.memory-box,.exam-note{
+  margin:18px 0;padding:16px 18px;border-left:5px solid #174ea6;
+  background:#eef5ff;border-radius:10px;
+}
+.exam-note{background:#fff4d6;border-left-color:#c98a00}
+.study-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.study-table th,.study-table td{border:1px solid #dce3ec;padding:10px;vertical-align:top}
+.study-table th{background:#eef4fb;text-align:left;color:#173d67}
+.steps li,.rapid li{margin:7px 0}
+.svg-card{background:#fbfcfe;border:1px solid #dce3ec;border-radius:14px;padding:16px;margin:18px 0;overflow:auto}
+.svg-card svg{display:block;width:100%;min-width:720px;height:auto}
+.gas-meter{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+.gas-meter>div{text-align:center;padding:15px;border-radius:12px;background:#eef5ff;border:1px solid #cbdcf0}
+.gas-meter strong{display:block;font-size:28px;color:#174ea6}
+.gas-meter span{display:block;font-size:20px;font-weight:800}
+.gas-meter small{display:block;color:#5f6b7a}
+.number-table td:first-child{white-space:nowrap}
+.final-jump{text-align:center;background:linear-gradient(135deg,#eaf7ee,#eef5ff)}
+.go-test{display:inline-block;background:#0b6e99;color:#fff;text-decoration:none;padding:13px 20px;border-radius:10px;font-weight:800}
+.sources-box{font-size:14px}
+.small-note{font-size:13px;color:#5f6b7a}
+@media(max-width:700px){
+ .study-section{padding:20px 16px}
+ .gas-meter{grid-template-columns:1fr}
+ .study-nav{top:86px}
+ #tek-dosya-portal .portal-title{width:100%;margin-right:0}
+}
+</style>
 </head>
 <body>
+
+<div id="tek-dosya-portal">
+  <div class="portal-inner">
+    <span class="portal-title">📘 Mekanik İşlerde Güvenlik — Tek Dosya Final Paketi</span>
+    <a href="#konu-anlatimi">📚 Kapsamlı Konu Anlatımı</a>
+    <a href="#denemeler-orijinal">📝 Final Denemeleri</a>
+  </div>
+</div>
+
+<div id="konu-anlatimi" class="study-mode">
+  <div class="study-hero">
+    <div class="study-wrap">
+      <h1>Mekanik İşlerde Güvenlik — Final Hazırlık Notu</h1>
+      <p>1–15. haftaları kapsayan, ders notları temel alınarak genişletilmiş; mekanik tehlikeleri güvenlik önlemleriyle birlikte açıklayan kapsamlı final çalışma bölümü.</p>
+    </div>
+  </div>
+
+  <div class="study-nav">
+    <div class="study-wrap">
+      <a href="#final-stratejisi">Final Haritası</a>
+      <a href="#mekanik-temel">Mekanik Mantık</a>
+      <a href="#elaletleri">El Aletleri</a>
+      <a href="#ekipman">İş Ekipmanları</a>
+      <a href="#basincli">Basınçlı Kaplar</a>
+      <a href="#makineler">İş Makineleri</a>
+      <a href="#bakim">Bakım–LOTO</a>
+      <a href="#kapali-genis">Kapalı Alan</a>
+      <a href="#kaynak-genis">Kaynak</a>
+      <a href="#sayisal-ozel">Sayılar</a>
+      <a href="#hizli-tekrar">30 Cümle</a>
+      <a href="#denemeye-gecis">Denemeye Geç</a>
+    </div>
+  </div>
+
+  <div class="study-wrap">
+    
+
+<header>
+<div class="wrap">
+<h1>Mekanik İşlerde Güvenlik – Final Konu Anlatımı</h1>
+<p>1–15. haftaları kapsayan final odaklı kapsamlı çalışma rehberi. El aletlerinden iş ekipmanlarına, basınçlı kaplardan iş makinelerine, EKED/LOTO ve kapalı alanlardan kaynak işlerine kadar ana başlıklar tek sayfada toplanmıştır.</p>
+</div>
+</header>
+
+<nav>
+<div class="navin">
+<a href="#ozet">Final Özeti</a>
+<a href="#elaletleri">1. El Aletleri</a>
+<a href="#ekipman">2. İş Ekipmanları</a>
+<a href="#basincli">3. Basınçlı Kaplar</a>
+<a href="#makineler">4. İş Makineleri</a>
+<a href="#bakim">5. Bakım-Onarım</a>
+<a href="#kaynak">6. Kaynak</a>
+<a href="#sayisal">Kritik Değerler</a>
+<a href="final.html">Final Denemeleri</a>
+</div>
+</nav>
+
+<main class="wrap">
+
+<section id="ozet">
+<h2>Finale Hazırlık: Önce Bilinmesi Gerekenler</h2>
+<div class="callout">
+<strong>Final denemelerine geçiş:</strong>
+<a class="final-link" href="final.html">Final Denemelerini Aç →</a>
+<p style="margin-bottom:0">Bu bağlantı <code>mekanik-islerde-guvenlik/final/konu-anlatimi.html</code> dosyasından kullanıldığında <code>final/final.html</code> adresine gider. Final klasöründeki deneme sayfası bu konu anlatımının tamamlayıcısıdır.</p>
+</div>
+
+<div class="grid">
+<div class="card"><strong>1–2. Hafta</strong>El aletleri ve güvenli kullanım</div>
+<div class="card"><strong>3–5. Hafta</strong>İş ekipmanları, koruyucular, kumanda ve kontroller</div>
+<div class="card"><strong>6–9. Hafta</strong>Basınçlı kaplar, testler, gaz tüpleri</div>
+<div class="card"><strong>10–11. Hafta</strong>İş makineleri ve motorlu araçlar</div>
+<div class="card"><strong>12–13. Hafta</strong>Bakım-onarım, PTW, EKED/LOTO, kapalı alan</div>
+<div class="card"><strong>14–15. Hafta</strong>Kaynak işleri, sağlık riskleri ve güvenlik</div>
+</div>
+</section>
+
+<section id="elaletleri">
+<h2>1. Bölüm – El Aletleri ile Çalışmalarda İSG (1. ve 2. Hafta)</h2>
+
+<h3>1.1. Temel tehlikeler</h3>
+<p>El aletleri; sıkıştırma, kesme, düzeltme, kaldırma, delme, şekil verme, ısıtma ve kaynatma gibi işlemlerde kullanılır. Kaynak notlarına göre temel riskler; gürültü, sivri uçlar ve keskin kenarlar, kesilme ve sıyrıklar, elektrik şoku, toz ve partiküller ile ağır yaralanmalardır.</p>
+
+<div class="grid">
+<div class="card"><strong>Gürültü</strong>Pnömatik ve motorlu aletlerde uzun süreli maruziyet işitme kaybı riski oluşturabilir.</div>
+<div class="card"><strong>Keskin kenarlar</strong>Kesilme, batma ve doku yaralanmalarına neden olabilir.</div>
+<div class="card"><strong>Elektrik</strong>Bozuk izolasyon, arızalı şase veya yetersiz topraklama elektrik çarpması oluşturabilir.</div>
+<div class="card"><strong>Toz</strong>Taşlama, zımparalama ve delme sırasında oluşan partiküller solunum sistemi için risklidir.</div>
+</div>
+
+<h3>1.2. Kazaların kök nedenleri</h3>
+<ol>
+<li><strong>Bakımsızlık ve arıza:</strong> Çatlak sap, aşınmış çene, gevşemiş sap veya mekanik yorgunluk.</li>
+<li><strong>Amaca uygun kullanmama:</strong> Aleti tasarım amacı dışında kullanmak.</li>
+<li><strong>Yanlış kullanım:</strong> Hatalı tutuş, uygunsuz açı, standart dışı uzatma kolu kullanımı veya parçayı elde tutarak işleme.</li>
+<li><strong>KKD eksikliği:</strong> Operasyona uygun gözlük, eldiven, ayakkabı vb. kullanmamak.</li>
+</ol>
+
+<h3>1.3. El aletleri için kontrol listesi</h3>
+<table>
+<tr><th>Kontrol</th><th>Risk</th><th>Temel tedbir</th></tr>
+<tr><td>Kullanım öncesi muayene</td><td>Kırık, çatlak, gevşek sap</td><td>Görsel ve mekanik kontrol; arızalı aleti hizmetten çekme</td></tr>
+<tr><td>Saplar</td><td>Kayma, fırlama</td><td>Kuru, temiz, sağlam ve uygun sap</td></tr>
+<tr><td>Taşıma</td><td>Batma ve kesilme</td><td>Sivri/keskin aletleri cepte taşımama</td></tr>
+<tr><td>Zemin</td><td>Denge kaybı</td><td>Kuru, temiz ve düzenli çalışma alanı</td></tr>
+<tr><td>Vurma yüzeyleri</td><td>Mantarlaşma ve parça fırlaması</td><td>Mantarlaşmış başları taşlama/tıraşlama</td></tr>
+<tr><td>Küçük parçalar</td><td>El ve parmak yaralanması</td><td>Mengene veya sabitleme aparatı kullanma</td></tr>
+</table>
+
+<h3>1.4. Aletleri amacı dışında kullanmama</h3>
+<table>
+<tr><th>Alet</th><th>Doğru kullanım</th><th>Hatalı kullanım örneği</th></tr>
+<tr><td>Çekiç</td><td>Uygun darbeli işlerde kullanılır.</td><td>Anahtar veya taşla çekiç yerine çalışmak.</td></tr>
+<tr><td>Keski</td><td>Uygun kesme/parçalama işlerinde.</td><td>Tornavida veya manivela gibi zorlamak.</td></tr>
+<tr><td>Matkap</td><td>Uygun uçla delme.</td><td>Eksen dışı kuvvet uygulamak, yanlış uç seçmek.</td></tr>
+<tr><td>Eğe</td><td>Talaş kaldırma ve yüzey düzeltme.</td><td>Sapsız kullanmak veya manivela gibi zorlamak.</td></tr>
+<tr><td>Bıçak</td><td>Kesme, soyma, dilimleme.</td><td>Tornavida yerine kullanmak.</td></tr>
+<tr><td>Tornavida</td><td>Vida sıkma/geçirme.</td><td>Keski, murç veya manivela olarak kullanmak.</td></tr>
+<tr><td>Anahtar</td><td>Cıvata ve somun sıkma/gevşetme.</td><td>Çekiç yerine kullanmak veya sapa uygunsuz boru takmak.</td></tr>
+</table>
+
+<h3>1.5. Elektrikli el aletleri ve lehimleme</h3>
+<ul>
+<li>Her kullanımdan önce görsel ve mekanik kontrol yapılmalıdır.</li>
+<li>Yalıtımı bozulmuş, ezilmiş veya çatlamış kablolar kullanılmamalıdır.</li>
+<li>Islak/nemli ortamlarda elektrikli el aletlerinin kullanımı özel tedbir gerektirir.</li>
+<li>Lehimleme çalışmalarında lokal cebri havalandırma sağlanmalıdır.</li>
+<li>Kaynak notunda belirtildiği üzere lehimleme işlerinde sağlık gözetimi kapsamında <strong>kanda kurşun analizi</strong> özellikle vurgulanmıştır.</li>
+</ul>
+</section>
+
+<section id="ekipman">
+<h2>2. Bölüm – İş Ekipmanlarının Tasarım, İmalat ve Kullanımında İSG (3., 4. ve 5. Hafta)</h2>
+
+<h3>2.1. Temel kavramlar</h3>
+<div class="grid">
+<div class="card"><strong>Tehlikeli bölge</strong>Çalışanın sağlık ve güvenlik açısından riske maruz kalabileceği alan.</div>
+<div class="card"><strong>Maruz kişi</strong>Tehlikeli bölgede tamamen veya kısmen bulunan çalışan.</div>
+<div class="card"><strong>Operatör</strong>Ekipmanı kullanma, ayarlama, bakım, temizleme, onarma veya taşıma işini yapan kişi.</div>
+<div class="card"><strong>CE</strong>İlgili teknik mevzuata uygunluk beyanını gösteren işarettir.</div>
+</div>
+
+<h3>2.2. Kumanda cihazlarının özellikleri</h3>
+<ol>
+<li>Kolay görülebilir ve tanınabilir olmalıdır.</li>
+<li>Zorunlu olmadıkça tehlikeli bölgenin dışında bulunmalıdır.</li>
+<li>İstem dışı hareketleri tehlikeli durum oluşturmamalıdır.</li>
+<li>Operatör tehlikeli bölgede kimsenin bulunmadığını kontrol edebilmelidir.</li>
+<li>Bu mümkün değilse uygun sesli/görsel ikaz sistemi bulunmalıdır.</li>
+</ol>
+
+<h3>2.3. Koruyucular ve durdurma sistemleri</h3>
+<p>Koruyucular; sabit, hareketli, ayarlanabilir ve kilitlemeli koruyucular şeklinde ele alınır. Tehlikeli bölgeye erişimin engellenmesi temel amaçtır.</p>
+<div class="callout warn"><strong>Finalde kritik:</strong> Durdurma sistemleri, çalıştırma sistemlerine göre <strong>önceliklidir</strong>. Tehlikeli durumda ekipmanı güvenli biçimde durdurabilmek temel emniyet prensibidir.</div>
+<ul>
+<li>Durdurulan tehlikeli kısımları harekete geçiren enerji kesilmelidir.</li>
+<li>Enerji kesme araçları görülebilir ve tanınabilir olmalıdır.</li>
+<li>Gerektiğinde acil durdurma sistemi bulunmalıdır.</li>
+<li>Uzaktan kumandalı ekipmanlar kontrol sınırı dışına çıktığında otomatik duracak şekilde tasarlanmalıdır.</li>
+</ul>
+
+<h3>2.4. Periyodik ve olağan dışı kontroller</h3>
+<ul>
+<li>Periyodik kontroller yetkili/ehil kişilerce yapılmalıdır.</li>
+<li>İş kazası, doğal olay, çalışma şeklinin değişmesi veya uzun süre kullanılmama gibi durumların ardından gerekli kontroller tekrarlanmalıdır.</li>
+<li>Bakım defteri bulunan makinelerde bakım işlemleri kaydedilmelidir.</li>
+<li>Kaynak notunda özellikle <strong>5070 sayılı Elektronik İmza Kanunu</strong> kapsamında güvenli elektronik imzalı elektronik kayıtların bakım defteri açısından vurgulandığı belirtilmiştir.</li>
+</ul>
+
+<h3>2.5. Hareketli iş ekipmanlarında devrilme ve ergonomi</h3>
+<div class="callout">
+<strong>90° / çeyrek dönüş kuralı:</strong> Kaynak notunda, hareketli ekipmanın bir çeyrekten yani <strong>90°</strong>'den fazla dönmesini önleyen tasarım veya aynı korumayı sağlayan koruyucu sistemler vurgulanmıştır.
+</div>
+<ul>
+<li>Operatör koltuğu ergonomik ve ayarlanabilir olmalıdır.</li>
+<li>Kol ve pedallar doğal erişim mesafesinde bulunmalıdır.</li>
+<li>Vücut titreşimini azaltmak için süspansiyonlu koltuk sistemleri kullanılmalıdır.</li>
+<li>Yangın riski bulunan ekipmanda yeterli yangın söndürme cihazı bulunmalıdır.</li>
+<li>Hareketli parçalarla çevredeki unsurlar arasında yeterli emniyet mesafesi bırakılmalıdır.</li>
+</ul>
+</section>
+
+<section id="basincli">
+<h2>3. Bölüm – Basınçlı Kaplarda İSG (6., 7., 8. ve 9. Hafta)</h2>
+
+<h3>3.1. Basınçlı kap kavramı ve patlama riski</h3>
+<p>Basınçlı kaplarda temel tehlike, basınç altında depolanan enerjinin kabın yırtılmasıyla çok kısa sürede açığa çıkmasıdır. Kaynak notunda basınçlı kaplar için iç basıncı <strong>0,5 bar'dan büyük</strong> olan gaz, buhar veya sıvı barındıran kap ve tesisatlar vurgulanmıştır.</p>
+
+<h3>3.2. Temel emniyet donanımları</h3>
+<table>
+<tr><th>Donanım</th><th>Görevi</th></tr>
+<tr><td>Emniyet valfi</td><td>Aşırı basınçta açılarak akışkanı tahliye eder.</td></tr>
+<tr><td>Manometre</td><td>İç basıncı gösterir; maksimum çalışma basıncı işaretlenir.</td></tr>
+<tr><td>Blöf/tahliye vanası</td><td>Kondens, çamur ve birikintilerin tahliyesine yardımcı olur.</td></tr>
+<tr><td>Çek-valf</td><td>Geri akışı önlemeye yardımcı olur.</td></tr>
+<tr><td>Presostat</td><td>Basınç kontrolünde kullanılır.</td></tr>
+</table>
+
+<h3>3.3. Hidrostatik test</h3>
+<div class="callout ok">
+<strong>Temel formül:</strong><br>
+<span class="formula">P<sub>test</sub> = 1,5 × P<sub>işletme</sub></span>
+<br><br>
+Örnek: İşletme basıncı 10 bar ise, kaynak notundaki kurala göre test basıncı 15 bar olur.
+</div>
+<p>Kaynak notunda basınçlı kapların periyodik kontrolü için standartlarda aksi belirtilmedikçe <strong>yılda en az bir kez</strong> kontrol vurgulanmıştır.</p>
+
+<h3>3.4. Tahribatsız muayene yöntemleri</h3>
+<table>
+<tr><th>Yöntem</th><th>Prensip</th><th>Özellikle tespit ettiği</th></tr>
+<tr><td>PT – Penetran</td><td>Sıvının yüzeye açık süreksizliklere nüfuz etmesi.</td><td>Yüzeye açık çatlak ve süreksizlikler.</td></tr>
+<tr><td>UT – Ultrasonik</td><td>Yüksek frekanslı ses dalgaları ve yankıların incelenmesi.</td><td>Yüzey altı kusurlar, cidar incelmesi vb.</td></tr>
+<tr><td>RT – Radyografik</td><td>X/Gama ışınlarıyla yoğunluk farklarının görüntülenmesi.</td><td>İç boşluk, gözenek, cüruf gibi kusurlar.</td></tr>
+</table>
+
+<h3>3.5. Gaz tüpleri ve renk kodları</h3>
+<table>
+<tr><th>Gaz grubu</th><th>Notlarda verilen örnek renk</th></tr>
+<tr><td>Yanıcı</td><td>Kırmızı</td></tr>
+<tr><td>Oksitleyici / yakıcı</td><td>Açık mavi</td></tr>
+<tr><td>Toksik</td><td>Sarı</td></tr>
+<tr><td>İnert / asal</td><td>Yeşil / parlak yeşil</td></tr>
+</table>
+<p><strong>N harfi:</strong> Kaynak notunda, TS EN 1089-3 kapsamında yeni renk kodlama sistemine uygunluğu ayırt etmek amacıyla tüp omzunda dört adet N harfinin kullanıldığı belirtilmiştir.</p>
+
+<div class="callout danger">
+<strong>Çok önemli:</strong> Grup 1 yanıcı gazlar ile Grup 2 oksitleyici/yakıcı gazların birlikte depolanmaması; aralarında en az <strong>6 metre</strong> mesafe veya en az <strong>30 dakika</strong> yangına dayanıklı ayırıcı duvar bulunması notlarda özellikle vurgulanmıştır.
+</div>
+
+<h3>3.6. Gaz depolama grupları</h3>
+<ol>
+<li><strong>Grup 1:</strong> Yanıcı gazlar</li>
+<li><strong>Grup 2:</strong> Oksitleyici/yakıcı gazlar</li>
+<li><strong>Grup 3:</strong> Toksik gazlar</li>
+<li><strong>Grup 4:</strong> İnert/asalgazlar</li>
+<li><strong>Grup 5:</strong> Korozif gazlar</li>
+<li><strong>Grup 6:</strong> Kriyojenik/reaktif gazlar</li>
+</ol>
+</section>
+
+<section id="makineler">
+<h2>4. Bölüm – İş Makineleri ve Motorlu Araçlarda İSG (10. ve 11. Hafta)</h2>
+
+<h3>4.1. İş makinelerinin sınıflandırılması</h3>
+<div class="grid">
+<div class="card"><strong>Kaldırma-iletme</strong>Vinç, forklift vb.</div>
+<div class="card"><strong>Kazı-yükleme</strong>Ekskavatör, loder, beko-loder.</div>
+<div class="card"><strong>Yol yapım</strong>Greyder, silindir, finişer.</div>
+</div>
+
+<h3>4.2. Saha içi güvenlik</h3>
+<ul>
+<li>Araç ve yaya yolları mümkün olduğunca fiziksel olarak ayrılmalıdır.</li>
+<li>Saha hız sınırlarına uyulmalıdır.</li>
+<li>Kör noktalarda yaya bulunması önlenmelidir.</li>
+<li>Geri vites ikazları ve tepe lambaları çalışır durumda olmalıdır.</li>
+</ul>
+
+<h3>4.3. Vardiya öncesi ve park kontrolü</h3>
+<ul>
+<li>Frenler ve direksiyon kontrol edilir.</li>
+<li>Hidrolik hortumlar ve sızıntılar kontrol edilir.</li>
+<li>İkaz sistemleri kontrol edilir.</li>
+<li>Lastik/palet durumu kontrol edilir.</li>
+<li>Parkta ataşmanlar zemine indirilir.</li>
+<li>Park freni çekilir.</li>
+<li>Uygun durumda takoz kullanılır.</li>
+<li>Motor durdurulur ve kontak anahtarı operatör tarafından alınır.</li>
+</ul>
+
+<h3>4.4. Kaldırma-iletme ve işaretçi</h3>
+<p>Operatörün yükü göremediği veya görüşün kısıtlı olduğu durumlarda haberleşme ve yönlendirme işaretçi/sapancı tarafından sağlanır. Kaynak notunda tek bir işaretçi ile operatör arasında düzenli iletişim ve karmaşık operasyonlarda telsiz kullanımı vurgulanmıştır.</p>
+
+<h3>4.5. Elektrik hatlarına yaklaşma mesafeleri</h3>
+<table>
+<tr><th>Gerilim</th><th>Notlarda verilen asgari yaklaşma mesafesi</th></tr>
+<tr><td>0–50 kV</td><td>3 m</td></tr>
+<tr><td>50–200 kV</td><td>4,5 m</td></tr>
+<tr><td>200–350 kV</td><td>6 m</td></tr>
+<tr><td>&gt;350 kV</td><td>8–10 m</td></tr>
+</table>
+
+<h3>4.6. Yakıt ikmali</h3>
+<ul>
+<li>Motor durdurulur.</li>
+<li>Açık alev, sigara ve kıvılcım kaynakları uzaklaştırılır.</li>
+<li>Statik elektrik açısından gerekli topraklama sağlanır.</li>
+<li>Yangın söndürme ekipmanı hazır bulundurulur.</li>
+</ul>
+</section>
+
+<section id="bakim">
+<h2>5. Bölüm – Bakım-Onarım İşlerinde İSG (12. ve 13. Hafta)</h2>
+
+<h3>5.1. Bakım türleri</h3>
+<table>
+<tr><th>Bakım</th><th>Tanım</th><th>Yaklaşım</th></tr>
+<tr><td>Arıza sonrası</td><td>Ekipman bozulduktan sonra yapılan müdahale.</td><td>Zaman baskısı nedeniyle sıkı güvenlik ve EKED/LOTO.</td></tr>
+<tr><td>Planlı</td><td>Önceden belirlenen takvime göre yapılır.</td><td>Çalışma talimatları ve kontrol listeleri.</td></tr>
+<tr><td>Periyodik/önleyici</td><td>Parça ömrüne göre bozulma öncesi değişim.</td><td>Üretici talimatları ve periyodik kontroller.</td></tr>
+<tr><td>Kestirimci</td><td>Titreşim, yağ analizi, termal kamera gibi verilerle arızayı öngörür.</td><td>Müdahaleyi planlamaya yardımcı olur.</td></tr>
+</table>
+
+<h3>5.2. İş İzin Sistemi – PTW</h3>
+<p>Permit to Work (PTW), yüksek riskli işlerin başlamasından önce risklerin değerlendirilmesi, gerekli tedbirlerin belirlenmesi ve yetkili kişilerce izin verilmesi esasına dayanır.</p>
+<div class="grid">
+<div class="card"><strong>Kapalı alan</strong>Giriş öncesi ölçüm, havalandırma ve gözlemci.</div>
+<div class="card"><strong>Sıcak çalışma</strong>Kaynak/kesme için yangın önlemleri.</div>
+<div class="card"><strong>Yüksekte çalışma</strong>Düşmeye karşı uygun sistemler.</div>
+<div class="card"><strong>Elektrik işleri</strong>Enerji izolasyonu ve yetkilendirme.</div>
+<div class="card"><strong>Derin kazı</strong>Göçük ve diğer saha risklerine karşı kontrol.</div>
+</div>
+
+<h3>5.3. EKED / LOTO</h3>
+<p>EKED: Etiketleme – Kilitleme – Emniyete Alma / LOTO: Lockout – Tagout. Amaç, bakım sırasında ekipmanın beklenmedik biçimde çalışmasını ve depolanmış/kalıntı enerjinin serbest kalmasını önlemektir.</p>
+<ol>
+<li><strong>Enerjiyi kesme:</strong> Elektrik, basınç, vana vb. enerji kaynaklarını izole et.</li>
+<li><strong>Kilitleme:</strong> Enerji kesme noktalarını kişisel kilitle kilitle.</li>
+<li><strong>Etiketleme:</strong> Çalışanı ve işlemi belirten uyarı etiketi as.</li>
+<li><strong>Kalıntı enerjiyi boşaltma:</strong> Hidrolik, pnömatik, kondansatör, yay vb. depolanmış enerjiyi gider.</li>
+<li><strong>Sıfır enerji doğrulaması:</strong> Başlatma denemesi yaparak sistemin enerjisiz olduğunu doğrula.</li>
+</ol>
+
+<div class="callout danger"><strong>Ezber sırası:</strong> KES → KİLİTLE → ETİKETLE → KALINTI ENERJİYİ BOŞALT → SIFIR ENERJİYİ DOĞRULA.</div>
+
+<h3>5.4. Taşınabilir merdivenler</h3>
+<p>Kaynak notunda <strong>1/4 kuralı</strong> ve yaklaşık <strong>75°</strong> tırmanma açısı verilmiştir: Dikey yüksekliğin her 4 birimine karşılık taban yaklaşık 1 birim dışarı alınır. Üst uzanma için notta en az 1 metre vurgulanmıştır.</p>
+
+<h3>5.5. Kapalı alanlar</h3>
+<p>Tank, kuyu, silo ve kanal gibi sınırlı alanlarda giriş öncesi ölçüm ve havalandırma yapılmalıdır.</p>
+<div class="callout ok">
+<strong>Gaz ölçüm sırası:</strong><br>
+1 → O<sub>2</sub> (oksijen) &nbsp; → &nbsp;
+2 → LEL (yanıcı/patlayıcı gazlar) &nbsp; → &nbsp;
+3 → Toksik gazlar (CO, H<sub>2</sub>S vb.)
+</div>
+<ul>
+<li>Kaynak notunda O<sub>2</sub> için <strong>%19,5–%23,5</strong> aralığı verilmiştir.</li>
+<li>Cebri/lokal havalandırma sağlanmalıdır.</li>
+<li>Girişte dışarıda sürekli iletişim kuran bir <strong>gözlemci/nöbetçi</strong> bulunmalıdır.</li>
+<li>Gözlemci normal koşullarda içeri girmemeli ve acil durum planını takip etmelidir.</li>
+</ul>
+</section>
+
+<section id="kaynak">
+<h2>6. Bölüm – Kaynak İşlerinde İSG (14. ve 15. Hafta)</h2>
+
+<h3>6.1. Kaynak yöntemleri</h3>
+<ul>
+<li><strong>Gaz altı:</strong> MIG/MAG ve TIG gibi koruyucu gaz altında gerçekleştirilen yöntemler.</li>
+<li><strong>Elektrik ark:</strong> Elektrot ile iş parçası arasında oluşan elektrik arkından yararlanır.</li>
+<li><strong>Lazer / elektron demeti:</strong> Yüksek yoğunluklu enerji ile özel kaynak işlemleri.</li>
+</ul>
+
+<h3>6.2. Kaynak dumanı ve radyasyon</h3>
+<table>
+<tr><th>Tehlike</th><th>Temel risk</th></tr>
+<tr><td>Metal dumanları</td><td>Nikel, krom, mangan, çinko vb. maruziyeti; solunum sistemi etkileri.</td></tr>
+<tr><td>Gazlar</td><td>NOx, CO, O<sub>3</sub> gibi gazlara maruziyet.</td></tr>
+<tr><td>UV</td><td>Cilt yanığı ve ark gözü/kaynak alması.</td></tr>
+<tr><td>IR</td><td>Isıl etkiler ve uzun vadede göz merceği hasarı/katarakt riski.</td></tr>
+<tr><td>Elektrik</td><td>Özellikle nemli ortamda elektrik çarpması.</td></tr>
+</table>
+
+<h3>6.3. Havalandırma ve yangın güvenliği</h3>
+<ul>
+<li>Kaynak dumanı mümkün olduğunca kaynağında lokal cebri havalandırma ile uzaklaştırılmalıdır.</li>
+<li>Kaynak notunda emiş noktasının yaklaşık <strong>20–30 cm</strong> mesafede tutulması vurgulanmıştır.</li>
+<li>Çalışma çevresindeki yanıcı maddeler uzaklaştırılmalıdır.</li>
+<li>Notlarda kaynak alanı için <strong>10 metre</strong> yarıçap özellikle vurgulanmıştır.</li>
+<li>Yangın battaniyesi/siperlik ve uygun yangın söndürme tüpü hazır bulundurulmalıdır.</li>
+</ul>
+
+<h3>6.4. KKD</h3>
+<ul>
+<li>Deri kaynakçı önlüğü, kolluk ve tozluk.</li>
+<li>Uygun deri kaynak eldiveni.</li>
+<li>Uygun solunum koruması; kaynak notunda FFP2/FFP3 örnekleri verilmiştir.</li>
+<li>Kaynak maskesi ve uygun filtre camı.</li>
+<li>Tutuşmayan/uygun koruyucu iş kıyafetleri.</li>
+</ul>
+
+<h3>6.5. DIN filtre seçimi</h3>
+<p>Kaynak notunda filtre koyuluğunun kaynak yöntemi ve özellikle <strong>akım şiddetine (A)</strong> göre seçileceği; akım arttıkça daha koyu, yani daha yüksek DIN numaralı filtre kullanılacağı belirtilmiştir.</p>
+<div class="callout">Notlardaki örnek: <strong>100–200 A → DIN 10–11</strong>; <strong>&gt;300 A → DIN 12–13</strong>.</div>
+
+<h3>6.6. Elektriksel güvenlik ve geri tepme</h3>
+<ul>
+<li>Kaynak notunda boşta çalışma gerilimi için <strong>AC 48 V</strong> ve <strong>DC 85 V</strong> sınırları verilmiştir.</li>
+<li>Islak ve dar alanlarda uygun emniyet trafosu kullanımı vurgulanmıştır.</li>
+<li>Gaz kaynak setlerinde <strong>alev geri tepme valfi (flashback arrestor)</strong> kullanılmalıdır.</li>
+<li>Geri tepme valfi alevin hortum boyunca tüpe doğru ilerlemesini önlemeye yardımcı olur.</li>
+</ul>
+
+<h3>6.7. Kaynak işlerinde notlarda belirtilen yasal sınırlamalar</h3>
+<div class="callout danger">
+<ul>
+<li><strong>18 yaş altı:</strong> Kaynak işleri için notlarda çalıştırma yasağı vurgulanmıştır.</li>
+<li><strong>Mesleki eğitim:</strong> Notlarda mesleki eğitimi bulunmayan kadın çalışanlarla ilgili kısıtlama belirtilmiştir.</li>
+<li><strong>Günlük çalışma:</strong> Kaynak notunda sağlık kuralları bakımından <strong>7,5 saat</strong> azami günlük çalışma süresi vurgulanmıştır.</li>
+</ul>
+</div>
+</section>
+
+<section id="sayisal">
+<h2>Final Öncesi Kritik Sayısal Değerler ve Ezber Listesi</h2>
+<table>
+<tr><th>Konu</th><th>Değer</th></tr>
+<tr><td>Basınçlı kap eşiği</td><td>&gt; 0,5 bar</td></tr>
+<tr><td>Hidrostatik test</td><td>1,5 × işletme basıncı</td></tr>
+<tr><td>Basınçlı kap periyodik kontrolü</td><td>Standartlarda aksi belirtilmedikçe yılda en az 1 kez</td></tr>
+<tr><td>Yanıcı–yakıcı gaz tüpleri</td><td>En az 6 m veya ≥30 dk yangın dayanımlı ayırıcı</td></tr>
+<tr><td>İş makinesi elektrik hattı 0–50 kV</td><td>3 m</td></tr>
+<tr><td>50–200 kV</td><td>4,5 m</td></tr>
+<tr><td>200–350 kV</td><td>6 m</td></tr>
+<tr><td>&gt;350 kV</td><td>8–10 m</td></tr>
+<tr><td>Merdiven</td><td>1/4 kuralı, yaklaşık 75°</td></tr>
+<tr><td>Kapalı alan O<sub>2</sub></td><td>%19,5–%23,5</td></tr>
+<tr><td>Gaz ölçüm sırası</td><td>O<sub>2</sub> → LEL → Toksik gaz</td></tr>
+<tr><td>Kaynak havalandırma</td><td>Notlarda 20–30 cm emiş mesafesi</td></tr>
+<tr><td>Kaynak yangın alanı</td><td>Notlarda 10 m yarıçap</td></tr>
+<tr><td>Kaynak OCV</td><td>AC 48 V / DC 85 V</td></tr>
+<tr><td>Kaynak günlük süre</td><td>7,5 saat</td></tr>
+<tr><td>Hareketli ekipman</td><td>90° / çeyrek dönüş kriteri</td></tr>
+</table>
+</section>
+
+<section>
+<h2>Finalde Karıştırılmaması Gerekenler</h2>
+<div class="grid">
+<div class="card"><strong>PT ≠ UT ≠ RT</strong>PT yüzey süreksizlikleri; UT ses dalgalarıyla iç/yüzey altı kusurları; RT X/Gama ile iç görüntüleme.</div>
+<div class="card"><strong>LOTO sırası</strong>Kes → Kilitle → Etiketle → Kalıntı enerjiyi boşalt → Doğrula.</div>
+<div class="card"><strong>Kapalı alan</strong>O<sub>2</sub> → LEL → Toksik gaz sırası.</div>
+<div class="card"><strong>Basınçlı kap</strong>1,5 × işletme basıncı hidrostatik test kuralı.</div>
+<div class="card"><strong>Yanıcı/yakıcı</strong>Birlikte depolamama; 6 m veya yangına dayanıklı ayırma.</div>
+<div class="card"><strong>Durdurma</strong>Çalıştırma sistemine göre önceliklidir.</div>
+</div>
+</section>
+
+<section>
+<h2>Final Denemelerine Geç</h2>
+<p>Bu konu anlatımını tamamladıktan sonra deneme sorularına geçerek bilgilerinizi test edebilirsiniz.</p>
+<a class="final-link" href="final.html">📝 Final Denemelerini Aç</a>
+</section>
+
+</main>
+
+
+    
+<section class="study-section priority" id="final-stratejisi">
+  <h2>🎯 Final Odaklı Öncelik Haritası</h2>
+  <p>Bu bölüm, ders notlarının tamamını tek bir mantık zinciri içinde tekrar etmenizi sağlar. Mekanik işlerde güvenliği öğrenirken yalnızca tehlikenin adını ezberlemek yeterli değildir. <strong>Tehlikeyi tanı → enerjiyi belirle → erişimi engelle veya enerjiyi izole et → uygun koruyucuyu ve KKD'yi seç → kontrol et → güvenli çalışmayı doğrula</strong> mantığı bütün bölümlerde tekrar eder.</p>
+
+  <div class="priority-grid">
+    <div><b>Çok yüksek öncelik</b><span>LOTO/EKED, basınçlı kaplar, emniyet valfi, hidrostatik test, kapalı alan ölçümleri, kaynak güvenliği.</span></div>
+    <div><b>Yüksek öncelik</b><span>El aletlerinin doğru kullanımı, koruyucular, acil durdurma, iş ekipmanı kontrolleri, iş makineleri.</span></div>
+    <div><b>Sayısal ezber</b><span>0,5 bar, 1,5×P, 6 m, 30 dk, 1/4, 75°, %19,5–%23,5, 20–30 cm ve ders notundaki diğer değerler.</span></div>
+    <div><b>Kavram ayrımı</b><span>PT–UT–RT, bakım türleri, PTW–LOTO, yanıcı–oksitleyici gazlar, tehlikeli bölge–maruz kişi–operatör.</span></div>
+  </div>
+
+  <div class="memory-box">
+    <strong>Tek cümlelik ana mantık:</strong>
+    Mekanik işlerde güvenliğin amacı, çalışanın hareketli parçalara, elektrik enerjisine, basınca, ısıya, radyasyona, kimyasal/gazlara ve depolanmış enerjiye kontrolsüz biçimde maruz kalmasını önlemektir.
+  </div>
+</section>
+
+<section class="study-section" id="mekanik-temel">
+  <h2>⚙️ Mekanik İşlerde Güvenliğin Temel Mantığı</h2>
+  <p><strong>Mekanik tehlike</strong>, bir makinenin veya mekanik sistemin hareketinden, kuvvetinden, basıncından, keskinliğinden veya depoladığı enerjiden kaynaklanan ve çalışanın yaralanmasına yol açabilecek durumdur. Bu nedenle güvenlik değerlendirmesi yalnızca “makine tehlikeli mi?” sorusuyla yapılmaz; <strong>hangi enerji var, bu enerji nerede depolanıyor, çalışan bu enerjiye nasıl ulaşabilir ve beklenmedik hareket nasıl engellenecek?</strong> soruları birlikte sorulur.</p>
+
+  <div class="mechanic-grid">
+    <div class="mechanic-card"><span>1</span><h3>Hareket</h3><p>Dönen mil, kayış-kasnak, dişli, fan, testere, matkap ve pres gibi hareketli parçalar sıkıştırma, kesme, ezilme ve dolanma oluşturabilir.</p></div>
+    <div class="mechanic-card"><span>2</span><h3>Kuvvet</h3><p>Presleme, kaldırma, sıkıştırma veya çekme kuvveti; parmak, el, kol ve vücut için ezilme ve sıkışma tehlikesi yaratabilir.</p></div>
+    <div class="mechanic-card"><span>3</span><h3>Basınç</h3><p>Basınçlı gaz, buhar ve hidrolik/pnömatik sistemlerde enerji kontrol edilmezse ani boşalma ve parça fırlaması meydana gelebilir.</p></div>
+    <div class="mechanic-card"><span>4</span><h3>Isı</h3><p>Kaynak, sıcak yüzey, buhar ve sıcak akışkanlar yanık ve yangın tehlikesi oluşturabilir.</p></div>
+    <div class="mechanic-card"><span>5</span><h3>Elektrik</h3><p>Elektrik enerjisi doğrudan çarpılmaya, ark oluşumuna, yangına ve mekanik sistemin beklenmedik hareketine neden olabilir.</p></div>
+    <div class="mechanic-card"><span>6</span><h3>Depolanmış enerji</h3><p>Yay, hidrolik basınç, pnömatik basınç, volan, kondansatör veya yükseltilmiş yük enerji kaynağı kesildikten sonra bile tehlike yaratabilir.</p></div>
+  </div>
+
+  <div class="svg-card">
+    <h3>Şekil: Mekanik tehlikeden güvenli çalışmaya geçiş</h3>
+    <svg viewBox="0 0 1000 220" role="img" aria-label="Tehlike, izolasyon, doğrulama ve güvenli çalışma şeması">
+      <defs><marker id="arrowA" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 z" fill="#174ea6"/></marker></defs>
+      <rect x="20" y="55" width="180" height="110" rx="18" fill="#fde8e8" stroke="#c62828" stroke-width="3"/>
+      <text x="110" y="90" text-anchor="middle" font-size="22" font-weight="700">TEHLİKE</text>
+      <text x="110" y="120" text-anchor="middle" font-size="15">Hareket • Basınç</text>
+      <text x="110" y="142" text-anchor="middle" font-size="15">Elektrik • Isı</text>
+      <line x1="205" y1="110" x2="285" y2="110" stroke="#174ea6" stroke-width="4" marker-end="url(#arrowA)"/>
+      <rect x="300" y="55" width="180" height="110" rx="18" fill="#fff4d6" stroke="#c98a00" stroke-width="3"/>
+      <text x="390" y="90" text-anchor="middle" font-size="22" font-weight="700">İZOLASYON</text>
+      <text x="390" y="120" text-anchor="middle" font-size="15">Kes • Kilitle</text>
+      <text x="390" y="142" text-anchor="middle" font-size="15">Etiketle • Boşalt</text>
+      <line x1="485" y1="110" x2="565" y2="110" stroke="#174ea6" stroke-width="4" marker-end="url(#arrowA)"/>
+      <rect x="580" y="55" width="180" height="110" rx="18" fill="#eef5ff" stroke="#174ea6" stroke-width="3"/>
+      <text x="670" y="90" text-anchor="middle" font-size="22" font-weight="700">DOĞRULAMA</text>
+      <text x="670" y="120" text-anchor="middle" font-size="15">Sıfır enerji</text>
+      <text x="670" y="142" text-anchor="middle" font-size="15">Kontrolü / test</text>
+      <line x1="765" y1="110" x2="845" y2="110" stroke="#174ea6" stroke-width="4" marker-end="url(#arrowA)"/>
+      <rect x="860" y="55" width="120" height="110" rx="18" fill="#eaf7ee" stroke="#2e7d32" stroke-width="3"/>
+      <text x="920" y="100" text-anchor="middle" font-size="20" font-weight="700">GÜVENLİ</text>
+      <text x="920" y="130" text-anchor="middle" font-size="16">ÇALIŞMA</text>
+    </svg>
+  </div>
+</section>
+
+<section class="study-section" id="el-aletleri-genis">
+  <h2>🛠️ El Aletleri: Final İçin Derinleştirilmiş Tekrar</h2>
+  <h3>El aletinde güvenli kullanımın 7 adımı</h3>
+  <ol class="steps">
+    <li><strong>Doğru aleti seç:</strong> İşin niteliğine uygun alet kullanılmalıdır.</li>
+    <li><strong>Kullanım öncesi kontrol et:</strong> Çatlak, kırık, gevşek sap, aşınma ve deformasyon aranmalıdır.</li>
+    <li><strong>Parçayı sabitle:</strong> Küçük parçalar mümkün olduğunca mengene veya uygun bağlama aparatı ile sabitlenmelidir.</li>
+    <li><strong>Uygun kuvvet uygula:</strong> Aleti kapasitesinin dışında zorlamak kırılma ve fırlama riskini artırır.</li>
+    <li><strong>Amacı dışında kullanma:</strong> Tornavida keski, anahtar çekiç, bıçak tornavida gibi kullanılmamalıdır.</li>
+    <li><strong>Çalışma alanını düzenle:</strong> Kayma, takılma ve düşmeye yol açabilecek yağ, talaş ve malzemeler temizlenmelidir.</li>
+    <li><strong>Uygun KKD kullan:</strong> Göz, yüz, el, ayak ve işitme koruması yapılan işe göre seçilmelidir.</li>
+  </ol>
+
+  <div class="exam-note"><strong>Final mantığı:</strong> Bir seçenek “alet daha güçlü olsun diye rastgele boru takılabilir”, “koruyucu çıkarılabilir” veya “parça elle tutulabilir” diyorsa güvenli kullanım ilkeleri açısından dikkatle değerlendirilmelidir. Güvenli cevap çoğunlukla <strong>doğru alet + doğru yöntem + sabitleme + kontrol + uygun KKD</strong> bileşimini içerir.</div>
+
+  <h3>Elektrikli, pnömatik ve hidrolik aletlerde fark</h3>
+  <table class="study-table">
+    <tr><th>Sistem</th><th>Enerji kaynağı</th><th>Özel tehlikeler</th><th>Temel güvenlik yaklaşımı</th></tr>
+    <tr><td>Elektrikli</td><td>Elektrik</td><td>Çarpılma, kısa devre, ark, kablo hasarı</td><td>İzolasyon, topraklama, uygun bağlantı ve kullanım öncesi kontrol</td></tr>
+    <tr><td>Pnömatik</td><td>Sıkıştırılmış hava</td><td>Hortum savrulması, basınçlı hava, gürültü</td><td>Bağlantıları kontrol et, enerjiyi kesmeden sökme, hortumu uygun şekilde sabitle</td></tr>
+    <tr><td>Hidrolik</td><td>Basınçlı akışkan</td><td>Yüksek basınçlı sıvı enjeksiyonu, hortum kopması, hareket</td><td>Basıncı sıfırla, depolanmış enerjiyi boşalt, sızıntıyı elle arama</td></tr>
+  </table>
+</section>
+
+<section class="study-section" id="ekipman-genis">
+  <h2>🏭 İş Ekipmanları: Tasarım, Koruyucular ve Kumanda</h2>
+  <p>İş ekipmanının güvenliği yalnızca operatörün dikkatine bırakılmaz. Ekipmanın seçimi, kurulması, kullanılması, bakımı ve kontrolü bir bütün olarak değerlendirilir. Güncel Çalışma ve Sosyal Güvenlik Bakanlığı açıklamasına göre 23 Aralık 2025 tarihli değişiklikle periyodik kontrole tabi ekipmanların EK-III tablolarında yer alan ekipman ve ekipman grupları üzerinden belirlenmesi ve yetkili kişilerce yapılması konusu güçlendirilmiştir. Ayrıca periyodik kontrol hizmetleri için İSG-KATİP sözleşmesine ilişkin yeni hükümler getirilmiştir. citeturn1search0</p>
+
+  <h3>Koruyucu neden vardır?</h3>
+  <p>Koruyucunun temel amacı çalışanın tehlikeli bölgeye erişmesini önlemek veya erişimi güvenli hale getirmektir. Sabit koruyucu, hareketli koruyucu ve kilitlemeli koruyucu gibi çözümler tehlikeye göre seçilir. Bir koruyucunun devre dışı bırakılması, sökülmesi veya etkisiz hale getirilmesi makinenin güvenlik fonksiyonunu bozabilir.</p>
+
+  <h3>Kumanda ve acil durdurma</h3>
+  <ul>
+    <li>Kumanda cihazı açıkça görülebilir ve tanınabilir olmalıdır.</li>
+    <li>Gereksiz yere tehlikeli bölgenin içine yerleştirilmemelidir.</li>
+    <li>İstem dışı çalışmayı veya beklenmeyen hareketi önleyecek tasarım kullanılmalıdır.</li>
+    <li>Operatör tehlikeli bölgede kimsenin bulunmadığını mümkün olduğunca kontrol edebilmelidir.</li>
+    <li>Acil durdurma, tehlikeli hareketi mümkün olan en kısa sürede güvenli duruma getirmek için kullanılır.</li>
+  </ul>
+
+  <div class="exam-note"><strong>Karıştırma:</strong> “Makineyi çalıştırma” ile “makineyi durdurma” aynı güvenlik işlevi değildir. Acil durumda durdurma fonksiyonu öncelikli güvenlik amacına hizmet eder.</div>
+</section>
+
+<section class="study-section" id="basinc-genis">
+  <h2>🧯 Basınçlı Kaplar: Mekanik Tehlikenin Enerji Boyutu</h2>
+  <p>Basınçlı sistemlerde temel risk, basınçlı akışkanın veya gazın depoladığı enerjinin kontrolsüz biçimde açığa çıkmasıdır. Kapta çatlak, korozyon, aşırı basınç, emniyet donanımı arızası veya yanlış işletme koşulu oluştuğunda sonuç yalnızca “sızıntı” olmayabilir; kap parçalanabilir ve çevreye yüksek hızlı parçalar, sıcak akışkan veya basınçlı gaz yayılabilir.</p>
+
+  <h3>Emniyet donanımlarını işleviyle ezberle</h3>
+  <div class="four-grid">
+    <div><b>Emniyet valfi</b><p>Aşırı basıncı tahliye eder.</p></div>
+    <div><b>Manometre</b><p>Basıncı gösterir.</p></div>
+    <div><b>Presostat</b><p>Basınç değerine göre kontrol sağlar.</p></div>
+    <div><b>Çek-valf</b><p>Geri akışı önlemeye yardımcı olur.</p></div>
+  </div>
+
+  <h3>Hidrostatik testin mantığı</h3>
+  <p>Ders notundaki kural <strong>P<sub>test</sub> = 1,5 × P<sub>işletme</sub></strong> şeklindedir. Örneğin işletme basıncı 8 bar ise ders notundaki katsayı kullanıldığında test basıncı 12 bar olur. Soruda verilen basınç değerini doğrudan 1,5 ile çarpmak yerine önce bunun <strong>işletme basıncı mı, test basıncı mı</strong> olduğunu kontrol edin.</p>
+
+  <h3>Tahribatsız muayeneyi mantıkla ayır</h3>
+  <table class="study-table">
+    <tr><th>PT</th><td>Sıvı penetrant</td><td>Yüzeye açık kusurlar</td><td>“Kusur yüzeye çıkıyor mu?”</td></tr>
+    <tr><th>UT</th><td>Ultrasonik ses dalgası</td><td>İç ve yüzey altı kusurlar</td><td>“Ses dalgasının yankısı ne söylüyor?”</td></tr>
+    <tr><th>RT</th><td>X/Gama ışını</td><td>İç yapıdaki yoğunluk farkları</td><td>“İç görüntüde kusur var mı?”</td></tr>
+  </table>
+
+  <div class="svg-card">
+    <h3>Şekil: Basınçlı kapta güvenlik zinciri</h3>
+    <svg viewBox="0 0 900 280" role="img" aria-label="Basınçlı kap emniyet donanımları">
+      <rect x="340" y="55" width="220" height="170" rx="100" fill="#eaf3fb" stroke="#174ea6" stroke-width="4"/>
+      <ellipse cx="450" cy="55" rx="110" ry="25" fill="#d7e9f8" stroke="#174ea6" stroke-width="4"/>
+      <text x="450" y="145" text-anchor="middle" font-size="23" font-weight="700">BASINÇLI KAP</text>
+      <text x="450" y="173" text-anchor="middle" font-size="15">Basınçlı akışkan</text>
+      <line x1="450" y1="55" x2="450" y2="20" stroke="#c62828" stroke-width="4"/>
+      <circle cx="450" cy="15" r="10" fill="#c62828"/>
+      <text x="470" y="20" font-size="16">Emniyet valfi</text>
+      <line x1="340" y1="125" x2="245" y2="95" stroke="#174ea6" stroke-width="3"/>
+      <text x="70" y="95" font-size="17">Manometre</text>
+      <line x1="560" y1="125" x2="655" y2="95" stroke="#174ea6" stroke-width="3"/>
+      <text x="660" y="95" font-size="17">Presostat</text>
+      <line x1="450" y1="225" x2="450" y2="260" stroke="#174ea6" stroke-width="3"/>
+      <text x="450" y="278" text-anchor="middle" font-size="17">Tahliye / blöf</text>
+    </svg>
+  </div>
+</section>
+
+<section class="study-section" id="gaz-genis">
+  <h2>🧪 Gaz Tüpleri ve Gaz Güvenliği</h2>
+  <p>Gaz tüplerinde güvenlik yalnızca tüpün dik durmasından ibaret değildir. Gazın kimyasal özelliği, tüpün fiziksel durumu, vana ve regülatör, depolama düzeni, ısı kaynakları, havalandırma ve gazların birbiriyle uyumluluğu birlikte değerlendirilmelidir.</p>
+  <ul>
+    <li>Tüpler devrilmeye karşı uygun şekilde sabitlenmelidir.</li>
+    <li>Vana ve bağlantılar darbe almayacak şekilde korunmalıdır.</li>
+    <li>Gaz türüne uygun regülatör ve bağlantı elemanları kullanılmalıdır.</li>
+    <li>Yanıcı ve oksitleyici gazlar ders notundaki ayırma kurallarına göre depolanmalıdır.</li>
+    <li>Gaz kaçağı şüphesinde kıvılcım oluşturabilecek elektrikli cihazların gelişigüzel kullanılması önlenmelidir.</li>
+    <li>Tüp taşınırken vana koruması ve uygun taşıma ekipmanı kullanılmalıdır.</li>
+  </ul>
+  <div class="memory-box"><strong>Hatırlama:</strong> Yanıcı gaz “yakıt”, oksitleyici gaz “yanmayı destekleyen taraf” olarak düşünülür. Bu nedenle iki grubun kontrolsüz biçimde yan yana depolanması yangının büyüme riskini artırır.</div>
+</section>
+
+<section class="study-section" id="makine-genis">
+  <h2>🚜 İş Makineleri ve Motorlu Araçlar: Operasyon Güvenliği</h2>
+  <p>İş makinelerinde kazaların önemli bir bölümü makinenin mekanik kapasitesinden çok <strong>insan–makine–zemin–yük–çevre</strong> etkileşiminden doğar. Bu nedenle operatör, makine ve saha birlikte değerlendirilmelidir.</p>
+  <div class="five-grid">
+    <div><b>Operatör</b><p>Yetkinlik, dikkat, görüş ve iletişim.</p></div>
+    <div><b>Makine</b><p>Fren, direksiyon, hidrolik, ikaz ve koruyucular.</p></div>
+    <div><b>Yük</b><p>Ağırlık, merkez, sabitleme ve görüş.</p></div>
+    <div><b>Zemin</b><p>Eğim, taşıma kapasitesi, çukur ve kenarlar.</p></div>
+    <div><b>Çevre</b><p>Yaya, elektrik hattı, diğer araçlar ve kör noktalar.</p></div>
+  </div>
+  <h3>Vardiya öncesi “Fren–Direksiyon–Hidrolik–İkaz–Lastik/Palet” kontrolü</h3>
+  <p>Makine işe başlamadan önce temel hareket ve güvenlik sistemleri kontrol edilmelidir. Park sırasında ise yük/ataşman güvenli konuma alınmalı, park freni kullanılmalı, gerekiyorsa takozlama yapılmalı ve motor durdurulmalıdır.</p>
+  <div class="exam-note"><strong>Kör nokta mantığı:</strong> Operatör sizi görmüyorsa sizin onu gördüğünüzü varsaymayın. Yaya ile iş makinesinin hareket alanını mümkün olduğunca ayırmak ve gerektiğinde işaretçi kullanmak temel güvenlik yaklaşımıdır.</div>
+</section>
+
+<section class="study-section" id="bakim-genis">
+  <h2>🔒 Bakım-Onarım, PTW ve LOTO/EKED</h2>
+  <p>Bakım sırasında en kritik risklerden biri, çalışan sistemin “artık çalışmıyor” sanılmasıdır. Oysa enerji kaynağı kesilmiş olsa bile sistemde depolanmış enerji bulunabilir. Bu nedenle bakım güvenliği <strong>enerjinin belirlenmesi → izolasyon → kilitleme/etiketleme → depolanmış enerjinin boşaltılması → sıfır enerji doğrulaması → çalışma → kontrollü yeniden devreye alma</strong> zinciridir.</p>
+
+  <div class="svg-card">
+    <h3>Şekil: LOTO/EKED uygulama akışı</h3>
+    <svg viewBox="0 0 1000 180" role="img" aria-label="LOTO akış şeması">
+      <defs><marker id="arrowL" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 z" fill="#0b6e99"/></marker></defs>
+      <g font-family="Arial" font-size="16" text-anchor="middle">
+      <rect x="10" y="45" width="150" height="90" rx="14" fill="#eef5ff" stroke="#174ea6" stroke-width="2"/><text x="85" y="80" font-weight="700">1. BELİRLE</text><text x="85" y="105">Enerji kaynakları</text>
+      <line x1="165" y1="90" x2="205" y2="90" stroke="#0b6e99" stroke-width="3" marker-end="url(#arrowL)"/>
+      <rect x="215" y="45" width="150" height="90" rx="14" fill="#fff4d6" stroke="#c98a00" stroke-width="2"/><text x="290" y="80" font-weight="700">2. KES</text><text x="290" y="105">Enerjiyi izole et</text>
+      <line x1="370" y1="90" x2="410" y2="90" stroke="#0b6e99" stroke-width="3" marker-end="url(#arrowL)"/>
+      <rect x="420" y="45" width="150" height="90" rx="14" fill="#fff4d6" stroke="#c98a00" stroke-width="2"/><text x="495" y="80" font-weight="700">3. KİLİTLE</text><text x="495" y="105">+ ETİKETLE</text>
+      <line x1="575" y1="90" x2="615" y2="90" stroke="#0b6e99" stroke-width="3" marker-end="url(#arrowL)"/>
+      <rect x="625" y="45" width="150" height="90" rx="14" fill="#fde8e8" stroke="#c62828" stroke-width="2"/><text x="700" y="80" font-weight="700">4. BOŞALT</text><text x="700" y="105">Kalıntı enerji</text>
+      <line x1="780" y1="90" x2="820" y2="90" stroke="#0b6e99" stroke-width="3" marker-end="url(#arrowL)"/>
+      <rect x="830" y="45" width="160" height="90" rx="14" fill="#eaf7ee" stroke="#2e7d32" stroke-width="2"/><text x="910" y="80" font-weight="700">5. DOĞRULA</text><text x="910" y="105">Sıfır enerji</text>
+      </g>
+    </svg>
+  </div>
+
+  <h3>PTW ile LOTO aynı şey değildir</h3>
+  <table class="study-table">
+    <tr><th>PTW</th><td>Yüksek riskli işe başlamadan önce işi, tehlikeleri, önlemleri, sorumluları ve izin koşullarını kontrol eden yönetim/izin sistemidir.</td></tr>
+    <tr><th>LOTO / EKED</th><td>Enerji kaynaklarını fiziksel olarak izole ederek ekipmanın beklenmedik çalışmasını önleyen enerji kontrol yöntemidir.</td></tr>
+  </table>
+
+  <div class="memory-box"><strong>En önemli soru:</strong> “Enerji kesildi mi?” sorusu tek başına yeterli değildir. “Enerji kesildi, kilitlendi, etiketlendi, depolanmış enerji boşaltıldı ve sıfır enerji doğrulandı mı?” soruları birlikte cevaplanmalıdır.</div>
+</section>
+
+<section class="study-section" id="kapali-genis">
+  <h2>🕳️ Kapalı Alanlarda Çalışma</h2>
+  <p>Kapalı alan; giriş-çıkışı sınırlı olan, sürekli insan bulunması amacıyla tasarlanmamış ve atmosferi veya fiziksel koşulları nedeniyle özel tehlike oluşturabilen alanları ifade eder. Tank, silo, kuyu, kanal ve benzeri alanlar tipik örneklerdir.</p>
+  <h3>Girişten önce düşünülmesi gerekenler</h3>
+  <ol>
+    <li>Alan tanımlanır ve girişin gerekli olup olmadığı değerlendirilir.</li>
+    <li>İş izin sistemi uygulanır.</li>
+    <li>Enerji ve akışkan kaynakları izole edilir.</li>
+    <li>Atmosfer ölçülür.</li>
+    <li>Gerekli havalandırma sağlanır.</li>
+    <li>Dışarıda gözcü/gözlemci görevlendirilir.</li>
+    <li>Acil kurtarma planı ve iletişim yöntemi belirlenir.</li>
+    <li>Uygun KKD ve ölçüm cihazları hazırlanır.</li>
+  </ol>
+  <div class="gas-meter">
+    <div><strong>1</strong><span>O₂</span><small>Oksijen</small></div>
+    <div><strong>2</strong><span>LEL</span><small>Yanıcı/patlayıcı atmosfer</small></div>
+    <div><strong>3</strong><span>Toksik</span><small>CO, H₂S vb.</small></div>
+  </div>
+  <p class="small-note">Ders notunuzdaki ölçüm sırası <strong>O₂ → LEL → toksik gazlar</strong> şeklindedir. Ders notunda oksijen için %19,5–%23,5 aralığı verilmiştir.</p>
+</section>
+
+<section class="study-section" id="kaynak-genis">
+  <h2>🔥 Kaynak İşlerinde İSG: Isı + Işınım + Duman + Elektrik</h2>
+  <p>Kaynak işlemi aynı anda birden fazla tehlike oluşturur. Arkın yüksek sıcaklığı ve yoğun ışınımı, kaynak dumanı ve gazları, elektrik enerjisi, sıcak metal, kıvılcım ve yangın yükü birlikte değerlendirilmelidir.</p>
+  <div class="welding-grid">
+    <div><b>UV</b><p>Ark ışınımı cilt ve göz üzerinde zararlı etki oluşturabilir. Uygun kaynak filtresi ve yüz/göz koruması gerekir.</p></div>
+    <div><b>IR</b><p>Isıl ışınım ve sıcak yüzeyler yanık ve göz merceği açısından risk oluşturabilir.</p></div>
+    <div><b>Duman</b><p>Metal ve kaplama kaynaklı dumanlar solunum yoluyla alınabilir. Kaynağında emiş tercih edilir.</p></div>
+    <div><b>Gaz</b><p>CO, NOx ve O₃ gibi gazlar işlem ve malzemeye bağlı olarak oluşabilir.</p></div>
+    <div><b>Elektrik</b><p>Özellikle nemli koşullarda elektrik çarpması riski artar.</p></div>
+    <div><b>Yangın</b><p>Kıvılcım ve sıcak parçalar yanıcı maddeleri tutuşturabilir. Çevre temizliği ve yangın gözetimi önemlidir.</p></div>
+  </div>
+
+  <h3>Kaynak filtresinde temel mantık</h3>
+  <p>Ders notunda filtre koyuluğunun kaynak yöntemi ve özellikle akım şiddetiyle ilişkili olduğu belirtilmiştir. <strong>Akım arttıkça daha koyu, daha yüksek DIN numaralı filtre</strong> seçilir. Notlarda örnek olarak 100–200 A için DIN 10–11 ve 300 A üzeri için DIN 12–13 verilmiştir.</p>
+
+  <h3>Kaynak öncesi 10 saniyelik kontrol</h3>
+  <ol>
+    <li>Yanıcı malzeme uzaklaştırıldı mı?</li>
+    <li>Yangın söndürme ekipmanı hazır mı?</li>
+    <li>Kaynak ekranı/siperliği uygun mu?</li>
+    <li>KKD tam mı?</li>
+    <li>Lokal emiş/havalandırma çalışıyor mu?</li>
+    <li>Kablolar ve bağlantılar sağlam mı?</li>
+    <li>Gaz tüpleri sabit ve uygun mu?</li>
+    <li>Regülatör ve hortumlar uygun mu?</li>
+    <li>Geri tepme önleyici ekipman gerekli yerde mi?</li>
+    <li>Kapalı alanda ise atmosfer ölçümü ve iş izni tamam mı?</li>
+  </ol>
+</section>
+
+<section class="study-section" id="sayisal-ozel">
+  <h2>🔢 Sayısal Değerleri Mantığıyla Ezberleme</h2>
+  <table class="study-table number-table">
+    <tr><th>Değer</th><th>Ne ile ilişkili?</th><th>Hafıza ipucu</th></tr>
+    <tr><td><strong>0,5 bar</strong></td><td>Ders notundaki basınçlı kap eşiği</td><td>“Basınçlı kap konusu burada başlıyor.”</td></tr>
+    <tr><td><strong>1,5 × P</strong></td><td>Hidrostatik test basıncı</td><td>“Test, işletmeden daha yüksek.”</td></tr>
+    <tr><td><strong>6 m / 30 dk</strong></td><td>Yanıcı–oksitleyici gaz depolama ayrımı</td><td>“Uzaklık ya da yangına dayanıklı bariyer.”</td></tr>
+    <tr><td><strong>1/4 – 75°</strong></td><td>Taşınabilir merdiven</td><td>“4'e 1 taban oranı.”</td></tr>
+    <tr><td><strong>%19,5–%23,5</strong></td><td>Kapalı alan O₂ aralığı – ders notu</td><td>“Oksijen sınırları.”</td></tr>
+    <tr><td><strong>O₂ → LEL → Toksik</strong></td><td>Kapalı alan ölçüm sırası</td><td>“Önce nefes, sonra patlama, sonra zehir.”</td></tr>
+    <tr><td><strong>20–30 cm</strong></td><td>Kaynak dumanı emiş mesafesi – ders notu</td><td>“Dumanı kaynağında yakala.”</td></tr>
+    <tr><td><strong>AC 48 / DC 85 V</strong></td><td>Kaynakta boşta çalışma gerilimi – ders notu</td><td>“AC ve DC değerlerini karıştırma.”</td></tr>
+  </table>
+</section>
+
+<section class="study-section" id="hizli-tekrar">
+  <h2>🧠 30 Cümlede Final Tekrarı</h2>
+  <ol class="rapid">
+    <li>El aleti her zaman tasarlandığı iş için kullanılmalıdır.</li>
+    <li>Kırık, çatlak veya gevşek saplı alet kullanılmamalıdır.</li>
+    <li>Küçük iş parçaları mümkün olduğunca sabitlenmelidir.</li>
+    <li>Keskin ve sivri aletler cepte taşınmamalıdır.</li>
+    <li>Elektrikli aletlerde kablo ve izolasyon kullanım öncesi kontrol edilmelidir.</li>
+    <li>İş ekipmanının seçimi yapılan işe ve tehlikeye uygun olmalıdır.</li>
+    <li>Kumanda cihazları açıkça görülebilir ve tanınabilir olmalıdır.</li>
+    <li>Koruyucuların temel amacı tehlikeli bölgeye erişimi önlemektir.</li>
+    <li>Acil durdurma sistemi tehlikeli hareketi güvenli biçimde durdurmaya hizmet eder.</li>
+    <li>İş ekipmanı kontrollerinin sonuçları kayıt altına alınmalıdır.</li>
+    <li>Basınçlı sistemlerde depolanmış enerji patlama ve fırlama tehlikesi yaratabilir.</li>
+    <li>Emniyet valfi aşırı basıncı tahliye eder.</li>
+    <li>Manometre basıncı gösterir.</li>
+    <li>Ders notundaki hidrostatik test kuralı işletme basıncının 1,5 katıdır.</li>
+    <li>PT yüzeye açık kusurlar için; UT ve RT farklı fiziksel prensiplerle iç kusurların incelenmesinde kullanılır.</li>
+    <li>Gaz tüpleri uygun şekilde sabitlenmeli ve gazların özelliklerine göre ayrılmalıdır.</li>
+    <li>İş makinelerinde yaya ve araç trafiği mümkün olduğunca ayrılmalıdır.</li>
+    <li>Operatörün görmediği kör bölgelerde yaya bulunması ciddi risk oluşturur.</li>
+    <li>Yakıt ikmalinde motor durdurulmalı ve tutuşturucu kaynaklar uzaklaştırılmalıdır.</li>
+    <li>Bakımda yalnızca ana enerji değil, depolanmış enerji de kontrol edilmelidir.</li>
+    <li>PTW yüksek riskli iş için izin ve kontrol sistemidir.</li>
+    <li>LOTO/EKED enerji izolasyonu ve beklenmedik çalışmayı önleme sistemidir.</li>
+    <li>Kapalı alanda girişten önce atmosfer ölçümü yapılmalıdır.</li>
+    <li>Ders notundaki ölçüm sırası O₂, LEL ve toksik gazlardır.</li>
+    <li>Kapalı alanda dışarıda görevli bir gözlemci bulunması temel güvenlik düzenidir.</li>
+    <li>Kaynakta UV, IR, duman, gaz, elektrik ve yangın tehlikeleri birlikte düşünülmelidir.</li>
+    <li>Kaynak dumanı mümkün olduğunca kaynağında uzaklaştırılmalıdır.</li>
+    <li>Akım yükseldikçe kaynak filtresi daha koyu seçilir.</li>
+    <li>Kaynak sırasında sıcak parçalar ve kıvılcımlar yangın yükü oluşturabilir.</li>
+    <li>Final sorusunda önce tehlikeyi, sonra enerji kaynağını ve kontrol yöntemini belirlemek doğru seçeneği bulmayı kolaylaştırır.</li>
+  </ol>
+</section>
+
+<section class="study-section sources-box" id="mevzuat-ek">
+  <h2>📚 Güncel Mevzuat ve Ek Kaynak Notu</h2>
+  <p>Bu tek dosya ders notlarının temelini korurken güncel mevzuat açısından da zenginleştirilmiştir. Çalışma ve Sosyal Güvenlik Bakanlığı, 23 Aralık 2025 tarihli değişiklikte periyodik kontrole tabi iş ekipmanları, ekipman muayene kuruluşları ve İSG-KATİP sözleşmeleriyle ilgili güncellemeleri duyurmuştur. Bu nedenle sınavın dayandığı ders notu ile güncel mevzuat arasında tarih farkı varsa, sınav için öğretim materyalinizin esas alınması; mevzuat sorularında ise soruda verilen tarih ve düzenlemenin dikkatle okunması gerekir. citeturn1search0turn1search5</p>
+  <p>ÇSGB'nin iş ekipmanlarıyla ilgili materyallerinde ekipmanın işe uygun seçilmesi, tehlikelerin dikkate alınması, güvenli kurulum ve kontrol, kaza/doğal olay/uzun süre kullanılmama gibi durumların ardından gerekli kontrollerin yapılması ve kontrol sonuçlarının kayıt altına alınması vurgulanmaktadır. citeturn1search36</p>
+  <p>ÇSGB'nin İSG kaynaklarında kaynakçılar için kaynak emisyonları; lehimciler için ise bazı ağır metal maruziyetleri gibi mesleki tehlikeler ayrıca listelenmektedir. Göz koruması konusunda da kaynak işleri için uygun gözlük, vizör ve ark kaynağı maskeleri gibi koruyucular belirtilmektedir. citeturn1search6turn1search10</p>
+</section>
+
+<section class="study-section final-jump" id="denemeye-gecis">
+  <h2>📝 Konu Anlatımından Final Denemelerine Geç</h2>
+  <p>Önce konu anlatımını tamamlayın. Ardından aşağıdaki bağlantıyla aynı HTML dosyasının içindeki orijinal deneme bölümüne geçin. Deneme bölümündeki sorular, seçenekler, çözümler ve sınav sistemi değiştirilmemiştir.</p>
+  <a class="go-test" href="#denemeler-orijinal">FINAL DENEMELERİNE GEÇ →</a>
+</section>
+
+  </div>
+</div>
+
+<!-- =========================================================
+     ORİJİNAL DENEME BÖLÜMÜ
+     Aşağıdaki BODY, kaynak denemeler-orijinal.html dosyasından
+     değiştirilmeden alınmıştır. Soru/şık/cevap/açıklama/JS korunur.
+     ========================================================= -->
+<div id="denemeler-orijinal">
+
 
 <!-- ================= HEADER ================= -->
 <header class="site-header">
@@ -1863,5 +2732,19 @@ window.addEventListener('beforeunload', function(e){
 });
 </script>
 
+
+</div>
+
+<script>
+/* Tek dosya portal bağlantıları. Orijinal deneme JS'i ayrıca korunmuştur. */
+document.querySelectorAll('#tek-dosya-portal a').forEach(function(a){
+  a.addEventListener('click', function(){
+    setTimeout(function(){
+      const target = document.querySelector(a.getAttribute('href'));
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    }, 0);
+  });
+});
+</script>
 </body>
 </html>
