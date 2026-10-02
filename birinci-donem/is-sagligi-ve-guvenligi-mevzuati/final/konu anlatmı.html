@@ -1,0 +1,2296 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎯 İSG Mevzuatı MASTER FİNAL NOTU — Tüm Bölümler Tek Sayfada | KTÜN İSG</title>
+<meta name="description" content="KTÜN İSG Eğitim Portalı - İSG Mevzuatı Master Final Notu: Bölüm 1-6'nın tüm kritik konuları, sayısal verileri, çıkmış sorular ve kodlamalar tek sayfada. Zamanı olmayanlar için hızlı final notu.">
+<style>
+/* =====================================================
+   KTÜN İSG EĞİTİM PORTALI - MASTER FİNAL NOTU STİLİ
+   ===================================================== */
+:root{
+  --navy:#0b2545;
+  --navy-2:#13315c;
+  --blue:#1d4e89;
+  --accent:#e07a1f;
+  --accent-2:#f2a541;
+  --teal:#0f8b8d;
+  --green:#1f9d55;
+  --red:#c0392b;
+  --purple:#6b4bc9;
+  --bg:#f4f6fa;
+  --card:#ffffff;
+  --text:#1c2533;
+  --muted:#5b6779;
+  --line:#e2e7ef;
+  --radius:14px;
+  --shadow-sm:0 2px 8px rgba(11,37,69,.06);
+  --shadow-md:0 8px 24px rgba(11,37,69,.08);
+  --shadow-lg:0 16px 40px rgba(11,37,69,.14);
+  --font:'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:130px;}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  font-size:15.5px;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ============ ÜST MENÜ ============ */
+.topbar{
+  position:sticky;top:0;z-index:1000;
+  background:linear-gradient(135deg,#081a30 0%,var(--navy) 60%,var(--navy-2) 100%);
+  color:#fff;
+  box-shadow:0 4px 18px rgba(8,26,48,.28);
+  border-bottom:2px solid rgba(242,165,65,.25);
+}
+.topbar-inner{
+  max-width:1280px;margin:0 auto;
+  padding:12px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;flex-shrink:0;}
+.brand-logo{
+  width:46px;height:46px;border-radius:13px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:17px;color:#0b2545;
+  box-shadow:0 4px 14px rgba(224,122,31,.4);
+  letter-spacing:-.5px;
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.2;}
+.brand-text b{font-size:14.5px;letter-spacing:.3px;color:#fff;}
+.brand-text span{font-size:11px;opacity:.72;font-weight:500;color:#cfdcee;}
+
+.nav-links{display:flex;gap:4px;align-items:center;flex-wrap:wrap;}
+.nav-links a{
+  color:#dbe4f0;text-decoration:none;
+  font-size:12.8px;font-weight:600;
+  padding:8px 13px;border-radius:10px;
+  transition:.22s;white-space:nowrap;
+  border:1px solid transparent;
+  display:inline-flex;align-items:center;gap:5px;
+}
+.nav-links a:hover{
+  background:rgba(242,165,65,.12);
+  color:#fff;
+  border-color:rgba(242,165,65,.35);
+}
+.nav-links a.active{
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff;
+  border-color:var(--accent-2);
+  box-shadow:0 3px 12px rgba(224,122,31,.4);
+}
+.nav-links a.final-link{
+  background:linear-gradient(135deg,#1f9d55,#27b566);
+  color:#fff;
+  border-color:#27b566;
+  box-shadow:0 3px 12px rgba(31,157,85,.4);
+}
+.nav-links a .ic{font-size:13px;}
+.menu-toggle{
+  display:none;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);
+  color:#fff;font-size:22px;width:44px;height:44px;border-radius:11px;cursor:pointer;
+}
+
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px;}
+
+/* ============ HERO ============ */
+.hero{
+  background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);
+  color:#fff;padding:56px 0 68px;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;right:-100px;top:-100px;
+  width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(224,122,31,.3),transparent 70%);
+}
+.hero::after{
+  content:"";position:absolute;left:-80px;bottom:-120px;
+  width:340px;height:340px;border-radius:50%;
+  background:radial-gradient(circle,rgba(15,139,141,.24),transparent 70%);
+}
+.hero .wrap{position:relative;z-index:2;}
+.crumbs{font-size:12.5px;color:#a9bcd6;margin-bottom:16px;letter-spacing:.4px;}
+.crumbs a{color:#a9bcd6;text-decoration:none;transition:.2s;}
+.crumbs a:hover{color:var(--accent-2);}
+.hero h1{
+  font-size:clamp(22px,3.4vw,38px);font-weight:900;line-height:1.22;
+  letter-spacing:-.5px;max-width:920px;
+}
+.hero h1 em{color:var(--accent-2);font-style:normal;}
+.hero p.lead{
+  margin-top:16px;max-width:880px;font-size:15.5px;
+  color:#cfdcee;line-height:1.7;
+}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;}
+.chip{
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.18);
+  padding:7px 15px;border-radius:999px;
+  font-size:11.8px;font-weight:600;letter-spacing:.2px;
+  color:#e6eefb;
+}
+
+/* ============ FİNAL UYARISI ============ */
+.final-uyari{
+  background:linear-gradient(135deg,#b45f0a 0%,#e07a1f 60%,#f2a541 100%);
+  border-radius:16px;padding:22px 26px;margin-top:-32px;position:relative;z-index:5;
+  color:#fff;box-shadow:0 16px 40px rgba(180,95,10,.35);
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  border:1px solid rgba(255,255,255,.2);
+}
+.final-uyari .u-ico{
+  width:56px;height:56px;border-radius:14px;
+  background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);
+  display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;
+}
+.final-uyari h3{font-size:17px;font-weight:900;margin-bottom:4px;color:#fff;}
+.final-uyari p{font-size:13.5px;color:rgba(255,255,255,.95);margin:0;line-height:1.55;}
+
+/* ============ İÇERİK ============ */
+main{padding:44px 0 60px;}
+.layout{display:grid;grid-template-columns:1fr 250px;gap:30px;align-items:start;}
+
+.card{
+  background:var(--card);border-radius:var(--radius);
+  padding:28px 30px;margin-bottom:22px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+}
+.card h2{
+  font-size:clamp(18px,2.1vw,22px);font-weight:900;
+  color:var(--navy);letter-spacing:-.3px;line-height:1.3;
+  display:flex;align-items:center;gap:12px;
+  padding-bottom:13px;border-bottom:2px solid #eef2f8;margin-bottom:8px;
+}
+.card h2 .num{
+  flex-shrink:0;width:34px;height:34px;border-radius:10px;
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:14px;font-weight:900;
+}
+.card h3{
+  font-size:16px;font-weight:800;color:var(--blue);
+  margin:24px 0 10px;padding-left:13px;
+  border-left:5px solid var(--accent);line-height:1.4;
+}
+.card h4{font-size:14.8px;font-weight:800;color:var(--navy);margin:18px 0 8px;}
+.card p{margin-bottom:12px;color:#2c3644;font-size:14.8px;}
+.card ul,.card ol{margin:10px 0 14px 22px;}
+.card li{margin-bottom:7px;color:#2c3644;font-size:14.6px;}
+.card li::marker{color:var(--accent);font-weight:800;}
+strong{color:var(--navy);font-weight:800;}
+mark{
+  background:linear-gradient(180deg,transparent 58%,#ffe6b8 58%);
+  color:inherit;padding:0 4px;font-weight:700;
+}
+
+/* ============ KUTU ============ */
+.box{
+  border-radius:12px;padding:16px 18px;margin:16px 0;
+  font-size:14.2px;border-left:5px solid;line-height:1.65;
+}
+.box b{display:block;margin-bottom:6px;font-size:13.8px;letter-spacing:.2px;}
+.box.def{background:#f0f6fd;border-color:var(--blue);}
+.box.tip{background:#fff8ec;border-color:var(--accent);}
+.box.warn{background:#fdeceb;border-color:var(--red);}
+.box.ok{background:#eaf8f0;border-color:var(--green);}
+.box.exam{background:#f3f0fb;border-color:var(--purple);}
+.box.exam b{color:var(--purple);}
+.box.tip b{color:#b45f0a;}
+.box.def b{color:var(--blue);}
+.box.warn b{color:var(--red);}
+.box.ok b{color:var(--green);}
+.box ul{margin:8px 0 0 20px;}
+.box li{margin-bottom:5px;font-size:14px;}
+
+/* ============ TABLO ============ */
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow-sm);}
+table{width:100%;border-collapse:collapse;font-size:13.8px;min-width:560px;background:#fff;}
+thead th{
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;text-align:left;padding:12px 14px;
+  font-weight:800;font-size:12.5px;letter-spacing:.3px;
+  white-space:nowrap;
+}
+tbody td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:#2c3644;line-height:1.6;}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:nth-child(even){background:#fafcff;}
+tbody tr:hover{background:#f0f6fd;}
+td .tag{
+  display:inline-block;padding:3px 9px;border-radius:999px;
+  font-size:10.3px;font-weight:800;white-space:nowrap;letter-spacing:.3px;
+}
+.tag-blue{background:#e7f0fb;color:var(--blue);}
+.tag-orange{background:#fdf0e2;color:#b45f0a;}
+.tag-red{background:#fdeceb;color:var(--red);}
+.tag-green{background:#e5f6ec;color:var(--green);}
+.tag-teal{background:#e2f4f4;color:var(--teal);}
+.tag-purple{background:#ece7fb;color:var(--purple);}
+
+/* ============ İKİLİ ============ */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0;}
+.split-card{
+  border-radius:12px;padding:16px 18px;border:1px solid var(--line);
+  background:#fff;box-shadow:var(--shadow-sm);
+}
+.split-card h4{margin-top:0;display:flex;align-items:center;gap:8px;font-size:14.5px;}
+.split-card .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.dot-blue{background:var(--blue);}
+.dot-orange{background:var(--accent);}
+.dot-teal{background:var(--teal);}
+.dot-red{background:var(--red);}
+.dot-purple{background:var(--purple);}
+.dot-green{background:var(--green);}
+.split-card ul{margin:8px 0 0 18px;font-size:13.8px;}
+.split-card li{margin-bottom:5px;line-height:1.6;}
+
+/* ============ MNEMO ============ */
+.mnemo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0;}
+.mnemo{
+  border-radius:13px;padding:16px;color:#fff;
+  box-shadow:var(--shadow-md);position:relative;overflow:hidden;
+}
+.mnemo::after{
+  content:"";position:absolute;right:-25px;bottom:-35px;
+  width:95px;height:95px;border-radius:50%;
+  background:rgba(255,255,255,.1);
+}
+.mnemo h4{color:#fff;font-size:13.8px;margin:0 0 8px;letter-spacing:.3px;}
+.mnemo p{color:rgba(255,255,255,.95);font-size:12.8px;margin:0;line-height:1.6;position:relative;z-index:2;}
+.mnemo.m1{background:linear-gradient(135deg,#0b2545,#1d4e89);}
+.mnemo.m2{background:linear-gradient(135deg,#b45f0a,#e07a1f);}
+.mnemo.m3{background:linear-gradient(135deg,#0f8b8d,#13a8aa);}
+.mnemo.m4{background:linear-gradient(135deg,#6b4bc9,#8a6ee0);}
+.mnemo.m5{background:linear-gradient(135deg,#c0392b,#e05a3c);}
+.mnemo.m6{background:linear-gradient(135deg,#1f9d55,#27b566);}
+
+/* ============ BUTON ============ */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:12px 22px;border-radius:11px;
+  font-size:14px;font-weight:800;letter-spacing:.2px;
+  cursor:pointer;border:none;transition:.22s;
+  font-family:inherit;text-decoration:none;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff;box-shadow:0 6px 18px rgba(224,122,31,.35);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(224,122,31,.45);}
+.btn-final{
+  background:linear-gradient(135deg,#1f9d55,#27b566);
+  color:#fff;box-shadow:0 6px 18px rgba(31,157,85,.35);
+}
+.btn-final:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,157,85,.5);}
+
+/* ============ MODAL ============ */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(8,26,48,.85);
+  backdrop-filter:blur(6px);z-index:9999;
+  display:none;align-items:flex-start;justify-content:center;
+  padding:30px 16px;overflow-y:auto;
+  animation:fadeIn .25s ease;
+}
+.modal-overlay.open{display:flex;}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+.modal-box{
+  background:#fff;border-radius:18px;
+  max-width:980px;width:100%;
+  box-shadow:0 24px 60px rgba(8,26,48,.5);
+  overflow:hidden;animation:slideUp .3s ease;
+  margin:auto;
+}
+@keyframes slideUp{from{transform:translateY(30px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+.modal-head{
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;padding:22px 26px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:14px;position:sticky;top:0;z-index:10;
+}
+.modal-head h3{
+  font-size:18px;font-weight:900;margin:0;letter-spacing:-.2px;
+  color:#fff;border:none;padding:0;
+}
+.modal-head p{font-size:12.5px;color:#c6d5e8;margin:4px 0 0;}
+.modal-close{
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);
+  color:#fff;width:40px;height:40px;border-radius:11px;
+  font-size:20px;cursor:pointer;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  transition:.2s;font-weight:700;
+}
+.modal-close:hover{background:var(--red);border-color:var(--red);}
+.modal-body{padding:26px 28px 30px;max-height:calc(100vh - 200px);overflow-y:auto;}
+
+.modal-q{
+  background:#fafcff;border:1px solid var(--line);
+  border-radius:13px;padding:20px 22px;margin-bottom:18px;
+}
+.modal-q:hover{border-color:#c7d5e8;box-shadow:var(--shadow-sm);}
+.modal-q-head{display:flex;gap:13px;align-items:flex-start;margin-bottom:12px;}
+.modal-q-no{
+  flex-shrink:0;width:34px;height:34px;border-radius:10px;
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:14px;
+}
+.modal-q-text{font-weight:700;font-size:14.5px;color:var(--navy);line-height:1.6;}
+.modal-opts{list-style:none;margin:12px 0 0 47px;padding:0;}
+.modal-opts li{
+  font-size:13.8px;color:#33415a;margin-bottom:6px;
+  padding:8px 14px;border-radius:9px;background:#fff;
+  border:1px solid #e8eef7;
+}
+.modal-opts li.correct{
+  background:#e5f6ec;border-color:#8ed3aa;color:#14663a;font-weight:700;
+  position:relative;
+}
+.modal-opts li.correct::before{
+  content:"✔";position:absolute;left:-2px;top:50%;transform:translate(-50%,-50%);
+  background:var(--green);color:#fff;width:20px;height:20px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;
+}
+.modal-solution{
+  margin:14px 0 0 47px;padding:14px 16px;border-radius:11px;
+  background:#f3f0fb;border-left:4px solid var(--purple);
+  font-size:13.5px;color:#3d2e73;line-height:1.65;
+}
+.modal-solution b{color:var(--purple);font-weight:800;}
+.modal-solution .ref{
+  display:inline-block;background:#fff;border:1px solid #d6cbf0;
+  padding:2px 9px;border-radius:6px;font-size:11.3px;
+  color:var(--purple);font-weight:700;margin-left:4px;
+}
+
+/* ============ MİNİ TEST ============ */
+.test-section{
+  margin-bottom:24px;border-radius:14px;overflow:hidden;
+  box-shadow:var(--shadow-md);border:1px solid var(--line);
+}
+.test-header{
+  padding:17px 22px;color:#fff;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:12px;flex-wrap:wrap;
+}
+.test-header h3{
+  color:#fff;font-size:16px;font-weight:900;margin:0;
+  display:flex;align-items:center;gap:10px;
+}
+.test-header .badge{
+  background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.28);
+  padding:4px 12px;border-radius:999px;font-size:11.3px;font-weight:800;
+  letter-spacing:.4px;
+}
+.test-header.part1{background:linear-gradient(135deg,var(--navy),var(--blue));}
+.test-header.part2{background:linear-gradient(135deg,#b45f0a,#e07a1f);}
+.test-body{padding:20px 22px;background:#fff;}
+
+.mq-item{
+  background:#fafcff;border:1px solid var(--line);
+  border-radius:12px;padding:16px 18px;margin-bottom:13px;
+}
+.mq-item:hover{border-color:#c7d5e8;}
+.mq-item:last-child{margin-bottom:0;}
+.mq-item .q{
+  font-weight:700;font-size:14.2px;margin-bottom:11px;
+  color:var(--navy);line-height:1.55;
+  display:flex;gap:10px;align-items:flex-start;
+}
+.mq-item .q .qnum{
+  flex-shrink:0;background:var(--navy);color:#fff;
+  width:26px;height:26px;border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12.5px;font-weight:900;
+}
+.mq-btns{display:flex;flex-wrap:wrap;gap:7px;margin-left:36px;}
+.mq-btn{
+  background:#fff;border:1.5px solid var(--line);
+  color:#3a4a63;padding:8px 14px;border-radius:9px;
+  font-size:13px;font-weight:700;cursor:pointer;transition:.2s;
+  font-family:inherit;text-align:left;
+}
+.mq-btn:hover{border-color:var(--blue);background:#f0f6fd;color:var(--blue);}
+.mq-btn.correct{background:var(--green);border-color:var(--green);color:#fff;}
+.mq-btn.wrong{background:var(--red);border-color:var(--red);color:#fff;}
+.mq-btn:disabled{cursor:default;}
+.mq-fb{
+  margin:11px 0 0 36px;padding:10px 13px;border-radius:9px;
+  font-size:12.9px;font-weight:600;line-height:1.6;
+  display:none;
+}
+.mq-fb.show{display:block;}
+.mq-fb.ok{background:#e5f6ec;color:#14663a;border-left:4px solid var(--green);}
+.mq-fb.no{background:#fdeceb;color:#a32d20;border-left:4px solid var(--red);}
+
+/* ============ YAN MENÜ ============ */
+.sidebar{position:sticky;top:120px;}
+.side-card{
+  background:#fff;border-radius:var(--radius);padding:18px;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  margin-bottom:16px;
+}
+.side-card h4{
+  font-size:12.2px;text-transform:uppercase;letter-spacing:.9px;
+  color:var(--muted);margin-bottom:11px;font-weight:900;
+}
+.toc{list-style:none;margin:0;padding:0;}
+.toc li{margin-bottom:3px;}
+.toc a{
+  display:block;padding:8px 11px;border-radius:8px;
+  text-decoration:none;color:#3a4a63;font-size:13px;
+  font-weight:700;transition:.18s;border-left:3px solid transparent;
+}
+.toc a:hover{background:#f0f6fd;color:var(--blue);border-left-color:var(--accent);}
+.toc a.active{background:#e7f0fb;color:var(--blue);border-left-color:var(--accent);}
+
+.next-nav{display:flex;flex-direction:column;gap:9px;}
+.next-btn{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:10px;padding:12px 14px;border-radius:10px;
+  text-decoration:none;font-weight:800;font-size:13.2px;
+  transition:.22s;border:1px solid var(--line);
+}
+.next-btn.primary{
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff;border:none;box-shadow:0 6px 16px rgba(224,122,31,.3);
+}
+.next-btn.primary:hover{transform:translateX(3px);}
+.next-btn.ghost{background:#fff;color:var(--navy);}
+.next-btn.ghost:hover{background:#f0f6fd;border-color:var(--blue);}
+.next-btn.final{
+  background:linear-gradient(135deg,#1f9d55,#27b566);
+  color:#fff;border:none;box-shadow:0 6px 16px rgba(31,157,85,.35);
+}
+.next-btn.final:hover{transform:translateX(3px);box-shadow:0 10px 24px rgba(31,157,85,.5);}
+
+/* ============ FOOTER ============ */
+footer{
+  background:linear-gradient(135deg,#081a30,#0b2545);
+  color:#a9bcd6;padding:44px 0 28px;margin-top:24px;
+  border-top:3px solid var(--accent);
+}
+.foot-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;
+  padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.foot-grid h4{color:#fff;font-size:14.5px;margin-bottom:13px;letter-spacing:.3px;font-weight:800;}
+.foot-grid p,.foot-grid a{font-size:13.2px;color:#9fb3cd;line-height:1.85;text-decoration:none;}
+.foot-grid a:hover{color:var(--accent-2);}
+.foot-grid ul{list-style:none;}
+.foot-grid li{margin-bottom:4px;}
+.foot-bottom{
+  padding-top:22px;text-align:center;font-size:12.3px;
+  color:#7d93af;line-height:1.9;
+}
+.foot-bottom b{color:#cfdcee;}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1024px){
+  .layout{grid-template-columns:1fr;}
+  .sidebar{position:static;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:820px){
+  .nav-links a{padding:8px 10px;font-size:12px;}
+  .brand-text b{font-size:13.5px;}
+  .final-uyari{flex-direction:column;align-items:flex-start;}
+}
+@media(max-width:768px){
+  body{font-size:15px;}
+  .menu-toggle{display:flex;align-items:center;justify-content:center;}
+  .nav-links{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);
+    flex-direction:column;padding:14px;gap:5px;
+    box-shadow:0 12px 28px rgba(8,26,48,.35);
+    border-bottom:2px solid var(--accent);
+  }
+  .nav-links.open{display:flex;}
+  .nav-links a{width:100%;text-align:center;padding:13px;justify-content:center;}
+  .hero{padding:38px 0 52px;}
+  .card{padding:20px 18px;}
+  .card h2{font-size:17px;gap:9px;}
+  .card h2 .num{width:30px;height:30px;font-size:13px;}
+  .split{grid-template-columns:1fr;}
+  .modal-body{padding:20px 18px 24px;}
+  .modal-opts,.modal-solution{margin-left:0;}
+  .modal-q-head{gap:10px;}
+  .mq-btns,.mq-fb{margin-left:0;}
+  .foot-grid{grid-template-columns:1fr;gap:22px;}
+}
+@media(max-width:420px){
+  .wrap{padding:0 14px;}
+  .card{padding:17px 14px;}
+  .modal-box{border-radius:14px;}
+  .modal-head{padding:18px 18px;}
+  .modal-head h3{font-size:15.5px;}
+  .modal-close{width:36px;height:36px;font-size:18px;}
+}
+
+@media print{
+  .topbar,.sidebar,footer,.btn,.modal-overlay,.final-uyari{display:none !important;}
+  .layout{grid-template-columns:1fr;}
+  .card{box-shadow:none;border:1px solid #ddd;page-break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== KOYU ÜST MENÜ ==================== -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-logo">İSG</div>
+      <div class="brand-text">
+        <b>KTÜN · İSG Eğitim Portalı</b>
+        <span>İş Sağlığı ve Güvenliği Bölümü</span>
+      </div>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html"><span class="ic">🏠</span> Ana Sayfa</a>
+      <a href="#s1"><span class="ic">📖</span> 1. Hukuki Temeller</a>
+      <a href="#s2"><span class="ic">⚖️</span> 2. 6331 & 4857</a>
+      <a href="#s3"><span class="ic">🏛️</span> 3. Hizmet & Kurullar</a>
+      <a href="#s4"><span class="ic">👷</span> 4. Profesyoneller</a>
+      <a href="#s5"><span class="ic">⚠️</span> 5. Tehlike & Durdurma</a>
+      <a href="#s6"><span class="ic">⏱️</span> 6. Özel Süreler</a>
+      <a href="#sorular" class="active"><span class="ic">❓</span> Sorular</a>
+      <a href="final/denemeler.html" class="final-link"><span class="ic">🎯</span> Final Denemeleri</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="crumbs">
+      <a href="index.html">Ana Sayfa</a> ›
+      <span>🎯 İSG Mevzuatı MASTER Final Notu</span>
+    </div>
+    <h1>🎯 İSG Mevzuatı <em>MASTER FİNAL NOTU</em><br>Bölüm 1-6 — Tüm Konular Tek Sayfada</h1>
+    <p class="lead">
+      Bu doküman; <strong>Bölüm 1'den Bölüm 6'ya</strong> kadar işlenen tüm İSG mevzuatı konularını,
+      kritik sayısal verileri, çıkmış soru tiplerini ve kodlamaları <mark>tek bir sayfada</mark>
+      birleştirir. Sınavda çıkma ihtimali en yüksek konular önceliklendirilmiş, gereksiz detaylar
+      elenmiş ve <strong>hızlı tekrar</strong> için optimize edilmiştir.
+    </p>
+    <div class="chip-row">
+      <span class="chip">📜 Hukuki Temeller</span>
+      <span class="chip">⚖️ 6331 s.K.</span>
+      <span class="chip">📋 4857 s.K.</span>
+      <span class="chip">🏛️ İSG Kurulları</span>
+      <span class="chip">👷 İGU / İH / DSP</span>
+      <span class="chip">🛑 İşin Durdurulması</span>
+      <span class="chip">⏱️ Özel Süreler</span>
+      <span class="chip">📊 Sayısal Veriler</span>
+      <span class="chip">🎯 Sınav Odaklı</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FİNAL UYARISI ==================== -->
+<div class="wrap">
+  <div class="final-uyari">
+    <div class="u-ico">⚡</div>
+    <div>
+      <h3>Bu bir "Hızlı Final Notu"dur — Sınava son 1-2 gün kala okunmak üzere hazırlandı.</h3>
+      <p>Her bölümün en kritik 3-5 noktası, en çok soru gelen konular ve sayısal veriler öne çıkarılmıştır.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== İÇERİK ==================== -->
+<main class="wrap">
+  <div class="layout">
+
+    <!-- ============ SOL İÇERİK ============ -->
+    <div class="content">
+
+      <!-- ===== 1. HUKUKİ TEMELLER VE TARİHÇE ===== -->
+      <article class="card" id="s1">
+        <h2><span class="num">1</span> Hukuki Temeller, Anayasa ve Tarihçe — <span style="color:#b45f0a;font-size:14px;">%70 SORU İHTİMALİ</span></h2>
+
+        <h3>📌 Anayasa'nın 4 Kritik Maddesi</h3>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>Madde</th><th>Başlık</th><th>Anahtar İçerik</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>m.2</strong></td><td>Sosyal Devlet İlkesi</td><td>İnsan haklarına saygılı, sosyal hukuk devleti</td></tr>
+              <tr><td><strong>m.17</strong> <span class="tag tag-blue">KİŞİ HAKKI</span></td><td>Yaşama, Maddi-Manevi Varlığı Koruma</td><td>İSG'nin temel varlık nedeni (yaşama hakkı)</td></tr>
+              <tr><td><strong>m.49</strong></td><td>Çalışma Hakkı ve Ödevi</td><td>Devletin çalışma hayatını geliştirme yükümlülüğü</td></tr>
+              <tr><td><strong>m.50</strong> <span class="tag tag-red">EN ÇOK SORULAN</span></td><td>Çalışma Şartları ve Dinlenme</td><td><mark>"Yaşına, cinsiyetine ve gücüne uymayan işlerde çalıştırılamaz"</mark><br>Özel koruma: <mark>Küçükler, kadınlar, bedeni ve ruhi yetersizliği olanlar</mark></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>📜 Tarihsel Gelişim — Ezber Kodlamaları</h3>
+        <div class="mnemo-grid">
+          <div class="mnemo m1">
+            <h4>🏺 ANTİK/ORTA ÇAĞ</h4>
+            <p><strong>Imhotep</strong> → Piramit sağlık servisi<br>
+            <strong>Hipokrat</strong> → Kurşun zehirlenmesi<br>
+            <strong>Pliny</strong> → İlk koruyucu maske<br>
+            <strong>Agricola</strong> → <em>De Re Metallica</em> (Maden havalandırma)<br>
+            <strong>Paracelsus</strong> → <em>On Miners' Sickness</em> (Doz ilkesi)</p>
+          </div>
+          <div class="mnemo m2">
+            <h4>🏭 SANAYİ DEVRİMİ</h4>
+            <p><strong>Ramazzini</strong> → İş Sağlığının Babası, "Mesleğini sor!"<br>
+            <strong>Percival Pott</strong> → İlk mesleki kanser (baca çocukları)<br>
+            <strong>1833 Fabrikalar Kanunu</strong> → Doktor raporu + İş teftişi<br>
+            <strong>1884</strong> → Almanya'da ilk kaza sigortası (Bismarck)</p>
+          </div>
+          <div class="mnemo m3">
+            <h4>🇹🇷 TÜRKİYE KRONOLOJİSİ</h4>
+            <p><strong>DİL</strong>aver Paşa (1867) → Onaylanmadı<br>
+            <strong>MAAD</strong>in Nizamnamesi (1869) → Yürürlüğe giren İLK<br>
+            <strong>151 s.K.</strong> (1921) → TBMM'nin ilk İSG kanunu<br>
+            <strong>1593 s.K.</strong> (1930) → 50 işçiye hekim (Hıfzıssıhha)<br>
+            <strong>6331 s.K.</strong> (2012) → Müstakil İSG kanunu</p>
+          </div>
+          <div class="mnemo m4">
+            <h4>🌍 ULUSLARARASI</h4>
+            <p><strong>ILO</strong> (1919 Versay) → Üçlü Yapı (Devlet+İşçi+İşveren)<br>
+            <strong>ILO Sözleşmeleri:</strong> 155, 161, 187<br>
+            <strong>BM</strong> → İnsan Hakları Evrensel Beyannamesi<br>
+            <strong>AB</strong> → 89/391/EEC Çerçeve Yönergesi</p>
+          </div>
+        </div>
+
+        <div class="box exam">
+          <b>⚠️ KRİTİK SINAV ÇELDİRİCİLERİ</b>
+          <ul>
+            <li><strong>"De Re Metallica"</strong> = <mark>Agricola</mark>; <strong>"On Miners' Sickness"</strong> = <mark>Paracelsus</mark> — Yerleri değiştirilir!</li>
+            <li><strong>Dilaver Paşa</strong> = Onaylanmadı (taslak); <strong>Maadin Nizamnamesi</strong> = Yürürlüğe giren İLK</li>
+            <li><strong>m.17 (Kişi Hakkı)</strong> ≠ <strong>m.50 (Sosyal Hak)</strong> — Bölümler karıştırılır!</li>
+            <li>ILO yapısında <mark>Sadece hükümetler</mark> çeldiricisi → Doğru: <strong>Devlet + İşçi + İşveren</strong></li>
+          </ul>
+        </div>
+
+        <h3>📐 Normlar Hiyerarşisi (Kelsen Piramidi)</h3>
+        <p style="font-size:14px;background:#f8fafd;padding:12px;border-radius:10px;border-left:4px solid var(--blue);">
+          <strong>ANAYASA</strong> → <strong>Kanunlar / M. Arası Antlaşmalar</strong> → <strong>Olağan CBK</strong> → <strong>Yönetmelikler</strong> → <strong>Tebliğ / Genelge / Yönerge</strong><br>
+          <mark>Kural: Alt norm üst norma aykırı olamaz.</mark>
+        </p>
+
+        <div class="box tip">
+          <b>💡 Anayasa m.90/son — KRİTİK KURAL</strong></b>
+          Temel hak ve hürriyetlere ilişkin M. Arası Antlaşma (örn. ILO 155) ile ulusal kanun çatışırsa →
+          <mark>Milletlerarası antlaşma üstün tutulur.</mark>
+        </div>
+
+        <h3>📝 Mevzuat Taslak Yapısı (6331 m.13)</h3>
+        <ul>
+          <li><strong>Hiyerarşi:</strong> Maddeler → Fıkralar → Bentler → Alt Bentler</li>
+          <li><strong>Numaralandırma:</strong> Fıkra <mark>(1)</mark>, Bent <mark>a)</mark>, Alt bent <mark>1)</mark></li>
+          <li><strong>Alfabetik sıralama:</strong> z'den sonra <mark>aa, bb, cc</mark> şeklinde devam eder</li>
+          <li><strong>Madde formatı:</strong> <mark>MADDE 13 -</mark> (koyu, büyük, kısa çizgi ile; nokta konmaz)</li>
+        </ul>
+      </article>
+
+      <!-- ===== 2. 6331 VE 4857 ESASLARI ===== -->
+      <article class="card" id="s2">
+        <h2><span class="num">2</span> 6331 ve 4857 Sayılı Kanun Esasları — <span style="color:#b45f0a;font-size:14px;">%85 SORU İHTİMALİ</span></h2>
+
+        <h3>⚖️ 6331 Sayılı Kanun — Kapsam & İstisnalar</h3>
+        <div class="split">
+          <div class="split-card">
+            <h4><span class="dot dot-green"></span> GENEL KAPSAM (m.2/1)</h4>
+            <ul>
+              <li>Kamu + özel tüm işler</li>
+              <li>İşveren + işveren vekilleri</li>
+              <li><mark>Çırak ve stajyerler dahil</mark> tüm çalışanlar</li>
+            </ul>
+          </div>
+          <div class="split-card">
+            <h4><span class="dot dot-red"></span> KAPSAM DIŞI (m.2/2) — T-A-E-K-İ</h4>
+            <ul>
+              <li><strong>T</strong>SK/Kolluk/MİT operasyonel (fabrika/bakım/dikimevi <mark>HARİÇ, bunlar kapsamda</mark>)</li>
+              <li><strong>A</strong>FAD doğrudan müdahale</li>
+              <li><strong>E</strong>v hizmetleri</li>
+              <li><strong>K</strong>endi adına tek başına çalışanlar</li>
+              <li><strong>İ</strong>nfaz kurumu iyileştirme faaliyetleri</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box exam">
+          <b>⚠️ TSK/Kolluk/MİT İSTİSNASI</b>
+          Bunlara ait <mark>fabrika, bakım merkezi ve dikimevleri Kanun KAPSAMINDADIR.</mark>
+          "TSK'nın tüm birimleri kapsam dışı" en sık kullanılan çeldiricidir!
+        </div>
+
+        <h3>🔑 Temel Tanımlar — En Kritik Ayrımlar</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Kavram</th><th>Yasal Tanım</th><th>Ayırt Edici</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Tehlike</strong></td><td>Zarar verme <mark>potansiyeli</mark></td><td>Henüz gerçekleşmemiş</td></tr>
+              <tr><td><strong>Risk</strong></td><td>Zararlı sonuç meydana gelme <mark>ihtimali</mark></td><td>İhtimal × Şiddet</td></tr>
+              <tr><td><strong>Genç Çalışan</strong></td><td>15 yaşını bitirmiş, 18 yaşını doldurmamış</td><td>Yaş aralığı</td></tr>
+              <tr><td><strong>İş Kazası</strong></td><td>Ölüm veya bedenen/ruhen engelli hale getiren olay</td><td>Vücut bütünlüğü</td></tr>
+              <tr><td><strong>İşveren Vekili</strong></td><td>İşveren adına hareket eden kişi — 6331'de <mark>doğrudan işveren sayılır</mark></td><td>Doğrudan sorumluluk</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>💼 4857 Sayılı İş Kanunu — İstisnalar</h3>
+        <div class="split">
+          <div class="split-card">
+            <h4><span class="dot dot-red"></span> 4857 m.4/1 — UYGULANMAZ</h4>
+            <ul>
+              <li>Deniz/hava taşıma işleri</li>
+              <li>50'den az işçili tarım/orman işleri</li>
+              <li>Ev hizmetleri</li>
+              <li><mark>Çıraklar</mark> (dikkat!)</li>
+              <li>Sporcular</li>
+              <li>3 kişilik esnaf işleri</li>
+            </ul>
+          </div>
+          <div class="split-card">
+            <h4><span class="dot dot-green"></span> 4857 m.4/2 — İSTİSNA DEĞİL, TÂBİ</h4>
+            <ul>
+              <li>Kıyı/liman yükleme-boşaltma</li>
+              <li>Havacılık yer tesisleri</li>
+              <li>Tarım sanatları atölyeleri</li>
+              <li>Tarım işletmelerindeki yapı işleri</li>
+              <li>Park/bahçe işleri</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>🏢 Asıl İşveren - Alt İşveren ve Muvazaa</h3>
+        <ul>
+          <li><strong>Kurulma şartı:</strong> Yardımcı işlerde veya uzmanlık gerektiren işlerde</li>
+          <li><strong>Sorumluluk:</strong> Asıl işveren, alt işveren işçilerine karşı <mark>müteselsilen</mark> sorumlu</li>
+          <li><strong>Muvazaa itiraz süresi:</strong> <mark>30 İŞ GÜNÜ</mark> (İş Mahkemesine)</li>
+          <li><strong>Mahkeme karar süresi:</strong> <mark>4 ay</mark> (basit yargılama)</li>
+          <li><strong>Yargıtay temyiz süresi:</strong> <mark>6 ay</mark></li>
+        </ul>
+
+        <div class="box exam">
+          <b>⚠️ MUVAZAA SÜRE TUZAĞI</b>
+          Muvazaa raporuna itiraz = <mark>30 İŞ GÜNÜ</mark> (2 hafta veya 30 takvim günü DEĞİL!)
+        </div>
+
+        <h3>🔄 Geçici İş İlişkisi (4857 m.7)</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Kural</th><th>Süre/Sınır</th></tr></thead>
+            <tbody>
+              <tr><td>Genel azami süre</td><td><mark>4 ay</mark> (max 2 yenileme ile toplam <mark>8 ay</mark>)</td></tr>
+              <tr><td>Aynı iş için bekleme</td><td><mark>6 ay</mark> geçmedikçe yeni geçici işçi alınamaz</td></tr>
+              <tr><td>Kota (dönemsel iş artışı)</td><td>Toplam çalışanın <mark>1/4'ü (%25)</mark>; ≤10 çalışan varsa max <mark>5 işçi</mark></td></tr>
+              <tr><td>Süre aşımı sonucu</td><td>Otomatik olarak <mark>belirsiz süreli sözleşmeye</mark> dönüşür</td></tr>
+              <tr><td>Toplu işçi çıkarma sonrası yasak</td><td><mark>8 ay</mark></td></tr>
+              <tr><td>Yasaklı alanlar</td><td>Kamu, yeraltı maden, grev/lokavt dönemleri</td></tr>
+              <tr><td>Haklı fesih çağrı süresi</td><td>En fazla <mark>3 ay</mark> içinde işe çağrılmazsa haklı fesih</td></tr>
+              <tr><td>Ödenmeyen ücret mahsubu</td><td>En çok <mark>3 aya kadar</mark> doğrudan işçiye ödenir</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>🎯 Eşit Davranma ve İşyeri Devri</h3>
+        <ul>
+          <li><strong>Eşit davranma ihlali tazminatı:</strong> İşçi <mark>4 aya kadar</mark> ücreti tutarında tazminat + yoksun bırakıldığı haklar</li>
+          <li><strong>İşyeri devri:</strong> Devralan tüm hak-borçlardan sorumlu; devreden <mark>2 yıl</mark> süreyle sorumlu</li>
+        </ul>
+      </article>
+
+      <!-- ===== 3. HİZMETLER, KURULLAR, OSGB VE DESTEK ===== -->
+      <article class="card" id="s3">
+        <h2><span class="num">3</span> İSG Hizmetleri, Kurullar ve Devlet Desteği — <span style="color:#b45f0a;font-size:14px;">%75 SORU İHTİMALİ</span></h2>
+
+        <h3>🏛️ Ulusal İSG Konseyi</h3>
+        <ul>
+          <li><strong>Başkan:</strong> ÇSGB Müsteşarı</li>
+          <li><strong>Sekretarya:</strong> İSGGM</li>
+          <li><strong>Olağan toplantı:</strong> Yılda <mark>2 defa</mark> (Haziran & Aralık)</li>
+          <li><strong>Olağanüstü:</strong> Başkan veya üyelerin <mark>1/3'ü</mark></li>
+          <li><strong>Davet süresi:</strong> Toplantıdan en az <mark>1 ay</mark> önce</li>
+          <li><strong>Gündem önerisi:</strong> En geç <mark>7 gün</mark> önce</li>
+          <li><strong>Faaliyet raporu:</strong> Her yıl <mark>Mart ayı sonuna kadar</mark></li>
+          <li><strong>Çekimser oy:</strong> <mark>Kullanılamaz!</mark> (Şerh yazılabilir)</li>
+          <li><strong>Oy eşitliği:</strong> Başkanın oyu üstündür</li>
+        </ul>
+
+        <h3>👥 İSG Kurulları (6331 m.22)</h3>
+        <div class="box def">
+          <b>📌 Kurul Kurma Şartları (2 şart birlikte)</b>
+          <ol>
+            <li>İşyerinde <mark>50 ve daha fazla çalışan</mark></li>
+            <li>İşin <mark>6 aydan fazla</mark> süren sürekli iş olması</li>
+          </ol>
+        </div>
+
+        <h4>Kurul Üyeleri — İ-HUSİFÇ Kodlaması</h4>
+        <div class="mnemo-grid">
+          <div class="mnemo m1"><h4>İ</h4><p>İşveren / İşveren Vekili → <strong>Kurul Başkanı</strong></p></div>
+          <div class="mnemo m2"><h4>H</h4><p>İşyeri Hekimi → Üye</p></div>
+          <div class="mnemo m3"><h4>U</h4><p>İş Güvenliği Uzmanı → <strong>Sekreter</strong></p></div>
+          <div class="mnemo m4"><h4>S</h4><p>Sivil Savunma Uzmanı (varsa) → Üye</p></div>
+          <div class="mnemo m5"><h4>İ</h4><p>İnsan Kaynakları / Personel → Yedek Sekreter</p></div>
+          <div class="mnemo m6"><h4>F</h4><p>Formen / Ustabaşı → Seçimle üye</p></div>
+        </div>
+        <p style="font-size:13.5px;margin:6px 0 14px;"><strong>Ç</strong> → Çalışan Temsilcisi (Seçimle üye)</p>
+
+        <h4>Toplantı Periyotları</h4>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Tehlike Sınıfı</th><th>Toplantı Periyodu</th></tr></thead>
+            <tbody>
+              <tr><td><span class="tag tag-green">AZ TEHLİKELİ</span></td><td><mark>3 ayda bir</mark> (esnetilebilir)</td></tr>
+              <tr><td><span class="tag tag-orange">TEHLİKELİ</span></td><td><mark>2 ayda bir</mark> (esnetilebilir)</td></tr>
+              <tr><td><span class="tag tag-red">ÇOK TEHLİKELİ</span></td><td><mark>Ayda en az 1 defa</mark> (ESNETİLEMEZ)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Asıl İşveren - Alt İşveren Kurul Matrisi</h4>
+        <ul style="font-size:14px;">
+          <li>Her ikisi ≥50 → <mark>Ayrı ayrı kurullar</mark></li>
+          <li>Asıl ≥50, Alt <50 → <mark>Asıl işveren kurar</mark></li>
+          <li>Asıl <50, Alt ≥50 → <mark>Alt işveren kurar</mark></li>
+          <li>Her ikisi <50 ama toplam ≥50 → <mark>ORTAK KURUL</mark></li>
+        </ul>
+
+        <div class="box exam">
+          <b>⚠️ OY EŞİTLİĞİ TUZAĞI</b>
+          İSG Kurulu'nda oy eşitliği → <mark>Başkanın (İşveren/Vekili) tarafı kazanır.</mark>
+          Sekreter veya İGU'nun oyu üstün değildir!
+        </div>
+
+        <h3>🏢 İSGB ve OSGB Mekân Standartları</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Oda</th><th>İSGB</th><th>OSGB</th></tr></thead>
+            <tbody>
+              <tr><td>Hekim odası</td><td><mark>8 m²</mark></td><td><mark>10 m²</mark></td></tr>
+              <tr><td>İGU odası</td><td><mark>8 m²</mark></td><td><mark>10 m²</mark></td></tr>
+              <tr><td>İlk yardım odası</td><td><mark>12 m²</mark></td><td><mark>15 m²</mark></td></tr>
+              <tr><td>Bekleme yeri</td><td>Yok</td><td><mark>12 m²</mark></td></tr>
+              <tr><td>Arşiv/Tuvalet</td><td>Mevcut kullanılır</td><td><mark>Bağımsız</mark></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="box tip">
+          <b>💡 Metrekare Kodlaması</b>
+          İSGB (8-8-12) → OSGB (10-10-15) + bekleme 12 m²<br>
+          <mark>+2 m² odalar / +3 m² ilk yardım</mark>
+        </div>
+
+        <h3>💰 Devlet Desteği (6331 m.7)</h3>
+        <div class="box def">
+          <b>📌 Destek Şartları</b>
+          <ol>
+            <li>Kamu kurumu <mark>olmamak</mark></li>
+            <li><mark>10'dan az çalışan</mark> (1-9)</li>
+            <li><mark>Tehlikeli veya Çok Tehlikeli</mark> sınıfta yer almak</li>
+          </ol>
+          <p style="margin:8px 0 0;font-size:13.5px;">Cumhurbaşkanı, az tehlikeli sınıfı da dahil etmeye yetkilidir.</p>
+        </div>
+
+        <ul>
+          <li><strong>Finansman:</strong> SGK — <mark>kısa vadeli sigorta kolları</mark> primleri</li>
+          <li><strong>Ödeme periyodu:</strong> <mark>Üçer aylık</mark> dönemler</li>
+          <li><strong>Kayıtdışı yaptırımı:</strong> Yasal faiziyle <mark>geri alınır + 3 yıl destekten men</mark></li>
+        </ul>
+
+        <div class="box exam">
+          <b>⚠️ ÇIRAK/STAJYER MUAFİYETİ</b>
+          Çırak ve stajyerler 6331 kapsamındadır ANCAK:
+          <ul>
+            <li>İGU/İH atama süresi hesabına <mark>dahil edilmez</mark> (m.6)</li>
+            <li>Devlet desteği çalışan sayısı hesabına <mark>dahil edilmez</mark> (m.7)</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- ===== 4. PROFESYONELLER ===== -->
+      <article class="card" id="s4">
+        <h2><span class="num">4</span> İSG Profesyonelleri ve Eğitim Kurumları — <span style="color:#b45f0a;font-size:14px;">%80 SORU İHTİMALİ</span></h2>
+
+        <h3>👷 İş Güvenliği Uzmanı (İGU) — Sınıflar</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Sınıf</th><th>Yetki</th><th>Yükselme Şartı</th><th>Doğrudan Sınav Hakkı</th></tr></thead>
+            <tbody>
+              <tr><td><strong>C</strong></td><td>Az Tehlikeli</td><td>—</td><td>—</td></tr>
+              <tr><td><strong>B</strong></td><td>Az + Tehlikeli</td><td>C + <mark>3 yıl</mark> fiili</td><td><mark>Yüksek Lisans</mark> → B</td></tr>
+              <tr><td><strong>A</strong></td><td>TÜM sınıflar</td><td>B + <mark>4 yıl</mark> fiili</td><td><mark>Doktora</mark> → A<br><mark>10 yıl</mark> müfettiş/uzman → A</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>📊 İGU Çalışma Süreleri ve Tam Zamanlı Eşikler</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Tehlike Sınıfı</th><th>Aylık Süre</th><th>Tam Zamanlı Eşik</th></tr></thead>
+            <tbody>
+              <tr><td><span class="tag tag-green">AZ</span></td><td><mark>10 dk</mark>/çalışan</td><td>Her <mark>1000</mark> çalışan</td></tr>
+              <tr><td><span class="tag tag-orange">TEHLİKELİ</span></td><td><mark>20 dk</mark>/çalışan</td><td>Her <mark>500</mark> çalışan</td></tr>
+              <tr><td><span class="tag tag-red">ÇOK TEHLİKELİ</span></td><td><mark>40 dk</mark>/çalışan</td><td>Her <mark>250</mark> çalışan</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="box tip">
+          <b>💡 İGU KODLAMALARI</b>
+          <ul>
+            <li><strong>Süre:</strong> 10-20-40 = <mark>1X - 2X - 4X Katlanma</mark></li>
+            <li><strong>Tam zamanlı:</strong> 1000-500-250 = <mark>Yarılanma</mark></li>
+          </ul>
+        </div>
+
+        <h3>🩺 İşyeri Hekimi (İH) Süreleri</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Tehlike Sınıfı</th><th>Aylık Süre</th><th>Tam Zamanlı Eşik</th><th>Muayene Periyodu</th></tr></thead>
+            <tbody>
+              <tr><td><span class="tag tag-green">AZ</span></td><td><mark>5 dk</mark>/çalışan</td><td>Her <mark>2000</mark></td><td><mark>5 yılda bir</mark></td></tr>
+              <tr><td><span class="tag tag-orange">TEHLİKELİ</span></td><td><mark>10 dk</mark>/çalışan</td><td>Her <mark>1000</mark></td><td><mark>3 yılda bir</mark></td></tr>
+              <tr><td><span class="tag tag-red">ÇOK TEHLİKELİ</span></td><td><mark>15 dk</mark>/çalışan</td><td>Her <mark>750</mark></td><td><mark>1 yılda bir</mark></td></tr>
+              <tr><td><span class="tag tag-purple">ÖZEL GRUP</span></td><td>—</td><td>—</td><td><mark>6 ayda bir</mark></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>İH Doğrudan Belge Hakları</h4>
+        <ul>
+          <li><strong>İSG Doktorası</strong> → doğrudan sınava giriş</li>
+          <li><strong>Hekim İş Müfettişi (8 yıl)</strong> → doğrudan belge</li>
+          <li><strong>İş ve Meslek Hastalıkları yan dal</strong> → doğrudan belge</li>
+        </ul>
+
+        <h3>💉 Diğer Sağlık Personeli (DSP)</h3>
+        <ul>
+          <li><strong>Kimler:</strong> Ebe, hemşire, sağlık memuru, acil tıp teknisyeni/teknikeri, çevre sağlığı teknisyeni/teknikeri</li>
+          <li><strong>Zorunlu olduğu yer:</strong> <mark>10+ çalışanı olan ÇOK TEHLİKELİ</mark> işyerleri</li>
+          <li><strong>Kritik istisna:</strong> <mark>Tam süreli işyeri hekimi varsa DSP zorunlu değildir.</mark></li>
+        </ul>
+
+        <h4>DSP Çalışma Süreleri (Çok Tehlikeli)</h4>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Çalışan Sayısı</th><th>Aylık Süre</th></tr></thead>
+            <tbody>
+              <tr><td>10 - 49</td><td><mark>10 dk</mark>/çalışan</td></tr>
+              <tr><td>50 - 249</td><td><mark>15 dk</mark>/çalışan</td></tr>
+              <tr><td>250 +</td><td><mark>20 dk</mark>/çalışan</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>📢 Bildirim Yükümlülüğü ve İhbar (6331 m.8)</h3>
+        <div class="box def">
+          <b>📌 İhbarı Tetikleyen Haller</b>
+          <ul>
+            <li>Acil durdurmayı gerektiren eksiklik</li>
+            <li>Yangın, patlama, göçme, kimyasal sızıntı vb. <mark>hayati tehlike</mark></li>
+            <li>Meslek hastalığı ortamı + işverenin tedbir almaması</li>
+          </ul>
+          <p style="margin:8px 0 0;">Bildirim yerleri: <mark>Bakanlık + sendika + çalışan temsilcisi</mark></p>
+        </div>
+
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>İhlal</th><th>İlk Yaptırım</th><th>Tekrar</th></tr></thead>
+            <tbody>
+              <tr><td>İGU/İH bildirim yapmazsa</td><td><mark>3 ay</mark> askı</td><td><mark>6 ay</mark> askı</td></tr>
+              <tr><td>OSGB bildirim yapmazsa</td><td><mark>6 ay</mark> askı</td><td><mark>1 yıl</mark> askı</td></tr>
+              <tr><td>Kötü niyetli bildirim</td><td colspan="2"><mark>6 ay</mark> askı</td></tr>
+              <tr><td>İhbardan dolayı işten çıkarma</td><td colspan="2">İşverene <mark>en az 1 yıllık sözleşme ücreti</mark> tazminat</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>🎓 Eğitim Kurumları</h3>
+        <div class="split">
+          <div class="split-card">
+            <h4><span class="dot dot-blue"></span> Eğitim Süreleri</h4>
+            <ul>
+              <li><strong>İGU/İH:</strong> <mark>220 saat</mark> (180 teorik + 40 uygulama)</li>
+              <li><strong>DSP:</strong> <mark>90 saat</mark></li>
+              <li><strong>Uzaktan eğitim max:</strong> 90 saat (kalan 90 yüz yüze)</li>
+            </ul>
+          </div>
+          <div class="split-card">
+            <h4><span class="dot dot-orange"></span> Sınav & Devamsızlık</h4>
+            <ul>
+              <li><strong>İGU/İH geçme:</strong> <mark>70/100</mark></li>
+              <li><strong>DSP geçme:</strong> <mark>60/100</mark></li>
+              <li><strong>Devamsızlık:</strong> Teorik <mark>max 6 saat</mark>; Stajda <mark>YASAK</mark></li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>⚖️ İhtar Puanı ve Askı Sistemi</h3>
+        <ul>
+          <li><strong>Kişiler (İGU/İH/DSP):</strong> <mark>100 puan</mark> → 6 ay askı</li>
+          <li><strong>Kurumlar (Eğitim/OSGB):</strong> <mark>200 puan</mark> → 6 ay askı</li>
+          <li><strong>Vize:</strong> <mark>5 yılda bir</mark></li>
+          <li><strong>Puan silinmesi:</strong> Vize sonunda <mark>1 yıldan eski puanlar</mark> silinir</li>
+          <li><strong>Doğrudan iptal:</strong> <mark>3 kez askı</mark> + sahte evrak + ölümlü kaza ihmali</li>
+        </ul>
+
+        <h3>🔒 Onaylı Defter (Tespit ve Öneri Defteri)</h3>
+        <ul>
+          <li><strong>Yapı:</strong> 1 asıl + 2 kopya</li>
+          <li><strong>Onay mercii:</strong> <mark>Çalışma ve İş Kurumu İl Müdürlüğü</mark> veya <mark>Noter</mark></li>
+          <li><strong>Asıl:</strong> İşveren; <strong>Kopyalar:</strong> İGU + İşyeri Hekimi</li>
+        </ul>
+
+        <h3>💻 İSG-KATİP ve Vize</h3>
+        <ol>
+          <li>İşveren/OSGB atama tanımlar</li>
+          <li>İGU/İH <mark>e-Devlet ile onaylar</mark></li>
+          <li>İşveren onayıyla <mark>hukuken geçerli</mark></li>
+          <li>Belgeler <mark>5 yılda bir</mark> vize</li>
+        </ol>
+      </article>
+
+      <!-- ===== 5. TEHLİKE SINIFLARI VE İŞİN DURDURULMASI ===== -->
+      <article class="card" id="s5">
+        <h2><span class="num">5</span> Tehlike Sınıfları ve İşin Durdurulması — <span style="color:#b45f0a;font-size:14px;">%90 SORU İHTİMALİ</span></h2>
+
+        <h3>📊 NACE Kodlama ve Tehlike Sınıfları</h3>
+        <ul>
+          <li><strong>NACE Rev. 2.1</strong> altılı kodlama (AB uyumlu)</li>
+          <li><strong>Hiyerarşi:</strong> Kısım → Bölüm → Grup → Sınıf → <mark>Alt Sınıf (6 hane = NACE kodu)</mark></li>
+          <li><strong>Asıl İş İlkesi:</strong> Tehlike sınıfında <mark>asıl iş</mark> dikkate alınır</li>
+          <li><strong>Tereddüt:</strong> Kuruluş amacına bakılır</li>
+          <li><strong>Birden fazla asıl iş:</strong> <mark>En yüksek tehlike sınıfı</mark> esas alınır</li>
+          <li><strong>Faaliyet değişikliği bildirimi:</strong> <mark>1 ay</mark> içinde Bakanlığa</li>
+          <li><strong>Tehlike sınıfı değişikliği uyum:</strong> <mark>90 gün</mark> içinde İSGGM'ye bildirim</li>
+          <li><strong>İtiraz mercii:</strong> <mark>İSGGM bünyesindeki Tehlike Sınıfı İtiraz Komisyonu</mark></li>
+        </ul>
+
+        <h3>🛑 İşin Durdurulması — 4 Sebep</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Sebep</th><th>Dayanak</th></tr></thead>
+            <tbody>
+              <tr><td><strong>1. Hayati tehlike</strong></td><td>m.7/1 — bina, eklenti, yöntem, ekipman</td></tr>
+              <tr><td><strong>2. Üretim zorlaması</strong></td><td>m.7/3 — çok tehlikeli ihale işleri</td></tr>
+              <tr><td><strong>3. Yeraltı maden acil halleri</strong></td><td>Ek-1 (3 özel durum)</td></tr>
+              <tr><td><strong>4. Risk değerlendirmesi eksikliği</strong></td><td>m.7/2 — <mark>MEMYAK-BEK</mark></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="box warn">
+          <b>⚠️ MEMYAK-BEK — Risk Değerlendirmesi Yokluğu Doğrudan Durdurma Sebebi</b>
+          Sadece bu 5 sektörde:
+          <ul>
+            <li><strong>ME</strong>den (Çok Tehlikeli)</li>
+            <li><strong>M</strong>etal (Çok Tehlikeli)</li>
+            <li><strong>Y</strong>apı/İnşaat (Çok Tehlikeli)</li>
+            <li><strong>A</strong>K — Tehlikeli Kimyasallar</li>
+            <li><strong>BEK</strong> — Büyük Endüstriyel Kaza riski</li>
+          </ul>
+        </div>
+
+        <h3>📋 Durdurma Süreci — Adım Adım</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Adım</th><th>Süre</th></tr></thead>
+            <tbody>
+              <tr><td>Müfettiş rapor → Kurul Başkanlığı</td><td>En geç ertesi gün</td></tr>
+              <tr><td>3 müfettişli heyet kararı</td><td><mark>2 takvim günü</mark></td></tr>
+              <tr><td>Karar Valilik/İl Müdürlüğüne</td><td><mark>1 gün</mark></td></tr>
+              <tr><td>Mülki amir kolluk ile uygulama</td><td><mark>24 saat</mark></td></tr>
+              <tr><td>Acil hal (müfettiş → mülki amir)</td><td><mark>Aynı gün</mark> durdurma</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>⏳ Mühür Sökme vs Kaldırma Karşılaştırması</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Kriter</th><th>Mühür Geçici Sökme</th><th>Durdurmayı Kaldırma</th></tr></thead>
+            <tbody>
+              <tr><td>Saha incelemesi</td><td><mark>Zorunlu DEĞİL</mark></td><td><mark>ZORUNLU</mark></td></tr>
+              <tr><td>Heyet karar süresi</td><td><mark>2 gün</mark></td><td><mark>7 gün</mark></td></tr>
+              <tr><td>Mülki amir uygulama</td><td><mark>24 saat</mark></td><td><mark>24 saat</mark></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="box tip">
+          <b>💡 KRİTİK KURAL</b>
+          Aynı anda hem mühür sökme hem kaldırma talebi yapılırsa → <mark>sadece mühür sökme işleme alınır.</mark>
+        </div>
+
+        <h3>⚖️ Mahkeme ve Cezai Yaptırım</h3>
+        <ul>
+          <li><strong>İtiraz süresi:</strong> <mark>6 İŞ GÜNÜ</mark> (İş Mahkemesi)</li>
+          <li><strong>Mahkeme karar süresi:</strong> <mark>6 İŞ GÜNÜ</mark> (kesin)</li>
+          <li><strong>İtiraz uygulamayı durdurur mu?</strong> <mark>HAYIR — durdurmaz!</mark></li>
+          <li><strong>İzinsiz çalışma yaptıran işverene:</strong> <mark>3-5 YIL HAPİS</mark></li>
+        </ul>
+
+        <h3>👷 Durdurma Süresince Çalışan Hakları</h3>
+        <ul>
+          <li>Ücret <mark>aynen ödenir</mark> veya</li>
+          <li>Ücret düşüklüğü olmaksızın <mark>başka iş verilir</mark></li>
+          <li>Çalışanlar <mark>hiçbir şekilde hak kaybına uğratılamaz</mark></li>
+        </ul>
+
+        <div class="box exam">
+          <b>⚠️ SINAV KRİTİK ÇELDİRİCİLERİ</b>
+          <ul>
+            <li><mark>Mühürlemeyi</mark> ne müfettiş ne İSGGM yapar → <strong>Mülki Amir + Kolluk</strong></li>
+            <li>Muvazaa itirazı <mark>30 İŞ GÜNÜ</mark> ≠ Durdurma itirazı <mark>6 İŞ GÜNÜ</mark></li>
+            <li>Heyet 2 gün = <mark>takvim günü</mark> ≠ 6 iş günü = <mark>iş günü</mark></li>
+            <li>"Mahkemeye itiraz kararı durdurur" = <mark>YANLIŞ</mark> (durdurmaz)</li>
+            <li>Risk değerlendirmesi <mark>HER işyerinde değil</mark> sadece 5 sektörde doğrudan durdurma sebebi</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- ===== 6. ÖZEL SÜRELER VE HASSAS GRUPLAR ===== -->
+      <article class="card" id="s6">
+        <h2><span class="num">6</span> Özel Çalışma Süreleri ve Hassas Gruplar — <span style="color:#b45f0a;font-size:14px;">%70 SORU İHTİMALİ</span></h2>
+
+        <h3>⏱️ 7,5 Saat Sınırına Tabi İşler</h3>
+        <div class="box def">
+          <b>📌 Yasaklar (Yönetmelik)</b>
+          <ul>
+            <li><strong>m.7 — Fazla çalışma yasağı:</strong> KESİNLİKLE yasaktır</li>
+            <li><strong>m.6 — İkincil iş yasağı:</strong> Kendi isteğiyle bile yasak</li>
+            <li><strong>m.8 — Bildirim:</strong> İşe başlamadan İl Müdürlüğüne</li>
+            <li><strong>Geçici Madde 1:</strong> 2004'te bildirim yapanlar <mark>MUAF</mark></li>
+          </ul>
+        </div>
+
+        <h4>7,5 Saat Sınırına Tabi Ana İş Kolları</h4>
+        <ul style="font-size:14px;">
+          <li>Kurşun & arsenik işleri, Cam, Cıva, Çimento, Kok fabrikaları, Termik santral</li>
+          <li>Çinko, Bakır, Alüminyum, Demir-Çelik, Döküm, Kaplamacılık</li>
+          <li>Karpit, Asit, Akümülatör, Kaynak işleri, Kauçuk işlenmesi</li>
+          <li>Yeraltı işleri (cıva madeni hariç — 6 saat), Radyoaktif maddeler</li>
+          <li>Gürültülü işler (<mark>8h = 85 dB(A)</mark> aşan)</li>
+          <li>Pnömokonyoz yapan tozlu işler, Tarım ilaçları</li>
+        </ul>
+
+        <h3>🔢 7,5 Saatten Az Süre Gerektiren İşler</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>İş / Koşul</th><th>Süre</th></tr></thead>
+            <tbody>
+              <tr><td>Su altı basınçlı hava: 20-25 m / 2-2,5 kg/cm²</td><td><mark>7 saat</mark></td></tr>
+              <tr><td>Su altı basınçlı hava: 25-30 m / 2,5-3 kg/cm²</td><td><mark>6 saat</mark></td></tr>
+              <tr><td>Su altı basınçlı hava: 30-35 m / 3-3,5 kg/cm²</td><td><mark>5 saat</mark></td></tr>
+              <tr><td>Su altı basınçlı hava: 35-40 m / 3,5-4 kg/cm²</td><td><mark>4 saat</mark></td></tr>
+              <tr><td>Dalgıçlar (18 m'ye kadar)</td><td><mark>3 saat</mark></td></tr>
+              <tr><td>Dalgıçlar (40 m'ye kadar)</td><td><mark>30 dakika</mark></td></tr>
+              <tr><td>Cıva izabe fırınları + elementer cıvalı ocaklar</td><td><mark>6 saat</mark></td></tr>
+              <tr><td>Kurşun izabe teksif odaları kuru toz kaldırma</td><td><mark>4 saat</mark></td></tr>
+              <tr><td>Karbon sülfür işleri</td><td><mark>6 saat</mark></td></tr>
+              <tr><td>Karbamatlı/organik fosforlu insektisitler</td><td><mark>6 saat</mark></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mnemo-grid">
+          <div class="mnemo m1">
+            <h4>🔵 6 SAAT KULÜBÜ (C-K-İ-S)</h4>
+            <p><strong>C</strong>ıva fırın/ocak<br>
+            <strong>K</strong>arbon Sülfür<br>
+            <strong>İ</strong>nsektisitler<br>
+            <strong>S</strong>u Altı (25-30 m)<br><br>
+            Bu 4 grup = <mark>6 saat</mark></p>
+          </div>
+          <div class="mnemo m5">
+            <h4>🔻 EN DÜŞÜK = 4 SAAT</h4>
+            <p><strong>Kurşun teksif odası</strong> kuru toz<br>
+            <strong>Su Altı 35-40 m</strong><br><br>
+            Mevzuattaki en düşük tam gün çalışma süreleri</p>
+          </div>
+        </div>
+
+        <h3>🧹 HTT İşleri (Hazırlama, Tamamlama, Temizleme)</h3>
+        <div class="mnemo-grid">
+          <div class="mnemo m2">
+            <h4>📋 HTT — 4 KRİTİK SAYI</h4>
+            <p><strong>Max 2 saat</strong> günlük ek süre<br>
+            <strong>Min 30 dakika</strong> asıl iş sonrası dinlenme<br>
+            <strong>%50 zamlı</strong> fazla çalışma ücreti<br>
+            <strong>%10 kota</strong> (100+ çalışan işyerlerinde)</p>
+          </div>
+        </div>
+
+        <h4>HTT Çalışan Kotaları</h4>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Toplam Çalışan</th><th>Azami HTT Çalışanı</th></tr></thead>
+            <tbody>
+              <tr><td>1-15</td><td>3</td></tr>
+              <tr><td>16-30</td><td>4</td></tr>
+              <tr><td>31-60</td><td>6</td></tr>
+              <tr><td>61-80</td><td>8</td></tr>
+              <tr><td>81-100</td><td>10</td></tr>
+              <tr><td>100+</td><td><mark>%10</mark></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>🤰 Gebe / Emziren Kadın Çalışanlar</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Kural</th><th>Süre / Değer</th></tr></thead>
+            <tbody>
+              <tr><td>Günlük azami çalışma</td><td><mark>7,5 saat</mark></td></tr>
+              <tr><td>Fazla çalışma</td><td><mark>Kesinlikle yasak</mark></td></tr>
+              <tr><td>Gebelik döneminde gece çalışma</td><td><mark>Yasak</mark></td></tr>
+              <tr><td>Doğum sonrası gece çalışma yasağı</td><td><mark>1 yıl</mark> (+ 6 ay tabip raporu = 1,5 yıl max)</td></tr>
+              <tr><td>Süt izni</td><td><mark>1,5 saat/gün</mark>, çocuk <mark>1 yaşına</mark> gelene kadar</td></tr>
+              <tr><td>Süt izni saat belirleme</td><td><mark>KADIN ÇALIŞAN</mark> kendisi belirler</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Emzirme Odası ve Kreş</h4>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Kadın Çalışan Sayısı</th><th>Zorunlu Tesis</th></tr></thead>
+            <tbody>
+              <tr><td><mark>100 - 150</mark></td><td><strong>Emzirme Odası</strong></td></tr>
+              <tr><td><mark>150 +</mark></td><td><strong>Kreş / Yurt / 0-6 yaş</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:13.8px;background:#f8fafd;padding:10px;border-radius:8px;">
+          <strong>Not:</strong> Yaş ve medeni hale bakılmaz. <mark>Eşi ölmüş / velayeti babaya verilmiş erkek çalışanlar</mark> da hesaba dahil.
+        </p>
+
+        <h3>🚫 İkincil İş Yasağı — Hukuki Sonuç</h3>
+        <ul>
+          <li>İdari para cezası</li>
+          <li>İş kazası durumunda <mark>kaçınılmazlık savunması GEÇERSİZ</mark></li>
+          <li><mark>Ağır kusur</mark> tespiti → idari + hukuki + cezai sorumluluk</li>
+        </ul>
+
+        <div class="box exam">
+          <b>⚠️ SÜT İZNİ TUZAĞI</b>
+          Süt izni saatlerini <mark>işveren veya işyeri hekimi DEĞİL</mark>, münhasıran
+          <mark>KADIN ÇALIŞAN KENDİSİ</mark> belirler!
+        </div>
+      </article>
+
+      <!-- ===== SAYISAL VERİLER MASTER TABLO ===== -->
+      <article class="card" id="sayisal">
+        <h2><span class="num">📊</span> MASTER Sayısal Veriler Tablosu — Sınavda En Çok Çıkanlar</h2>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>Süre / Sayı</th><th>Konu / Açıklama</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>3 İŞ GÜNÜ</strong></td><td>İşverenin SGK'ya iş kazası/meslek hastalığı bildirimi</td></tr>
+              <tr><td><strong>3 AY</strong></td><td>İGU/İH bildirim yapmazsa ilk askı süresi</td></tr>
+              <tr><td><strong>3 YIL</strong></td><td>(C) → (B) yükselme; kayıtdışı yaptırımı (destekten men)</td></tr>
+              <tr><td><strong>3-5 YIL</strong></td><td>İzinsiz çalışma yaptıran işverene hapis cezası</td></tr>
+              <tr><td><strong>4 YIL</strong></td><td>(B) → (A) yükselme</td></tr>
+              <tr><td><strong>5 YIL</strong></td><td>İSG-KATİP vize süresi; az tehlikeli İH muayene periyodu</td></tr>
+              <tr><td><strong>6 AY</strong></td><td>İGU/İH tekrar askı; OSGB ilk askı; ihtar puanı askı; özel grup muayene</td></tr>
+              <tr><td><strong>6 İŞ GÜNÜ</strong></td><td>Durdurma itirazı + mahkeme kararı</td></tr>
+              <tr><td><strong>8 YIL</strong></td><td>Hekim iş müfettişi doğrudan belge hakkı</td></tr>
+              <tr><td><strong>10 YIL</strong></td><td>İş müfettişi/İSG uzmanı doğrudan (A) hakkı</td></tr>
+              <tr><td><strong>1 AY</strong></td><td>Asıl iş faaliyet değişikliği bildirimi</td></tr>
+              <tr><td><strong>2 GÜN</strong></td><td>Durdurma heyeti karar süresi; mühür sökme kararı</td></tr>
+              <tr><td><strong>7 GÜN</strong></td><td>Durdurma kaldırma kararı</td></tr>
+              <tr><td><strong>24 SAAT</strong></td><td>Mülki amirin mühürleme uygulama süresi</td></tr>
+              <tr><td><strong>30 İŞ GÜNÜ</strong></td><td>Muvazaa raporuna itiraz</td></tr>
+              <tr><td><strong>90 GÜN</strong></td><td>Tehlike sınıfı değişikliğine uyum</td></tr>
+              <tr><td><strong>10 GÜN</strong></td><td>Sağlık hizmet sunucularının SGK'ya bildirimi</td></tr>
+              <tr><td><strong>4 AY</strong></td><td>Geçici iş ilişkisi ilk süre; muvazaa davası karar</td></tr>
+              <tr><td><strong>6 AY</strong></td><td>Geçici iş: aynı iş için bekleme süresi</td></tr>
+              <tr><td><strong>8 AY</strong></td><td>Geçici iş toplam süre; toplu çıkarma yasağı</td></tr>
+              <tr><td><strong>%25 (1/4)</strong></td><td>Geçici işçi kotası</td></tr>
+              <tr><td><strong>%10</strong></td><td>HTT çalışan kotası (100+ işyerleri)</td></tr>
+              <tr><td><strong>%50</strong></td><td>HTT ücret zammı</td></tr>
+              <tr><td><strong>10 / 20 / 40 dk</strong></td><td>İGU aylık süreler (Az/Tehlike/Çok)</td></tr>
+              <tr><td><strong>5 / 10 / 15 dk</strong></td><td>İH aylık süreler</td></tr>
+              <tr><td><strong>1000 / 500 / 250</strong></td><td>İGU tam zamanlı eşikler</td></tr>
+              <tr><td><strong>2000 / 1000 / 750</strong></td><td>İH tam zamanlı eşikler</td></tr>
+              <tr><td><strong>100 / 200 puan</strong></td><td>İhtar puanı (kişi / kurum)</td></tr>
+              <tr><td><strong>220 / 90 saat</strong></td><td>İGU-İH / DSP eğitim süresi</td></tr>
+              <tr><td><strong>70 / 60 puan</strong></td><td>İGU-İH / DSP geçme notu</td></tr>
+              <tr><td><strong>6 saat</strong></td><td>Teorik devamsızlık max</td></tr>
+              <tr><td><strong>7,5 saat</strong></td><td>İSG Kurulu çok tehlikeli periyot = <mark>aylık</mark></td></tr>
+              <tr><td><strong>3 / 2 ay</strong></td><td>İSG Kurulu az/tehlikeli periyot</td></tr>
+              <tr><td><strong>8-8-12 m²</strong></td><td>İSGB oda alanları</td></tr>
+              <tr><td><strong>10-10-15-12 m²</strong></td><td>OSGB oda alanları</td></tr>
+              <tr><td><strong>50 çalışan</strong></td><td>İSG Kurulu kurma + işyeri hekimi (1593)</td></tr>
+              <tr><td><strong>2 defa / 1,5 yıl</strong></td><td>Gece çalışma yasağı uzatması</td></tr>
+              <tr><td><strong>1,5 saat</strong></td><td>Süt izni</td></tr>
+              <tr><td><strong>100-150 / 150+</strong></td><td>Emzirme odası / Kreş</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- ===== ÇIKMIŞ SORULAR POPUP ===== -->
+      <article class="card" id="sorular">
+        <h2><span class="num">❓</span> Kapsamlı Çıkmış Soru Çözümleri — Tüm Bölümler</h2>
+        <p>
+          Bölüm 1'den Bölüm 6'ya kadar tüm konulardan sınavlarda çıkmış / çıkması muhtemel
+          <strong>24 adet örnek soru</strong>, aşağıdaki butona tıklayarak açılacak olan popup
+          penceresinde <mark>her biri detaylı gerekçeli çözümüyle birlikte</mark> sunulmaktadır.
+          Her soruda doğru cevap yeşil renkle vurgulanmış, altında ilgili
+          <strong>kanun/yönetmelik maddesi referansıyla</strong> birlikte çözüm verilmiştir.
+        </p>
+
+        <div style="text-align:center;margin:26px 0;">
+          <button class="btn btn-primary" id="openMasterModal">
+            📋 24 Çıkmış Soruyu Görüntüle
+          </button>
+        </div>
+
+        <div class="box tip">
+          <b>💡 Nasıl Çalışır?</b>
+          Butona tıkladığınızda tam ekran bir pencere açılır. Soruları aşağı doğru kaydırarak
+          inceleyebilirsiniz. Sağ üstteki <strong>✕</strong> butonu veya <strong>ESC</strong>
+          tuşu ile pencereyi kapatabilirsiniz.
+        </div>
+      </article>
+
+      <!-- ===== MİNİ TEST ===== -->
+      <article class="card" id="minitest">
+        <h2><span class="num">🎯</span> MASTER MİNİ TEST — 14 Soru Tüm Bölümler</h2>
+        <p>
+          Aşağıdaki test, tüm bölümleri kapsayan <strong>14 sorudan</strong> oluşmaktadır. Her soruda
+          doğru şıkkı tıkladığınızda <mark>yeşil onay işareti ve detaylı çözüm</mark> görüntülenir.
+        </p>
+
+        <!-- ============ BÖLÜM 1 ============ -->
+        <div class="test-section">
+          <div class="test-header part1">
+            <h3>📘 BÖLÜM 1 — Hukuki Temeller ve 6331/4857</h3>
+            <span class="badge">7 SORU</span>
+          </div>
+          <div class="test-body">
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">1</span>
+                1982 Anayasası'na göre "Küçükler, kadınlar ile bedeni ve ruhi yetersizliği olanlar
+                çalışma şartları bakımından özel olarak korunurlar" hükmü hangi maddede yer alır?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. m.17 Yaşama Hakkı'dır (Kişi Hakları bölümü).">A) m.17 — Kişi Hakları</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! m.50 — Çalışma Şartları ve Dinlenme Hakkı; Sosyal ve Ekonomik Haklar bölümünde düzenlenmiştir. Özel koruma: Küçükler, kadınlar ile bedeni ve ruhi yetersizliği olanlar.">B) m.50 — Sosyal Haklar</button>
+                <button class="mq-btn" data-explain="Yanlış. m.49 Çalışma Hakkı ve Ödevi'dir ama özel koruma m.50'dedir.">C) m.49 — Çalışma Hakkı</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">2</span>
+                Aşağıdakilerden hangisi 6331 sayılı İSG Kanunu kapsamı <strong>içindedir</strong>?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. Ev hizmetleri 6331 kapsamı DIŞINDADIR.">A) Ev hizmetleri</button>
+                <button class="mq-btn" data-explain="Yanlış. Kendi nam ve hesabına tek başına çalışanlar kapsam dışıdır.">B) Tek başına çalışanlar</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! TSK, kolluk ve MİT'in operasyonel faaliyetleri kapsam dışıdır; ancak bunlara ait FABRİKA, BAKIM MERKEZİ ve DİKİMEVLERİ Kanun KAPSAMINDADIR.">C) TSK'ya ait dikimevi</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">3</span>
+                6331 sayılı Kanun'a göre "Tehlike" ve "Risk" kavramları arasındaki temel fark nedir?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! Tehlike = zarar verme POTANSİYELİ; Risk = zararlı sonuç meydana gelme İHTİMALİ × ŞİDDETİ. Tehlike henüz gerçekleşmemiş bir kapasitedir.">A) Tehlike potansiyel, Risk ihtimal × şiddettir.</button>
+                <button class="mq-btn" data-explain="Yanlış. Roller ters çevrilmiştir.">B) Tehlike ihtimal × şiddet, Risk potansiyeldir.</button>
+                <button class="mq-btn" data-explain="Yanlış. İkisi aynı kavram değildir.">C) İkisi de aynı kavramdır, fark yoktur.</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">4</span>
+                "De Re Metallica" adlı eserinde madenlerin havalandırılması ve toz önleme yöntemleri
+                üzerinde duran kişi kimdir?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. Paracelsus'un eseri 'On Miners' Sickness'tir.">A) Paracelsus</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! Georgius Agricola, 'De Re Metallica' (Madenler Üzerine) eserinde madenci hastalıkları, maden havalandırması ve toz önleme çözümleri sunmuştur.">B) Agricola</button>
+                <button class="mq-btn" data-explain="Yanlış. Ramazzini 'İş Sağlığının Babası'dır ve 'De Morbis Artificum' eserini yazmıştır.">C) Ramazzini</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">5</span>
+                6331 sayılı Kanun m.5'teki Risklerden Korunma İlkeleri arasında <strong>en son</strong>
+                sırada yer alan ilke hangisidir?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. İkame ilkesi 6. basamaktır (m.5/1-e).">A) Tehlikeli olanı ikame etmek</button>
+                <button class="mq-btn" data-explain="Yanlış. Toplu korunmaya öncelik 8. basamaktır.">B) Toplu korunmaya öncelik vermek</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! m.5/1-ğ bendi uyarınca koruma hiyerarşisinin EN SON basamağı 'Çalışanlara uygun talimatlar vermektir.'">C) Çalışanlara uygun talimatlar vermek</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">6</span>
+                Muvazaa tespitine ilişkin rapora iş mahkemesinde itiraz süresi ve mahkemenin karar
+                süresi sırasıyla nedir?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. 6 iş günü durdurma itirazı süresidir, muvazaa değil.">A) 6 iş günü / 6 iş günü</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! Muvazaa raporuna itiraz süresi 30 İŞ GÜNÜ, mahkemenin karar süresi ise 4 AY'dır (basit yargılama usulü). Yargıtay temyiz süresi 6 ay.">B) 30 iş günü / 4 ay</button>
+                <button class="mq-btn" data-explain="Yanlış. 2 hafta genel dava açma süresidir, muvazaa için 30 iş günüdür.">C) 2 hafta / 6 ay</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">7</span>
+                Geçici iş ilişkisinde kota sınırı nedir ve 10 veya daha az işçi çalıştırılan
+                işyerlerinde hangi sınır uygulanır?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. %50 yanlış bir orandır.">A) %50 / 10 işçi</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! Dönemsellik arz eden iş artışlarında geçici işçi sayısı toplamın %25'ini (1/4) geçemez; 10 ve daha az işçili işyerlerinde 5 işçiye kadar geçici iş ilişkisi kurulabilir.">B) %25 (1/4) / 5 işçi</button>
+                <button class="mq-btn" data-explain="Yanlış. %10 ve 3 işçi yanlış bir kombinasyondur.">C) %10 / 3 işçi</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ============ BÖLÜM 2 ============ -->
+        <div class="test-section">
+          <div class="test-header part2">
+            <h3>📙 BÖLÜM 2 — Kurullar, Profesyoneller, Durdurma, Özel Süreler</h3>
+            <span class="badge">7 SORU</span>
+          </div>
+          <div class="test-body">
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">8</span>
+                İSG Kurulu kurulabilmesi için aşağıdaki şartlardan hangisi <strong>aranmaz</strong>?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. 50+ çalışan şarttır.">A) 50+ çalışan</button>
+                <button class="mq-btn" data-explain="Yanlış. 6 aydan fazla süren iş şarttır.">B) 6+ ay sürekli iş</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! İşyerinin tehlike sınıfı, İSG Kurulu kurma şartı DEĞİLDİR; yalnızca toplantı periyodunu etkiler.">C) Çok tehlikeli sınıfta yer alması</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">9</span>
+                Çok tehlikeli sınıftaki bir işyerinde İGU görevlendirmesi için çalışan başına aylık
+                asgari süre kaçtır ve tam zamanlı eşik kaçtır?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. 20 dk / 500 tehlikeli sınıf içindir.">A) 20 dk / 500</button>
+                <button class="mq-btn" data-explain="Yanlış. 30 dk / 400 yanlış bir kombinasyondur.">B) 30 dk / 400</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! Çok tehlikeli sınıfta İGU süresi 40 dk/çalışan, tam zamanlı eşik her 250 çalışandır. (1X-2X-4X katlanma + yarılanma kuralı)">C) 40 dk / 250</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">10</span>
+                Aşağıdaki işyerlerinden hangisinde risk değerlendirmesi yapılmamış olması doğrudan
+                doğruya işin durdurulması nedenidir?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. Az tehlikeli büro doğrudan durdurma kapsamında değildir.">A) Az tehlikeli büro</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! MEMYAK-BEK kuralı: Çok tehlikeli sınıfta yer alan MADEN, METAL, YAPI, TEHLİKELİ KİMYASALLAR ve BÜYÜK ENDÜSTRİYEL KAZA riski olan işyerlerinde risk değerlendirmesi yapılmamış olması başkaca bir hayati tehlike aranmaksızın doğrudan durdurma sebebidir.">B) Çok tehlikeli sınıftaki maden işyeri</button>
+                <button class="mq-btn" data-explain="Yanlış. Tehlikeli sınıf (çok tehlikeli değil) doğrudan durdurma kapsamında değildir.">C) Tehlikeli sınıftaki tekstil atölyesi</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">11</span>
+                İşverenin durdurma kararına karşı İş Mahkemesine itiraz süresi ve mahkemenin karar
+                süresi sırasıyla nedir?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. 15 gün / 15 gün değildir.">A) 15 gün / 15 gün</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! İşin durdurulması kararına itiraz süresi 6 İŞ GÜNÜ, mahkemenin karar süresi de 6 İŞ GÜNÜ'dür. Kararlar kesindir. İtiraz uygulamayı durdurmaz.">B) 6 iş günü / 6 iş günü</button>
+                <button class="mq-btn" data-explain="Yanlış. 30 gün / 30 gün değildir.">C) 30 gün / 30 gün</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">12</span>
+                İSG profesyonellerinin ihtar puanı ve eğitim süreleri ile ilgili aşağıdakilerden
+                hangisi <strong>doğrudur</strong>?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. 200 puan kişi değil kurum içindir.">A) Kişiler 200 puan → 6 ay askı</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! İSG profesyonelleri 100 ihtar puanında 6 ay, kurumlar 200 puanda 6 ay askıya alınır. İGU/İH eğitimi 220 saat (180+40), DSP eğitimi 90 saat. Geçme notu İGU/İH 70, DSP 60.">B) Kişiler 100 puan → 6 ay askı; İGU-İH eğitimi 220 saat</button>
+                <button class="mq-btn" data-explain="Yanlış. 150 puan yanlış bir eşiktir.">C) Kişiler 150 puan → 3 ay askı</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">13</span>
+                Süt izni ile ilgili aşağıdakilerden hangisi <strong>yanlıştır</strong>?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Doğru bir ifadedir. Çocuğun 1 yaşına gelmesine kadar günlük 1,5 saat.">A) Çocuğun 1 yaşına gelmesine kadar günlük 1,5 saattir.</button>
+                <button class="mq-btn" data-correct="1" data-explain="YANLIŞ! Süt izninin saatlerini ve kaça bölüneceğini münhasıran KADIN ÇALIŞAN KENDİSİ belirler. İşveren veya işyeri hekimi bu saatleri tek taraflı tayin edemez.">B) Süt izni saatlerini işveren veya işyeri hekimi belirler.</button>
+                <button class="mq-btn" data-explain="Doğru bir ifadedir. Günlük çalışma süresinden sayılır ve ücretten kesilmez.">C) Günlük çalışma süresinden sayılır.</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+            <div class="mq-item">
+              <p class="q"><span class="qnum">14</span>
+                HTT (Hazırlama, Tamamlama, Temizleme) işleri için günlük ek süre, zorunlu dinlenme
+                ve ücret zammı sırasıyla nedir?
+              </p>
+              <div class="mq-btns">
+                <button class="mq-btn" data-explain="Yanlış. 1 saat / 15 dk / %25 yanlıştır.">A) 1 saat / 15 dk / %25</button>
+                <button class="mq-btn" data-correct="1" data-explain="Doğru! HTT işleri: günlük ek süre max 2 SAAT, asıl iş sonrası min 30 DAKİKA dinlenme, %50 ZAMLI fazla çalışma ücreti.">B) 2 saat / 30 dk / %50</button>
+                <button class="mq-btn" data-explain="Yanlış. 3 saat / 30 dk / %25 yanlıştır.">C) 3 saat / 30 dk / %25</button>
+              </div>
+              <div class="mq-fb"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </article>
+
+      <!-- ===== FINAL CTA ===== -->
+      <article class="card" id="final-cta" style="background:linear-gradient(135deg,#0f8b5a 0%,#1f9d55 60%,#27b566 100%);border:none;color:#fff;">
+        <h2 style="color:#fff;border-bottom-color:rgba(255,255,255,.2);">
+          <span class="num" style="background:rgba(255,255,255,.2);">🚀</span>
+          <span style="color:#fff;">MASTER Final Notu Tamamlandı — Şimdi Deneme Zamanı!</span>
+        </h2>
+        <p style="color:rgba(255,255,255,.95);font-size:15.5px;margin-top:14px;">
+          Bu not, Bölüm 1-6'nın tüm kritik bilgilerini <strong>tek sayfada</strong> toparladı.
+          Gerçek sınav deneyimi için <strong>Final Denemeleri</strong> ve bölüm sonu testleri ile
+          pratiğinizi artırın.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:26px 0 6px;">
+          <a href="final/denemeler.html" class="btn btn-final" style="font-size:15px;padding:14px 26px;background:#fff;color:#0f8b5a;">🎯 Final Denemeleri</a>
+          <a href="index.html" class="btn" style="font-size:15px;padding:14px 26px;background:rgba(255,255,255,.2);color:#fff;border:1px solid rgba(255,255,255,.4);">🏠 Ana Sayfa</a>
+        </div>
+      </article>
+
+    </div>
+    <!-- ============ /SOL İÇERİK ============ -->
+
+    <!-- ============ SAĞ MENÜ ============ -->
+    <aside class="sidebar">
+      <div class="side-card">
+        <h4>📑 İçindekiler</h4>
+        <ul class="toc">
+          <li><a href="#s1">1. Hukuki Temeller</a></li>
+          <li><a href="#s2">2. 6331 & 4857</a></li>
+          <li><a href="#s3">3. Hizmet & Kurullar</a></li>
+          <li><a href="#s4">4. Profesyoneller</a></li>
+          <li><a href="#s5">5. Tehlike & Durdurma</a></li>
+          <li><a href="#s6">6. Özel Süreler</a></li>
+          <li><a href="#sayisal">📊 Sayısal Veriler</a></li>
+          <li><a href="#sorular">❓ Çıkmış Sorular</a></li>
+          <li><a href="#minitest">🎯 Master Test</a></li>
+        </ul>
+      </div>
+
+      <div class="side-card">
+        <h4>🚀 Hızlı Erişim</h4>
+        <div class="next-nav">
+          <a href="index.html" class="next-btn ghost"><span>🏠 Ana Sayfa</span><span>›</span></a>
+          <a href="final/denemeler.html" class="next-btn final"><span>🎯 Final Denemeleri</span><span>›</span></a>
+        </div>
+      </div>
+
+      <div class="side-card" style="background:linear-gradient(135deg,#0b2545,#1d4e89);color:#fff;border:none;">
+        <h4 style="color:#fff;">⚡ Hızlı Hatırlatma</h4>
+        <p style="font-size:12.8px;color:rgba(255,255,255,.95);line-height:1.7;">
+          Sınavda en çok karıştırılan:<br>
+          • Muvazaa: <strong>30 İŞ GÜNÜ</strong><br>
+          • Durdurma itirazı: <strong>6 İŞ GÜNÜ</strong><br>
+          • TSK dikimevi: <strong>KAPSAMDA</strong><br>
+          • Süt izni saatleri: <strong>KADIN ÇALIŞAN</strong>
+        </p>
+      </div>
+
+      <div class="side-card">
+        <h4>📌 Bilgi Notu</h4>
+        <p style="font-size:12.6px;color:var(--muted);line-height:1.7;">
+          Bu MASTER Final Notu, <strong>KTÜN İSG Bölümü</strong> ders içerikleri ve
+          <strong>Ahmet Peker</strong> hocanın sunumlarından yararlanılarak Bölüm 1-6'nın
+          konsolidasyonu ile hazırlanmıştır.
+        </p>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<!-- ==================== MODAL (MASTER SORULAR) ==================== -->
+<div class="modal-overlay" id="masterModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <h3>📋 İSG Mevzuatı — MASTER Çıkmış Soru Çözümleri</h3>
+        <p>24 soru · Bölüm 1-6 kapsamlı · Detaylı gerekçeli çözümler</p>
+      </div>
+      <button class="modal-close" id="closeMasterModal" aria-label="Kapat">✕</button>
+    </div>
+    <div class="modal-body">
+
+      <!-- SORU 1 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">1</div>
+          <div class="modal-q-text">
+            1982 Anayasası'na göre "Küçükler, kadınlar ile bedeni ve ruhi yetersizliği olanlar çalışma
+            şartları bakımından özel olarak korunurlar" hükmü hangi maddede yer alır?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) m.17 — Kişi Hakları ve Ödevleri</li>
+          <li class="correct">B) m.50 — Sosyal ve Ekonomik Haklar ve Ödevler</li>
+          <li>C) m.49 — Çalışma Hakkı ve Ödevi</li>
+          <li>D) m.2 — Cumhuriyetin Nitelikleri</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> m.50 — Çalışma Şartları ve Dinlenme Hakkı, Anayasa'nın
+          "Sosyal ve Ekonomik Haklar ve Ödevler" (II. Bölüm) başlığı altında düzenlenmiştir.
+          Özel koruma grupları: <mark>Küçükler, kadınlar ile bedeni ve ruhi yetersizliği olanlar</mark>
+          — bu ifade Anayasa'nın özgün terminolojisidir.
+          <span class="ref">Anayasa m.50</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 2 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">2</div>
+          <div class="modal-q-text">
+            Aşağıdakilerden hangisi 6331 sayılı İSG Kanunu kapsamı <strong>içindedir</strong>?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) Ev hizmetleri</li>
+          <li>B) Kendi nam ve hesabına tek başına çalışanlar</li>
+          <li class="correct">C) TSK'ya ait dikimevi</li>
+          <li>D) AFAD doğrudan müdahale faaliyeti</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> m.2/2 uyarınca TSK, kolluk ve MİT'in operasyonel faaliyetleri
+          kapsam dışıdır; ancak bunlara ait <mark>fabrika, bakım merkezi ve dikimevleri Kanun
+          KAPSAMINDADIR.</mark> Diğer seçenekler kapsam dışıdır.
+          <span class="ref">6331 s.K. m.2/2</span> Doğru cevap <strong>C</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 3 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">3</div>
+          <div class="modal-q-text">
+            6331 s.K. m.3'teki "Tehlike" ve "Risk" kavramları arasındaki temel fark nedir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li class="correct">A) Tehlike potansiyel, Risk ihtimal × şiddettir.</li>
+          <li>B) Tehlike ihtimal × şiddet, Risk potansiyeldir.</li>
+          <li>C) İkisi aynı kavramdır.</li>
+          <li>D) Tehlike sadece kimyasal, Risk sadece fizikseldir.</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> m.3/p: <mark>Tehlike = zarar verme potansiyeli</mark>;
+          m.3/o: <mark>Risk = zararlı sonuç meydana gelme ihtimali</mark>. Risk, "ihtimal × şiddet"
+          bileşkesiyle ifade edilir.
+          <span class="ref">6331 s.K. m.3/p, m.3/o</span> Doğru cevap <strong>A</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 4 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">4</div>
+          <div class="modal-q-text">
+            "De Re Metallica" eserinin yazarı kimdir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) Paracelsus</li>
+          <li class="correct">B) Agricola</li>
+          <li>C) Ramazzini</li>
+          <li>D) Pliny</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> Georgius <mark>Agricola</mark>, "De Re Metallica" (Madenler
+          Üzerine) eserinde madenci akciğer hastalıklarını, maden havalandırmasını ve toz önleme
+          yöntemlerini incelemiştir. Paracelsus'un eseri "On Miners' Sickness"tir (doz ilkesi).
+          <span class="ref">İSG Tarihi</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 5 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">5</div>
+          <div class="modal-q-text">
+            6331 s.K. m.5 koruma hiyerarşisinin <strong>en son</strong> basamağı hangisidir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) Tehlikeli olanı ikame etmek</li>
+          <li>B) Toplu korunmaya öncelik vermek</li>
+          <li class="correct">C) Çalışanlara uygun talimatlar vermek</li>
+          <li>D) Risklerden kaçınmak</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> m.5/1-ğ bendi uyarınca koruma hiyerarşisinin EN SON basamağı
+          <mark>"Çalışanlara uygun talimatlar vermektir."</mark> 9. basamaktır.
+          <span class="ref">6331 s.K. m.5/1-ğ</span> Doğru cevap <strong>C</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 6 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">6</div>
+          <div class="modal-q-text">
+            Muvazaa raporuna itiraz süresi ve mahkemenin karar süresi sırasıyla nedir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 6 iş günü / 6 iş günü</li>
+          <li class="correct">B) 30 iş günü / 4 ay</li>
+          <li>C) 2 hafta / 6 ay</li>
+          <li>D) 15 gün / 3 ay</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> 4857 s.K. m.3/2 uyarınca muvazaa raporuna itiraz
+          <mark>30 İŞ GÜNÜ</mark>, iş mahkemesinde basit yargılama usulüyle <mark>4 AY</mark>
+          içinde sonuçlandırılır. Yargıtay temyiz inceleme süresi 6 aydır.
+          <span class="ref">4857 s.K. m.3/2</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 7 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">7</div>
+          <div class="modal-q-text">
+            Geçici iş ilişkisinde kota sınırı nedir ve 10 veya daha az işçi çalıştırılan
+            işyerlerinde hangi sınır uygulanır?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) %50 / 10 işçi</li>
+          <li class="correct">B) %25 (1/4) / 5 işçi</li>
+          <li>C) %10 / 3 işçi</li>
+          <li>D) %33 (1/3) / 4 işçi</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> 4857 s.K. m.7/6 uyarınca dönemsel iş artışlarında geçici işçi
+          sayısı toplam çalışan sayısının <mark>%25 (1/4)</mark>'ini geçemez. <mark>10 ve daha az
+          işçili işyerlerinde 5 işçiye kadar</mark> geçici iş ilişkisi kurulabilir.
+          <span class="ref">4857 s.K. m.7/6</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 8 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">8</div>
+          <div class="modal-q-text">
+            İSG Kurulu kurulabilmesi için aşağıdaki şartlardan hangisi <strong>aranmaz</strong>?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 50+ çalışan</li>
+          <li>B) 6 aydan fazla süren iş</li>
+          <li class="correct">C) Çok tehlikeli sınıfta yer alması</li>
+          <li>D) A ve B birlikte</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> 6331 s.K. m.22 uyarınca İSG Kurulu için 2 şart:
+          <mark>(1) 50+ çalışan, (2) 6 aydan fazla süren sürekli iş.</mark> Tehlike sınıfı kurul
+          kurma şartı değildir; sadece <mark>toplantı periyodunu</mark> etkiler.
+          <span class="ref">6331 s.K. m.22</span> Doğru cevap <strong>C</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 9 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">9</div>
+          <div class="modal-q-text">
+            Çok tehlikeli sınıfta İGU süre ve tam zamanlı eşik nedir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 20 dk / 500</li>
+          <li>B) 30 dk / 400</li>
+          <li class="correct">C) 40 dk / 250</li>
+          <li>D) 10 dk / 1000</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> İGU çalışma süreleri: <mark>Az 10 / Tehlikeli 20 / Çok Tehlikeli
+          40 dk</mark>. Tam zamanlı eşikler: <mark>1000 / 500 / 250.</mark>
+          <span class="ref">6331 s.K. m.6</span> Doğru cevap <strong>C</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 10 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">10</div>
+          <div class="modal-q-text">
+            Risk değerlendirmesi yokluğu hangi işyerlerinde doğrudan durdurma sebebidir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) Tüm işyerleri</li>
+          <li>B) Az tehlikeli dahil tüm sınıflar</li>
+          <li class="correct">C) Çok tehlikeli: Maden, Metal, Yapı, Tehlikeli Kimyasallar, Büyük Endüstriyel Kaza riski olan işyerleri</li>
+          <li>D) Sadece maden işyerleri</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> MEMYAK-BEK kuralı: Sadece <mark>Çok Tehlikeli sınıfta</mark> yer
+          alan <mark>Maden, Metal, Yapı, Tehlikeli Kimyasallar ve Büyük Endüstriyel Kaza riski olan
+          işyerlerinde</mark> risk değerlendirmesi yapılmamış olması doğrudan durdurma sebebidir.
+          <span class="ref">6331 s.K. m.25/1 ve Yönetmelik m.7/2</span> Doğru cevap <strong>C</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 11 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">11</div>
+          <div class="modal-q-text">
+            İşin durdurulması kararına itiraz süresi ve mahkemenin karar süresi nedir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 15 gün / 15 gün</li>
+          <li class="correct">B) 6 iş günü / 6 iş günü</li>
+          <li>C) 30 gün / 30 gün</li>
+          <li>D) 2 hafta / 2 hafta</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> 6331 s.K. m.25/4 uyarınca itiraz <mark>6 İŞ GÜNÜ</mark> içinde
+          yapılır; iş mahkemesi de <mark>6 İŞ GÜNÜ</mark> içinde kesin karar verir. İtiraz
+          uygulamayı durdurmaz.
+          <span class="ref">6331 s.K. m.25/4</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 12 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">12</div>
+          <div class="modal-q-text">
+            İSG profesyonellerinin ihtar puanı ve eğitim süreleri hangisinde <strong>doğru</strong> verilmiştir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) Kişiler 200 puan → 6 ay; eğitim 100 saat</li>
+          <li class="correct">B) Kişiler 100 puan → 6 ay; İGU-İH eğitimi 220 saat</li>
+          <li>C) Kişiler 150 puan → 3 ay; eğitim 180 saat</li>
+          <li>D) Kişiler 100 puan → 3 ay; eğitim 90 saat</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> İSG profesyonelleri <mark>100 ihtar puanında 6 ay</mark> askı;
+          kurumlar <mark>200 puanda 6 ay</mark> askı. İGU/İH eğitimi <mark>220 saat</mark>
+          (180 teorik + 40 uygulama); DSP 90 saat. Geçme notu İGU/İH 70, DSP 60.
+          <span class="ref">İSG Eğitim Kurumları Yönetmeliği</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 13 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">13</div>
+          <div class="modal-q-text">
+            Süt izniyle ilgili hangisi <strong>yanlıştır</strong>?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) Günlük 1,5 saat, çocuk 1 yaşına gelene kadar</li>
+          <li class="correct">B) Saatlerini işveren belirler</li>
+          <li>C) Günlük çalışma süresinden sayılır</li>
+          <li>D) Ücretten kesinti yapılamaz</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> 4857 s.K. m.74 uyarınca süt izni saatlerini münhasıran
+          <mark>KADIN ÇALIŞAN KENDİSİ</mark> belirler. İşveren veya işyeri hekimi belirleyemez.
+          <span class="ref">4857 s.K. m.74</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 14 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">14</div>
+          <div class="modal-q-text">
+            HTT işlerinde günlük ek süre, dinlenme ve zam oranı sırasıyla nedir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 1 saat / 15 dk / %25</li>
+          <li class="correct">B) 2 saat / 30 dk / %50</li>
+          <li>C) 3 saat / 30 dk / %25</li>
+          <li>D) 2 saat / 15 dk / %50</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> HTT işleri için: günlük ek süre max <mark>2 SAAT</mark>,
+          asıl iş sonrası min <mark>30 DAKİKA</mark> dinlenme, <mark>%50 ZAMLI</mark> fazla çalışma
+          ücreti. <span class="ref">HTT Yönetmeliği</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 15 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">15</div>
+          <div class="modal-q-text">
+            İşverenin SGK'ya iş kazası bildirimi ile sağlık hizmet sunucularının bildirimi sırasıyla nedir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 3 takvim günü / 10 iş günü</li>
+          <li class="correct">B) 3 iş günü / 10 gün</li>
+          <li>C) 5 iş günü / 15 gün</li>
+          <li>D) 3 gün / 30 gün</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> İşveren <mark>3 İŞ GÜNÜ</mark> içinde, sağlık hizmet sunucuları
+          tanıdan sonra <mark>10 GÜN</mark> içinde SGK'ya bildirir.
+          <span class="ref">5510 s.K. m.13</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 16 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">16</div>
+          <div class="modal-q-text">
+            İGU/İH bildirim yapmazsa ilk tespitte kaç ay askıya alınır ve tekrarında?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 2 ay / 4 ay</li>
+          <li class="correct">B) 3 ay / 6 ay</li>
+          <li>C) 6 ay / 1 yıl</li>
+          <li>D) 1 ay / 3 ay</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> 6331 s.K. m.8/2 uyarınca: İGU/İH için ilk tespitte
+          <mark>3 AY</mark>, tekrarında <mark>6 AY</mark> belge askı; OSGB için ilk tespitte
+          <mark>6 AY</mark>, tekrarında <mark>1 YIL</mark> yetki belgesi askı.
+          <span class="ref">6331 s.K. m.8/2</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 17 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">17</div>
+          <div class="modal-q-text">
+            İşyeri hekimi çalışma süreleri (Az/Tehlikeli/Çok) ve muayene periyotları sırasıyla nedir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 10-20-40 dk / 1-3-5 yıl</li>
+          <li class="correct">B) 5-10-15 dk / 5-3-1 yıl</li>
+          <li>C) 10-15-20 dk / 3-2-1 yıl</li>
+          <li>D) 20-30-40 dk / 5-3-1 yıl</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> İH süreleri: <mark>5 / 10 / 15 dk</mark> (5'er aritmetik artış).
+          Muayene periyotları: <mark>5 / 3 / 1 yıl</mark>. Özel gruplar: 6 ayda bir.
+          <span class="ref">6331 s.K. m.6 ve Sağlık Gözetimi Yönetmeliği</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 18 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">18</div>
+          <div class="modal-q-text">
+            İşin durdurulması kararını veren heyet kaç kişiden oluşur ve karar süresi nedir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 1 müfettiş / 1 gün</li>
+          <li class="correct">B) 3 müfettiş / 2 gün</li>
+          <li>C) 5 müfettiş / 3 gün</li>
+          <li>D) 3 müfettiş / 7 gün</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> Heyet <mark>3 iş müfettişinden</mark> oluşur ve
+          <mark>2 GÜN</mark> içinde oy çokluğuyla karar verir. 7 gün durdurma kaldırma için geçerlidir.
+          <span class="ref">İşin Durdurulması Yönetmeliği m.5-6</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 19 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">19</div>
+          <div class="modal-q-text">
+            Mühürlerin geçici sökülmesi talebinde müfettiş saha incelemesi yapmak zorunda mıdır?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) Evet, her durumda zorunlu</li>
+          <li class="correct">B) Hayır, saha incelemesi zorunlu değildir</li>
+          <li>C) Sadece hayati tehlike varsa zorunlu</li>
+          <li>D) Sadece 30 gün sonra zorunlu</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> Mühür geçici sökme (m.9) talebinde müfettiş saha incelemesi
+          yapmak zorunda <mark>DEĞİLDİR</mark> (dosya üzerinden karar). Ancak durdurmanın tamamen
+          kaldırılması (m.10) talebinde <mark>FİİLİ SAHA İNCELEMESİ ZORUNLUDUR.</mark>
+          <span class="ref">İşin Durdurulması Yönetmeliği m.9-10</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 20 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">20</div>
+          <div class="modal-q-text">
+            Su altı basınçlı hava işlerinde 25-30 m derinlikte azami günlük süre nedir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 4 saat</li>
+          <li>B) 5 saat</li>
+          <li class="correct">C) 6 saat</li>
+          <li>D) 7 saat</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> Su altı basınçlı hava süreleri:
+          <mark>20-25 m: 7 saat / 25-30 m: 6 saat / 30-35 m: 5 saat / 35-40 m: 4 saat.</mark>
+          <span class="ref">Sağlık Kuralları Yönetmeliği m.5</span> Doğru cevap <strong>C</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 21 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">21</div>
+          <div class="modal-q-text">
+            Dalgıçlar için 40 metreye kadar derinlikte azami günlük çalışma süresi nedir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 1 saat</li>
+          <li class="correct">B) 30 dakika (1/2 saat)</li>
+          <li>C) 2 saat</li>
+          <li>D) 3 saat</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> Dalgıçlar için su altı çalışmalarda:
+          <mark>18 m'ye kadar: 3 saat / 18-40 m arası: 1/2 saat (30 dakika).</mark>
+          Sınavda sıklıkla 1 saat veya 2 saat çeldirici olarak sunulur.
+          <span class="ref">Sağlık Kuralları Yönetmeliği m.5</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 22 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">22</div>
+          <div class="modal-q-text">
+            100-150 kadın çalışanı bulunan bir işyerinde hangi tesisin açılması zorunludur?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li class="correct">A) Emzirme Odası</li>
+          <li>B) Kreş / Yurt</li>
+          <li>C) Hem emzirme odası hem kreş</li>
+          <li>D) Hiçbiri zorunlu değil</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> <mark>100-150 kadın çalışan:</mark> Emzirme Odası;
+          <mark>150'den fazla kadın çalışan:</mark> Kreş/Yurt (0-6 yaş). Yaş ve medeni hale
+          bakılmaz.
+          <span class="ref">Gebe/Emziren Kadınlar Yönetmeliği</span> Doğru cevap <strong>A</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 23 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">23</div>
+          <div class="modal-q-text">
+            Ulusal İSG Konseyi ile ilgili hangisi <strong>yanlıştır</strong>?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) Yılda 2 defa (Haziran-Aralık) toplanır</li>
+          <li class="correct">B) Kararlarda çekimser oy kullanılabilir</li>
+          <li>C) Başkanı ÇSGB Müsteşarı'dır</li>
+          <li>D) Oy eşitliğinde Başkanın oyu üstündür</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> Ulusal İSG Konseyi'nde <mark>çekimser oy KULLANILAMAZ.</mark>
+          Karara katılmayan üye muhalefet şerhi yazmak zorundadır.
+          <span class="ref">Ulusal İSG Konseyi Yönetmeliği</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+      <!-- SORU 24 -->
+      <div class="modal-q">
+        <div class="modal-q-head">
+          <div class="modal-q-no">24</div>
+          <div class="modal-q-text">
+            Durdurulan işlerde izinsiz çalışma yaptıran işverene ne kadar hapis cezası verilir?
+          </div>
+        </div>
+        <ul class="modal-opts">
+          <li>A) 1-3 yıl</li>
+          <li class="correct">B) 3-5 yıl</li>
+          <li>C) 5-10 yıl</li>
+          <li>D) Sadece idari para cezası</li>
+        </ul>
+        <div class="modal-solution">
+          <b>Çözüm ve Gerekçe:</b> 6331 s.K. m.25/8 uyarınca durdurulan işlerde
+          <mark>İZİNSİZ ÇALIŞMA YAPTIRAN</mark> işveren veya işveren vekillerine
+          <mark>3 YILDAN 5 YILA KADAR HAPİS CEZASI</mark> verilir.
+          <span class="ref">6331 s.K. m.25/8</span> Doğru cevap <strong>B</strong>.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>📘 KTÜN · İSG Eğitim Portalı</h4>
+        <p>
+          Konya Teknik Üniversitesi İş Sağlığı ve Güvenliği Bölümü ders içerikleri ve Ahmet Peker
+          hocanın sunumlarından yararlanılarak hazırlanan eğitim portalı.
+          MASTER Final Notu: Bölüm 1-6 Konsolidasyonu.
+        </p>
+      </div>
+      <div>
+        <h4>🔗 Hızlı Bağlantılar</h4>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="#s1">Bölüm 1</a> · <a href="#s2">Bölüm 2</a> · <a href="#s3">Bölüm 3</a></li>
+          <li><a href="#s4">Bölüm 4</a> · <a href="#s5">Bölüm 5</a> · <a href="#s6">Bölüm 6</a></li>
+          <li><a href="final/denemeler.html" style="color:#27b566;font-weight:800;">🎯 Final Denemeleri</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>✉️ İletişim &amp; Telif</h4>
+        <p>
+          Hazırlayan: <b style="color:#fff;">Sıraç AKSAN</b><br>
+          📞 0506 928 22 10<br>
+          ✉️ saracaksan@gmail.com
+        </p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © Tüm Hakları Saklıdır. Bu dokümanın içeriği, soruları, çözümleri ve tasarımı <b>Sıraç AKSAN</b>'a aittir.<br>
+      Yazılı izin alınmaksızın kopyalanamaz, çoğaltılamaz, değiştirilemez ve ticari amaçlarla kullanılamaz.<br>
+      © 2026 — <b>KTÜN İSG Eğitim Portalı</b> · MASTER Final Notu Sürümü
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ================= MODAL ================= */
+const modal = document.getElementById('masterModal');
+const openBtn = document.getElementById('openMasterModal');
+const closeBtn = document.getElementById('closeMasterModal');
+
+function openModal(){
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(){
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+openBtn?.addEventListener('click', openModal);
+closeBtn?.addEventListener('click', closeModal);
+modal?.addEventListener('click', (e)=>{ if(e.target === modal) closeModal(); });
+document.addEventListener('keydown', (e)=>{
+  if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+});
+
+/* ================= MİNİ TEST ================= */
+document.querySelectorAll('.mq-item').forEach(item=>{
+  const btns = item.querySelectorAll('.mq-btn');
+  const fb = item.querySelector('.mq-fb');
+  btns.forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      btns.forEach(b=>b.disabled = true);
+      const isCorrect = btn.dataset.correct === '1';
+      const explain = btn.dataset.explain || '';
+
+      if(isCorrect){
+        btn.classList.add('correct');
+        fb.className = 'mq-fb show ok';
+        fb.innerHTML = '✔ <strong>Doğru!</strong> ' + explain;
+      }else{
+        btn.classList.add('wrong');
+        btns.forEach(b=>{ if(b.dataset.correct === '1') b.classList.add('correct'); });
+        fb.className = 'mq-fb show no';
+        fb.innerHTML = '✖ <strong>Yanlış.</strong> ' + explain;
+      }
+    });
+  });
+});
+
+/* ================= MOBİL MENÜ ================= */
+const toggle = document.getElementById('menuToggle');
+const links = document.getElementById('navLinks');
+toggle?.addEventListener('click', ()=>links.classList.toggle('open'));
+links?.querySelectorAll('a').forEach(a=>{
+  a.addEventListener('click', ()=>{ links.classList.remove('open'); });
+});
+
+/* ================= AKTİF İÇİNDEKİLER ================= */
+const sections = document.querySelectorAll('article.card[id]');
+const tocLinks = document.querySelectorAll('.toc a');
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const id = e.target.id;
+      tocLinks.forEach(a=>{
+        a.classList.toggle('active', a.getAttribute('href') === '#'+id);
+      });
+    }
+  });
+},{rootMargin:'-110px 0px -60% 0px', threshold:0});
+sections.forEach(s=>observer.observe(s));
+</script>
+</body>
+</html>

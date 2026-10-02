@@ -18,6 +18,7 @@
             max-width: 1100px;
             margin: 0 auto;
         }
+        /* Üst Menü */
         .top-nav {
             background: #0f3460;
             border-radius: 12px;
@@ -40,6 +41,7 @@
         }
         .top-nav a:hover { background: #e94560; }
         .nav-links { display: flex; flex-wrap: wrap; gap: 6px; }
+        /* Başlık */
         .page-header {
             background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
             color: #fff;
@@ -60,6 +62,7 @@
             font-weight: 700;
             margin-bottom: 10px;
         }
+        /* Test Başlıkları */
         .test-title {
             background: #16213e;
             color: #fff;
@@ -81,6 +84,7 @@
             justify-content: center;
             font-size: 0.95rem;
         }
+        /* Soru Kartı */
         .question-card {
             background: #fff;
             border-radius: 14px;
@@ -102,6 +106,7 @@
             font-weight: 800;
             margin-right: 6px;
         }
+        /* Şıklar */
         .options { display: flex; flex-direction: column; gap: 8px; }
         .option {
             background: #f8f9fc;
@@ -128,6 +133,7 @@
             font-weight: 700;
         }
         .option.disabled { pointer-events: none; opacity: 0.85; }
+        /* Çözüm Butonu */
         .solution-btn {
             margin-top: 14px;
             background: #0f3460;
@@ -141,6 +147,7 @@
             transition: background 0.2s;
         }
         .solution-btn:hover { background: #e94560; }
+        /* Çözüm Alanı */
         .solution {
             display: none;
             margin-top: 14px;
@@ -165,6 +172,7 @@
         }
         .solution ul { padding-left: 20px; margin-top: 4px; }
         .solution li { margin-bottom: 4px; color: #4a5568; }
+        /* Puan Paneli */
         .score-panel {
             background: #fff;
             border-radius: 14px;
@@ -205,6 +213,7 @@
             font-size: 0.88rem;
         }
         .reset-btn:hover { background: #4a5568; }
+        /* Alt Menü */
         .bottom-nav {
             background: #16213e;
             border-radius: 12px;
@@ -226,6 +235,7 @@
             transition: background 0.2s;
         }
         .bottom-nav a:hover { background: #e94560; }
+        /* Responsive */
         @media (max-width: 600px) {
             .top-nav { flex-direction: column; gap: 10px; }
             .page-header h1 { font-size: 1.3rem; }
@@ -237,6 +247,7 @@
 <body>
 <div class="container">
 
+    <!-- ÜST MENÜ -->
     <nav class="top-nav">
         <div class="nav-links">
             <a href="../../../index.html">🏠 Ana Sayfa</a>
@@ -247,10 +258,11 @@
         </div>
     </nav>
 
+    <!-- BAŞLIK -->
     <header class="page-header">
         <span class="badge">BÖLÜM 1</span>
         <h1>Hukuki Temeller, Anayasa ve İSG'nin Tarihsel Gelişimi</h1>
-        <p>Akademik Deneme ve Çözüm Kitapçığı — Test 1, Test 2 ve Test 3 (Soru 1–60)</p>
+        <p>Akademik Deneme ve Çözüm Kitapçığı — Test 1 &amp; Test 2 (Soru 1–40)</p>
     </header>
 
     <!-- ================= TEST 1 ================= -->
@@ -1220,351 +1232,6 @@
         </div>
     </div>
 
-    <!-- ================= TEST 3 ================= -->
-    <div class="test-title">
-        <span class="num">3</span> TEST 3: Tarihsel Gelişim, Temel Hukuk Kavramları ve İSG Hukukunun İlkeleri (Soru 41–60)
-    </div>
-
-    <!-- Soru 41 -->
-    <div class="question-card" data-correct="B">
-        <div class="question-text"><span class="q-no">41.</span> Tarihte ilk kez kurşun zehirlenmesinden bahsederek, madenlerde çalışan işçilerde görülen hastalıklara dikkat çeken ve tıp tarihinde önemli bir yere sahip olan Antik Çağ hekimi kimdir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Paracelsus</div>
-            <div class="option" data-opt="B">B) Hippocrates (Hipokrat)</div>
-            <div class="option" data-opt="C">C) Plini</div>
-            <div class="option" data-opt="D">D) Agricola</div>
-            <div class="option" data-opt="E">E) Bernardino Ramazzini</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: B</div>
-            <div class="explanation">İSG'nin tarihsel gelişiminde kurşunun zararlı etkilerinden ve kurşun koliğinden ilk bahseden hekim Hipokrat'tır. Hipokrat, kurşun zehirlenmesinin belirtilerini tanımlayarak meslek hastalıklarına dair ilk gözlemleri yapmıştır.</div>
-        </div>
-    </div>
-
-    <!-- Soru 42 -->
-    <div class="question-card" data-correct="C">
-        <div class="question-text"><span class="q-no">42.</span> 1556 yılında yayımlanan "De Re Metallica" adlı eserinde madencilikte karşılaşılan tehlikeleri, tozun etkilerini ve havalandırma sistemlerini detaylıca anlatan bilim insanı kimdir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Bernardino Ramazzini</div>
-            <div class="option" data-opt="B">B) Paracelsus</div>
-            <div class="option" data-opt="C">C) Agricola (Georgius Agricola)</div>
-            <div class="option" data-opt="D">D) Percival Pott</div>
-            <div class="option" data-opt="E">E) Robert Owen</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: C</div>
-            <div class="explanation">Agricola'nın "De Re Metallica" (Madenler Üzerine) adlı eseri madencilik, metalürji ve bu alanlardaki iş sağlığı sorunları ile korunma yollarını (havalandırma vb.) anlatan çok önemli bir tarihi kaynaktır.</div>
-        </div>
-    </div>
-
-    <!-- Soru 43 -->
-    <div class="question-card" data-correct="A">
-        <div class="question-text"><span class="q-no">43.</span> "İşçi muayenehanesine geldiğinde ona hangi işi yaptığını da sorun." diyerek iş ile hastalık arasındaki nedensellik bağını kuran ve "İş Sağlığının Babası" olarak kabul edilen hekim kimdir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Bernardino Ramazzini</div>
-            <div class="option" data-opt="B">B) Hipokrat</div>
-            <div class="option" data-opt="C">C) İbn-i Sina</div>
-            <div class="option" data-opt="D">D) Michael Sadler</div>
-            <div class="option" data-opt="E">E) Lord Ashley</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: A</div>
-            <div class="explanation">Bernardino Ramazzini, "De Morbis Artificum Diatriba" (Esnaf Hastalıkları) adlı kitabıyla iş sağlığı biliminin kurucusu kabul edilir. İşçilerin hastalıklarının mesleklerinden kaynaklandığını sistematik olarak inceleyen ilk hekimdir.</div>
-        </div>
-    </div>
-
-    <!-- Soru 44 -->
-    <div class="question-card" data-correct="B">
-        <div class="question-text"><span class="q-no">44.</span> Osmanlı İmparatorluğu döneminde işçi sağlığı ve iş güvenliği ile ilgili yayımlanan ilk hukuki belge aşağıdakilerden hangisidir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Maadin Nizamnamesi</div>
-            <div class="option" data-opt="B">B) Dilaver Paşa Nizamnamesi</div>
-            <div class="option" data-opt="C">C) Mecelle</div>
-            <div class="option" data-opt="D">D) Ereğli Havzai Fahmiyesi Maden Amelesinin Hukukuna Müteallik Kanun</div>
-            <div class="option" data-opt="E">E) Umumi Hıfzıssıhha Kanunu</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: B</div>
-            <div class="explanation">1865 yılında yayımlanan "Dilaver Paşa Nizamnamesi", Ereğli Kömür Havzasındaki işçilerin çalışma koşullarını düzenleyen, Osmanlı'daki ilk İSG belgesidir. Padişah tarafından onaylanmamış olsa da fiilen uygulanmıştır.</div>
-        </div>
-    </div>
-
-    <!-- Soru 45 -->
-    <div class="question-card" data-correct="A">
-        <div class="question-text"><span class="q-no">45.</span> Dilaver Paşa Nizamnamesi'nden sonra yayımlanan ve madenlerde işverenlere iş kazası geçiren işçilere tazminat ödeme ile zorunlu hekim bulundurma yükümlülüğü getiren padişah onaylı ilk belge hangisidir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Maadin Nizamnamesi</div>
-            <div class="option" data-opt="B">B) Polis Nizamnamesi</div>
-            <div class="option" data-opt="C">C) Sanayi Mukavelenamesi</div>
-            <div class="option" data-opt="D">D) Umur-u Belediyye Nizamnamesi</div>
-            <div class="option" data-opt="E">E) İş Kanunu</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: A</div>
-            <div class="explanation">1869 tarihli Maadin Nizamnamesi, Dilaver Paşa Nizamnamesine göre daha kapsamlıdır, padişah onayından geçmiştir. Kazalarda tazminat ödenmesi ve zorunlu hekim bulundurulması gibi çok önemli İSG kuralları içerir.</div>
-        </div>
-    </div>
-
-    <!-- Soru 46 -->
-    <div class="question-card" data-correct="A">
-        <div class="question-text"><span class="q-no">46.</span> Sanayi Devrimi sonrasında İngiltere'de baca temizleyicisi çocuklarda skrotum (torba) kanserini tespit ederek meslek kanserlerine dikkat çeken bilim insanı kimdir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Percival Pott</div>
-            <div class="option" data-opt="B">B) Robert Owen</div>
-            <div class="option" data-opt="C">C) Thomas Legge</div>
-            <div class="option" data-opt="D">D) Bernardino Ramazzini</div>
-            <div class="option" data-opt="E">E) Paracelsus</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: A</div>
-            <div class="explanation">Sir Percival Pott, 1775 yılında baca temizleyicisi çocuklarda kurum ve zift kaynaklı skrotum kanserini tespit ederek, kimyasal madde-kanser ilişkisini kuran ilk kişidir.</div>
-        </div>
-    </div>
-
-    <!-- Soru 47 -->
-    <div class="question-card" data-correct="C">
-        <div class="question-text"><span class="q-no">47.</span> Cumhuriyet Döneminin ilk yıllarında (1921) kömür madeni işçilerinin çalışma koşullarını iyileştirmek, günlük çalışma süresini 8 saat ile sınırlamak amacıyla çıkarılan kanun aşağıdakilerden hangisidir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) 3008 sayılı İş Kanunu</div>
-            <div class="option" data-opt="B">B) 1593 sayılı Umumi Hıfzıssıhha Kanunu</div>
-            <div class="option" data-opt="C">C) 151 sayılı Ereğli Havzai Fahmiyesi Maden Amelesinin Hukukuna Müteallik Kanun</div>
-            <div class="option" data-opt="D">D) 818 sayılı Borçlar Kanunu</div>
-            <div class="option" data-opt="E">E) 1475 sayılı İş Kanunu</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: C</div>
-            <div class="explanation">1921 tarihli ve 151 sayılı Kanun, Cumhuriyet öncesi TBMM döneminde çıkarılan ve kömür madeni işçileri için 8 saatlik iş günü ile asgari yaş sınırları getiren temel bir düzenlemedir.</div>
-        </div>
-    </div>
-
-    <!-- Soru 48 -->
-    <div class="question-card" data-correct="B">
-        <div class="question-text"><span class="q-no">48.</span> Ülkemizde çalışma hayatını kapsamlı bir şekilde düzenleyen ve 1936 yılında yürürlüğe giren "İlk İş Kanunumuz" hangisidir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) 931 sayılı İş Kanunu</div>
-            <div class="option" data-opt="B">B) 3008 sayılı İş Kanunu</div>
-            <div class="option" data-opt="C">C) 1475 sayılı İş Kanunu</div>
-            <div class="option" data-opt="D">D) 4857 sayılı İş Kanunu</div>
-            <div class="option" data-opt="E">E) 6331 sayılı İSG Kanunu</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: B</div>
-            <div class="explanation">Türkiye Cumhuriyeti'nin çalışma hayatını genel olarak düzenleyen ilk İş Kanunu 1936 yılında çıkarılan 3008 sayılı İş Kanunu'dur.</div>
-        </div>
-    </div>
-
-    <!-- Soru 49 -->
-    <div class="question-card" data-correct="B">
-        <div class="question-text"><span class="q-no">49.</span> "Normlar Hiyerarşisi" (Mevzuat Hiyerarşisi) dikkate alındığında, aşağıdaki normlardan hangisi diğerlerinden daha üst bir konumda yer alır?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Yönetmelik</div>
-            <div class="option" data-opt="B">B) Uluslararası Sözleşmeler (Temel Hak ve Özgürlüklere İlişkin)</div>
-            <div class="option" data-opt="C">C) Cumhurbaşkanlığı Kararnamesi</div>
-            <div class="option" data-opt="D">D) Genelge</div>
-            <div class="option" data-opt="E">E) Tebliğ</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: B</div>
-            <div class="explanation">Normlar hiyerarşisinde en üstte Anayasa bulunur. Anayasa'nın 90. maddesine göre usulüne göre yürürlüğe konulmuş temel hak ve özgürlüklere ilişkin milletlerarası antlaşmalar, kanunlarla aynı konuda farklı hükümler içerirse milletlerarası antlaşma hükümleri esas alınır (Kanunlardan üstündür, Anayasa seviyesine yakındır).</div>
-        </div>
-    </div>
-
-    <!-- Soru 50 -->
-    <div class="question-card" data-correct="C">
-        <div class="question-text"><span class="q-no">50.</span> Hukuk kurallarının ihlali halinde devlet gücüyle uygulanan tepkiye ne ad verilir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Yönerge</div>
-            <div class="option" data-opt="B">B) Tüzük</div>
-            <div class="option" data-opt="C">C) Yaptırım (Müeyyide)</div>
-            <div class="option" data-opt="D">D) İçtihat</div>
-            <div class="option" data-opt="E">E) İptal</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: C</div>
-            <div class="explanation">Hukuk kurallarını ahlak veya din kurallarından ayıran en temel özellik, arkasında maddi devlet gücünün bulunmasıdır. Buna yaptırım (müeyyide) denir.</div>
-        </div>
-    </div>
-
-    <!-- Soru 51 -->
-    <div class="question-card" data-correct="D">
-        <div class="question-text"><span class="q-no">51.</span> Borçunu yerine getirmeyen bir kişinin, devlet zoruyla borcunu yerine getirmesinin sağlanmasına ne ad verilir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Ceza</div>
-            <div class="option" data-opt="B">B) Tazminat</div>
-            <div class="option" data-opt="C">C) İptal</div>
-            <div class="option" data-opt="D">D) Cebri İcra</div>
-            <div class="option" data-opt="E">E) Hükümsüzlük</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: D</div>
-            <div class="explanation">Cebri icra (zorla yerine getirme), hukuki bir yükümlülüğünü (örneğin borcunu) kendi isteğiyle yerine getirmeyen kişinin, devletin yetkili organları (icra daireleri vb.) aracılığıyla zorla bu yükümlülüğü yerine getirmesinin sağlanmasıdır.</div>
-        </div>
-    </div>
-
-    <!-- Soru 52 -->
-    <div class="question-card" data-correct="C">
-        <div class="question-text"><span class="q-no">52.</span> İş Sağlığı ve Güvenliği Hukuku, hukukun hangi ana dalı içerisinde doğmuş ve gelişmiştir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Ceza Hukuku</div>
-            <div class="option" data-opt="B">B) İdare Hukuku</div>
-            <div class="option" data-opt="C">C) İş ve Sosyal Güvenlik Hukuku</div>
-            <div class="option" data-opt="D">D) Ticaret Hukuku</div>
-            <div class="option" data-opt="E">E) Vergi Hukuku</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: C</div>
-            <div class="explanation">İSG hukuku; işçi, işveren ve devlet ilişkilerini düzenleyen İş ve Sosyal Güvenlik Hukuku dalı içerisinde yer alan, hem kamu hem de özel hukuk özelliklerini barındıran (karma) bir hukuk dalıdır.</div>
-        </div>
-    </div>
-
-    <!-- Soru 53 -->
-    <div class="question-card" data-correct="D">
-        <div class="question-text"><span class="q-no">53.</span> Aşağıdakilerden hangisi Özel Hukuk dallarından biri değildir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Medeni Hukuk</div>
-            <div class="option" data-opt="B">B) Ticaret Hukuku</div>
-            <div class="option" data-opt="C">C) Borçlar Hukuku</div>
-            <div class="option" data-opt="D">D) İdare Hukuku</div>
-            <div class="option" data-opt="E">E) Devletler Özel Hukuku</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: D</div>
-            <div class="explanation">İdare Hukuku, taraflardan birinin devlet olduğu ve kamu gücünün kullanıldığı Kamu Hukuku dallarından biridir. Diğer seçenekler Özel Hukuk dallarıdır.</div>
-        </div>
-    </div>
-
-    <!-- Soru 54 -->
-    <div class="question-card" data-correct="B">
-        <div class="question-text"><span class="q-no">54.</span> Türkiye Cumhuriyeti Anayasasına göre Yönetmelik çıkarma yetkisi aşağıdakilerden hangisine aittir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Sadece Cumhurbaşkanı</div>
-            <div class="option" data-opt="B">B) Cumhurbaşkanı, Bakanlıklar ve Kamu Tüzel Kişileri</div>
-            <div class="option" data-opt="C">C) Sadece Türkiye Büyük Millet Meclisi</div>
-            <div class="option" data-opt="D">D) Sadece Bakanlıklar</div>
-            <div class="option" data-opt="E">E) Valilikler ve Kaymakamlıklar</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: B</div>
-            <div class="explanation">1982 Anayasasının 124. maddesine göre; Cumhurbaşkanı, bakanlıklar ve kamu tüzel kişileri, kendi görev alanlarını ilgilendiren kanunların ve Cumhurbaşkanlığı kararnamelerinin uygulanmasını sağlamak üzere yönetmelikler çıkarabilirler.</div>
-        </div>
-    </div>
-
-    <!-- Soru 55 -->
-    <div class="question-card" data-correct="D">
-        <div class="question-text"><span class="q-no">55.</span> Yürürlükteki bir kanunun veya yönetmeliğin uygulanmasını göstermek ve açıklamak amacıyla idare tarafından yayımlanan metinlere ne ad verilir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Tüzük</div>
-            <div class="option" data-opt="B">B) Kanun</div>
-            <div class="option" data-opt="C">C) Kararname</div>
-            <div class="option" data-opt="D">D) Tebliğ / Genelge</div>
-            <div class="option" data-opt="E">E) Anayasa</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: D</div>
-            <div class="explanation">Tebliğ, genelge ve önergeler, mevzuat hiyerarşisinin en alt basamaklarında yer alır ve üst normların (kanun, yönetmelik vb.) detaylarını ve uygulama usullerini açıklamak amacıyla yayımlanır.</div>
-        </div>
-    </div>
-
-    <!-- Soru 56 -->
-    <div class="question-card" data-correct="B">
-        <div class="question-text"><span class="q-no">56.</span> İş hukuku ve İSG hukukunun doğmasını sağlayan, bu hukuk dalının en temel ilkesi aşağıdakilerden hangisidir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Eşitlik İlkesi</div>
-            <div class="option" data-opt="B">B) İşçiyi (Çalışanı) Koruma İlkesi</div>
-            <div class="option" data-opt="C">C) Devletin Müdahalesi İlkesi</div>
-            <div class="option" data-opt="D">D) Sözleşme Serbestisi İlkesi</div>
-            <div class="option" data-opt="E">E) Özgürlük İlkesi</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: B</div>
-            <div class="explanation">İşçi ve işveren arasındaki ekonomik eşitsizlik, işçinin sömürülmesini engellemek amacıyla devletin müdahalesini zorunlu kılmıştır. Bu nedenle İş ve İSG hukukunun varlık nedeni ve en temel ilkesi "İşçiyi Koruma İlkesi"dir.</div>
-        </div>
-    </div>
-
-    <!-- Soru 57 -->
-    <div class="question-card" data-correct="A">
-        <div class="question-text"><span class="q-no">57.</span> İSG kurallarının sözleşmelerle işçi aleyhine değiştirilememesi ve emredici nitelikte olması, İSG hukukunun hangi özelliği ile açıklanır?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Nispi emredicilik ve Kamu Düzeni niteliği</div>
-            <div class="option" data-opt="B">B) Tamamlayıcı Hukuk niteliği</div>
-            <div class="option" data-opt="C">C) Yorumlayıcı Hukuk niteliği</div>
-            <div class="option" data-opt="D">D) Geleneksel Hukuk niteliği</div>
-            <div class="option" data-opt="E">E) Özel Hukuk niteliği</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: A</div>
-            <div class="explanation">İSG kuralları, toplumun sağlığını ve refahını ilgilendirdiği için kamu düzenindendir. Bu kurallar mutlak veya nispi emredicidir; yani iş sözleşmeleriyle işçinin hakları sınırlandırılamaz (örneğin "İş kazası geçirirsem sorumluluk bana aittir" maddesi hükümsüzdür).</div>
-        </div>
-    </div>
-
-    <!-- Soru 58 -->
-    <div class="question-card" data-correct="D">
-        <div class="question-text"><span class="q-no">58.</span> İSG Hukukunda, kanun maddesi veya sözleşmede yer alan bir kuralın anlamı kesin ve net değilse (boşluk varsa), hakim bu kuralı hangi ilkeye dayanarak yorumlar?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) İşveren lehine yorum</div>
-            <div class="option" data-opt="B">B) Devleti koruma ilkesi</div>
-            <div class="option" data-opt="C">C) İyi niyet ilkesi</div>
-            <div class="option" data-opt="D">D) İşçi lehine yorum ilkesi</div>
-            <div class="option" data-opt="E">E) Eşitlik ilkesi</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: D</div>
-            <div class="explanation">"İşçi lehine yorum ilkesi" gereğince, mevzuatta veya sözleşmede açık olmayan durumlarda, zayıf taraf olan işçiyi korumak maksadıyla işçinin menfaatine olan yorum tercih edilir.</div>
-        </div>
-    </div>
-
-    <!-- Soru 59 -->
-    <div class="question-card" data-correct="C">
-        <div class="question-text"><span class="q-no">59.</span> 1919 yılında Versay Barış Antlaşması ile kurulan ve iş sağlığı ile güvenliği standartlarını küresel ölçekte belirleyen uluslararası kuruluş hangisidir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Dünya Sağlık Örgütü (WHO)</div>
-            <div class="option" data-opt="B">B) Birleşmiş Milletler (BM)</div>
-            <div class="option" data-opt="C">C) Uluslararası Çalışma Örgütü (ILO)</div>
-            <div class="option" data-opt="D">D) Avrupa İSG Ajansı (EU-OSHA)</div>
-            <div class="option" data-opt="E">E) Uluslararası Para Fonu (IMF)</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: C</div>
-            <div class="explanation">Uluslararası Çalışma Örgütü (ILO), 1919'da kurulmuştur ve küresel düzeyde çalışma şartlarını, iş sağlığı ve güvenliği standartlarını (Sözleşmeler ve Tavsiye Kararları ile) belirler. Türkiye 1932'de üye olmuştur.</div>
-        </div>
-    </div>
-
-    <!-- Soru 60 -->
-    <div class="question-card" data-correct="B">
-        <div class="question-text"><span class="q-no">60.</span> Uluslararası Çalışma Örgütü'nün (ILO) karar alma mekanizmalarını diğer uluslararası örgütlerden ayıran en belirgin "yapısal" özelliği nedir?</div>
-        <div class="options">
-            <div class="option" data-opt="A">A) Sadece gelişmiş ülkelerin oy hakkı olması</div>
-            <div class="option" data-opt="B">B) Üçlü Yapı (Hükümet, İşçi ve İşveren temsilcilerinden oluşması)</div>
-            <div class="option" data-opt="C">C) Sadece sendika temsilcilerinden oluşması</div>
-            <div class="option" data-opt="D">D) Kararlarının tüm ülkeler için anında bağlayıcı olması</div>
-            <div class="option" data-opt="E">E) Yalnızca sağlık bakanlarının katılımıyla toplanması</div>
-        </div>
-        <button class="solution-btn">📖 Orijinal Çözümü Göster</button>
-        <div class="solution">
-            <div class="correct-answer">Doğru Seçenek: B</div>
-            <div class="explanation">ILO'nun en benzersiz yönü "Tripartit" yani Üçlü Yapıya sahip olmasıdır. ILO konferanslarında ve yönetiminde her üye devleti; hükümet, işçi ve işveren sendikalarının temsilcileri birlikte temsil eder.</div>
-        </div>
-    </div>
-
     <!-- PUAN PANELİ -->
     <div class="score-panel" id="scorePanel">
         <div class="score-item">
@@ -1576,7 +1243,7 @@
             <div class="lbl">Yanlış</div>
         </div>
         <div class="score-item">
-            <div class="val" id="bosSayisi">60</div>
+            <div class="val" id="bosSayisi">40</div>
             <div class="lbl">Boş</div>
         </div>
         <div class="score-item net">
