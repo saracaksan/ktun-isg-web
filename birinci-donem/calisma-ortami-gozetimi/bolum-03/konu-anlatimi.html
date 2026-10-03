@@ -1,1 +1,1820 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Çalışma Ortamı Gözetimi · Bölüm 03 · Konu Anlatımı</title><style>*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#172033}a{text-decoration:none;color:inherit}.top{background:linear-gradient(135deg,#071a33,#1769aa);color:white}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:900}.brand small{display:block;color:#b9cce0;font-size:10px;margin-top:4px}.back{border:1px solid #ffffff2b;padding:9px 13px;border-radius:9px;font-size:11px;background:#ffffff0d}.hero{padding:52px 0}.eyebrow{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#b9e7ff;font-weight:800}.hero h1{font-size:clamp(30px,4vw,48px);margin:14px 0 8px;line-height:1.08}.hero p{color:#cbd9e6;font-size:13px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{font-size:10px;padding:7px 10px;border-radius:8px;background:#ffffff12;border:1px solid #ffffff18}main{padding:35px 0 70px}.head{margin-bottom:20px}.head h2{margin:0;color:#071a33}.head p{color:#64748b;font-size:11px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 5px 22px #0f172a0a}.num{width:34px;height:34px;border-radius:9px;background:#eef6fc;color:#1769aa;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}.card h3{margin:14px 0 7px;font-size:15px}.card p{font-size:10px;color:#64748b}.links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px}.links a{font-size:9px;font-weight:800;color:#1769aa;background:#f6f9fc;border:1px solid #e7edf3;border-radius:8px;padding:10px 5px;text-align:center}.empty{padding:20px;background:white;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b;font-size:11px}.footer{background:#04101f;color:#91a6bb;padding:25px 0;font-size:10px;line-height:1.7}@media(max-width:700px){.grid{grid-template-columns:1fr}.links{grid-template-columns:1fr}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}}</style></head><body><header class="top"><div class="wrap nav"><div class="brand">KTÜN · İSG Eğitim Portalı<small>2026–2027</small></div><a class="back" href="../../index.html">← Ders Ana Sayfası</a></div><div class="wrap hero"><span class="eyebrow">Çalışma Ortamı Gözetimi</span><h1>Bölüm 03</h1><p>Konu Anlatımı</p><div class="meta"><span class="pill">Bölüm 03</span><span class="pill">Konu Anlatımı</span></div></div></header><main><div class="wrap"><div class="empty">Bu alan içerik eklenmesi için hazırdır. Şu anda boş bırakılmıştır.</div></div></main><footer class="footer"><div class="wrap">Hazırlayan: Sıraç AKSAN · 0506 928 22 10 · saracaksan@gmail.com</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Çalışma Ortamı Gözetimi - Bölüm 3: Fiziksel Risk Etmenleri, Termal Konfor ve Aydınlatma | Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans">
+    <meta name="author" content="Sıraç Aksan">
+    <title>Bölüm 3: Fiziksel Risk Etmenleri, Termal Konfor ve Aydınlatma | Çalışma Ortamı Gözetimi</title>
+    <style>
+        :root {
+            --primary: #0f4c5c;
+            --primary-light: #1b6b7a;
+            --accent: #e36414;
+            --accent-light: #fb8b24;
+            --bg: #f5f7fa;
+            --card: #ffffff;
+            --text: #1e2a32;
+            --text-light: #4a5a68;
+            --border: #d9e2ec;
+            --exam-bg: #fff4e6;
+            --exam-border: #e36414;
+            --success: #2a9d8f;
+            --warning: #e9c46a;
+            --danger: #e76f51;
+            --info: #264653;
+            --metric-bg: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            --metric-accent: linear-gradient(135deg, #e36414 0%, #fb8b24 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+
+        /* ==================== ÜST BAŞLIK ==================== */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: #fff;
+            padding: 2rem 1.5rem 1.75rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: -40px; right: -40px;
+            width: 220px; height: 220px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+        }
+
+        .page-header .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            align-items: center;
+        }
+
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+            transition: border-bottom-style 0.2s;
+        }
+
+        .breadcrumb a:hover { border-bottom-style: solid; }
+        .breadcrumb .sep { opacity: 0.6; }
+
+        .page-header h1 {
+            font-size: 1.85rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+        }
+
+        .page-header .subtitle {
+            font-size: 0.98rem;
+            opacity: 0.92;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.85rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.28rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        .badge-primary { background: rgba(255,255,255,0.2); color: #fff; }
+        .badge-accent { background: var(--accent); color: #fff; }
+        .badge-success { background: var(--success); color: #fff; }
+        .badge-warning { background: var(--warning); color: #5a3a1a; }
+
+        /* ==================== ÜST BÖLÜM GEZİNME ==================== */
+        .top-chapter-nav {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 0.75rem;
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .top-chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.55rem 0.85rem;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            transition: background 0.2s, transform 0.2s;
+            font-size: 0.85rem;
+        }
+
+        .top-chapter-nav a:hover {
+            background: rgba(255,255,255,0.22);
+            transform: translateY(-2px);
+        }
+
+        .top-chapter-nav a.next {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .top-chapter-nav .tn-arrow {
+            font-size: 1.1rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .top-chapter-nav .tn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.25;
+        }
+
+        .top-chapter-nav .tn-text small {
+            font-size: 0.68rem;
+            opacity: 0.75;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .top-chapter-nav .tn-text strong {
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .top-chapter-nav .tn-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 800;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(227,100,20,0.4);
+        }
+
+        /* ==================== KONTEYNER ==================== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        main { padding: 2rem 0 3rem; }
+
+        /* ==================== HIZLI ERİŞİM ==================== */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 0.85rem;
+            margin-bottom: 2rem;
+        }
+
+        .quick-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 0.9rem 1.1rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 0.88rem;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .quick-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .quick-nav a .qn-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px; height: 38px;
+            border-radius: 10px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 1.05rem;
+            flex-shrink: 0;
+        }
+
+        .quick-nav a.qn-accent .qn-icon { background: var(--accent); }
+        .quick-nav a.qn-success .qn-icon { background: var(--success); }
+        .quick-nav a.qn-warning .qn-icon { background: var(--warning); color: #5a3a1a; }
+
+        .quick-nav a .qn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+        }
+
+        .quick-nav a .qn-text small {
+            font-weight: 400;
+            font-size: 0.72rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+
+        /* ==================== İÇİNDEKİLER ==================== */
+        .toc {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.06);
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc h2::before { content: '📋'; font-size: 1.15rem; }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.35rem 2rem;
+        }
+
+        .toc ol li {
+            counter-increment: toc-counter;
+            padding: 0.3rem 0;
+            border-bottom: 1px dashed var(--border);
+            font-size: 0.9rem;
+        }
+
+        .toc ol li::before {
+            content: counter(toc-counter) ". ";
+            font-weight: 700;
+            color: var(--accent);
+            margin-right: 0.25rem;
+        }
+
+        .toc ol li a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc ol li a:hover { color: var(--accent); }
+
+        /* ==================== BÖLÜM BAŞLIKLARI ==================== */
+        .section {
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--primary);
+            padding-bottom: 0.55rem;
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .section-title .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px; height: 36px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .subsection-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            margin: 1.7rem 0 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .subsection-title::before {
+            content: '';
+            display: inline-block;
+            width: 6px; height: 22px;
+            background: var(--accent);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        /* ==================== KARTLAR ==================== */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 1.3rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.05);
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover { box-shadow: 0 4px 16px rgba(15,76,92,0.1); }
+        .card p { margin-bottom: 0.75rem; }
+        .card p:last-child { margin-bottom: 0; }
+
+        /* ==================== SINAV KUTUSU ==================== */
+        .exam-box {
+            background: var(--exam-bg);
+            border-left: 5px solid var(--exam-border);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .exam-box::before {
+            content: '⚠️ SINAVDA ÇIKABİLİR';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .exam-box p, .exam-box li { font-size: 0.93rem; color: #5a3a1a; }
+        .exam-box ul, .exam-box ol { margin: 0.5rem 0 0.5rem 1.2rem; }
+
+        /* ==================== BİLGİ KUTUSU ==================== */
+        .info-box {
+            background: #e8f4f8;
+            border-left: 5px solid var(--primary-light);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .info-box::before {
+            content: 'ℹ️ AKADEMİK NOT';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--primary-light);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== UYARI KUTUSU ==================== */
+        .warning-box {
+            background: #fde8e8;
+            border-left: 5px solid var(--danger);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .warning-box::before {
+            content: '🚨 KRİTİK UYARI';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--danger);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== LİSTELER ==================== */
+        .card ul, .card ol { margin: 0.5rem 0 0.75rem 1.35rem; }
+        .card ul li, .card ol li { margin-bottom: 0.35rem; }
+        .card ul li::marker { color: var(--accent); }
+        .card ol li::marker { color: var(--accent); font-weight: 700; }
+
+        /* ==================== TABLOLAR ==================== */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.4rem 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            background: var(--card);
+            min-width: 620px;
+        }
+
+        thead { background: var(--primary); color: #fff; }
+        thead th {
+            padding: 0.8rem 0.95rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.82rem;
+            letter-spacing: 0.3px;
+        }
+
+        tbody td {
+            padding: 0.7rem 0.95rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tbody tr:last-child td { border-bottom: none; }
+        tbody tr:nth-child(even) { background: #f8fafc; }
+        tbody tr:hover { background: #eef6f8; }
+
+        /* ==================== METRİK KARTLARI ==================== */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 0.85rem;
+            margin: 1.3rem 0;
+        }
+
+        .metric-card {
+            background: var(--metric-bg);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(15,76,92,0.2);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .metric-card:hover { transform: translateY(-4px); }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 90px; height: 90px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+        }
+
+        .metric-card .mc-icon {
+            font-size: 1.6rem;
+            margin-bottom: 0.35rem;
+            display: block;
+        }
+
+        .metric-card .mc-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        .metric-card .mc-label {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            font-weight: 600;
+        }
+
+        .metric-card .mc-sub {
+            font-size: 0.7rem;
+            opacity: 0.7;
+            margin-top: 0.35rem;
+            font-style: italic;
+        }
+
+        .metric-card.accent {
+            background: var(--metric-accent);
+            box-shadow: 0 4px 14px rgba(227,100,20,0.3);
+        }
+
+        .metric-card.success {
+            background: linear-gradient(135deg, #2a9d8f 0%, #4bb3a6 100%);
+            box-shadow: 0 4px 14px rgba(42,157,143,0.3);
+        }
+
+        .metric-card.danger {
+            background: linear-gradient(135deg, #c1121f 0%, #e76f51 100%);
+            box-shadow: 0 4px 14px rgba(231,111,81,0.3);
+        }
+
+        .metric-card.warning {
+            background: linear-gradient(135deg, #e9c46a 0%, #f4a261 100%);
+            color: #4a2c0a;
+            box-shadow: 0 4px 14px rgba(233,196,106,0.35);
+        }
+
+        .metric-card.warning .mc-label,
+        .metric-card.warning .mc-sub { color: #4a2c0a; }
+
+        /* ==================== DİYAGRAM ==================== */
+        .diagram {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            justify-content: center;
+            margin: 1.4rem 0;
+        }
+
+        .diagram-item {
+            flex: 1 1 170px;
+            max-width: 230px;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.1rem;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .diagram-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .diagram-item .icon { font-size: 1.8rem; margin-bottom: 0.4rem; }
+        .diagram-item h4 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        .diagram-item p {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* ==================== FORMÜL KUTUSU ==================== */
+        .formula-box {
+            background: #fff;
+            border: 2px dashed var(--primary-light);
+            border-radius: 12px;
+            padding: 1.2rem 1.4rem;
+            margin: 1.2rem 0;
+            text-align: center;
+        }
+
+        .formula-box .formula-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 0.6rem;
+        }
+
+        .formula-box .formula {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            line-height: 1.7;
+        }
+
+        .formula-box .formula .frac {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 0.4rem;
+        }
+
+        .formula-box .formula .frac .num {
+            display: block;
+            padding: 0 0.4rem;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .formula-box .formula .frac .den {
+            display: block;
+            padding: 0 0.4rem;
+        }
+
+        /* ==================== VURGU ==================== */
+        .highlight {
+            background: linear-gradient(transparent 60%, #ffe066 60%);
+            font-weight: 600;
+            padding: 0 2px;
+        }
+
+        .keyword {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin: 0 2px;
+        }
+
+        .keyword-accent { background: var(--accent); }
+
+        /* ==================== ALINTI ==================== */
+        blockquote {
+            background: #f0f4f8;
+            border-left: 4px solid var(--primary-light);
+            padding: 1rem 1.4rem;
+            margin: 1.15rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.55rem;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: var(--primary);
+        }
+
+        /* ==================== BÖLÜM GEZİNME (ALT) ==================== */
+        .chapter-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .chapter-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .chapter-nav a.next {
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+
+        .chapter-nav a .cn-arrow {
+            font-size: 1.4rem;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .chapter-nav a .cn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+            flex: 1;
+        }
+
+        .chapter-nav a .cn-text small {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .chapter-nav a .cn-text strong {
+            font-size: 0.92rem;
+            color: var(--primary);
+        }
+
+        /* ==================== HAZIRLAYAN KARTI ==================== */
+        .author-card {
+            background: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.4rem 1.6rem;
+            margin: 2rem 0 1.5rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.2rem;
+            align-items: center;
+            box-shadow: 0 6px 20px rgba(15,76,92,0.18);
+        }
+
+        .author-card .avatar {
+            width: 68px; height: 68px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            font-weight: 700;
+            border: 2px solid rgba(255,255,255,0.35);
+            flex-shrink: 0;
+        }
+
+        .author-card .author-info h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .author-card .author-info .role {
+            font-size: 0.8rem;
+            opacity: 0.88;
+            margin-bottom: 0.55rem;
+            line-height: 1.45;
+        }
+
+        .author-card .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.2rem;
+            font-size: 0.83rem;
+        }
+
+        .author-card .contact-row a,
+        .author-card .contact-row span {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            opacity: 0.95;
+            transition: opacity 0.2s;
+        }
+
+        .author-card .contact-row a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* ==================== SAYFA SONU ==================== */
+        .page-footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.85);
+            text-align: center;
+            padding: 1.6rem 1.5rem;
+            font-size: 0.83rem;
+            margin-top: 2rem;
+        }
+
+        .page-footer .container p { margin-bottom: 0.35rem; }
+        .page-footer a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+        }
+        .page-footer a:hover { border-bottom-style: solid; }
+
+        /* ==================== YUKARI ÇIK ==================== */
+        .scroll-top {
+            position: fixed;
+            bottom: 1.5rem; right: 1.5rem;
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            font-size: 1.15rem;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(227,100,20,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+            z-index: 999;
+        }
+
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { transform: translateY(-3px); background: var(--accent-light); }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 900px) {
+            .top-chapter-nav {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            .top-chapter-nav .tn-center { display: none; }
+            .top-chapter-nav a.next { justify-content: flex-start; text-align: left; }
+        }
+
+        @media (max-width: 768px) {
+            body { font-size: 15px; }
+            .page-header { padding: 1.5rem 1rem 1.25rem; }
+            .page-header h1 { font-size: 1.3rem; }
+            .page-header .subtitle { font-size: 0.88rem; }
+            .breadcrumb { font-size: 0.76rem; }
+            .badge { font-size: 0.68rem; padding: 0.22rem 0.65rem; }
+            .container { padding: 0 1rem; }
+            .toc { padding: 1rem 1.15rem; }
+            .toc ol { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.15rem; gap: 0.5rem; }
+            .section-title .num { width: 30px; height: 30px; font-size: 0.85rem; }
+            .subsection-title { font-size: 1rem; }
+            .card { padding: 1rem 1.1rem; }
+            .exam-box, .info-box, .warning-box { padding: 0.95rem 1.05rem; }
+            table { font-size: 0.8rem; min-width: 560px; }
+            thead th, tbody td { padding: 0.55rem 0.65rem; }
+            .diagram-item { flex: 1 1 100%; max-width: 100%; }
+            .chapter-nav { grid-template-columns: 1fr; }
+            .chapter-nav a.next { flex-direction: row; text-align: left; }
+            .author-card { grid-template-columns: 1fr; text-align: center; }
+            .author-card .avatar { margin: 0 auto; }
+            .author-card .contact-row { justify-content: center; }
+            .quick-nav { grid-template-columns: 1fr; }
+            .scroll-top { bottom: 1rem; right: 1rem; width: 42px; height: 42px; }
+            .metric-card .mc-value { font-size: 1.25rem; }
+            .metric-card .mc-icon { font-size: 1.35rem; }
+            .formula-box .formula { font-size: 0.95rem; }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 { font-size: 1.1rem; }
+            .section-title { font-size: 1.05rem; }
+            blockquote { padding: 0.8rem 1rem; font-size: 0.86rem; }
+        }
+
+        /* ==================== YAZDIRMA ==================== */
+        @media print {
+            .page-header { background: #fff !important; color: #000 !important; }
+            .page-header h1, .page-header .subtitle, .breadcrumb a { color: #000 !important; }
+            .badge { border: 1px solid #ccc; color: #000 !important; background: #f0f0f0 !important; }
+            .top-chapter-nav { display: none !important; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .exam-box { background: #fff; border: 1px solid #e36414; }
+            .scroll-top, .quick-nav, .chapter-nav { display: none !important; }
+            .author-card { background: #f0f0f0 !important; color: #000 !important; }
+            .author-card .contact-row a, .author-card .contact-row span { color: #000 !important; }
+            .metric-card { background: #f0f0f0 !important; color: #000 !important; box-shadow: none !important; border: 1px solid #ccc; }
+            .metric-card .mc-label, .metric-card .mc-sub { color: #000 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== ÜST BAŞLIK ==================== -->
+<header class="page-header">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="Site haritası">
+            <a href="../../../index.html">🏠 Tüm Dersler</a>
+            <span class="sep">›</span>
+            <a href="../index.html">📚 Çalışma Ortamı Gözetimi</a>
+            <span class="sep">›</span>
+            <span>Bölüm 3</span>
+        </nav>
+        <h1>Bölüm 3: Fiziksel Risk Etmenleri, Termal Konfor ve Aydınlatma</h1>
+        <p class="subtitle">Gürültü, Titreşim, Aydınlatma, Termal Konfor, Radyasyon ve Basınç Etmenleri</p>
+        <div class="badge-row">
+            <span class="badge badge-primary">Gürültü Mevzuatı</span>
+            <span class="badge badge-accent">Titreşim (ISO 5349/2631)</span>
+            <span class="badge badge-success">Termal Konfor</span>
+            <span class="badge badge-warning">Radyasyon &amp; Basınç</span>
+        </div>
+
+        <!-- ÜST BÖLÜM GEZİNME -->
+        <nav class="top-chapter-nav" aria-label="Üst bölüm gezinme">
+            <a href="../bolum-02/konu-anlatimi.html">
+                <span class="tn-arrow">←</span>
+                <span class="tn-text">
+                    <small>Önceki Bölüm</small>
+                    <strong>Bölüm 2: Ortam Ölçümleri, Kayıtlar</strong>
+                </span>
+            </a>
+            <span class="tn-center">3/10</span>
+            <a href="../bolum-04/konu-anlatimi.html" class="next">
+                <span class="tn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Bölüm 4: Konu Anlatımı</strong>
+                </span>
+                <span class="tn-arrow">→</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- ==================== İÇERİK ==================== -->
+<main>
+    <div class="container">
+
+        <!-- HIZLI ERİŞİM -->
+        <nav class="quick-nav" aria-label="Hızlı erişim">
+            <a href="konu-anlatimi.html" class="qn-accent">
+                <span class="qn-icon">📖</span>
+                <span class="qn-text">Konu Anlatımı<small>Bu sayfa</small></span>
+            </a>
+            <a href="sorular.html" class="qn-success">
+                <span class="qn-icon">❓</span>
+                <span class="qn-text">Sorular<small>Test &amp; alıştırma</small></span>
+            </a>
+            <a href="sunum.html" class="qn-warning">
+                <span class="qn-icon">📊</span>
+                <span class="qn-text">Sunum<small>Slayt gösterisi</small></span>
+            </a>
+            <a href="../index.html">
+                <span class="qn-icon">📚</span>
+                <span class="qn-text">Ders Ana Sayfası<small>Tüm bölümler</small></span>
+            </a>
+        </nav>
+
+        <!-- İÇİNDEKİLER -->
+        <nav class="toc" aria-label="İçindekiler">
+            <h2>İçindekiler</h2>
+            <ol>
+                <li><a href="#bolum3-1">Gürültü ve İlgili Mevzuat Analizi</a></li>
+                <li><a href="#bolum3-2">Titreşim (El-Kol ve Tüm Vücut Titreşimi)</a></li>
+                <li><a href="#bolum3-3">Aydınlatma Prensipleri ve Görsel Konfor</a></li>
+                <li><a href="#bolum3-4">Termal Konfor ve İklimlendirme Dinamikleri</a></li>
+                <li><a href="#bolum3-5">Radyasyon (İyonize ve Non-İyonize Işınlar)</a></li>
+                <li><a href="#bolum3-6">Basınç Etmenleri ve Fizyolojik Sınırlar</a></li>
+            </ol>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- 1. GÜRÜLTÜ VE İLGİLİ MEVZUAT ANALİZİ                         -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum3-1">
+            <h2 class="section-title">
+                <span class="num">1</span>
+                Gürültü ve İlgili Mevzuat Analizi
+            </h2>
+
+            <h3 class="subsection-title">Giriş ve Stratejik Önem</h3>
+
+            <div class="card">
+                <p>
+                    Çalışma ortamında karşılaşılan fiziksel risk etmenleri arasında yaygınlığı ve oluşturduğu meslek hastalıklarının kalıcı niteliği bakımından <span class="keyword keyword-accent">gürültü</span>, endüstriyel hijyenin ve iş sağlığı yönetiminin temel odak noktalarından birini oluşturur. 6331 sayılı İş Sağlığı ve Güvenliği Kanunu ile İş Sağlığı ve Güvenliği Hizmetleri Yönetmeliği çerçevesinde yürütülen <strong>Çalışma Ortamı Gözetimi</strong>, işyerindeki fiziksel risk faktörlerinin nitel ve nicel olarak belirlenmesini zorunlu kılar. Bu kapsamda İş Güvenliği Uzmanı ve İşyeri Hekimi, gürültü ölçümlerini planlamak, sonuçları değerlendirmek ve mevzuata uygun olarak <strong>Yıllık Değerlendirme Raporu (EK-2)</strong> ile kayıt altına almakla yükümlüdür.
+                </p>
+                <p>
+                    Gürültü maruziyeti yalnızca işitme organı üzerinde yıkıcı etkilere yol açmakla kalmayıp; çalışanların dikkat seviyelerini, otonom sinir sistemlerini ve genel iş performanslarını da olumsuz etkilemektedir. ÖSYM ve ÇSG B Sınavı gibi uzmanlık sınavlarında gürültü mevzuatı, yasal eylem/sınır değerleri, akustik ölçüm metodolojileri ve kişisel koruyucu donanım (KKD) kullanım mantığı <strong>yüksek bir soru ağırlığına sahiptir</strong>.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">Gürültü Tanımı, Akustik Parametreler ve Ölçüm Cihazları</h3>
+
+            <div class="card">
+                <p>
+                    <strong>Fiziksel açıdan gürültü;</strong> farklı frekans ve genlikteki ses dalgalarının düzensiz, karmaşık bir biçimde birleşmesiyle meydana gelen akustik dalga hareketleridir. <strong>Fizyolojik açıdan ise;</strong> işitme organı üzerinde rahatsızlık uyandıran, işitme duyusuna zarar veren ve algılamayı zorlaştıran istenmeyen sesler olarak tanımlanır.
+                </p>
+                <p>Çalışma ortamında gürültü, zamansal değişim karakterine göre üç temel sınıfta incelenir:</p>
+                <ul>
+                    <li><strong>Sürekli Gürültü:</strong> Maruziyet süresince ses düzeyinde önemli bir dalgalanma olmayan, kararlı seyreden gürültüdür (örneğin; havalandırma fanları, dokuma tezgahları veya elektrik motorlarının çıkardığı gürültü).</li>
+                    <li><strong>Kesikli Gürültü:</strong> Belirli periyotlarla yükselip alçalan veya duraklamalar gösteren gürültü türüdür (örneğin; kompresörün devreye girip çıkması, dairesel testere ile ahşap kesim işlemleri).</li>
+                    <li><strong>Darbe (İmpuls) Gürültüsü:</strong> Süresi <strong>1 saniyeden az</strong> olan, birdenbire ortaya çıkan ve yüksek tepe basıncına ulaşan anlık ses enerjisidir (örneğin; pres makinelerinin vuruşları, eksantrik baskı tezgahları veya patlatmalı işlemler).</li>
+                </ul>
+            </div>
+
+            <div class="diagram">
+                <div class="diagram-item">
+                    <div class="icon">〰️</div>
+                    <h4>Sürekli Gürültü</h4>
+                    <p>Kararlı seyir — Fan, dokuma tezgahı, motor</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">📈</div>
+                    <h4>Kesikli Gürültü</h4>
+                    <p>Yükselip alçalan — Kompresör, dairesel testere</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">💥</div>
+                    <h4>Darbe (İmpuls)</h4>
+                    <p>&lt; 1 saniye, ani tepe basıncı — Pres, patlatma</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <p>Gürültü ölçümlerinde kullanılan birimler ve frekans ağırlıklama filtreleri insan kulağının hassasiyet spektrumuna göre şekillendirilir:</p>
+                <ul>
+                    <li><strong>dBA (Decibel A):</strong> İnsan kulağının düşük ve orta frekanslardaki seslere karşı olan doğrusal olmayan hassasiyetini simüle eden "A-ağırlıklı" filtredir. Düşük frekanslı sesleri süzerek insan kulağının algısına yakın bir değer üretir. <strong>İşitme sağlığı risk değerlendirmelerinde</strong> ve günlük maruziyet eşiklerinin belirlenmesinde temel birimdir.</li>
+                    <li><strong>dBC (Decibel C):</strong> İnsan kulağının yüksek ses düzeylerinde ve özellikle düşük frekanslardaki tepe basınçlarına (ani darbe gürültülerine) gösterdiği yanıtı ölçen filtredir. Frekans tayfını süzmeden daha düz (flatter) bir yanıt verir. <strong>Tepe ses basıncı (P<sub>tepe</sub>) değerleri dBC cinsinden ifade edilir.</strong></li>
+                </ul>
+                <p>Gürültü maruziyetini ve ortam düzeylerini ölçmek amacıyla iki temel cihaz kullanılır:</p>
+                <ol>
+                    <li><strong>Ses Seviyesi Ölçer (Sonometre):</strong> Çalışma ortamındaki anlık ses basınç düzeyini dBA veya dBC cinsinden ölçen hassas cihazlardır. Ortam haritalandırması ve nokta ölçümler için tercih edilir.</li>
+                    <li><strong>Gürültü Dozimetresi:</strong> Çalışanın üstüne giydirilen (genellikle omuz bölgesine, kulağa yakın mesafeye sabitlenen) ve vardiya süresince (8 saat) maruz kaldığı kümülatif gürültü dozunu kaydeden cihazdır. <strong>Bireysel maruziyet düzeyinin (L<sub>EX, 8saat</sub>) yasal eylem ve sınır değerlerle karşılaştırılmasında dozimetre verileri esas alınır.</strong></li>
+                </ol>
+            </div>
+
+            <h3 class="subsection-title">Gürültü Yönetmeliği Yasal Sınır ve Eylem Değerleri</h3>
+
+            <div class="card">
+                <p>
+                    <em>Çalışanların Gürültü İle İlgili Risklerden Korunmalarına Dair Yönetmelik</em> uyarınca, <strong>8 saatlik günlük maruziyet süresi</strong> için belirlenen yasal eşik değerler aşağıda sunulmuştur:
+                </p>
+            </div>
+
+            <!-- METRİK: GÜRÜLTÜ EŞİK DEĞERLERİ -->
+            <div class="metric-grid">
+                <div class="metric-card success">
+                    <span class="mc-icon">🔈</span>
+                    <div class="mc-value">80 dBA</div>
+                    <div class="mc-label">En Düşük Eylem</div>
+                    <div class="mc-sub">Tepe: 135 dBC • KKD hazır, kullanım zorunlu değil</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">🔉</span>
+                    <div class="mc-value">85 dBA</div>
+                    <div class="mc-label">En Yüksek Eylem</div>
+                    <div class="mc-sub">Tepe: 137 dBC • KKD kullanımı zorunlu &amp; odyometri</div>
+                </div>
+                <div class="metric-card danger">
+                    <span class="mc-icon">🔊</span>
+                    <div class="mc-value">87 dBA</div>
+                    <div class="mc-label">Maruziyet Sınırı</div>
+                    <div class="mc-sub">Tepe: 140 dBC • KKD koruyucu etkisi hesaba katılır</div>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Maruziyet Eşik Parametresi</th>
+                            <th>Günlük Maruziyet Eşdeğer Düzeyi (L<sub>EX, 8saat</sub>) [dBA]</th>
+                            <th>En Yüksek Tepe Ses Basıncı (P<sub>tepe</sub>) [dBC]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>En Düşük Maruziyet Eylem Değeri</strong></td>
+                            <td><strong>80 dBA</strong></td>
+                            <td><strong>135 dBC</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>En Yüksek Maruziyet Eylem Değeri</strong></td>
+                            <td><strong>85 dBA</strong></td>
+                            <td><strong>137 dBC</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Maruziyet Sınır Değeri</strong></td>
+                            <td><strong>87 dBA</strong></td>
+                            <td><strong>140 dBC</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- SINAV KUTUSU -->
+            <div class="exam-box">
+                <p><strong>Kritik Ayırım: Yasal Yükümlülükler ve KKD Kullanımı</strong></p>
+                <p>ÖSYM sınavlarında adayların en çok yanıltıldığı husus, eylem ve sınır değerlerde <strong>Kişisel Koruyucu Donanım (KKD) etkisinin</strong> hesaba katılıp katılmadığıdır:</p>
+                <ul>
+                    <li><strong>80 dBA (En Düşük Maruziyet Eylem Değeri):</strong> İşveren, Kulak Koruyucu Donanımları (KKD) temin etmek ve çalışanların erişimine hazır bulundurmakla yükümlüdür. Ancak <strong>kullanımı bu aşamada zorunlu değildir</strong>. KKD indirimi hesaba katılmaz.</li>
+                    <li><strong>85 dBA (En Yüksek Maruziyet Eylem Değeri):</strong> İşveren, Kulak Koruyucu Donanımların çalışanlar tarafından <strong>kullanılmasını sağlamak ve denetlemekle</strong> yükümlüdür. İşitme testleri (odyometrik incelemeler) bu seviyede düzenli olarak yapılmalıdır. KKD indirimi hesaba katılmaz.</li>
+                    <li><strong>87 dBA (Maruziyet Sınır Değeri):</strong> Çalışanın kulağına ulaşan fiili maruziyet seviyesidir. Bu değerin belirlenmesinde <strong>KKD'nin sağladığı koruyucu etki/azaltım hesaba katılır</strong>. Eylem değerlerinde KKD etkisi dikkate alınmazken; maruziyet sınır değerinde çalışanın kulağındaki net gürültü seviyesi esas alınır ve <strong>bu değer hiçbir koşulda aşılamaz</strong>.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">Fizyolojik Etkiler ve İşitme Kaybı Türleri</h3>
+
+            <div class="card">
+                <p>
+                    Gürültünün insan organizması üzerindeki zararları <strong>işitsel</strong> ve <strong>işitsel olmayan</strong> (stres, yüksek tansiyon, uyku bozukluğu, dikkat dağınıklığı) etkiler olarak ikiye ayrılır. İşitme organındaki patolojik değişimler ise şu şekilde sınıflandırılır:
+                </p>
+                <ul>
+                    <li><strong>Geçici İşitme Kaybı (İşitme Yorulması):</strong> Yüksek gürültüye kısa süreli maruziyet sonrasında iç kulaktaki tüy hücrelerinin geçici olarak işlev yitirmesidir. Sessiz bir ortamda dinlenme ile işitme eşiği eski haline döner.</li>
+                    <li><strong>Kalıcı İşitme Kaybı:</strong> Uzun süreli ve yüksek şiddette gürültüye maruz kalma sonucu iç kulaktaki <strong>Corti organında</strong> bulunan tüy hücrelerinin (hair cells) harabiyeti ve ölümüyle gerçekleşir. <strong>Geri dönüşümsüzdür.</strong></li>
+                </ul>
+                <p>Tıbbi ve mesleki açıdan işitme kayıpları iki ana tipe ayrılır:</p>
+                <ol>
+                    <li><strong>İletim Tipi İşitme Kaybı:</strong> Dış kulak yolu veya orta kulaktaki mekanik yapılardaki (kulak zarı, kemikçikler) zedelenme sonucu ses dalgalarının iç kulağa iletilememesidir. <strong>Tıbbi tedavi veya cerrahi ile düzeltilebilir.</strong></li>
+                    <li><strong>Sensörinöral (Alımsal) İşitme Kaybı:</strong> İç kulaktaki salyangoz (koklea) veya işitme sinirlerindeki nöro-duyusal tahribat sonucu ortaya çıkar. <strong>Mesleki gürültü maruziyeti tipik olarak sensörinöral tipte bir işitme kaybına yol açar.</strong></li>
+                </ol>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Odyometrik İncelemelerde 4000 Hz Akustik Çentik (Audiometric Notch):</strong> Gürültüye bağlı mesleki işitme kayıplarının klinik tanısında odyometrik incelemeler hayati önem taşır. Mesleki maruziyetin en erken ve tipik patognomonik göstergesi, odyogram testinde <strong>4000 Hz frekansta</strong> (bazen 3000–6000 Hz bandında) gözlenen belirgin düşüştür. Bu olguya <span class="highlight">4000 Hz Akustik Çentiği (Audiometric Notch)</span> adı verilir. İlerleyen maruziyetle birlikte bu çentik derinleşir ve komşu frekanslara yayılarak konuşma frekanslarını da (500–2000 Hz) etkilemeye başlar.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 2. TİTREŞİM                                                  -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum3-2">
+            <h2 class="section-title">
+                <span class="num">2</span>
+                Titreşim (El-Kol ve Tüm Vücut Titreşimi) Risk Değerlendirmesi
+            </h2>
+
+            <h3 class="subsection-title">Giriş ve Stratejik Önem</h3>
+
+            <div class="card">
+                <p>
+                    <strong>Mekanik titreşim (vibrasyon)</strong>, araç, gereç ve makinelerin çalışırken oluşturduğu salınım hareketlerinin insan vücuduna aktarılmasıdır. Çalışan sağlığı üzerinde kas-iskelet sistemi, nörolojik yapı ve damar dolaşımı üzerinde geri dönülmez patolojiler yaratan titreşim, çalışma ortamı gözetimi kapsamında düzenli olarak ölçülmesi ve kontrol altında tutulması gereken öncelikli risk parametrelerindendir. İSG mevzuatında <strong>El-Kol Titreşimi</strong> ve <strong>Tüm Vücut Titreşimi</strong> için ayrı ayrı tanımlanmış olan eylem ve sınır değerler ile bunların hesaplama metodolojileri, uzmanlık sınavlarında yüksek puanlı soru gruplarını oluşturur.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">Ölçüm Metodolojisi, Standartlar ve Hesaplama Formülü</h3>
+
+            <div class="card">
+                <p>
+                    Titreşim, bir cismin kütlesinin zamana göre yer değiştirmesi veya ivmelenmesi hareketidir. Titreşim maruziyetinin değerlendirilmesinde temel birim <strong>İvme (m/s²)</strong> cinsinden ifade edilir. Ölçümler, eşdeğer sürekli ivme <strong>A(8)</strong> esasına göre <strong>8 saatlik vardiya</strong> baz alınarak hesaplanır.
+                </p>
+                <p>Uluslararası standartlar çerçevesinde:</p>
+                <ul>
+                    <li><strong>El-Kol Titreşimi:</strong> <span class="keyword">ISO 5349</span> standardına göre değerlendirilir.</li>
+                    <li><strong>Tüm Vücut Titreşimi:</strong> <span class="keyword">ISO 2631</span> standardına göre değerlendirilir.</li>
+                </ul>
+            </div>
+
+            <div class="formula-box">
+                <div class="formula-label">Günlük Maruziyet Değeri A(8) Hesaplama Formülü</div>
+                <div class="formula">
+                    A(8) = a<sub>hv</sub> × √( T / T<sub>0</sub> )
+                </div>
+                <p style="margin-top:0.8rem; font-size:0.85rem; color:var(--text-light);">
+                    <strong>a<sub>hv</sub>:</strong> Ölçülen toplam titreşim ivme değeri (m/s²) &nbsp;|&nbsp;
+                    <strong>T:</strong> Günlük fiili maruziyet süresi (saat) &nbsp;|&nbsp;
+                    <strong>T<sub>0</sub>:</strong> 8 saatlik standart referans süresi
+                </p>
+            </div>
+
+            <div class="card">
+                <p>
+                    Titreşim ölçümünde kullanılan temel donanım <strong>İvmeölçer (Okselerometre / Accelerometer)</strong> cihazıdır. İvmeölçerler, içlerinde bulunan <strong>piezoelektrik kristaller</strong> sayesinde mekanik titreşim enerjisini elektriksel sinyallere dönüştürür.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">Mevzuat Sınır ve Eylem Değerleri Karşılaştırma Tablosu</h3>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Titreşim Türü</th>
+                            <th>Eylem Değeri A(8) [m/s²]</th>
+                            <th>Sınır Değeri A(8) [m/s²]</th>
+                            <th>Tipik Ölçüm Aksları ve Yeri</th>
+                            <th>Tipik Ekipman Örnekleri</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>El-Kol Titreşimi (EKT)</strong></td>
+                            <td><strong>2,5 m/s²</strong></td>
+                            <td><strong>5,0 m/s²</strong></td>
+                            <td>Z-Aksı: Elin uzunlamasına kemik ekseni boyunca. X, Y, Z aksları: El-tutamak temas yüzeyinde ölçülür.</td>
+                            <td>Motorlu testereler, kırıcı-delici hiltiler, kompresörlü matkaplar, avuç taşlama makineleri</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tüm Vücut Titreşimi (TVT)</strong></td>
+                            <td><strong>0,5 m/s²</strong></td>
+                            <td><strong>1,15 m/s²</strong></td>
+                            <td>Z-Aksı: Dikey omurga hattı boyunca (baştan ayağa). X, Y, Z aksları: Oturma yüzeyi (seat-pad) veya taban platformunda ölçülür.</td>
+                            <td>İş makineleri (dozer, greyder), forkliftler, kamyonlar, traktörler, kule vinçler</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- METRİK: TİTREŞİM DEĞERLERİ -->
+            <div class="metric-grid">
+                <div class="metric-card warning">
+                    <span class="mc-icon">✋</span>
+                    <div class="mc-value">2,5 m/s²</div>
+                    <div class="mc-label">EKT Eylem Değeri</div>
+                    <div class="mc-sub">ISO 5349</div>
+                </div>
+                <div class="metric-card danger">
+                    <span class="mc-icon">✋</span>
+                    <div class="mc-value">5,0 m/s²</div>
+                    <div class="mc-label">EKT Sınır Değeri</div>
+                    <div class="mc-sub">Aşılamaz</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">🪑</span>
+                    <div class="mc-value">0,5 m/s²</div>
+                    <div class="mc-label">TVT Eylem Değeri</div>
+                    <div class="mc-sub">ISO 2631</div>
+                </div>
+                <div class="metric-card danger">
+                    <span class="mc-icon">🪑</span>
+                    <div class="mc-value">1,15 m/s²</div>
+                    <div class="mc-label">TVT Sınır Değeri</div>
+                    <div class="mc-sub">Aşılamaz</div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Patolojik Etkiler ve Meslek Hastalıkları</h3>
+
+            <div class="card">
+                <p><strong>1. El-Kol Titreşimine Bağlı Patolojiler: Raynaud (Beyaz Parmak) Hastalığı</strong></p>
+                <p>
+                    El ve parmaklara aktarılan yüksek frekanslı titreşim (<strong>20–1000 Hz</strong>), ellerdeki kılcal damarların ve periferik sinirlerin yapısını bozar.
+                </p>
+                <ul>
+                    <li><strong>Klinik Seyir:</strong> Titreşimin yol açtığı damar spazmları sonucu parmaklara kan akışı kesilir. Özellikle soğuk maruziyetiyle tetiklenen parmaklarda <strong>solukluk (beyazlaşma)</strong>, ardından <strong>siyanoz (morarma)</strong> ve nihayetinde <strong>ağrılı kızarıklık</strong> gözlenir.</li>
+                    <li><strong>Nöro-Vasküler Hasar:</strong> Bu tablo <span class="highlight">Titreşime Bağlı Damar Tipi Beyaz Parmak (Raynaud Fenomeni)</span> veya <strong>Ölü Parmak</strong> olarak adlandırılır. İlerleyen evrelerde parmaklarda his kaybı, kavrama kuvvetinde azalma ve doku nekrozu gelişir. Ayrıca <strong>Karpal Tünel Sendromu</strong> gibi periferik sinir sıkışmaları da tabloya eşlik eder.</li>
+                </ul>
+
+                <p style="margin-top:1rem;"><strong>2. Tüm Vücut Titreşimine Bağlı Patolojiler: Omurga Deformasyonları</strong></p>
+                <p>
+                    Düşük frekanslı (<strong>1–80 Hz</strong>) tüm vücut titreşimi, özellikle araç koltuklarından sürücünün omurga sistemine iletilir.
+                </p>
+                <ul>
+                    <li><strong>Klinik Seyir:</strong> Lumbar bölgede (bel bölgesi) yer alan intervertebral diskler üzerinde sürekli mekanik baskı ve mikrotravmalar oluşur.</li>
+                    <li><strong>Semptomlar:</strong> Lumbar disk herniasyonları (<strong>bel fıtığı</strong>), bel spondilozu, kronik bel ağrıları ve omurga deformasyonları mesleki hastalık olarak ortaya çıkar.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 3. AYDINLATMA                                                -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum3-3">
+            <h2 class="section-title">
+                <span class="num">3</span>
+                Aydınlatma Prensipleri ve Görsel Konfor
+            </h2>
+
+            <h3 class="subsection-title">Giriş ve Stratejik Önem</h3>
+
+            <div class="card">
+                <p>
+                    <strong>Aydınlatma</strong>, işyerlerinde çalışanların görsel performanslarını en üst düzeye çıkarmak, göz yorgunluğunu engellemek ve yetersiz veya hatalı ışıklandırmadan kaynaklanabilecek iş kazalarını önlemek adına hayati bir fiziksel çevre koşuludur. Çalışma ortamı gözetimi kapsamında yapılan aydınlatma ölçümleri, ergonomik koşulların iyileştirilmesine ve üretim kalitesinin artırılmasına doğrudan katkı sağlar. Uygun yapılmayan aydınlatma; tehlikelerin zamanında fark edilememesine, hatalı operasyonel işlemlere ve uzun vadede çalışanlarda <strong>görsel stres ile postural bozukluklara</strong> sebep olur.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">Aydınlatma Terminolojisi ve Ölçüm</h3>
+
+            <div class="card">
+                <p>Aydınlatma değerlendirmelerinde kullanılan temel büyüklükler ve ölçüm prensipleri şunlardır:</p>
+                <ul>
+                    <li><strong>Aydınlatma Şiddeti (E):</strong> Birim yüzeye düşen ışık akısı miktarıdır. Birimi <span class="keyword">Lüks (Lux / lx)</span>'tür. <strong>1 lx = 1 lm/m²</strong> olarak tanımlanır.</li>
+                    <li><strong>Işık Akısı (Φ):</strong> Bir ışık kaynağının birim zamanda yaydığı toplam ışık miktarıdır. Birimi <span class="keyword">Lümen (lm)</span>'dir.</li>
+                    <li><strong>Işık Şiddeti (I):</strong> Kaynağın belirli bir yönde yaydığı ışık yoğunluğudur. Birimi <span class="keyword">Kandela (cd)</span>'dır.</li>
+                    <li><strong>Parıltı (Luminans - L):</strong> Bir yüzeyden yansıyan veya yayılan ışığın insan gözü tarafından algılanan parlaklık derecesidir. Birimi <span class="keyword">cd/m²</span>'dir.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Ölçüm Cihazı ve Şartları:</strong> Aydınlatma şiddeti <strong>Lüksmetre (Luxmeter)</strong> adı verilen fotoelektrik sensörlü cihazlarla ölçülür. Lüksmetre ile ölçüm yapılırken şu hususlara dikkat edilmelidir:</p>
+                <ol>
+                    <li>Ölçüm sensörü, çalışanın iş yaptığı düzleme (masası, tezgahı veya kontrol paneli üzerine) <strong>yatay olarak</strong> yerleştirilmelidir.</li>
+                    <li>Ölçüm yapan kişinin gölgesi veya ortamdaki engeller sensör üzerine düşmemelidir.</li>
+                    <li>Genel aydınlatma ölçümlerinde çalışma yüzeyi yerden <strong>0,8 – 1,0 m</strong> yükseklikte kabul edilerek ölçüm alınır.</li>
+                </ol>
+            </div>
+
+            <h3 class="subsection-title">Aydınlatma Kalite Parametreleri ve Prensipleri</h3>
+
+            <div class="card">
+                <p>İyi bir işyeri aydınlatması yalnızca ışık miktarından ibaret olmayıp, niteliksel parametrelerin de dengelenmesini gerektirir:</p>
+                <ul>
+                    <li><strong>Doğal ve Yapay Aydınlatma Yöntemleri:</strong>
+                        <ul>
+                            <li><strong>Doğal Aydınlatma (Güneş Işığı):</strong> İnsan biyolojisi ve sirkadiyen ritim için en ideal kaynak olsa da, zamanla değişmesi, mevsimsel dalgalanmalar ve kontrol edilemeyen parlaklık dezavantajlarıdır. İşyerlerinde ana kural, ortamın öncelikle doğal ışıkla aydınlatılması, yetersiz kaldığı durumlarda yapay aydınlatma ile desteklenmesidir.</li>
+                            <li><strong>Yapay Aydınlatma:</strong> Elektrikli ışık kaynakları ile sağlanan, denetlenebilir aydınlatmadır.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Kamaşma (Glare):</strong> Görsel alandaki aşırı parlaklık veya parıltı farkları nedeniyle gözün geçici olarak görme yetisini kaybetmesi veya rahatsızlık hissetmesidir. <strong>Doğrudan</strong> (ışık kaynağından gelen) veya <strong>dolaylı</strong> (parlak yüzeylerden yansıyan) kamaşma dikkat dağınıklığına ve kaza riskine yol açar.</li>
+                    <li><strong>Gölge Oluşumu:</strong> Sert ve keskin gölgeler cisimlerin boyut ve derinlik algısını bozar. Çalışma alanlarında gölgelenmeyi önlemek için ışığın <strong>yaygın (difüz)</strong> olarak dağıtılması esastır.</li>
+                    <li><strong>Renk İşleme İndeksi (CRI - Colour Rendering Index):</strong> Bir ışık kaynağının, nesnelerin gerçek renklerini doğal güneş ışığına kıyasla ne kadar doğru gösterebildiğinin ölçütüdür (<strong>0–100 skalası</strong>). Hassas kalite kontrol ve montaj işlerinde yüksek CRI (&gt;80–90) değerine sahip armatürler seçilmelidir.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">İşin Niteliğine Göre Aydınlatma Şiddeti</h3>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Yapılan İşin Niteliği / Çalışma Alanı</th>
+                            <th>Asgari Aydınlatma Şiddeti [lx]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kaba İşler / Kaba Montaj / Depo ve Yükleme Alanları</td>
+                            <td><strong>100 – 200 lx</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Genel Ofis İşleri / Okuma-Yazma / Normal Montaj Tezgahları</td>
+                            <td><strong>300 – 500 lx</strong></td>
+                        </tr>
+                        <tr>
+                            <td>İnce İşler / İnce Montaj / Çizim Büroları / Kalite Kontrol</td>
+                            <td><strong>750 – 1000 lx</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Çok İnce ve Hassas İşler / Kuyumculuk / Mikro-Montaj / Hassas Muayene</td>
+                            <td><strong>1500 lx ve üzeri</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 4. TERMAL KONFOR                                             -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum3-4">
+            <h2 class="section-title">
+                <span class="num">4</span>
+                Termal Konfor ve İklimlendirme Dinamikleri
+            </h2>
+
+            <h3 class="subsection-title">Giriş ve Stratejik Önem</h3>
+
+            <div class="card">
+                <p>
+                    <strong>Termal konfor;</strong> bir işyerinde çalışanların büyük çoğunluğunun bedensel ve zihinsel faaliyetlerini sürdürürken iklimsel çevre koşulları (sıcaklık, nem, hava akımı, radyant ısı) açısından <strong>ne çok sıcak ne de çok soğuk</strong> bir ortamda bulunarak fizyolojik rahatlık hissetmesi durumudur. Çalışma ortamı gözetimi yürüten İSG profesyonelleri, termal konfor şartlarını düzenli olarak izlemekle yükümlüdür. Termal konfor dengesinin bozulması, metabolik ısı birikimine veya aşırı ısı kaybına yol açarak çalışanlarda <strong>sıcak stresi</strong> veya <strong>soğuk stresini</strong> tetikler; bu durum dikkat kaybına, yorgunluğa ve iş kazalarında belirgin artışa neden olur.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">4 Temel Çevre Değişkeni ve Ölçüm Cihazları</h3>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parametre</th>
+                            <th>Optimal / Kabul Edilebilir İdeal Aralıklar</th>
+                            <th>Ölçüm Cihazı</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Hava Sıcaklığı</strong> (Kuru Termometre Sıcaklığı)</td>
+                            <td><strong>18 °C – 22 °C</strong> (Mevsime ve işin ağırlığına göre değişir)</td>
+                            <td>Cıvalı / Alkollü Termometre</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Bağıl Nem</strong></td>
+                            <td><strong>%30 – %60</strong> (İdeal sınır %45 – %50)</td>
+                            <td>Psikrometre / Higrometre</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Hava Akım Hızı ve Soğuma Gücü</strong></td>
+                            <td><strong>0,1 – 0,5 m/sn</strong> (&gt;0,5 m/sn cereyan rahatsızlığı yaratır)</td>
+                            <td>Anemometre / Katatermometre</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Radyant Sıcaklık</strong> (Yüzeylerden Yansıyan Isı)</td>
+                            <td>Ortam hava sıcaklığı ile dengeli (Aşırı fark bulunmamalı)</td>
+                            <td>Küresel Termometre (Globe Thermometer)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- METRİK: TERMAL KONFOR -->
+            <div class="metric-grid">
+                <div class="metric-card accent">
+                    <span class="mc-icon">🌡️</span>
+                    <div class="mc-value">18–22 °C</div>
+                    <div class="mc-label">Hava Sıcaklığı</div>
+                    <div class="mc-sub">Termometre</div>
+                </div>
+                <div class="metric-card success">
+                    <span class="mc-icon">💧</span>
+                    <div class="mc-value">%30–%60</div>
+                    <div class="mc-label">Bağıl Nem</div>
+                    <div class="mc-sub">Psikrometre / Higrometre</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">💨</span>
+                    <div class="mc-value">0,1–0,5 m/sn</div>
+                    <div class="mc-label">Hava Akım Hızı</div>
+                    <div class="mc-sub">Anemometre / Katatermometre</div>
+                </div>
+                <div class="metric-card">
+                    <span class="mc-icon">☀️</span>
+                    <div class="mc-value">Dengeli</div>
+                    <div class="mc-label">Radyant Sıcaklık</div>
+                    <div class="mc-sub">Küresel Termometre</div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Termodinamik Prensipler ve Isı Stresi</h3>
+
+            <div class="card">
+                <p><strong>Isı ve Sıcaklık Kavramsal Farkı:</strong></p>
+                <ul>
+                    <li><strong>Isı:</strong> Bir maddenin tüm moleküllerinin sahip olduğu toplam kinetik ve potansiyel enerjidir. Birimi <strong>Joule (J)</strong> veya <strong>Kalori (cal)</strong>'dir.</li>
+                    <li><strong>Sıcaklık:</strong> Madde moleküllerinin ortalama kinetik enerjisinin bir göstergesidir. Birimi <strong>Santigrat Derece (°C)</strong> veya <strong>Kelvin (K)</strong>'dir.</li>
+                </ul>
+                <p><strong>Vücut Isı Dengesi Denklemi:</strong> İnsan organizması sabit iç sıcaklığa (kor sıcaklığı yaklaşık <strong>37 °C</strong>) sahip homeostatik bir sistemdir. Vücut ısı dengesi akademik literatürde şu standart değişkenlerle formüle edilir:</p>
+            </div>
+
+            <div class="formula-box">
+                <div class="formula-label">Vücut Isı Dengesi</div>
+                <div class="formula">
+                    S = M ± R ± C ± K − E
+                </div>
+                <p style="margin-top:0.8rem; font-size:0.85rem; color:var(--text-light);">
+                    <strong>S:</strong> Isı Depolama &nbsp;|&nbsp;
+                    <strong>M:</strong> Metabolik Isı Üretimi &nbsp;|&nbsp;
+                    <strong>R:</strong> Radyasyon &nbsp;|&nbsp;
+                    <strong>C:</strong> Konveksiyon &nbsp;|&nbsp;
+                    <strong>K:</strong> Kondüksiyon &nbsp;|&nbsp;
+                    <strong>E:</strong> Buharlaşma / Terleme
+                </p>
+            </div>
+
+            <div class="card">
+                <p><strong>Yüksek Sıcaklıkta Isı Stresi Patolojileri:</strong></p>
+                <ul>
+                    <li><strong>Isı Çarpması (Heat Stroke):</strong> Terleme mekanizmasının çökmesi sonucu vücut kor sıcaklığının <strong>40,5 °C üzerine</strong> çıkması durumudur. Tıbbi acildir, koma ve ölümle sonuçlanabilir.</li>
+                    <li><strong>Isı Bitkinliği (Heat Exhaustion):</strong> Aşırı terlemeye bağlı su ve tuz kaybı sonucu gelişen hipotansiyon, halsizlik ve baş dönmesidir.</li>
+                    <li><strong>Isı Krampları:</strong> Aşırı terleme sırasında yalnızca su takviyesi yapılıp elektrolit (tuz) takviyesi yapılmaması sonucu kaslarda oluşan ağrılı kasılmalardır.</li>
+                </ul>
+                <p><strong>Aşırı Soğukta Çalışmanın Riskleri:</strong></p>
+                <ul>
+                    <li><strong>Hipotermi:</strong> Vücut kor sıcaklığının <strong>35 °C'nin altına</strong> düşmesidir. Titreme ile başlar, zihinsel konfüzyon ve kardiyak arrest ile devam eder.</li>
+                    <li><strong>Lokal Soğuk Isırması (Frostbite):</strong> Kanın hayati organlara yönelmesi sonucu periferik dokuların (parmaklar, kulak, burun) donması ve doku nekrozudur.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 5. RADYASYON                                                 -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum3-5">
+            <h2 class="section-title">
+                <span class="num">5</span>
+                Radyasyon (İyonize ve Non-İyonize Işınlar)
+            </h2>
+
+            <h3 class="subsection-title">Giriş ve Stratejik Önem</h3>
+
+            <div class="card">
+                <p>
+                    <strong>Radyasyon</strong>, kaynaktan dalga veya parçacık formunda yayılan enerjidir. Endüstride tahribatsız muayene (NDT), kaynak denetimi, seviye ölçümü, sterilizasyon ve tıbbi teşhis/tedavi alanlarında yaygın olarak kullanılmaktadır. Radyasyonun hücresel düzeyde (DNA ve biyolojik moleküller) oluşturduğu tahribat potansiyeli, etkilerinin yıllar sonra ortaya çıkabilmesi (<strong>stokastik etkiler</strong>) ve mevzuattaki sıkı denetim kuralları nedeniyle İSG çalışmalarında kritik bir yere sahiptir. Özellikle sağlık gözetimi ve maruziyet kayıtlarının <strong>30 yıl saklanması</strong> kuralı sınav sorularında sıklıkla vurgulanmaktadır.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">İyonize ve Non-İyonize Radyasyon Kıyaslama Analizi</h3>
+
+            <div class="card">
+                <p><strong>1. İyonize Radyasyon</strong></p>
+                <p>
+                    Maddeden geçerken atomlardan elektron kopararak doğrudan veya dolaylı iyonlaşma oluşturan, yüksek enerjili dalga ve parçacıklardır.
+                </p>
+                <ul>
+                    <li><strong>Alfa (α) Parçacıkları:</strong> Helyum çekirdeğidir (2 proton, 2 nötron). Penetrasyon (giricilik) gücü en düşüktür; bir kağıt parçası veya insan derisinin ölü tabakası (epidermis) tarafından durdurulabilir. Ancak vücut içine solunum veya sindirimle alındığında <strong>dahili radyasyon tahribatı son derece yüksektir</strong>.</li>
+                    <li><strong>Beta (β) Parçacıkları:</strong> Yüksek hızlı elektron veya pozitronlardır. Penetrasyon gücü orta düzeydedir; ince bir alüminyum levha ile zırhlanabilir.</li>
+                    <li><strong>Gama (γ) Işınları:</strong> Çekirdekten yayılan yüksek frekanslı elektromanyetik dalgalardır. Penetrasyon gücü çok yüksektir; ancak kalın kurşun veya beton bloklarla zırhlanabilir.</li>
+                    <li><strong>X-Işınları (Röntgen Işınları):</strong> Atomun elektron bulutundaki geçişlerden elde edilen, Gama ışınlarına benzer yüksek giriciliğe sahip elektromanyetik dalgalardır.</li>
+                    <li><strong>Nötronlar:</strong> Çekirdek tepkimelerinden yayılan yüksüz parçacıklardır. Giriciliği son derece yüksektir; su, parafin gibi hidrojen bakımından zengin malzemelerle yavaşlatılır ve zırhlanır.</li>
+                    <li><strong>Ölçüm Cihazları:</strong> Geiger-Müller Sayacı, İyon Odaları, Sintilasyon Dedektörleri ve bireysel doz takibi için Kişisel Dozimetreler (Film Dozimetre, TLD - Termolüminesans Dozimetre) kullanılır.</li>
+                </ul>
+
+                <p style="margin-top:1rem;"><strong>2. Non-İyonize (İyonlaştırıcı Olmayan) Radyasyon</strong></p>
+                <p>
+                    Atomlardan elektron koparmaya yetecek enerjiye sahip olmayan, ancak moleküler titreşim ve ısı artışına neden olan elektromanyetik ışınımlardır.
+                </p>
+                <ul>
+                    <li><strong>Morötesi (Ultraviyole - UV) Işınlar:</strong> Kaynak işleri, fototerapi, güneş ışığı. <em>Sağlık Etkileri:</em> Akut kaynak alma göz iltihabı (fotokeratit), deri yanıkları, uzun vadede cilt kanseri ve katarakt.</li>
+                    <li><strong>Kızılötesi (İnfrared - IR) Işınlar:</strong> Dökümhaneler, fırınlar, cam imalatı. <em>Sağlık Etkileri:</em> Deri yanıkları ve camcı kataraktı (ısıya bağlı lens bulanıklaşması).</li>
+                    <li><strong>Mikrodalga ve Radyo Dalgaları (RF):</strong> Radar sistemleri, telekomünikasyon, endüstriyel kurutma. <em>Sağlık Etkileri:</em> Dokularda derin ısınma (hipertermi) ve organ harabiyeti.</li>
+                    <li><strong>Lazer Işınları:</strong> Hassas kesim, ölçüm, tıbbi cihazlar. <em>Sağlık Etkileri:</em> Odaklanmış yüksek enerji nedeniyle retina yanığı ve ani kalıcı körlük.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">Radyasyondan Korunma Prensipleri ve Yasal Belge Yönetimi</h3>
+
+            <div class="card">
+                <p>Dış radyasyon maruziyetini en aza indirmek için <strong>3 Altın Korunma Kuralı</strong> uygulanır:</p>
+                <ol>
+                    <li><strong>Zaman:</strong> Radyasyon kaynağı yakınında geçirilen süre olabildiğince kısa tutulmalıdır (Alınan doz maruziyet süresiyle doğru orantılıdır).</li>
+                    <li><strong>Mesafe:</strong> Kaynaktan mümkün olduğunca uzak durulmalıdır. Dış radyasyon dozu, kaynağa olan mesafenin karesiyle ters orantılı olarak azalır <strong>(Ters Kare Yasası: D ∝ 1/r²)</strong>.</li>
+                    <li><strong>Zırhlama:</strong> Kaynak ile çalışan arasına ışın türüne uygun özellikte yoğun malzeme (kurşun, beton, alüminyum, su) yerleştirilmelidir.</li>
+                </ol>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>Yasal Belge Saklama Süresi:</strong> İyonize radyasyonla çalışanların sağlık gözetim kayıtları, kişisel dozimetre maruziyet sonuçları ve radyoaktif kaynak kayıtları, çalışan maruziyetinin sona ermesinden itibaren <strong>en az 30 yıl</strong> süreyle saklanmak zorundadır.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 6. BASINÇ                                                    -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum3-6">
+            <h2 class="section-title">
+                <span class="num">6</span>
+                Basınç Etmenleri ve Fizyolojik Sınırlar
+            </h2>
+
+            <h3 class="subsection-title">Giriş ve Stratejik Önem</h3>
+
+            <div class="card">
+                <p>
+                    Çalışma hayatında normal atmosferik basıncın üzerindeki (<strong>yüksek basınç</strong>) veya altındaki (<strong>alçak basınç</strong>) ortamlarda yürütülen faaliyetler, gazların fiziko-kimyasal yasalarına (Henry, Dalton, Boyle-Mariotte Yasaları) bağlı olarak insan vücudunda ağır fizyolojik hastalıklara yol açar. Dalgıçlık, tünel/caisson inşaatları, madencilik veya yüksek irtifa havacılık işlerinde basınç yönetimi hayati önem taşır. Sınav sorularında birim dönüşümleri ve patolojik mekanizmalar (Caisson hastalığı, Hipoksi) sıklıkla sorgulanmaktadır.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">Basınç Tanımı ve Standart Birim Dönüşümleri</h3>
+
+            <div class="formula-box">
+                <div class="formula-label">Standart Eşdeğerlikler</div>
+                <div class="formula" style="font-size:1.05rem;">
+                    1 atm = 760 mmHg = 101,3 kPa = 1,013 bar = 10,33 mSS
+                </div>
+                <p style="margin-top:0.6rem; font-size:0.8rem; color:var(--text-light);">
+                    mSS: metre su sütunu
+                </p>
+            </div>
+
+            <div class="exam-box">
+                <p><strong>Basınç Hesaplama Tuzağı:</strong> Sualtı ve dalgıçlık çalışmalarında basınç değişimleri hesaplanırken suyun hidrostatik basıncı dikkate alınır. Derinliğe inildikçe <strong>her 10 metrede basınç yaklaşık 1 atm (10,33 mSS) artar</strong>.</p>
+                <p>Örneğin <strong>20 metre derinlikte</strong> çalışan bir dalgıç; <strong>1 atm atmosferik basınç + 2 atm su basıncı = toplam 3 atm mutlak basınca</strong> maruz kalır.</p>
+            </div>
+
+            <h3 class="subsection-title">Yüksek Basınç ve Dekompresyon (Vurgun) Hastalığı</h3>
+
+            <div class="card">
+                <p>
+                    Normal atmosferik basıncın (1 atm) üzerindeki çalışma koşulları <strong>Yüksek Basınç</strong> olarak adlandırılır. Sualtı dalgıçlık işleri, batık çıkarma, tüp/tünel imalatları (<strong>Caisson / Keson çalışmaları</strong>) yüksek basınçlı çalışma alanlarıdır.
+                </p>
+                <p><strong>Dekompresyon (Caisson Hastalığı / Vurgun) Mekanizması:</strong></p>
+                <ul>
+                    <li><strong>Gelişimi (Henry Yasası):</strong> Yüksek basınç altında solunan havadaki <strong>azot (N₂) gazı</strong>, dokularda ve kanda çözünmüş halde birikir. Basınç ne kadar yüksekse çözünen azot miktarı o kadar artar.</li>
+                    <li><strong>Kabarcıklaşma Sebebi:</strong> Yüksek basınçlı ortamdan normal atmosferik basınca <strong>hızlı ve kademesiz (dekompresyonsuz)</strong> dönüldüğünde, çözünmüş haldeki azot gazı hızla sıvı fazdan gaz fazına geçer ve kanda/dokularda <strong>azot gaz kabarcıkları (N₂ kabarcıkları)</strong> oluşturur.</li>
+                    <li><strong>Klinik Sonuçları:</strong>
+                        <ul>
+                            <li>Kılcal damarların gaz kabarcıklarıyla tıkanması (<strong>emboli</strong>).</li>
+                            <li>Şiddetli eklem ve kas ağrıları (<em>bends</em>).</li>
+                            <li>Solunum güçlüğü ve göğüs ağrısı (<em>chokes</em>).</li>
+                            <li>Merkezi sinir sistemi felçleri, iç kulak hasarına bağlı vestibüler bozukluklar ve tedavi edilmezse <strong>ölüm</strong>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Önleme:</strong> Basınç düşüşünün <strong>kademeli (dekompresyon durakları yapılarak)</strong> gerçekleştirilmesi ve gerektiğinde <strong>Hiperbarik Oksijen Tedavisi (Basınç Odası)</strong> uygulanması zorunludur.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">Alçak Basınç ve Hipoksi Etkileri</h3>
+
+            <div class="card">
+                <p>
+                    Deniz seviyesinin üzerindeki yüksek rakımlı dağlık alanlarda, havacılık sektöründe veya yüksek irtifadaki tesislerde atmosfer basıncı düşer.
+                </p>
+                <ul>
+                    <li><strong>Fizyolojik Mekanizma:</strong> Yükseklere çıkıldıkça havadaki oksijen oranı (<strong>%21</strong>) sabit kalsa da, toplam atmosferik basınç düştüğü için oksijenin <strong>parsiyel basıncı (P<sub>O₂</sub>) azalır</strong>.</li>
+                    <li><strong>Anoksi / Hipoksi:</strong> Oksijen parsiyel basıncının düşmesi sonucu kanda hemoglobine bağlanan oksijen miktarı azalır ve dokulara yeterli oksijen taşınamaz. Dokuların oksijensiz kalması durumuna <strong>Hipoksi</strong> (hiç oksijen alamamasına <strong>Anoksi</strong>) denir.</li>
+                    <li><strong>Semptomlar ve Dağ Hastalığı (Acute Mountain Sickness):</strong> Baş ağrısı, nefes darlığı, yorgunluk, bulantı, yüksek irtifa akciğer ve beyin ödemi gelişebilir.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SINAV ÖZET TABLOSU                                           -->
+        <!-- ============================================================ -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="num">★</span>
+                Sınav Özet Tablosu
+            </h2>
+
+            <div class="card">
+                <p>
+                    Bölüm 3 bünyesinde incelenen tüm fiziksel risk etmenleri, ölçüm cihazları, birimleri ve yasal/ideal değerler sınav tekrarı amacıyla aşağıda özetlenmiştir:
+                </p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fiziksel Risk Etmeni</th>
+                            <th>Ölçüm Cihazı</th>
+                            <th>Temel Birim</th>
+                            <th>Yasal Sınır / Eylem Değeri veya İdeal Parametre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Gürültü</strong></td>
+                            <td>Sonometre / Dozimetre</td>
+                            <td>dBA / dBC</td>
+                            <td>En Düşük Eylem: <strong>80 dBA / 135 dBC</strong><br>En Yüksek Eylem: <strong>85 dBA / 137 dBC</strong><br>Maruziyet Sınırı: <strong>87 dBA / 140 dBC</strong> (KKD Dahil)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>El-Kol Titreşimi</strong> (ISO 5349)</td>
+                            <td>İvmeölçer (Okselerometre)</td>
+                            <td>m/s²</td>
+                            <td>Eylem Değeri A(8): <strong>2,5 m/s²</strong><br>Sınır Değeri A(8): <strong>5,0 m/s²</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tüm Vücut Titreşimi</strong> (ISO 2631)</td>
+                            <td>İvmeölçer (Seat-pad)</td>
+                            <td>m/s²</td>
+                            <td>Eylem Değeri A(8): <strong>0,5 m/s²</strong><br>Sınır Değeri A(8): <strong>1,15 m/s²</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Aydınlatma</strong></td>
+                            <td>Lüksmetre</td>
+                            <td>Lüks (lx)</td>
+                            <td>Kaba İş: <strong>100–200 lx</strong><br>Ofis/Montaj: <strong>300–500 lx</strong><br>Hassas İş: <strong>1500+ lx</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hava Sıcaklığı</strong></td>
+                            <td>Termometre</td>
+                            <td>°C</td>
+                            <td>İdeal: <strong>18 °C – 22 °C</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bağıl Nem</strong></td>
+                            <td>Psikrometre / Higrometre</td>
+                            <td>%</td>
+                            <td>İdeal: <strong>%30 – %60</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hava Akım Hızı ve Soğuma Gücü</strong></td>
+                            <td>Anemometre / Katatermometre</td>
+                            <td>m/sn</td>
+                            <td>İdeal: <strong>0,1 – 0,5 m/sn</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Radyant Sıcaklık</strong></td>
+                            <td>Küresel Termometre</td>
+                            <td>°C</td>
+                            <td>Ortam hava sıcaklığı ile dengeli</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İyonize Radyasyon</strong></td>
+                            <td>Geiger-Müller / Dozimetre</td>
+                            <td>Sievert (Sv) / Gray (Gy)</td>
+                            <td>Sağlık gözetimi ve maruziyet kayıtları saklama süresi: <strong>30 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Basınç</strong></td>
+                            <td>Barometre / Manometre</td>
+                            <td>atm / mmHg / kPa / mSS</td>
+                            <td><strong>1 atm = 760 mmHg = 101,3 kPa = 10,33 mSS</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <p>
+                    İş sağlığı ve güvenliği uygulamalarında fiziksel risk etmenlerinin denetimi, doğrudan <strong>Çalışma Ortamı Gözetimi yükümlülükleri</strong> kapsamında yer alır. Ölçülen ve değerlendirilen tüm verilerin İş Güvenliği Uzmanı ve İşyeri Hekimi tarafından ortaklaşa <strong>Yıllık Değerlendirme Raporu (EK-2)</strong> formuna işlenerek arşivlenmesi yasal bir zorunluluktur. Sınav hazırlığında, <strong>eylem/sınır değerlerindeki KKD kullanım ayrımına</strong>, <strong>ivme hesaplama formüllerine</strong> ve <strong>basınç birim dönüşümlerine</strong> bilhassa dikkat edilmelidir.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BÖLÜM GEZİNME (ALT)                                          -->
+        <!-- ============================================================ -->
+        <nav class="chapter-nav" aria-label="Bölümler arası gezinme">
+            <a href="../bolum-02/konu-anlatimi.html" class="prev">
+                <span class="cn-arrow">←</span>
+                <span class="cn-text">
+                    <small>Önceki Bölüm</small>
+                    <strong>Bölüm 2: Ortam Ölçümleri, Kayıtlar</strong>
+                </span>
+            </a>
+            <a href="../bolum-04/konu-anlatimi.html" class="next">
+                <span class="cn-arrow">→</span>
+                <span class="cn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Bölüm 4: Konu Anlatımı</strong>
+                </span>
+            </a>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- HAZIRLAYAN KARTI                                             -->
+        <!-- ============================================================ -->
+        <section class="author-card" aria-label="Hazırlayan bilgileri">
+            <div class="avatar" aria-hidden="true">SA</div>
+            <div class="author-info">
+                <h3>Sıraç Aksan</h3>
+                <p class="role">
+                    Konya Teknik Üniversitesi<br>
+                    İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans<br>
+                    <strong>Ders:</strong> Çalışma Ortamı Gözetimi &nbsp;|&nbsp; <strong>Öğretim Üyesi:</strong> Bilgehan Kekeç
+                </p>
+                <div class="contact-row">
+                    <a href="tel:+905069282100" aria-label="Telefon">
+                        <span aria-hidden="true">📞</span> 0506 928 21 00
+                    </a>
+                    <a href="mailto:saracaksan@gmail.com" aria-label="E-posta">
+                        <span aria-hidden="true">✉️</span> saracaksan@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- ==================== SAYFA SONU ==================== -->
+<footer class="page-footer">
+    <div class="container">
+        <p><strong>Çalışma Ortamı Gözetimi</strong> — Bölüm 3: Fiziksel Risk Etmenleri, Termal Konfor ve Aydınlatma</p>
+        <p>
+            <a href="../../../index.html">Tüm Dersler</a> &nbsp;·&nbsp;
+            <a href="../index.html">Ders Ana Sayfası</a> &nbsp;·&nbsp;
+            <a href="sorular.html">Sorular</a> &nbsp;·&nbsp;
+            <a href="sunum.html">Sunum</a>
+        </p>
+        <p style="margin-top:0.6rem; font-size:0.76rem; opacity:0.75;">
+            © 2026 Sıraç Aksan — Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans<br>
+            Bu içerik yalnızca eğitim amaçlıdır. Güncel mevzuat için resmî kaynaklara başvurunuz.
+        </p>
+    </div>
+</footer>
+
+<!-- ==================== YUKARI ÇIK BUTONU ==================== -->
+<button class="scroll-top" id="scrollTopBtn" aria-label="Sayfanın başına dön" title="Yukarı çık">↑</button>
+
+<script>
+    (function () {
+        'use strict';
+
+        var btn = document.getElementById('scrollTopBtn');
+        var toggle = function () {
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        };
+        window.addEventListener('scroll', toggle, { passive: true });
+        toggle();
+
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var targetId = this.getAttribute('href').slice(1);
+                if (!targetId) return;
+                var target = document.getElementById(targetId);
+                if (!target) return;
+                e.preventDefault();
+                var offset = target.getBoundingClientRect().top + window.scrollY - 20;
+                window.scrollTo({ top: offset, behavior: 'smooth' });
+                history.replaceState(null, '', '#' + targetId);
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

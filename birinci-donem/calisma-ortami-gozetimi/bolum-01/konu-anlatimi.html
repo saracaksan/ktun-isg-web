@@ -1,1 +1,1418 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Çalışma Ortamı Gözetimi · Bölüm 01 · Konu Anlatımı</title><style>*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#172033}a{text-decoration:none;color:inherit}.top{background:linear-gradient(135deg,#071a33,#1769aa);color:white}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:900}.brand small{display:block;color:#b9cce0;font-size:10px;margin-top:4px}.back{border:1px solid #ffffff2b;padding:9px 13px;border-radius:9px;font-size:11px;background:#ffffff0d}.hero{padding:52px 0}.eyebrow{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#b9e7ff;font-weight:800}.hero h1{font-size:clamp(30px,4vw,48px);margin:14px 0 8px;line-height:1.08}.hero p{color:#cbd9e6;font-size:13px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{font-size:10px;padding:7px 10px;border-radius:8px;background:#ffffff12;border:1px solid #ffffff18}main{padding:35px 0 70px}.head{margin-bottom:20px}.head h2{margin:0;color:#071a33}.head p{color:#64748b;font-size:11px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 5px 22px #0f172a0a}.num{width:34px;height:34px;border-radius:9px;background:#eef6fc;color:#1769aa;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}.card h3{margin:14px 0 7px;font-size:15px}.card p{font-size:10px;color:#64748b}.links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px}.links a{font-size:9px;font-weight:800;color:#1769aa;background:#f6f9fc;border:1px solid #e7edf3;border-radius:8px;padding:10px 5px;text-align:center}.empty{padding:20px;background:white;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b;font-size:11px}.footer{background:#04101f;color:#91a6bb;padding:25px 0;font-size:10px;line-height:1.7}@media(max-width:700px){.grid{grid-template-columns:1fr}.links{grid-template-columns:1fr}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}}</style></head><body><header class="top"><div class="wrap nav"><div class="brand">KTÜN · İSG Eğitim Portalı<small>2026–2027</small></div><a class="back" href="../../index.html">← Ders Ana Sayfası</a></div><div class="wrap hero"><span class="eyebrow">Çalışma Ortamı Gözetimi</span><h1>Bölüm 01</h1><p>Konu Anlatımı</p><div class="meta"><span class="pill">Bölüm 01</span><span class="pill">Konu Anlatımı</span></div></div></header><main><div class="wrap"><div class="empty">Bu alan içerik eklenmesi için hazırdır. Şu anda boş bırakılmıştır.</div></div></main><footer class="footer"><div class="wrap">Hazırlayan: Sıraç AKSAN · 0506 928 22 10 · saracaksan@gmail.com</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Çalışma Ortamı Gözetimi - Bölüm 1: Giriş, Kapsam, Mevzuat ve Sorumluluklar | Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans">
+    <meta name="author" content="Sıraç Aksan">
+    <title>Bölüm 1: Giriş, Kapsam, Mevzuat ve Sorumluluklar | Çalışma Ortamı Gözetimi</title>
+    <style>
+        :root {
+            --primary: #0f4c5c;
+            --primary-light: #1b6b7a;
+            --accent: #e36414;
+            --accent-light: #fb8b24;
+            --bg: #f5f7fa;
+            --card: #ffffff;
+            --text: #1e2a32;
+            --text-light: #4a5a68;
+            --border: #d9e2ec;
+            --exam-bg: #fff4e6;
+            --exam-border: #e36414;
+            --success: #2a9d8f;
+            --warning: #e9c46a;
+            --danger: #e76f51;
+            --info: #264653;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+
+        /* ==================== ÜST BAŞLIK ==================== */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: #fff;
+            padding: 2.5rem 1.5rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            right: -40px;
+            width: 220px;
+            height: 220px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+        }
+
+        .page-header .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.3px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            align-items: center;
+        }
+
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+            transition: border-bottom-style 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            border-bottom-style: solid;
+        }
+
+        .breadcrumb .sep {
+            opacity: 0.6;
+        }
+
+        .page-header h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+        }
+
+        .page-header .subtitle {
+            font-size: 1rem;
+            opacity: 0.92;
+            font-weight: 400;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.3rem 0.85rem;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        .badge-primary { background: rgba(255,255,255,0.2); color: #fff; }
+        .badge-accent { background: var(--accent); color: #fff; }
+        .badge-success { background: var(--success); color: #fff; }
+
+        /* ==================== KONTEYNER ==================== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        main {
+            padding: 2rem 0 3rem;
+        }
+
+        /* ==================== HIZLI ERİŞİM ==================== */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .quick-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 0.92rem;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .quick-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .quick-nav a .qn-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 1.15rem;
+            flex-shrink: 0;
+        }
+
+        .quick-nav a.qn-accent .qn-icon { background: var(--accent); }
+        .quick-nav a.qn-success .qn-icon { background: var(--success); }
+        .quick-nav a.qn-warning .qn-icon { background: var(--warning); color: #5a3a1a; }
+
+        .quick-nav a .qn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+        }
+
+        .quick-nav a .qn-text small {
+            font-weight: 400;
+            font-size: 0.75rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+
+        /* ==================== İÇİNDEKİLER ==================== */
+        .toc {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem 1.75rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.06);
+        }
+
+        .toc h2 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc h2::before {
+            content: '📋';
+            font-size: 1.2rem;
+        }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.4rem 2rem;
+        }
+
+        .toc ol li {
+            counter-increment: toc-counter;
+            padding: 0.35rem 0;
+            border-bottom: 1px dashed var(--border);
+            font-size: 0.92rem;
+        }
+
+        .toc ol li::before {
+            content: counter(toc-counter) ". ";
+            font-weight: 700;
+            color: var(--accent);
+            margin-right: 0.25rem;
+        }
+
+        .toc ol li a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc ol li a:hover {
+            color: var(--accent);
+        }
+
+        /* ==================== BÖLÜM BAŞLIKLARI ==================== */
+        .section {
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            padding-bottom: 0.6rem;
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .section-title .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .subsection-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            margin: 1.8rem 0 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .subsection-title::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 22px;
+            background: var(--accent);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        /* ==================== KARTLAR ==================== */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem 1.75rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.05);
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 16px rgba(15,76,92,0.1);
+        }
+
+        .card p {
+            margin-bottom: 0.8rem;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ==================== SINAV KUTUSU ==================== */
+        .exam-box {
+            background: var(--exam-bg);
+            border-left: 5px solid var(--exam-border);
+            border-radius: 0 12px 12px 0;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+
+        .exam-box::before {
+            content: '⚠️ SINAVDA ÇIKABİLİR';
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .exam-box p, .exam-box li {
+            font-size: 0.95rem;
+            color: #5a3a1a;
+        }
+
+        .exam-box ul, .exam-box ol {
+            margin: 0.5rem 0 0.5rem 1.2rem;
+        }
+
+        /* ==================== BİLGİ KUTUSU ==================== */
+        .info-box {
+            background: #e8f4f8;
+            border-left: 5px solid var(--primary-light);
+            border-radius: 0 12px 12px 0;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .info-box::before {
+            content: 'ℹ️ AKADEMİK NOT';
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 800;
+            color: var(--primary-light);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== UYARI KUTUSU ==================== */
+        .warning-box {
+            background: #fde8e8;
+            border-left: 5px solid var(--danger);
+            border-radius: 0 12px 12px 0;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .warning-box::before {
+            content: '🚨 KRİTİK HUKUKİ UYARI';
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 800;
+            color: var(--danger);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== LİSTELER ==================== */
+        .card ul, .card ol {
+            margin: 0.5rem 0 0.8rem 1.4rem;
+        }
+
+        .card ul li, .card ol li {
+            margin-bottom: 0.4rem;
+        }
+
+        .card ul li::marker {
+            color: var(--accent);
+        }
+
+        .card ol li::marker {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* ==================== TABLOLAR ==================== */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            background: var(--card);
+            min-width: 620px;
+        }
+
+        thead {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        thead th {
+            padding: 0.85rem 1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.3px;
+        }
+
+        tbody td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        tbody tr:hover {
+            background: #eef6f8;
+        }
+
+        /* ==================== DİYAGRAM ==================== */
+        .diagram {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+
+        .diagram-item {
+            flex: 1 1 180px;
+            max-width: 240px;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.2rem;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .diagram-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .diagram-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .diagram-item h4 {
+            font-size: 0.95rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .diagram-item p {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* ==================== VURGU ==================== */
+        .highlight {
+            background: linear-gradient(transparent 60%, #ffe066 60%);
+            font-weight: 600;
+            padding: 0 2px;
+        }
+
+        .keyword {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin: 0 2px;
+        }
+
+        .keyword-accent {
+            background: var(--accent);
+        }
+
+        /* ==================== ALINTI ==================== */
+        blockquote {
+            background: #f0f4f8;
+            border-left: 4px solid var(--primary-light);
+            padding: 1rem 1.5rem;
+            margin: 1.2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.92rem;
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.6rem;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.82rem;
+            color: var(--primary);
+        }
+
+        /* ==================== ALT / ÜST GEZİNME ==================== */
+        .chapter-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.1rem 1.35rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .chapter-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .chapter-nav a.next {
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+
+        .chapter-nav a .cn-arrow {
+            font-size: 1.5rem;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .chapter-nav a .cn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+            flex: 1;
+        }
+
+        .chapter-nav a .cn-text small {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .chapter-nav a .cn-text strong {
+            font-size: 0.95rem;
+            color: var(--primary);
+        }
+
+        /* ==================== HAZIRLAYAN KARTI ==================== */
+        .author-card {
+            background: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.5rem 1.75rem;
+            margin: 2rem 0 1.5rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.25rem;
+            align-items: center;
+            box-shadow: 0 6px 20px rgba(15,76,92,0.18);
+        }
+
+        .author-card .avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            border: 2px solid rgba(255,255,255,0.35);
+            flex-shrink: 0;
+        }
+
+        .author-card .author-info h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            letter-spacing: 0.3px;
+        }
+
+        .author-card .author-info .role {
+            font-size: 0.82rem;
+            opacity: 0.85;
+            margin-bottom: 0.6rem;
+            line-height: 1.45;
+        }
+
+        .author-card .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.25rem;
+            font-size: 0.85rem;
+        }
+
+        .author-card .contact-row a,
+        .author-card .contact-row span {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            opacity: 0.95;
+            transition: opacity 0.2s;
+        }
+
+        .author-card .contact-row a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* ==================== SAYFA SONU ==================== */
+        .page-footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.85);
+            text-align: center;
+            padding: 1.75rem 1.5rem;
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+
+        .page-footer .container p {
+            margin-bottom: 0.4rem;
+        }
+
+        .page-footer a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+        }
+
+        .page-footer a:hover {
+            border-bottom-style: solid;
+        }
+
+        /* ==================== YUKARI ÇIK BUTONU ==================== */
+        .scroll-top {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(227,100,20,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+            z-index: 999;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-3px);
+            background: var(--accent-light);
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            body { font-size: 15px; }
+            .page-header { padding: 1.75rem 1rem 1.5rem; }
+            .page-header h1 { font-size: 1.35rem; }
+            .page-header .subtitle { font-size: 0.9rem; }
+            .breadcrumb { font-size: 0.78rem; }
+            .badge { font-size: 0.7rem; padding: 0.25rem 0.7rem; }
+            .container { padding: 0 1rem; }
+            .toc { padding: 1.1rem 1.2rem; }
+            .toc ol { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.2rem; gap: 0.5rem; }
+            .section-title .num { width: 30px; height: 30px; font-size: 0.85rem; }
+            .subsection-title { font-size: 1.05rem; }
+            .card { padding: 1.1rem 1.2rem; }
+            .exam-box, .info-box, .warning-box { padding: 1rem 1.1rem; }
+            table { font-size: 0.82rem; min-width: 560px; }
+            thead th, tbody td { padding: 0.6rem 0.7rem; }
+            .diagram-item { flex: 1 1 100%; max-width: 100%; }
+            .chapter-nav { grid-template-columns: 1fr; }
+            .chapter-nav a.next { flex-direction: row; text-align: left; }
+            .author-card { grid-template-columns: 1fr; text-align: center; }
+            .author-card .avatar { margin: 0 auto; }
+            .author-card .contact-row { justify-content: center; }
+            .quick-nav { grid-template-columns: 1fr; }
+            .scroll-top { bottom: 1rem; right: 1rem; width: 42px; height: 42px; }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 { font-size: 1.15rem; }
+            .section-title { font-size: 1.08rem; }
+            blockquote { padding: 0.85rem 1rem; font-size: 0.88rem; }
+        }
+
+        /* ==================== YAZDIRMA ==================== */
+        @media print {
+            .page-header { background: #fff !important; color: #000 !important; }
+            .page-header h1, .page-header .subtitle, .breadcrumb a { color: #000 !important; }
+            .badge { border: 1px solid #ccc; color: #000 !important; background: #f0f0f0 !important; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .exam-box { background: #fff; border: 1px solid #e36414; }
+            .scroll-top, .quick-nav, .chapter-nav { display: none !important; }
+            .author-card { background: #f0f0f0 !important; color: #000 !important; }
+            .author-card .contact-row a, .author-card .contact-row span { color: #000 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== ÜST BAŞLIK ==================== -->
+<header class="page-header">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="Site haritası">
+            <a href="../../../index.html">🏠 Tüm Dersler</a>
+            <span class="sep">›</span>
+            <a href="../index.html">📚 Çalışma Ortamı Gözetimi</a>
+            <span class="sep">›</span>
+            <span>Bölüm 1</span>
+        </nav>
+        <h1>Bölüm 1: Giriş, Kapsam, Mevzuat ve Sorumluluklar</h1>
+        <p class="subtitle">Çalışma Ortamı Gözetiminin Tanımı, Amacı, Yasal Çerçevesi ve Sorumluluk Paylaşımı</p>
+        <div class="badge-row">
+            <span class="badge badge-primary">6331 Sayılı Kanun</span>
+            <span class="badge badge-accent">ILO 155 &amp; 161</span>
+            <span class="badge badge-success">Sınav Odaklı</span>
+        </div>
+    </div>
+</header>
+
+<!-- ==================== İÇERİK ==================== -->
+<main>
+    <div class="container">
+
+        <!-- HIZLI ERİŞİM -->
+        <nav class="quick-nav" aria-label="Hızlı erişim">
+            <a href="konu-anlatimi.html" class="qn-accent">
+                <span class="qn-icon">📖</span>
+                <span class="qn-text">Konu Anlatımı<small>Bu sayfa</small></span>
+            </a>
+            <a href="sorular.html" class="qn-success">
+                <span class="qn-icon">❓</span>
+                <span class="qn-text">Sorular<small>Test &amp; alıştırma</small></span>
+            </a>
+            <a href="sunum.html" class="qn-warning">
+                <span class="qn-icon">📊</span>
+                <span class="qn-text">Sunum<small>Slayt gösterisi</small></span>
+            </a>
+            <a href="../index.html">
+                <span class="qn-icon">📚</span>
+                <span class="qn-text">Ders Ana Sayfası<small>Tüm bölümler</small></span>
+            </a>
+        </nav>
+
+        <!-- İÇİNDEKİLER -->
+        <nav class="toc" aria-label="İçindekiler">
+            <h2>İçindekiler</h2>
+            <ol>
+                <li><a href="#bolum1-1">Çalışma Ortamı Gözetiminin Tanımı, Amacı ve Kapsamı</a></li>
+                <li><a href="#bolum1-2">6331 Sayılı İSG Kanunu Temel Esasları</a></li>
+                <li><a href="#bolum1-3">İşverenin Yükümlülükleri ve Risklerden Korunma İlkeleri</a></li>
+                <li><a href="#bolum1-4">İSG Uzmanı ve İşyeri Hekiminin Görev ve Sorumlulukları</a></li>
+                <li><a href="#bolum1-5">İSGB ve OSGB Kuruluşu, Sorumlulukları ve Dokümantasyon</a></li>
+                <li><a href="#bolum1-6">Çalışanların Hak ve Yükümlülükleri</a></li>
+            </ol>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- 1. ÇALIŞMA ORTAMI GÖZETİMİNİN TANIMI, AMACI VE KAPSAMI       -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum1-1">
+            <h2 class="section-title">
+                <span class="num">1</span>
+                Çalışma Ortamı Gözetiminin Tanımı, Amacı ve Kapsamı
+            </h2>
+
+            <!-- 1.1 -->
+            <h3 class="subsection-title">1.1. ILO 155 ve 161 Sayılı Sözleşmelere Göre İş Sağlığı Tanımı ve Kavramsal Çerçeve</h3>
+
+            <div class="card">
+                <p>
+                    Uluslararası Çalışma Örgütü’nün (ILO) 155 ve 161 sayılı sözleşmelerinde yer alan ve uluslararası iş sağlığı hukukunun temel taşını oluşturan <span class="highlight">iş sağlığı tanımı</span> şu şekildedir:
+                </p>
+                <blockquote>
+                    “Çalışanın çalışma ortamını, koşullarını, ilişkilerini ve çevresini, kendisini güdüleyen bir çalışma yürütecek bir biçimde etkileyebildiği; sağlıklı ve güvenli bir üretim ortamının ürünü olan <strong>bedensel, ruhsal, toplumsal en uygun iyilik halinde olmaktır</strong>.”
+                </blockquote>
+                <div class="info-box">
+                    <p>
+                        Bu tanım, iş sağlığını yalnızca <em>bedensel hastalık veya sakatlığın olmayışı</em> şeklinde dar bir tıbbi yaklaşımla değil; çalışanın <strong>fiziksel, ruhsal ve sosyal bütünsel esenliği</strong> ile üretim ortamının dinamik etkileşimi olarak ele alır. Üretim ortamının ve çalışma koşullarının iyileştirilmesi, çalışanın motivasyonunu ve sağlık düzeyini doğrudan belirleyen temel değişkendir.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 1.2 -->
+            <h3 class="subsection-title">1.2. Çalışma Ortamı Gözetiminin Amacı ve İş Kazaları ile Meslek Hastalıklarını Önlemedeki Rolü</h3>
+
+            <div class="card">
+                <p>
+                    <span class="keyword">Çalışma ortamı gözetimi</span>; işyerinde çalışanların sağlık ve güvenlikleri açısından tehlike ve risk oluşturan çeşitli madde, etken ve süreçlerin saptanması, düzeylerinin fiziksel, kimyasal ve biyolojik yöntemlerle ölçülmesi ve gerektiğinde kontrol altına alınması amacıyla yürütülen <strong>teknik ve organizasyonel faaliyetlerin bütünüdür</strong>.
+                </p>
+
+                <p>Çalışma ortamı gözetiminin temel amaçları ve önleyici rolü şu maddeler halinde sistemleştirilebilir:</p>
+                <ul>
+                    <li>İşyeri ortamındaki <strong>fiziksel, kimyasal, biyolojik, ergonomik ve psikososyal risk faktörlerini</strong> önceden tespit etmek,</li>
+                    <li>Söz konusu etkenlerin <strong>maruziyet düzeylerini</strong> periyodik ölçüm, analiz ve kontrollerle belirlemek,</li>
+                    <li>Sağlık ve güvenlik tehlikelerine karşı gerekli tüm <strong>koruyucu, önleyici ve düzeltici faaliyetleri</strong> planlayarak uygulamaya koymak,</li>
+                    <li>İş kazaları ve meslek hastalıklarına yol açabilecek unsurları <strong>kaynağında yok ederek</strong> veya kontrol altına alarak sürdürülebilir bir önleme politikası tesis etmek.</li>
+                </ul>
+            </div>
+
+            <!-- SINAV KUTUSU: Çalışma Ortamı Gözetimi vs. Sağlık Gözetimi -->
+            <div class="exam-box">
+                <p><strong>Çalışma Ortamı Gözetimi vs. Sağlık Gözetimi Ayrımı:</strong> ÖSYM sınav sistematiğinde sıklıkla soruya dönüştürülen bu iki kavram arasındaki temel fark; <strong>uygulayıcı yetkinliği ve odak noktasıdır</strong>.</p>
+                <ul>
+                    <li><strong>Çalışma ortamı gözetimi</strong> öncelikle teknik, mühendislik ve önleme odaklı bir süreç olup <span class="keyword">İş Güvenliği Uzmanı</span> ağırlıklı sorumluluktadır.</li>
+                    <li><strong>Sağlık gözetimi</strong> ise doğrudan çalışanın biyolojik ve fizyolojik durumunu izleyen klinik/koruyucu tıp süreci olup <span class="keyword keyword-accent">İşyeri Hekimi</span> ağırlıklı bir sorumluluk alanıdır.</li>
+                </ul>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Karşılaştırma Alanı</th>
+                            <th>Çalışma Ortamı Gözetimi</th>
+                            <th>Sağlık Gözetimi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Ağırlıklı Sorumlu Personel</strong></td>
+                            <td>İş Güvenliği Uzmanı (İşyeri hekimi ile teknik işbirliği içinde)</td>
+                            <td>İşyeri Hekimi (Diğer sağlık personeli ile koordinasyon halinde)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Temel Odak Noktası</strong></td>
+                            <td>Çalışma ortamı, fiziki mekan, makine/ekipman güvenliği, ortam riskleri, periyodik bakım ve kontrol faaliyetleri</td>
+                            <td>Çalışanın bireysel organizması, işe giriş ve periyodik muayeneler, biyolojik, toksikolojik ve fizyolojik analizler</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Müdahale Yaklaşımı</strong></td>
+                            <td>Mühendislik kontrolleri, teknik önleme, kaynağında yok etme ve ortam kontrolü</td>
+                            <td>Koruyucu tıp, erken tanı, mesleki maruziyet izlemi ve kişisel sağlık dosyası takibi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 1.3 -->
+            <h3 class="subsection-title">1.3. İşyerinin Tanınması Esasları ve Ortam Faktörleri</h3>
+
+            <div class="card">
+                <p>
+                    Çalışma ortamı gözetiminin yetkin bir şekilde planlanabilmesi için <strong>işyerinin tüm yönleriyle yakından tanınması esastır</strong>. İşyerinin tanınması sürecinde sistematik olarak incelenmesi gereken temel alanlar şunlardır:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Üretim ve İş Akış Süreçleri:</strong> İşyerinde ne üretildiği, hangi teknolojilerin ve hammaddelerin kullanıldığı, çalışan profilinin kimlerden oluştuğu incelenmeli; fiziki mekan bağıntıları kağıt üzerine dökülerek <span class="highlight">üretim (iş akım) şeması</span> üzerinden riskli çalışma türleri belirlenmelidir.
+                    </li>
+                    <li>
+                        <strong>İşletmenin Özel İhtiyaçları:</strong> İşyerinin tehlike sınıfı ve yürütülen işin niteliğine göre özel İSG gereksinimlerinin saptanması.
+                    </li>
+                    <li>
+                        <strong>Çalışma Ortamı Risk Faktörleri:</strong>
+                        <ul>
+                            <li><strong>Fiziksel Risk Etmenleri:</strong> Gürültü, titreşim, termal konfor (ısı, nem, sıcak veya soğukta çalışma, havalandırma), aydınlatma, iyonize ve non-iyonize ışınlar, alçak ve yüksek basınç.</li>
+                            <li><strong>Kimyasal Risk Etmenleri:</strong> Gaz, buhar, duman ve tozlar (solunabilir tozlar, toksik tozlar, silikozise yol açan kuvars vb. kristalin silisyumdioksit tozları).</li>
+                            <li><strong>Biyolojik Risk Etmenleri:</strong> Çalışma ortamında karşılaşılabilecek bakteriler, virüsler, mantarlar ve parazitler.</li>
+                            <li><strong>Ergonomik Sorunlar:</strong> Uygunsuz postür (duruş), tekrarlayıcı hareketler, ağır yük kaldırma ve ergonomik olmayan çalışma istasyonları.</li>
+                            <li><strong>Psikososyal Risk Etmenleri:</strong> İş yükü, stres, vardiyalı çalışma, çalışma ilişkileri ve çalışan üzerindeki zihinsel baskılar.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Diyagram: Risk Faktörleri -->
+            <div class="diagram">
+                <div class="diagram-item">
+                    <div class="icon">🔊</div>
+                    <h4>Fiziksel</h4>
+                    <p>Gürültü, titreşim, termal konfor, aydınlatma, ışınlar, basınç</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">⚗️</div>
+                    <h4>Kimyasal</h4>
+                    <p>Gaz, buhar, duman, tozlar (silikozis vb.)</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🦠</div>
+                    <h4>Biyolojik</h4>
+                    <p>Bakteri, virüs, mantar, parazit</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🪑</div>
+                    <h4>Ergonomik</h4>
+                    <p>Postür, tekrarlayıcı hareket, ağır yük, istasyon tasarımı</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🧠</div>
+                    <h4>Psikososyal</h4>
+                    <p>İş yükü, stres, vardiya, ilişkiler, zihinsel baskı</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 2. 6331 SAYILI İSG KANUNU TEMEL ESASLARI                     -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum1-2">
+            <h2 class="section-title">
+                <span class="num">2</span>
+                6331 Sayılı İş Sağlığı ve Güvenliği Kanunu Temel Esasları
+            </h2>
+
+            <!-- 2.1 -->
+            <h3 class="subsection-title">2.1. Kanunun Amacı, Kapsamı ve İstisnaları</h3>
+
+            <div class="card">
+                <p>
+                    6331 sayılı İş Sağlığı ve Güvenliği Kanunu; işyerlerinde iş sağlığı ve güvenliğinin sağlanması, mevcut sağlık ve güvenlik şartlarının iyileştirilmesi, iş kazası ve meslek hastalıklarının önlenmesi amacıyla <strong>işveren ve çalışanların görev, yetki, sorumluluk, hak ve yükümlülüklerini</strong> düzenler.
+                </p>
+            </div>
+
+            <div class="exam-box">
+                <p><strong>6331 Sayılı Kanunun Kapsamı ve İstisnaları:</strong> ÖSYM sınavlarında Kanun'un kapsamı dışında tutulan alanlar doğrudan soru adayıdır.</p>
+                <p>6331 sayılı Kanun; kamu ve özel sektöre ait tüm işyerlerine, bu işyerlerinin işverenlerine ve işveren vekillerine, <strong>çırak ve stajyerler dâhil tüm çalışanlarına</strong> faaliyet konularına bakılmaksızın uygulanır. Ancak aşağıdaki alanlar <strong>Kanun kapsamı dışındadır</strong>:</p>
+                <ol>
+                    <li>Fabrika, bakım merkezi, dikimevi ve benzeri işyerlerindekiler hariç <strong>Türk Silahlı Kuvvetleri, Genel Kolluk Kuvvetleri ve Milli İstihbarat Teşkilatı Müsteşarlığının</strong> faaliyetleri.</li>
+                    <li><strong>Afet ve acil durum birimlerinin müdahale faaliyetleri.</strong></li>
+                    <li><strong>Ev hizmetleri.</strong></li>
+                    <li>Çalışan istihdam etmeksizin <strong>kendi nam ve hesabına mal ve hizmet üretimi yapanlar.</strong></li>
+                    <li>Hükümlü ve tutuklulara yönelik infaz hizmetleri sırasında iyileştirme kapsamında yapılan <strong>işyurdu, eğitim, güvenlik ve meslek edindirme faaliyetleri.</strong></li>
+                </ol>
+            </div>
+
+            <!-- 2.2 -->
+            <h3 class="subsection-title">2.2. Temel İSG Kavramları ve Tanımlar</h3>
+
+            <div class="card">
+                <p>Mevzuat incelemelerinde ve sınavlarda doğrudan tanım şeklinde sorulan temel terimler aşağıda netleştirilmiştir:</p>
+
+                <ul>
+                    <li><strong>İşveren:</strong> Çalışan istihdam eden gerçek veya tüzel kişi yahut tüzel kişiliği olmayan kurum ve kuruluşları ifade eder.</li>
+                    <li><strong>Çalışan / İşçi:</strong> Bedenî, fikrî veya karma bir bünyede işyerinde ücret karşılığı veya çırak/stajyer statüsünde çalışan gerçek kişiyi ifade eder.</li>
+                    <li><strong>İş Güvenliği Uzmanı:</strong> Usul ve esasları yönetmelikle belirlenen iş sağlığı ve güvenliği alanında görev yapmak üzere Bakanlıkça yetkilendirilmiş, iş güvenliği uzmanlığı belgesine sahip <strong>mühendis, mimar veya teknik elemanı</strong> ifade eder.</li>
+                    <li><strong>İşyeri Hekimi:</strong> İş sağlığı ve güvenliği alanında görev yapmak üzere Bakanlıkça yetkilendirilmiş işyeri hekimliği belgesine sahip <strong>hekimi</strong> ifade eder.</li>
+                    <li><strong>İş Sağlığı ve Güvenliği Birimi (İSGB):</strong> İşyerinde iş sağlığı ve güvenliği hizmetlerini yürütmek üzere kurulan, <strong>en az bir işyeri hekimi ile en az bir iş güvenliği uzmanının</strong> görev aldığı, gerekli donanım ve personele sahip olan birimi ifade eder (m.4/I-ç).</li>
+                    <li><strong>Ortak Sağlık ve Güvenlik Birimi (OSGB):</strong> Kamu kurum ve kuruluşları, organize sanayi bölgeleri ile Türk Ticaret Kanununa göre faaliyette bulunan şirketler tarafından, işyerlerine iş sağlığı ve güvenliği hizmetlerini sunmak üzere kurulan, gerekli donanım ve personele sahip olan ve <strong>Bakanlıkça yetkilendirilen</strong> birimi ifade eder (m.4/I-f).</li>
+                    <li><strong>Tehlike:</strong> İşyerinde var olan ya da dışarıdan gelebilecek, çalışanı veya işyerini etkileyebilecek <strong>zarar verme veya hasar çıkarma potansiyelini</strong> ifade eder.</li>
+                    <li><strong>Risk:</strong> Tehlikeden kaynaklanacak kayıp, yaralanma ya da başka zararlı sonuç meydana gelme <strong>ihtimali ile bu sonucun şiddetinin bileşimini</strong> ifade eder.</li>
+                    <li><strong>Önleme:</strong> İşyerinde yürütülen işlerin bütün safhalarında sağlık ve güvenlik risklerini <strong>ortadan kaldırmak veya azaltmak</strong> amacıyla alınan tedbirlerin tamamını ifade eder.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 3. İŞVERENİN YÜKÜMLÜLÜKLERİ VE RİSKLERDEN KORUNMA İLKELERİ   -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum1-3">
+            <h2 class="section-title">
+                <span class="num">3</span>
+                İşverenin Yükümlülükleri ve Risklerden Korunma İlkeleri
+            </h2>
+
+            <!-- 3.1 -->
+            <h3 class="subsection-title">3.1. 6331 Sayılı Kanun Madde 4 Çerçevesinde İşverenin Genel Yükümlülükleri</h3>
+
+            <div class="info-box">
+                <p><strong>MEVZUAT TARİHÇESİ VE KODİFİKASYON NOTU:</strong> Tarihsel süreçte 4857 sayılı İş Kanunu m. 77 ve mülga İşçi Sağlığı ve İş Güvenliği Tüzüğü m. 4 hükümlerinde düzenlenen işverenin genel İSG yükümlülükleri; günümüzde modern kopyası ve genel hukuki dayanağı olarak <strong>6331 sayılı Kanun’un 4. maddesinde</strong> sistemleştirilmiştir. Akademik sınavlarda tüzük ve eski kanun maddelerine yapılan atıflar, 6331 m. 4'ün tarihsel altyapısını simgelemektedir.</p>
+            </div>
+
+            <div class="card">
+                <p>İşverenin iş sağlığı ve güvenliği alanındaki genel sorumluluğu, önleme sisteminin temel eksenini oluşturur. İşverenin m. 4 kapsamındaki temel yükümlülükleri şunlardır:</p>
+                <ul>
+                    <li>İşyerinde çalışanların <strong>işle ilgili sağlık ve güvenliğini sağlamak,</strong></li>
+                    <li>Mesleki risklerin önlenmesi, eğitim ve bilgi verilmesi dâhil her türlü tedbirin alınması, organizasyonun yapılması, araç ve gereçlerin <strong>noksansız sağlanması,</strong></li>
+                    <li>Sağlık ve güvenlik tedbirlerinin <strong>değişen şartlara uygun hale getirilmesi</strong> ve mevcut durumun iyileştirilmesi,</li>
+                    <li>İşyerinde alınan İSG tedbirlerine uyulup uyulmadığını <strong>denetlemek ve denetlenmesini sağlamak,</strong></li>
+                    <li>Kullanılan makineler, araç-gereçler ve zehirli/zararlı maddelerden tehlike arz edenleri <strong>fenne ve teknolojiye uygun tehlikesiz veya daha az zararlı olanlarla değiştirmek.</strong></li>
+                </ul>
+            </div>
+
+            <!-- 3.2 -->
+            <h3 class="subsection-title">3.2. Madde 5 Kapsamında Risklerden Korunma İlkeleri</h3>
+
+            <div class="card">
+                <p>
+                    6331 sayılı Kanun’un 5. maddesinde düzenlenen risklerden korunma ilkeleri, işverenin risk yönetiminde izlemesi gereken <strong>emredici ve aşamalı mantıksal sırayı</strong> ortaya koyar:
+                </p>
+
+                <ol>
+                    <li><strong>Risklerle kaynağında mücadele etmek</strong> (Tehlikeyi henüz ortaya çıkmadan kaynağında yok etmek veya engellemek).</li>
+                    <li><strong>Risklerden kaçınmak</strong> (Kaçınılması mümkün olmayan riskleri analiz etmek).</li>
+                    <li><strong>Tehlikeli olanı, tehlikesiz veya daha az tehlikeli olanla değiştirmek</strong> (İkame İlkesi).</li>
+                    <li><strong>Teknoloji, iş organizasyonu, çalışma şartları, sosyal ilişkiler ve çalışma ortamı faktörlerinin etkilerini kapsayan tutarlı ve genel bir önleme politikası geliştirmek.</strong></li>
+                    <li><strong>Teknik gelişmelere uyum sağlamak.</strong></li>
+                    <li><strong>İşin kişilere uygun hale getirilmesi</strong> (İş istasyonlarının, iş ekipmanlarının ve çalışma yöntemlerinin seçimi).</li>
+                    <li><strong>Toplu korunma tedbirlerine, kişisel korunma tedbirlerine göre öncelik vermek.</strong></li>
+                    <li><strong>Çalışanlara uygun talimatlar vermek.</strong></li>
+                </ol>
+            </div>
+
+            <!-- 3.3 -->
+            <h3 class="subsection-title">3.3. Yargıtay İçtihatları Işığında İşverenin Denetim, Takip ve Geniş Kontrol Mekanizması Sorumluluğu</h3>
+
+            <div class="card">
+                <p>
+                    Yargı kararlarında netleştiği üzere işverenin İSG sorumluluğu yalnızca kâğıt üzerinde talimat vermek veya kişisel koruyucu donanım dağıtmaktan ibaret değildir. İşveren, <strong>organizasyonu kurmak ve sürekli denetlemekle</strong> yükümlüdür.
+                </p>
+
+                <blockquote>
+                    “Her işveren, işyerinde işçilerin sağlığını ve iş güvenliğini sağlamak için gerekli olanı yapmak ve bu husustaki şartları sağlamak ve araçları noksansız bulundurmakla yükümlüdür. Bu yükümlülüğün sadece önlem almakla yetinilebileceği anlamını taşımadığı, alınan önlemlere uyulup uyulmadığını denetleme ve giderek önlemlere uyulmasını temin anlamında bulunduğu da kuşkusuzdur. Başka bir deyişle, işveren işyerinde, geniş anlamda doğmuş ve doğabilecek tüm tehlikeleri önlemek zorundadır. Bu zorunluluk sonucu olarak işyerinde işveren tarafından tam anlamı ile geniş bir kontrol mekanizması kurulmalıdır.”
+                    <cite>— Yargıtay 10. Hukuk Dairesi, E. 1978/7213, K. 1978/7421, T. 31.10.1978</cite>
+                </blockquote>
+
+                <blockquote>
+                    “İş Kanununa göre işveren, salt mevzuatta öngörülen önlemleri değil, kutsallaştırılması gereken insan yaşamına saygı çevresinde günümüz bilim ve teknolojisinin öngördüğü önlemleri dahi almakla yükümlüdür. Her halde, çalışan kimsenin iş güvenliği, işçinin kendi dikkatine bırakılamaz.”
+                    <cite>— Yargıtay 10. Hukuk Dairesi, T. 17.4.1984</cite>
+                </blockquote>
+
+                <blockquote>
+                    “İş kazalarını önlemek bakımından işveren sadece işin niteliğine uygun kişisel koruyucu malzeme vermekle yükümlü olmayıp, verilen malzemenin kullanılmasını sağlamak ve bunun uygulanıp uygulanmadığını sürekli ve etkin bir şekilde denetlemekle de yükümlüdür.”
+                    <cite>— Yargıtay 9. Hukuk Dairesi, T. 16.6.1988</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 4. İSG UZMANI VE İŞYERİ HEKİMİNİN GÖREV VE SORUMLULUKLARI    -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum1-4">
+            <h2 class="section-title">
+                <span class="num">4</span>
+                İş Güvenliği Uzmanı ve İşyeri Hekiminin Görev ve Sorumlulukları
+            </h2>
+
+            <!-- 4.1 -->
+            <h3 class="subsection-title">4.1. İSG Uzmanı ve İşyeri Hekiminin 5 Temel Görev Alanı</h3>
+
+            <div class="card">
+                <p>
+                    İlgili yönetmelikler uyarınca İş Güvenliği Uzmanı ve İşyeri Hekiminin ortaklaşa yürüttüğü 5 temel görev alanına ilişkin kıyaslamalı akademik yetki ve sorumluluk matrisi aşağıda sunulmuştur:
+                </p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Görev Grubu</th>
+                            <th>Görev Kapsamı</th>
+                            <th>İş Güvenliği Uzmanı Sorumluluğu</th>
+                            <th>İşyeri Hekimi Sorumluluğu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Rehberlik</strong></td>
+                            <td>İşyerinin tasarımı, makine seçimi, KKD belirleme ve hijyen tedbirleri</td>
+                            <td>İşverene tasarım, makine ve ekipman güvenliği, KKD seçimi, yangın ve kaza önleme konularında teknik önerilerde bulunmak; verimli çalışma ortamına katkı sağlamak.</td>
+                            <td>Ergonomik ve psikososyal riskler, genel hijyen şartları (yemekhane, yatakhane, kreş vb.) ve KKD uyumu hususlarında tavsiyelerde bulunmak; tedbirleri yazılı bildirmek.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Risk Değerlendirmesi</strong></td>
+                            <td>Tehlikelerin tespiti, risk analizi ve önleyici tedbirlerin kararlaştırılması</td>
+                            <td>Risk değerlendirmesi çalışmalarına aktif katılmak, teknik ve fiziksel çalışma ortamı risklerini saptayarak düzeltici faaliyetleri önermek.</td>
+                            <td>Risk değerlendirmesi çalışmalarına katılmak, sağlık risklerini saptamak ve zararlı etkenlerin çalışan üzerindeki etkilerini izlemek.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Çalışma Ortamı Gözetimi</strong></td>
+                            <td>Ortam şartlarının izlenmesi, periyodik kontroller ve acil durum yönetimi</td>
+                            <td>Periyodik bakım, kontrol ve ortam ölçümlerini (gürültü, toz, gaz vb.) planlamak; acil durum planı, tatbikat ve acil durum organizasyonunu izlemek.</td>
+                            <td>Çalışma ortamı koşullarını incelemek, sağlık gözetimi kapsamında gerekli görülen ortam ölçümlerini planlayarak onay sunmak ve sonuçları tıbbi açıdan değerlendirmek.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Eğitim, Bilgilendirme ve Kayıt</strong></td>
+                            <td>İSG eğitimlerinin planlanması ve yıllık raporlama süreçleri</td>
+                            <td>Çalışanların İSG eğitimlerini planlamak; İşyeri Hekimi ile işbirliği içinde EK-2 Yıllık Değerlendirme Raporu'nu hazırlamak.</td>
+                            <td>Sağlık muayeneleri ve eğitim kayıtlarını tutmak; kişisel sağlık dosyalarını gizlilik ilkesi doğrultusunda saklamak; EK-2 raporunu ortak hazırlamak.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5. İlgili Birimlerle İşbirliği</strong></td>
+                            <td>Kurul, temsilciler ve kurum dışı acil durum birimleriyle koordinasyon</td>
+                            <td>İSG Kurulu, çalışan temsilcisi ve destek elemanları ile işbirliği yapmak; acil durumlarda ilgili dış kurumlarla koordinasyon sağlamak.</td>
+                            <td>Sağlık gözetimi sonuçlarına göre İSG Uzmanı ile işbirliği yapmak; iş kazası, meslek hastalığı ve ramak kala olay araştırmalarında ortak çalışmak.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 4.2 -->
+            <h3 class="subsection-title">4.2. Çalışma Ortamı Gözetimi Kapsamında Periyodik Bakım, Kontrol ve Ölçüm Planlamaları</h3>
+
+            <div class="card">
+                <p>
+                    İSG Uzmanı ve İşyeri Hekiminin çalışma ortamı gözetimi özelindeki operasyonel yükümlülükleri şunlardır:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Periyodik Bakım ve Ölçüm Planlaması:</strong> İşyerinde mevzuat gereği yapılması zorunlu olan periyodik bakım, kontrol ve ortam ölçümlerini (gürültü, titreşim, aydınlatma, termal konfor, toz, gaz maruziyetleri) planlamak ve uygulamalarını denetlemek.
+                    </li>
+                    <li>
+                        <strong>MSDS (MGBF) Uyumu:</strong> İşyeri ortamında yapılan kimyasal ölçüm sonuçlarının, Malzeme Güvenlik Bilgi Formları (MSDS/MGBF) sınır değerleri ile uyumunu kontrol etmek.
+                    </li>
+                    <li>
+                        <strong>Acil Durum ve Tatbikat Yönetimi:</strong> Kaza, yangın, patlama ve doğal afet durumları için acil durum planlarının hazırlanmasına katılmak; periyodik eğitim ile tatbikatların yapılmasını ve plan doğrultusunda hareket edilmesini izlemek.
+                    </li>
+                    <li>
+                        <strong>Hijyen ve Sosyal Tesis Denetimi:</strong> Kantin, yemekhane, yatakhane, kreş, emzirme odası, soyunma odaları, duş ve tuvaletler dâhil genel hijyen şartlarını sürekli denetlemek; uygun içme suyu ve beslenme ihtiyacının karşılanması hususunda işverene öneride bulunmak.
+                    </li>
+                    <li>
+                        <strong>Kaza ve Ramak Kala Araştırması:</strong> İş kazaları, meslek hastalıkları veya yaralanmaya sebep olmadığı halde çalışana, ekipmana ya da işyerine zarar verme potansiyeli olan ramak kala olayların nedenlerini araştırarak önleyici tedbirleri işverene sunmak.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 5. İSGB VE OSGB KURULUŞU, SORUMLULUKLARI VE DOKÜMANTASYON    -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum1-5">
+            <h2 class="section-title">
+                <span class="num">5</span>
+                İSGB ve OSGB Kuruluşu, Sorumlulukları ve Dokümantasyon
+            </h2>
+
+            <!-- 5.1 -->
+            <h3 class="subsection-title">5.1. İSGB ve OSGB Tanımları, Kurulum ve İşleyiş Şartları</h3>
+
+            <div class="card">
+                <ul>
+                    <li><strong>İSGB (İş Sağlığı ve Güvenliği Birimi):</strong> İşyerinde İSG hizmetlerini yürütmek üzere kurulan, <strong>en az bir işyeri hekimi ile en az bir iş güvenliği uzmanından</strong> oluşan, gerekli donanım ve personele sahip birimdir (m.4/I-ç).</li>
+                    <li><strong>OSGB (Ortak Sağlık ve Güvenlik Birimi):</strong> Kamu kurumları, OSB'ler veya şirketler tarafından işyerlerine İSG hizmeti sunmak üzere kurulan, <strong>Bakanlıkça yetkilendirilmiş</strong> donanımlı birimdir (m.4/I-f).</li>
+                </ul>
+            </div>
+
+            <div class="exam-box">
+                <p><strong>İSG Kurulu Kurulma Şartları ve Zorunlu Üye Yapısı:</strong> İş Sağlığı ve Güvenliği Kurulları Hakkında Yönetmelik uyarınca bir işyerinde İSG Kurulu kurulabilmesi için <strong>iki temel şartın aynı anda gerçekleşmesi</strong> gerekir:</p>
+                <ol>
+                    <li><strong>50 ve daha fazla çalışanın bulunması,</strong></li>
+                    <li><strong>6 aydan fazla süren sürekli işlerin yapılması.</strong> (İşin niteliği önemsizdir; sürekli olması yeterlidir).</li>
+                </ol>
+
+                <p><strong>İSG Kurulunun 7 Zorunlu Üyesi:</strong></p>
+                <ol>
+                    <li>İşveren veya işveren vekili <strong>(Kurul Başkanı)</strong></li>
+                    <li>İş güvenliği uzmanı <strong>(Kurul Sekreteri)</strong></li>
+                    <li>İşyeri hekimi</li>
+                    <li>İnsan kaynakları, personel, sosyal işler veya idari/mali işleri yürütmekle görevli kişi</li>
+                    <li>Bulunması halinde sivil savunma uzmanı</li>
+                    <li>Bulunması halinde forman, ustabaşı veya usta</li>
+                    <li>Çalışan temsilcisi (Birden çok ise baş temsilci)</li>
+                </ol>
+            </div>
+
+            <!-- 5.2 -->
+            <h3 class="subsection-title">5.2. Yıllık Çalışma Planı ve EK-2 Yıllık Değerlendirme Raporu Süreçleri</h3>
+
+            <div class="card">
+                <p>
+                    Çalışma ortamı gözetimi ve sağlık gözetimi sonuçları, İSG Uzmanı ve İşyeri Hekimi tarafından ortaklaşa <strong>EK-2 Yıllık Değerlendirme Formu</strong>'na kaydedilir.
+                </p>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>EK-2 Formunun Hukuki Geçerliliği ve İmza Yükümlülüğü:</strong> EK-2 Yıllık Değerlendirme Formu'nun hukuken geçerli sayılması için üzerinde <strong>İşveren, İşyeri Hekimi ve İş Güvenliği Uzmanı</strong>'nın ıslak/elektronik imzalarının tam olarak bulunması şarttır. Bu form, işyerinin yıllık İSG performansının ve hukuki illiyet bağının en somut delilidir.</p>
+            </div>
+
+            <div class="card">
+                <p><strong>EK-2 Formunda Bulunması Gereken Zorunlu Veri Parametreleri:</strong></p>
+                <ul>
+                    <li>İşyerine ilişkin genel bilgiler (Tarih, yapan kişi/unvan, yöntemler),</li>
+                    <li>Risk değerlendirmesi sonuç özeti,</li>
+                    <li>Ortam ölçümleri kayıtları (gürültü, toz, gaz vb.),</li>
+                    <li>İşe giriş ve periyodik muayene verileri,</li>
+                    <li>Radyolojik, biyolojik ve toksikolojik analiz sonuçları,</li>
+                    <li>Fizyolojik ve psikolojik test sonuçları,</li>
+                    <li>Yıl içinde gerçekleştirilen İSG eğitim çalışmaları.</li>
+                </ul>
+            </div>
+
+            <!-- 5.3 -->
+            <h3 class="subsection-title">5.3. Onaylı Defter ve Arşiv/Sözleşme Yükümlülükleri</h3>
+
+            <div class="card">
+                <ul>
+                    <li><strong>Arşiv Saklama Zorunluluğu:</strong> OSGB’ler ve işverenler, yıllık değerlendirme raporu suretlerini ve kişisel sağlık dosyalarını <strong>gizlilik ilkesine uyarak</strong> saklamak ve denetim yetkililerine talep halinde sunmakla yükümlüdür.</li>
+                    <li><strong>Sözleşme Sonu Zorunlu Devir:</strong> OSGB’ler, hizmet sözleşmesi sona erdiğinde <strong>kendilerinden talep edilmese dahi</strong>, yıllık değerlendirme raporlarının ve sağlık/gözetim kayıtlarının birer suretini işverene eksiksiz teslim etmek zorundadır.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 6. ÇALIŞANLARIN HAK VE YÜKÜMLÜLÜKLERİ                        -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum1-6">
+            <h2 class="section-title">
+                <span class="num">6</span>
+                Çalışanların Hak ve Yükümlülükleri
+            </h2>
+
+            <!-- 6.1 -->
+            <h3 class="subsection-title">6.1. Çalışanların İSG Mevzuatına Uyma ve Talimatlara Sıkı Sıkıya Bağlılık Sorumluluğu</h3>
+
+            <div class="card">
+                <p>
+                    İş Sağlığı ve Güvenliği Hizmetleri Yönetmeliği m. 8/III uyarınca, İSG sisteminin başarısı çalışanların mevzuata ve talimatlara tam uyumuna bağlıdır. Çalışanların temel yükümlülükleri şunlardır:
+                </p>
+                <ul>
+                    <li>İşveren, işyeri hekimi veya iş güvenliği uzmanı tarafından verilen <strong>İSG talimatlarına kesin olarak uymak,</strong></li>
+                    <li>Makine, cihaz, araç, gereç ve tesisleri verilen eğitimler ve talimatlar doğrultusunda <strong>amacına uygun kullanmak,</strong></li>
+                    <li>Kendilerine sağlanan kişisel koruyucu donanımları (KKD) <strong>doğru kullanmak, muhafaza etmek ve korumak,</strong></li>
+                    <li>İşyerinde yürütülen sağlık ve güvenlik çalışmalarına, muayenelere, bilgilendirme ve eğitim programlarına <strong>aktif katılım sağlamak.</strong></li>
+                </ul>
+            </div>
+
+            <!-- 6.2 -->
+            <h3 class="subsection-title">6.2. Ciddi/Yakın Tehlikeleri Bildirme, Teftiş Noksanlıklarını Giderme ve İşbirliği Yükümlülükleri</h3>
+
+            <div class="card">
+                <p>
+                    Çalışanlar, pasif kural uygulayıcısı değil, <strong>risk önleme sisteminin aktif bir parçasıdır</strong>:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Ciddi ve Yakın Tehlike Bildirimi:</strong> Çalışanlar, işyerindeki makine, tesisat veya çalışma ortamında sağlık ve güvenlik yönünden ciddi ve yakın bir tehlike ile karşılaştıklarında yahut koruma tedbirlerinde bir eksiklik gördüklerinde, <strong>işverene veya çalışan temsilcisine derhal haber vermekle</strong> yükümlüdür.
+                    </li>
+                    <li>
+                        <strong>Teftiş Süreçlerinde İşbirliği:</strong> Çalışanlar, Çalışma ve Sosyal Güvenlik Bakanlığı iş müfettişlerince yapılan teftişlerde tespit edilen eksikliklerin giderilmesinde <strong>işveren ve çalışan temsilcisi ile işbirliği yapmak</strong> zorundadır.
+                    </li>
+                    <li>
+                        <strong>Hizmet Sunucularıyla İşbirliği:</strong> İSGB veya OSGB personelinin yürüteceği saha gözetimlerinde ve ölçüm çalışmalarında <strong>gerekli kolaylığı ve koordinasyonu sağlamakla</strong> yükümlüdürler.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BÖLÜM GEZİNME (ÖNCEKİ / SONRAKİ)                             -->
+        <!-- ============================================================ -->
+        <nav class="chapter-nav" aria-label="Bölümler arası gezinme">
+            <a href="../index.html" class="prev">
+                <span class="cn-arrow">←</span>
+                <span class="cn-text">
+                    <small>Ders Ana Sayfası</small>
+                    <strong>Çalışma Ortamı Gözetimi</strong>
+                </span>
+            </a>
+            <a href="../bolum-02/konu-anlatimi.html" class="next">
+                <span class="cn-arrow">→</span>
+                <span class="cn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Bölüm 2: Konu Anlatımı</strong>
+                </span>
+            </a>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- HAZIRLAYAN KARTI                                             -->
+        <!-- ============================================================ -->
+        <section class="author-card" aria-label="Hazırlayan bilgileri">
+            <div class="avatar" aria-hidden="true">SA</div>
+            <div class="author-info">
+                <h3>Sıraç Aksan</h3>
+                <p class="role">
+                    Konya Teknik Üniversitesi<br>
+                    İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans<br>
+                    <strong>Ders:</strong> Çalışma Ortamı Gözetimi &nbsp;|&nbsp; <strong>Öğretim Üyesi:</strong> Bilgehan Kekeç
+                </p>
+                <div class="contact-row">
+                    <a href="tel:+905069282100" aria-label="Telefon">
+                        <span aria-hidden="true">📞</span> 0506 928 21 00
+                    </a>
+                    <a href="mailto:saracaksan@gmail.com" aria-label="E-posta">
+                        <span aria-hidden="true">✉️</span> saracaksan@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- ==================== SAYFA SONU ==================== -->
+<footer class="page-footer">
+    <div class="container">
+        <p><strong>Çalışma Ortamı Gözetimi</strong> — Bölüm 1: Giriş, Kapsam, Mevzuat ve Sorumluluklar</p>
+        <p>
+            <a href="../../../index.html">Tüm Dersler</a> &nbsp;·&nbsp;
+            <a href="../index.html">Ders Ana Sayfası</a> &nbsp;·&nbsp;
+            <a href="sorular.html">Sorular</a> &nbsp;·&nbsp;
+            <a href="sunum.html">Sunum</a>
+        </p>
+        <p style="margin-top:0.6rem; font-size:0.78rem; opacity:0.75;">
+            © 2025 Sıraç Aksan — Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans<br>
+            Bu içerik yalnızca eğitim amaçlıdır. Güncel mevzuat için resmî kaynaklara başvurunuz.
+        </p>
+    </div>
+</footer>
+
+<!-- ==================== YUKARI ÇIK BUTONU ==================== -->
+<button class="scroll-top" id="scrollTopBtn" aria-label="Sayfanın başına dön" title="Yukarı çık">↑</button>
+
+<script>
+    (function () {
+        'use strict';
+
+        // Yukarı çık butonu
+        var btn = document.getElementById('scrollTopBtn');
+        var toggle = function () {
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        };
+        window.addEventListener('scroll', toggle, { passive: true });
+        toggle();
+
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // İç bağlantılarda yumuşak kaydırma (scroll-margin-top desteklenmeyen tarayıcılar için)
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var targetId = this.getAttribute('href').slice(1);
+                if (!targetId) return;
+                var target = document.getElementById(targetId);
+                if (!target) return;
+                e.preventDefault();
+                var offset = target.getBoundingClientRect().top + window.scrollY - 20;
+                window.scrollTo({ top: offset, behavior: 'smooth' });
+                history.replaceState(null, '', '#' + targetId);
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

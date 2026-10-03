@@ -1,1 +1,1849 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Çalışma Ortamı Gözetimi · Bölüm 04 · Konu Anlatımı</title><style>*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#172033}a{text-decoration:none;color:inherit}.top{background:linear-gradient(135deg,#071a33,#1769aa);color:white}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:900}.brand small{display:block;color:#b9cce0;font-size:10px;margin-top:4px}.back{border:1px solid #ffffff2b;padding:9px 13px;border-radius:9px;font-size:11px;background:#ffffff0d}.hero{padding:52px 0}.eyebrow{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#b9e7ff;font-weight:800}.hero h1{font-size:clamp(30px,4vw,48px);margin:14px 0 8px;line-height:1.08}.hero p{color:#cbd9e6;font-size:13px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{font-size:10px;padding:7px 10px;border-radius:8px;background:#ffffff12;border:1px solid #ffffff18}main{padding:35px 0 70px}.head{margin-bottom:20px}.head h2{margin:0;color:#071a33}.head p{color:#64748b;font-size:11px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 5px 22px #0f172a0a}.num{width:34px;height:34px;border-radius:9px;background:#eef6fc;color:#1769aa;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}.card h3{margin:14px 0 7px;font-size:15px}.card p{font-size:10px;color:#64748b}.links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px}.links a{font-size:9px;font-weight:800;color:#1769aa;background:#f6f9fc;border:1px solid #e7edf3;border-radius:8px;padding:10px 5px;text-align:center}.empty{padding:20px;background:white;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b;font-size:11px}.footer{background:#04101f;color:#91a6bb;padding:25px 0;font-size:10px;line-height:1.7}@media(max-width:700px){.grid{grid-template-columns:1fr}.links{grid-template-columns:1fr}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}}</style></head><body><header class="top"><div class="wrap nav"><div class="brand">KTÜN · İSG Eğitim Portalı<small>2026–2027</small></div><a class="back" href="../../index.html">← Ders Ana Sayfası</a></div><div class="wrap hero"><span class="eyebrow">Çalışma Ortamı Gözetimi</span><h1>Bölüm 04</h1><p>Konu Anlatımı</p><div class="meta"><span class="pill">Bölüm 04</span><span class="pill">Konu Anlatımı</span></div></div></header><main><div class="wrap"><div class="empty">Bu alan içerik eklenmesi için hazırdır. Şu anda boş bırakılmıştır.</div></div></main><footer class="footer"><div class="wrap">Hazırlayan: Sıraç AKSAN · 0506 928 22 10 · saracaksan@gmail.com</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Çalışma Ortamı Gözetimi - Bölüm 4: Biyolojik Risk Etmenleri ve İş Hijyeni | Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans">
+    <meta name="author" content="Sıraç Aksan">
+    <title>Bölüm 4: Biyolojik Risk Etmenleri ve İş Hijyeni | Çalışma Ortamı Gözetimi</title>
+    <style>
+        :root {
+            --primary: #0f4c5c;
+            --primary-light: #1b6b7a;
+            --accent: #e36414;
+            --accent-light: #fb8b24;
+            --bg: #f5f7fa;
+            --card: #ffffff;
+            --text: #1e2a32;
+            --text-light: #4a5a68;
+            --border: #d9e2ec;
+            --exam-bg: #fff4e6;
+            --exam-border: #e36414;
+            --success: #2a9d8f;
+            --warning: #e9c46a;
+            --danger: #e76f51;
+            --info: #264653;
+            --metric-bg: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            --metric-accent: linear-gradient(135deg, #e36414 0%, #fb8b24 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+
+        /* ==================== ÜST BAŞLIK ==================== */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: #fff;
+            padding: 2rem 1.5rem 1.75rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: -40px; right: -40px;
+            width: 220px; height: 220px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+        }
+
+        .page-header .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            align-items: center;
+        }
+
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+            transition: border-bottom-style 0.2s;
+        }
+
+        .breadcrumb a:hover { border-bottom-style: solid; }
+        .breadcrumb .sep { opacity: 0.6; }
+
+        .page-header h1 {
+            font-size: 1.85rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+        }
+
+        .page-header .subtitle {
+            font-size: 0.98rem;
+            opacity: 0.92;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.85rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.28rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        .badge-primary { background: rgba(255,255,255,0.2); color: #fff; }
+        .badge-accent { background: var(--accent); color: #fff; }
+        .badge-success { background: var(--success); color: #fff; }
+        .badge-warning { background: var(--warning); color: #5a3a1a; }
+
+        /* ==================== ÜST BÖLÜM GEZİNME ==================== */
+        .top-chapter-nav {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 0.75rem;
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .top-chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.55rem 0.85rem;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            transition: background 0.2s, transform 0.2s;
+            font-size: 0.85rem;
+        }
+
+        .top-chapter-nav a:hover {
+            background: rgba(255,255,255,0.22);
+            transform: translateY(-2px);
+        }
+
+        .top-chapter-nav a.next {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .top-chapter-nav .tn-arrow {
+            font-size: 1.1rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .top-chapter-nav .tn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.25;
+        }
+
+        .top-chapter-nav .tn-text small {
+            font-size: 0.68rem;
+            opacity: 0.75;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .top-chapter-nav .tn-text strong {
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .top-chapter-nav .tn-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 800;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(227,100,20,0.4);
+        }
+
+        /* ==================== KONTEYNER ==================== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        main { padding: 2rem 0 3rem; }
+
+        /* ==================== HIZLI ERİŞİM ==================== */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 0.85rem;
+            margin-bottom: 2rem;
+        }
+
+        .quick-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 0.9rem 1.1rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 0.88rem;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .quick-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .quick-nav a .qn-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px; height: 38px;
+            border-radius: 10px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 1.05rem;
+            flex-shrink: 0;
+        }
+
+        .quick-nav a.qn-accent .qn-icon { background: var(--accent); }
+        .quick-nav a.qn-success .qn-icon { background: var(--success); }
+        .quick-nav a.qn-warning .qn-icon { background: var(--warning); color: #5a3a1a; }
+
+        .quick-nav a .qn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+        }
+
+        .quick-nav a .qn-text small {
+            font-weight: 400;
+            font-size: 0.72rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+
+        /* ==================== İÇİNDEKİLER ==================== */
+        .toc {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.06);
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc h2::before { content: '📋'; font-size: 1.15rem; }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.35rem 2rem;
+        }
+
+        .toc ol li {
+            counter-increment: toc-counter;
+            padding: 0.3rem 0;
+            border-bottom: 1px dashed var(--border);
+            font-size: 0.9rem;
+        }
+
+        .toc ol li::before {
+            content: counter(toc-counter) ". ";
+            font-weight: 700;
+            color: var(--accent);
+            margin-right: 0.25rem;
+        }
+
+        .toc ol li a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc ol li a:hover { color: var(--accent); }
+
+        /* ==================== BÖLÜM BAŞLIKLARI ==================== */
+        .section {
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--primary);
+            padding-bottom: 0.55rem;
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .section-title .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px; height: 36px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .subsection-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            margin: 1.7rem 0 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .subsection-title::before {
+            content: '';
+            display: inline-block;
+            width: 6px; height: 22px;
+            background: var(--accent);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        /* ==================== KARTLAR ==================== */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 1.3rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.05);
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover { box-shadow: 0 4px 16px rgba(15,76,92,0.1); }
+        .card p { margin-bottom: 0.75rem; }
+        .card p:last-child { margin-bottom: 0; }
+
+        /* ==================== SINAV KUTUSU ==================== */
+        .exam-box {
+            background: var(--exam-bg);
+            border-left: 5px solid var(--exam-border);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .exam-box::before {
+            content: '⚠️ SINAVDA ÇIKABİLİR';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .exam-box p, .exam-box li { font-size: 0.93rem; color: #5a3a1a; }
+        .exam-box ul, .exam-box ol { margin: 0.5rem 0 0.5rem 1.2rem; }
+
+        /* ==================== BİLGİ KUTUSU ==================== */
+        .info-box {
+            background: #e8f4f8;
+            border-left: 5px solid var(--primary-light);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .info-box::before {
+            content: 'ℹ️ AKADEMİK NOT';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--primary-light);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== UYARI KUTUSU ==================== */
+        .warning-box {
+            background: #fde8e8;
+            border-left: 5px solid var(--danger);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .warning-box::before {
+            content: '🚨 KRİTİK UYARI';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--danger);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== LİSTELER ==================== */
+        .card ul, .card ol { margin: 0.5rem 0 0.75rem 1.35rem; }
+        .card ul li, .card ol li { margin-bottom: 0.35rem; }
+        .card ul li::marker { color: var(--accent); }
+        .card ol li::marker { color: var(--accent); font-weight: 700; }
+
+        /* ==================== TABLOLAR ==================== */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.4rem 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            background: var(--card);
+            min-width: 620px;
+        }
+
+        thead { background: var(--primary); color: #fff; }
+        thead th {
+            padding: 0.8rem 0.95rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.82rem;
+            letter-spacing: 0.3px;
+        }
+
+        tbody td {
+            padding: 0.7rem 0.95rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tbody tr:last-child td { border-bottom: none; }
+        tbody tr:nth-child(even) { background: #f8fafc; }
+        tbody tr:hover { background: #eef6f8; }
+
+        /* ==================== METRİK KARTLARI ==================== */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 0.85rem;
+            margin: 1.3rem 0;
+        }
+
+        .metric-card {
+            background: var(--metric-bg);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(15,76,92,0.2);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .metric-card:hover { transform: translateY(-4px); }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 90px; height: 90px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+        }
+
+        .metric-card .mc-icon {
+            font-size: 1.6rem;
+            margin-bottom: 0.35rem;
+            display: block;
+        }
+
+        .metric-card .mc-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        .metric-card .mc-label {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            font-weight: 600;
+        }
+
+        .metric-card .mc-sub {
+            font-size: 0.7rem;
+            opacity: 0.7;
+            margin-top: 0.35rem;
+            font-style: italic;
+        }
+
+        .metric-card.accent {
+            background: var(--metric-accent);
+            box-shadow: 0 4px 14px rgba(227,100,20,0.3);
+        }
+
+        .metric-card.success {
+            background: linear-gradient(135deg, #2a9d8f 0%, #4bb3a6 100%);
+            box-shadow: 0 4px 14px rgba(42,157,143,0.3);
+        }
+
+        .metric-card.danger {
+            background: linear-gradient(135deg, #c1121f 0%, #e76f51 100%);
+            box-shadow: 0 4px 14px rgba(231,111,81,0.3);
+        }
+
+        .metric-card.warning {
+            background: linear-gradient(135deg, #e9c46a 0%, #f4a261 100%);
+            color: #4a2c0a;
+            box-shadow: 0 4px 14px rgba(233,196,106,0.35);
+        }
+
+        .metric-card.warning .mc-label,
+        .metric-card.warning .mc-sub { color: #4a2c0a; }
+
+        /* ==================== DİYAGRAM ==================== */
+        .diagram {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            justify-content: center;
+            margin: 1.4rem 0;
+        }
+
+        .diagram-item {
+            flex: 1 1 170px;
+            max-width: 230px;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.1rem;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .diagram-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .diagram-item .icon { font-size: 1.8rem; margin-bottom: 0.4rem; }
+        .diagram-item h4 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        .diagram-item p {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* ==================== RİSK GRUP KARTLARI ==================== */
+        .risk-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1.4rem 0;
+        }
+
+        .risk-card {
+            border-radius: 14px;
+            padding: 1.3rem 1.2rem;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+        }
+
+        .risk-card:hover { transform: translateY(-4px); }
+
+        .risk-card::before {
+            content: '';
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 100px; height: 100px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+        }
+
+        .risk-card .rc-badge {
+            display: inline-block;
+            padding: 0.2rem 0.65rem;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            background: rgba(255,255,255,0.25);
+            margin-bottom: 0.6rem;
+        }
+
+        .risk-card h4 {
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .risk-card ul {
+            list-style: none;
+            margin: 0;
+            font-size: 0.82rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .risk-card ul li {
+            padding: 0.22rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .risk-card ul li:last-child { border-bottom: none; }
+
+        .risk-card.g1 { background: linear-gradient(135deg, #2a9d8f 0%, #4bb3a6 100%); }
+        .risk-card.g2 { background: linear-gradient(135deg, #e9c46a 0%, #f4a261 100%); color: #4a2c0a; }
+        .risk-card.g2 .rc-badge { background: rgba(0,0,0,0.15); }
+        .risk-card.g2 ul li { border-bottom-color: rgba(0,0,0,0.1); }
+        .risk-card.g3 { background: linear-gradient(135deg, #e36414 0%, #fb8b24 100%); }
+        .risk-card.g4 { background: linear-gradient(135deg, #c1121f 0%, #e76f51 100%); }
+
+        /* ==================== FORMÜL KUTUSU ==================== */
+        .formula-box {
+            background: #fff;
+            border: 2px dashed var(--primary-light);
+            border-radius: 12px;
+            padding: 1.2rem 1.4rem;
+            margin: 1.2rem 0;
+            text-align: center;
+        }
+
+        .formula-box .formula-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 0.6rem;
+        }
+
+        .formula-box .formula {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            line-height: 1.7;
+        }
+
+        /* ==================== VURGU ==================== */
+        .highlight {
+            background: linear-gradient(transparent 60%, #ffe066 60%);
+            font-weight: 600;
+            padding: 0 2px;
+        }
+
+        .keyword {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin: 0 2px;
+        }
+
+        .keyword-accent { background: var(--accent); }
+
+        /* ==================== ALINTI ==================== */
+        blockquote {
+            background: #f0f4f8;
+            border-left: 4px solid var(--primary-light);
+            padding: 1rem 1.4rem;
+            margin: 1.15rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.55rem;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: var(--primary);
+        }
+
+        /* ==================== BÖLÜM GEZİNME (ALT) ==================== */
+        .chapter-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .chapter-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .chapter-nav a.next {
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+
+        .chapter-nav a .cn-arrow {
+            font-size: 1.4rem;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .chapter-nav a .cn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+            flex: 1;
+        }
+
+        .chapter-nav a .cn-text small {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .chapter-nav a .cn-text strong {
+            font-size: 0.92rem;
+            color: var(--primary);
+        }
+
+        /* ==================== HAZIRLAYAN KARTI ==================== */
+        .author-card {
+            background: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.4rem 1.6rem;
+            margin: 2rem 0 1.5rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.2rem;
+            align-items: center;
+            box-shadow: 0 6px 20px rgba(15,76,92,0.18);
+        }
+
+        .author-card .avatar {
+            width: 68px; height: 68px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            font-weight: 700;
+            border: 2px solid rgba(255,255,255,0.35);
+            flex-shrink: 0;
+        }
+
+        .author-card .author-info h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .author-card .author-info .role {
+            font-size: 0.8rem;
+            opacity: 0.88;
+            margin-bottom: 0.55rem;
+            line-height: 1.45;
+        }
+
+        .author-card .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.2rem;
+            font-size: 0.83rem;
+        }
+
+        .author-card .contact-row a,
+        .author-card .contact-row span {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            opacity: 0.95;
+            transition: opacity 0.2s;
+        }
+
+        .author-card .contact-row a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* ==================== SAYFA SONU ==================== */
+        .page-footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.85);
+            text-align: center;
+            padding: 1.6rem 1.5rem;
+            font-size: 0.83rem;
+            margin-top: 2rem;
+        }
+
+        .page-footer .container p { margin-bottom: 0.35rem; }
+        .page-footer a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+        }
+        .page-footer a:hover { border-bottom-style: solid; }
+
+        /* ==================== YUKARI ÇIK ==================== */
+        .scroll-top {
+            position: fixed;
+            bottom: 1.5rem; right: 1.5rem;
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            font-size: 1.15rem;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(227,100,20,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+            z-index: 999;
+        }
+
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { transform: translateY(-3px); background: var(--accent-light); }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 900px) {
+            .top-chapter-nav {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            .top-chapter-nav .tn-center { display: none; }
+            .top-chapter-nav a.next { justify-content: flex-start; text-align: left; }
+        }
+
+        @media (max-width: 768px) {
+            body { font-size: 15px; }
+            .page-header { padding: 1.5rem 1rem 1.25rem; }
+            .page-header h1 { font-size: 1.3rem; }
+            .page-header .subtitle { font-size: 0.88rem; }
+            .breadcrumb { font-size: 0.76rem; }
+            .badge { font-size: 0.68rem; padding: 0.22rem 0.65rem; }
+            .container { padding: 0 1rem; }
+            .toc { padding: 1rem 1.15rem; }
+            .toc ol { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.15rem; gap: 0.5rem; }
+            .section-title .num { width: 30px; height: 30px; font-size: 0.85rem; }
+            .subsection-title { font-size: 1rem; }
+            .card { padding: 1rem 1.1rem; }
+            .exam-box, .info-box, .warning-box { padding: 0.95rem 1.05rem; }
+            table { font-size: 0.8rem; min-width: 560px; }
+            thead th, tbody td { padding: 0.55rem 0.65rem; }
+            .diagram-item { flex: 1 1 100%; max-width: 100%; }
+            .risk-grid { grid-template-columns: 1fr; }
+            .chapter-nav { grid-template-columns: 1fr; }
+            .chapter-nav a.next { flex-direction: row; text-align: left; }
+            .author-card { grid-template-columns: 1fr; text-align: center; }
+            .author-card .avatar { margin: 0 auto; }
+            .author-card .contact-row { justify-content: center; }
+            .quick-nav { grid-template-columns: 1fr; }
+            .scroll-top { bottom: 1rem; right: 1rem; width: 42px; height: 42px; }
+            .metric-card .mc-value { font-size: 1.25rem; }
+            .metric-card .mc-icon { font-size: 1.35rem; }
+            .formula-box .formula { font-size: 0.95rem; }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 { font-size: 1.1rem; }
+            .section-title { font-size: 1.05rem; }
+            blockquote { padding: 0.8rem 1rem; font-size: 0.86rem; }
+        }
+
+        /* ==================== YAZDIRMA ==================== */
+        @media print {
+            .page-header { background: #fff !important; color: #000 !important; }
+            .page-header h1, .page-header .subtitle, .breadcrumb a { color: #000 !important; }
+            .badge { border: 1px solid #ccc; color: #000 !important; background: #f0f0f0 !important; }
+            .top-chapter-nav { display: none !important; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .exam-box { background: #fff; border: 1px solid #e36414; }
+            .scroll-top, .quick-nav, .chapter-nav { display: none !important; }
+            .author-card { background: #f0f0f0 !important; color: #000 !important; }
+            .author-card .contact-row a, .author-card .contact-row span { color: #000 !important; }
+            .metric-card, .risk-card { background: #f0f0f0 !important; color: #000 !important; box-shadow: none !important; border: 1px solid #ccc; }
+            .metric-card .mc-label, .metric-card .mc-sub { color: #000 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== ÜST BAŞLIK ==================== -->
+<header class="page-header">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="Site haritası">
+            <a href="../../../index.html">🏠 Tüm Dersler</a>
+            <span class="sep">›</span>
+            <a href="../index.html">📚 Çalışma Ortamı Gözetimi</a>
+            <span class="sep">›</span>
+            <span>Bölüm 4</span>
+        </nav>
+        <h1>Bölüm 4: Biyolojik Risk Etmenleri ve İş Hijyeni</h1>
+        <p class="subtitle">Biyolojik Etkenler, Bulaşma Yolları, Korunma Yöntemleri ve Yasal Saklama Süreleri</p>
+        <div class="badge-row">
+            <span class="badge badge-primary">4 Risk Grubu</span>
+            <span class="badge badge-accent">İş Hijyeni</span>
+            <span class="badge badge-success">Biyolojik Güvenlik (BSL)</span>
+            <span class="badge badge-warning">40 Yıl Saklama</span>
+        </div>
+
+        <!-- ÜST BÖLÜM GEZİNME -->
+        <nav class="top-chapter-nav" aria-label="Üst bölüm gezinme">
+            <a href="../bolum-03/konu-anlatimi.html">
+                <span class="tn-arrow">←</span>
+                <span class="tn-text">
+                    <small>Önceki Bölüm</small>
+                    <strong>Bölüm 3: Fiziksel Risk Etmenleri</strong>
+                </span>
+            </a>
+            <span class="tn-center">4/7</span>
+            <a href="../bolum-05/konu-anlatimi.html" class="next">
+                <span class="tn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Bölüm 5: Konu Anlatımı</strong>
+                </span>
+                <span class="tn-arrow">→</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- ==================== İÇERİK ==================== -->
+<main>
+    <div class="container">
+
+        <!-- HIZLI ERİŞİM -->
+        <nav class="quick-nav" aria-label="Hızlı erişim">
+            <a href="konu-anlatimi.html" class="qn-accent">
+                <span class="qn-icon">📖</span>
+                <span class="qn-text">Konu Anlatımı<small>Bu sayfa</small></span>
+            </a>
+            <a href="sorular.html" class="qn-success">
+                <span class="qn-icon">❓</span>
+                <span class="qn-text">Sorular<small>Test &amp; alıştırma</small></span>
+            </a>
+            <a href="sunum.html" class="qn-warning">
+                <span class="qn-icon">📊</span>
+                <span class="qn-text">Sunum<small>Slayt gösterisi</small></span>
+            </a>
+            <a href="../index.html">
+                <span class="qn-icon">📚</span>
+                <span class="qn-text">Ders Ana Sayfası<small>Tüm bölümler</small></span>
+            </a>
+        </nav>
+
+        <!-- İÇİNDEKİLER -->
+        <nav class="toc" aria-label="İçindekiler">
+            <h2>İçindekiler</h2>
+            <ol>
+                <li><a href="#bolum4-1">Biyolojik Risk Etmenlerinin Tanımı ve Sınıflandırılması</a></li>
+                <li><a href="#bolum4-2">Bulaşma Yolları ve Maruziyet Riski Olan Sektörler</a></li>
+                <li><a href="#bolum4-3">İş Hijyeni İlkeleri ve Kişisel Hijyen Standartları</a></li>
+                <li><a href="#bolum4-4">Biyolojik Risklerden Korunma ve Önleme Yöntemleri</a></li>
+                <li><a href="#bolum4-5">Yasal Mevzuat, Bildirimler ve Kayıt Saklama Süreleri</a></li>
+            </ol>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- 1. BİYOLOJİK RİSK ETMENLERİNİN TANIMI VE SINIFLANDIRILMASI  -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum4-1">
+            <h2 class="section-title">
+                <span class="num">1</span>
+                Biyolojik Risk Etmenlerinin Tanımı ve Sınıflandırılması
+            </h2>
+
+            <h3 class="subsection-title">1.1. Biyolojik Etken Tanımı ve Kapsamı</h3>
+
+            <div class="card">
+                <p>
+                    <span class="keyword keyword-accent">Biyolojik Etken:</span> Herhangi bir <strong>enfeksiyona, alerjiye veya zehirlenmeye</strong> neden olabilen hücresel veya hücresel olmayan mikrobiyolojik varlıkları ve hücresel yapıları ifade eder.
+                </p>
+                <p>Mevzuat ve teknik iş hijyeni standartları uyarınca biyolojik etken tanımı kapsamında aşağıdaki temel yapılar yer alır:</p>
+                <ul>
+                    <li><strong>Hücre Kültürleri:</strong> Çok hücreli organizmalardan türetilmiş hücrelerin <em>in vitro</em> (laboratuvar ortamında) olarak üretilmesini ifade eder.</li>
+                    <li><strong>İnsan Endoparazitleri:</strong> İnsan vücudunun içinde (iç organlarda, dokularda veya kanda) yaşayarak hastalığa ve biyolojik zararlara neden olabilen parazit organizmalardır.</li>
+                    <li><strong>Mikroorganizmalar:</strong> Genetik materyalini çoğaltma veya aktarma yeteneğinde olan hücresel veya hücresel olmayan mikrobiyolojik varlıklardır:
+                        <ul>
+                            <li><strong>Bakteriler:</strong> Tek hücreli, prokaryotik organizmalar.</li>
+                            <li><strong>Virüsler:</strong> Yalnızca canlı bir konak hücre içinde çoğalabilen obligat hücre içi ajanları.</li>
+                            <li><strong>Mantarlar:</strong> Maya ve küf formundaki ökaryotik organizmalar.</li>
+                            <li><strong>Prionlar:</strong> Nörodejeneratif hastalıklara yol açan, nükleik asit içermeyen enfeksiyöz protein tanecikleri.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">1.2. Biyolojik Risk Grupları (Mevzuat Uyarınca 4 Risk Grubu)</h3>
+
+            <div class="card">
+                <p>
+                    <em>Biyolojik Etkenlere Maruziyet Risklerinin Önlenmesi Hakkında Yönetmelik</em> uyarınca biyolojik etkenler, enfeksiyon risk düzeylerine göre <strong>4 risk grubunda</strong> sınıflandırılır:
+                </p>
+            </div>
+
+            <!-- RİSK GRUPLARI KARTLARI -->
+            <div class="risk-grid">
+                <div class="risk-card g1">
+                    <span class="rc-badge">GRUP 1</span>
+                    <h4>İnsanda Hastalık Yapmaz</h4>
+                    <ul>
+                        <li>Hastalık yapma ihtimali: <strong>YOK</strong></li>
+                        <li>Çalışana tehlikesi: <strong>İhmal edilebilir</strong></li>
+                        <li>Topluma yayılma: <strong>Yok</strong></li>
+                        <li>Tedavi / Aşı: <strong>Gerekli değil</strong></li>
+                    </ul>
+                </div>
+                <div class="risk-card g2">
+                    <span class="rc-badge">GRUP 2</span>
+                    <h4>Hastalık Yapabilir</h4>
+                    <ul>
+                        <li>Hastalık yapma ihtimali: <strong>Var</strong></li>
+                        <li>Çalışana tehlikesi: <strong>Zarar verebilir</strong></li>
+                        <li>Topluma yayılma: <strong>Düşük</strong></li>
+                        <li>Tedavi / Aşı: <strong>VAR</strong></li>
+                    </ul>
+                </div>
+                <div class="risk-card g3">
+                    <span class="rc-badge">GRUP 3</span>
+                    <h4>Ağır Hastalık Yapar</h4>
+                    <ul>
+                        <li>Hastalık yapma ihtimali: <strong>Ağır hastalık</strong></li>
+                        <li>Çalışana tehlikesi: <strong>Ciddi tehlike</strong></li>
+                        <li>Topluma yayılma: <strong>Bulunabilir</strong></li>
+                        <li>Tedavi / Aşı: <strong>GENELLİKLE VAR</strong></li>
+                    </ul>
+                </div>
+                <div class="risk-card g4">
+                    <span class="rc-badge">GRUP 4</span>
+                    <h4>Ölümcül / Tedavisiz</h4>
+                    <ul>
+                        <li>Hastalık yapma ihtimali: <strong>Ağır hastalık</strong></li>
+                        <li>Çalışana tehlikesi: <strong>Ciddi tehlike</strong></li>
+                        <li>Topluma yayılma: <strong>YÜKSEK</strong></li>
+                        <li>Tedavi / Aşı: <strong>YOK (KESİNLİKLE)</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SINAV KUTUSU -->
+            <div class="exam-box">
+                <p><strong>Grup 3 ve Grup 4 Arasındaki En Temel Fark:</strong></p>
+                <p>Grup 3 etkenlerde topluma yayılma riski bulunabilir ve <strong>genellikle etkili korunma veya tedavi imkânı VARDIR</strong>. Grup 4 etkenlerde ise topluma yayılma riski yüksek olup, <strong>etkili korunma veya tedavi imkânı KESİNLİKLE YOKTUR</strong>. Sınav sorularında bu iki grubu ayıran anahtar kelime <span class="highlight">"tedavi/aşı imkânının bulunup bulunmamasıdır"</span>.</p>
+            </div>
+
+            <!-- KARŞILAŞTIRMA TABLOSU -->
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Risk Grubu</th>
+                            <th>Hastalık Yapma Riski</th>
+                            <th>Çalışana Tehlikesi</th>
+                            <th>Topluma Yayılma Riski</th>
+                            <th>Tedavi / Aşı İmkânı</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Grup 1</strong></td>
+                            <td>İhtimal Yok</td>
+                            <td>Yok / İhmal Edilebilir</td>
+                            <td>Yok</td>
+                            <td>Gerekli Değil / Mevcut</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grup 2</strong></td>
+                            <td>Hastalığa Neden Olabilir</td>
+                            <td>Zarar Verebilir</td>
+                            <td>Düşük</td>
+                            <td>Var (Etkili korunma veya tedavi mevcut)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grup 3</strong></td>
+                            <td>Ağır Hastalık Yapar</td>
+                            <td>Ciddi Tehlike Oluşturur</td>
+                            <td>Bulunabilir</td>
+                            <td>Genellikle Var</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grup 4</strong></td>
+                            <td>Ağır Hastalık Yapar</td>
+                            <td>Ciddi Tehlike Oluşturur</td>
+                            <td><strong>Yüksek</strong></td>
+                            <td><strong>YOK (BULUNMAYAN)</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 2. BULAŞMA YOLLARI VE MARUZİYET RİSKİ OLAN SEKTÖRLER         -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum4-2">
+            <h2 class="section-title">
+                <span class="num">2</span>
+                Bulaşma Yolları ve Maruziyet Riski Olan Sektörler
+            </h2>
+
+            <h3 class="subsection-title">2.1. Biyolojik Etkenlerin Bulaşma Yolları</h3>
+
+            <div class="card">
+                <p>Biyolojik etkenlerin insan organizmasına giriş ve bulaşma mekanizmaları şunlardır:</p>
+                <ul>
+                    <li><strong>Solunum Yolu:</strong> Aerosoller, damlacık enfeksiyonu ve havada asılı kalan organik/biyolojik tozların (solunabilir boyuttaki partiküllerin) solunması.</li>
+                    <li><strong>Sindirim Yolu:</strong> Kontamine gıda, içecek ve suların ağız yoluyla tüketilmesi, hijyenik olmayan ellerin ağza götürülmesi.</li>
+                    <li><strong>Deri ve Mukoza Teması:</strong> Çatlak, yaralı veya bütünlüğü bozulmuş deri ile göz, burun ve ağız mukozasına doğrudan temas.</li>
+                    <li><strong>Kan ve Vücut Sıvıları:</strong> Kesici-delici alet yaralanmaları (iğne batması, bistüri kesikleri) ve enfekte kan/vücut sıvılarıyla temas.</li>
+                    <li><strong>Vektörler:</strong> Sinek, kene, pire ve diğer taşıyıcı organizmalar aracılığıyla bulaşma.</li>
+                </ul>
+            </div>
+
+            <!-- BULAŞMA YOLLARI DİYAGRAMI -->
+            <div class="diagram">
+                <div class="diagram-item">
+                    <div class="icon">🫁</div>
+                    <h4>Solunum</h4>
+                    <p>Aerosol, damlacık, biyolojik toz</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🍽️</div>
+                    <h4>Sindirim</h4>
+                    <p>Kontamine gıda, su, kirli eller</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🩹</div>
+                    <h4>Deri / Mukoza</h4>
+                    <p>Çatlak, yara, göz-burun-ağız teması</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🩸</div>
+                    <h4>Kan / Vücut Sıvısı</h4>
+                    <p>İğne batması, bistüri kesiği</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🦟</div>
+                    <h4>Vektörler</h4>
+                    <p>Sinek, kene, pire</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">2.2. Yüksek Maruziyet Riski Bulunan Sektörler</h3>
+
+            <div class="card">
+                <p>Biyolojik risk etmenleriyle mesleki olarak en sık karşılaşılan çalışma ortamları:</p>
+                <ul>
+                    <li>Sağlık hizmetleri, hastaneler, klinikler ve bakım evleri</li>
+                    <li>Biyolojik araştırma, mikrobiyoloji ve klinik tanı laboratuvarları</li>
+                    <li>Veterinerlik hizmetleri ve hayvan bakım/üretim alanları</li>
+                    <li>Tarım, hayvancılık, tiftik/deri işleme ve seracılık faaliyetleri</li>
+                    <li>Atık, çöp yönetimi, kanalizasyon ve su arıtma tesisleri</li>
+                    <li>Gıda üretim, işleme, kesimhane (mezbaha) ve paketleme tesisleri</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">2.3. Sık Rastlanan Mesleki Biyolojik Hastalıklar ve Etken Sentezi</h3>
+
+            <div class="card">
+                <p>Sınavlarda soru potansiyeli yüksek olan temel meslek hastalıkları, ilişkili mikroorganizma türü ve sektör eşleşmesi:</p>
+                <ul>
+                    <li><strong>Şarbon (Anthrax):</strong>
+                        <ul>
+                            <li><em>Etken Türü:</em> Bakteri (<strong>Bacillus anthracis</strong>)</li>
+                            <li><em>Sektör / Maruziyet:</em> Hayvancılık, dericilik, tiftik/yün işleme ve mezbaha çalışanları.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Brucella (Bruselloz):</strong>
+                        <ul>
+                            <li><em>Etken Türü:</em> Bakteri (<strong>Brucella türleri</strong>)</li>
+                            <li><em>Sektör / Maruziyet:</em> Enfekte hayvanlarla temas eden veterinerler, hayvancılık çalışanları ve enfekte taze süt/süt ürünleri tüketicileri.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Hepatit B ve Hepatit C:</strong>
+                        <ul>
+                            <li><em>Etken Türü:</em> Virüs (<strong>HBV / HCV</strong>)</li>
+                            <li><em>Sektör / Maruziyet:</em> Sağlık çalışanları, laboratuvar personeli; kan, vücut sıvıları ve kesici-delici alet yaralanmaları.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tüberküloz (Verem):</strong>
+                        <ul>
+                            <li><em>Etken Türü:</em> Bakteri (<strong>Mycobacterium tuberculosis</strong>)</li>
+                            <li><em>Sektör / Maruziyet:</em> Sağlık tesisleri, cezaevleri ve toplu yaşam/bakım alanlarında damlacık yoluyla bulaşma.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tetanos:</strong>
+                        <ul>
+                            <li><em>Etken Türü:</em> Bakteri (<strong>Clostridium tetani</strong>)</li>
+                            <li><em>Sektör / Maruziyet:</em> Tarım, inşaat ve metal iş kolunda toprak veya paslı nesnelerle yaralanma.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Kırım-Kongo Kanamalı Ateşi (KKKA):</strong>
+                        <ul>
+                            <li><em>Etken Türü:</em> Virüs (<strong>Nairovirus</strong>)</li>
+                            <li><em>Sektör / Maruziyet:</em> Tarım ve hayvancılık çalışanlarında kene tutunması/teması.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 3. İŞ HİJYENİ İLKELERİ VE KİŞİSEL HİJYEN STANDARTLARI         -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum4-3">
+            <h2 class="section-title">
+                <span class="num">3</span>
+                İş Hijyeni İlkeleri ve Kişisel Hijyen Standartları
+            </h2>
+
+            <h3 class="subsection-title">3.1. İş Hijyeni Tanımı ve Çalışma Ortamı Gözetimi İlkeleri</h3>
+
+            <div class="card">
+                <p>
+                    <span class="keyword keyword-accent">İş Hijyeni:</span> Çalışma ortamında bulunan, çalışanların sağlığını bozan, hastalığa veya huzursuzluğa neden olan çevresel faktörlerin (fiziksel, kimyasal, biyolojik, ergonomik) <strong>belirlenmesi, değerlendirilmesi ve kontrol altına alınması</strong> disiplinidir.
+                </p>
+                <p>İş hijyeni kapsamında yürütülen 4 temel disiplin adımı sırasıyla şunlardır:</p>
+                <ol>
+                    <li><strong>Tahmin Etme / Öngörme:</strong> Çalışma ortamında oluşabilecek potansiyel tehlikelerin henüz ortaya çıkmadan belirlenmesi.</li>
+                    <li><strong>Tanıma:</strong> İşyerinde mevcut olan fiziksel, kimyasal ve biyolojik tehlikelerin saptanması.</li>
+                    <li><strong>Değerlendirme:</strong> Saptanan tehlikelerin ortam ölçümleri ve analizler aracılığıyla maruziyet düzeylerinin belirlenmesi ve yasal sınır değerlerle kıyaslanması.</li>
+                    <li><strong>Kontrol Etme:</strong> Maruziyeti ortadan kaldırmak veya kabul edilebilir seviyeye indirmek amacıyla teknik ve idari önlemlerin uygulanması.</li>
+                </ol>
+            </div>
+
+            <!-- İŞ HİJYENİ 4 ADIM DİYAGRAMI -->
+            <div class="diagram">
+                <div class="diagram-item">
+                    <div class="icon">🔮</div>
+                    <h4>1. Öngörme</h4>
+                    <p>Potansiyel tehlikeleri önceden sez</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🔍</div>
+                    <h4>2. Tanıma</h4>
+                    <p>Mevcut tehlikeleri sapta</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">📊</div>
+                    <h4>3. Değerlendirme</h4>
+                    <p>Maruziyeti ölç, sınırla kıyasla</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🛡️</div>
+                    <h4>4. Kontrol Etme</h4>
+                    <p>Teknik ve idari önlemleri uygula</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><strong>ÇALIŞMA ORTAMI GÖZETİMİ VE İŞVERENİN YÜKÜMLÜLÜĞÜ:</strong></p>
+                <ul>
+                    <li><strong>Çalışma Ortamı Gözetimi:</strong> İşyerinde çalışanların sağlık ve güvenliği için tehlike oluşturan etkenlerin saptanması, ölçülmesi ve kontrol altına alınması faaliyetleridir. İş kazası ve meslek hastalıklarının önlenmesinde en etkili yöntemdir.</li>
+                    <li><strong>Sorumluluk Paylaşımı:</strong> Sağlık gözetimi esas olarak <strong>İşyeri Hekimi</strong> sorumluluğunda iken; çalışma ortamı gözetimi esas olarak <strong>İş Güvenliği Uzmanı</strong>'nın görevleri arasındadır (İşyeri hekimi de katılım sağlar).</li>
+                    <li><strong>Yargıtay İçtihatları İlkesi:</strong> İşveren salt mevzuatta yazan önlemleri almakla kalmayıp, bilimin ve teknolojinin gerektirdiği tüm tedbirleri almak ve alınan önlemlere uyulup uyulmadığını sürekli ve etkin bir şekilde denetlemekle yükümlüdür. <span class="highlight">İş güvenliği çalışanın kendi dikkatine bırakılamaz.</span></li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">3.2. Kişisel Hijyen Kuralları ve El Yıkama Standartları</h3>
+
+            <div class="card">
+                <p>El hijyeni, biyolojik etkenlerin <strong>çapraz kontaminasyonunu</strong> önlemede en kritik halkadır.</p>
+                <p><strong>Doğru El Yıkama Tekniğinin Kronolojik Adımları:</strong></p>
+                <ol>
+                    <li>Ellerin akan <strong>ılık su</strong> ile ıslatılması.</li>
+                    <li>Yeterli miktarda (tercihen sıvı) <strong>sabunun</strong> el ayasına alınması.</li>
+                    <li>Ellerin tüm yüzeylerinin (avuç içleri, el sırtı, parmak araları, tırnak tabanları/kenarları ve bilekler) <strong>en az 20 saniye</strong> boyunca iyice ovularak köpürtülmesi.</li>
+                    <li>Ellerin ılık su altında sabun kalıntısı kalmayacak şekilde durulanması.</li>
+                    <li>Ellerin <strong>tek kullanımlık kağıt havlu</strong> ile kurulanması.</li>
+                    <li>Musluğun doğrudan elle değil, kullanılan <strong>kağıt havlu vasıtasıyla</strong> kapatılması.</li>
+                </ol>
+            </div>
+
+            <div class="metric-grid">
+                <div class="metric-card accent">
+                    <span class="mc-icon">⏱️</span>
+                    <div class="mc-value">20 sn</div>
+                    <div class="mc-label">El Yıkama Süresi</div>
+                    <div class="mc-sub">Minimum ovma süresi</div>
+                </div>
+                <div class="metric-card success">
+                    <span class="mc-icon">🧼</span>
+                    <div class="mc-value">Sıvı Sabun</div>
+                    <div class="mc-label">Tercih Edilen</div>
+                    <div class="mc-sub">Katı sabuna göre</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">🧻</span>
+                    <div class="mc-value">Tek Kullanım</div>
+                    <div class="mc-label">Kağıt Havlu</div>
+                    <div class="mc-sub">Musluk kapatma dahil</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <p><strong>Kişisel Koruyucu Donanım (KKD) Kullanım İlkeleri:</strong></p>
+                <ul>
+                    <li>Biyolojik risk tipine ve sıvı sıçrama ihtimaline uygun <strong>sıvı geçirimsiz koruyucu önlük/kıyafet</strong>.</li>
+                    <li>Saç ve baş bölgesinden döküntü veya kontaminasyonu önlemek için <strong>saç filesi/bone</strong>.</li>
+                    <li>Bulaşma yoluna ve aerosol riskine uygun maskeler (örneğin solunabilir riske karşı <strong>FFP2 veya FFP3 respiratörler</strong>).</li>
+                    <li>Biyolojik ajana ve yapılan işe uygun, <strong>delinmeye dayanıklı tıbbi koruyucu eldiven</strong> kullanımı.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">3.3. Çalışma Alanı Hijyen Kuralları ve Yasaklar</h3>
+
+            <div class="warning-box">
+                <p><strong>BİYOLOJİK RİSK BULUNAN ALANLARDA UYGULANMASI ZORUNLU YASAKLAR</strong></p>
+                <ul>
+                    <li><strong>Yeme, İçme ve Gıda Maddesi Bulundurma Yasağı:</strong> Biyolojik etken maruziyeti bulunan çalışma alanlarında kesinlikle gıda maddesi veya içecek tüketilemez, bulundurulamaz ve saklanamaz.</li>
+                    <li><strong>Sigara ve Tütün Ürünleri Kullanma Yasağı:</strong> Çalışma sahasında sigara, tütün veya tütüne dayalı maddelerin kullanımı kesinlikle yasaktır.</li>
+                    <li><strong>Kozmetik Uygulama ve Lens Takma/Çıkarma Yasağı:</strong> Kontaminasyon riskine karşı çalışma alanında makyaj/kozmetik ürün uygulanması, makyaj tazelenmesi, kontakt lens takılması veya çıkarılması yasaktır.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 4. BİYOLOJİK RİSKLERDEN KORUNMA VE ÖNLEME YÖNTEMLERİ        -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum4-4">
+            <h2 class="section-title">
+                <span class="num">4</span>
+                Biyolojik Risklerden Korunma ve Önleme Yöntemleri
+            </h2>
+
+            <h3 class="subsection-title">4.1. Kaynağında Önleme ve İkame (Substitution)</h3>
+
+            <div class="card">
+                <p>
+                    Biyolojik risklerden korunmada öncelikli yöntem <strong>tehlikenin kaynağında yok edilmesidir</strong>. Tehlikeli bir biyolojik etkenin, kullanım şartlarında çalışanların sağlığı yönünden tehlikesiz veya daha az tehlikeli olan bir biyolojik etken ile değiştirilmesine <span class="keyword keyword-accent">ikame (substitution)</span> denir.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">4.2. Mühendislik Kontrolleri ve İklimlendirme</h3>
+
+            <div class="card">
+                <p><strong>Havalandırma Sistemleri:</strong> Biyolojik etkenlerin yayılımını önlemek amacıyla <strong>HEPA (High-Efficiency Particulate Air — Yüksek Verimli Partikül Filtresi)</strong> kullanımı esastır.</p>
+                <ul>
+                    <li><strong>Negatif Basınçlı Oda:</strong> Bulaşıcı etkenlerin oda dışına kaçmasını ve koridora yayılmasını önlemek için uygulanır (Hava içeri çekilir ve HEPA filtre ile dışarı atılır).</li>
+                    <li><strong>Pozitif Basınçlı Oda:</strong> Hassas ve bağışıklığı düşük alanları dış ortamdan gelebilecek kontaminasyondan korumak için kullanılır (Oda basıncı dışarıdan yüksektir).</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <p><strong>Biyolojik Güvenlik Kabinleri (BGK):</strong></p>
+                <ul>
+                    <li><strong>Sınıf I BGK:</strong> Çalışanı ve çevreyi korur, <strong>ürün koruması sağlamaz</strong>. Önden açık, negatif basınçlı kabinlerdir.</li>
+                    <li><strong>Sınıf II BGK:</strong> Çalışanı, çevreyi ve ürünü/numuneyi <strong>eşzamanlı korur</strong>. Dikey dairesel hava akışlı ve HEPA filtreli sistemlerdir.</li>
+                    <li><strong>Sınıf III BGK:</strong> En yüksek koruma düzeyini sağlar. <strong>Tamamen kapalı, gaz sızdırmaz, entegre eldivenlerle</strong> çalışılan, HEPA filtreli ve maksimum tehlikeli etkenler için kullanılan kabinlerdir.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">4.3. Biyolojik Güvenlik Seviyeleri (BSL) ve Kabin Eşleştirmesi</h3>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>BSL Seviyesi</th>
+                            <th>Çalışılan Risk Grubu</th>
+                            <th>Özellikler</th>
+                            <th>Kullanılan Kabin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>BSL 1</strong></td>
+                            <td>Grup 1 etkenler</td>
+                            <td>Standart mikrobiyolojik uygulamaların yeterli olduğu temel seviye</td>
+                            <td>Gerekli değil / Açık tezgah</td>
+                        </tr>
+                        <tr>
+                            <td><strong>BSL 2</strong></td>
+                            <td>Grup 2 etkenler</td>
+                            <td>Erişim kısıtlaması olan seviye</td>
+                            <td>Sınıf I veya Sınıf II BGK</td>
+                        </tr>
+                        <tr>
+                            <td><strong>BSL 3</strong></td>
+                            <td>Grup 3 etkenler</td>
+                            <td>Solunum yoluyla bulaşan ve ciddi hastalık yapan etkenler için çift kapılı giriş, negatif hava basıncı ve HEPA filtrasyonu</td>
+                            <td>Sınıf II veya Sınıf III BGK</td>
+                        </tr>
+                        <tr>
+                            <td><strong>BSL 4</strong></td>
+                            <td>Grup 4 etkenler</td>
+                            <td>Tedavisi bulunmayan ve ölümcül risk taşıyan etkenler için <strong>tam korumalı pozitif basınçlı giysiler</strong></td>
+                            <td><strong>Sınıf III BGK</strong> (zorunlu)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="subsection-title">4.4. Aşılanma ve Bağışıklama</h3>
+
+            <div class="card">
+                <ul>
+                    <li>İşveren, henüz bağışıklığı olmayan çalışanlar için <strong>etkili ve ücretsiz aşı sağlanmasıyla</strong> yükümlüdür.</li>
+                    <li>Çalışanların aşı takip kartları ve bağışıklık durumları <strong>işyeri hekimi</strong> tarafından izlenir.</li>
+                    <li>Kendisine sağlanan aşıyı yaptırmayı reddeden çalışanların durumları belgelendirilir, <strong>bilgilendirilmiş rıza/red formları</strong> kayıt altına alınır.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">4.5. Dezenfeksiyon, Sterilizasyon ve Kontaminasyon Önleme</h3>
+
+            <div class="card">
+                <ul>
+                    <li><strong>Sterilizasyon:</strong> Bir maddenin veya ortamın üzerinde/içinde bulunan mikroorganizmaların (<strong>bakteri sporları dahil</strong>) tamamının fiziksel veya kimyasal yöntemlerle (örneğin <strong>otoklavda 121 °C'de basınçlı doymuş buhar</strong> ile) öldürülmesi veya uzaklaştırılması işlemidir.</li>
+                    <li><strong>Dezenfeksiyon:</strong> Cansız maddeler veya yüzeyler üzerindeki patojen mikroorganizmaların (<strong>bakteri sporları hariç</strong>) kimyasal dezenfektanlar kullanılarak yok edilmesi veya zararsız seviyeye indirilmesidir.</li>
+                    <li><strong>Temizlik Protokolleri:</strong> Çalışma yüzeylerinin onaylı dezenfektanlar ile periyodik temizliği zorunludur.</li>
+                </ul>
+            </div>
+
+            <div class="exam-box">
+                <p><strong>Sterilizasyon vs. Dezenfeksiyon Ayrımı:</strong> En kritik fark <span class="highlight">bakteri sporlarıdır</span>. <strong>Sterilizasyon</strong> bakteri sporlarını da yok eder. <strong>Dezenfeksiyon</strong> ise sporları yok edemez, sadece patojenleri (spor formunda olmayan) ortadan kaldırır. Bu ayrım sınavlarda sıkça sorulmaktadır.</p>
+            </div>
+
+            <h3 class="subsection-title">4.6. Tıbbi Atık Yönetimi</h3>
+
+            <div class="card">
+                <p>Tıbbi atıkların kaynağında ayrıştırılması ve bertaraf ilkeleri:</p>
+                <ul>
+                    <li><strong>Kırmızı Atık Torbası:</strong> Enfekte atıklar, hasta bakım atıkları, kan ve biyolojik materyalle kontamine olmuş tıbbi atıklar toplanır.</li>
+                    <li><strong>Sarı / Delinmeye Dayanıklı Plastik Kutular:</strong> Kesici-delici alet atıkları (iğne uçları, bistüriler, enjektör iğneleri, lam-lamel, kırık cam tüpler) toplanır.</li>
+                    <li><strong>Evsel / Genel Atık Ayrımı:</strong> Evsel ve genel atıklar siyah veya mavi torbalarda toplanarak tıbbi atıklardan kesin olarak ayrılır.</li>
+                    <li><strong>Bertaraf:</strong> Tıbbi atıklar <strong>otoklavlama</strong> yöntemiyle sterilize edildikten sonra veya <strong>lisanslı tesislerde yakılarak</strong> bertaraf edilir.</li>
+                </ul>
+            </div>
+
+            <!-- ATIK TÜRLERİ DİYAGRAMI -->
+            <div class="diagram">
+                <div class="diagram-item">
+                    <div class="icon">🔴</div>
+                    <h4>Kırmızı Torba</h4>
+                    <p>Enfekte atık, kan, biyolojik materyal</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🟡</div>
+                    <h4>Sarı Kutu</h4>
+                    <p>Kesici-delici: iğne, bistüri, lam</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">⚫</div>
+                    <h4>Siyah/Mavi Torba</h4>
+                    <p>Evsel ve genel atıklar</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">♻️</div>
+                    <h4>Bertaraf</h4>
+                    <p>Otoklav + Yakma (lisanslı tesis)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 5. YASAL MEVZUAT, BİLDİRİMLER VE KAYIT SAKLAMA SÜRELERİ      -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum4-5">
+            <h2 class="section-title">
+                <span class="num">5</span>
+                Yasal Mevzuat, Bildirimler ve Kayıt Saklama Süreleri
+            </h2>
+
+            <h3 class="subsection-title">5.1. Biyolojik Etkenlere Maruziyet Risklerinin Önlenmesi Hakkında Yönetmelik</h3>
+
+            <div class="card">
+                <p>
+                    Yönetmelik, çalışanların biyolojik etkenlere maruziyetinden kaynaklanan risklerden korunmasını hedefler.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <p><strong>SAĞLIK DOSYALARI VE YILLIK DEĞERLENDİRME:</strong></p>
+                <ul>
+                    <li><strong>Kişisel Sağlık Dosyalarında Gizlilik İlkesi:</strong> Çalışanların yürüttüğü işler, risk değerlendirmesi sonuçları, maruziyet bilgileri, işe giriş ve periyodik sağlık muayenesi sonuçları ile meslek hastalığı kayıtları kişisel sağlık dosyalarında <strong>gizlilik ilkesine uyularak</strong> saklanmalıdır.</li>
+                    <li><strong>Yıllık Değerlendirme Raporu (EK-2):</strong> İş güvenliği uzmanı ve işyeri hekimi, çalışma ortamı gözetimi sonuçlarını içeren Yıllık Değerlendirme Raporunu EK-2 formuna uygun olarak birlikte hazırlar. Bu raporda <strong>İşveren, İşyeri Hekimi ve İş Güvenliği Uzmanının imzası</strong> yer alır. OSGB'ler bu raporları arşivler ve sözleşme sonunda işverene teslim etmekle yükümlüdür.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">5.2. Çalışma ve Sosyal Güvenlik Bakanlığına (ÇSGB) Ön Bildirim Yükümlülüğü</h3>
+
+            <div class="card">
+                <p>İşverenler, biyolojik etkenlerin işyerinde ilk kez kullanımında Çalışma ve Sosyal Güvenlik Bakanlığına ön bildirimde bulunmak zorundadır:</p>
+                <ul>
+                    <li><strong>Grup 1 Biyolojik Etkenler:</strong> Bakanlığa ön bildirim yapma zorunluluğu <strong>YOKTUR</strong>.</li>
+                    <li><strong>Grup 2, Grup 3 ve Grup 4 Biyolojik Etkenler:</strong> İlk kez kullanımda, işin başlamasından <strong>en az 30 GÜN ÖNCE</strong> Bakanlığa ön bildirim yapılması zorunludur.</li>
+                </ul>
+            </div>
+
+            <div class="exam-box">
+                <p><strong>ÇSGB ÖN BİLDİRİM KURALLARI:</strong></p>
+                <ul>
+                    <li><strong>Bildirim Süresi:</strong> <span class="highlight">30 GÜN</span> (İşin başlamasından önce).</li>
+                    <li><strong>Kapsam:</strong> Grup 2, Grup 3 ve Grup 4 için bildirim zorunludur. <strong>Grup 1 için bildirim gerekmez.</strong></li>
+                    <li><strong>Bildirim İçeriği:</strong> İşyerinin unvan/adresi, İSG profesyonellerinin (uzman/hekim) bilgileri, risk değerlendirmesi sonuçları, maruz kalınan etken türü/risk grubu ve öngörülen korunma tedbirleri.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">5.3. Biyolojik Etken Maruziyet Kayıtlarının Saklama Süreleri</h3>
+
+            <div class="card">
+                <p>Biyolojik etkenlere maruz kalan çalışanların listesi ve sağlık kayıtları mevzuat uyarınca saklanmalıdır:</p>
+                <ul>
+                    <li><strong>Genel Saklama Süresi:</strong> Biyolojik etkenlere maruziyetin sona ermesinden itibaren kayıtlar en az <strong>15 YIL</strong> saklanır.</li>
+                    <li><strong>Özel Saklama Süresi (40 YIL Zorunluluğu):</strong> Aşağıdaki durumlarda kayıtlar, bilinen son maruziyetin sona ermesinden itibaren en az <strong>40 YIL</strong> saklanmak zorundadır.</li>
+                </ul>
+            </div>
+
+            <!-- METRİK: SAKLAMA SÜRELERİ -->
+            <div class="metric-grid">
+                <div class="metric-card success">
+                    <span class="mc-icon">📋</span>
+                    <div class="mc-value">15 YIL</div>
+                    <div class="mc-label">Genel Saklama</div>
+                    <div class="mc-sub">Standart biyolojik maruziyet kayıtları</div>
+                </div>
+                <div class="metric-card danger">
+                    <span class="mc-icon">⚠️</span>
+                    <div class="mc-value">40 YIL</div>
+                    <div class="mc-label">Özel Durumlar</div>
+                    <div class="mc-sub">Gizli/kalıcı enfeksiyon, kanser vb.</div>
+                </div>
+                <div class="metric-card accent">
+                    <span class="mc-icon">📨</span>
+                    <div class="mc-value">30 GÜN</div>
+                    <div class="mc-label">ÇSGB Ön Bildirim</div>
+                    <div class="mc-sub">Grup 2, 3, 4 için</div>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>40 YIL SAKLAMA ZORUNLULUĞU OLAN ÖZEL DURUMLAR:</strong></p>
+                <ol>
+                    <li><strong>Kalıcı veya gizli (latent) enfeksiyona</strong> yol açan biyolojik etkenlere maruziyet.</li>
+                    <li>Teşhis edilebilene kadar geçen sürede <strong>teşhis edilemeyen veya hastalık belirtisi vermeyen</strong> enfeksiyonlar.</li>
+                    <li><strong>Uzun kuluçka dönemi (inkübasyon süresi)</strong> olan hastalıklar.</li>
+                    <li><strong>Uzun süreli tekrarlayan (rekürren)</strong> hastalıklar.</li>
+                    <li><strong>Kansere yol açan</strong> biyolojik etken maruziyetleri.</li>
+                </ol>
+            </div>
+
+            <h3 class="subsection-title">5.4. Saklama Süreleri Sınav Özet Tablosu</h3>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kayıt Türü / Durum</th>
+                            <th>Saklama Süresi</th>
+                            <th>Kapsam / Şartlar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Genel Biyolojik Maruziyet Kayıtları</strong></td>
+                            <td><strong>15 YIL</strong></td>
+                            <td>Biyolojik etkenlere maruziyetin sona ermesinden itibaren tutulan standart maruziyet ve sağlık kayıtları.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Özel / Kritik Biyolojik Maruziyet Kayıtları</strong></td>
+                            <td><strong>40 YIL</strong></td>
+                            <td>Kalıcı/gizli enfeksiyon, uzun kuluçka süreli hastalık, teşhise kadar belirti vermeyen vakalar veya kanser riski taşıyan etken maruziyetleri.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SINAV ÖZET TABLOSU                                           -->
+        <!-- ============================================================ -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="num">★</span>
+                Sınav Özet Tablosu
+            </h2>
+
+            <div class="card">
+                <p>
+                    Bölüm 4 bünyesinde incelenen tüm biyolojik risk etmenleri, sınıflandırmalar, korunma yöntemleri ve yasal süreler sınav tekrarı amacıyla aşağıda özetlenmiştir:
+                </p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Konu / Kavram</th>
+                            <th>Anahtar Bilgi</th>
+                            <th>Yasal Değer / Süre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Grup 1 Biyolojik Etken</strong></td>
+                            <td>İnsanda hastalık yapmaz, topluma yayılmaz</td>
+                            <td>ÇSGB bildirimi <strong>gerekmez</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grup 2 Biyolojik Etken</strong></td>
+                            <td>Hastalık yapabilir, tedavi/aşı var</td>
+                            <td>30 gün önce <strong>bildirim zorunlu</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grup 3 Biyolojik Etken</strong></td>
+                            <td>Ağır hastalık, topluma yayılabilir, <strong>tedavi genellikle var</strong></td>
+                            <td>30 gün önce <strong>bildirim zorunlu</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grup 4 Biyolojik Etken</strong></td>
+                            <td>Ağır hastalık, topluma yayılma yüksek, <strong>tedavi/aşı YOK</strong></td>
+                            <td>30 gün önce <strong>bildirim zorunlu</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>El Yıkama Süresi</strong></td>
+                            <td>Parmak araları, tırnak, bilek dahil</td>
+                            <td>En az <strong>20 saniye</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sterilizasyon</strong></td>
+                            <td>Bakteri sporları dahil tüm mikroorganizmalar</td>
+                            <td>Otoklavda <strong>121 °C</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dezenfeksiyon</strong></td>
+                            <td>Bakteri sporları hariç patojenler</td>
+                            <td>Kimyasal dezenfektanlar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>BSL 4</strong></td>
+                            <td>Grup 4 etkenler, tam korumalı pozitif basınçlı giysi</td>
+                            <td><strong>Sınıf III BGK zorunlu</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Genel Saklama Süresi</strong></td>
+                            <td>Standart biyolojik maruziyet kayıtları</td>
+                            <td><strong>15 YIL</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Özel Saklama Süresi</strong></td>
+                            <td>Gizli enfeksiyon, kanser, uzun kuluçka</td>
+                            <td><strong>40 YIL</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ÇSGB Ön Bildirim</strong></td>
+                            <td>Grup 2, 3, 4 — ilk kez kullanımda</td>
+                            <td>İşin başlamasından <strong>30 GÜN önce</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <p>
+                    Biyolojik risk etmenleriyle mücadelede temel strateji, <strong>kaynağında önleme ve ikame</strong> ile başlar; <strong>mühendislik kontrolleri</strong> (HEPA filtrasyon, BSL seviyeleri, BGK) ve <strong>idari önlemler</strong> (aşılama, eğitim, kişisel hijyen) ile devam eder. Tüm biyolojik maruziyet verileri, <strong>Yıllık Değerlendirme Raporu (EK-2)</strong> çatısı altında İş Güvenliği Uzmanı ve İşyeri Hekimi işbirliğiyle sentezlenerek İşveren, İGU ve İYH'nin üçlü imzasıyla karara bağlanır. Sınav hazırlığında özellikle <strong>Grup 3 ve Grup 4 ayrımına</strong>, <strong>15/40 yıl saklama sürelerine</strong> ve <strong>30 günlük ÇSGB bildirim süresine</strong> dikkat edilmelidir.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BÖLÜM GEZİNME (ALT)                                          -->
+        <!-- ============================================================ -->
+        <nav class="chapter-nav" aria-label="Bölümler arası gezinme">
+            <a href="../bolum-03/konu-anlatimi.html" class="prev">
+                <span class="cn-arrow">←</span>
+                <span class="cn-text">
+                    <small>Önceki Bölüm</small>
+                    <strong>Bölüm 3: Fiziksel Risk Etmenleri</strong>
+                </span>
+            </a>
+            <a href="../bolum-05/konu-anlatimi.html" class="next">
+                <span class="cn-arrow">→</span>
+                <span class="cn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Bölüm 5: Konu Anlatımı</strong>
+                </span>
+            </a>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- HAZIRLAYAN KARTI                                             -->
+        <!-- ============================================================ -->
+        <section class="author-card" aria-label="Hazırlayan bilgileri">
+            <div class="avatar" aria-hidden="true">SA</div>
+            <div class="author-info">
+                <h3>Sıraç Aksan</h3>
+                <p class="role">
+                    Konya Teknik Üniversitesi<br>
+                    İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans<br>
+                    <strong>Ders:</strong> Çalışma Ortamı Gözetimi &nbsp;|&nbsp; <strong>Öğretim Üyesi:</strong> Bilgehan Kekeç
+                </p>
+                <div class="contact-row">
+                    <a href="tel:+905069282100" aria-label="Telefon">
+                        <span aria-hidden="true">📞</span> 0506 928 21 00
+                    </a>
+                    <a href="mailto:saracaksan@gmail.com" aria-label="E-posta">
+                        <span aria-hidden="true">✉️</span> saracaksan@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- ==================== SAYFA SONU ==================== -->
+<footer class="page-footer">
+    <div class="container">
+        <p><strong>Çalışma Ortamı Gözetimi</strong> — Bölüm 4: Biyolojik Risk Etmenleri ve İş Hijyeni</p>
+        <p>
+            <a href="../../../index.html">Tüm Dersler</a> &nbsp;·&nbsp;
+            <a href="../index.html">Ders Ana Sayfası</a> &nbsp;·&nbsp;
+            <a href="sorular.html">Sorular</a> &nbsp;·&nbsp;
+            <a href="sunum.html">Sunum</a>
+        </p>
+        <p style="margin-top:0.6rem; font-size:0.76rem; opacity:0.75;">
+            © 2026 Sıraç Aksan — Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans<br>
+            Bu içerik yalnızca eğitim amaçlıdır. Güncel mevzuat için resmî kaynaklara başvurunuz.
+        </p>
+    </div>
+</footer>
+
+<!-- ==================== YUKARI ÇIK BUTONU ==================== -->
+<button class="scroll-top" id="scrollTopBtn" aria-label="Sayfanın başına dön" title="Yukarı çık">↑</button>
+
+<script>
+    (function () {
+        'use strict';
+
+        var btn = document.getElementById('scrollTopBtn');
+        var toggle = function () {
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        };
+        window.addEventListener('scroll', toggle, { passive: true });
+        toggle();
+
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var targetId = this.getAttribute('href').slice(1);
+                if (!targetId) return;
+                var target = document.getElementById(targetId);
+                if (!target) return;
+                e.preventDefault();
+                var offset = target.getBoundingClientRect().top + window.scrollY - 20;
+                window.scrollTo({ top: offset, behavior: 'smooth' });
+                history.replaceState(null, '', '#' + targetId);
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

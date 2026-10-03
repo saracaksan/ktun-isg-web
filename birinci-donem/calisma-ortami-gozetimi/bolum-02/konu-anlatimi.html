@@ -1,1 +1,1591 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Çalışma Ortamı Gözetimi · Bölüm 02 · Konu Anlatımı</title><style>*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#172033}a{text-decoration:none;color:inherit}.top{background:linear-gradient(135deg,#071a33,#1769aa);color:white}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:900}.brand small{display:block;color:#b9cce0;font-size:10px;margin-top:4px}.back{border:1px solid #ffffff2b;padding:9px 13px;border-radius:9px;font-size:11px;background:#ffffff0d}.hero{padding:52px 0}.eyebrow{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#b9e7ff;font-weight:800}.hero h1{font-size:clamp(30px,4vw,48px);margin:14px 0 8px;line-height:1.08}.hero p{color:#cbd9e6;font-size:13px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{font-size:10px;padding:7px 10px;border-radius:8px;background:#ffffff12;border:1px solid #ffffff18}main{padding:35px 0 70px}.head{margin-bottom:20px}.head h2{margin:0;color:#071a33}.head p{color:#64748b;font-size:11px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 5px 22px #0f172a0a}.num{width:34px;height:34px;border-radius:9px;background:#eef6fc;color:#1769aa;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}.card h3{margin:14px 0 7px;font-size:15px}.card p{font-size:10px;color:#64748b}.links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px}.links a{font-size:9px;font-weight:800;color:#1769aa;background:#f6f9fc;border:1px solid #e7edf3;border-radius:8px;padding:10px 5px;text-align:center}.empty{padding:20px;background:white;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b;font-size:11px}.footer{background:#04101f;color:#91a6bb;padding:25px 0;font-size:10px;line-height:1.7}@media(max-width:700px){.grid{grid-template-columns:1fr}.links{grid-template-columns:1fr}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}}</style></head><body><header class="top"><div class="wrap nav"><div class="brand">KTÜN · İSG Eğitim Portalı<small>2026–2027</small></div><a class="back" href="../../index.html">← Ders Ana Sayfası</a></div><div class="wrap hero"><span class="eyebrow">Çalışma Ortamı Gözetimi</span><h1>Bölüm 02</h1><p>Konu Anlatımı</p><div class="meta"><span class="pill">Bölüm 02</span><span class="pill">Konu Anlatımı</span></div></div></header><main><div class="wrap"><div class="empty">Bu alan içerik eklenmesi için hazırdır. Şu anda boş bırakılmıştır.</div></div></main><footer class="footer"><div class="wrap">Hazırlayan: Sıraç AKSAN · 0506 928 22 10 · saracaksan@gmail.com</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Çalışma Ortamı Gözetimi - Bölüm 2: Ortam Ölçümleri, Kayıtlar ve İstatistikler | Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans">
+    <meta name="author" content="Sıraç Aksan">
+    <title>Bölüm 2: Ortam Ölçümleri, Kayıtlar ve İstatistikler | Çalışma Ortamı Gözetimi</title>
+    <style>
+        :root {
+            --primary: #0f4c5c;
+            --primary-light: #1b6b7a;
+            --accent: #e36414;
+            --accent-light: #fb8b24;
+            --bg: #f5f7fa;
+            --card: #ffffff;
+            --text: #1e2a32;
+            --text-light: #4a5a68;
+            --border: #d9e2ec;
+            --exam-bg: #fff4e6;
+            --exam-border: #e36414;
+            --success: #2a9d8f;
+            --warning: #e9c46a;
+            --danger: #e76f51;
+            --info: #264653;
+            --metric-bg: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            --metric-accent: linear-gradient(135deg, #e36414 0%, #fb8b24 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+
+        /* ==================== ÜST BAŞLIK ==================== */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: #fff;
+            padding: 2rem 1.5rem 1.75rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: -40px; right: -40px;
+            width: 220px; height: 220px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+        }
+
+        .page-header .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            align-items: center;
+        }
+
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+            transition: border-bottom-style 0.2s;
+        }
+
+        .breadcrumb a:hover { border-bottom-style: solid; }
+        .breadcrumb .sep { opacity: 0.6; }
+
+        .page-header h1 {
+            font-size: 1.85rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+        }
+
+        .page-header .subtitle {
+            font-size: 0.98rem;
+            opacity: 0.92;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.85rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.28rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        .badge-primary { background: rgba(255,255,255,0.2); color: #fff; }
+        .badge-accent { background: var(--accent); color: #fff; }
+        .badge-success { background: var(--success); color: #fff; }
+        .badge-warning { background: var(--warning); color: #5a3a1a; }
+
+        /* ==================== ÜST BÖLÜM GEZİNME ==================== */
+        .top-chapter-nav {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 0.75rem;
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .top-chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.55rem 0.85rem;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            transition: background 0.2s, transform 0.2s;
+            font-size: 0.85rem;
+        }
+
+        .top-chapter-nav a:hover {
+            background: rgba(255,255,255,0.22);
+            transform: translateY(-2px);
+        }
+
+        .top-chapter-nav a.next {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .top-chapter-nav .tn-arrow {
+            font-size: 1.1rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .top-chapter-nav .tn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.25;
+        }
+
+        .top-chapter-nav .tn-text small {
+            font-size: 0.68rem;
+            opacity: 0.75;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .top-chapter-nav .tn-text strong {
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .top-chapter-nav .tn-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 800;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(227,100,20,0.4);
+        }
+
+        /* ==================== KONTEYNER ==================== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        main { padding: 2rem 0 3rem; }
+
+        /* ==================== HIZLI ERİŞİM ==================== */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 0.85rem;
+            margin-bottom: 2rem;
+        }
+
+        .quick-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 0.9rem 1.1rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 0.88rem;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .quick-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .quick-nav a .qn-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px; height: 38px;
+            border-radius: 10px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 1.05rem;
+            flex-shrink: 0;
+        }
+
+        .quick-nav a.qn-accent .qn-icon { background: var(--accent); }
+        .quick-nav a.qn-success .qn-icon { background: var(--success); }
+        .quick-nav a.qn-warning .qn-icon { background: var(--warning); color: #5a3a1a; }
+
+        .quick-nav a .qn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+        }
+
+        .quick-nav a .qn-text small {
+            font-weight: 400;
+            font-size: 0.72rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+
+        /* ==================== İÇİNDEKİLER ==================== */
+        .toc {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.06);
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc h2::before { content: '📋'; font-size: 1.15rem; }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.35rem 2rem;
+        }
+
+        .toc ol li {
+            counter-increment: toc-counter;
+            padding: 0.3rem 0;
+            border-bottom: 1px dashed var(--border);
+            font-size: 0.9rem;
+        }
+
+        .toc ol li::before {
+            content: counter(toc-counter) ". ";
+            font-weight: 700;
+            color: var(--accent);
+            margin-right: 0.25rem;
+        }
+
+        .toc ol li a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc ol li a:hover { color: var(--accent); }
+
+        /* ==================== BÖLÜM BAŞLIKLARI ==================== */
+        .section {
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--primary);
+            padding-bottom: 0.55rem;
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .section-title .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px; height: 36px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .subsection-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            margin: 1.7rem 0 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .subsection-title::before {
+            content: '';
+            display: inline-block;
+            width: 6px; height: 22px;
+            background: var(--accent);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        /* ==================== KARTLAR ==================== */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 1.3rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.05);
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover { box-shadow: 0 4px 16px rgba(15,76,92,0.1); }
+        .card p { margin-bottom: 0.75rem; }
+        .card p:last-child { margin-bottom: 0; }
+
+        /* ==================== SINAV KUTUSU ==================== */
+        .exam-box {
+            background: var(--exam-bg);
+            border-left: 5px solid var(--exam-border);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .exam-box::before {
+            content: '⚠️ SINAVDA ÇIKABİLİR';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .exam-box p, .exam-box li { font-size: 0.93rem; color: #5a3a1a; }
+        .exam-box ul, .exam-box ol { margin: 0.5rem 0 0.5rem 1.2rem; }
+
+        /* ==================== BİLGİ KUTUSU ==================== */
+        .info-box {
+            background: #e8f4f8;
+            border-left: 5px solid var(--primary-light);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .info-box::before {
+            content: 'ℹ️ AKADEMİK NOT';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--primary-light);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== UYARI KUTUSU ==================== */
+        .warning-box {
+            background: #fde8e8;
+            border-left: 5px solid var(--danger);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .warning-box::before {
+            content: '🚨 KRİTİK HUKUKİ UYARI';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--danger);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== LİSTELER ==================== */
+        .card ul, .card ol { margin: 0.5rem 0 0.75rem 1.35rem; }
+        .card ul li, .card ol li { margin-bottom: 0.35rem; }
+        .card ul li::marker { color: var(--accent); }
+        .card ol li::marker { color: var(--accent); font-weight: 700; }
+
+        /* ==================== TABLOLAR ==================== */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.4rem 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            background: var(--card);
+            min-width: 620px;
+        }
+
+        thead { background: var(--primary); color: #fff; }
+        thead th {
+            padding: 0.8rem 0.95rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.82rem;
+            letter-spacing: 0.3px;
+        }
+
+        tbody td {
+            padding: 0.7rem 0.95rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tbody tr:last-child td { border-bottom: none; }
+        tbody tr:nth-child(even) { background: #f8fafc; }
+        tbody tr:hover { background: #eef6f8; }
+
+        /* ==================== METRİK KARTLARI (ÖNEMLİ DEĞERLER) ==================== */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 0.85rem;
+            margin: 1.3rem 0;
+        }
+
+        .metric-card {
+            background: var(--metric-bg);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(15,76,92,0.2);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .metric-card:hover { transform: translateY(-4px); }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 90px; height: 90px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+        }
+
+        .metric-card .mc-icon {
+            font-size: 1.6rem;
+            margin-bottom: 0.35rem;
+            display: block;
+        }
+
+        .metric-card .mc-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        .metric-card .mc-label {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            font-weight: 600;
+        }
+
+        .metric-card .mc-sub {
+            font-size: 0.7rem;
+            opacity: 0.7;
+            margin-top: 0.35rem;
+            font-style: italic;
+        }
+
+        .metric-card.accent {
+            background: var(--metric-accent);
+            box-shadow: 0 4px 14px rgba(227,100,20,0.3);
+        }
+
+        .metric-card.success {
+            background: linear-gradient(135deg, #2a9d8f 0%, #4bb3a6 100%);
+            box-shadow: 0 4px 14px rgba(42,157,143,0.3);
+        }
+
+        .metric-card.danger {
+            background: linear-gradient(135deg, #c1121f 0%, #e76f51 100%);
+            box-shadow: 0 4px 14px rgba(231,111,81,0.3);
+        }
+
+        .metric-card.warning {
+            background: linear-gradient(135deg, #e9c46a 0%, #f4a261 100%);
+            color: #4a2c0a;
+            box-shadow: 0 4px 14px rgba(233,196,106,0.35);
+        }
+
+        .metric-card.warning .mc-label,
+        .metric-card.warning .mc-sub { color: #4a2c0a; }
+
+        /* ==================== DİYAGRAM ==================== */
+        .diagram {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            justify-content: center;
+            margin: 1.4rem 0;
+        }
+
+        .diagram-item {
+            flex: 1 1 170px;
+            max-width: 230px;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.1rem;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .diagram-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .diagram-item .icon { font-size: 1.8rem; margin-bottom: 0.4rem; }
+        .diagram-item h4 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        .diagram-item p {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* ==================== FORMÜL KUTUSU ==================== */
+        .formula-box {
+            background: #fff;
+            border: 2px dashed var(--primary-light);
+            border-radius: 12px;
+            padding: 1.2rem 1.4rem;
+            margin: 1.2rem 0;
+            text-align: center;
+        }
+
+        .formula-box .formula-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 0.6rem;
+        }
+
+        .formula-box .formula {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--primary);
+            line-height: 1.7;
+        }
+
+        .formula-box .formula .frac {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 0.4rem;
+        }
+
+        .formula-box .formula .frac .num {
+            display: block;
+            padding: 0 0.4rem;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .formula-box .formula .frac .den {
+            display: block;
+            padding: 0 0.4rem;
+        }
+
+        /* ==================== VURGU ==================== */
+        .highlight {
+            background: linear-gradient(transparent 60%, #ffe066 60%);
+            font-weight: 600;
+            padding: 0 2px;
+        }
+
+        .keyword {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin: 0 2px;
+        }
+
+        .keyword-accent { background: var(--accent); }
+
+        /* ==================== ALINTI ==================== */
+        blockquote {
+            background: #f0f4f8;
+            border-left: 4px solid var(--primary-light);
+            padding: 1rem 1.4rem;
+            margin: 1.15rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.55rem;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: var(--primary);
+        }
+
+        /* ==================== BÖLÜM GEZİNME (ALT) ==================== */
+        .chapter-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .chapter-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .chapter-nav a.next {
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+
+        .chapter-nav a .cn-arrow {
+            font-size: 1.4rem;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .chapter-nav a .cn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+            flex: 1;
+        }
+
+        .chapter-nav a .cn-text small {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .chapter-nav a .cn-text strong {
+            font-size: 0.92rem;
+            color: var(--primary);
+        }
+
+        /* ==================== HAZIRLAYAN KARTI ==================== */
+        .author-card {
+            background: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.4rem 1.6rem;
+            margin: 2rem 0 1.5rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.2rem;
+            align-items: center;
+            box-shadow: 0 6px 20px rgba(15,76,92,0.18);
+        }
+
+        .author-card .avatar {
+            width: 68px; height: 68px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            font-weight: 700;
+            border: 2px solid rgba(255,255,255,0.35);
+            flex-shrink: 0;
+        }
+
+        .author-card .author-info h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .author-card .author-info .role {
+            font-size: 0.8rem;
+            opacity: 0.88;
+            margin-bottom: 0.55rem;
+            line-height: 1.45;
+        }
+
+        .author-card .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.2rem;
+            font-size: 0.83rem;
+        }
+
+        .author-card .contact-row a,
+        .author-card .contact-row span {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            opacity: 0.95;
+            transition: opacity 0.2s;
+        }
+
+        .author-card .contact-row a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* ==================== SAYFA SONU ==================== */
+        .page-footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.85);
+            text-align: center;
+            padding: 1.6rem 1.5rem;
+            font-size: 0.83rem;
+            margin-top: 2rem;
+        }
+
+        .page-footer .container p { margin-bottom: 0.35rem; }
+        .page-footer a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+        }
+        .page-footer a:hover { border-bottom-style: solid; }
+
+        /* ==================== YUKARI ÇIK ==================== */
+        .scroll-top {
+            position: fixed;
+            bottom: 1.5rem; right: 1.5rem;
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            font-size: 1.15rem;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(227,100,20,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+            z-index: 999;
+        }
+
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { transform: translateY(-3px); background: var(--accent-light); }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 900px) {
+            .top-chapter-nav {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            .top-chapter-nav .tn-center { display: none; }
+            .top-chapter-nav a.next { justify-content: flex-start; text-align: left; }
+        }
+
+        @media (max-width: 768px) {
+            body { font-size: 15px; }
+            .page-header { padding: 1.5rem 1rem 1.25rem; }
+            .page-header h1 { font-size: 1.3rem; }
+            .page-header .subtitle { font-size: 0.88rem; }
+            .breadcrumb { font-size: 0.76rem; }
+            .badge { font-size: 0.68rem; padding: 0.22rem 0.65rem; }
+            .container { padding: 0 1rem; }
+            .toc { padding: 1rem 1.15rem; }
+            .toc ol { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.15rem; gap: 0.5rem; }
+            .section-title .num { width: 30px; height: 30px; font-size: 0.85rem; }
+            .subsection-title { font-size: 1rem; }
+            .card { padding: 1rem 1.1rem; }
+            .exam-box, .info-box, .warning-box { padding: 0.95rem 1.05rem; }
+            table { font-size: 0.8rem; min-width: 560px; }
+            thead th, tbody td { padding: 0.55rem 0.65rem; }
+            .diagram-item { flex: 1 1 100%; max-width: 100%; }
+            .chapter-nav { grid-template-columns: 1fr; }
+            .chapter-nav a.next { flex-direction: row; text-align: left; }
+            .author-card { grid-template-columns: 1fr; text-align: center; }
+            .author-card .avatar { margin: 0 auto; }
+            .author-card .contact-row { justify-content: center; }
+            .quick-nav { grid-template-columns: 1fr; }
+            .scroll-top { bottom: 1rem; right: 1rem; width: 42px; height: 42px; }
+            .metric-card .mc-value { font-size: 1.25rem; }
+            .metric-card .mc-icon { font-size: 1.35rem; }
+            .formula-box .formula { font-size: 0.95rem; }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 { font-size: 1.1rem; }
+            .section-title { font-size: 1.05rem; }
+            blockquote { padding: 0.8rem 1rem; font-size: 0.86rem; }
+        }
+
+        /* ==================== YAZDIRMA ==================== */
+        @media print {
+            .page-header { background: #fff !important; color: #000 !important; }
+            .page-header h1, .page-header .subtitle, .breadcrumb a { color: #000 !important; }
+            .badge { border: 1px solid #ccc; color: #000 !important; background: #f0f0f0 !important; }
+            .top-chapter-nav { display: none !important; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .exam-box { background: #fff; border: 1px solid #e36414; }
+            .scroll-top, .quick-nav, .chapter-nav { display: none !important; }
+            .author-card { background: #f0f0f0 !important; color: #000 !important; }
+            .author-card .contact-row a, .author-card .contact-row span { color: #000 !important; }
+            .metric-card { background: #f0f0f0 !important; color: #000 !important; box-shadow: none !important; border: 1px solid #ccc; }
+            .metric-card .mc-label, .metric-card .mc-sub { color: #000 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== ÜST BAŞLIK ==================== -->
+<header class="page-header">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="Site haritası">
+            <a href="../../../index.html">🏠 Tüm Dersler</a>
+            <span class="sep">›</span>
+            <a href="../index.html">📚 Çalışma Ortamı Gözetimi</a>
+            <span class="sep">›</span>
+            <span>Bölüm 2</span>
+        </nav>
+        <h1>Bölüm 2: Ortam Ölçümleri, Kayıtlar ve İstatistikler</h1>
+        <p class="subtitle">İş Hijyeni Mevzuatı, Kişisel Maruziyet Parametreleri, Saklama Süreleri ve İSG İstatistikleri</p>
+        <div class="badge-row">
+            <span class="badge badge-primary">İş Hijyeni Yönetmeliği</span>
+            <span class="badge badge-accent">Maruziyet Ölçümleri</span>
+            <span class="badge badge-success">Saklama Süreleri</span>
+            <span class="badge badge-warning">EK-2 Raporu</span>
+        </div>
+
+        <!-- ÜST BÖLÜM GEZİNME -->
+        <nav class="top-chapter-nav" aria-label="Üst bölüm gezinme">
+            <a href="../bolum-01/konu-anlatimi.html">
+                <span class="tn-arrow">←</span>
+                <span class="tn-text">
+                    <small>Önceki Bölüm</small>
+                    <strong>Bölüm 1: Giriş, Kapsam, Mevzuat</strong>
+                </span>
+            </a>
+            <span class="tn-center">2/10</span>
+            <a href="../bolum-03/konu-anlatimi.html" class="next">
+                <span class="tn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Bölüm 3: Konu Anlatımı</strong>
+                </span>
+                <span class="tn-arrow">→</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- ==================== İÇERİK ==================== -->
+<main>
+    <div class="container">
+
+        <!-- HIZLI ERİŞİM -->
+        <nav class="quick-nav" aria-label="Hızlı erişim">
+            <a href="konu-anlatimi.html" class="qn-accent">
+                <span class="qn-icon">📖</span>
+                <span class="qn-text">Konu Anlatımı<small>Bu sayfa</small></span>
+            </a>
+            <a href="sorular.html" class="qn-success">
+                <span class="qn-icon">❓</span>
+                <span class="qn-text">Sorular<small>Test &amp; alıştırma</small></span>
+            </a>
+            <a href="sunum.html" class="qn-warning">
+                <span class="qn-icon">📊</span>
+                <span class="qn-text">Sunum<small>Slayt gösterisi</small></span>
+            </a>
+            <a href="../index.html">
+                <span class="qn-icon">📚</span>
+                <span class="qn-text">Ders Ana Sayfası<small>Tüm bölümler</small></span>
+            </a>
+        </nav>
+
+        <!-- İÇİNDEKİLER -->
+        <nav class="toc" aria-label="İçindekiler">
+            <h2>İçindekiler</h2>
+            <ol>
+                <li><a href="#bolum2-1">Gözetim Amaçlı Ortam Ölçümleri ve İş Hijyeni Mevzuatı</a></li>
+                <li><a href="#bolum2-2">Kişisel Maruziyet ve Ortam Ölçüm Parametreleri</a></li>
+                <li><a href="#bolum2-3">Kayıt Tutma ve Saklama Süreleri</a></li>
+                <li><a href="#bolum2-4">Yıllık Değerlendirme Raporu ve İSG Belgeleri</a></li>
+                <li><a href="#bolum2-5">İSG İstatistikleri ve Analiz Yöntemleri</a></li>
+            </ol>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- 1. GÖZETİM AMAÇLI ORTAM ÖLÇÜMLERİ VE İŞ HİJYENİ MEVZUATI    -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum2-1">
+            <h2 class="section-title">
+                <span class="num">1</span>
+                Gözetim Amaçlı Ortam Ölçümleri ve İş Hijyeni Mevzuatı
+            </h2>
+
+            <div class="card">
+                <p>
+                    İş sağlığı ve güvenliği (İSG) yönetiminde çalışma ortamının gözetimi, iş kazaları ile meslek hastalıklarının <strong>proaktif bir yaklaşımla önlenmesinde temel taşı</strong> oluşturmaktadır. Çalışma ortamında bulunan fiziksel, kimyasal, biyolojik, ergonomik ve psikososyal risk etmenlerinin niteliğini saptamak, düzeylerini ölçmek ve kontrol altına almak <span class="highlight">yasal bir zorunluluktur</span>. Ortam gözetimi ve iş hijyeni ölçümleri; gerek Çalışma ve Sosyal Güvenlik Bakanlığı denetimlerinde teftişe yetkili makamlarca öncelikli olarak incelenmesi gerekse İSG profesyonelleri sınavlarında <strong>yüksek soru ağırlığına sahip olması</strong> bakımından stratejik bir kritiktir.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">Mevzuat Çerçevesi ve Laboratuvar Yükümlülükleri</h3>
+
+            <div class="card">
+                <p>
+                    Çalışma ortamındaki fiziksel, kimyasal ve biyolojik etkenlere yönelik ölçüm, test ve analizlerin gerçekleştirilmesi, belirli mevzuat kurallarına ve kalite standartlarına tabidir. <em>"İş Hijyeni Ölçüm, Test ve Analiz Laboratuvarları Hakkında Yönetmelik"</em> ve ilgili İSG mevzuatı kapsamında laboratuvarlar ve ölçüm süreçleriyle ilgili temel kriterler şunlardır:
+                </p>
+                <ul>
+                    <li><strong>Yetkili ve Akredite Laboratuvar Kullanımı:</strong> Çalışma ortamındaki maruziyetlerin ve risklerin tespiti amacıyla yapılacak tüm iş hijyeni ölçüm, test ve analizlerinin <strong>Yetkili İş Hijyeni Laboratuvarlarınca</strong> yapılması esastır.</li>
+                    <li><strong>Laboratuvar Kalibrasyon ve Standart Şartlarına Uyum:</strong> Kimyasal maddelerin gaz ve buhar cinsinden ölçümlerinde hacim birimi (mg/m³) hesaplamalarının <strong>20 °C sıcaklık ve 101,3 kPa (760 mmHg) basınç</strong> koşullarındaki standart değerlere göre yapılması ve laboratuvar kalibrasyon şartlarının bu parametrelere göre doğrulanması gerekmektedir.</li>
+                    <li><strong>MGBF (MSDS) Uyum Denetimi:</strong> Çalışma ortamında gerçekleştirilen ölçüm sonuçlarının, işyerinde kullanılan maddelere ait <strong>Malzeme Güvenlik Bilgi Formları (MGBF-MSDS)</strong> ile uyumlu olup olmadığı kontrol edilmelidir.</li>
+                    <li><strong>Sürekli İzleme ve Kontrol:</strong> Ölçümler yalnızca anlık tespitler olarak kalmamalı; işyerindeki tehlike durumuna, üretim akış şemalarına ve risk değerlendirmesi sonuçlarına uygun <strong>periyodik aralıklarla tekrarlanmalıdır</strong>.</li>
+                </ul>
+            </div>
+
+            <!-- METRİK: STANDART ÖLÇÜM KOŞULLARI -->
+            <div class="metric-grid">
+                <div class="metric-card accent">
+                    <span class="mc-icon">🌡️</span>
+                    <div class="mc-value">20 °C</div>
+                    <div class="mc-label">Sıcaklık</div>
+                    <div class="mc-sub">Gaz/buhar ölçüm standardı</div>
+                </div>
+                <div class="metric-card accent">
+                    <span class="mc-icon">📊</span>
+                    <div class="mc-value">101,3 kPa</div>
+                    <div class="mc-label">Basınç</div>
+                    <div class="mc-sub">760 mmHg eşdeğeri</div>
+                </div>
+                <div class="metric-card accent">
+                    <span class="mc-icon">🧪</span>
+                    <div class="mc-value">mg/m³</div>
+                    <div class="mc-label">Hacim Birimi</div>
+                    <div class="mc-sub">Kimyasal konsantrasyon</div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">İşverenin Yasal Sorumlulukları ve Yargıtay İçtihatları</h3>
+
+            <div class="card">
+                <p>
+                    İşverenin çalışma ortamı gözetimine ilişkin hukuki sorumluluğu, iş kazası ve meslek hastalıklarındaki <strong>kusur oranının tayininde anahtar rol</strong> oynar. Yasal düzenlemeler ve yerleşik yargı kararları işverene geniş bir denetim ve koruma yükümlülüğü yüklemektedir:
+                </p>
+                <ul>
+                    <li><strong>6331 Sayılı İSG Kanunu ve İş Kanunu (Madde 77):</strong> İşverenler, işyerlerinde iş sağlığı ve güvenliğinin sağlanması için gerekli her türlü önlemi almak, araç ve gereçleri noksansız bulundurmakla yükümlüdür. İşverenler, alınan önlemlere uyulup uyulmadığını denetlemek, çalışanları karşı karşıya bulundukları mesleki riskler, alınması gerekli tedbirler, yasal hak ve sorumlulukları konusunda bilgilendirmek ve gerekli eğitimleri vermek zorundadır.</li>
+                    <li><strong>İşçi Sağlığı ve İş Güvenliği Tüzüğü (Madde 4):</strong> İşveren; teknik ilerlemelerin getirdiği daha uygun sağlık şartlarını sağlamak, kullanılan makinelerden, araç-gereçlerden veya hammaddelerden zehirli veya zararlı olanları, işin özelliğine ve fennin gereklerine göre tehlikeyi azaltanlarla değiştirmek, alınan tedbir ve araçları sürekli izlemekle mükelleftir.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <p><strong>Yargıtay İçtihatları Doğrultusunda İşveren Sorumluluğu:</strong></p>
+                <blockquote>
+                    <strong>Önlem Alma ve Denetim Yükümlülüğü:</strong> İşverenin sorumluluğu sadece kağıt üzerinde önlem almakla sınırlı değildir; alınan önlemlere uyulup uyulmadığını denetleme ve uyulmasını temin etme zorunluluğu vardır. İşveren, doğmuş ve doğabilecek tüm tehlikeleri önlemek için işyerinde <strong>tam anlamıyla geniş bir kontrol mekanizması</strong> kurmalıdır.
+                    <cite>— Yargıtay 10. Hukuk Dairesi, T. 31.10.1978</cite>
+                </blockquote>
+                <blockquote>
+                    <strong>Bilim ve Teknolojinin Gerektirdiği Tedbirler:</strong> İşveren, sadece mevzuatta yazılı olanlarla yetinemez; insan yaşamına saygı çerçevesinde <strong>günümüz bilim ve teknolojisinin öngördüğü tüm önlemleri</strong> almak zorundadır. Çalışanın iş güvenliği kesinlikle kendi dikkatine bırakılamaz.
+                    <cite>— Yargıtay 10. Hukuk Dairesi, T. 17.4.1984</cite>
+                </blockquote>
+                <blockquote>
+                    <strong>Etkin Kullanım ve Kontrol:</strong> İşveren, sadece işe uygun kişisel koruyucu donanım sunmakla kalmayıp, bu malzemenin kullanılmasını sağlamak ve uygulamasını <strong>sürekli ve etkin bir şekilde denetlemekle</strong> yükümlüdür.
+                    <cite>— Yargıtay 9. Hukuk Dairesi, T. 16.6.1988</cite>
+                </blockquote>
+            </div>
+
+            <h3 class="subsection-title">Uygulayıcıların Sorumluluk Dağılımı</h3>
+
+            <div class="card">
+                <p>
+                    Çalışma ortamı gözetiminin yürütülmesinde farklı kişi, birim ve kurulların görev dağılımı mevzuatla net bir şekilde çizilmiştir:
+                </p>
+                <ul>
+                    <li>
+                        <strong>İş Sağlığı ve Güvenliği Kurulları:</strong>
+                        <ul>
+                            <li>Sektör veya tehlike sınıfı ayrımı olmaksızın, <span class="keyword">50 ve daha fazla çalışanın</span> bulunduğu ve <span class="keyword">6 aydan fazla süren sürekli işlerin</span> yapıldığı tüm işyerlerinde kurulması <strong>yasal zorunluluktur</strong>.</li>
+                            <li>Kurul; işveren veya işveren vekili, iş güvenliği uzmanı, işyeri hekimi, insan kaynakları/personel/idari işler sorumlusu, bulunması halinde sivil savunma uzmanı, bulunması halinde forman/ustabaşı/usta ve çalışan temsilcisinden (birden fazla ise baş temsilciden) oluşur.</li>
+                            <li>İşyerinin niteliğine uygun iç yönetmelik hazırlar, onaylatır, uygulamasını izler ve sonuçları raporlayarak alınacak tedbirleri gündeme alır.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>İSGB ve OSGB'ler (İş Sağlığı ve Güvenliği Hizmetleri Yönetmeliği):</strong>
+                        <ul>
+                            <li>İşyerinde risklere karşı yürütülecek koruyucu, önleyici ve düzeltici faaliyetler kapsamında çalışma ortamı gözetiminde işverene rehberlik eder.</li>
+                            <li>Yıllık çalışma planı, yıllık değerlendirme raporu, ortam gözetimi, sağlık gözetimi, iş kazası ve meslek hastalığı kayıtlarını tutar.</li>
+                            <li>Çalışanların maruziyet ve sağlık verilerini kişisel sağlık dosyalarında <strong>gizlilik ilkesine uyarak</strong> saklar.</li>
+                            <li><strong>OSGB Belge Teslim Yükümlülüğü:</strong> OSGB'ler yıllık değerlendirme raporu suretlerini arşivlerinde tutmakla ve talep edilmesi halinde teftişe yetkili memurlara göstermekle yükümlüdür. OSGB'ler, kendilerinden istenmese dahi <strong>sözleşme süresi sonunda yıllık değerlendirme raporunu işverene teslim etmek zorundadır</strong>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>İş Güvenliği Uzmanı (İGU):</strong>
+                        <ul>
+                            <li>Çalışma ortamı gözetimi kapsamında periyodik bakım, kontrol ve ölçümleri planlar ve uygulamalarını kontrol eder.</li>
+                            <li>Kaza, yangın, patlama ve doğal afet risklerine karşı acil durum planlarının hazırlanmasına katılır; periyodik eğitim ile tatbikatların izlenmesini sağlar.</li>
+                            <li>İşyeri hekimi ile işbirliği yaparak yıllık değerlendirme raporunu (EK-2) hazırlar.</li>
+                            <li>İşyerinde verimli bir çalışma ortamının sağlanmasına katkıda bulunur.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>İşyeri Hekimi (İYH):</strong>
+                        <ul>
+                            <li>Çalışma ortamının gözetimi ve sağlık gözetimi konusunda işverene rehberlik yaparlar; bina, eklenti, kantin, soyunma odası, duş ve tuvaletlerin genel hijyen şartlarını denetler.</li>
+                            <li>İşe devamsızlıklar ile sağlık tehlikeleri arasındaki ilişkiyi saptar; çalışma ortamında gerekli ölçümlerin yapılmasını planlayarak işverenin onayına sunar ve sonuçları değerlendirir.</li>
+                            <li>İş kazası, meslek hastalığı ve zararsız gibi görünen ancak zarar verme potansiyeli olan olayların (ramak kala olaylar) kök nedenlerini araştırarak işverene önerilerde bulunur.</li>
+                            <li>İş güvenliği uzmanı ile işbirliği içinde verimli bir çalışma ortamı oluşturulmasını destekler.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Çalışanlar:</strong>
+                        <ul>
+                            <li>İSG talimatlarına uymak, verilen araç, makine ve kişisel koruyucu donanımları amacına uygun kullanmak.</li>
+                            <li>Sağlık muayenelerine, eğitimlere katılmak; tehlike ve aksaklıkları derhal işverene veya çalışan temsilcisine bildirmek.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 2. KİŞİSEL MARUZİYET VE ORTAM ÖLÇÜM PARAMETRELERİ            -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum2-2">
+            <h2 class="section-title">
+                <span class="num">2</span>
+                Kişisel Maruziyet ve Ortam Ölçüm Parametreleri (Cihazlar, Yöntemler ve Birimler)
+            </h2>
+
+            <div class="card">
+                <p>
+                    Çalışma ortamında personelin maruz kaldığı fiziksel, kimyasal ve biyolojik risk etmenlerinin doğru yöntem, uygun cihaz ve standart birimlerle ölçülmesi, <strong>teknik doğruluğun sağlanması</strong> açısından kritik öneme sahiptir. Sınavlarda sıklıkla soru konusu yapılan bu parametreler, ortam ölçüm raporlarının da temel verilerini oluşturur.
+                </p>
+            </div>
+
+            <!-- TOZ ÖLÇÜMLERİ -->
+            <h3 class="subsection-title">Toz Ölçümleri ve Akciğer Riskleri</h3>
+
+            <div class="card">
+                <p>
+                    Çalışma ortamı havasında asılı kalan tozlar, kütlesel tane büyüklüklerine, kimyasal kökenlerine ve biyolojik etkilerine göre solunum sisteminde farklı noktalara ulaşarak zararlara yol açar:
+                </p>
+                <ul>
+                    <li><strong>Toplam Toz ve Solunabilir Toz Ayrımı:</strong> Havada asılı duran, ağız ve burun yoluyla solunarak kütlesinin %50'si <strong>80 – 100 μm</strong> aerodinamik çapın altında kalan parçacıklar solunabilir genel toz kütlesini oluşturur ve tüm solunum sistemini etkiler. Buna karşılık, aerodinamik eşdeğer çapı <strong>0,1 – 5,0 μm (0,5 – 5,0 μm)</strong> aralığında olan tozlar, üst solunum yollarındaki filtreleme mekanizmalarını geçip doğrudan alveollere ulaşan <strong>solunabilir toz</strong> olarak tanımlanır. Alveollerde birikerek doku reaksiyonuna yol açan bu tozlar <span class="highlight">Pnömokonyoz (Akciğer Toz Hastalığı)</span> oluşumuna neden olur.</li>
+                    <li><strong>Serbest Silis ve Silikoz Riski:</strong> Kristalin silisyumdioksit (SiO₂) yapısındaki tozlar akciğerlerde fibrotik değişimlere neden olarak <strong>silikoz hastalığına</strong> yol açar. Doğada en yaygın bulunan formu <span class="keyword keyword-accent">Kuvars</span>'tır. Kuvarsın yüksek sıcaklıklarda dönüşmesiyle oluşan <strong>Kristobalit (870 – 1470 °C)</strong> ve <strong>Tridimit (1470 – 1670 °C)</strong> ise belirli endüstriyel süreçlerde ortaya çıkan diğer serbest silis polimorflarıdır.</li>
+                    <li><strong>Lifsi Tozlar ve Asbest:</strong> Çapı <strong>3 μm'den küçük</strong>, uzunluğu ise çapının <strong>en az 3 katı</strong> olan lifsi yapıdaki parçacıklar bu grupta yer alır. Asbest lifleri bu kategorinin en tehlikeli örneğidir.</li>
+                    <li><strong>Toksik Tozlar:</strong> Vücuda alındığında karaciğer, böbrek, sinir sistemi, mide-bağırsak ve kan yapıcı organlar üzerinde akut veya kronik zehirlenmelere yol açan tozlardır. <strong>Berilyum, arsenik, kurşun, radyum ve toryum</strong> toksik tozların başlıca örnekleridir.</li>
+                    <li><strong>Standart Akciğer Radyografisi:</strong> Pnömokonyoz tanısı, takibi ve meslek hastalığı kurullarınca değerlendirilmesinde en az <strong>35 × 35 cm</strong> ebatında, <em>ILO Uluslararası Pnömokonyoz Radyografileri Sınıflandırılması</em> kriterlerine uygun akciğer radyografisi veya dijital radyografiler kullanılır.</li>
+                </ul>
+            </div>
+
+            <!-- METRİK: TOZ BOYUTLARI -->
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <span class="mc-icon">🌫️</span>
+                    <div class="mc-value">80–100 μm</div>
+                    <div class="mc-label">Genel Toz</div>
+                    <div class="mc-sub">Tüm solunum sistemi</div>
+                </div>
+                <div class="metric-card danger">
+                    <span class="mc-icon">🫁</span>
+                    <div class="mc-value">0,1–5,0 μm</div>
+                    <div class="mc-label">Solunabilir Toz</div>
+                    <div class="mc-sub">Alveollere ulaşır → Pnömokonyoz</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">🧵</span>
+                    <div class="mc-value">&lt; 3 μm</div>
+                    <div class="mc-label">Lifsi Toz Çapı</div>
+                    <div class="mc-sub">Uzunluk &gt; çapın 3 katı (Asbest)</div>
+                </div>
+                <div class="metric-card success">
+                    <span class="mc-icon">📷</span>
+                    <div class="mc-value">35×35 cm</div>
+                    <div class="mc-label">Akciğer Radyografisi</div>
+                    <div class="mc-sub">ILO standart minimum</div>
+                </div>
+            </div>
+
+            <!-- DİYAGRAM: SİLİS POLİMORFLARI -->
+            <div class="diagram">
+                <div class="diagram-item">
+                    <div class="icon">💎</div>
+                    <h4>Kuvars</h4>
+                    <p>Doğada en yaygın serbest silis formu</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🔥</div>
+                    <h4>Kristobalit</h4>
+                    <p>870 – 1470 °C dönüşüm ürünü</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🌡️</div>
+                    <h4>Tridimit</h4>
+                    <p>1470 – 1670 °C dönüşüm ürünü</p>
+                </div>
+            </div>
+
+            <!-- FİZİKSEL RİSK ETMENLERİ -->
+            <h3 class="subsection-title">Fiziksel Risk Etmenleri Ölçümleri</h3>
+
+            <div class="card">
+                <p>
+                    Fiziksel risklerin ölçümünde kullanılan cihazlar, birimler ve mevzuatta öngörülen kritik nicel eşik değerler aşağıda sunulmuştur:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Gürültü:</strong> Çalışanların gürültü maruziyet düzeylerini belirlemek amacıyla <strong>ses seviyesi ölçer</strong> cihazlar ve vardiya boyunca kişisel maruziyeti kaydeden <strong>dozimetreler</strong> kullanılır. Sekiz saatlik eşdeğer maruziyet düzeyi <span class="keyword">L<sub>EX, 8h</sub></span> parametresi ile takip edilir. Mevzuata göre temel eylem ve sınır değerler şunlardır:
+                    </li>
+                </ul>
+            </div>
+
+            <!-- METRİK: GÜRÜLTÜ EŞİK DEĞERLERİ -->
+            <div class="metric-grid">
+                <div class="metric-card success">
+                    <span class="mc-icon">🔈</span>
+                    <div class="mc-value">80 dBA</div>
+                    <div class="mc-label">En Düşük Eylem Değeri</div>
+                    <div class="mc-sub">KKD etkisi dikkate alınmaz</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">🔉</span>
+                    <div class="mc-value">85 dBA</div>
+                    <div class="mc-label">En Yüksek Eylem Değeri</div>
+                    <div class="mc-sub">KKD etkisi dikkate alınmaz</div>
+                </div>
+                <div class="metric-card danger">
+                    <span class="mc-icon">🔊</span>
+                    <div class="mc-value">87 dBA</div>
+                    <div class="mc-label">Maruziyet Sınır Değeri</div>
+                    <div class="mc-sub">KKD koruyucu etkisi dikkate alınır</div>
+                </div>
+            </div>
+
+            <div class="exam-box">
+                <p><strong>Gürültü Eşik Değerleri — Sınav Notu:</strong> En düşük (80 dBA) ve en yüksek (85 dBA) <strong>eylem değerlerinde KKD etkisi dikkate alınmaz</strong>. Buna karşılık <strong>maruziyet sınır değerinde (87 dBA) KKD koruyucu etkisi dikkate alınır</strong>. Bu ayrım sınavlarda sıkça sorulmaktadır.</p>
+            </div>
+
+            <div class="card">
+                <ul>
+                    <li><strong>Titreşim:</strong> El-kol veya tüm vücut titreşimi ölçümlerinde ivme birimi olan <span class="keyword">m/s²</span> kullanılır. Titreşim seviyesi insan vücuduna iletilen mekanik enerjinin büyüklüğünü gösterir.</li>
+                    <li><strong>Aydınlatma:</strong> Çalışma alanlarındaki aydınlatma şiddetinin yeterliliği <strong>lüksmetre</strong> cihazı kullanılarak <span class="keyword">lüks (lux)</span> biriminde ölçülür.</li>
+                    <li><strong>Termal Konfor:</strong> Çalışma ortamındaki sıcaklık, nem, hava akım hızı ve radyant ısı parametrelerini kapsar. Sıcaklık ve bağıl nem ölçümlerinde <strong>psikrometre</strong>, hava akım hızı ölçümlerinde ise <strong>anemometre</strong> cihazları kullanılır.</li>
+                    <li><strong>Radyasyon ve Elektromanyetik Alan:</strong> Çalışma ortamında iyonize (alçak/yüksek basınç ve radyoaktif kaynaklar) ve non-iyonize ışınlar ile elektromanyetik alan tespiti özel <strong>dozipatörler</strong> ve <strong>radyasyon ölçer</strong> teknik donanımlar ile yürütülür.</li>
+                </ul>
+            </div>
+
+            <!-- KİMYASAL RİSK ETMENLERİ -->
+            <h3 class="subsection-title">Kimyasal Risk Etmenleri Ölçümleri ve Tanımlar</h3>
+
+            <div class="card">
+                <p>
+                    Çalışma ortamındaki kimyasal maddelerin (ağır metaller, asitler, amonyak, formaldehit, VOC/uçucu organik bileşikler, gaz, buhar ve dumanlar) tespitinde anlık okuma sağlayan <strong>renk karşılaştırma tüpleri (dedektör tüpler)</strong> ve <strong>kişisel numune alma pompaları</strong> kullanılır.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Kimyasal Tehlike Sınıflandırma Tanımları:</strong>
+                        <ul>
+                            <li><strong>Çok Toksik / Toksik / Zararlı:</strong> Çok az miktarlarda solunduğunda, yutulduğunda veya deriden emildiğinde insan sağlığı üzerinde akut veya kronik hasarlar bırakan veya ölüme sebebiyet veren maddelerdir.</li>
+                            <li><strong>Kanserojen / Mutajen:</strong> Solunduğunda, yutulduğunda veya deriye nüfuz ettiğinde kanser oluşumuna neden olan veya kanser sıklığını artıran ya da kalıtsal genetik hasarlara ve mutasyonlara yol açan maddelerdir.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Gaz ve Buhar Ölçüm Standardı:</strong> Gaz ve buhar formundaki kimyasal maddelerin ortam havasındaki konsantrasyonu <strong>mg/m³</strong> cinsinden hesaplanırken, ölçüm sonuçlarının uluslararası geçerliliği ve standart kalibrasyonu için referans koşullar <span class="highlight">20 °C sıcaklık ve 101,3 kPa (760 mmHg) basınç</span> olarak esas alınır.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 3. KAYIT TUTMA VE SAKLAMA SÜRELERİ                           -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum2-3">
+            <h2 class="section-title">
+                <span class="num">3</span>
+                Kayıt Tutma ve Saklama Süreleri (Hukuki Süreler ve Veri Gizliliği)
+            </h2>
+
+            <div class="card">
+                <p>
+                    İSG mevzuatı, ortam ölçüm sonuçları ile çalışanların maruziyet ve sağlık kayıtlarının belgelenmesini ve mevzuatta açıkça belirtilen süreler boyunca arşivlenmesini emreder. Sınavlarda doğrudan soru olarak karşımıza çıkan bu hukuki süreler, olası meslek hastalıklarının <strong>uzun kuluçka süreleri</strong> dikkate alınarak düzenlenmiştir.
+                </p>
+            </div>
+
+            <!-- METRİK: SAKLAMA SÜRELERİ -->
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <span class="mc-icon">📋</span>
+                    <div class="mc-value">10 Yıl</div>
+                    <div class="mc-label">İş Hijyeni Kayıtları</div>
+                    <div class="mc-sub">Genel çalışma ortamı ölçümleri</div>
+                </div>
+                <div class="metric-card success">
+                    <span class="mc-icon">🩺</span>
+                    <div class="mc-value">15 Yıl</div>
+                    <div class="mc-label">Kişisel Sağlık Dosyaları</div>
+                    <div class="mc-sub">İşten ayrılma tarihinden itibaren</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">☢️</span>
+                    <div class="mc-value">30 Yıl</div>
+                    <div class="mc-label">Radyasyon Kayıtları</div>
+                    <div class="mc-sub">Denetim ve maruziyet kayıtları</div>
+                </div>
+                <div class="metric-card danger">
+                    <span class="mc-icon">⚠️</span>
+                    <div class="mc-value">40 Yıl</div>
+                    <div class="mc-label">Kanserojen / Mutajen</div>
+                    <div class="mc-sub">Kalıcı biyolojik etkenler dahil</div>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kayıt ve Belge Türü</th>
+                            <th>Mevzuata Göre Zorunlu Saklama Süresi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>İş Hijyeni ve Genel Çalışma Ortamı Ölçüm Kayıtları</td>
+                            <td><strong>10 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Kişisel Sağlık Dosyaları (Genel Hüküm)</td>
+                            <td><strong>İşten ayrılma tarihinden itibaren 15 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Kanserojen ve Mutajen Maddelere Maruziyet Kayıtları</td>
+                            <td><strong>40 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Kalıcı/Gizli Enfeksiyona Yol Açan Biyolojik Etken Kayıtları</td>
+                            <td><strong>40 Yıl</strong> (Genel Biyolojik Etkenler: 15 Yıl)</td>
+                        </tr>
+                        <tr>
+                            <td>Radyasyon Denetim ve Maruziyet Kayıtları</td>
+                            <td><strong>30 Yıl</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="subsection-title">Veri Gizliliği ve Erişim Hakları</h3>
+
+            <div class="card">
+                <p>
+                    Ortam ölçümleri ve sağlık gözetimi neticesinde elde edilen verilerin saklanmasında ve paylaşılmasında belirli ilkeler gözetilmelidir:
+                </p>
+                <ul>
+                    <li><strong>Kişisel Sağlık Dosyalarının Gizliliği:</strong> Çalışanların sağlık muayene sonuçları, maruziyet bilgileri, işe giriş ve periyodik muayene formları, tıbbi tetkikleri kişisel sağlık dosyalarında <strong>gizlilik ilkesine uyularak</strong> muhafaza edilir. Sağlık verileri yetkisiz kişilerin erişimine kesinlikle kapalı tutulmalıdır.</li>
+                    <li><strong>Çalışanların ve Temsilcilerin Bilgiye Erişim Hakkı:</strong> Çalışanlar ve çalışan temsilcileri, çalışma ortamı gözetimi sonuçlarına, ortam ölçüm raporlarına ve kendilerini ilgilendiren kişisel maruziyet kayıtlarına <strong>erişim sağlama ve bilgilendirilme hakkına</strong> sahiptir.</li>
+                    <li><strong>Denetim Makamlarına Sunum:</strong> Tüm kayıt ve istatistikler, teftişe yetkili iş müfettişleri ve Bakanlık yetkilileri tarafından talep edilmesi halinde ibraz edilmek üzere işyerinde ve OSGB arşivlerinde <strong>hazır bulundurulmalıdır</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 4. YILLIK DEĞERLENDİRME RAPORU VE İSG BELGELERİ             -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum2-4">
+            <h2 class="section-title">
+                <span class="num">4</span>
+                Yıllık Değerlendirme Raporu ve İSG Belgeleri
+            </h2>
+
+            <div class="card">
+                <p>
+                    Yıllık Değerlendirme Raporu, bir işletmede yıl boyunca yürütülen tüm İSG faaliyetlerinin, ortam gözetim verilerinin ve sağlık sonuçlarının bir araya getirildiği <strong>bütünsel bir yönetim ve denetim aracıdır</strong>.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">Rapor Hazırlama Süreci ve Sorumlular</h3>
+
+            <div class="card">
+                <p>
+                    İş Sağlığı ve Güvenliği Hizmetleri Yönetmeliği ile İş Güvenliği Uzmanlarının Görev, Yetki, Sorumluluk ve Eğitimleri Hakkında Yönetmelik uyarınca:
+                </p>
+                <ul>
+                    <li>Yıllık değerlendirme raporu, <strong>İş Güvenliği Uzmanı ve İşyeri Hekimi</strong> tarafından işbirliği içerisinde hazırlanır.</li>
+                    <li>Rapor hazırlanırken mevzuat ekinde yer alan <strong>EK-2 (Yıllık Değerlendirme Formu)</strong> standart formatına eksiksiz olarak uyulması zorunludur.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">Raporda Yer Alması Gereken Temel Veriler</h3>
+
+            <div class="card">
+                <p>EK-2 Yıllık Değerlendirme Formunda aşağıdaki temel bilgilerin ve istatistiki çalışmaların bulunması mevzuat gereğidir:</p>
+                <ul>
+                    <li><strong>Genel İşyeri Bilgileri:</strong> Çalışmaların tarihi, çalışmayı yürüten personelin adı ve unvanı, tekrar sayıları ve kullanılan yöntemler.</li>
+                    <li><strong>Ortam Ölçümleri ve Risk Değerlendirmesi:</strong> Yıl içinde yapılan toz, gürültü, kimyasal, termal konfor vb. ortam ölçüm sonuçlarının özetleri ve risk değerlendirmesi verileri.</li>
+                    <li><strong>Sağlık Gözetimi Verileri:</strong> İşe giriş muayeneleri, periyodik muayeneler, radyolojik analizler, biyolojik analizler, toksikolojik analizler, fizyolojik ve psikolojik test sonuçları.</li>
+                    <li><strong>Eğitim ve Gözetim Faaliyetleri:</strong> Çalışanlara verilen İSG eğitimleri, çalışma ortamı gözetim faaliyetlerinin sonuçları.</li>
+                    <li><strong>Kaza ve Hastalık İstatistikleri:</strong> Yıl içerisinde meydana gelen iş kazaları ve meslek hastalıklarına ilişkin istatistiki kayıtlar.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">Onay, Saklama ve İSG-KATİP Süreçleri</h3>
+
+            <div class="warning-box">
+                <p><strong>Üçlü İmza Zorunluluğu:</strong> Hazırlanan Yıllık Değerlendirme Formu; <strong>İşveren (veya İşveren Vekili), İş Güvenliği Uzmanı ve İşyeri Hekimi</strong> tarafından müştereken imzalanarak yürürlüğe girer. Bu üçlü imza, formun hukuki geçerliliğinin temel şartıdır.</p>
+            </div>
+
+            <div class="card">
+                <ul>
+                    <li><strong>OSGB ve Arşiv Sorumluluğu:</strong> Ortak Sağlık ve Güvenlik Birimleri (OSGB), hizmet verdikleri işyerlerine ait yıllık değerlendirme raporlarının bir nüshasını kendi arşivlerinde saklamakla ve denetimlerde yetkili memurlara sunmakla yükümlüdür. OSGB'ler sözleşme süresi bittiğinde <strong>talep edilmese dahi</strong> bu raporu işverene teslim etmek zorundadır.</li>
+                    <li><strong>İSG-KATİP Takibi:</strong> İSG süreçlerine ait görevlendirme, onay, sözleşme ve kayıt süreçleri Bakanlığın elektronik takip sistemi olan <span class="keyword keyword-accent">İSG-KATİP</span> üzerinden yürütülür ve izlenir.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 5. İSG İSTATİSTİKLERİ VE ANALİZ YÖNTEMLERİ                   -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum2-5">
+            <h2 class="section-title">
+                <span class="num">5</span>
+                İSG İstatistikleri ve Analiz Yöntemleri
+            </h2>
+
+            <div class="card">
+                <p>
+                    İş kazası ve meslek hastalığı verilerinin istatistiksel yöntemlerle işlenmesi, geçmiş kayıplardan ders çıkarılarak <strong>proaktif bir İSG politikasının oluşturulmasında hayati önem</strong> taşır. Sadece gerçekleşmiş kazalar değil, potansiyel tehlikeler de bu analizlerin kapsamındadır.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">Veri Toplama ve Kayıt Usulleri</h3>
+
+            <div class="card">
+                <p>
+                    İşveren, işyerinde meydana gelen iş kazaları ile meslek hastalıklarının kaydını tutmak, incelemelerini yapmak ve <strong>yasal bildirim süreleri içerisinde SGK'ya bildirmekle</strong> mükelleftir. Veriler kayıt altına alınırken kazanın meydana geldiği birim, iş akım şemasındaki yeri, etkilenen organ, maruz kalınan risk etmeni ve çalışanın maruziyet süresi detaylıca işlenmelidir.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">Kök Neden Analizi, Ramak Kala ve İstatistiki Metrikler</h3>
+
+            <div class="card">
+                <p>Etkin bir İSG istatistik yönetimi, kazaların ve tehlikelerin <strong>kök nedenlerine inilmesini</strong> gerektirir:</p>
+                <ul>
+                    <li><strong>Ramak Kala Olay İncelemeleri:</strong> İşyerinde meydana gelen ancak ölüm ya da yaralanmaya neden olmadığı halde çalışana, ekipmana veya işyerine zarar verme potansiyeli olan olayların (ramak kala olaylar) kök nedenleri detaylıca araştırılmalıdır.</li>
+                    <li><strong>KÖF (Koruyucu ve Düzeltici Faaliyetler):</strong> Meydana gelen kaza veya potansiyel tehlikelerin arkasındaki teknik, organizasyonel ve insani faktörler tespit edilerek somut Koruyucu ve Düzeltici Faaliyetlere (KÖF) dönüştürülmeli; sonuçlar Yıllık Çalışma Planı ile Yıllık Değerlendirme Raporuna aktarılmalıdır.</li>
+                </ul>
+            </div>
+
+            <!-- FORMÜLLER -->
+            <h3 class="subsection-title">İstatistiki Kaza Metrikleri</h3>
+
+            <div class="formula-box">
+                <div class="formula-label">Kaza Sıklık Oranı (KSO / Accident Frequency Rate)</div>
+                <div class="formula">
+                    KSO = <span class="frac"><span class="num">Toplam İş Kazası Sayısı</span><span class="den">Toplam Fiili Çalışma Saati</span></span> × 1.000.000
+                </div>
+            </div>
+
+            <div class="card">
+                <p>
+                    <strong>Kaza Sıklık Oranı (KSO):</strong> Belirli bir dönemde (genellikle <strong>1.000.000 çalışma saatinde</strong>) meydana gelen ölümlü ve/veya yaralanmalı iş kazası sayısını gösterir.
+                </p>
+            </div>
+
+            <div class="formula-box">
+                <div class="formula-label">Kaza Ağırlık Oranı (KAO / Accident Severity Rate)</div>
+                <div class="formula">
+                    KAO = <span class="frac"><span class="num">Kaza Kaynaklı Toplam Kayıp Gün Sayısı</span><span class="den">Toplam Fiili Çalışma Saati</span></span> × 1.000
+                </div>
+            </div>
+
+            <div class="card">
+                <p>
+                    <strong>Kaza Ağırlık Oranı (KAO):</strong> İş kazaları nedeniyle kaybedilen iş günü sayısının toplam çalışma saatine oranını ifade eder (kullanılan katsayıya göre <strong>1.000 veya 1.000.000 saat</strong> üzerinden hesaplanır).
+                </p>
+            </div>
+
+            <div class="exam-box">
+                <p><strong>KSO ve KAO Ayrımı — Sınav Notu:</strong> <strong>KSO (Kaza Sıklık Oranı)</strong> kaza <em>sayısını</em> ölçer ve çarpan <strong>1.000.000</strong>'dur. <strong>KAO (Kaza Ağırlık Oranı)</strong> kaybedilen <em>iş günü sayısını</em> ölçer ve çarpan genellikle <strong>1.000</strong>'dir. Bu iki metrik sınavlarda formül ve çarpan farkıyla ayırt edilir.</p>
+            </div>
+
+            <!-- KAPANIŞ -->
+            <div class="info-box">
+                <p>
+                    Çalışma ortamı gözetiminden elde edilen verilerin hukuki saklama sürelerine (<strong>10 yıllık iş hijyeni kayıtları, 15 yıllık kişisel sağlık dosyaları, 30 yıllık radyasyon maruziyet dosyaları ile 40 yıllık kanserojen/mutajen ve latent biyolojik etken kayıtları</strong>) uygun şekilde muhafazası, İSG yönetim sisteminin hukuki güvencesini oluşturur. Teknik ölçüm standartlarında <strong>20 °C sıcaklık ve 101,3 kPa basınç</strong> koşullarının esas alınması, solunabilir toz ölçümlerinde alveollere ulaşan <strong>0,1 – 5,0 μm</strong> boyut aralığının takibi ve pnömokonyoz tanısında en az <strong>35 × 35 cm</strong> boyutundaki ILO standart akciğer radyografilerinin kullanımı, saha denetimlerinde ve mesleki yeterlilik sınavlarında teknik doğruluğun anahtar parametreleridir. Hazırlanan tüm bu ölçüm, takip ve istatistik verilerinin <strong>EK-2 Yıllık Değerlendirme Formu</strong> çatısı altında İGU ve İYH işbirliğiyle sentezlenerek <strong>İşveren, İGU ve İYH'den oluşan üçlü onay mekanizmasıyla</strong> karara bağlanması, proaktif İSG kültürünün kurumsal sürdürülebilirliğini temin eder.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BÖLÜM GEZİNME (ALT)                                          -->
+        <!-- ============================================================ -->
+        <nav class="chapter-nav" aria-label="Bölümler arası gezinme">
+            <a href="../bolum-01/konu-anlatimi.html" class="prev">
+                <span class="cn-arrow">←</span>
+                <span class="cn-text">
+                    <small>Önceki Bölüm</small>
+                    <strong>Bölüm 1: Giriş, Kapsam, Mevzuat</strong>
+                </span>
+            </a>
+            <a href="../bolum-03/konu-anlatimi.html" class="next">
+                <span class="cn-arrow">→</span>
+                <span class="cn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Bölüm 3: Konu Anlatımı</strong>
+                </span>
+            </a>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- HAZIRLAYAN KARTI                                             -->
+        <!-- ============================================================ -->
+        <section class="author-card" aria-label="Hazırlayan bilgileri">
+            <div class="avatar" aria-hidden="true">SA</div>
+            <div class="author-info">
+                <h3>Sıraç Aksan</h3>
+                <p class="role">
+                    Konya Teknik Üniversitesi<br>
+                    İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans<br>
+                    <strong>Ders:</strong> Çalışma Ortamı Gözetimi &nbsp;|&nbsp; <strong>Öğretim Üyesi:</strong> Bilgehan Kekeç
+                </p>
+                <div class="contact-row">
+                    <a href="tel:+905069282100" aria-label="Telefon">
+                        <span aria-hidden="true">📞</span> 0506 928 21 00
+                    </a>
+                    <a href="mailto:saracaksan@gmail.com" aria-label="E-posta">
+                        <span aria-hidden="true">✉️</span> saracaksan@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- ==================== SAYFA SONU ==================== -->
+<footer class="page-footer">
+    <div class="container">
+        <p><strong>Çalışma Ortamı Gözetimi</strong> — Bölüm 2: Ortam Ölçümleri, Kayıtlar ve İstatistikler</p>
+        <p>
+            <a href="../../../index.html">Tüm Dersler</a> &nbsp;·&nbsp;
+            <a href="../index.html">Ders Ana Sayfası</a> &nbsp;·&nbsp;
+            <a href="sorular.html">Sorular</a> &nbsp;·&nbsp;
+            <a href="sunum.html">Sunum</a>
+        </p>
+        <p style="margin-top:0.6rem; font-size:0.76rem; opacity:0.75;">
+            © 2026 Sıraç Aksan — Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans<br>
+            Bu içerik yalnızca eğitim amaçlıdır. Güncel mevzuat için resmî kaynaklara başvurunuz.
+        </p>
+    </div>
+</footer>
+
+<!-- ==================== YUKARI ÇIK BUTONU ==================== -->
+<button class="scroll-top" id="scrollTopBtn" aria-label="Sayfanın başına dön" title="Yukarı çık">↑</button>
+
+<script>
+    (function () {
+        'use strict';
+
+        var btn = document.getElementById('scrollTopBtn');
+        var toggle = function () {
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        };
+        window.addEventListener('scroll', toggle, { passive: true });
+        toggle();
+
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var targetId = this.getAttribute('href').slice(1);
+                if (!targetId) return;
+                var target = document.getElementById(targetId);
+                if (!target) return;
+                e.preventDefault();
+                var offset = target.getBoundingClientRect().top + window.scrollY - 20;
+                window.scrollTo({ top: offset, behavior: 'smooth' });
+                history.replaceState(null, '', '#' + targetId);
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

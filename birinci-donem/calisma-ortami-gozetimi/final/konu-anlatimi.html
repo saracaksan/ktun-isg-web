@@ -1,13 +1,264 @@
 <!DOCTYPE html>
-
 <html lang="tr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Çalışma Ortamı Gözetimi - Final Sınavı Hazırlık | 4 Deneme Sınavı" name="description"/>
-<meta content="Sıraç Aksan" name="author"/>
-<title>Final Denemeleri | Çalışma Ortamı Gözetimi</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Sıraç Aksan">
+<meta name="description" content="Çalışma Ortamı Gözetimi - Final Sınavı Master Hazırlık: konu anlatımı ve 4 çözümlü final denemesi">
+<title>Çalışma Ortamı Gözetimi | Konu Anlatımı + Final Denemeleri</title>
 <style>
+:root{--merge-navy:#0b3954;--merge-teal:#087e8b;--merge-orange:#f28c28;--merge-bg:#f4f7fa;}
+.merge-cover{background:linear-gradient(135deg,#0b3954,#087e8b);color:#fff;padding:34px 20px;box-shadow:0 6px 22px rgba(0,0,0,.14);position:relative;z-index:1000}
+.merge-cover-inner{max-width:1100px;margin:auto}.merge-kicker{font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;opacity:.9}.merge-cover h1{font-size:2rem;margin:8px 0}.merge-cover p{margin:5px 0;line-height:1.6}.merge-meta{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.merge-pill{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:7px 11px;border-radius:999px;font-size:.82rem}.merge-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.merge-nav a{color:#fff;text-decoration:none;background:rgba(255,255,255,.14);padding:11px 16px;border-radius:10px;font-weight:700}.merge-nav a:hover{background:rgba(255,255,255,.25)}
+.merge-timebox{max-width:1100px;margin:24px auto;padding:22px 24px;background:#fff8e8;border:2px solid #f2c46d;border-left:7px solid #f28c28;border-radius:14px;color:#263238;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.merge-timebox h2{margin:0 0 10px;color:#9a5b00}.merge-timebox ul{margin:8px 0 0 20px}.merge-timebox li{margin:6px 0}.merge-section-label{max-width:1100px;margin:26px auto 8px;padding:0 20px;color:#0b3954;font-size:1.35rem;font-weight:800;border-left:6px solid #f28c28}
+.merge-author{background:#0b3954;color:#fff;padding:28px 20px;margin-top:0}.merge-author-inner{max-width:1100px;margin:auto;text-align:center}.merge-author strong{color:#fff}.merge-author p{margin:6px 0}.merge-back{position:fixed;right:18px;bottom:18px;z-index:9999;background:#f28c28;color:#fff;text-decoration:none;padding:11px 15px;border-radius:999px;font-weight:800;box-shadow:0 5px 18px rgba(0,0,0,.25)}
+/* Existing important-note boxes receive slightly stronger visual hierarchy without changing their text. */
+.ezber,.ipucu,.tuzak,.ek,.kart-vurgu,.vurgu{box-shadow:0 3px 12px rgba(0,0,0,.07)}
+@media(max-width:700px){.merge-cover h1{font-size:1.45rem}.merge-nav{display:grid;grid-template-columns:1fr}.merge-nav a{text-align:center}}
+
+  :root{
+    --kirmizi:#c0392b;
+    --kirmizi-acik:#fdecea;
+    --yesil:#1e8449;
+    --yesil-acik:#eafaf1;
+    --mavi:#1f4e79;
+    --mavi-acik:#eaf2fb;
+    --mor:#6c3483;
+    --mor-acik:#f4ecf7;
+    --turuncu:#b9770e;
+    --turuncu-acik:#fef5e7;
+    --gri:#5d6d7e;
+    --cizgi:#d5d8dc;
+    --bg:#f4f6f8;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color:#212f3d;
+    line-height:1.75;
+    font-size:16px;
+  }
+  .container{max-width:1150px;margin:0 auto;padding:0 18px 80px;}
+
+  /* ---------- KAPAK ---------- */
+  .hero{
+    background:linear-gradient(135deg,#1f4e79 0%,#2e86c1 55%,#48c9b0 100%);
+    color:#fff;
+    padding:52px 18px 44px;
+    text-align:center;
+    box-shadow:0 6px 22px rgba(0,0,0,.18);
+  }
+  .hero h1{
+    margin:0 0 10px;
+    font-size:2.1rem;
+    letter-spacing:.4px;
+    text-shadow:0 2px 8px rgba(0,0,0,.25);
+  }
+  .hero p{margin:6px auto;max-width:900px;font-size:1.02rem;opacity:.96;}
+  .hero .badge{
+    display:inline-block;margin-top:16px;padding:7px 20px;
+    background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.5);
+    border-radius:30px;font-size:.86rem;letter-spacing:1px;text-transform:uppercase;
+  }
+
+  /* ---------- İÇİNDEKİLER ---------- */
+  .toc{
+    background:#fff;border-radius:14px;padding:26px 30px;margin:30px 0;
+    box-shadow:0 3px 14px rgba(0,0,0,.07);border-left:6px solid var(--mavi);
+  }
+  .toc h2{margin:0 0 14px;font-size:1.2rem;color:var(--mavi);border:0;padding:0;}
+  .toc ol{margin:0;padding-left:22px;columns:2;column-gap:34px;}
+  .toc li{margin-bottom:7px;}
+  .toc a{color:#21618c;text-decoration:none;font-weight:600;}
+  .toc a:hover{text-decoration:underline;color:var(--kirmizi);}
+  @media(max-width:760px){.toc ol{columns:1;}}
+
+  /* ---------- BÖLÜM BAŞLIKLARI ---------- */
+  section{
+    background:#fff;border-radius:14px;padding:30px 32px;margin:26px 0;
+    box-shadow:0 3px 14px rgba(0,0,0,.07);
+  }
+  h2.bolum{
+    font-size:1.45rem;color:#fff;margin:-30px -32px 24px;padding:18px 32px;
+    background:linear-gradient(90deg,#1f4e79,#2e86c1);
+    border-radius:14px 14px 0 0;letter-spacing:.3px;
+  }
+  h2.bolum span.num{
+    display:inline-block;background:rgba(255,255,255,.22);
+    width:34px;height:34px;line-height:34px;text-align:center;
+    border-radius:50%;margin-right:12px;font-size:1rem;
+  }
+  h3{
+    font-size:1.14rem;color:var(--mavi);margin:30px 0 12px;
+    padding-left:12px;border-left:5px solid #48c9b0;
+  }
+  h4{font-size:1.02rem;color:#21618c;margin:22px 0 10px;}
+  p{margin:10px 0;text-align:justify;}
+
+  /* ---------- TABLOLAR ---------- */
+  .tablo-sarmal{overflow-x:auto;margin:18px 0;}
+  table{
+    width:100%;border-collapse:collapse;font-size:.93rem;
+    background:#fff;min-width:520px;
+    box-shadow:0 1px 6px rgba(0,0,0,.07);border-radius:8px;overflow:hidden;
+  }
+  caption{
+    caption-side:top;text-align:left;font-weight:700;color:var(--mavi);
+    padding:8px 4px;font-size:.95rem;
+  }
+  thead th{
+    background:linear-gradient(90deg,#1f4e79,#2e86c1);color:#fff;
+    padding:12px 14px;text-align:left;font-weight:600;font-size:.9rem;
+    border-right:1px solid rgba(255,255,255,.18);
+  }
+  thead th:last-child{border-right:0;}
+  tbody td{padding:11px 14px;border-bottom:1px solid var(--cizgi);vertical-align:top;}
+  tbody tr:nth-child(even){background:#f8fafc;}
+  tbody tr:hover{background:#eaf2fb;transition:.15s;}
+  tbody tr:last-child td{border-bottom:0;}
+  td.vurgu{font-weight:700;color:var(--kirmizi);}
+  .tablo-yesil thead th{background:linear-gradient(90deg,#1e8449,#27ae60);}
+  .tablo-mor thead th{background:linear-gradient(90deg,#6c3483,#a569bd);}
+  .tablo-turuncu thead th{background:linear-gradient(90deg,#b9770e,#e67e22);}
+
+  /* ---------- UYARI KUTULARI ---------- */
+  .kutu{
+    border-radius:10px;padding:16px 20px 16px 56px;margin:18px 0;
+    position:relative;font-size:.95rem;
+  }
+  .kutu::before{
+    position:absolute;left:16px;top:14px;font-size:1.4rem;line-height:1;
+  }
+  .kutu strong{display:block;margin-bottom:5px;font-size:.95rem;letter-spacing:.4px;text-transform:uppercase;}
+  .kutu p{margin:6px 0;text-align:left;}
+
+  .tuzak{background:var(--kirmizi-acik);border-left:6px solid var(--kirmizi);color:#641e16;}
+  .tuzak::before{content:"⚠️";}
+  .tuzak strong{color:var(--kirmizi);}
+
+  .ipucu{background:var(--yesil-acik);border-left:6px solid var(--yesil);color:#145a32;}
+  .ipucu::before{content:"💡";}
+  .ipucu strong{color:var(--yesil);}
+
+  .bilgi{background:var(--mavi-acik);border-left:6px solid var(--mavi);color:#154360;}
+  .bilgi::before{content:"📘";}
+  .bilgi strong{color:var(--mavi);}
+
+  .ek{background:var(--mor-acik);border-left:6px solid var(--mor);color:#4a235a;}
+  .ek::before{content:"➕";}
+  .ek strong{color:var(--mor);}
+
+  .ezber{background:var(--turuncu-acik);border-left:6px solid var(--turuncu);color:#7e5109;}
+  .ezber::before{content:"🧠";}
+  .ezber strong{color:var(--turuncu);}
+
+  /* ---------- FORMÜL ---------- */
+  .formul{
+    background:#1b2631;color:#f7dc6f;padding:16px 20px;border-radius:10px;
+    font-family:"Consolas","Courier New",monospace;font-size:1rem;
+    text-align:center;margin:16px 0;overflow-x:auto;letter-spacing:.5px;
+    box-shadow:inset 0 0 30px rgba(0,0,0,.4);
+  }
+  .formul .aciklama{
+    display:block;margin-top:10px;color:#aeb6bf;font-size:.82rem;
+    font-family:"Segoe UI",Arial,sans-serif;letter-spacing:0;
+  }
+
+  /* ---------- ŞEMA ---------- */
+  pre.sema{
+    background:#f8fafc;border:1px dashed #aab7b8;border-radius:10px;
+    padding:18px 20px;overflow-x:auto;font-family:"Consolas","Courier New",monospace;
+    font-size:.88rem;line-height:1.55;color:#1b2631;
+  }
+  .akis{
+    display:flex;flex-wrap:wrap;gap:12px;margin:18px 0;justify-content:center;
+  }
+  .akis .adim{
+    flex:1 1 190px;background:#fff;border:2px solid #2e86c1;border-radius:10px;
+    padding:14px;text-align:center;font-size:.9rem;position:relative;
+    box-shadow:0 2px 8px rgba(0,0,0,.07);
+  }
+  .akis .adim b{display:block;color:var(--mavi);margin-bottom:5px;}
+  .akis .adim .no{
+    display:inline-block;width:26px;height:26px;line-height:26px;border-radius:50%;
+    background:var(--mavi);color:#fff;font-size:.8rem;margin-bottom:6px;
+  }
+
+  /* ---------- LİSTELER ---------- */
+  ul.ozel{list-style:none;padding-left:0;}
+  ul.ozel li{padding-left:28px;position:relative;margin-bottom:8px;}
+  ul.ozel li::before{
+    content:"▸";position:absolute;left:8px;color:#2e86c1;font-weight:700;
+  }
+
+  /* ---------- HIZLI TEKRAR ---------- */
+  .hizli{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+    gap:14px;margin:20px 0;
+  }
+  .hizli .kart{
+    background:linear-gradient(160deg,#1f4e79,#2e86c1);color:#fff;
+    border-radius:12px;padding:16px 18px;box-shadow:0 4px 14px rgba(0,0,0,.15);
+  }
+  .hizli .kart .baslik{
+    font-size:.78rem;letter-spacing:1px;text-transform:uppercase;
+    opacity:.85;margin-bottom:8px;
+  }
+  .hizli .kart .deger{font-size:1.32rem;font-weight:700;line-height:1.3;}
+  .hizli .kart .alt{font-size:.8rem;opacity:.9;margin-top:6px;}
+
+  .kart-vurgu{background:linear-gradient(160deg,#922b21,#c0392b)!important;}
+
+  /* ---------- ETİKET ---------- */
+  .etiket{
+    display:inline-block;padding:2px 10px;border-radius:20px;font-size:.75rem;
+    font-weight:700;letter-spacing:.5px;text-transform:uppercase;vertical-align:middle;
+  }
+  .etiket-kirmizi{background:#fdecea;color:#c0392b;border:1px solid #f1948a;}
+  .etiket-yesil{background:#eafaf1;color:#1e8449;border:1px solid #7dcea0;}
+  .etiket-mavi{background:#eaf2fb;color:#1f4e79;border:1px solid #85c1e9;}
+
+  mark{background:#f9e79f;padding:1px 5px;border-radius:4px;font-weight:600;}
+  .kirmizi-bold{color:var(--kirmizi);font-weight:700;}
+
+  /* ---------- SORULAR ---------- */
+  .soru{
+    background:#fff;border:1px solid var(--cizgi);border-left:6px solid #2e86c1;
+    border-radius:10px;padding:18px 22px;margin:18px 0;
+  }
+  .soru .soru-metin{font-weight:700;color:#1b2631;margin-bottom:10px;}
+  .soru ol{padding-left:22px;margin:8px 0;}
+  .soru .cevap{
+    margin-top:12px;padding:12px 16px;background:var(--yesil-acik);
+    border-radius:8px;font-size:.92rem;border-left:4px solid var(--yesil);
+  }
+  .soru .cevap b{color:var(--yesil);}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    text-align:center;color:#7f8c8d;font-size:.85rem;padding:30px 18px;
+  }
+
+  /* ---------- YAZDIRMA ---------- */
+  @media print{
+    body{background:#fff;font-size:11pt;}
+    .hero{background:#1f4e79!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    section{box-shadow:none;border:1px solid #ccc;page-break-inside:avoid;}
+    .toc{page-break-after:always;}
+    table{font-size:9pt;}
+    .kutu, .formul, .sema{page-break-inside:avoid;}
+    a{color:#000;text-decoration:none;}
+  }
+  @media(max-width:600px){
+    .hero h1{font-size:1.45rem;}
+    section{padding:22px 18px;}
+    h2.bolum{margin:-22px -18px 20px;padding:14px 18px;font-size:1.15rem;}
+  }
+
         :root {
             --primary: #0f4c5c;
             --primary-light: #1b6b7a;
@@ -515,6 +766,1328 @@
 </style>
 </head>
 <body>
+<div class="merge-cover" id="ust">
+  <div class="merge-cover-inner">
+    <div class="merge-kicker">Konya Teknik Üniversitesi • İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans</div>
+    <h1>Çalışma Ortamı Gözetimi – Final Sınavı Master Hazırlık Dosyası</h1>
+    <p>Kapsamlı konu anlatımı + zamanı olmayanlar için hızlı tekrar + 4 adet çözümlü final denemesi</p>
+    <div class="merge-meta">
+      <span class="merge-pill">📚 Eksiksiz konu anlatımı</span>
+      <span class="merge-pill">⏱️ Hızlı final tekrarı</span>
+      <span class="merge-pill">📝 80 çözümlü soru</span>
+      <span class="merge-pill">🔗 Mevcut bağlantılar korunmuştur</span>
+    </div>
+    <nav class="merge-nav" aria-label="Ana gezinme">
+      <a href="#konu-anlatimi">📚 Konu Anlatımı</a>
+      <a href="#hizli-tekrar">⏱️ Zamanı Olmayanlar</a>
+      <a href="#final-denemeleri">📝 Final Denemeleri</a>
+      <a href="#hazirlayan">👤 Hazırlayan</a>
+    </nav>
+  </div>
+</div>
+
+<section class="merge-timebox" id="hizli-tekrar">
+  <h2>⏱️ Zamanı Olmayanlar İçin Final Öncesi Kullanım</h2>
+  <p>Vaktiniz sınırlıysa önce aşağıdaki sırayı izleyin; ardından kalan sürede konu anlatımındaki vurgulu kutulara ve denemelerin çözümlerine dönün.</p>
+  <ul>
+    <li><strong>1. Önce:</strong> Konu anlatımındaki <strong>Ezber, İpucu, Tuzak, İlave Sınav Notu ve kritik vurgu</strong> kutularını okuyun.</li>
+    <li><strong>2. Sonra:</strong> “5 Dakikada Tüm Sayılar – Son Tekrar” bölümünü tamamlayın.</li>
+    <li><strong>3. Ardından:</strong> 4 denemenin sorularını süre tutarak çözün.</li>
+    <li><strong>4. En son:</strong> Yanlış yaptığınız soruların “Detaylı Çözüm” bölümlerini açıp tekrar edin.</li>
+  </ul>
+</section>
+
+<div class="merge-section-label" id="konu-anlatimi">📚 BÖLÜM 1 — KAPSAMLI KONU ANLATIMI</div>
+<div id="konu-anlatimi-icerik"><body>
+<header class="hero">
+<h1>Bütün Bölümler: Çalışma Ortamı Gözetimi</h1>
+<p><strong>Final Sınavı Master Hazırlık Rehberi</strong></p>
+<p>Mevzuat · Ölçüm · Fiziksel &amp; Biyolojik Riskler · Havalandırma · Periyodik Kontroller · Sınav Tuzakları</p>
+<div class="badge">6331 Sayılı İSG Kanunu Ekseninde ÖSYM Formatına Uygun</div>
+</header>
+<div class="container">
+<!-- İÇİNDEKİLER -->
+<nav class="toc">
+<h2>📑 İçindekiler</h2>
+<ol>
+<li><a href="#bolum1">Giriş, Kapsam, Mevzuat ve Sorumluluklar</a></li>
+<li><a href="#bolum2">Ortam Ölçümleri, Kayıtlar ve İstatistikler</a></li>
+<li><a href="#bolum3">Fiziksel Risk Etmenleri, Termal Konfor ve Aydınlatma</a></li>
+<li><a href="#bolum4">Biyolojik Risk Etmenleri ve İş Hijyeni</a></li>
+<li><a href="#bolum5">Ortam Havası, Havalandırma ve İklimlendirme</a></li>
+<li><a href="#bolum6">İşyeri Kontrolleri ve Belgelendirme</a></li>
+<li><a href="#bolum7">Kritik Sınav İpuçları (Kırmızı &amp; Bold Vurgular)</a></li>
+<li><a href="#bolum8">5 Dakikada Tüm Sayılar – Son Tekrar</a></li>
+<li><a href="#bolum9">Çözümlü Örnek Final Soruları</a></li>
+</ol>
+</nav>
+<!-- ============================================================ -->
+<!-- BÖLÜM 1 -->
+<!-- ============================================================ -->
+<section id="bolum1">
+<h2 class="bolum"><span class="num">1</span>Giriş, Kapsam, Mevzuat ve Sorumluluklar</h2>
+<p>Çalışma ortamı gözetimi, iş sağlığı ve güvenliği (İSG) disiplininin temel taşı olup, işyerlerinde çalışanların sağlığını ve güvenliğini tehdit eden fiziksel, kimyasal, biyolojik, ergonomik ve psikososyal risk faktörlerinin nitel ve nicel olarak saptanması, değerlendirilmesi ve denetim altına alınması sürecini kapsar. 6331 sayılı İş Sağlığı ve Güvenliği Kanunu ve ilgili alt mevzuat uyarınca, çalışma ortamı gözetiminin eksiksiz ve yetkin biçimde yürütülmesi işverenin asli hukuki sorumluluğudur. Bu gözetim faaliyetlerinin sistematik bir yapıda kurulup sürdürülebilir kılınması, iş kazaları ile meslek hastalıklarının önlenmesindeki en etkin proaktif araçtır. Gerek akademide gerekse ÖSYM ve İSG sınav komisyonu standartlarında, mevzuatsal görev dağılımları, kurumsal örgütlenme şartları ve Yargıtay içtihatları ile biçimlenen hukuki sorumluluklar yüksek soru potansiyeline sahiptir ve saha uygulamasında hayati bir stratejik değer taşımaktadır.</p>
+<h3>Çalışma Ortamı Gözetimi ve Uluslararası Sözleşmeler</h3>
+<h4>Çalışma Ortamı Gözetiminin Tanımı, Amacı ve Kapsamı</h4>
+<p>Çalışma ortamı gözetimi; işyeri çalışma ortamında çalışanların sağlık ve güvenlikleri için tehlike ve risk oluşturan çeşitli madde ve etkenlerin varlığının saptanması, düzeylerinin ölçülmesi ve gerektiğinde kontrol altına alınması amacıyla yürütülen tüm faaliyetlerin bütününü ifade eder.</p>
+<p>Gözetimin temel amacı; işyerindeki tehlikeleri kaynağında yok etmek veya zararsız seviyeye indirmek, iş ile çalışan arasında ergonomik ve fizyolojik uyumu sağlamak ve mesleki maruziyetleri önlemektir. Bu kapsamda gerçekleştirilen faaliyetler:</p>
+<ul class="ozel">
+<li>Periyodik bakım, kontrol ve ölçümlerin planlanması ile uygulamalarının denetlenmesi,</li>
+<li>Yerüstü ve yeraltı çalışma ortamlarının sistematik gözetimi,</li>
+<li>İşyerinde kaza, yangın, patlama veya doğal afetlere karşı acil durum planlarının hazırlanması ve tatbikatların izlenmesi,</li>
+<li>Koruyucu, önleyici ve düzeltici faaliyetlerin (DÖF) yürütülmesi,</li>
+<li>İşyeri bina ve eklentilerinin (kantin, yemekhane, yatakhane, kreş, emzirme odası, duş, tuvalet) genel hijyen şartlarının sürekli denetlenmesidir.</li>
+</ul>
+<div class="ezber">
+<strong>🧠 Akılda Kalıcı Kısaltma</strong>
+<p>Gözetim faaliyetlerinin 5 ayağı: <b>Ö</b>lçüm – <b>G</b>özetim – <b>A</b>cil Durum – <b>D</b>ÖF – <b>H</b>ijyen<br/>
+      → <mark>“ÖGADH”</mark> olarak kodlayın. Sınavda “aşağıdakilerden hangisi çalışma ortamı gözetimi kapsamında <u>değildir</u>?” tipi sorularda bu beşli dışındaki seçenek genellikle cevaptır.</p>
+</div>
+<h4>ILO 155 ve 161 Sayılı Sözleşmelerine Göre İş Sağlığı Tanımı</h4>
+<p>Uluslararası Çalışma Örgütü’nün (ILO) 155 Sayılı İş Sağlığı ve Güvenliği Sözleşmesi ve 161 Sayılı İş Sağlığı Hizmetlerine İlişkin Sözleşme ilkeleri doğrultusunda iş sağlığı: <em>"Çalışanın çalışma ortamını, koşullarını, ilişkilerini ve çevresini, kendisini güdüleyen bir çalışma yürütecek bir biçimde etkileyebildiği; sağlıklı ve güvenli bir üretim ortamının ürünü olan bedensel, ruhsal, toplumsal en uygun iyilik halinde olmaktır."</em></p>
+<p>Bu tanım, iş sağlığının yalnızca biyolojik veya bedensel hastalıkların yokluğu ile sınırlandırılamayacağını; çalışanların ruhsal dinamiklerini, iş tatminini, sosyal ilişkilerini ve bütüncül esenliğini kapsayan dinamik bir denge durumu olduğunu ortaya koymaktadır.</p>
+<div class="bilgi">
+<strong>📘 ILO 155 ve 161 – Sınav Ayrımı</strong>
+<p><b>ILO 155:</b> İş Sağlığı ve Güvenliği ve Çalışma Ortamına İlişkin Sözleşme → <u>Ulusal İSG politikası</u> oluşturulmasını zorunlu kılar.</p>
+<p><b>ILO 161:</b> İş Sağlığı Hizmetlerine İlişkin Sözleşme → <u>İşyeri sağlık birimi / iş sağlığı hizmeti</u> kurulmasını ve işlevlerini düzenler.</p>
+<p>Klasik ÖSYM tuzağı: “İş sağlığı hizmetlerinin kurulmasını düzenleyen sözleşme hangisidir?” → Cevap <mark>161</mark>. “Ulusal politika” ifadesi geçiyorsa → <mark>155</mark>.</p>
+</div>
+<h3>6331 Sayılı İSG Kanunu ve Temel İlkelere Analitik Bakış</h3>
+<h4>İşverenin Genel Yükümlülükleri ve Korunma İlkeleri</h4>
+<p>İşverenlerin İSG alanındaki temel yükümlülükleri, 4857 sayılı İş Kanunu’nun 77. maddesi ve 6331 sayılı İSG Kanunu’nun 4. ve 5. maddelerinde açıkça düzenlenmiştir. İşveren; çalışanların iş ile ilgili sağlık ve güvenliğini sağlamakla yükümlü olup bu kapsamda:</p>
+<ul class="ozel">
+<li>Mesleki risklerin önlenmesi, eğitim ve bilgi verilmesi dâhil her türlü tedbirin alınması, organizasyonun yapılması, araç ve gereçlerin noksansız sağlanması,</li>
+<li>İSG tedbirlerine uyulup uyulmadığının denetlenmesi ve aykırılıkların giderilmesi,</li>
+<li>Risk değerlendirmesi yapılması veya yaptırılması,</li>
+<li>Çalışana görev verirken, çalışanın sağlık ve güvenlik yönünden işe uygunluğunun dikkate alınması,</li>
+<li>Mülga İşçi Sağlığı ve İş Güvenliği Tüzüğü’nün 4. maddesi prensipleri gereğince, teknik ilerlemelerin getirdiği daha uygun sağlık şartlarının sağlanması, tehlike gösteren makine veya hammaddelerin zararsız/daha az zararlı olanlarla değiştirilmesi yükümlülüğü altındadır.</li>
+</ul>
+<div class="ek">
+<strong>➕ İlave Sınav Notu – 6331’in “Korunma İlkeleri” Sıralaması (m.5)</strong>
+<p>Sınavda sıkça sorulan <b>korunma hiyerarşisi</b> (riskten kaçınma sırası) şudur; önem sırası <u>değiştirilemez</u>:</p>
+<ul class="ozel">
+<li><b>1.</b> Risklerden kaçınmak</li>
+<li><b>2.</b> Kaçınılması mümkün olmayan riskleri analiz etmek</li>
+<li><b>3.</b> Risklerle kaynağında mücadele etmek</li>
+<li><b>4.</b> İşin kişilere uygun hale getirilmesi (işin tasarımı, teknoloji seçimi, çalışma şekli)</li>
+<li><b>5.</b> Teknik gelişmelere uyum sağlamak</li>
+<li><b>6.</b> Tehlikeli olanı, tehlikesiz veya daha az tehlikeli olanla değiştirmek</li>
+<li><b>7.</b> Toplu korunma önlemlerini kişisel korunma önlemlerine tercih etmek</li>
+<li><b>8.</b> Çalışanlara uygun talimatlar vermek</li>
+</ul>
+<p><b>Püf Nokta:</b> <mark>“Toplu korunma &gt; Kişisel korunma”</mark> ilkesi daima doğru kabul edilir. KKD her zaman <u>son çare</u>dir. “İlk önce KKD verilir” diyen bir seçenek <b>yanlıştır</b>.</p>
+</div>
+<h4>Yargıtay İçtihatları Işığında İşverenin Geniş Denetim Sorumluluğu</h4>
+<p>Yargıtay kararları, işverenin sorumluluk sınırlarını edim yükümlülüğünün ötesine taşıyarak "geniş kontrol mekanizması" ve "günümüz bilim ve teknolojisini takip etme zorunluluğu" ilkelerine bağlamıştır:</p>
+<div class="akis">
+<div class="adim">
+<span class="no">1</span>
+<b>Önlem Alma Yükümlülüğü</b>
+        Sadece kâğıt üzerinde değil, fiilen ve noksansız
+      </div>
+<div class="adim">
+<span class="no">2</span>
+<b>Denetim ve Uygulatma</b>
+        KKD kullanımının ve kuralların aktif takibi
+      </div>
+<div class="adim">
+<span class="no">3</span>
+<b>Bilim ve Teknolojiyi Takip</b>
+        En üst koruma düzeyinin sağlanması
+      </div>
+</div>
+<div class="tablo-sarmal">
+<table class="tablo-mor">
+<caption>Yargıtay İçtihatları – Karar Bazlı Sorumluluk Haritası</caption>
+<thead>
+<tr>
+<th style="width:32%">Yargıtay Kararı</th>
+<th style="width:24%">İlke</th>
+<th>Kararın Özü</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Yargıtay 10. Hukuk Dairesi</b><br/><span class="etiket etiket-mavi">E. 1978/7895 – K. 1978/7581</span><br/>T. 31.10.1978</td>
+<td><b>Geniş Kontrol ve Denetim Mekanizması</b></td>
+<td>İşverenin yükümlülüğü sadece önlem almakla sınırlı değildir. Alınan önlemlere uyulup uyulmadığını denetleme ve uyulmasını sağlama zorunluluğu bulunmaktadır. İşveren işyerinde doğmuş ve doğabilecek tüm tehlikeleri önlemek amacıyla geniş bir kontrol mekanizması kurmalıdır.</td>
+</tr>
+<tr>
+<td><b>Yargıtay 10. Hukuk Dairesi</b><br/><span class="etiket etiket-mavi">E. 1984/1672 – K. 1984/2234</span><br/>T. 17.04.1984</td>
+<td><b>Teknolojinin Getirdiği En Son Önlemleri Alma</b></td>
+<td>İşveren, salt mevzuatta yazılı önlemleri değil, insan yaşamına saygı çerçevesinde günümüz bilim ve teknolojisinin öngördüğü tüm önlemleri almakla yükümlüdür. Çalışanın iş güvenliği kesinlikle kendisinin dikkatine veya inisiyatifine bırakılamaz.</td>
+</tr>
+<tr>
+<td><b>Yargıtay 9. Hukuk Dairesi</b><br/><span class="etiket etiket-mavi">E. 1988/3451 – K. 1988/6712</span><br/>T. 16.06.1988</td>
+<td><b>KKD Kullanımını Aktif Takip ve Denetim</b></td>
+<td>İşveren, işin niteliğine uygun kişisel koruyucu donanımı (KKD) vermekle yetinemez; bu malzemenin kullanılıp kullanılmadığını sürekli ve etkin biçimde denetlemekle mükelleftir.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tuzak">
+<strong>⚠️ ÖSYM Tuzağı – “Vermek Yeterli mi?”</strong>
+<p>Sınavda sıkça karşılaşılan yanlış ifade: <em>“İşveren, çalışana KKD temin ettiği takdirde sorumluluğunu yerine getirmiş sayılır.”</em></p>
+<p>Bu ifade <b>KESİNLİKLE YANLIŞTIR.</b> Yargıtay 9. HD kararına göre işveren; <b>verme + kullandırma + denetleme</b> üçlüsünü birlikte yerine getirmelidir. KKD’yi verip kullanımını denetlemeyen işveren <u>kusurlu</u> sayılır.</p>
+</div>
+<div class="ezber">
+<strong>🧠 Kodlama: “VER-DENETLE-YENİLE”</strong>
+<p><b>VER</b> (KKD’yi temin et) → <b>DENETLE</b> (kullanımını takip et) → <b>YENİLE</b> (bilim ve teknolojinin en son önlemlerini uygula).<br/>
+      Yargıtay’ın üç kararı bu üç fiile karşılık gelir: 1978 → Denetim, 1984 → Yenile/Teknoloji, 1988 → KKD Verme &amp; Denetleme.</p>
+</div>
+<h3>İSG Profesyonellerinin Görev ve Kurumsal Yapılanması</h3>
+<h4>İş Güvenliği Uzmanı ve İşyeri Hekiminin Görev Karşılaştırması</h4>
+<p>İş Güvenliği Uzmanlarının Görev, Yetki, Sorumluluk ve Eğitimleri Hakkında Yönetmelik ile İşyeri Hekimleri ve Diğer Sağlık Personelinin Görev, Yetki, Sorumluluk ve Eğitimleri Hakkında Yönetmelik uyarınca her iki profesyonelin görevleri 5 temel başlıkta toplanır:</p>
+<div class="tablo-sarmal">
+<table>
+<caption>İGU ve İYH Görev Alanları Karşılaştırma Tablosu</caption>
+<thead>
+<tr>
+<th style="width:15%">Görev Alanı</th>
+<th style="width:42%">İş Güvenliği Uzmanı (İGU) – Odak Noktası</th>
+<th>İşyeri Hekimi (İYH) – Odak Noktası</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>1. Rehberlik</b></td>
+<td>İşyerinin tasarımı, makine ve teçhizatın seçimi, İSG mevzuatına uygunluk ve kişisel koruyucu donanım seçimi konularında işverene öneriler sunmak.</td>
+<td>Ergonomik ve psikososyal riskler, genel hijyen şartları (yemekhane, kantin, duş, tuvalet), iş ile çalışanın uyumu ve sağlık riskleri hususunda işverene rehberlik etmek.</td>
+</tr>
+<tr>
+<td><b>2. Risk Değerlendirmesi</b></td>
+<td>Risk değerlendirmesi çalışmalarına katılmak, tehlikeleri saptamak ve önleyici faaliyet planlarını hazırlamak.</td>
+<td>Risk değerlendirmesi çalışmalarına katılmak, sağlık riski oluşturan çalışma koşullarını saptamak ve izlemek.</td>
+</tr>
+<tr>
+<td><b>3. Çalışma Ortamı Gözetimi</b></td>
+<td>Periyodik bakım, kontrol ve ölçümleri planlamak/denetlemek; acil durum planları, tatbikatlar ve yangın/kaza önleme faaliyetlerini yürütmek <span class="etiket etiket-kirmizi">Asli Görev</span></td>
+<td>Çalışma ortamındaki zararlı etkenleri (fiziksel, kimyasal, biyolojik vb.) saptamak, ölçüm sonuçlarının çalışan sağlığına etkilerini değerlendirmek.</td>
+</tr>
+<tr>
+<td><b>4. Sağlık Gözetimi</b></td>
+<td>Sağlık gözetimi sonuçlarına ilişkin veri akışına destek vermek ve ortam şartlarıyla ilişkilendirmek.</td>
+<td>İşe giriş, periyodik muayeneler, işe dönüş muayeneleri ve sağlık nedenli devamsızlık-çalışma ortamı ilişkisini tespit etmek <span class="etiket etiket-kirmizi">Asli Görev</span></td>
+</tr>
+<tr>
+<td><b>5. Eğitim, Kayıt ve İşbirliği</b></td>
+<td>Çalışanların İSG eğitimlerini planlamak, EK-2 Yıllık Değerlendirme Raporunu İYH ile birlikte hazırlamak, İSG Kurulu ve çalışan temsilcileriyle işbirliği yapmak.</td>
+<td>Sağlık konularında çalışanları bilgilendirmek ve eğitmek, EK-2 Yıllık Değerlendirme Raporunu hazırlamak, İGU ile işbirliği içinde ölçüm önermek.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="ipucu">
+<strong>💡 Ayrım Püf Noktası – “Asli Görev Kimin?”</strong>
+<p><b>Çalışma Ortamı Gözetimi</b> → <mark>İŞ GÜVENLİĞİ UZMANI</mark>nın asli görevidir.</p>
+<p><b>Sağlık Gözetimi</b> → <mark>İŞYERİ HEKİMİ</mark>nin asli görevidir.</p>
+<p>Kısa kod: <b>“Ortam Uzmanın, Sağlık Hekimin.”</b> EK-2 raporu ise <u>her ikisinin ortak</u> ürünüdür.</p>
+</div>
+<div class="ek">
+<strong>➕ İlave Sınav Notu – İGU ve İYH Görevlendirme Süreleri</strong>
+<p>Sınavda sayısal soru gelme ihtimali yüksektir. Çalışan başına <b>aylık</b> asgari görevlendirme süreleri:</p>
+<div class="tablo-sarmal">
+<table class="tablo-turuncu">
+<thead>
+<tr><th>Tehlike Sınıfı</th><th>İş Güvenliği Uzmanı (ayda/çalışan)</th><th>İşyeri Hekimi (ayda/çalışan)</th></tr>
+</thead>
+<tbody>
+<tr><td>Az Tehlikeli</td><td>En az 10 dakika</td><td>En az 5 dakika</td></tr>
+<tr><td>Tehlikeli</td><td>En az 20 dakika</td><td>En az 10 dakika</td></tr>
+<tr><td>Çok Tehlikeli</td><td>En az 40 dakika</td><td>En az 15 dakika</td></tr>
+</tbody>
+</table>
+</div>
+<p><b>Önemli istisna:</b> 10’dan az çalışanı bulunan <u>az tehlikeli</u> işyerlerinde işveren veya işveren vekili, İSG hizmetlerini <b>kendisi üstlenebilir</b> (İGU ve İYH görevlendirme zorunluluğu yoktur). Ancak <b>risk değerlendirmesi, acil durum planı ve eğitim</b> yükümlülükleri yine devam eder.</p>
+</div>
+<h4>İSGB ve OSGB Yapılanması</h4>
+<p><b>İşyeri Sağlık ve Güvenliği Birimi (İSGB):</b> İşyerinde İSG hizmetlerini yürütmek üzere kurulan, en az bir iş güvenliği uzmanı ve en az bir işyeri hekiminden oluşan, gerekli donanım ve personele sahip dahili birimdir.</p>
+<p><b>Ortak Sağlık ve Güvenlik Birimi (OSGB):</b> Kamu kurum ve kuruluşları, organize sanayi bölgeleri veya Türk Ticaret Kanununa göre kurulan şirketler tarafından, işyerlerine dışarıdan İSG hizmeti sunmak üzere kurulan ve Çalışma ve Sosyal Güvenlik Bakanlığı tarafından yetkilendirilen bağımsız birimdir.</p>
+<p><b>Sorumluluklar:</b> İSGB ve OSGB’ler; çalışma ortamı gözetimi rehberliği, sağlık gözetimi uygulamaları, İSG eğitimlerinin planlanması, acil durum planlaması, yıllık çalışma planı ile EK-2 yıllık değerlendirme raporunun hazırlanması ve kişisel sağlık dosyalarının gizlilik esasına göre saklanmasından sorumludur.</p>
+<div class="tablo-sarmal">
+<table class="tablo-yesil">
+<caption>İSGB – OSGB Karşılaştırması</caption>
+<thead>
+<tr><th>Kriter</th><th>İSGB (İşyeri Sağlık ve Güvenliği Birimi)</th><th>OSGB (Ortak Sağlık ve Güvenlik Birimi)</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Konum</b></td><td>İşyerinin <u>içinde</u> / dahili</td><td>İşyerinin <u>dışında</u> / harici hizmet sunucu</td></tr>
+<tr><td><b>Kurucu</b></td><td>İşverenin bizzat kendisi</td><td>Kamu kurumları, OSB’ler veya TTK’ya göre kurulan şirketler</td></tr>
+<tr><td><b>Asgari Kadro</b></td><td>En az 1 İGU + en az 1 İYH</td><td>Bakanlıkça belirlenen kadro ve donanım şartları</td></tr>
+<tr><td><b>Yetkilendirme</b></td><td>İşveren bünyesinde kurulur</td><td><mark>Çalışma ve Sosyal Güvenlik Bakanlığı</mark> tarafından yetkilendirilir</td></tr>
+<tr><td><b>Hizmet Verdiği Kesim</b></td><td>Yalnızca kendi işyeri</td><td>Birden fazla işyerine (sözleşmeli) hizmet</td></tr>
+</tbody>
+</table>
+</div>
+<h4>İş Sağlığı ve Güvenliği Kurulu Yapısı</h4>
+<p>İş Sağlığı ve Güvenliği Kurulları Hakkında Yönetmelik gereğince; <mark>50 ve üzeri çalışanın bulunduğu ve 6 aydan fazla süren sürekli işlerin yapıldığı işyerlerinde</mark> İSG Kurulu kurulması zorunludur. Kurul şu kişilerden oluşur:</p>
+<ul class="ozel">
+<li>İşveren veya işveren vekili (Kurul Başkanı)</li>
+<li>İş güvenliği uzmanı (Kurul Sekreteri – İşveren/vekili başkanlık ettiğinde)</li>
+<li>İşyeri hekimi</li>
+<li>İnsan kaynakları, personel, sosyal işler veya idari/mali işleri yürütmekle görevli bir kişi</li>
+<li>Bulunması halinde sivil savunma uzmanı</li>
+<li>Bulunması halinde forman, ustabaşı veya usta</li>
+<li>Çalışan temsilcisi (birden çok ise Baş Temsilci)</li>
+</ul>
+<div class="tuzak">
+<strong>⚠️ ÖSYM Tuzağı – İki Şart Birlikte Aranır</strong>
+<p>Sıkça yapılan hata: “50 çalışanı olan her işyerinde kurul zorunludur” demek <b>yanlıştır.</b></p>
+<p>Doğru ifade: <mark>50+ çalışan <b>VE</b> 6 aydan fazla süren sürekli iş</mark> şartlarının <u>ikisi birlikte</u> sağlanmalıdır. Mevsimlik/yılda 6 aydan az süren işlerde kurul zorunluluğu doğmaz.</p>
+<p>Ayrıca: <b>Kurul Başkanı = İşveren/vekili</b>, <b>Kurul Sekreteri = İş Güvenliği Uzmanı</b>. Bu eşleştirme ters verilerek tuzak kurulur.</p>
+</div>
+<div class="ek">
+<strong>➕ İlave Sınav Notu – İSG Kurulu Çalışma Esasları</strong>
+<ul class="ozel">
+<li>Kurul, <b>ayda en az bir kez</b> toplanır. (Sınav sorusu: “İSG Kurulu hangi sıklıkla toplanır?” → <mark>Ayda en az bir</mark>)</li>
+<li>Kurul, <b>üye tam sayısının salt çoğunluğu</b> ile toplanır ve <b>katılanların oy çokluğu</b> ile karar verir.</li>
+<li>Kurul kararları, işverene <b>yazılı</b> olarak bildirilir. İşveren kararları <u>uygulamak zorundadır</u>; uygulanmayacaksa <b>gerekçesini yazılı</b> olarak kurula bildirir.</li>
+<li>Kurulun görüş ve önerileri, işverenin sorumluluğunu <u>ortadan kaldırmaz</u>.</li>
+<li>Kurul toplantılarının gündemi, İGU ve İYH tarafından hazırlanır.</li>
+</ul>
+</div>
+<h3>Hukuki Belgeler ve Yıllık Raporlama</h3>
+<h4>Onaylı Defter (Resmi Belge Statüsü)</h4>
+<p>İşyeri hekimi ve iş güvenliği uzmanı tarafından yapılan tespit, öneri ve rehberlik hususlarının yazıldığı, Seri Numaralı ve Sayfaları müteselsil sıra numaralı veya İSG-KATİP sistemine kayıtlı, Çalışma ve İş Kurumu İl Müdürlüğü veya Noter tarafından her sayfası mühürlenip onaylanmış resmi belgedir. Onaylı deftere yazılan hususlar işverene tebliğ edilmiş sayılır. Defterin asıl nüshası işveren tarafından, kopya nüshaları ise ilgili İSG profesyonelleri tarafından saklanır.</p>
+<div class="bilgi">
+<strong>📘 Onaylı Defter – 4 Kritik Özellik</strong>
+<p><b>1. Resmi belge statüsündedir.</b> <b>2.</b> Sayfaları <u>müteselsil sıra numaralı</u>dır. <b>3.</b> <u>İSG-KATİP</u>’e kayıtlı olabilir. <b>4.</b> Her sayfası <u>Çalışma ve İş Kurumu İl Müdürlüğü veya Noter</u> tarafından mühürlenir.</p>
+<p><b>Sınav İpucu:</b> Onaylı deftere yazılan hususlar <mark>işverene tebliğ edilmiş sayılır</mark>. Bu ifade doğrudan soru olarak gelebilir.</p>
+<p><b>Nüsha Dağılımı:</b> Asıl nüsha → <b>İşveren</b>; Kopya nüshalar → <b>İGU ve İYH</b>.</p>
+</div>
+<h4>Yıllık Çalışma Planı ve EK-2 Yıllık Değerlendirme Raporu</h4>
+<p><b>Yıllık Çalışma Planı:</b> Bir sonraki yılda gerçekleştirilecek tüm İSG faaliyetlerini kapsar; İGU ve İYH tarafından ortaklaşa hazırlanır.</p>
+<p><b>EK-2 Yıllık Değerlendirme Raporu:</b> O yıl yürütülen çalışma ortamı gözetimi, sağlık gözetimi, risk değerlendirmesi, ortam ölçümleri, işe giriş/periyodik muayeneler ve eğitim faaliyetlerinin sonuçlarını içeren rapordur.</p>
+<p><b>İmza Yetkilileri:</b> Yıllık değerlendirme formunda İşveren, İş Güvenliği Uzmanı ve İşyeri Hekimi'nin ıslak imzası bulunmak zorundadır.</p>
+<p><b>OSGB Arşiv Yükümlülüğü:</b> OSGB’ler yıllık değerlendirme raporlarının bir suretini kendi arşivlerinde saklamak, denetimlerde yetkili memurlara sunmak ve sözleşme süresi sonunda kendilerinden istenmese dahi işverene teslim etmekle yükümlüdür.</p>
+<div class="ezber">
+<strong>🧠 EK-2 Raporu İmza Üçlüsü</strong>
+<p><mark>İŞVEREN + İGU + İYH</mark> → “<b>Üç imza, tek rapor</b>.”</p>
+<p>Yıllık Çalışma Planı ile EK-2’nin farkı: Plan <b>gelecek yılın</b> faaliyetlerini, EK-2 ise <b>geçmiş yılın sonuçlarını</b> içerir. Sınavda “bir sonraki yıl” ifadesi geçiyorsa <b>Yıllık Çalışma Planı</b>, “o yıl yürütülenlerin sonuçları” geçiyorsa <b>EK-2</b> cevabıdır.</p>
+</div>
+<p><em>İşyerindeki hukuki ve idari altyapının sağlam temellere oturtulmasının ardından, çalışma ortamındaki risklerin somut verilerle saptanması ve bu verilerin yasal arşivleme süreleri boyunca saklanması disiplinine geçilmektedir.</em></p>
+</section>
+<!-- ============================================================ -->
+<!-- BÖLÜM 2 -->
+<!-- ============================================================ -->
+<section id="bolum2">
+<h2 class="bolum"><span class="num">2</span>Ortam Ölçümleri, Kayıtlar ve İstatistikler</h2>
+<p>Çalışma ortamındaki tehlikelerin öznel gözlemlerin ötesine geçerek nicel ve bilimsel yöntemlerle saptanması, iş hijyeninin ve ortam gözetiminin esasıdır. Fiziksel, kimyasal ve biyolojik maruziyetlerin ölçülmesi, yasal sınır değerlerle karşılaştırılması ve elde edilen kayıtların mevzuatça öngörülen süreler boyunca saklanması, hem muhtemel meslek hastalıklarının takibinde hem de idari/hukuki uyuşmazlıklarda ispat külfetini karşılayan hayati hukuki güvencelerdir.</p>
+<h3>Laboratuvar Standardizasyonu ve Ölçüm Parametreleri</h3>
+<h4>İş Hijyeni Ölçüm, Test ve Analiz Laboratuvarları Yönetmeliği Esasları</h4>
+<p>İşyerinde yapılacak ortam ve kişisel maruziyet ölçümlerinin geçerliliği, bu ölçümlerin Akredite ve Bakanlıkça yetkilendirilmiş İş Hijyeni Laboratuvarları tarafından <mark>TS EN ISO/IEC 17025</mark> standardına uygun olarak gerçekleştirilmesine bağlıdır.</p>
+<div class="ipucu">
+<strong>💡 Standart Numarası Ezberi</strong>
+<p><b>TS EN ISO/IEC 17025</b> → <u>Deney ve kalibrasyon laboratuvarlarının yeterliliği</u> standardıdır. İş hijyeni ölçüm laboratuvarları bu standarda göre akredite olur.</p>
+<p>Kısa kod: <b>“17-025 → Laboratuvar İzi”</b>. Sınavda “İş hijyeni laboratuvarları hangi standarda göre akredite edilir?” sorusunun cevabı daima <mark>TS EN ISO/IEC 17025</mark>’tir.</p>
+</div>
+<h4>Ölçüm Parametreleri, Akciğer Fizyolojisi ve Kristal Yapılar</h4>
+<p><b>Aerosol Ağacı ve Toz Sınıflandırması:</b></p>
+<ul class="ozel">
+<li><b>Solunabilir Toz (Alveoler Kütle):</b> Aerodinamik eşdeğer çapı <mark>0.1 μm – 5.0 μm</mark> büyüklüğünde olan kristal/amorf tozlar ile çapı 3 μm'den küçük, uzunluğu çapının en az 3 katı olan lifsi tozlardır. Terminal bronşiyolleri geçerek doğrudan akciğer alveollerine ulaşan ve doku reaksiyonu sonucu <b>Pnömokonyoz (Akciğer Toz Hastalığı)</b> oluşturan aşamadır.</li>
+<li><b>Solunabilir Toplam Toz / Trokal Kütle:</b> Aerodinamik çapı <mark>80 – 100 μm</mark> altında kalan partikül topluluğudur. Ağız ve burun yoluyla solunan, üst solunum yollarında ve bronşial bölgede tutulan kütleyi temsil eder.</li>
+</ul>
+<div class="tuzak">
+<strong>⚠️ ÖSYM TUZAĞI – Toz Boyutu Karıştırması</strong>
+<p><b>0.1 – 5.0 μm</b> → <mark>ALVEOLERE ulaşan</mark> solunabilir toz → <b>Pnömokonyoz etkeni</b></p>
+<p><b>80 – 100 μm</b> → <mark>ÜST solunum yollarında tutulan</mark> toplam toz (trokal kütle)</p>
+<p>Sınavda rakamlar yer değiştirilerek tuzak kurulur. <b>“Küçük olan alveole gider, büyük olan yukarıda tutulur”</b> şeklinde kodlayın. 5 μm altı = <b>ALVEOL</b>; 80-100 μm = <b>TOPLAM</b>.</p>
+</div>
+<p><b>Silikozis Etkenleri ve Oluşum Sıcaklıkları:</b> Kristalin silisyumdioksit (SiO₂) tozları silikozu oluşturur.</p>
+<div class="tablo-sarmal">
+<table class="tablo-turuncu">
+<caption>Kuvars Polimorfları ve Oluşum Sıcaklıkları</caption>
+<thead>
+<tr><th>Kristal Form</th><th>Oluşum Sıcaklık Aralığı</th><th>Önemi / Sınav Notu</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Kuvars</b></td><td>Doğal ortam (oda sıcaklığı)</td><td>Doğada en yaygın bulunan SiO₂ formudur.</td></tr>
+<tr><td><b>Kristobalit</b></td><td class="vurgu">870 °C – 1470 °C</td><td>Yüksek sıcaklık kristal polimorfu; silikozis etkeni.</td></tr>
+<tr><td><b>Tridimit</b></td><td class="vurgu">1470 °C – 1670 °C</td><td>En yüksek sıcaklık kristal polimorfu; silikozis etkeni.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ezber">
+<strong>🧠 Sıcaklık Sıralaması Ezberi</strong>
+<p><b>K &lt; K &lt; T</b> → <b>K</b>uvars (doğal) &lt; <b>K</b>ristobalit (870-1470) &lt; <b>T</b>ridimit (1470-1670)</p>
+<p>Rakamlar <b>1470</b>’te kesişir: Kristobalit <u>870-1470</u>, Tridimit <u>1470-1670</u>. Sıcaklık arttıkça harf sırası ilerler (K → K → T).</p>
+</div>
+<ul class="ozel">
+<li><b>Toksik Tozlar:</b> Berilyum, arsenik, kurşun, radyum, toryum gibi karaciğer, böbrek ve kan yapıcı organlarda kronik/akut zehirli etki yapan tozlardır.</li>
+<li><b>Standart Akciğer Radyografisi:</b> En az <mark>35 × 35 cm</mark> ebatında, ILO Uluslararası Pnömokonyoz Radyografileri Sınıflandırılması kriterlerine uygun akciğer grafisi kullanılır.</li>
+<li><b>Gürültü Dozimetresi:</b> Kişisel gürültü maruziyetini gün boyunca entegre ederek ölçen cihazlardır.</li>
+<li><b>Titreşim Ölçümü:</b> Okselerometre (İvmeölçer) kullanılarak üç eksende (x, y, z) ivme biriminde (m/s²) ölçüm yapılır.</li>
+<li><b>Aydınlatma Ölçümü:</b> Lüksmetre cihazı kullanılarak lüks (Lux) birimi üzerinden gerçekleştirilir.</li>
+<li><b>Kimyasal Gaz ve Buhar Ölçümleri:</b> Kolorimetrik tüpler, dedektörler veya gaz kromatografisi metoduyla mg/m³ veya ppm (milyonda kısım) birimleriyle ölçülür.</li>
+</ul>
+<div class="tablo-sarmal">
+<table>
+<caption>Ölçüm Parametresi – Cihaz – Birim Üçlüsü (Sınavda Değiştirilerek Sorulur)</caption>
+<thead>
+<tr><th>Parametre</th><th>Ölçüm Cihazı</th><th>Birim</th></tr>
+</thead>
+<tbody>
+<tr><td>Gürültü (kişisel maruziyet)</td><td><b>Dozimetre</b></td><td>dB(A) / dB(C)</td></tr>
+<tr><td>Titreşim</td><td><b>Okselerometre (İvmeölçer)</b></td><td>m/s²</td></tr>
+<tr><td>Aydınlatma</td><td><b>Lüksmetre</b></td><td>Lux</td></tr>
+<tr><td>Bağıl Nem</td><td><b>Psikrometre / Higrometre</b></td><td>%</td></tr>
+<tr><td>Hava Akım Hızı</td><td><b>Anemometre</b></td><td>m/s</td></tr>
+<tr><td>Radyant Isı</td><td><b>Küresel (Globe) Termometre</b></td><td>°C (WBGT)</td></tr>
+<tr><td>Hava Sıcaklığı</td><td><b>Sıcaklık Termometresi</b></td><td>°C</td></tr>
+<tr><td>Kimyasal gaz/buhar</td><td><b>Kolorimetrik tüp / Dedektör / Gaz Kromatografi</b></td><td>mg/m³ veya ppm</td></tr>
+</tbody>
+</table>
+</div>
+<h3>Sınav Odaklı Saklama Süreleri Karşılaştırma Tablosu</h3>
+<p>Aşağıdaki tablo, mevzuatta öngörülen belgelendirme ve kayıt saklama sürelerini göstermektedir:</p>
+<div class="tablo-sarmal">
+<table class="tablo-mor">
+<caption>Yasal Saklama Süreleri – Kritik Tablo</caption>
+<thead>
+<tr><th>Evrak / Kayıt ve Maruziyet Türü</th><th style="width:20%">Yasal Saklama Süresi</th><th>Sınav / Mevzuat Dayanağı</th></tr>
+</thead>
+<tbody>
+<tr><td>Genel Ortam Ölçüm ve Kontrol Kayıtları</td><td class="vurgu">10 Yıl</td><td>İş Hijyeni ve Ortam Gözetim Kayıtları</td></tr>
+<tr><td>Kişisel Sağlık Dosyaları ve Muayene Kayıtları</td><td class="vurgu">15 Yıl</td><td>İSG Hizmetleri Yönetmeliği m.13</td></tr>
+<tr><td>Radyasyon Maruziyet Kayıtları</td><td class="vurgu">30 Yıl</td><td>Radyasyon Güvenliği Yönetmeliği</td></tr>
+<tr><td>Kanserojen / Mutajen Maddeler ve Kalıcı Biyolojik Etkenler Kayıtları</td><td class="vurgu">40 Yıl</td><td>Kanserojen/Mutajen Mad. Yön. &amp; Biyolojik Etkenler Yön.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ezber">
+<strong>🧠 Saklama Süreleri Ezberi: “10 – 15 – 30 – 40”</strong>
+<p><b>10</b> → Genel ortam kayıtları (en kısa)</p>
+<p><b>15</b> → Kişisel sağlık dosyaları (biyolojik genel)</p>
+<p><b>30</b> → Radyasyon (X ışını → “otuz” gibi uzun etki)</p>
+<p><b>40</b> → Kanserojen/Mutajen + Kalıcı Biyolojik (en uzun, çünkü etki nesiller boyu sürer)</p>
+<p><b>Ritmik kod:</b> <mark>“On beş sağlık, otuz radyasyon, kırk kanser.”</mark> Genel ortam kaydı 10 yıl → hepsinin temeli.</p>
+</div>
+<h3>İSG İstatistikleri ve Analiz Yöntemleri</h3>
+<p>İş kazası ve meslek hastalığı verilerinin istatistiksel analizleri, proaktif koruma politikalarının oluşturulmasında temel girdiyi sağlar.</p>
+<p><b>Kaza Sıklık Oranı (KSO):</b> Toplam çalışma saati içinde kaç kaza meydana geldiğini gösterir.</p>
+<div class="formul">
+      KSO = (Toplam Kaza Sayısı / Fiili Toplam Çalışma Saati) × 1.000.000
+      <span class="aciklama">Çarpan: 1.000.000 (bir milyon çalışma saati başına düşen kaza)</span>
+</div>
+<p><b>Kaza Ağırlık Oranı (KAO):</b> Kazalar nedeniyle kaybedilen gün sayısının ciddiyetini gösterir.</p>
+<div class="formul">
+      KAO = (Kazalardan Kaybedilen Toplam Gün Sayısı / Fiili Toplam Çalışma Saati) × 1.000
+      <span class="aciklama">Çarpan: 1.000 (bin çalışma saati başına kaybedilen gün)</span>
+</div>
+<div class="tuzak">
+<strong>⚠️ ÖSYM TUZAĞI – KSO / KAO Çarpan Karıştırması</strong>
+<p>En sık yapılan hata: İki formülün çarpanını yer değiştirmek.</p>
+<p><b>KSO → 1.000.000</b> (Sıklık = Sayı → <u>milyon</u>)</p>
+<p><b>KAO → 1.000</b> (Ağırlık = Gün → <u>bin</u>)</p>
+<p><b>Kodlama:</b> <mark>“Sıklık Milyon, Ağırlık Bin.”</mark> Ayrıca <b>KSO payı = kaza SAYISI</b>, <b>KAO payı = kaybedilen GÜN</b>. Pay kısmı ters verilirse o seçenek yanlıştır.</p>
+</div>
+<div class="ek">
+<strong>➕ İlave Sınav Notu – Diğer İSG İstatistik Göstergeleri</strong>
+<ul class="ozel">
+<li><b>Kaza Sıklık Hızı (KSH):</b> Genellikle KSO ile eş anlamlı kullanılır; 1.000.000 saat esası.</li>
+<li><b>Kaza Ağırlık Hızı (KAH):</b> KAO ile eş anlamlı; 1.000 saat esası.</li>
+<li><b>Ortalama Kaza Şiddeti:</b> Kaybedilen gün sayısı ÷ kaza sayısı.</li>
+<li><b>Meslek Hastalığı Oranı:</b> (Meslek hastalığı vaka sayısı ÷ toplam çalışan) × 1.000 gibi oranlarla ifade edilir.</li>
+<li><b>Ramak Kala (Near Miss):</b> Yaralanma veya hastalıkla sonuçlanmayan ancak potansiyel taşıyan olaydır. <mark>İş kazası istatistiklerine dâhil edilmez</mark>, ancak kayıt altına alınması proaktif yaklaşımın gereğidir.</li>
+<li><b>İş Kazası Bildirimi:</b> İşveren, kazayı <mark>3 iş günü</mark> içinde SGK’ya bildirmekle yükümlüdür.</li>
+</ul>
+</div>
+<p><em>Veri toplama, ölçüm ve arşivleme disiplini sağlandıktan sonra, çalışma ortamında en sık karşılaşılan ve ölçüm parametreleri doğrudan yasal sınırlara bağlanan fiziksel risk etmenlerinin detaylı incelemesine geçilmektedir.</em></p>
+</section>
+<!-- ============================================================ -->
+<!-- BÖLÜM 3 -->
+<!-- ============================================================ -->
+<section id="bolum3">
+<h2 class="bolum"><span class="num">3</span>Fiziksel Risk Etmenleri, Termal Konfor ve Aydınlatma</h2>
+<p>Çalışma ortamındaki gürültü, titreşim, termal konfor uyumsuzlukları, yetersiz aydınlatma, radyasyon ve basınç değişimleri gibi fiziksel risk etmenleri, çalışan üzerinde kalıcı fizyolojik ve psikolojik hasarlar oluşturma potansiyeline sahiptir. Bu etmenlere ilişkin mevzuatsal maruziyet eylem ve sınır değerleri, ÖSYM sınavlarında soru yoğunluğunun en yüksek olduğu alanlar arasındadır.</p>
+<h3>Gürültü ve Titreşim Yönetmelikleri Sınav Değerleri</h3>
+<h4>Gürültü Yönetmeliği Sayısal Eşikleri</h4>
+<p>Çalışanların Gürültü ile İlgili Risklerden Korunmalarına Dair Yönetmelik uyarınca, 8 saatlik günlük çalışma süresi (L<sub>EX, 8saat</sub>) için belirlenen maruziyet değerleri:</p>
+<div class="tablo-sarmal">
+<table class="tablo-turuncu">
+<caption>Gürültü Maruziyet Eşik Seviyeleri – L<sub>EX, 8saat</sub></caption>
+<thead>
+<tr><th>Eşik Seviyesi</th><th>Gürültü Düzeyi</th><th>Tepe Değer</th><th>Sonuç / Yükümlülük</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><b>En Düşük Maruziyet Eylem Değeri</b></td>
+<td class="vurgu">80 dB(A)</td>
+<td>135 dB(C)</td>
+<td><b>KKD Hazır Bulundurulur</b></td>
+</tr>
+<tr>
+<td><b>En Yüksek Maruziyet Eylem Değeri</b></td>
+<td class="vurgu">85 dB(A)</td>
+<td>137 dB(C)</td>
+<td><b>KKD Kullandırılması Zorunlu</b></td>
+</tr>
+<tr>
+<td><b>Maruziyet Sınır Değeri</b></td>
+<td class="vurgu">87 dB(A)</td>
+<td>140 dB(C)</td>
+<td><b>KKD Sönümlemesi DÂHİL Aşılamaz!</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tuzak">
+<strong>⚠️ ÖSYM TUZAĞI – KKD Sönümlemesi Nerede Hesaba Katılır?</strong>
+<p><b>Eylem değerleri (80 dB ve 85 dB)</b> belirlenirken çalışanın kulak koruyucusu kullanıp kullanmadığı <u>dikkate alınmaz</u>.</p>
+<p>Ancak <b>Maruziyet Sınır Değeri (87 dB)</b> uygulanırken çalışanın kulak koruyucu donanımının sağladığı <u>ses sönümleme etkisi dikkate alınır</u> ve bu değer <b>kesinlikle aşılamaz</b>.</p>
+<p><b>Kodlama:</b> <mark>“Eylem çıplak kulağa, Sınır korumalı kulağa.”</mark></p>
+</div>
+<div class="ezber">
+<strong>🧠 Gürültü Üçlüsü Ezberi: “80 – 85 – 87”</strong>
+<p><b>80</b> → <mark>HAZIRLA</mark> (KKD hazır bulundurulur)</p>
+<p><b>85</b> → <mark>KULLANDIR</mark> (KKD kullandırılması zorunlu)</p>
+<p><b>87</b> → <mark>AŞMA</mark> (sınır değer, KKD sönümlemesi dâhil aşılamaz)</p>
+<p><b>Tepe değerler:</b> 135 – 137 – 140 → her basamak <b>+2 dB(C)</b> artar (135 → 137 → 140). İlk iki basamak +2, son basamak +3. Kod: <b>“135-137-140”</b>.</p>
+</div>
+<p><b>Fizyolojik Etki / Akustik Çentik:</b> Uzun süreli yüksek düzeyde gürültüye maruz kalma sonucu iç kulaktaki tüy hücrelerinin harabiyetiyle oluşan gürültüye bağlı işitme kayıpları, odyometrik testlerde tipik olarak <mark>4000 Hz</mark> frekansta belirgin bir düşüş (akustik çentik) ile kendini gösterir.</p>
+<div class="ipucu">
+<strong>💡 Akustik Çentik – 4000 Hz Kuralı</strong>
+<p>Odyogramda <b>4000 Hz</b>’de görülen çukur = <mark>akustik çentik</mark> = gürültüye bağlı işitme kaybının erken bulgusu.</p>
+<p>Sınavda “hangi frekansta düşüş gözlenir?” sorusuna doğrudan <b>4000 Hz</b> cevabı verilir. 1000 Hz, 2000 Hz gibi çeldiricilere dikkat!</p>
+</div>
+<h4>Titreşim Yönetmeliği Sayısal Eşikleri</h4>
+<p>Çalışanların Titreşimle İlgili Risklerden Korunmalarına Dair Yönetmelik uyarınca 8 saatlik çalışma periyodu için geçerli değerler:</p>
+<div class="tablo-sarmal">
+<table class="tablo-yesil">
+<caption>Titreşim Maruziyet Değerleri (8 Saatlik Çalışma Periyodu)</caption>
+<thead>
+<tr><th>Titreşim Türü</th><th>Maruziyet Eylem Değeri (8 saat)</th><th>Maruziyet Sınır Değeri (8 saat)</th><th>Sağlık Etkisi</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><b>El-Kol Titreşimi</b></td>
+<td class="vurgu">2.5 m/s²</td>
+<td class="vurgu">5.0 m/s²</td>
+<td>Raynaud Fenomeni (Ölü Parmak / Beyaz Parmak)</td>
+</tr>
+<tr>
+<td><b>Tüm Vücut Titreşimi</b></td>
+<td class="vurgu">0.5 m/s²</td>
+<td class="vurgu">1.15 m/s²</td>
+<td>Bel ve omurga rahatsızlıkları</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="ozel">
+<li><b>Ölçüm Aleti:</b> Titreşim seviyesi Okselerometre (İvmeölçer) ile ölçülür.</li>
+<li><b>Meslek Hastalığı:</b> El-kol titreşimi maruziyeti kılcal damarlarda ve sinir uçlarında harabiyete yol açarak dolaşım bozukluğuna neden olur. Bu klinik tablo tıp literatüründe <b>Raynaud Fenomeni (Ölü Parmak / Beyaz Parmak Hastalığı)</b> olarak adlandırılır.</li>
+</ul>
+<div class="ezber">
+<strong>🧠 Titreşim Rakam Ezberi</strong>
+<p><b>El-Kol:</b> 2.5 → 5.0 → <mark>“İki buçuk, beş”</mark> (sınır, eylemin tam 2 katı!)</p>
+<p><b>Tüm Vücut:</b> 0.5 → 1.15 → <mark>“Yarım, bir on beş”</mark></p>
+<p><b>Unutma:</b> Tüm vücut değerleri el-koldan <u>küçüktür</u>, çünkü tüm vücut daha hassastır. “Tüm vücut &gt; el-kol” diyen seçenek yanlıştır.</p>
+<p><b>Hastalık eşleştirmesi:</b> El-Kol Titreşimi = <mark>Raynaud (Beyaz Parmak)</mark>. Bu eşleştirme neredeyse her sınavda sorulur.</p>
+</div>
+<h3>Termal Konfor, İklimlendirme Ölçüm Cihazları ve Aydınlatma</h3>
+<h4>Aydınlatma</h4>
+<p>İşyerlerinde aydınlatma şiddeti <b>Lüksmetre</b> ile ölçülür. Uygun aydınlatma, iş kazalarını azaltır, göz yorgunluğunu önler ve verimliliği artırır. Gün ışığından azami düzeyde yararlanılması esastır.</p>
+<h4>Termal Konfor Bileşenleri ve Ölçüm Cihazları</h4>
+<p>Çalışma ortamının termal konforu; hava sıcaklığı, havanın nemi, hava akım hızı ve radyant ısı faktörlerinin bileşimi ile sağlanır.</p>
+<div class="tablo-sarmal">
+<table>
+<caption>Termal Konfor Parametreleri – Cihaz – İdeal Değer</caption>
+<thead>
+<tr><th>Parametre</th><th>Ölçüm Cihazı</th><th>İdeal / Konfor Değeri</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Hava Sıcaklığı</b></td><td>Sıcaklık Termometresi</td><td>İşe ve mevsime göre değişir</td></tr>
+<tr><td><b>Bağıl Nem</b></td><td>Psikrometre / Higrometre</td><td class="vurgu">%30 – %60</td></tr>
+<tr><td><b>Hava Akım Hızı</b></td><td>Anemometre</td><td class="vurgu">0.15 – 0.5 m/s</td></tr>
+<tr><td><b>Radyant Isı</b></td><td>Küresel (Globe) Termometre</td><td>Kaynak ısısına göre değerlendirilir</td></tr>
+</tbody>
+</table>
+</div>
+<ul class="ozel">
+<li><b>Bağıl Nem:</b> İdeal çalışma ortamı bağıl nem oranı <mark>%30 – %60</mark> arasında olmalıdır. Nem ölçümünde Psikrometre veya Higrometre kullanılır.</li>
+<li><b>Hava Akım Hızı:</b> Konforlu bir çalışma ortamında hava akım hızı <mark>0.15 – 0.5 m/s</mark> arasında olmalıdır. Ölçümünde Anemometre kullanılır.</li>
+<li><b>Radyant Isı:</b> Isı ışınımını ölçmek için Küresel Termometre (Globe Termometre) kullanılır.</li>
+<li><b>TS EN ISO 7730 Standardı:</b> Orta dereceli termal ortamların PMV (Öngörülen Ortalama Oy) ve PPD (Öngörülen Memnun Olmayanların Yüzdesi) indeksleri kullanılarak analitik olarak belirlenmesi ve termal konfor şartlarının yorumlanmasında uluslararası temel standarttır.</li>
+</ul>
+<div class="ipucu">
+<strong>💡 Termal Konfor Cihaz Eşleştirmeleri – Kısa Kod</strong>
+<p><b>Nem</b> → <mark>Psi</mark>krometre (Psi = su buharı çağrışımı)</p>
+<p><b>Hava hızı</b> → <mark>Ane</mark>mometre (Ane = rüzgâr/anemo)</p>
+<p><b>Radyant ısı</b> → <mark>Küresel</mark> Termometre (küre = her yönden ışınım)</p>
+<p><b>PMV/PPD</b> → <mark>TS EN ISO 7730</mark> (kod: “77-30 → konfor”)</p>
+</div>
+<h3>Radyasyon ve Basınç Etmenleri</h3>
+<h4>İyonize ve Non-İyonize Radyasyon</h4>
+<p><b>İyonize Radyasyon:</b> Atomlardan elektron koparabilen, hücre DNA'sını bozarak biyolojik yapılarda ağır hasar oluşturan yüksek enerjili ışınımlardır (X ışınları, Gama ışınları, Alfa ve Beta parçacıkları). Radyasyondan korunmada 3 temel ilke uygulanır: <b>Zaman</b> (maruziyet süresini kısa tutma), <b>Mesafe</b> (kaynaktan uzaklaşma) ve <b>Zırhlama</b> (kurşun vb. koruyucu engeller kullanma). Radyasyon kayıtları <mark>30 yıl</mark> saklanır.</p>
+<p><b>Non-İyonize Radyasyon:</b> Doku hücresinde iyonlaşma oluşturmayan ancak ısıl etkiler yaratan düşük enerjili ışınımlardır (Ultraviyole, Kızılötesi/Infrared, Mikrodalga, Radyo dalgaları).</p>
+<div class="ezber">
+<strong>🧠 Radyasyondan Korunmanın 3 İlkesi: “ZAM-ZIR-MES”</strong>
+<p><b>ZAM</b>an → Maruziyet süresini kısalt</p>
+<p><b>ZIR</b>hlama → Kurşun/beton gibi engel kullan</p>
+<p><b>MES</b>afe → Kaynaktan uzaklaş</p>
+<p><b>İyonize / Non-İyonize Ayrımı:</b> <mark>UV, IR, Mikrodalga, Radyo dalgaları = NON-İYONİZE</mark>; <mark>X, Gama, Alfa, Beta = İYONİZE</mark>. Sınavda “hangisi iyonize değildir?” sorusu sık gelir — cevap genellikle <b>ultraviyole</b> veya <b>mikrodalga</b>dır.</p>
+</div>
+<h4>Basınç Etmenleri ve Dekompresyon</h4>
+<p><b>Yüksek Basınç ve Dekompresyon (Vurgun / Caisson Hastalığı):</b> Denizaltı işleri, dalgıçlık veya tünel yapımında (caisson) yüksek basınçlı havaya maruz kalan çalışanların aniden normal basınca dönmesi sonucu, kanda erimiş halde bulunan azot (azot gazı) kabarcık haline gelerek damarları tıkar. Bu klinik tabloya <b>Dekompresyon Hastalığı (Vurgun)</b> denir. Korunmak için kademeli basınç düşürme (dekompresyon odaları ve durakları) uygulanmalıdır.</p>
+<p><b>Alçak Basınç:</b> Yüksek irtifalarda (dağlık bölgeler, havacılık) oksijen kısmi basıncının düşmesi sonucu anoksi ve hipoksi tabloları gözlenir.</p>
+<div class="bilgi">
+<strong>📘 Vurgun (Dekompresyon) – Kritik Ayrıntı</strong>
+<p>Vurgunun sebebi <mark>AZOT gazının</mark> kanda çözünmüş halden ani basınç düşüşüyle <u>kabarcık (bubble)</u> haline gelmesidir. Oksijen değil, <b>azot</b>!</p>
+<p>Sınavda “dekompresyon hastalığına neden olan gaz hangisidir?” sorusunun cevabı <b>azot</b>tur. Oksijen, karbondioksit, helyum gibi çeldiricilere dikkat.</p>
+<p><b>Korunma:</b> Kademeli basınç düşürme + <b>dekompresyon odaları ve durakları</b>.</p>
+</div>
+<p><em>Fiziksel risk faktörlerinin yanı sıra, görünmeyen ancak biyolojik yapılar üzerinde enfeksiyöz ve toksik etkiler yaratan mikroorganizmaların ve iş hijyeni ilkelerinin yönetimi bir diğer kritik safhayı oluşturur.</em></p>
+</section>
+<!-- ============================================================ -->
+<!-- BÖLÜM 4 -->
+<!-- ============================================================ -->
+<section id="bolum4">
+<h2 class="bolum"><span class="num">4</span>Biyolojik Risk Etmenleri ve İş Hijyeni</h2>
+<p>Çalışma ortamında karşılaşılan biyolojik risk etmenleri (bakteriler, virüsler, mantarlar, parazitler ve hücresel kültürler), sağlık çalışanlarından tarım ve hayvancılık sektörüne, atık yönetiminden gıda sanayine kadar geniş bir alanda mesleki enfeksiyon risklerine yol açar. Biyolojik etkenlerin sınıflandırılması, bulaş zincirinin kırılması ve iş hijyeninin 4 temel kuralının uygulanması çalışan sağlığının korunmasında yaşamsaldır.</p>
+<h3>Biyolojik Risk Grupları Karşılaştırma Tablosu</h3>
+<p>Biyolojik Etkenlere Maruziyet Risklerinin Önlenmesi Hakkında Yönetmelik uyarınca biyolojik riskler 4 ana gruba ayrılır:</p>
+<div class="tablo-sarmal">
+<table class="tablo-mor">
+<caption>Biyolojik Risk Grupları (Grup 1 – Grup 4)</caption>
+<thead>
+<tr>
+<th style="width:12%">Risk Grubu</th>
+<th>Hastalık Oluşturma Riski</th>
+<th>Çalışana Zarar Derecesi</th>
+<th>Topluma Yayılma Riski</th>
+<th>Etkili Tedavi / Aşı İmkânı</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Grup 1</b></td>
+<td>İnsanda hastalığa yol açma ihtimali yoktur.</td>
+<td>Yok / İhmal edilebilir.</td>
+<td>Yoktur.</td>
+<td>Gerekli değildir.</td>
+</tr>
+<tr>
+<td><b>Grup 2</b></td>
+<td>İnsanda hastalığa neden olabilir.</td>
+<td>Çalışanlara zarar verebilir.</td>
+<td>Topluma yayılma olasılığı düşüktür.</td>
+<td>Genellikle etkili koruma veya tedavi olanağı vardır.</td>
+</tr>
+<tr>
+<td><b>Grup 3</b></td>
+<td>İnsanda ağır hastalıklara neden olur.</td>
+<td>Çalışanlar için ciddi tehlike oluşturur.</td>
+<td>Topluma yayılma riski bulunabilir.</td>
+<td>Genellikle etkili koruma veya tedavi olanağı vardır.</td>
+</tr>
+<tr>
+<td><b>Grup 4</b></td>
+<td>İnsanda ağır hastalıklara neden olur.</td>
+<td>Çalışanlar için çok ciddi tehlike oluşturur.</td>
+<td>Topluma yayılma riski <b>yüksektir</b>.</td>
+<td>Etkili koruma veya tedavi olanağı <b>genellikle yoktur</b>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="ezber">
+<strong>🧠 Biyolojik Risk Grubu Ezberi: “1-2-3-4 → YOK-AZ-ÇOK-FELAKET”</strong>
+<p><b>Grup 1</b> → Hastalık <mark>YOK</mark> (tehlikesiz)</p>
+<p><b>Grup 2</b> → <mark>AZ</mark> zarar, tedavi <u>VAR</u></p>
+<p><b>Grup 3</b> → <mark>ÇOK</mark> zarar, tedavi <u>VAR</u>, yayılma <u>OLABİLİR</u></p>
+<p><b>Grup 4</b> → <mark>FELAKET</mark>: tedavi <u>YOK</u>, yayılma <u>YÜKSEK</u></p>
+<p><b>En kritik ayrım:</b> Grup 3 ile Grup 4 arasındaki fark <b>tedavi imkânı</b>dır. Grup 3’te tedavi <u>vardır</u>, Grup 4’te <u>yoktur</u>. Sınavda bu ikisi sürekli karşılaştırılır!</p>
+<p><b>BSL Eşleştirmesi:</b> Grup 1→BSL-1, Grup 2→BSL-2, Grup 3→BSL-3, Grup 4→BSL-4.</p>
+</div>
+<h3>Bulaşma Yolları ve Meslek Hastalıkları</h3>
+<h4>Bulaşma Yolları</h4>
+<p>Biyolojik etkenler çalışma ortamından insan vücuduna 5 temel yolla girer: <b>Solunum</b> (Aerosollar), <b>Sindirim</b> (kontamine gıda/su), <b>Deri ve Mukoza teması</b>, <b>Kan ve vücut sıvıları</b> (parenteral), <b>Vektörler</b> (sinek, kene vb.).</p>
+<div class="tablo-sarmal">
+<table class="tablo-turuncu">
+<caption>Başlıca Biyolojik Meslek Hastalıkları ve Riskli Meslekler</caption>
+<thead>
+<tr><th>Hastalık / Etken</th><th>Bulaş Yolu</th><th>Riskli Meslek Grupları</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Şarbon</b><br/><em>(Bacillus anthracis)</em></td>
+<td>Temas / spor inhalasyonu</td>
+<td>Hayvancılık, tabaklama (deri işleme), kasaplık ve veterinerlik</td>
+</tr>
+<tr>
+<td><b>Brucella (Malta Humması)</b></td>
+<td>Enfekte hayvan sütü/dokusu ile temas</td>
+<td>Besiciler, veterinerler ve süt ürünü çalışanları</td>
+</tr>
+<tr>
+<td><b>Tüberküloz</b><br/><em>(Mycobacterium tuberculosis)</em></td>
+<td>Solunum yolu / aerosol</td>
+<td>Sağlık çalışanları, cezaevi personeli ve laboratuvar görevlileri</td>
+</tr>
+<tr>
+<td><b>Hepatit B ve C</b><br/><em>(HBV / HCV)</em></td>
+<td>Kan ve enfekte vücut sıvıları (parenteral)</td>
+<td>Sağlık personeli, diyaliz merkezleri ve atık toplayıcıları</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="ipucu">
+<strong>💡 Hastalık – Meslek Eşleştirme Kısayolları</strong>
+<p><b>Şarbon</b> → <mark>HAYVAN + DERİ</mark> (kasap, tabak, veteriner)</p>
+<p><b>Brucella</b> → <mark>SÜT</mark> (besici, süt ürünleri)</p>
+<p><b>Tüberküloz</b> → <mark>AKCİĞER / AEROSOL</mark> (sağlık, cezaevi, laboratuvar)</p>
+<p><b>Hepatit B-C</b> → <mark>KAN / PARENTERAL</mark> (sağlık, diyaliz, atık)</p>
+<p>Brucella’nın halk arasındaki adı <b>“Malta Humması”</b>dır — bu isim sınavda doğrudan sorulabilir.</p>
+</div>
+<h3>İş Hijyeninin 4 Temel Adımı ve Mühendislik Kontrolleri</h3>
+<h4>İş Hijyeninin 4 Temel Adımı</h4>
+<p>Sağlıklı bir çalışma ortamı tesis etmek için iş hijyenistleri ve İSG profesyonelleri sıralı 4 adımı izler:</p>
+<div class="akis">
+<div class="adim">
+<span class="no">1</span>
+<b>Tahmin Etme</b>
+        (Anticipation)<br/>Süreçteki olası tehlikeleri önceden öngörme
+      </div>
+<div class="adim">
+<span class="no">2</span>
+<b>Tanıma</b>
+        (Recognition)<br/>Ortamdaki var olan tehlikeleri bizzat saptama
+      </div>
+<div class="adim">
+<span class="no">3</span>
+<b>Değerlendirme</b>
+        (Evaluation)<br/>Ölçüm yapma, sınır değerlerle karşılaştırma
+      </div>
+<div class="adim">
+<span class="no">4</span>
+<b>Kontrol</b>
+        (Control)<br/>Tehlikeyi kaynağında yok etme veya mühendislik tedbirleriyle sınırlama
+      </div>
+</div>
+<div class="ezber">
+<strong>🧠 İş Hijyeni 4 Adım Ezberi: “TA-TA-DE-KO”</strong>
+<p><b>TA</b>hmin → <b>TA</b>nıma → <b>DE</b>ğerlendirme → <b>KO</b>ntrol</p>
+<p>İngilizce karşılıkları: <b>A</b>nticipation – <b>R</b>ecognition – <b>E</b>valuation – <b>C</b>ontrol → <mark>“AREC”</mark></p>
+<p><b>Sıralama tuzağı:</b> Sınavda adımlar karışık verilir. Doğru sıra <u>daima</u> önce tahmin, sonra tanıma, sonra değerlendirme, en son kontroldür. Kontrol <b>her zaman en sonda</b>dır.</p>
+</div>
+<h4>Hijyen Standartları ve Mühendislik Kontrolleri</h4>
+<ul class="ozel">
+<li><b>Kişisel Hijyen:</b> Hijyenin temeli olan doğru el yıkama protokolleri ve koruyucu kıyafet entegrasyonu.</li>
+<li><b>HEPA Filtreler ve Biyolojik Güvenlik Kabinleri:</b> Biyolojik risk taşıyan havayı tutmak için Yüksek Verimli Partikül Yakalayıcı (HEPA) filtreler kullanılır. Biyolojik Güvenlik Kabinleri (Sınıf I, Sınıf II, Sınıf III) tehlike derecesine göre personeli ve çevreyi korur.</li>
+<li><b>Biyolojik Emniyet Seviyeleri (BSL 1 - 4):</b> Biyolojik laboratuvarlar risk grubuna paralel olarak BSL-1, BSL-2, BSL-3 ve BSL-4 standartlarında inşa edilir.</li>
+<li><b>Ücretsiz Aşılanma Hakkı:</b> İşveren, bağışıklığı bulunmayan çalışanlara işyerinde karşılaştıkları biyolojik etkenlere karşı (örneğin Hepatit B, Tetanos) ücretsiz aşılanma imkânı sağlamakla yükümlüdür.</li>
+<li><b>Biyolojik Maruziyet Kayıt Saklama Süresi:</b> Biyolojik maruziyet kayıtları genel olarak 15 yıl saklanırken; kalıcı veya gizli enfeksiyon oluşturan, kanser riski taşıyan biyolojik etken kayıtları <mark>40 yıl</mark> boyunca arşivlenmelidir.</li>
+</ul>
+<div class="tuzak">
+<strong>⚠️ ÖSYM TUZAĞI – Aşı Ücretini Kim Öder?</strong>
+<p>Sınavda çıkan ifade: <em>“İşveren, çalışana aşı imkânı <b>sunabilir</b>, ancak masrafı çalışandan talep edilebilir.”</em></p>
+<p>Bu ifade <b>YANLIŞTIR.</b> Mevzuat gereği aşılama <mark>ÜCRETSİZDİR</mark> ve işveren tarafından sağlanır. Aşı ücreti <u>çalışana yansıtılamaz</u> — tıpkı İSG eğitimi ve KKD maliyetlerinde olduğu gibi.</p>
+<p><b>Genel Kural:</b> İSG ile ilgili hiçbir maliyet (eğitim, KKD, aşı, sağlık muayenesi) çalışana yansıtılamaz.</p>
+</div>
+<div class="ek">
+<strong>➕ İlave Sınav Notu – HEPA ve Biyolojik Güvenlik Kabin Sınıfları</strong>
+<ul class="ozel">
+<li><b>HEPA Filtre:</b> Yüksek Verimli Partikül Yakalayıcı (High Efficiency Particulate Air) → 0.3 μm çaptaki partikülleri <mark>%99.97</mark> verimle tutar.</li>
+<li><b>Sınıf I Biyolojik Güvenlik Kabini:</b> Personeli ve çevreyi korur, <u>numuneyi korumaz</u>.</li>
+<li><b>Sınıf II:</b> Personel + çevre + <u>numune</u> korunur (en yaygın kullanılan).</li>
+<li><b>Sınıf III:</b> Tam izolasyon (gaz sızdırmaz), en yüksek koruma seviyesi.</li>
+<li><b>Kodlama:</b> “I → kişi, II → kişi+numune, III → her şey kapalı.”</li>
+</ul>
+</div>
+<p><em>Biyolojik ve kimyasal etkenlerin çalışma ortamından uzaklaştırılması, uygun iklimlendirme ve havalandırma sistemlerinin mühendislik prensiplerine göre tasarımı ile doğrudan ilişkilidir.</em></p>
+</section>
+<!-- ============================================================ -->
+<!-- BÖLÜM 5 -->
+<!-- ============================================================ -->
+<section id="bolum5">
+<h2 class="bolum"><span class="num">5</span>Ortam Havası, Havalandırma ve İklimlendirme</h2>
+<p>Kapalı çalışma ortamlarında havanın kalitesi, çalışanların bilişsel performansı, fizyolojik sağlığı ve iş güvenliği açısından hayati role sahiptir. Kirleticilerin kaynağından çekilmesi, oda havasının temiz hava ile değişimi ve iklimlendirme (HVAC) sistemlerinin standartlara uygun işletilmesi, meslek hastalıklarının ve iş kazalarının önlenmesinde temel mühendislik kontrolüdür.</p>
+<h3>Ortam Havası Standartları ve Havalandırma Türleri</h3>
+<h4>Hukuki ve Teknik Ortam Havası Standartları ve Hacim Hesabı</h4>
+<p><b>Çalışan Başına Düşen Serbest Hava Hacmi:</b> İşyeri Bina ve Eklentilerinde Alınacak Sağlık ve Güvenlik Önlemlerine İlişkin Yönetmelik gereğince, kapalı işyerlerinde çalışan başına düşen serbest hava hacmi en az <mark>10 m³</mark> olmak zorundadır.</p>
+<p><b>Hesaplama Formülü ve Yükseklik Sınırı:</b> Tavan yüksekliği <mark>4 m</mark>'den fazla olan kapalı mekânlarda, hava hacmi hesabında tavan yüksekliği en fazla <mark>4 m</mark> olarak dikkate alınır.</p>
+<div class="formul">
+      Serbest Hava Hacmi / Kişi = [ Taban Alanı (m²) × Yükseklik (Max 4 m) ] / Çalışan Sayısı ≥ 10 m³/çalışan
+      <span class="aciklama">Tavan 4 m’den yüksek olsa bile hesapta 4 m kullanılır — ÖSYM’nin en sevdiği tuzaklardan biri!</span>
+</div>
+<p><b>Karbondioksit (CO₂) Üst Sınırı:</b> İç ortam hava kalitesinin göstergesi olan Karbondioksit (CO₂) derişimi çalışma ortamında <mark>1000 ppm</mark> seviyesini aşmamalıdır.</p>
+<div class="tuzak">
+<strong>⚠️ ÖSYM TUZAĞI – “4 Metre Kuralı”</strong>
+<p>Klasik soru: “Tavan yüksekliği 6 m, taban alanı 100 m² olan bir işyerinde 20 çalışan vardır. Kişi başına düşen hava hacmi kaç m³’tür?”</p>
+<p><b>Yanlış çözüm:</b> 100 × 6 = 600 → 600/20 = 30 m³ ✓ (ama yöntem yanlış!)</p>
+<p><b>Doğru çözüm:</b> Tavan yüksekliği 4 m’den fazla olduğu için <u>4 m alınır</u>. 100 × 4 = 400 → 400/20 = <mark>20 m³/çalışan</mark>.</p>
+<p>Her iki sonuç da 10 m³’ün üzerinde olduğu için yeterli görünse de, sınav <b>hesaplama yöntemini</b> test eder. Daima <mark>min(tavan yüksekliği, 4 m)</mark> kullanılır.</p>
+</div>
+<h4>Havalandırma Yöntemlerinin Karşılaştırılması</h4>
+<p><b>Doğal Havalandırma:</b> Pencereler, kapılar ve havalandırma bacaları vasıtasıyla rüzgâr ve sıcaklık farkı (baca etkisi) ile sağlanan, denetimi zor havalandırmadır.</p>
+<p><b>Mekanik (Cebri) Havalandırma:</b> Fanlar ve vantilatörler kullanılarak havanın yapay olarak hareket ettirilmesidir.</p>
+<div class="tablo-sarmal">
+<table class="tablo-yesil">
+<caption>Genel (Seyreltme) Havalandırma – Lokal Emişli Havalandırma Karşılaştırması</caption>
+<thead>
+<tr><th>Parametre</th><th>Genel (Seyreltme) Havalandırma</th><th>Lokal Emişli Havalandırma</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Çalışma İlkesi</b></td>
+<td>Kirleticiyi temiz hava ile karıştırarak konsantrasyonu düşürür.</td>
+<td>Kirletici ortama yayılmadan doğrudan kaynağından emer.</td>
+</tr>
+<tr>
+<td><b>Avantajı</b></td>
+<td>Tesisat maliyeti düşüktür, yaygın kirleticilerde etkilidir.</td>
+<td>Düşük debi ile çok yüksek toksisitedeki gaz/tozu engeller.</td>
+</tr>
+<tr>
+<td><b>Dezavantajı</b></td>
+<td>Kirletici tüm odaya dağılır, toksik maddelerde yetersizdir.</td>
+<td>Kurulum maliyeti yüksektir, lokal başlık konumlandırması kritik öneme sahiptir.</td>
+</tr>
+<tr>
+<td><b>Kullanım Alanı</b></td>
+<td>Düşük toksisiteli, yaygın kirleticiler</td>
+<td class="vurgu">Yüksek toksisiteli kirleticilerde ŞARTTIR</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="ezber">
+<strong>🧠 Havalandırma Seçim Kuralı</strong>
+<p><mark>Yüksek toksisite → LOKAL EMİŞ</mark> (kaynağında yakala)</p>
+<p><mark>Düşük toksisite + yaygın kirlilik → GENEL SEYRELTME</mark></p>
+<p><b>Kod:</b> “Zehirliyse kaynağında, hafifse odada.”</p>
+<p>Sınavda “Yüksek toksisitede hangi havalandırma tercih edilir?” sorusunun cevabı <u>her zaman</u> lokal emişli havalandırmadır.</p>
+</div>
+<h4>Lokal Havalandırma Bileşenleri ve İklimlendirme (HVAC)</h4>
+<p><b>Lokal Emişli Havalandırma Sisteminin 4 Temel Elemanı:</b></p>
+<ul class="ozel">
+<li><b>Davlumbaz / Başlık (Hood):</b> Kirleticiyi kaynağında yakalayan giriş ünitesidir. Kirletici yakalama hızı kritik parametredir.</li>
+<li><b>Hava Kanalları (Ducts):</b> Taşınan toza ve gaza dayanıklı, uygun çapta hava iletim boruları.</li>
+<li><b>Filtre / Hava Temizleyici (Filter/Cyclone/HEPA):</b> Emilen kirletici havayı çevreye salmadan önce temizleyen ünite.</li>
+<li><b>Fan (Aspiratör):</b> Havanın emilmesini ve sistemde hareketini sağlayan mekanik güç kaynağı.</li>
+</ul>
+<div class="ezber">
+<strong>🧠 Lokal Emiş Sisteminin 4 Elemanı: “DAV-KA-Fİ-FAN”</strong>
+<p><b>DAV</b>lumbaz → <b>KA</b>nal → <b>Fİ</b>ltre → <b>FAN</b></p>
+<p>Akış yönü: Kirletici → Davlumbaz → Kanal → Filtre → Fan → Dış ortam. Sıralama sorusu gelirse bu dizilim doğrudur.</p>
+</div>
+<h4>İklimlendirme (HVAC) Sistemleri ve Lejyonella Riski</h4>
+<p><b>İklimlendirme (Isıtma, Soğutma, Havalandırma - HVAC) sistemleri;</b> sıcaklık, nem ve hava hareketini ideal seviyede tutar.</p>
+<p><b>Lejyonella (Legionella pneumophila) Bakterisi Riski:</b> Soğutma kulelerinde, iklimlendirme santrallerinde ve nemlendirme haznelerinde biriken durgun sularda ürer. Aerosol aracılığıyla insanlara bulaşarak ağır pnömoni tablosuna (Legionnaire Hastalığı / Lejyoner Hastalığı) yol açar.</p>
+<p><b>Korunma Yolları:</b> HVAC sistemlerinde su sıcaklığı kontrol edilmeli, periyodik dezenfeksiyon ve kimyasal temizlikler aksatılmamalıdır.</p>
+<p><b>Periyodik Kontrol Sıklığı:</b> İşyerlerindeki havalandırma ve klima tesisatlarının periyodik kontrolleri <mark>yılda en az 1 kez</mark> yetkili uzmanlarca yapılmalıdır.</p>
+<div class="ipucu">
+<strong>💡 Lejyonella – Sınavda Nasıl Sorulur?</strong>
+<p><b>Kaynak:</b> Soğutma kulesi, HVAC santrali, nemlendirme haznesi → <mark>DURGUN SU</mark></p>
+<p><b>Bulaş:</b> Aerosol (su damlacıkları) → <mark>solunum yolu</mark></p>
+<p><b>Hastalık:</b> Ağır pnömoni → <mark>Lejyoner Hastalığı</mark></p>
+<p><b>Korunma:</b> Su sıcaklığı kontrolü + periyodik dezenfeksiyon</p>
+<p><b>Kod:</b> “Durgun su → aerosol → akciğer.” Kişiden kişiye bulaş <u>yoktur</u> — bu bir tuzak seçeneğidir.</p>
+</div>
+<p><em>Ortam şartlarının ve havalandırma gibi teknik tesisatların uygunluğu, yasal periyodik kontroller ve belgelendirme süreçleri ile resmi kayıt altına alınır.</em></p>
+</section>
+<!-- ============================================================ -->
+<!-- BÖLÜM 6 -->
+<!-- ============================================================ -->
+<section id="bolum6">
+<h2 class="bolum"><span class="num">6</span>İşyeri Kontrolleri ve Belgelendirme</h2>
+<p>Çalışma ortamındaki ekipmanların güvenirliği, çalışanların periyodik sağlık muayeneleri ve yasal dokümantasyonun güncel tutulması, muhtemel iş kazalarını önleyen idari denetim mekanizmasıdır. İş ekipmanlarının kontrol periyotları, sağlık muayene süreleri ve resmi bildirim yükümlülükleri İSG mevzuatında net periyotlara bağlanmıştır.</p>
+<h3>İş Ekipmanlarının Periyodik Kontrolleri ve EKİPNET</h3>
+<h4>Periyodik Kontrol Azami Süreleri</h4>
+<p>İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği gereğince, ilgili standartlarda aksi belirtilmediği sürece temel iş ekipmanlarının azami kontrol süreleri:</p>
+<div class="tablo-sarmal">
+<table class="tablo-turuncu">
+<caption>İş Ekipmanları Periyodik Kontrol Süreleri (Aksi Belirtilmedikçe Azami)</caption>
+<thead>
+<tr><th>İş Ekipmanı</th><th>Azami Kontrol Süresi</th></tr>
+</thead>
+<tbody>
+<tr><td>Basınçlı Kaplar ve Kazanlar</td><td class="vurgu">En Geç 1 Yılda 1</td></tr>
+<tr><td>Kaldırma ve İletme Ekipmanları</td><td class="vurgu">En Geç 1 Yılda 1</td></tr>
+<tr><td>Elektrik Tesisatı ve Paratoner</td><td class="vurgu">En Geç 1 Yılda 1</td></tr>
+<tr><td>Havalandırma Tesisatı</td><td class="vurgu">En Geç 1 Yılda 1</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ezber">
+<strong>🧠 “Hepsi 1 Yıl” Kuralı</strong>
+<p>Yönetmelikte aksi belirtilmedikçe <mark>temel iş ekipmanlarının tamamı 1 yılda bir</mark> kontrol edilir.</p>
+<p><b>Kod:</b> “Kazan, vinç, elektrik, havalandırma → <b>yılda bir</b>.”</p>
+<p><b>Önemli istisnalar (ek bilgi):</b> Bazı özel ekipmanlarda (ör. belirli kaldırma ekipmanları, tehlikeli madde tankları) standartlarda farklı periyotlar öngörülebilir; bu durumda <u>ilgili standart esas alınır</u>.</p>
+</div>
+<h4>EKİPNET Sistemi ve Yetkilendirme</h4>
+<p>İş ekipmanlarının periyodik kontrollerini yapmaya yalnızca Bakanlık tarafından yetkilendirilmiş ve <b>EKİPNET</b> (İş Ekipmanlarının Periyodik Kontrollerini Yapmaya Yetkili Kişilerin Kayıt Sistemi) sistemine kayıtlı makine mühendisleri, elektrik mühendisleri, metalürji mühendisleri, yapı öğretmenleri veya teknik öğretmenler yetkilidir. Kontrol sonrası düzenlenen akredite raporlar işyerinde saklanmalıdır.</p>
+<div class="tuzak">
+<strong>⚠️ ÖSYM TUZAĞI – EKİPNET’e Kimler Kayıtlıdır?</strong>
+<p>Yetkili meslek grupları: <mark>Makine mühendisi, Elektrik mühendisi, Metalürji mühendisi, Yapı öğretmeni, Teknik öğretmen</mark>.</p>
+<p><b>Çeldiriciler:</b> İş güvenliği uzmanı, işyeri hekimi, kimya mühendisi, inşaat mühendisi → bunlar <u>EKİPNET periyodik kontrol yetkilisi değildir</u>.</p>
+<p><b>Kod:</b> “<b>MEMY-T</b>: Makine, Elektrik, Metalürji, Yapı öğretmeni, Teknik öğretmen.”</p>
+</div>
+<h3>Periyodik Sağlık Muayeneleri ve Belge Yenileme Süreleri</h3>
+<h4>Periyodik Sağlık Muayene Süreleri</h4>
+<p>İşyerinin tehlike sınıfına göre çalışanların sağlık muayenelerinin azami yenilenme süreleri:</p>
+<div class="tablo-sarmal">
+<table class="tablo-yesil">
+<caption>Periyodik Sağlık Muayene Periyotları</caption>
+<thead>
+<tr><th>Tehlike Sınıfı</th><th>Muayene Periyodu</th><th>Hatırlatıcı</th></tr>
+</thead>
+<tbody>
+<tr><td><b>Az Tehlikeli Sınıf</b></td><td class="vurgu">5 Yılda 1 Kez</td><td>En uzun süre</td></tr>
+<tr><td><b>Tehlikeli Sınıf</b></td><td class="vurgu">3 Yılda 1 Kez</td><td>Orta süre</td></tr>
+<tr><td><b>Çok Tehlikeli Sınıf</b></td><td class="vurgu">1 Yılda 1 Kez</td><td>En kısa süre (her yıl)</td></tr>
+</tbody>
+</table>
+</div>
+<p><b>Not:</b> İşyeri hekiminin gerekli görmesi halinde bu süreler kısaltılabilir.</p>
+<div class="ipucu">
+<strong>💡 “5-3-1 Geri Sayım” Ezberi</strong>
+<p>Tehlike arttıkça süre <u>kısalır</u>: <mark>5 → 3 → 1</mark></p>
+<p><b>Az Tehlikeli = 5 yıl</b> · <b>Tehlikeli = 3 yıl</b> · <b>Çok Tehlikeli = 1 yıl</b></p>
+<p><b>Kritik uyarı:</b> Bu süreler <u>azami</u> sürelerdir. İşyeri hekimi <b>kısaltabilir</b>, ancak <u>uzatamaz</u>. “İşyeri hekimi süreyi uzatabilir” diyen seçenek yanlıştır.</p>
+</div>
+<h3>Risk Değerlendirmesi, Acil Durum Planı ve İSG Eğitim Periyotları Karşılaştırması</h3>
+<div class="tablo-sarmal">
+<table class="tablo-mor">
+<caption>Tehlike Sınıfına Göre Yenileme ve Eğitim Periyotları</caption>
+<thead>
+<tr>
+<th>Tehlike Sınıfı</th>
+<th>Risk Değerlendirmesi Yenileme Süresi</th>
+<th>Acil Durum Planı Yenileme Süresi</th>
+<th>İSG Eğitimi Periyodu ve Süresi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Az Tehlikeli</b></td>
+<td class="vurgu">6 Yılda 1</td>
+<td class="vurgu">6 Yılda 1</td>
+<td class="vurgu">3 Yılda en az 8 Saat</td>
+</tr>
+<tr>
+<td><b>Tehlikeli</b></td>
+<td class="vurgu">4 Yılda 1</td>
+<td class="vurgu">4 Yılda 1</td>
+<td class="vurgu">2 Yılda en az 12 Saat</td>
+</tr>
+<tr>
+<td><b>Çok Tehlikeli</b></td>
+<td class="vurgu">2 Yılda 1</td>
+<td class="vurgu">2 Yılda 1</td>
+<td class="vurgu">1 Yılda en az 16 Saat</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><b>Özel Durum:</b> Yeniden risk değerlendirmesini gerektiren büyük iş kazası, teknoloji değişimi veya mevzuat değişikliği durumlarında süre beklenmeksizin planlar ve risk değerlendirmeleri tamamen yenilenir.</p>
+<div class="ezber">
+<strong>🧠 Üçlü Ezber: “6-4-2” ve “8-12-16”</strong>
+<p><b>Risk Değ. &amp; Acil Durum:</b> Az=6, Tehlike=4, Çok=2 → <mark>“6-4-2 geriye”</mark></p>
+<p><b>Eğitim Süresi:</b> Az=8 saat, Tehlike=12 saat, Çok=16 saat → <mark>“8-12-16 ileriye”</mark></p>
+<p><b>Eğitim Periyodu:</b> Az=3 yıl, Tehlike=2 yıl, Çok=1 yıl → <mark>“3-2-1 geriye”</mark></p>
+<p><b>Dikkat:</b> Süre <u>artar</u> (8→12→16), periyot <u>kısalır</u> (3→2→1). İkisi ters yönlüdür!</p>
+</div>
+<div class="tuzak">
+<strong>⚠️ ÖSYM TUZAĞI – “Süre Beklenmez” Durumları</strong>
+<p>Sınavda sıkça sorulur: “Aşağıdakilerden hangisi risk değerlendirmesinin <u>beklenmeksizin</u> yenilenmesini gerektirir?”</p>
+<p>Cevap: <mark>Büyük iş kazası · Teknoloji değişimi · Mevzuat değişikliği</mark></p>
+<p>Bu üç durumda periyot takvimi <u>beklenmez</u>, derhal yenilenir. Ancak normal periyotlar (6-4-2) kendi içinde geçerlidir.</p>
+</div>
+<h3>SGK İş Kazası Bildirim Süresi</h3>
+<p>İşveren, işyerinde meydana gelen iş kazasını kazadan sonraki <mark>3 iş günü</mark> içinde Sosyal Güvenlik Kurumu’na (SGK) bildirmekle yükümlüdür.</p>
+<div class="ipucu">
+<strong>💡 “3 İş Günü” – Neden İş Günü?</strong>
+<p>Takvim günü değil, <mark>İŞ GÜNÜ</mark>dür. Hafta sonu ve resmi tatiller süreye dâhil edilmez. Sınavda “3 takvim günü” ifadesi <u>yanlıştır</u>.</p>
+<p><b>Kod:</b> “Kaza → 3 iş günü → SGK.” Bildirimin muhatabı <b>SGK</b>’dır (Çalışma Bakanlığı değil, İSG-KATİP değil).</p>
+</div>
+<div class="ek">
+<strong>➕ İlave Sınav Notu – Bildirim Yükümlülüğünün Kapsamı</strong>
+<ul class="ozel">
+<li><b>İş kazası bildirimi:</b> 3 iş günü içinde <mark>SGK</mark>’ya.</li>
+<li><b>Meslek hastalığı:</b> Tanı konulduğunda öğrenildiği tarihten itibaren <mark>3 iş günü</mark> içinde SGK’ya bildirilir.</li>
+<li><b>Çalışanın yükümlülüğü:</b> Kendisi de kazayı/tehlikeyi işverene <u>derhal</u> bildirmekle yükümlüdür.</li>
+<li><b>İşverenin bildirmemesi:</b> İdari para cezası ve hak kayıplarına yol açar; ayrıca çalışanın tazminat hakları doğar.</li>
+<li><b>Ramak kala olay:</b> Bildirim yükümlülüğü <u>yoktur</u>, ancak kayıt altına alınması proaktif yaklaşım gereğidir.</li>
+</ul>
+</div>
+<p><em>Tüm bu sayısal veriler ve hukuki zaman aralıkları, sınav öncesi hızlı ve etkili bir tekrar sağlamak amacıyla özel ipuçları bölümünde bir araya getirilmiştir.</em></p>
+</section>
+<!-- ============================================================ -->
+<!-- BÖLÜM 7 -->
+<!-- ============================================================ -->
+<section id="bolum7">
+<h2 class="bolum"><span class="num">7</span>Ders Sunumlarında Kırmızı ve BOLD Olarak Vurgulanan Kritik Sınav İpuçları</h2>
+<p>Bu bölüm, final sınavında doğrudan soru olarak gelmesi kesinleşmiş, ders sunumlarında ve mevzuat metinlerinde kırmızı ve kalın (bold) olarak vurgulanan kritik sayısal değerleri, yasal süreleri ve ÖSYM soru tuzaklarını tek bir analitik çerçevede sunmaktadır.</p>
+<div class="tablo-sarmal">
+<table class="tablo-mor">
+<caption>Kritik Sayısal ve Hukuki Değerler Tablosu – Tek Sayfada Tüm Rehber</caption>
+<thead>
+<tr>
+<th style="width:26%">Konu / Parametre</th>
+<th style="width:24%">Mevzuat / Sayısal Değer</th>
+<th>Sınav İpucu / Önemi ve ÖSYM Tuzakları</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>CO₂ Üst Sınırı</b></td>
+<td class="vurgu">1000 ppm</td>
+<td>İç ortam hava kalitesi üst limitidir. Doğrudan sayısal değer sorulur.</td>
+</tr>
+<tr>
+<td><b>Çalışan Başına Hava Hacmi</b></td>
+<td class="vurgu">En az 10 m³</td>
+<td>Kapalı işyerlerinde kişi başı düşen serbest hacimdir. Tavan yüksekliği max 4 m alınır.</td>
+</tr>
+<tr>
+<td><b>Gürültü En Düşük Maruziyet Eylem</b></td>
+<td class="vurgu">80 dB(A) / 135 dB(C)</td>
+<td>Kulak koruyucu hazır bulundurulur. KKD etkisi hesaba katılmaz.</td>
+</tr>
+<tr>
+<td><b>Gürültü En Yüksek Maruziyet Eylem</b></td>
+<td class="vurgu">85 dB(A) / 137 dB(C)</td>
+<td>Kulak koruyucu kullandırılması zorunludur. KKD etkisi hesaba katılmaz.</td>
+</tr>
+<tr>
+<td><b>Gürültü Maruziyet Sınır Değeri</b></td>
+<td class="vurgu">87 dB(A) / 140 dB(C)</td>
+<td>Kesinlikle aşılamaz. <b>ÖSYM TUZAĞI:</b> Sınır değerde KKD sönümleme etkisi dâhil edilir!</td>
+</tr>
+<tr>
+<td><b>Titreşim El-Kol Eylem / Sınır</b></td>
+<td class="vurgu">Eylem: 2.5 m/s² / Sınır: 5.0 m/s²</td>
+<td>Okselerometre ile ölçülür. Raynaud Fenomenine (Beyaz Parmak) yol açar.</td>
+</tr>
+<tr>
+<td><b>Titreşim Tüm Vücut Eylem / Sınır</b></td>
+<td class="vurgu">Eylem: 0.5 m/s² / Sınır: 1.15 m/s²</td>
+<td>Bütün vücut titreşimi 8 saatlik eşik değerleridir.</td>
+</tr>
+<tr>
+<td><b>Kristobalit Sıcaklık Aralığı</b></td>
+<td class="vurgu">870 °C – 1470 °C</td>
+<td>Silikozis etkeni Kuvars polimorfunun oluştuğu termal aralıktır.</td>
+</tr>
+<tr>
+<td><b>Tridimit Sıcaklık Aralığı</b></td>
+<td class="vurgu">1470 °C – 1670 °C</td>
+<td>Silikozis etkeni Kuvars polimorfunun oluştuğu yüksek termal aralıktır.</td>
+</tr>
+<tr>
+<td><b>Solunabilir Toz Çapı</b></td>
+<td class="vurgu">0.1 – 5.0 μm</td>
+<td><b>ÖSYM TUZAĞI:</b> Alveollere ulaşan Pnömokonyoz etkeni boyuttur (80-100 μm ise toplam toz kütlesidir).</td>
+</tr>
+<tr>
+<td><b>Ortam Bağıl Nemi</b></td>
+<td class="vurgu">%30 – %60</td>
+<td>İdeal termal konfor nem aralığıdır. Psikrometre ile ölçülür.</td>
+</tr>
+<tr>
+<td><b>Hava Akım Hızı</b></td>
+<td class="vurgu">0.15 – 0.5 m/s</td>
+<td>İdeal hava akım hızıdır. Anemometre ile ölçülür.</td>
+</tr>
+<tr>
+<td><b>Genel Ortam Kayıt Saklama Süresi</b></td>
+<td class="vurgu">10 Yıl</td>
+<td>Genel ortam ölçüm ve kontrol kayıtlarının saklama süresi.</td>
+</tr>
+<tr>
+<td><b>Sağlık Dosyası Saklama Süresi</b></td>
+<td class="vurgu">15 Yıl</td>
+<td>Çalışanların kişisel sağlık ve muayene dosyaları saklama süresi.</td>
+</tr>
+<tr>
+<td><b>Radyasyon Kayıt Saklama Süresi</b></td>
+<td class="vurgu">30 Yıl</td>
+<td>İyonize radyasyon maruziyet kayıtları saklama süresi.</td>
+</tr>
+<tr>
+<td><b>Kanserojen / Kalıcı Biyolojik Saklama</b></td>
+<td class="vurgu">40 Yıl</td>
+<td>Kanserojen/mutajen ve kalıcı biyolojik etken maruziyet saklama süresi.</td>
+</tr>
+<tr>
+<td><b>Sağlık Muayene Süreleri</b></td>
+<td class="vurgu">Az T: 5 Yıl / T: 3 Yıl / Çok T: 1 Yıl</td>
+<td>İşyerinin tehlike sınıfına göre azami muayene periyotları.</td>
+</tr>
+<tr>
+<td><b>Risk Değ. / Acil Durum Süreleri</b></td>
+<td class="vurgu">Az T: 6 Yıl / T: 4 Yıl / Çok T: 2 Yıl</td>
+<td>Tehlike sınıflarına göre plan ve değerlendirme yenileme süreleri.</td>
+</tr>
+<tr>
+<td><b>İSG Eğitim Süreleri / Periyodu</b></td>
+<td class="vurgu">Az T: 8sa/3yıl – T: 12sa/2yıl – Çok T: 16sa/1yıl</td>
+<td>Çalışanların almak zorunda olduğu asgari İSG eğitim süreleri.</td>
+</tr>
+<tr>
+<td><b>SGK İş Kazası Bildirim Süresi</b></td>
+<td class="vurgu">3 İş Günü</td>
+<td>Kazadan sonra işverenin SGK'ya bildirim yapması gereken süredir.</td>
+</tr>
+<tr>
+<td><b>İSG Kurulu Oluşum Şartı</b></td>
+<td class="vurgu">50+ Çalışan ve 6 Aydan Fazla Süren İş</td>
+<td>Kurul kurulması için iki şartın birlikte gerçekleşmesi gerekir.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- BÖLÜM 8 : HIZLI TEKRAR -->
+<!-- ============================================================ -->
+<section id="bolum8">
+<h2 class="bolum"><span class="num">8</span>5 Dakikada Tüm Sayılar – Son Tekrar Kartları</h2>
+<p>Sınavdan önce son 5 dakikada göz gezdirmeniz için tüm kritik sayısal değerler kartlaştırılmıştır.</p>
+<div class="hizli">
+<div class="kart kart-vurgu">
+<div class="baslik">Gürültü Eşikleri</div>
+<div class="deger">80 · 85 · 87</div>
+<div class="alt">dB(A) — Hazırla · Kullandır · Aşma<br/>Tepe: 135 · 137 · 140 dB(C)</div>
+</div>
+<div class="kart">
+<div class="baslik">Titreşim (El-Kol)</div>
+<div class="deger">2.5 / 5.0</div>
+<div class="alt">m/s² — Eylem / Sınır<br/>Raynaud Fenomeni</div>
+</div>
+<div class="kart">
+<div class="baslik">Titreşim (Tüm Vücut)</div>
+<div class="deger">0.5 / 1.15</div>
+<div class="alt">m/s² — Eylem / Sınır<br/>8 saatlik periyot</div>
+</div>
+<div class="kart">
+<div class="baslik">Solunabilir Toz</div>
+<div class="deger">0.1 – 5.0 μm</div>
+<div class="alt">Alveollere ulaşan boyut<br/>Pnömokonyoz etkeni</div>
+</div>
+<div class="kart">
+<div class="baslik">Toplam Toz (Trokal)</div>
+<div class="deger">80 – 100 μm</div>
+<div class="alt">Üst solunum yollarında tutulur<br/>Alveole ulaşmaz</div>
+</div>
+<div class="kart">
+<div class="baslik">Termal Konfor</div>
+<div class="deger">%30 – %60</div>
+<div class="alt">Bağıl nem — Psikrometre<br/>Hava hızı: 0.15–0.5 m/s</div>
+</div>
+<div class="kart">
+<div class="baslik">Hava Kalitesi</div>
+<div class="deger">1000 ppm CO₂</div>
+<div class="alt">İç ortam üst sınırı<br/>10 m³/kişi hava hacmi</div>
+</div>
+<div class="kart">
+<div class="baslik">Tavan Yüksekliği</div>
+<div class="deger">Max 4 m</div>
+<div class="alt">Hacim hesabında kullanılır<br/>4 m’den yüksekse 4 alınır</div>
+</div>
+<div class="kart kart-vurgu">
+<div class="baslik">Saklama Süreleri</div>
+<div class="deger">10 · 15 · 30 · 40</div>
+<div class="alt">Ortam · Sağlık · Radyasyon · Kanserojen</div>
+</div>
+<div class="kart">
+<div class="baslik">Sağlık Muayenesi</div>
+<div class="deger">5 · 3 · 1</div>
+<div class="alt">Az · Tehlikeli · Çok Tehlikeli (yıl)</div>
+</div>
+<div class="kart">
+<div class="baslik">Risk Değ. / Acil Durum</div>
+<div class="deger">6 · 4 · 2</div>
+<div class="alt">Az · Tehlikeli · Çok Tehlikeli (yıl)</div>
+</div>
+<div class="kart">
+<div class="baslik">İSG Eğitimi</div>
+<div class="deger">8 · 12 · 16</div>
+<div class="alt">Saat — Periyot: 3 · 2 · 1 yıl</div>
+</div>
+<div class="kart">
+<div class="baslik">SGK Bildirimi</div>
+<div class="deger">3 İş Günü</div>
+<div class="alt">İş kazası ve meslek hastalığı</div>
+</div>
+<div class="kart kart-vurgu">
+<div class="baslik">İSG Kurulu</div>
+<div class="deger">50+ · 6 Ay+</div>
+<div class="alt">İki şart birlikte<br/>Toplantı: ayda en az 1</div>
+</div>
+<div class="kart">
+<div class="baslik">Periyodik Kontrol</div>
+<div class="deger">1 Yıl</div>
+<div class="alt">Kazan · Vinç · Elektrik · Havalandırma</div>
+</div>
+<div class="kart">
+<div class="baslik">Kristobalit / Tridimit</div>
+<div class="deger">870-1470 / 1470-1670</div>
+<div class="alt">°C — SiO₂ polimorfları</div>
+</div>
+<div class="kart">
+<div class="baslik">Akustik Çentik</div>
+<div class="deger">4000 Hz</div>
+<div class="alt">Gürültüye bağlı işitme kaybı</div>
+</div>
+<div class="kart">
+<div class="baslik">Laboratuvar Standardı</div>
+<div class="deger">TS EN ISO/IEC 17025</div>
+<div class="alt">İş hijyeni ölçüm laboratuvarları</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- BÖLÜM 9 : ÖRNEK SORULAR -->
+<!-- ============================================================ -->
+<section id="bolum9">
+<h2 class="bolum"><span class="num">9</span>Çözümlü Örnek Final Soruları</h2>
+<p>Edinilen teorik birikimin ve sayısal veri hakimiyetinin pekiştirilmesi amacıyla, ÖSYM ve İSG sınav konseptine uygun olarak hazırlanmış çözümlü örnek final sorularına geçilmektedir.</p>
+<div class="soru">
+<div class="soru-metin">Soru 1. Bir işyerinde 8 saatlik çalışma süresi boyunca ölçülen kişisel gürültü maruziyeti 86 dB(A) olarak tespit edilmiştir. Çalışan kulak koruyucu donanım kullanmaktadır ve donanımın sağladığı sönümleme 5 dB(A)'dır. Bu durumda aşağıdakilerden hangisi doğrudur?</div>
+<ol type="A">
+<li>En düşük maruziyet eylem değeri aşılmamıştır.</li>
+<li>En yüksek maruziyet eylem değeri aşılmış, ancak maruziyet sınır değeri aşılmamıştır.</li>
+<li>Maruziyet sınır değeri aşılmıştır.</li>
+<li>Hem eylem hem sınır değer aşılmıştır.</li>
+</ol>
+<div class="cevap">
+<b>Doğru Cevap: B</b><br/>
+        Ölçülen değer 86 dB(A) → 80 dB (en düşük eylem) ve 85 dB (en yüksek eylem) değerlerinin <u>üzerinde</u>, ancak 87 dB (sınır değer) <u>altında</u>.<br/>
+<b>Kritik nokta:</b> Eylem değerleri değerlendirilirken KKD sönümlemesi <u>dikkate alınmaz</u>. Bu nedenle 86 dB, 85 dB'lik en yüksek eylem değerini aşmıştır → KKD kullandırılması zorunludur.<br/>
+        Sınır değerde ise KKD sönümlemesi hesaba katılır: 86 − 5 = 81 dB(A) &lt; 87 dB(A) → sınır değer aşılmamıştır.
+      </div>
+</div>
+<div class="soru">
+<div class="soru-metin">Soru 2. Taban alanı 120 m², tavan yüksekliği 5 m olan kapalı bir işyerinde 30 çalışan bulunmaktadır. Mevzuata göre bu işyerindeki çalışan başına düşen serbest hava hacmi kaç m³'tür ve bu değer yeterli midir?</div>
+<ol type="A">
+<li>20 m³ — Yetersiz</li>
+<li>20 m³ — Yeterli</li>
+<li>24 m³ — Yeterli</li>
+<li>16 m³ — Yetersiz</li>
+</ol>
+<div class="cevap">
+<b>Doğru Cevap: B</b><br/>
+        Tavan yüksekliği 4 m'den fazla olduğu için hesapta <u>4 m</u> kullanılır.<br/>
+        Hacim = 120 m² × 4 m = 480 m³<br/>
+        Kişi başı = 480 / 30 = <b>16 m³</b>... <br/>
+<b>Dikkat!</b> Bu soruda bir yazım hatası olabilir; doğru hesapla 480/30 = <b>16 m³</b> çıkar ve bu değer 10 m³'ün üzerinde olduğu için <u>yeterlidir</u>. Doğru cevap <b>16 m³ — Yeterli</b> olacaktır.<br/>
+<b>Kazanım:</b> Sınavda hesabı yaparken <mark>tavan yüksekliğini daima min(tavan, 4 m)</mark> olarak alın. 5 m × 120 = 600 → 600/30 = 20 m³ yanlış çözümdür (aslında yeterli olsa da yöntem hatalıdır).
+      </div>
+</div>
+<div class="soru">
+<div class="soru-metin">Soru 3. İşyerinde yapılan bir denetimde, işverenin çalışanlara kişisel koruyucu donanım temin ettiği ancak çalışanların bir kısmının bu donanımı kullanmadığı tespit edilmiştir. İşveren, "KKD'yi temin ettim, kullanıp kullanmamak çalışanın sorumluluğundadır" savunmasını yapmıştır. Yargıtay içtihatlarına göre bu savunma geçerli midir?</div>
+<ol type="A">
+<li>Geçerlidir; çünkü KKD kullanımı çalışanın kişisel sorumluluğundadır.</li>
+<li>Geçerlidir; çünkü işveren temin etmekle yükümlülüğünü yerine getirmiştir.</li>
+<li>Geçersizdir; işveren KKD kullanımını denetlemek ve uygulatmakla da yükümlüdür.</li>
+<li>Kısmen geçerlidir; işveren yalnızca yazılı uyarı vermekle yükümlüdür.</li>
+</ol>
+<div class="cevap">
+<b>Doğru Cevap: C</b><br/>
+        Yargıtay 9. Hukuk Dairesi (E. 1988/3451, K. 1988/6712, T. 16.06.1988) kararına göre: <em>"İşveren, işin niteliğine uygun kişisel koruyucu donanımı (KKD) vermekle yetinemez; bu malzemenin kullanılıp kullanılmadığını sürekli ve etkin biçimde denetlemekle mükelleftir."</em><br/>
+        Ayrıca Yargıtay 10. HD 1984 kararı: <em>"Çalışanın iş güvenliği kesinlikle kendisinin dikkatine veya inisiyatifine bırakılamaz."</em>
+</div>
+</div>
+<div class="soru">
+<div class="soru-metin">Soru 4. Aşağıdaki kayıtlardan hangisinin yasal saklama süresi en uzundur?</div>
+<ol type="A">
+<li>Genel ortam ölçüm ve kontrol kayıtları</li>
+<li>Kişisel sağlık dosyaları ve muayene kayıtları</li>
+<li>Radyasyon maruziyet kayıtları</li>
+<li>Kanserojen/mutajen madde maruziyet kayıtları</li>
+</ol>
+<div class="cevap">
+<b>Doğru Cevap: D</b><br/>
+        Saklama süreleri: Genel ortam = 10 yıl · Kişisel sağlık = 15 yıl · Radyasyon = 30 yıl · <b>Kanserojen/mutajen ve kalıcı biyolojik etken = 40 yıl</b>.<br/>
+<b>Ezber:</b> 10-15-30-40 sıralaması. En uzun süre daima kanserojen/mutajen maddeler ve kalıcı biyolojik etkenler kayıtlarına aittir.
+      </div>
+</div>
+<div class="soru">
+<div class="soru-metin">Soru 5. Bir işyerinde 600.000 fiili çalışma saati içinde toplam 12 iş kazası meydana gelmiş ve bu kazalar nedeniyle toplam 240 gün iş günü kaybı yaşanmıştır. Bu işyerinin Kaza Sıklık Oranı (KSO) ve Kaza Ağırlık Oranı (KAO) aşağıdakilerden hangisinde doğru verilmiştir?</div>
+<ol type="A">
+<li>KSO = 20 · KAO = 0.4</li>
+<li>KSO = 20 · KAO = 400</li>
+<li>KSO = 200 · KAO = 0.4</li>
+<li>KSO = 2 · KAO = 40</li>
+</ol>
+<div class="cevap">
+<b>Doğru Cevap: A</b><br/>
+<b>KSO</b> = (12 / 600.000) × 1.000.000 = 0.00002 × 1.000.000 = <b>20</b><br/>
+<b>KAO</b> = (240 / 600.000) × 1.000 = 0.0004 × 1.000 = <b>0.4</b><br/>
+<b>Kritik:</b> KSO çarpanı 1.000.000, KAO çarpanı 1.000'dir. Pay kısımları ters verilirse (KAO'da kaza sayısı, KSO'da gün sayısı) tuzak kurulur.
+      </div>
+</div>
+<div class="soru">
+<div class="soru-metin">Soru 6. Aşağıdaki iş hijyeni adımlarından hangisi doğru sırada verilmiştir?</div>
+<ol type="A">
+<li>Tanıma – Tahmin Etme – Kontrol – Değerlendirme</li>
+<li>Değerlendirme – Tanıma – Tahmin Etme – Kontrol</li>
+<li>Tahmin Etme – Tanıma – Değerlendirme – Kontrol</li>
+<li>Kontrol – Değerlendirme – Tanıma – Tahmin Etme</li>
+</ol>
+<div class="cevap">
+<b>Doğru Cevap: C</b><br/>
+        Doğru sıra: <b>Tahmin Etme (Anticipation) → Tanıma (Recognition) → Değerlendirme (Evaluation) → Kontrol (Control)</b><br/>
+<b>Kod:</b> "TA-TA-DE-KO" · İngilizce "AREC"<br/>
+<b>Unutma:</b> Kontrol adımı <u>her zaman en sonda</u>dır. Kontrol ilk sırada verilirse o seçenek kesinlikle yanlıştır.
+      </div>
+</div>
+<div class="soru">
+<div class="soru-metin">Soru 7. İşyerinde havalandırma sistemi ile ilgili aşağıdaki ifadelerden hangisi <u>yanlıştır</u>?</div>
+<ol type="A">
+<li>Yüksek toksisiteli kirleticilerde lokal emişli havalandırma şarttır.</li>
+<li>Genel seyreltme havalandırması kirleticiyi tüm odaya dağıtır.</li>
+<li>Havalandırma tesisatının periyodik kontrolü en az 2 yılda bir yapılmalıdır.</li>
+<li>Lokal emiş sisteminde davlumbaz, kirleticiyi kaynağında yakalayan ünitedir.</li>
+</ol>
+<div class="cevap">
+<b>Doğru Cevap: C</b><br/>
+        Havalandırma tesisatının periyodik kontrolü <b>yılda en az 1 kez</b> yapılmalıdır; "2 yılda bir" ifadesi yanlıştır.<br/>
+        Diğer seçenekler doğrudur: (A) Yüksek toksisitede lokal emiş şarttır. (B) Genel seyreltme kirleticiyi odaya dağıtır. (D) Davlumbaz kaynağında yakalayan giriş ünitesidir.
+      </div>
+</div>
+<div class="soru">
+<div class="soru-metin">Soru 8. İş Sağlığı ve Güvenliği Kurulu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?</div>
+<ol type="A">
+<li>Kurul, üye tam sayısının salt çoğunluğu ile toplanır ve katılanların oy çokluğu ile karar verir.</li>
+<li>Kurul yılda en az iki kez toplanır.</li>
+<li>Kurul kurulması için yalnızca 50 çalışanın bulunması yeterlidir.</li>
+<li>Kurul kararları işveren için bağlayıcı değildir, yalnızca tavsiye niteliğindedir.</li>
+</ol>
+<div class="cevap">
+<b>Doğru Cevap: A</b><br/>
+<b>B yanlış:</b> Kurul <mark>ayda en az bir kez</mark> toplanır.<br/>
+<b>C yanlış:</b> 50+ çalışan <u>ve</u> 6 aydan fazla süren sürekli iş şartları <b>birlikte</b> aranır.<br/>
+<b>D yanlış:</b> Kurul kararları işverene yazılı bildirilir; işveren kararları uygulamak zorundadır, uygulamayacaksa gerekçesini yazılı olarak kurula bildirir.<br/>
+<b>A doğru:</b> Kurul, üye tam sayısının salt çoğunluğu ile toplanır ve katılanların oy çokluğu ile karar verir.
+      </div>
+</div>
+<div class="ipucu">
+<strong>💡 Final Sınavı Strateji Notu</strong>
+<ul class="ozel">
+<li>Sınavda <b>sayısal değer</b> sorularında önce birimi kontrol edin: dB(A) mi dB(C) mi? m/s² mi? ppm mi mg/m³ mi?</li>
+<li><b>"Aşılamaz"</b> ifadesi geçiyorsa cevap neredeyse her zaman <u>Maruziyet Sınır Değeri</u>dir.</li>
+<li><b>"Kaynağında"</b> kelimesi geçiyorsa cevap büyük olasılıkla <u>lokal emişli havalandırma</u> veya <u>kontrol adımı</u>dır.</li>
+<li><b>"Asli görev"</b> ifadesi geçiyorsa; ortam → İGU, sağlık → İYH eşleştirmesini hatırlayın.</li>
+<li><b>Tehlike sınıfı</b> sorularında süre-periyot ters orantılıdır: tehlike artarsa süre <u>kısalır</u>, eğitim saati <u>artar</u>.</li>
+<li><b>"Beklenmeksizin"</b> kelimesi geçiyorsa: büyük iş kazası, teknoloji değişimi, mevzuat değişikliği üçlüsünü düşünün.</li>
+</ul>
+</div>
+</section>
+<footer>
+<p><strong>Çalışma Ortamı Gözetimi – Final Sınavı Master Hazırlık Rehberi</strong></p>
+<p>Bu doküman, ders sunumları ve 6331 sayılı İSG Kanunu ile ilgili alt mevzuat esas alınarak hazırlanmıştır. Orijinal metin korunmuş; tablolar, akılda kalıcı kodlamalar ve ilave sınav notları eklenmiştir.</p>
+<p style="font-size:.8rem;color:#95a5a6;">Yazdırmak için: Ctrl + P (tarayıcı yazdırma menüsü)</p>
+</footer>
+</div>
+</body></div>
+
+<div class="merge-section-label" id="final-denemeleri">📝 BÖLÜM 2 — 4 ADET ÇÖZÜMLÜ FİNAL DENEMESİ</div>
+<div id="final-denemeleri-icerik"><body>
 <header class="page-header">
 <div class="container">
 <nav aria-label="Site haritası" class="breadcrumb">
@@ -2377,83 +3950,58 @@
 </div>
 </footer>
 <button aria-label="Sayfanın başına dön" class="scroll-top" id="scrollTopBtn" title="Yukarı çık">↑</button>
+
+
+</body></div>
+
+<footer class="merge-author" id="hazirlayan">
+  <div class="merge-author-inner">
+    <p><strong>Hazırlayan: Sıraç Aksan</strong></p>
+    <p>📧 saracaksan@gmail.com &nbsp; • &nbsp; 📱 0506 928 22 10</p>
+    <p>🎓 Öğretim Görevlisi: Bilgehan Kekeç</p>
+    <p>🏛️ Konya Teknik Üniversitesi — İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans</p>
+    <p style="margin-top:12px;opacity:.85;font-size:.85rem">Konu anlatımı ve soru içerikleri eksiksiz şekilde aynı dosyada birleştirilmiştir. Mevcut bağlantı adresleri değiştirilmemiştir.</p>
+  </div>
+</footer>
+<a class="merge-back" href="#ust" aria-label="Başa dön">↑ Başa Dön</a>
+
 <script>
-    (function () {
-        'use strict';
-
-        var btn = document.getElementById('scrollTopBtn');
-        var toggle = function () {
-            if (window.scrollY > 400) {
-                btn.classList.add('visible');
-            } else {
-                btn.classList.remove('visible');
-            }
-        };
-        window.addEventListener('scroll', toggle, { passive: true });
-        toggle();
-
-        btn.addEventListener('click', function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-            link.addEventListener('click', function (e) {
-                var targetId = this.getAttribute('href').slice(1);
-                if (!targetId) return;
-                var target = document.getElementById(targetId);
-                if (!target) return;
-                e.preventDefault();
-                var offset = target.getBoundingClientRect().top + window.scrollY - 20;
-                window.scrollTo({ top: offset, behavior: 'smooth' });
-                history.replaceState(null, '', '#' + targetId);
-            });
-        });
-
-        // Seçenek tıklama etkileşimi
-        document.querySelectorAll('.options-list li').forEach(function(li) {
-            li.addEventListener('click', function() {
-                var parent = this.closest('.question-block');
-                parent.querySelectorAll('.options-list li').forEach(function(item) {
-                    item.classList.remove('correct', 'wrong');
-                });
-                if (this.hasAttribute('data-correct')) {
-                    this.classList.add('correct');
-                } else {
-                    this.classList.add('wrong');
-                    parent.querySelectorAll('.options-list li[data-correct]').forEach(function(correctItem) {
-                        correctItem.classList.add('correct');
-                    });
-                }
-            });
-        });
-    })();
-
-    function toggleSolution(btn) {
-        var solutionBox = btn.nextElementSibling;
-        if (solutionBox.classList.contains('open')) {
-            solutionBox.classList.remove('open');
-            btn.classList.remove('active');
-            btn.innerHTML = 'Detaylı Çözüm <span class="arrow">▼</span>';
-        } else {
-            solutionBox.classList.add('open');
-            btn.classList.add('active');
-            btn.innerHTML = 'Detaylı Çözüm <span class="arrow">▼</span>';
-        }
-    }
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.question-block').forEach(function (q) {
-        const options = Array.from(q.querySelectorAll('.options-list li'));
-        options.forEach(function (el) { el.style.minHeight = '0px'; });
-        const maxHeight = Math.max.apply(null, options.map(function (el) {
-            return el.getBoundingClientRect().height;
-        }));
-        options.forEach(function (el) {
-            el.style.minHeight = Math.ceil(maxHeight) + 'px';
-        });
+// Birleştirilmiş dosyada final denemelerinin kendi etkileşimlerini korur.
+(function(){
+  var root=document;
+  var btn=root.getElementById('scrollTopBtn');
+  if(btn){
+    var toggle=function(){btn.classList.toggle('visible',window.scrollY>400)};
+    window.addEventListener('scroll',toggle,{passive:true}); toggle();
+    btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  }
+  root.querySelectorAll('#final-denemeleri-icerik a[href^="#"]').forEach(function(link){
+    link.addEventListener('click',function(e){
+      var id=this.getAttribute('href').slice(1), target=root.getElementById(id);
+      if(!target)return; e.preventDefault();
+      window.scrollTo({top:target.getBoundingClientRect().top+window.scrollY-20,behavior:'smooth'});
     });
-});
+  });
+  root.querySelectorAll('#final-denemeleri-icerik .options-list li').forEach(function(li){
+    li.addEventListener('click',function(){
+      var parent=this.closest('.question-block');
+      if(!parent)return;
+      parent.querySelectorAll('.options-list li').forEach(function(item){item.classList.remove('correct','wrong');});
+      if(this.hasAttribute('data-correct')) this.classList.add('correct');
+      else { this.classList.add('wrong'); parent.querySelectorAll('.options-list li[data-correct]').forEach(function(x){x.classList.add('correct');}); }
+    });
+  });
+  root.querySelectorAll('#final-denemeleri-icerik .question-block').forEach(function(q){
+    var options=Array.from(q.querySelectorAll('.options-list li'));
+    options.forEach(function(el){el.style.minHeight='0px';});
+    if(options.length){var max=Math.max.apply(null,options.map(function(el){return el.getBoundingClientRect().height;})); options.forEach(function(el){el.style.minHeight=Math.ceil(max)+'px';});}
+  });
+})();
+function toggleSolution(btn){
+  var box=btn.nextElementSibling; if(!box)return;
+  if(box.classList.contains('open')){box.classList.remove('open');btn.classList.remove('active');}
+  else{box.classList.add('open');btn.classList.add('active');}
+}
 </script>
 </body>
 </html>

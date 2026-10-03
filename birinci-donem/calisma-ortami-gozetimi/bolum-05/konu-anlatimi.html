@@ -1,1 +1,1969 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Çalışma Ortamı Gözetimi · Bölüm 05 · Konu Anlatımı</title><style>*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#172033}a{text-decoration:none;color:inherit}.top{background:linear-gradient(135deg,#071a33,#1769aa);color:white}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:900}.brand small{display:block;color:#b9cce0;font-size:10px;margin-top:4px}.back{border:1px solid #ffffff2b;padding:9px 13px;border-radius:9px;font-size:11px;background:#ffffff0d}.hero{padding:52px 0}.eyebrow{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#b9e7ff;font-weight:800}.hero h1{font-size:clamp(30px,4vw,48px);margin:14px 0 8px;line-height:1.08}.hero p{color:#cbd9e6;font-size:13px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{font-size:10px;padding:7px 10px;border-radius:8px;background:#ffffff12;border:1px solid #ffffff18}main{padding:35px 0 70px}.head{margin-bottom:20px}.head h2{margin:0;color:#071a33}.head p{color:#64748b;font-size:11px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 5px 22px #0f172a0a}.num{width:34px;height:34px;border-radius:9px;background:#eef6fc;color:#1769aa;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}.card h3{margin:14px 0 7px;font-size:15px}.card p{font-size:10px;color:#64748b}.links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px}.links a{font-size:9px;font-weight:800;color:#1769aa;background:#f6f9fc;border:1px solid #e7edf3;border-radius:8px;padding:10px 5px;text-align:center}.empty{padding:20px;background:white;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b;font-size:11px}.footer{background:#04101f;color:#91a6bb;padding:25px 0;font-size:10px;line-height:1.7}@media(max-width:700px){.grid{grid-template-columns:1fr}.links{grid-template-columns:1fr}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}}</style></head><body><header class="top"><div class="wrap nav"><div class="brand">KTÜN · İSG Eğitim Portalı<small>2026–2027</small></div><a class="back" href="../../index.html">← Ders Ana Sayfası</a></div><div class="wrap hero"><span class="eyebrow">Çalışma Ortamı Gözetimi</span><h1>Bölüm 05</h1><p>Konu Anlatımı</p><div class="meta"><span class="pill">Bölüm 05</span><span class="pill">Konu Anlatımı</span></div></div></header><main><div class="wrap"><div class="empty">Bu alan içerik eklenmesi için hazırdır. Şu anda boş bırakılmıştır.</div></div></main><footer class="footer"><div class="wrap">Hazırlayan: Sıraç AKSAN · 0506 928 22 10 · saracaksan@gmail.com</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Çalışma Ortamı Gözetimi - Bölüm 5: Ortam Havası, Havalandırma ve İklimlendirme | Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans">
+    <meta name="author" content="Sıraç Aksan">
+    <title>Bölüm 5: Ortam Havası, Havalandırma ve İklimlendirme | Çalışma Ortamı Gözetimi</title>
+    <style>
+        :root {
+            --primary: #0f4c5c;
+            --primary-light: #1b6b7a;
+            --accent: #e36414;
+            --accent-light: #fb8b24;
+            --bg: #f5f7fa;
+            --card: #ffffff;
+            --text: #1e2a32;
+            --text-light: #4a5a68;
+            --border: #d9e2ec;
+            --exam-bg: #fff4e6;
+            --exam-border: #e36414;
+            --success: #2a9d8f;
+            --warning: #e9c46a;
+            --danger: #e76f51;
+            --info: #264653;
+            --metric-bg: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            --metric-accent: linear-gradient(135deg, #e36414 0%, #fb8b24 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+
+        /* ==================== ÜST BAŞLIK ==================== */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: #fff;
+            padding: 2rem 1.5rem 1.75rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: -40px; right: -40px;
+            width: 220px; height: 220px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+        }
+
+        .page-header .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            align-items: center;
+        }
+
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+            transition: border-bottom-style 0.2s;
+        }
+
+        .breadcrumb a:hover { border-bottom-style: solid; }
+        .breadcrumb .sep { opacity: 0.6; }
+
+        .page-header h1 {
+            font-size: 1.85rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+        }
+
+        .page-header .subtitle {
+            font-size: 0.98rem;
+            opacity: 0.92;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.85rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.28rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        .badge-primary { background: rgba(255,255,255,0.2); color: #fff; }
+        .badge-accent { background: var(--accent); color: #fff; }
+        .badge-success { background: var(--success); color: #fff; }
+        .badge-warning { background: var(--warning); color: #5a3a1a; }
+
+        /* ==================== ÜST BÖLÜM GEZİNME ==================== */
+        .top-chapter-nav {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 0.75rem;
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .top-chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.55rem 0.85rem;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            transition: background 0.2s, transform 0.2s;
+            font-size: 0.85rem;
+        }
+
+        .top-chapter-nav a:hover {
+            background: rgba(255,255,255,0.22);
+            transform: translateY(-2px);
+        }
+
+        .top-chapter-nav a.next {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .top-chapter-nav .tn-arrow {
+            font-size: 1.1rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .top-chapter-nav .tn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.25;
+        }
+
+        .top-chapter-nav .tn-text small {
+            font-size: 0.68rem;
+            opacity: 0.75;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .top-chapter-nav .tn-text strong {
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .top-chapter-nav .tn-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 800;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(227,100,20,0.4);
+        }
+
+        /* ==================== KONTEYNER ==================== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        main { padding: 2rem 0 3rem; }
+
+        /* ==================== HIZLI ERİŞİM ==================== */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 0.85rem;
+            margin-bottom: 2rem;
+        }
+
+        .quick-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 0.9rem 1.1rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 0.88rem;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .quick-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .quick-nav a .qn-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px; height: 38px;
+            border-radius: 10px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 1.05rem;
+            flex-shrink: 0;
+        }
+
+        .quick-nav a.qn-accent .qn-icon { background: var(--accent); }
+        .quick-nav a.qn-success .qn-icon { background: var(--success); }
+        .quick-nav a.qn-warning .qn-icon { background: var(--warning); color: #5a3a1a; }
+
+        .quick-nav a .qn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+        }
+
+        .quick-nav a .qn-text small {
+            font-weight: 400;
+            font-size: 0.72rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+
+        /* ==================== İÇİNDEKİLER ==================== */
+        .toc {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.06);
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc h2::before { content: '📋'; font-size: 1.15rem; }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.35rem 2rem;
+        }
+
+        .toc ol li {
+            counter-increment: toc-counter;
+            padding: 0.3rem 0;
+            border-bottom: 1px dashed var(--border);
+            font-size: 0.9rem;
+        }
+
+        .toc ol li::before {
+            content: counter(toc-counter) ". ";
+            font-weight: 700;
+            color: var(--accent);
+            margin-right: 0.25rem;
+        }
+
+        .toc ol li a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc ol li a:hover { color: var(--accent); }
+
+        /* ==================== BÖLÜM BAŞLIKLARI ==================== */
+        .section {
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--primary);
+            padding-bottom: 0.55rem;
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .section-title .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px; height: 36px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .subsection-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            margin: 1.7rem 0 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .subsection-title::before {
+            content: '';
+            display: inline-block;
+            width: 6px; height: 22px;
+            background: var(--accent);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        /* ==================== KARTLAR ==================== */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 1.3rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.05);
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover { box-shadow: 0 4px 16px rgba(15,76,92,0.1); }
+        .card p { margin-bottom: 0.75rem; }
+        .card p:last-child { margin-bottom: 0; }
+
+        /* ==================== SINAV KUTUSU ==================== */
+        .exam-box {
+            background: var(--exam-bg);
+            border-left: 5px solid var(--exam-border);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .exam-box::before {
+            content: '⚠️ SINAVDA ÇIKABİLİR';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .exam-box p, .exam-box li { font-size: 0.93rem; color: #5a3a1a; }
+        .exam-box ul, .exam-box ol { margin: 0.5rem 0 0.5rem 1.2rem; }
+
+        /* ==================== BİLGİ KUTUSU ==================== */
+        .info-box {
+            background: #e8f4f8;
+            border-left: 5px solid var(--primary-light);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .info-box::before {
+            content: 'ℹ️ AKADEMİK NOT';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--primary-light);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== UYARI KUTUSU ==================== */
+        .warning-box {
+            background: #fde8e8;
+            border-left: 5px solid var(--danger);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .warning-box::before {
+            content: '🚨 KRİTİK UYARI';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--danger);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== LİSTELER ==================== */
+        .card ul, .card ol { margin: 0.5rem 0 0.75rem 1.35rem; }
+        .card ul li, .card ol li { margin-bottom: 0.35rem; }
+        .card ul li::marker { color: var(--accent); }
+        .card ol li::marker { color: var(--accent); font-weight: 700; }
+
+        /* ==================== TABLOLAR ==================== */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.4rem 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            background: var(--card);
+            min-width: 620px;
+        }
+
+        thead { background: var(--primary); color: #fff; }
+        thead th {
+            padding: 0.8rem 0.95rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.82rem;
+            letter-spacing: 0.3px;
+        }
+
+        tbody td {
+            padding: 0.7rem 0.95rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tbody tr:last-child td { border-bottom: none; }
+        tbody tr:nth-child(even) { background: #f8fafc; }
+        tbody tr:hover { background: #eef6f8; }
+
+        /* ==================== METRİK KARTLARI ==================== */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 0.85rem;
+            margin: 1.3rem 0;
+        }
+
+        .metric-card {
+            background: var(--metric-bg);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(15,76,92,0.2);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .metric-card:hover { transform: translateY(-4px); }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 90px; height: 90px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+        }
+
+        .metric-card .mc-icon {
+            font-size: 1.6rem;
+            margin-bottom: 0.35rem;
+            display: block;
+        }
+
+        .metric-card .mc-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        .metric-card .mc-label {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            font-weight: 600;
+        }
+
+        .metric-card .mc-sub {
+            font-size: 0.7rem;
+            opacity: 0.7;
+            margin-top: 0.35rem;
+            font-style: italic;
+        }
+
+        .metric-card.accent {
+            background: var(--metric-accent);
+            box-shadow: 0 4px 14px rgba(227,100,20,0.3);
+        }
+
+        .metric-card.success {
+            background: linear-gradient(135deg, #2a9d8f 0%, #4bb3a6 100%);
+            box-shadow: 0 4px 14px rgba(42,157,143,0.3);
+        }
+
+        .metric-card.danger {
+            background: linear-gradient(135deg, #c1121f 0%, #e76f51 100%);
+            box-shadow: 0 4px 14px rgba(231,111,81,0.3);
+        }
+
+        .metric-card.warning {
+            background: linear-gradient(135deg, #e9c46a 0%, #f4a261 100%);
+            color: #4a2c0a;
+            box-shadow: 0 4px 14px rgba(233,196,106,0.35);
+        }
+
+        .metric-card.warning .mc-label,
+        .metric-card.warning .mc-sub { color: #4a2c0a; }
+
+        /* ==================== DİYAGRAM ==================== */
+        .diagram {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            justify-content: center;
+            margin: 1.4rem 0;
+        }
+
+        .diagram-item {
+            flex: 1 1 170px;
+            max-width: 230px;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.1rem;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .diagram-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .diagram-item .icon { font-size: 1.8rem; margin-bottom: 0.4rem; }
+        .diagram-item h4 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        .diagram-item p {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* ==================== AKIŞ ŞEMASI ==================== */
+        .flow-diagram {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            margin: 1.4rem 0;
+            padding: 1.2rem;
+            background: var(--card);
+            border: 2px dashed var(--border);
+            border-radius: 14px;
+        }
+
+        .flow-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.8rem 1rem;
+            background: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            color: #fff;
+            border-radius: 10px;
+            min-width: 110px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .flow-step .fs-icon {
+            font-size: 1.3rem;
+        }
+
+        .flow-arrow {
+            font-size: 1.3rem;
+            color: var(--accent);
+            font-weight: 800;
+        }
+
+        /* ==================== FORMÜL KUTUSU ==================== */
+        .formula-box {
+            background: #fff;
+            border: 2px dashed var(--primary-light);
+            border-radius: 12px;
+            padding: 1.2rem 1.4rem;
+            margin: 1.2rem 0;
+            text-align: center;
+        }
+
+        .formula-box .formula-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 0.6rem;
+        }
+
+        .formula-box .formula {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            line-height: 1.7;
+        }
+
+        .formula-box .formula .frac {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 0.4rem;
+        }
+
+        .formula-box .formula .frac .num {
+            display: block;
+            padding: 0 0.4rem;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .formula-box .formula .frac .den {
+            display: block;
+            padding: 0 0.4rem;
+        }
+
+        /* ==================== VURGU ==================== */
+        .highlight {
+            background: linear-gradient(transparent 60%, #ffe066 60%);
+            font-weight: 600;
+            padding: 0 2px;
+        }
+
+        .keyword {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin: 0 2px;
+        }
+
+        .keyword-accent { background: var(--accent); }
+
+        /* ==================== ÖRNEK SORU KUTUSU ==================== */
+        .example-box {
+            background: #f0f9f4;
+            border-left: 5px solid var(--success);
+            border-radius: 0 12px 12px 0;
+            padding: 1.2rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .example-box::before {
+            content: '✏️ ÖSYM TİPİ ÖRNEK SORU';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--success);
+            letter-spacing: 1px;
+            margin-bottom: 0.6rem;
+            text-transform: uppercase;
+        }
+
+        .example-box p { font-size: 0.93rem; margin-bottom: 0.6rem; }
+        .example-box strong { color: var(--primary); }
+        .example-box ol { margin: 0.5rem 0 0.4rem 1.3rem; font-size: 0.9rem; }
+        .example-box ol li { margin-bottom: 0.3rem; }
+
+        /* ==================== ALINTI ==================== */
+        blockquote {
+            background: #f0f4f8;
+            border-left: 4px solid var(--primary-light);
+            padding: 1rem 1.4rem;
+            margin: 1.15rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* ==================== BÖLÜM GEZİNME (ALT) ==================== */
+        .chapter-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .chapter-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .chapter-nav a.next {
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+
+        .chapter-nav a .cn-arrow {
+            font-size: 1.4rem;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .chapter-nav a .cn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+            flex: 1;
+        }
+
+        .chapter-nav a .cn-text small {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .chapter-nav a .cn-text strong {
+            font-size: 0.92rem;
+            color: var(--primary);
+        }
+
+        /* ==================== HAZIRLAYAN KARTI ==================== */
+        .author-card {
+            background: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.4rem 1.6rem;
+            margin: 2rem 0 1.5rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.2rem;
+            align-items: center;
+            box-shadow: 0 6px 20px rgba(15,76,92,0.18);
+        }
+
+        .author-card .avatar {
+            width: 68px; height: 68px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            font-weight: 700;
+            border: 2px solid rgba(255,255,255,0.35);
+            flex-shrink: 0;
+        }
+
+        .author-card .author-info h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .author-card .author-info .role {
+            font-size: 0.8rem;
+            opacity: 0.88;
+            margin-bottom: 0.55rem;
+            line-height: 1.45;
+        }
+
+        .author-card .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.2rem;
+            font-size: 0.83rem;
+        }
+
+        .author-card .contact-row a,
+        .author-card .contact-row span {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            opacity: 0.95;
+            transition: opacity 0.2s;
+        }
+
+        .author-card .contact-row a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* ==================== SAYFA SONU ==================== */
+        .page-footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.85);
+            text-align: center;
+            padding: 1.6rem 1.5rem;
+            font-size: 0.83rem;
+            margin-top: 2rem;
+        }
+
+        .page-footer .container p { margin-bottom: 0.35rem; }
+        .page-footer a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+        }
+        .page-footer a:hover { border-bottom-style: solid; }
+
+        /* ==================== YUKARI ÇIK ==================== */
+        .scroll-top {
+            position: fixed;
+            bottom: 1.5rem; right: 1.5rem;
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            font-size: 1.15rem;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(227,100,20,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+            z-index: 999;
+        }
+
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { transform: translateY(-3px); background: var(--accent-light); }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 900px) {
+            .top-chapter-nav {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            .top-chapter-nav .tn-center { display: none; }
+            .top-chapter-nav a.next { justify-content: flex-start; text-align: left; }
+        }
+
+        @media (max-width: 768px) {
+            body { font-size: 15px; }
+            .page-header { padding: 1.5rem 1rem 1.25rem; }
+            .page-header h1 { font-size: 1.3rem; }
+            .page-header .subtitle { font-size: 0.88rem; }
+            .breadcrumb { font-size: 0.76rem; }
+            .badge { font-size: 0.68rem; padding: 0.22rem 0.65rem; }
+            .container { padding: 0 1rem; }
+            .toc { padding: 1rem 1.15rem; }
+            .toc ol { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.15rem; gap: 0.5rem; }
+            .section-title .num { width: 30px; height: 30px; font-size: 0.85rem; }
+            .subsection-title { font-size: 1rem; }
+            .card { padding: 1rem 1.1rem; }
+            .exam-box, .info-box, .warning-box, .example-box { padding: 0.95rem 1.05rem; }
+            table { font-size: 0.8rem; min-width: 560px; }
+            thead th, tbody td { padding: 0.55rem 0.65rem; }
+            .diagram-item { flex: 1 1 100%; max-width: 100%; }
+            .chapter-nav { grid-template-columns: 1fr; }
+            .chapter-nav a.next { flex-direction: row; text-align: left; }
+            .author-card { grid-template-columns: 1fr; text-align: center; }
+            .author-card .avatar { margin: 0 auto; }
+            .author-card .contact-row { justify-content: center; }
+            .quick-nav { grid-template-columns: 1fr; }
+            .scroll-top { bottom: 1rem; right: 1rem; width: 42px; height: 42px; }
+            .metric-card .mc-value { font-size: 1.25rem; }
+            .metric-card .mc-icon { font-size: 1.35rem; }
+            .formula-box .formula { font-size: 0.95rem; }
+            .flow-diagram { padding: 0.85rem; }
+            .flow-step { min-width: 90px; font-size: 0.72rem; padding: 0.6rem 0.7rem; }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 { font-size: 1.1rem; }
+            .section-title { font-size: 1.05rem; }
+            blockquote { padding: 0.8rem 1rem; font-size: 0.86rem; }
+            .flow-arrow { display: none; }
+        }
+
+        /* ==================== YAZDIRMA ==================== */
+        @media print {
+            .page-header { background: #fff !important; color: #000 !important; }
+            .page-header h1, .page-header .subtitle, .breadcrumb a { color: #000 !important; }
+            .badge { border: 1px solid #ccc; color: #000 !important; background: #f0f0f0 !important; }
+            .top-chapter-nav { display: none !important; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .exam-box, .info-box, .warning-box, .example-box { background: #fff; border: 1px solid #ccc; }
+            .scroll-top, .quick-nav, .chapter-nav { display: none !important; }
+            .author-card { background: #f0f0f0 !important; color: #000 !important; }
+            .author-card .contact-row a, .author-card .contact-row span { color: #000 !important; }
+            .metric-card, .flow-step { background: #f0f0f0 !important; color: #000 !important; box-shadow: none !important; border: 1px solid #ccc; }
+            .metric-card .mc-label, .metric-card .mc-sub { color: #000 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== ÜST BAŞLIK ==================== -->
+<header class="page-header">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="Site haritası">
+            <a href="../../../index.html">🏠 Tüm Dersler</a>
+            <span class="sep">›</span>
+            <a href="../index.html">📚 Çalışma Ortamı Gözetimi</a>
+            <span class="sep">›</span>
+            <span>Bölüm 5</span>
+        </nav>
+        <h1>Bölüm 5: Ortam Havası, Havalandırma ve İklimlendirme</h1>
+        <p class="subtitle">İşyeri Hava Kalitesi, Havalandırma Sistemleri ve HVAC Hijyeni</p>
+        <div class="badge-row">
+            <span class="badge badge-primary">Serbest Hava Hacmi</span>
+            <span class="badge badge-accent">ACH / ACH Formülü</span>
+            <span class="badge badge-success">Lokal Emiş</span>
+            <span class="badge badge-warning">Lejyonella Riski</span>
+        </div>
+
+        <!-- ÜST BÖLÜM GEZİNME -->
+        <nav class="top-chapter-nav" aria-label="Üst bölüm gezinme">
+            <a href="../bolum-04/konu-anlatimi.html">
+                <span class="tn-arrow">←</span>
+                <span class="tn-text">
+                    <small>Önceki Bölüm</small>
+                    <strong>Bölüm 4: Biyolojik Risk Etmenleri</strong>
+                </span>
+            </a>
+            <span class="tn-center">5/7</span>
+            <a href="../bolum-06/konu-anlatimi.html" class="next">
+                <span class="tn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Bölüm 6: Konu Anlatımı</strong>
+                </span>
+                <span class="tn-arrow">→</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- ==================== İÇERİK ==================== -->
+<main>
+    <div class="container">
+
+        <!-- HIZLI ERİŞİM -->
+        <nav class="quick-nav" aria-label="Hızlı erişim">
+            <a href="konu-anlatimi.html" class="qn-accent">
+                <span class="qn-icon">📖</span>
+                <span class="qn-text">Konu Anlatımı<small>Bu sayfa</small></span>
+            </a>
+            <a href="sorular.html" class="qn-success">
+                <span class="qn-icon">❓</span>
+                <span class="qn-text">Sorular<small>Test &amp; alıştırma</small></span>
+            </a>
+            <a href="sunum.html" class="qn-warning">
+                <span class="qn-icon">📊</span>
+                <span class="qn-text">Sunum<small>Slayt gösterisi</small></span>
+            </a>
+            <a href="../index.html">
+                <span class="qn-icon">📚</span>
+                <span class="qn-text">Ders Ana Sayfası<small>Tüm bölümler</small></span>
+            </a>
+        </nav>
+
+        <!-- İÇİNDEKİLER -->
+        <nav class="toc" aria-label="İçindekiler">
+            <h2>İçindekiler</h2>
+            <ol>
+                <li><a href="#bolum5-1">İşyeri Hava Kalitesi ve İç Ortam Kirleticileri</a></li>
+                <li><a href="#bolum5-2">Havalandırma Yöntemleri ve Temel Prensipleri</a></li>
+                <li><a href="#bolum5-3">Genel (Seyreltme) Havalandırma Sistemleri</a></li>
+                <li><a href="#bolum5-4">Lokal (Lokal Emişli) Havalandırma Sistemleri</a></li>
+                <li><a href="#bolum5-5">İklimlendirme (HVAC) Sistemleri ve Hijyen</a></li>
+            </ol>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- 1. İŞYERİ HAVA KALİTESİ, İÇ ORTAM KİRLETİCİLERİ VE HAVA İHTİYACI -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum5-1">
+            <h2 class="section-title">
+                <span class="num">1</span>
+                İşyeri Hava Kalitesi, İç Ortam Kirleticileri ve Hava İhtiyacı
+            </h2>
+
+            <h3 class="subsection-title">1.1. Ortam Havasının Bileşimi ve İç Ortam Kirleticileri</h3>
+
+            <div class="card">
+                <p>
+                    İşyeri ortam havası; çalışanların fizyolojik gereksinimlerini karşılayacak kalitede olmalı ve kirleticilerden arındırılmalıdır. <strong>Kirletilmemiş doğal açık deniz seviyesi atmosfer havasının</strong> kimyasal bileşimi standart referans değer olarak kabul edilir.
+                </p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gaz Bileşeni</th>
+                            <th>Kimyasal Formülü</th>
+                            <th>Hacimsel Oranı (%)</th>
+                            <th>Konsantrasyon (ppm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Azot</strong></td>
+                            <td>N₂</td>
+                            <td><strong>%78,08</strong></td>
+                            <td>780.800 ppm</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Oksijen</strong></td>
+                            <td>O₂</td>
+                            <td><strong>%20,95</strong></td>
+                            <td>209.500 ppm</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Argon</strong></td>
+                            <td>Ar</td>
+                            <td>%0,93</td>
+                            <td>9.300 ppm</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Karbondioksit</strong></td>
+                            <td>CO₂</td>
+                            <td><strong>%0,04</strong></td>
+                            <td>400 ppm</td>
+                        </tr>
+                        <tr>
+                            <td>Diğer İz Gazlar (Neon, Helyum, Kripton, Ksenon, Hidrojen vb.)</td>
+                            <td>—</td>
+                            <td>&lt; %0,001</td>
+                            <td>Trace</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- TEMİZ HAVA BİLEŞİMİ METRİK KARTLARI -->
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <span class="mc-icon">💨</span>
+                    <div class="mc-value">%78,08</div>
+                    <div class="mc-label">Azot (N₂)</div>
+                    <div class="mc-sub">780.800 ppm</div>
+                </div>
+                <div class="metric-card success">
+                    <span class="mc-icon">🫁</span>
+                    <div class="mc-value">%20,95</div>
+                    <div class="mc-label">Oksijen (O₂)</div>
+                    <div class="mc-sub">209.500 ppm</div>
+                </div>
+                <div class="metric-card accent">
+                    <span class="mc-icon">🌫️</span>
+                    <div class="mc-value">%0,04</div>
+                    <div class="mc-label">Karbondioksit (CO₂)</div>
+                    <div class="mc-sub">400 ppm</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">⚗️</span>
+                    <div class="mc-value">%0,93</div>
+                    <div class="mc-label">Argon (Ar)</div>
+                    <div class="mc-sub">9.300 ppm</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <p>
+                    İşyeri ortamında üretim proseslerine, kimyasal kullanımına ve havalandırma yetersizliğine bağlı olarak oluşan ana kirletici etkenler şunlardır:
+                </p>
+                <ul>
+                    <li><strong>Gazlar ve Buharlar:</strong> Oda sıcaklığında gaz halinde bulunan veya sıvı/katı maddelerin buharlaşmasıyla ortama yayılan, <strong>MGBF (Malzeme Güvenlik Bilgi Formu — MSDS)</strong> verileri doğrultusunda izlenmesi gereken kimyasal etkenlerdir.</li>
+                    <li><strong>Tozlar:</strong> Katı maddelerin ufalanması, mekanik işlenmesi, kırılması veya taşınması sırasında havaya saçılan parçacıklardır.</li>
+                    <li><strong>Dumanlar:</strong> Erimiş metallerin gaz haline geçip oksitlenmesiyle oluşan çok küçük katı parçacıklardır (Örn: Kaynak dumanı).</li>
+                    <li><strong>Sis ve Aerosoller:</strong> Havada asılı kalan sıvı damlacıkları veya gaz-sıvı karışımlarıdır (Örn: Boya püskürtme sisi).</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">Toz Sınıfları, Aerodinamik Boyutlar ve Sağlık Etkileri</h3>
+
+            <div class="card">
+                <p>İş sağlığı açısından tozlar; kimyasal kökenlerine, boyutlarına ve biyolojik etkilerine göre sınıflandırılır:</p>
+                <ul>
+                    <li><strong>Solunabilir Toz Tanımı:</strong> Aerodinamik eşdeğer çapı <strong>0,1–5,0 mikron</strong> büyüklüğünde kristal veya amorf yapıda toz ile çapı <strong>3 mikrondan küçük</strong>, uzunluğu çapının en az <strong>3 katı</strong> olan lifsi tozları ifade eder.</li>
+                    <li><strong>Aerodinamik Çap Kriteri:</strong> Solunabilir tozların %50'si aerodinamik çapı <strong>80–100 μm</strong> altında kalan, trakeobronşiyal bölgeye ve alveollere kadar ulaşan parçacıklardır. Maruz kalındığında akciğer dokusuna doğrudan nüfuz eder.</li>
+                    <li><strong>Pnömokonyoz (Akciğer Toz Hastalığı):</strong> Akciğerlerde tozun birikmesi ve bu birikime bağlı olarak doku reaksiyonunun gelişmesiyle oluşan meslek hastalığıdır.</li>
+                    <li><strong>Silikozis Etkenleri ve Dönüşüm Sıcaklıkları:</strong> Kristalin silisyumdioksit (SiO₂) tozları silikozise neden olur. Doğada ve endüstride öne çıkan ana formları ve oluşum sıcaklıkları şunlardır:
+                        <ul>
+                            <li><strong>Kuvars:</strong> Doğada en yaygın bulunan SiO₂ formudur.</li>
+                            <li><strong>Kristobalit:</strong> <strong>870–1470 °C</strong> sıcaklık aralığında oluşan SiO₂ formudur.</li>
+                            <li><strong>Tridimit:</strong> <strong>1470–1670 °C</strong> sıcaklık aralığında oluşan SiO₂ formudur.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Toksik Tozlar:</strong> İç organlar (sinir sistemi, karaciğer, böbrekler, kan yapıcı organlar) üzerinde akut veya kronik zehirli etki yapan tozlardır.</li>
+                </ul>
+            </div>
+
+            <!-- SİLİS FORMLARI DİYAGRAMI -->
+            <div class="diagram">
+                <div class="diagram-item">
+                    <div class="icon">💎</div>
+                    <h4>Kuvars</h4>
+                    <p>Doğada en yaygın SiO₂ formu</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🔥</div>
+                    <h4>Kristobalit</h4>
+                    <p>870–1470 °C dönüşüm ürünü</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🌡️</div>
+                    <h4>Tridimit</h4>
+                    <p>1470–1670 °C dönüşüm ürünü</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><strong>SINAV HIZLI HATIRLATMA KODLAMASI (MNEMONİK):</strong> Sınavlarda en çok sorulan <strong>Toksik Tozları</strong> akılda tutmak için <span class="highlight">"BAK-RT"</span> kodlamasını kullanabilirsiniz:</p>
+                <ul>
+                    <li><strong>B</strong>erilyum</li>
+                    <li><strong>A</strong>rsenik</li>
+                    <li><strong>K</strong>urşun</li>
+                    <li><strong>R</strong>adyum</li>
+                    <li><strong>T</strong>oryum</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">1.2. İşyeri Hacim ve Taze Hava İhtiyacı Hesap İlkeleri</h3>
+
+            <div class="card">
+                <p>
+                    İşyerlerinde çalışan başına düşen serbest hava hacmi, iş ortamının fiziki boyutları ve ekipman kaplamaları dikkate alınarak hesaplanır.
+                </p>
+                <p><strong>Serbest Hava Hacmi Formülü ve Tavan Yüksekliği Sınır Kuralı:</strong></p>
+                <p>İşyerlerinde çalışan başına düşen serbest hava hacmi <strong>en az 10 m³</strong> olmalıdır.</p>
+            </div>
+
+            <div class="formula-box">
+                <div class="formula-label">Serbest Hava Hacmi Formülü</div>
+                <div class="formula">
+                    V<sub>serbest</sub> = <span class="frac"><span class="num">V<sub>toplam</sub> − V<sub>ekipman</sub></span><span class="den">N</span></span> ≥ 10 m³ / çalışan
+                </div>
+                <p style="margin-top:0.8rem; font-size:0.85rem; color:var(--text-light);">
+                    <strong>V<sub>toplam</sub>:</strong> İşyerinin brüt hacmi (m³) &nbsp;|&nbsp;
+                    <strong>V<sub>ekipman</sub>:</strong> Makine, tezgah ve sabit mobilyaların kapladığı hacim (m³) &nbsp;|&nbsp;
+                    <strong>N:</strong> Çalışan sayısı
+                </p>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>KRİTİK HESAPLAMA KURALI (TAVAN YÜKSEKLİĞİ SINIRI):</strong> Serbest hacim hesaplanırken, tavan yüksekliği ne kadar fazla olursa olsun <strong>en fazla 4 metre</strong> olarak dikkate alınır. Tavan yüksekliği 4 metreyi aşan işyerlerinde sanal bir hacim genişlemesi kabul edilmez ve yükseklik (h) hesaba <span class="highlight">4,00 m olarak</span> dahil edilir.</p>
+            </div>
+
+            <h3 class="subsection-title">Çalışanların İş Yüküne Göre Taze Hava İhtiyacı</h3>
+
+            <div class="card">
+                <p>Çalışanların efor seviyesi arttıkça oksijen tüketimi artar. Kişi başı saatlik taze hava gereksinimleri şu şekildedir:</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>İş Yükü Kategorisi</th>
+                            <th>Çalışma Koşulları ve Efor Düzeyi</th>
+                            <th>Kişi Başı Saatlik Taze Hava İhtiyacı</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Hafif İş</strong></td>
+                            <td>Masa başı, büro işleri, oturarak yapılan hassas montaj</td>
+                            <td><strong>20 – 30 m³/saat</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Orta İş</strong></td>
+                            <td>Ayakta yapılan, sürekli hareket gerektiren montaj ve paketleme</td>
+                            <td><strong>40 – 60 m³/saat</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ağır İş</strong></td>
+                            <td>Yüksek efor gerektiren dökümhane, örs, taşımacılık ve maden işleri</td>
+                            <td><strong>80 – 100+ m³/saat</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ÖRNEK SORU 1 -->
+            <div class="example-box">
+                <p><strong>Soru:</strong> Boyutları En = 10 m, Boy = 20 m, Yükseklik = 6 m olan bir konfeksiyon atölyesinde 50 çalışan bulunmakta, atölyedeki makine ve masalar toplam 100 m³ hacim kaplamaktadır. Çalışan başına düşen serbest hava hacmi kaç m³'tür ve mevzuata uygun mudur?</p>
+                <p><strong>Çözüm:</strong></p>
+                <ol>
+                    <li>Tavan yüksekliği 6 m verilmiştir. Ancak kural gereği tavan yüksekliği en fazla <strong>h = 4 m</strong> alınabilir.</li>
+                    <li>Hesaba esas brüt hacim: V<sub>toplam</sub> = 10 m × 20 m × 4 m = <strong>800 m³</strong></li>
+                    <li>Net serbest hacim: V<sub>net</sub> = 800 m³ − 100 m³ = <strong>700 m³</strong></li>
+                    <li>Kişi başı serbest hacim: V<sub>serbest</sub> = 700 m³ / 50 = <strong>14 m³/çalışan</strong></li>
+                    <li>Değerlendirme: 14 m³ ≥ 10 m³ olduğundan mevzuata <strong>UYGUNDUR</strong>.</li>
+                </ol>
+            </div>
+
+            <h3 class="subsection-title">1.3. Karbondioksit (CO₂) Sınır Değerleri ve Hava Kalitesi Göstergeleri</h3>
+
+            <div class="card">
+                <p>
+                    İç ortam hava kalitesinin ve havalandırma yeterliliğinin birincil dolaylı göstergesi ortamdaki <strong>karbondioksit (CO₂)</strong> konsantrasyonudur.
+                </p>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>SINAV VE UYGULAMA İKAZ NOTU:</strong> İç ortam havasında CO₂ seviyesi için kabul edilen mesleki üst sınır <span class="highlight">max 1000 ppm (%0,1)</span> değeridir. CO₂ seviyesinin bu eşiği aşması durumunda ortamda oksijen oranı yetersiz kalır; çalışanlarda baş ağrısı, yorgunluk, dikkat dağınıklığı, karar verme yetisinde zayıflama ve zihinsel/fiziksel performansta düşüş gözlenir. <strong>1000 ppm aşıldığında taze hava debisi artırılmalıdır.</strong></p>
+            </div>
+
+            <div class="metric-grid">
+                <div class="metric-card danger">
+                    <span class="mc-icon">⚠️</span>
+                    <div class="mc-value">1000 ppm</div>
+                    <div class="mc-label">CO₂ Üst Sınır</div>
+                    <div class="mc-sub">%0,1 — Aşılırsa hava debisi artır</div>
+                </div>
+                <div class="metric-card success">
+                    <span class="mc-icon">🌬️</span>
+                    <div class="mc-value">400 ppm</div>
+                    <div class="mc-label">Doğal CO₂</div>
+                    <div class="mc-sub">Temiz atmosfer referansı</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 2. HAVALANDIRMA YÖNTEMLERİ VE TEMEL PRENSİPLERİ              -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum5-2">
+            <h2 class="section-title">
+                <span class="num">2</span>
+                Havalandırma Yöntemleri ve Temel Prensipleri
+            </h2>
+
+            <h3 class="subsection-title">2.1. Havalandırmanın Temel Amaçları ve Mühendislik Prensipleri</h3>
+
+            <div class="card">
+                <p>Havalandırma sistemleri, işyerlerinde sağlıklı çalışma koşulları sağlamak amacıyla <strong>3 ana mühendislik prensibine</strong> dayanır:</p>
+                <ol>
+                    <li><strong>Kirleticiyi Kaynağında Yakalama (Lokal Emiş):</strong> Gaz, buhar ve tozları açığa çıktığı noktada emerek çalışma ortamına yayılmasını önlemek.</li>
+                    <li><strong>Seyreltme (Dilüsyon):</strong> Ortama yayılan kirletici konsantrasyonunu, taze hava vererek müsaade edilen sınır değerlerin (MGBF / OEL) altına düşürmek.</li>
+                    <li><strong>Hava Akım Yönünün Düzenlenmesi (Solunum Bölgesi Koruması):</strong> Hava akımını, kirli havayı çalışanın solunum bölgesinden uzaklaştıracak yönde yönlendirmek; kirli havanın çalışan üzerine doğru akışını engellemek.</li>
+                </ol>
+            </div>
+
+            <!-- HAVALANDIRMA 3 PRENSİP DİYAGRAMI -->
+            <div class="diagram">
+                <div class="diagram-item">
+                    <div class="icon">🎯</div>
+                    <h4>1. Kaynağında Yakalama</h4>
+                    <p>Lokal emiş — Kirletici açığa çıktığı noktada emilir</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">💧</div>
+                    <h4>2. Seyreltme</h4>
+                    <p>Taze hava ile konsantrasyon düşürme</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">🧭</div>
+                    <h4>3. Akım Yönü</h4>
+                    <p>Solunum bölgesini koruyacak yönde akış</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><strong>MEVZUAT NOTU (İşçi Sağlığı ve İş Güvenliği Tüzüğü m.4):</strong> İşveren, teknik ilerlemeleri takip ederek zehirli veya zararlı maddeleri daha az zararlı olanlarla <strong>değiştirmek (ikame)</strong> ve zararları azaltan <strong>havalandırma/arıtma tesisatını sürekli çalışır durumda tutmakla</strong> yükümlüdür.</p>
+            </div>
+
+            <h3 class="subsection-title">2.2. Doğal Havalandırma Sistemleri</h3>
+
+            <div class="card">
+                <p>Mekanik güç kullanılmaksızın havanın doğal kuvvetler etkisiyle hareket etmesidir.</p>
+                <ul>
+                    <li><strong>Rüzgar Basıncı:</strong> Binanın dış yüzeyine çarpan rüzgarın rüzgaraltı ve rüzgarüstü cepheler arasında oluşturduğu basınç farkı ile sağlanan hava akışıdır.</li>
+                    <li><strong>Baca Etkisi (Termal Konveksiyon / Sıcaklık Farkı):</strong> Sıcaklığa bağlı yoğunluk farkından kaynaklanır. Isınan havanın yükselip üst açıklıklardan çıkmasıyla alt açıklıklardan soğuk taze hava içeri çekilir.</li>
+                </ul>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Doğal Havalandırma Avantajları</th>
+                            <th>Sınırlılıkları ve Yetersiz Kaldığı Durumlar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>İlk yatırım ve enerji maliyeti yoktur.</td>
+                            <td>Hava debisi ve akım yönü kontrol edilemez; hava şartlarına bağımlıdır.</td>
+                        </tr>
+                        <tr>
+                            <td>Mekanik arıza ve bakım riski bulunmaz.</td>
+                            <td>Toksik tozlar (BAK-RT), kanserojenler ve silis (SiO₂) varlığında <strong>YETERSİZDİR</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td>Geniş hacimli, düşük riskli alanlarda etkilidir.</td>
+                            <td>Havanın filtrelenmesi, ısıtılması veya neminin ayarlanması imkânsızdır.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="subsection-title">2.3. Mekanik (Cebri) Havalandırma ve Basınç Rejimleri</h3>
+
+            <div class="card">
+                <p>
+                    Mekanik havalandırma; fanlar ve aspiratörler aracılığıyla havanın belirli bir debi ve basınçla hareket ettirilmesidir. Uygulamada <strong>iki farklı basınç rejimi</strong> kullanılır:
+                </p>
+                <ul>
+                    <li><strong>Pozitif (Aşırı) Basınçlı Havalandırma:</strong> İçeriye verilen hava miktarı, dışarı çekilenden fazladır (Q<sub>giren</sub> &gt; Q<sub>çıkan</sub>). İç ortam basıncı yüksek olduğu için dışarıdaki kirli hava kapı/pencere aralıklarından içeri giremez.
+                        <ul>
+                            <li><em>Uygulama Alanları:</em> Ameliyathaneler, temiz odalar (cleanroom), hassas elektronik montaj odaları.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Negatif (Alçak) Basınçlı Havalandırma:</strong> Dışarıya çekilen hava miktarı, içeriye verilenden fazladır (Q<sub>çıkan</sub> &gt; Q<sub>giren</sub>). İç ortam basıncı düşük tutularak içerideki tehlikeli kirleticilerin komşu temiz alanlara sızması önlenir.
+                        <ul>
+                            <li><em>Uygulama Alanları:</em> Kimyasal depolar, boyahaneler, kaynak atölyeleri, akü şarj odaları.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- POZİTİF/NEGATİF BASINÇ DİYAGRAMI -->
+            <div class="diagram">
+                <div class="diagram-item">
+                    <div class="icon">⬆️</div>
+                    <h4>Pozitif Basınç</h4>
+                    <p>Q<sub>giren</sub> &gt; Q<sub>çıkan</sub><br>Ameliyathane, cleanroom</p>
+                </div>
+                <div class="diagram-item">
+                    <div class="icon">⬇️</div>
+                    <h4>Negatif Basınç</h4>
+                    <p>Q<sub>çıkan</sub> &gt; Q<sub>giren</sub><br>Kimyasal depo, boyahane</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 3. GENEL (SEYRELTME) HAVALANDIRMA SİSTEMLERİ                 -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum5-3">
+            <h2 class="section-title">
+                <span class="num">3</span>
+                Genel (Seyreltme) Havalandırma Sistemleri
+            </h2>
+
+            <h3 class="subsection-title">3.1. Genel Havalandırmanın Tanımı ve Çalışma Mekanizması</h3>
+
+            <div class="card">
+                <p>
+                    <strong>Genel havalandırma;</strong> kirleticiyi kaynağında yok etmek yerine, tüm mahale taze hava basarak ortama yayılan kirletici konsantrasyonunu kabul edilebilir mesleki maruziyet sınır değerlerinin altında tutma ilkesidir.
+                </p>
+            </div>
+
+            <h3 class="subsection-title">3.2. Hava Değişim Katsayısı (ACH) Kavramı</h3>
+
+            <div class="card">
+                <p>
+                    <strong>Hava Değişim Katsayısı (Air Change per Hour — ACH):</strong> Bir saat içerisinde kapalı ortama sağlanan taze hava hacminin, ortamın toplam hacmine oranıdır.
+                </p>
+            </div>
+
+            <div class="formula-box">
+                <div class="formula-label">Hava Değişim Katsayısı Formülü</div>
+                <div class="formula">
+                    ACH (1/saat) = <span class="frac"><span class="num">Saatlik Toplam Taze Hava Debisi Q (m³/saat)</span><span class="den">Mahal Hacmi V (m³)</span></span>
+                </div>
+            </div>
+
+            <!-- ÖRNEK SORU 2 -->
+            <div class="example-box">
+                <p><strong>Soru:</strong> Boyutları 10 m × 20 m × 4 m olan bir üretim atölyesinde hava değişim katsayısının ACH = 6 saat⁻¹ olması istenmektedir. Havalandırma fanının sağlaması gereken minimum hava debisi (Q) kaç m³/saat olmalıdır?</p>
+                <p><strong>Çözüm:</strong></p>
+                <ol>
+                    <li>Mahal Hacmi: V = 10 × 20 × 4 = <strong>800 m³</strong></li>
+                    <li>ACH Formülü: ACH = Q / V → 6 = Q / 800</li>
+                    <li>Gerekli Fan Debisi: Q = 6 × 800 = <strong>4800 m³/saat</strong></li>
+                </ol>
+            </div>
+
+            <h3 class="subsection-title">3.3. Genel Havalandırmanın Uygulama Sınırları ve Yetersizlikleri</h3>
+
+            <div class="warning-box">
+                <p><strong>SINAVDA SORULMA RİSKİ YÜKSEK: GENEL HAVALANDIRMANIN KESİNLİKLE UYGULANAMAYACAĞI DURUMLAR</strong></p>
+                <p>Genel (seyreltme) havalandırması aşağıdaki durumlarda <strong>KESİNLİKLE UYGULANAMAZ</strong>:</p>
+                <ol>
+                    <li>Yüksek derecede toksik maddeler ve ağır metaller (<strong>BAK-RT</strong>: Berilyum, Arsenik, Kurşun, Radyum, Toryum) kullanıldığında,</li>
+                    <li>Silikozis riski oluşturan kristalin silisyumdioksit (SiO₂) bileşenleri (<strong>Kuvars, Kristobalit, Tridimit</strong>) açığa çıktığında,</li>
+                    <li>Kanserojen, mutajen veya maruziyet sınır değeri çok düşük kimyasal gaz ve buharlar yayıldığında,</li>
+                    <li>Kirletici belirli bir noktadan yüksek debide salınıyorsa.</li>
+                </ol>
+                <p><strong>Nedeni:</strong> Genel havalandırma kirleticiyi yok etmez, tüm işyerine yayarak çalışanların maruziyetini artırır. Bu alanlarda <strong>SADECE Lokal Havalandırma</strong> kullanılmalıdır.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 4. LOKAL (LOKAL EMİŞLİ) HAVALANDIRMA SİSTEMLERİ              -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum5-4">
+            <h2 class="section-title">
+                <span class="num">4</span>
+                Lokal (Lokal Emişli) Havalandırma Sistemleri
+            </h2>
+
+            <h3 class="subsection-title">4.1. Lokal Havalandırmanın Önemi ve 4 Temel Bileşeni</h3>
+
+            <div class="card">
+                <p>
+                    <strong>Lokal havalandırma;</strong> kirleticiyi çalışanların solunum bölgesine ulaşmadan, açığa çıktığı noktada yakalayarak tahliye eden <span class="highlight">en etkili mühendislik kontrolüdür</span>.
+                </p>
+            </div>
+
+            <!-- LOKAL HAVALANDIRMA AKIŞ ŞEMASI -->
+            <div class="flow-diagram">
+                <div class="flow-step">
+                    <span class="fs-icon">🎯</span>
+                    1. Davlumbaz / Başlık
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    <span class="fs-icon">🛤️</span>
+                    2. Kanal Tesisatı
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    <span class="fs-icon">🧹</span>
+                    3. Hava Temizleme
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    <span class="fs-icon">💨</span>
+                    4. Fan
+                </div>
+            </div>
+
+            <h3 class="subsection-title">1. Davlumbaz / Başlık (Hood)</h3>
+
+            <div class="card">
+                <ul>
+                    <li><strong>Kapalı Başlıklar:</strong> Prosesi tamamen kapatır. En yüksek toplama verimine sahiptir (Örn: Çeker ocaklar).</li>
+                    <li><strong>Açık Başlıklar:</strong> Kaynağın yakınına yerleştirilen başlık türüdür.</li>
+                    <li><strong>Yan Emişli Başlıklar:</strong> Yıkama ve kaplama havuzlarında üstten çalışmayı engellememek için yandan emiş yapar.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">2. Kanal Tesisatı (Ducts) ve Hava Taşınım Hızları</h3>
+
+            <div class="card">
+                <p>Kanallarda birikme ve tıkanmayı önlemek için kirleticinin türüne göre minimum hava akım hızları sağlanmalıdır:</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Taşınan Kirletici Türü</th>
+                            <th>Kanal İçi Minimum Taşınım Hızı (m/s)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gözle Görülmeyen Gazlar, Buharlar ve Dumanlar</td>
+                            <td><strong>5 – 10 m/s</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Ortalama Katı Tozlar, Ahşap Talaşı ve Metal Tozları</td>
+                            <td><strong>10 – 15 m/s</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Ağır, Nemli, Yapışkan ve İri Parçacıklı Tozlar</td>
+                            <td><strong>15 – 20 m/s</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="subsection-title">3. Hava Temizleme Cihazları (Filtre / Arıtıcı)</h3>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Arıtıcı Tipi</th>
+                            <th>Çalışma Prensibi</th>
+                            <th>Hedef Kirletici Türü</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Siklonlar</strong> (Merkezkaç Ayırıcılar)</td>
+                            <td>Merkezkaç kuvveti ile kaba partikülleri duvara çarptırarak çöktürür.</td>
+                            <td>İri tozlar, ahşap talaşı, kaba partiküller</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HEPA Filtreler</strong></td>
+                            <td>Gözenekli lifli yapısıyla mikron altı partikülleri yüksek verimle tutar.</td>
+                            <td>Solunabilir tozlar (0,1–5,0 µm), ince aerosoller</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sulu Filtreler</strong> (Scrubber)</td>
+                            <td>Kirli havayı su perdesi veya püskürtme ile temas ettirir.</td>
+                            <td>Yapışkan tozlar, asidik/bazik gazlar, sis</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Aktif Karbon Filtreler</strong></td>
+                            <td>Adsorpsiyon (yüzeyde tutma) yöntemiyle gaz moleküllerini yakalar.</td>
+                            <td>Organik buharlar, solventler ve kokular</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="subsection-title">4. Fan (İtici-Çekici) Sistemleri</h3>
+
+            <div class="card">
+                <ul>
+                    <li><strong>Aksiyal (Eksenel) Fanlar:</strong> Hava akışı fan miline paraleldir. Düşük basınçta yüksek hava debisi sağlarlar. Genel havalandırmada tercih edilir.</li>
+                    <li><strong>Santrifüj (Radyal) Fanlar:</strong> Hava akışı merkezkaç kuvvetiyle fırlatılır. Yüksek basınç kayıplı kanallı lokal emiş sistemlerinde kullanılır.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">4.2. Yakalama Hızı (Capture Velocity) ve Mesafe Kuralı</h3>
+
+            <div class="card">
+                <ul>
+                    <li><strong>Yakalama Hızı (V<sub>x</sub>):</strong> Kirletici tanecikleri emiş başlığına doğru çeken emiş noktasındaki minimum hava hızıdır.</li>
+                    <li><strong>Mesafe Kuralı (Ters Kare Kanunu):</strong> Düz flanşsız açık bir emiş başlığında gerekli hava debisi (Q) ile mesafe (x) arasındaki ilişki:</li>
+                </ul>
+            </div>
+
+            <div class="formula-box">
+                <div class="formula-label">Yakalama Hızı ve Debi Formülü</div>
+                <div class="formula">
+                    Q = V<sub>x</sub> × (10x² + A)
+                </div>
+                <p style="margin-top:0.8rem; font-size:0.85rem; color:var(--text-light);">
+                    <strong>V<sub>x</sub>:</strong> x mesafesindeki yakalama hızı (m/s) &nbsp;|&nbsp;
+                    <strong>x:</strong> Kaynak ile başlık arasındaki mesafe (m) &nbsp;|&nbsp;
+                    <strong>A:</strong> Başlık ağız alanı (m²)
+                </p>
+            </div>
+
+            <div class="info-box">
+                <p><strong>EMİŞ ETKİSİ — TERS KARE KANUNU:</strong></p>
+                <p>Emiş etkisi / hızı <strong>∝ 1/x²</strong> ile değişir.</p>
+                <p>Mesafe 2 katına (2x) çıkarıldığında emiş yüzey alanı 4 katına çıkar ve <strong>emiş hızı başlangıç değerinin %25'ine (1/4'üne) düşer</strong>.</p>
+            </div>
+
+            <!-- ÖRNEK SORU 3 -->
+            <div class="example-box">
+                <p><strong>Soru:</strong> Kaynak dumanını emmek için tasarlanmış A = 0,1 m² kesit alanına sahip açık bir emiş başlığının x₁ = 0,3 m mesafedeki dumanı yakalamak için V₁ = 1,0 m/s yakalama hızına ihtiyacı vardır. Emiş başlığı kaynaktan uzaklaştırılıp x₂ = 0,6 m mesafeye çekilirse, aynı hava hızı (1,0 m/s) sağlanabilmesi için havalandırma debisi (Q) kaç katına çıkarılmalıdır?</p>
+                <p><strong>Çözüm:</strong></p>
+                <ol>
+                    <li>x₁ = 0,3 m durumunda gerekli debi:<br>Q₁ = 1,0 × (10 × (0,3)² + 0,1) = 1,0 × (0,9 + 0,1) = <strong>1,0 m³/s</strong></li>
+                    <li>x₂ = 0,6 m durumunda gerekli debi:<br>Q₂ = 1,0 × (10 × (0,6)² + 0,1) = 1,0 × (3,6 + 0,1) = <strong>3,7 m³/s</strong></li>
+                    <li>Değişim Oranı: Q₂ / Q₁ = 3,7 / 1,0 = <strong>3,7 katına çıkarılmalıdır.</strong></li>
+                </ol>
+                <p><em>Sonuç:</em> Mesafe 2 katına çıktığında gerekli hava debisi yaklaşık <strong>3,7 – 4 kat</strong> artmaktadır.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 5. İKLİMLENDİRME (HVAC) SİSTEMLERİ, HİJYEN VE KONTROLLER     -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum5-5">
+            <h2 class="section-title">
+                <span class="num">5</span>
+                İklimlendirme (HVAC) Sistemleri, Hijyen ve Periyodik Kontroller
+            </h2>
+
+            <h3 class="subsection-title">5.1. İklimlendirme (HVAC) Kavramı ve Temel Parametreler</h3>
+
+            <div class="card">
+                <p>
+                    <strong>İklimlendirme (HVAC — Heating, Ventilation, Air Conditioning);</strong> kapalı mekanlarda termal konfor ve hava kalitesini sağlamak üzere <strong>4 temel parametrenin eşzamanlı kontrol</strong> edilmesidir:
+                </p>
+                <ol>
+                    <li><strong>Sıcaklık:</strong> Operatif iç ortam sıcaklığının mevsimsel olarak <strong>20 – 26 °C</strong> aralığında tutulması esastır.</li>
+                    <li><strong>Bağıl Nem:</strong> İç ortam bağıl nem sınırları <strong>%30 – %65</strong> aralığında olmalıdır. Optimal konfor seviyesi <strong>%45 – %55</strong>'tir.</li>
+                    <li><strong>Hava Hareketi (Akım Hızı):</strong> Çalışanlar üzerinde rahatsız edici hava akımı (cereyan) oluşturmayacak <strong>0,1 – 0,5 m/s</strong> aralığında olmalıdır (&gt;0,25 m/s üzerindeki hızlar rahatsızlık hissi yaratabilir).</li>
+                    <li><strong>Hava Temizliği:</strong> Havanın MERV/HEPA filtre standartlarına uygun olarak toz, polen ve mikroorganizmalardan arındırılmasıdır.</li>
+                </ol>
+            </div>
+
+            <!-- HVAC 4 PARAMETRE METRİK -->
+            <div class="metric-grid">
+                <div class="metric-card accent">
+                    <span class="mc-icon">🌡️</span>
+                    <div class="mc-value">20–26 °C</div>
+                    <div class="mc-label">Sıcaklık</div>
+                    <div class="mc-sub">Operatif iç ortam</div>
+                </div>
+                <div class="metric-card success">
+                    <span class="mc-icon">💧</span>
+                    <div class="mc-value">%30–%65</div>
+                    <div class="mc-label">Bağıl Nem</div>
+                    <div class="mc-sub">Optimal: %45–%55</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">💨</span>
+                    <div class="mc-value">0,1–0,5 m/s</div>
+                    <div class="mc-label">Hava Akım Hızı</div>
+                    <div class="mc-sub">&gt;0,25 m/s rahatsızlık</div>
+                </div>
+                <div class="metric-card">
+                    <span class="mc-icon">🧹</span>
+                    <div class="mc-value">MERV/HEPA</div>
+                    <div class="mc-label">Hava Temizliği</div>
+                    <div class="mc-sub">Toz, polen, mikroorganizma</div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">5.2. İklimlendirme Hijyeni, Nem Kontrolü ve Lejyonella Riski</h3>
+
+            <div class="card">
+                <p>İklimlendirme ve soğutma kulelerindeki durgun su birikintileri biyolojik risk oluşturur.</p>
+                <ul>
+                    <li><strong>Lejyonella (Legionella pneumophila) Riski:</strong> Soğutma kuleleri, nemlendirme hazneleri ve iklimlendirme santrallerinde hızla çoğalan tehlikeli bir bakteridir.</li>
+                    <li><strong>Bulaşma Yolu:</strong> Bakteri içeren su damlacıklarının (aerosol) kanallar aracılığıyla ortama yayılması ve solunması sonucu şiddetli akciğer enfeksiyonuna (<strong>Lejyoner Hastalığı</strong>) yol açar.</li>
+                    <li><strong>Önleme:</strong> Santral depoları periyodik olarak temizlenmeli, klorlama/biyosit uygulamaları yapılmalı ve durgun su oluşumu engellenmelidir.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">5.3. Periyodik Kontrol ve Bakım Standartları</h3>
+
+            <div class="warning-box">
+                <p><strong>LEGAL ZORUNLULUK / YASAL SÜRE:</strong> İş sağlığı ve güvenliği mevzuatı uyarınca, havalandırma ve iklimlendirme tesisatlarının periyodik kontrol ve ölçümleri <span class="highlight">YILDA EN AZ 1 KEZ</span> yetkili uzmanlarca yapılmalı ve raporlanmalıdır.</p>
+            </div>
+
+            <div class="card">
+                <p><strong>Periyodik Bakım ve Denetim Kontrol Listesi (Checklist):</strong></p>
+                <ul>
+                    <li>☐ <strong>Hava Debisi ve Akım Hızı Ölçümü:</strong> Emiş başlıkları ve kanallardaki hava hızlarının tasarlanan yakalama hızlarını sağladığının anemometre ile ölçülmesi.</li>
+                    <li>☐ <strong>Filtre Temizlik ve Fark Basınç Kontrolü:</strong> HEPA, aktif karbon ve toz filtrelerinin manometreler üzerinden basınç farklarının (DP) incelenmesi.</li>
+                    <li>☐ <strong>Kanal Sızdırmazlığı ve Taşıma Hızı:</strong> Kanallarda hava kaçağı, korozyon, birikinti veya tıkanma kontrolü.</li>
+                    <li>☐ <strong>MGBF (MSDS) Uyumluluğu:</strong> Kullanılan kimyasalların niteliğine uygun havalandırma ve filtreleme yapıldığının teyidi.</li>
+                    <li>☐ <strong>Ortam İklimlendirme Ölçümleri:</strong> Sıcaklık, nem, hava akım hızı ve CO₂ konsantrasyonunun (max 1000 ppm) ölçülmesi.</li>
+                    <li>☐ <strong>EK-2 Yıllık Değerlendirme Raporu:</strong> İş güvenliği uzmanı ve işyeri hekimi tarafından çalışma ortamı gözetim sonuçlarının EK-2 Yıllık Değerlendirme Formuna kaydedilerek arşivlenmesi ve işverene sunulması.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SINAV ÖZET TABLOSU                                           -->
+        <!-- ============================================================ -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="num">★</span>
+                Sınav Özet Tablosu
+            </h2>
+
+            <div class="card">
+                <p>
+                    Bölüm 5 bünyesinde incelenen tüm kavramlar, formüller, değerler ve uygulama sınırları sınav tekrarı amacıyla aşağıda özetlenmiştir:
+                </p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Konu / Kavram</th>
+                            <th>Anahtar Bilgi</th>
+                            <th>Yasal Değer / Formül</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Temiz Hava — Azot</strong></td>
+                            <td>En yüksek oran</td>
+                            <td><strong>%78,08</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Temiz Hava — Oksijen</strong></td>
+                            <td>İkinci sırada</td>
+                            <td><strong>%20,95</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Temiz Hava — CO₂</strong></td>
+                            <td>Doğal referans</td>
+                            <td><strong>%0,04 (400 ppm)</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Solunabilir Toz</strong></td>
+                            <td>Alveollere ulaşan</td>
+                            <td><strong>0,1–5,0 µm</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lifsi Toz</strong></td>
+                            <td>Çap &lt; 3 µm, uzunluk ≥ 3×çap</td>
+                            <td><strong>Çap &lt; 3 µm</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Toksik Tozlar (MnemoniK)</strong></td>
+                            <td>BAK-RT kodlaması</td>
+                            <td><strong>Berilyum, Arsenik, Kurşun, Radyum, Toryum</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Serbest Hava Hacmi</strong></td>
+                            <td>Kişi başı minimum</td>
+                            <td><strong>≥ 10 m³/çalışan</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tavan Yüksekliği Sınırı</strong></td>
+                            <td>Hesaba katılan max yükseklik</td>
+                            <td><strong>4,00 m</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>CO₂ Üst Sınır</strong></td>
+                            <td>İç ortam havası</td>
+                            <td><strong>1000 ppm (%0,1)</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hafif İş — Taze Hava</strong></td>
+                            <td>Masa başı, ofis</td>
+                            <td><strong>20–30 m³/saat</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Orta İş — Taze Hava</strong></td>
+                            <td>Ayakta montaj</td>
+                            <td><strong>40–60 m³/saat</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ağır İş — Taze Hava</strong></td>
+                            <td>Dökümhane, maden</td>
+                            <td><strong>80–100+ m³/saat</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ACH Formülü</strong></td>
+                            <td>Hava değişim katsayısı</td>
+                            <td><strong>ACH = Q / V</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Yakalama Debisi</strong></td>
+                            <td>Mesafe kuralı</td>
+                            <td><strong>Q = V<sub>x</sub> × (10x² + A)</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Emiş Etkisi</strong></td>
+                            <td>Ters kare kanunu</td>
+                            <td><strong>∝ 1/x²</strong> (2x → %25)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kanal Hızı — Gaz/Buhar</strong></td>
+                            <td>Gözle görülmeyen</td>
+                            <td><strong>5–10 m/s</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kanal Hızı — Toz</strong></td>
+                            <td>Ortalama katı</td>
+                            <td><strong>10–15 m/s</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kanal Hızı — Ağır Toz</strong></td>
+                            <td>Nemli, yapışkan</td>
+                            <td><strong>15–20 m/s</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>HVAC — Sıcaklık</strong></td>
+                            <td>Operatif iç ortam</td>
+                            <td><strong>20–26 °C</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>HVAC — Bağıl Nem</strong></td>
+                            <td>Optimal konfor</td>
+                            <td><strong>%30–%65</strong> (optimal %45–%55)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HVAC — Hava Akımı</strong></td>
+                            <td>Cereyansız aralık</td>
+                            <td><strong>0,1–0,5 m/s</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Periyodik Kontrol</strong></td>
+                            <td>Havalandırma/iklimlendirme</td>
+                            <td><strong>Yılda en az 1 kez</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <p>
+                    Havalandırma ve iklimlendirme, işyerinde solunum sağlığının korunmasında <strong>birincil mühendislik kontrolüdür</strong>. Genel (seyreltme) havalandırma yalnızca düşük riskli kirleticilerde uygulanabilir; <strong>toksik tozlar (BAK-RT), silis (SiO₂) ve kanserojenler söz konusu olduğunda SADECE lokal emiş kullanılmalıdır</strong>. Hava kalitesinin birincil göstergesi <strong>CO₂ konsantrasyonudur (max 1000 ppm)</strong>. Tüm ölçümler, İş Güvenliği Uzmanı ve İşyeri Hekimi tarafından <strong>EK-2 Yıllık Değerlendirme Formuna</strong> işlenerek <strong>yılda en az 1 kez</strong> yetkili uzmanlarca raporlanır ve İşveren-İGU-İYH üçlü imzasıyla karara bağlanır. Sınav hazırlığında özellikle <strong>tavan yüksekliği 4 m sınırına</strong>, <strong>ACH ve yakalama hızı formüllerine</strong> ve <strong>CO₂ 1000 ppm eşiğine</strong> dikkat edilmelidir.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BÖLÜM GEZİNME (ALT)                                          -->
+        <!-- ============================================================ -->
+        <nav class="chapter-nav" aria-label="Bölümler arası gezinme">
+            <a href="../bolum-04/konu-anlatimi.html" class="prev">
+                <span class="cn-arrow">←</span>
+                <span class="cn-text">
+                    <small>Önceki Bölüm</small>
+                    <strong>Bölüm 4: Biyolojik Risk Etmenleri</strong>
+                </span>
+            </a>
+            <a href="../bolum-06/konu-anlatimi.html" class="next">
+                <span class="cn-arrow">→</span>
+                <span class="cn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Bölüm 6: Konu Anlatımı</strong>
+                </span>
+            </a>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- HAZIRLAYAN KARTI                                             -->
+        <!-- ============================================================ -->
+        <section class="author-card" aria-label="Hazırlayan bilgileri">
+            <div class="avatar" aria-hidden="true">SA</div>
+            <div class="author-info">
+                <h3>Sıraç Aksan</h3>
+                <p class="role">
+                    Konya Teknik Üniversitesi<br>
+                    İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans<br>
+                    <strong>Ders:</strong> Çalışma Ortamı Gözetimi &nbsp;|&nbsp; <strong>Öğretim Üyesi:</strong> Bilgehan Kekeç
+                </p>
+                <div class="contact-row">
+                    <a href="tel:+905069282100" aria-label="Telefon">
+                        <span aria-hidden="true">📞</span> 0506 928 21 00
+                    </a>
+                    <a href="mailto:saracaksan@gmail.com" aria-label="E-posta">
+                        <span aria-hidden="true">✉️</span> saracaksan@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- ==================== SAYFA SONU ==================== -->
+<footer class="page-footer">
+    <div class="container">
+        <p><strong>Çalışma Ortamı Gözetimi</strong> — Bölüm 5: Ortam Havası, Havalandırma ve İklimlendirme</p>
+        <p>
+            <a href="../../../index.html">Tüm Dersler</a> &nbsp;·&nbsp;
+            <a href="../index.html">Ders Ana Sayfası</a> &nbsp;·&nbsp;
+            <a href="sorular.html">Sorular</a> &nbsp;·&nbsp;
+            <a href="sunum.html">Sunum</a>
+        </p>
+        <p style="margin-top:0.6rem; font-size:0.76rem; opacity:0.75;">
+            © 2026 Sıraç Aksan — Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans<br>
+            Bu içerik yalnızca eğitim amaçlıdır. Güncel mevzuat için resmî kaynaklara başvurunuz.
+        </p>
+    </div>
+</footer>
+
+<!-- ==================== YUKARI ÇIK BUTONU ==================== -->
+<button class="scroll-top" id="scrollTopBtn" aria-label="Sayfanın başına dön" title="Yukarı çık">↑</button>
+
+<script>
+    (function () {
+        'use strict';
+
+        var btn = document.getElementById('scrollTopBtn');
+        var toggle = function () {
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        };
+        window.addEventListener('scroll', toggle, { passive: true });
+        toggle();
+
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var targetId = this.getAttribute('href').slice(1);
+                if (!targetId) return;
+                var target = document.getElementById(targetId);
+                if (!target) return;
+                e.preventDefault();
+                var offset = target.getBoundingClientRect().top + window.scrollY - 20;
+                window.scrollTo({ top: offset, behavior: 'smooth' });
+                history.replaceState(null, '', '#' + targetId);
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

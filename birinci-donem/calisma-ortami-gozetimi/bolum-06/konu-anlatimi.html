@@ -1,1 +1,1834 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Çalışma Ortamı Gözetimi · Bölüm 06 · Konu Anlatımı</title><style>*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f4f7fb;color:#172033}a{text-decoration:none;color:inherit}.top{background:linear-gradient(135deg,#071a33,#1769aa);color:white}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:900}.brand small{display:block;color:#b9cce0;font-size:10px;margin-top:4px}.back{border:1px solid #ffffff2b;padding:9px 13px;border-radius:9px;font-size:11px;background:#ffffff0d}.hero{padding:52px 0}.eyebrow{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#b9e7ff;font-weight:800}.hero h1{font-size:clamp(30px,4vw,48px);margin:14px 0 8px;line-height:1.08}.hero p{color:#cbd9e6;font-size:13px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.pill{font-size:10px;padding:7px 10px;border-radius:8px;background:#ffffff12;border:1px solid #ffffff18}main{padding:35px 0 70px}.head{margin-bottom:20px}.head h2{margin:0;color:#071a33}.head p{color:#64748b;font-size:11px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 5px 22px #0f172a0a}.num{width:34px;height:34px;border-radius:9px;background:#eef6fc;color:#1769aa;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}.card h3{margin:14px 0 7px;font-size:15px}.card p{font-size:10px;color:#64748b}.links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px}.links a{font-size:9px;font-weight:800;color:#1769aa;background:#f6f9fc;border:1px solid #e7edf3;border-radius:8px;padding:10px 5px;text-align:center}.empty{padding:20px;background:white;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b;font-size:11px}.footer{background:#04101f;color:#91a6bb;padding:25px 0;font-size:10px;line-height:1.7}@media(max-width:700px){.grid{grid-template-columns:1fr}.links{grid-template-columns:1fr}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}}</style></head><body><header class="top"><div class="wrap nav"><div class="brand">KTÜN · İSG Eğitim Portalı<small>2026–2027</small></div><a class="back" href="../../index.html">← Ders Ana Sayfası</a></div><div class="wrap hero"><span class="eyebrow">Çalışma Ortamı Gözetimi</span><h1>Bölüm 06</h1><p>Konu Anlatımı</p><div class="meta"><span class="pill">Bölüm 06</span><span class="pill">Konu Anlatımı</span></div></div></header><main><div class="wrap"><div class="empty">Bu alan içerik eklenmesi için hazırdır. Şu anda boş bırakılmıştır.</div></div></main><footer class="footer"><div class="wrap">Hazırlayan: Sıraç AKSAN · 0506 928 22 10 · saracaksan@gmail.com</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Çalışma Ortamı Gözetimi - Bölüm 6: İşyeri Kontrolleri ve Belgelendirme | Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans">
+    <meta name="author" content="Sıraç Aksan">
+    <title>Bölüm 6: İşyeri Kontrolleri ve Belgelendirme | Çalışma Ortamı Gözetimi</title>
+    <style>
+        :root {
+            --primary: #0f4c5c;
+            --primary-light: #1b6b7a;
+            --accent: #e36414;
+            --accent-light: #fb8b24;
+            --bg: #f5f7fa;
+            --card: #ffffff;
+            --text: #1e2a32;
+            --text-light: #4a5a68;
+            --border: #d9e2ec;
+            --exam-bg: #fff4e6;
+            --exam-border: #e36414;
+            --success: #2a9d8f;
+            --warning: #e9c46a;
+            --danger: #e76f51;
+            --info: #264653;
+            --metric-bg: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            --metric-accent: linear-gradient(135deg, #e36414 0%, #fb8b24 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+
+        /* ==================== ÜST BAŞLIK ==================== */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: #fff;
+            padding: 2rem 1.5rem 1.75rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: -40px; right: -40px;
+            width: 220px; height: 220px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+        }
+
+        .page-header .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 0.75rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            align-items: center;
+        }
+
+        .breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+            transition: border-bottom-style 0.2s;
+        }
+
+        .breadcrumb a:hover { border-bottom-style: solid; }
+        .breadcrumb .sep { opacity: 0.6; }
+
+        .page-header h1 {
+            font-size: 1.85rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+        }
+
+        .page-header .subtitle {
+            font-size: 0.98rem;
+            opacity: 0.92;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.85rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.28rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        .badge-primary { background: rgba(255,255,255,0.2); color: #fff; }
+        .badge-accent { background: var(--accent); color: #fff; }
+        .badge-success { background: var(--success); color: #fff; }
+        .badge-warning { background: var(--warning); color: #5a3a1a; }
+
+        /* ==================== ÜST BÖLÜM GEZİNME ==================== */
+        .top-chapter-nav {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 0.75rem;
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .top-chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.55rem 0.85rem;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            transition: background 0.2s, transform 0.2s;
+            font-size: 0.85rem;
+        }
+
+        .top-chapter-nav a:hover {
+            background: rgba(255,255,255,0.22);
+            transform: translateY(-2px);
+        }
+
+        .top-chapter-nav a.next {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .top-chapter-nav .tn-arrow {
+            font-size: 1.1rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .top-chapter-nav .tn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.25;
+        }
+
+        .top-chapter-nav .tn-text small {
+            font-size: 0.68rem;
+            opacity: 0.75;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .top-chapter-nav .tn-text strong {
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .top-chapter-nav .tn-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 800;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(227,100,20,0.4);
+        }
+
+        /* ==================== KONTEYNER ==================== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        main { padding: 2rem 0 3rem; }
+
+        /* ==================== HIZLI ERİŞİM ==================== */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 0.85rem;
+            margin-bottom: 2rem;
+        }
+
+        .quick-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 0.9rem 1.1rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 0.88rem;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .quick-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .quick-nav a .qn-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px; height: 38px;
+            border-radius: 10px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 1.05rem;
+            flex-shrink: 0;
+        }
+
+        .quick-nav a.qn-accent .qn-icon { background: var(--accent); }
+        .quick-nav a.qn-success .qn-icon { background: var(--success); }
+        .quick-nav a.qn-warning .qn-icon { background: var(--warning); color: #5a3a1a; }
+
+        .quick-nav a .qn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+        }
+
+        .quick-nav a .qn-text small {
+            font-weight: 400;
+            font-size: 0.72rem;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+
+        /* ==================== İÇİNDEKİLER ==================== */
+        .toc {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.06);
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc h2::before { content: '📋'; font-size: 1.15rem; }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.35rem 2rem;
+        }
+
+        .toc ol li {
+            counter-increment: toc-counter;
+            padding: 0.3rem 0;
+            border-bottom: 1px dashed var(--border);
+            font-size: 0.9rem;
+        }
+
+        .toc ol li::before {
+            content: counter(toc-counter) ". ";
+            font-weight: 700;
+            color: var(--accent);
+            margin-right: 0.25rem;
+        }
+
+        .toc ol li a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc ol li a:hover { color: var(--accent); }
+
+        /* ==================== BÖLÜM BAŞLIKLARI ==================== */
+        .section {
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--primary);
+            padding-bottom: 0.55rem;
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .section-title .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px; height: 36px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .subsection-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            margin: 1.7rem 0 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .subsection-title::before {
+            content: '';
+            display: inline-block;
+            width: 6px; height: 22px;
+            background: var(--accent);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        /* ==================== KARTLAR ==================== */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 1.3rem;
+            box-shadow: 0 2px 8px rgba(15,76,92,0.05);
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover { box-shadow: 0 4px 16px rgba(15,76,92,0.1); }
+        .card p { margin-bottom: 0.75rem; }
+        .card p:last-child { margin-bottom: 0; }
+
+        /* ==================== SINAV KUTUSU ==================== */
+        .exam-box {
+            background: var(--exam-bg);
+            border-left: 5px solid var(--exam-border);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .exam-box::before {
+            content: '⚠️ SINAVDA ÇIKABİLİR';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .exam-box p, .exam-box li { font-size: 0.93rem; color: #5a3a1a; }
+        .exam-box ul, .exam-box ol { margin: 0.5rem 0 0.5rem 1.2rem; }
+
+        /* ==================== BİLGİ KUTUSU ==================== */
+        .info-box {
+            background: #e8f4f8;
+            border-left: 5px solid var(--primary-light);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .info-box::before {
+            content: 'ℹ️ AKADEMİK NOT';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--primary-light);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== UYARI KUTUSU ==================== */
+        .warning-box {
+            background: #fde8e8;
+            border-left: 5px solid var(--danger);
+            border-radius: 0 12px 12px 0;
+            padding: 1.15rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .warning-box::before {
+            content: '🚨 KRİTİK UYARI';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--danger);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ==================== LİSTELER ==================== */
+        .card ul, .card ol { margin: 0.5rem 0 0.75rem 1.35rem; }
+        .card ul li, .card ol li { margin-bottom: 0.35rem; }
+        .card ul li::marker { color: var(--accent); }
+        .card ol li::marker { color: var(--accent); font-weight: 700; }
+
+        /* ==================== TABLOLAR ==================== */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.4rem 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            background: var(--card);
+            min-width: 620px;
+        }
+
+        thead { background: var(--primary); color: #fff; }
+        thead th {
+            padding: 0.8rem 0.95rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.82rem;
+            letter-spacing: 0.3px;
+        }
+
+        tbody td {
+            padding: 0.7rem 0.95rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tbody tr:last-child td { border-bottom: none; }
+        tbody tr:nth-child(even) { background: #f8fafc; }
+        tbody tr:hover { background: #eef6f8; }
+
+        /* ==================== METRİK KARTLARI ==================== */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 0.85rem;
+            margin: 1.3rem 0;
+        }
+
+        .metric-card {
+            background: var(--metric-bg);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(15,76,92,0.2);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .metric-card:hover { transform: translateY(-4px); }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 90px; height: 90px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+        }
+
+        .metric-card .mc-icon {
+            font-size: 1.6rem;
+            margin-bottom: 0.35rem;
+            display: block;
+        }
+
+        .metric-card .mc-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        .metric-card .mc-label {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            font-weight: 600;
+        }
+
+        .metric-card .mc-sub {
+            font-size: 0.7rem;
+            opacity: 0.7;
+            margin-top: 0.35rem;
+            font-style: italic;
+        }
+
+        .metric-card.accent {
+            background: var(--metric-accent);
+            box-shadow: 0 4px 14px rgba(227,100,20,0.3);
+        }
+
+        .metric-card.success {
+            background: linear-gradient(135deg, #2a9d8f 0%, #4bb3a6 100%);
+            box-shadow: 0 4px 14px rgba(42,157,143,0.3);
+        }
+
+        .metric-card.danger {
+            background: linear-gradient(135deg, #c1121f 0%, #e76f51 100%);
+            box-shadow: 0 4px 14px rgba(231,111,81,0.3);
+        }
+
+        .metric-card.warning {
+            background: linear-gradient(135deg, #e9c46a 0%, #f4a261 100%);
+            color: #4a2c0a;
+            box-shadow: 0 4px 14px rgba(233,196,106,0.35);
+        }
+
+        .metric-card.warning .mc-label,
+        .metric-card.warning .mc-sub { color: #4a2c0a; }
+
+        /* ==================== DİYAGRAM ==================== */
+        .diagram {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+            justify-content: center;
+            margin: 1.4rem 0;
+        }
+
+        .diagram-item {
+            flex: 1 1 170px;
+            max-width: 230px;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.1rem;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .diagram-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .diagram-item .icon { font-size: 1.8rem; margin-bottom: 0.4rem; }
+        .diagram-item h4 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        .diagram-item p {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* ==================== FORMÜL KUTUSU ==================== */
+        .formula-box {
+            background: #fff;
+            border: 2px dashed var(--primary-light);
+            border-radius: 12px;
+            padding: 1.2rem 1.4rem;
+            margin: 1.2rem 0;
+            text-align: center;
+        }
+
+        .formula-box .formula-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 0.6rem;
+        }
+
+        .formula-box .formula {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            line-height: 1.7;
+        }
+
+        /* ==================== VURGU ==================== */
+        .highlight {
+            background: linear-gradient(transparent 60%, #ffe066 60%);
+            font-weight: 600;
+            padding: 0 2px;
+        }
+
+        .keyword {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin: 0 2px;
+        }
+
+        .keyword-accent { background: var(--accent); }
+
+        /* ==================== ÖRNEK SORU KUTUSU ==================== */
+        .example-box {
+            background: #f0f9f4;
+            border-left: 5px solid var(--success);
+            border-radius: 0 12px 12px 0;
+            padding: 1.2rem 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        .example-box::before {
+            content: '✏️ ÖSYM TİPİ ÖRNEK SORU';
+            display: block;
+            font-size: 0.76rem;
+            font-weight: 800;
+            color: var(--success);
+            letter-spacing: 1px;
+            margin-bottom: 0.6rem;
+            text-transform: uppercase;
+        }
+
+        .example-box p { font-size: 0.93rem; margin-bottom: 0.6rem; }
+        .example-box strong { color: var(--primary); }
+        .example-box ol { margin: 0.5rem 0 0.4rem 1.3rem; font-size: 0.9rem; }
+        .example-box ol li { margin-bottom: 0.3rem; }
+        .example-box .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.3rem 1rem;
+            margin: 0.6rem 0;
+            font-size: 0.9rem;
+        }
+        .example-box .options span {
+            padding: 0.25rem 0.6rem;
+            background: #fff;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+        .example-box .correct-answer {
+            display: inline-block;
+            background: var(--success);
+            color: #fff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin: 0.4rem 0;
+        }
+
+        /* ==================== ALINTI ==================== */
+        blockquote {
+            background: #f0f4f8;
+            border-left: 4px solid var(--primary-light);
+            padding: 1rem 1.4rem;
+            margin: 1.15rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        blockquote cite {
+            display: block;
+            margin-top: 0.55rem;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: var(--primary);
+        }
+
+        /* ==================== BÖLÜM GEZİNME (ALT) ==================== */
+        .chapter-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .chapter-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 6px rgba(15,76,92,0.05);
+        }
+
+        .chapter-nav a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            box-shadow: 0 6px 16px rgba(15,76,92,0.12);
+        }
+
+        .chapter-nav a.next {
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+
+        .chapter-nav a .cn-arrow {
+            font-size: 1.4rem;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .chapter-nav a .cn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+            flex: 1;
+        }
+
+        .chapter-nav a .cn-text small {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .chapter-nav a .cn-text strong {
+            font-size: 0.92rem;
+            color: var(--primary);
+        }
+
+        /* ==================== HAZIRLAYAN KARTI ==================== */
+        .author-card {
+            background: linear-gradient(135deg, #0f4c5c 0%, #1b6b7a 100%);
+            color: #fff;
+            border-radius: 14px;
+            padding: 1.4rem 1.6rem;
+            margin: 2rem 0 1.5rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.2rem;
+            align-items: center;
+            box-shadow: 0 6px 20px rgba(15,76,92,0.18);
+        }
+
+        .author-card .avatar {
+            width: 68px; height: 68px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            font-weight: 700;
+            border: 2px solid rgba(255,255,255,0.35);
+            flex-shrink: 0;
+        }
+
+        .author-card .author-info h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .author-card .author-info .role {
+            font-size: 0.8rem;
+            opacity: 0.88;
+            margin-bottom: 0.55rem;
+            line-height: 1.45;
+        }
+
+        .author-card .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.2rem;
+            font-size: 0.83rem;
+        }
+
+        .author-card .contact-row a,
+        .author-card .contact-row span {
+            color: #fff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            opacity: 0.95;
+            transition: opacity 0.2s;
+        }
+
+        .author-card .contact-row a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* ==================== SAYFA SONU ==================== */
+        .page-footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.85);
+            text-align: center;
+            padding: 1.6rem 1.5rem;
+            font-size: 0.83rem;
+            margin-top: 2rem;
+        }
+
+        .page-footer .container p { margin-bottom: 0.35rem; }
+        .page-footer a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255,255,255,0.5);
+        }
+        .page-footer a:hover { border-bottom-style: solid; }
+
+        /* ==================== YUKARI ÇIK ==================== */
+        .scroll-top {
+            position: fixed;
+            bottom: 1.5rem; right: 1.5rem;
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            font-size: 1.15rem;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(227,100,20,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+            z-index: 999;
+        }
+
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { transform: translateY(-3px); background: var(--accent-light); }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 900px) {
+            .top-chapter-nav {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            .top-chapter-nav .tn-center { display: none; }
+            .top-chapter-nav a.next { justify-content: flex-start; text-align: left; }
+        }
+
+        @media (max-width: 768px) {
+            body { font-size: 15px; }
+            .page-header { padding: 1.5rem 1rem 1.25rem; }
+            .page-header h1 { font-size: 1.3rem; }
+            .page-header .subtitle { font-size: 0.88rem; }
+            .breadcrumb { font-size: 0.76rem; }
+            .badge { font-size: 0.68rem; padding: 0.22rem 0.65rem; }
+            .container { padding: 0 1rem; }
+            .toc { padding: 1rem 1.15rem; }
+            .toc ol { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.15rem; gap: 0.5rem; }
+            .section-title .num { width: 30px; height: 30px; font-size: 0.85rem; }
+            .subsection-title { font-size: 1rem; }
+            .card { padding: 1rem 1.1rem; }
+            .exam-box, .info-box, .warning-box, .example-box { padding: 0.95rem 1.05rem; }
+            table { font-size: 0.8rem; min-width: 560px; }
+            thead th, tbody td { padding: 0.55rem 0.65rem; }
+            .diagram-item { flex: 1 1 100%; max-width: 100%; }
+            .chapter-nav { grid-template-columns: 1fr; }
+            .chapter-nav a.next { flex-direction: row; text-align: left; }
+            .author-card { grid-template-columns: 1fr; text-align: center; }
+            .author-card .avatar { margin: 0 auto; }
+            .author-card .contact-row { justify-content: center; }
+            .quick-nav { grid-template-columns: 1fr; }
+            .scroll-top { bottom: 1rem; right: 1rem; width: 42px; height: 42px; }
+            .metric-card .mc-value { font-size: 1.25rem; }
+            .metric-card .mc-icon { font-size: 1.35rem; }
+            .formula-box .formula { font-size: 0.95rem; }
+            .example-box .options { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .page-header h1 { font-size: 1.1rem; }
+            .section-title { font-size: 1.05rem; }
+            blockquote { padding: 0.8rem 1rem; font-size: 0.86rem; }
+        }
+
+        /* ==================== YAZDIRMA ==================== */
+        @media print {
+            .page-header { background: #fff !important; color: #000 !important; }
+            .page-header h1, .page-header .subtitle, .breadcrumb a { color: #000 !important; }
+            .badge { border: 1px solid #ccc; color: #000 !important; background: #f0f0f0 !important; }
+            .top-chapter-nav { display: none !important; }
+            .card { box-shadow: none; border: 1px solid #ccc; }
+            .exam-box, .info-box, .warning-box, .example-box { background: #fff; border: 1px solid #ccc; }
+            .scroll-top, .quick-nav, .chapter-nav { display: none !important; }
+            .author-card { background: #f0f0f0 !important; color: #000 !important; }
+            .author-card .contact-row a, .author-card .contact-row span { color: #000 !important; }
+            .metric-card { background: #f0f0f0 !important; color: #000 !important; box-shadow: none !important; border: 1px solid #ccc; }
+            .metric-card .mc-label, .metric-card .mc-sub { color: #000 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== ÜST BAŞLIK ==================== -->
+<header class="page-header">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="Site haritası">
+            <a href="../../../index.html">🏠 Tüm Dersler</a>
+            <span class="sep">›</span>
+            <a href="../index.html">📚 Çalışma Ortamı Gözetimi</a>
+            <span class="sep">›</span>
+            <span>Bölüm 6</span>
+        </nav>
+        <h1>Bölüm 6: İşyeri Kontrolleri ve Belgelendirme</h1>
+        <p class="subtitle">Periyodik Kontroller, Sağlık Muayeneleri, Resmi Belgeler ve Yasal Denetimler</p>
+        <div class="badge-row">
+            <span class="badge badge-primary">EKİPNET Sistemi</span>
+            <span class="badge badge-accent">Periyodik Kontrol</span>
+            <span class="badge badge-success">Onaylı Defter</span>
+            <span class="badge badge-warning">İşin Durdurulması</span>
+        </div>
+
+        <!-- ÜST BÖLÜM GEZİNME -->
+        <nav class="top-chapter-nav" aria-label="Üst bölüm gezinme">
+            <a href="../bolum-05/konu-anlatimi.html">
+                <span class="tn-arrow">←</span>
+                <span class="tn-text">
+                    <small>Önceki Bölüm</small>
+                    <strong>Bölüm 5: Ortam Havası, Havalandırma</strong>
+                </span>
+            </a>
+            <span class="tn-center">6/7</span>
+            <a href="../final/konu-anlatimi.html" class="next">
+                <span class="tn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Final: Genel Tekrar</strong>
+                </span>
+                <span class="tn-arrow">→</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- ==================== İÇERİK ==================== -->
+<main>
+    <div class="container">
+
+        <!-- HIZLI ERİŞİM -->
+        <nav class="quick-nav" aria-label="Hızlı erişim">
+            <a href="konu-anlatimi.html" class="qn-accent">
+                <span class="qn-icon">📖</span>
+                <span class="qn-text">Konu Anlatımı<small>Bu sayfa</small></span>
+            </a>
+            <a href="sorular.html" class="qn-success">
+                <span class="qn-icon">❓</span>
+                <span class="qn-text">Sorular<small>Test &amp; alıştırma</small></span>
+            </a>
+            <a href="sunum.html" class="qn-warning">
+                <span class="qn-icon">📊</span>
+                <span class="qn-text">Sunum<small>Slayt gösterisi</small></span>
+            </a>
+            <a href="../index.html">
+                <span class="qn-icon">📚</span>
+                <span class="qn-text">Ders Ana Sayfası<small>Tüm bölümler</small></span>
+            </a>
+        </nav>
+
+        <!-- İÇİNDEKİLER -->
+        <nav class="toc" aria-label="İçindekiler">
+            <h2>İçindekiler</h2>
+            <ol>
+                <li><a href="#bolum6-1">İşyeri Kontrolleri ve Teknik Periyodik Kontroller</a></li>
+                <li><a href="#bolum6-2">Periyodik Sağlık Muayeneleri ve İş Hijyeni Kontrolleri</a></li>
+                <li><a href="#bolum6-3">Hazırlanması Gereken Resmi Belgeler ve Dokümantasyon</a></li>
+                <li><a href="#bolum6-4">Evrak Saklama Süreleri ve Yasal Denetimler</a></li>
+                <li><a href="#bolum6-5">Örnek Soru Uygulamaları ve Çözümleri</a></li>
+            </ol>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- 1. İŞYERİ KONTROLLERİ VE TEKNİK PERİYODİK KONTROLLER        -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum6-1">
+            <h2 class="section-title">
+                <span class="num">1</span>
+                İşyeri Kontrolleri ve Teknik Periyodik Kontroller
+            </h2>
+
+            <h3 class="subsection-title">1.1. Yasal Dayanak ve Temel Esaslar</h3>
+
+            <div class="card">
+                <p>
+                    İşyerlerinde teknik periyodik kontrollerin yürütülmesi, <strong>6331 sayılı İş Sağlığı ve Güvenliği Kanunu</strong>'na bağlı olarak çıkarılan <em>"İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği"</em> hükümlerine dayanmaktadır. Düzenlemenin temel hukuki amacı; işyerinde kullanılan iş ekipmanlarının, tesisatların ve makinelerin <strong>kullanım ömrü boyunca</strong> çalışanların sağlık ve güvenliğine yönelik bir risk oluşturmasını engellemek, yıpranma, arıza ve kaza potansiyellerini <strong>önceden tespit ederek ortadan kaldırmaktır</strong>.
+                </p>
+            </div>
+
+            <div class="exam-box">
+                <p><strong>Sınav Püf Noktası (Görev Ayrımı):</strong> Mevzuat uyarınca <strong>Çalışma Ortamı Gözetimi</strong> (periyodik kontrol, ortam ölçümü, acil durum planı, fiziksel/kimyasal risklerin takibi) öncelikli olarak <span class="keyword">İş Güvenliği Uzmanı</span>nın görev ve sorumluluk alanındadır. Buna karşın <strong>Sağlık Gözetimi</strong> (işe giriş ve periyodik muayeneler, aşılamalar, kişisel sağlık dosyaları) doğrudan <span class="keyword keyword-accent">İşyeri Hekimi</span>nin ana sorumluluğundadır. ÖSYM sınavlarında iki görevin yetki sınırları sıkça sorgulanmaktadır.</p>
+            </div>
+
+            <h3 class="subsection-title">1.2. Ekipman Grupları ve Azami Periyodik Kontrol Süreleri</h3>
+
+            <div class="card">
+                <p>
+                    İş ekipmanlarının periyodik kontrolleri, ilgili standartlarda aksi belirtilmediği sürece mevzuatta öngörülen <strong>azami süreler aşılmaksızın</strong> gerçekleştirilir.
+                </p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ekipman ve Tesisat Grubu</th>
+                            <th>Azami Periyodik Kontrol Süresi</th>
+                            <th>Kapsam ve Teknik Kontrol Esasları</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Basınçlı Kaplar ve Tesisatlar</strong></td>
+                            <td><strong>En geç 1 Yıl</strong></td>
+                            <td>Buhar kazanları, kalorifer kazanları, hava tankları, hidroforlar, kompresörler ve basınçlı gaz tüpleri. İlgili standartlarda aksi belirtilmedikçe hidrostatik test esastır.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kaldırma ve İletme Ekipmanları</strong></td>
+                            <td><strong>En geç 1 Yıl</strong></td>
+                            <td>Vinçler, forkliftler, caraskallar, paletözler, asansörler, yapı araçları ve yük platformları. Beyan edilen yükün <strong>en az 1,25 katı</strong> ile dinamik ve statik testler uygulanır.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tesisatlar</strong></td>
+                            <td><strong>En geç 1 Yıl</strong></td>
+                            <td>Elektrik iç tesisatı, topraklama tesisatı, paratoner (yıldırımdan korunma) tesisatı, yangın tesisatı ve hortumları, havalandırma ve iklimlendirme tesisatları.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tezgahlar</strong></td>
+                            <td><strong>En geç 1 Yıl</strong></td>
+                            <td>Torna, freze, matkap, presler ve giyotin makaslar. İmalatçı standartlarında daha kısa bir süre belirtilmemişse azami süre 1 Yıl'dır.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İş Makineleri</strong></td>
+                            <td><strong>Risk Değerlendirmesi / İmalatçı Kriterleri</strong></td>
+                            <td>Kazıcı, yükleyici, dozer, ekskavatör ve silindirler. Standartlarda süre yoksa imalatçı kriterleri ve risk değerlendirmesi sonuçlarına göre belirlenir.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- METRİK: PERİYODİK KONTROL SÜRELERİ -->
+            <div class="metric-grid">
+                <div class="metric-card accent">
+                    <span class="mc-icon">⏱️</span>
+                    <div class="mc-value">1 Yıl</div>
+                    <div class="mc-label">Basınçlı Kap</div>
+                    <div class="mc-sub">Buhar kazanı, kompresör</div>
+                </div>
+                <div class="metric-card accent">
+                    <span class="mc-icon">🏗️</span>
+                    <div class="mc-value">1 Yıl</div>
+                    <div class="mc-label">Kaldırma Ekipmanı</div>
+                    <div class="mc-sub">Vinç, forklift, asansör</div>
+                </div>
+                <div class="metric-card accent">
+                    <span class="mc-icon">⚡</span>
+                    <div class="mc-value">1 Yıl</div>
+                    <div class="mc-label">Tesisatlar</div>
+                    <div class="mc-sub">Elektrik, paratoner, yangın</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">🔧</span>
+                    <div class="mc-value">1,25 Kat</div>
+                    <div class="mc-label">Test Yükü</div>
+                    <div class="mc-sub">Dinamik + statik test</div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">1.3. Yetkili Kontrol Personeli ve EKİPNET Sistemi</h3>
+
+            <div class="card">
+                <ul>
+                    <li><strong>Yetkili Meslek Grupları:</strong> Periyodik kontrolleri yapmaya yetkili kişiler; <strong>makine mühendisleri, elektrik/elektronik mühendisleri, inşaat mühendisleri, mimarlar, teknik öğretmenler, yüksek teknikerler ve teknikerlerdir</strong> (uzmanlık alanlarına göre yetkilendirilirler).</li>
+                    <li><strong>EKİPNET Zorunluluğu:</strong> Çalışma ve Sosyal Güvenlik Bakanlığı tarafından devreye alınan <span class="keyword">EKİPNET (Ekipman Kayıt Sistemi)</span> üzerinden kayıt yaptırmayan kişilerin düzenlediği periyodik kontrol raporları <strong>hukuken geçersiz</strong> sayılır. Yetkili personelin sistemden aldığı geçici veya kalıcı kayıt numarası, düzenlenen her periyodik kontrol raporunun <strong>başlığında yer almak zorundadır</strong>.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">1.4. Periyodik Kontrol Raporlarının Yönetimi</h3>
+
+            <div class="card">
+                <p>
+                    Hazırlanan periyodik kontrol raporları standart bir formatta düzenlenmeli; <strong>ekipmanın teknik özelliklerini, uygulanan test ve deney yöntemlerini, ölçüm cihazlarının kalibrasyon bilgilerini, önceki kontrol verilerini, tespit edilen uygunsuzlukları</strong> ve <strong>"kullanılmasında sakınca yoktur/vardır"</strong> şeklindeki net sonuç ve kanaat bölümünü içermelidir. Bu raporlar, resmi denetimlerde ibraz edilmek üzere saklanmalı ve işverence İSG dosyasında muhafaza edilmelidir.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 2. PERİYODİK SAĞLIK MUAYENELERİ VE İŞ HİJYENİ KONTROLLERİ    -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum6-2">
+            <h2 class="section-title">
+                <span class="num">2</span>
+                Periyodik Sağlık Muayeneleri ve İş Hijyeni Kontrolleri
+            </h2>
+
+            <h3 class="subsection-title">2.1. İşe Giriş ve Periyodik Sağlık Muayene Süreleri</h3>
+
+            <div class="card">
+                <p>
+                    Çalışanların işe girişlerinde, iş değişikliklerinde ve işyerinin tehlike sınıfına göre belirlenen kanuni periyotlarda <strong>sağlık muayenelerinin yapılması zorunludur</strong>.
+                </p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>İşyeri Tehlike Sınıfı</th>
+                            <th>Azami Periyodik Sağlık Muayenesi Süresi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Az Tehlikeli İşyerleri</strong></td>
+                            <td><strong>En geç 5 yılda bir</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tehlikeli İşyerleri</strong></td>
+                            <td><strong>En geç 3 yılda bir</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Çok Tehlikeli İşyerleri</strong></td>
+                            <td><strong>En geç 1 yılda bir</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- METRİK: SAĞLIK MUAYENE SÜRELERİ -->
+            <div class="metric-grid">
+                <div class="metric-card success">
+                    <span class="mc-icon">🟢</span>
+                    <div class="mc-value">5 Yıl</div>
+                    <div class="mc-label">Az Tehlikeli</div>
+                    <div class="mc-sub">Sağlık muayenesi</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">🟡</span>
+                    <div class="mc-value">3 Yıl</div>
+                    <div class="mc-label">Tehlikeli</div>
+                    <div class="mc-sub">Sağlık muayenesi</div>
+                </div>
+                <div class="metric-card danger">
+                    <span class="mc-icon">🔴</span>
+                    <div class="mc-value">1 Yıl</div>
+                    <div class="mc-label">Çok Tehlikeli</div>
+                    <div class="mc-sub">Sağlık muayenesi</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Özel Risk Grupları:</strong> Gebe ve emziren kadınlar, 18 yaş altı genç çalışanlar, kronik hastalığı olanlar ve engelli çalışanlar gibi özel risk grubundaki personelin sağlık muayeneleri, <strong>işyeri hekiminin gerekli görmesi ve takdiri halinde</strong> bu süreler beklenmeksizin <strong>daha kısa aralıklarla</strong> yapılabilir.</p>
+            </div>
+
+            <h3 class="subsection-title">2.2. İş Hijyeni Ölçümleri ve Yenilenme Halleri</h3>
+
+            <div class="card">
+                <p>
+                    İşyerindeki fiziksel, kimyasal ve biyolojik risk etmenlerinin maruziyet sınır değerlerine uygunluğunu belirleyen <strong>iş hijyeni (ortam) ölçümlerinin</strong> (gürültü, titreşim, toz, kimyasal gaz, termal konfor, aydınlatma vb.) periyodik olarak yenilenmesini gerektiren durumlar şunlardır:
+                </p>
+                <ol>
+                    <li>İşyeri ortamında, çalışma şartlarında veya iş organizasyonunda <strong>bir değişiklik meydana gelmesi</strong>,</li>
+                    <li>Üretim teknolojisinde, kullanılan hammadde veya yardımcı maddelerde <strong>değişiklik olması</strong>,</li>
+                    <li>Maruziyet şartlarında veya yasal sınır değerlerde <strong>bir değişim yaşanması</strong>,</li>
+                    <li>İşyeri hekimi veya iş güvenliği uzmanının risk değerlendirmesi kapsamında <strong>ölçümü gerekli görmesi</strong>,</li>
+                    <li>İşyerinde meydana gelen <strong>kaza, ramak kala olay veya meslek hastalığı</strong> sonrasında ölçümün tekrarlanmasının uygun bulunması.</li>
+                </ol>
+            </div>
+
+            <div class="exam-box">
+                <p><strong>Sınav Notu:</strong> İş hijyeni ölçümleri <strong>tek seferlik bir yükümlülük değildir</strong>. Yukarıdaki 5 durumdan herhangi birinin gerçekleşmesi halinde ölçümlerin <strong>yenilenmesi zorunludur</strong>. ÖSYM bu durumları çeldiricili soru olarak sıkça sormaktadır.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 3. HAZIRLANMASI GEREKEN RESMİ BELGELER VE DOKÜMANTASYON      -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum6-3">
+            <h2 class="section-title">
+                <span class="num">3</span>
+                Hazırlanması Gereken Resmi Belgeler ve Dokümantasyon Yönetimi
+            </h2>
+
+            <h3 class="subsection-title">3.1. Risk Değerlendirmesi Raporu</h3>
+
+            <div class="card">
+                <p>
+                    Risk değerlendirmesi raporu, işyerinin <strong>tehlike sınıfına göre</strong> belirlenen azami periyotlarla tamamen yenilenir.
+                </p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tehlike Sınıfı</th>
+                            <th>Risk Değerlendirmesi Yenileme Süresi</th>
+                            <th>Acil Durum Planı Yenileme Süresi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Çok Tehlikeli Sınıf</strong></td>
+                            <td><strong>En geç 2 yılda bir</strong></td>
+                            <td><strong>En geç 2 yılda bir</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tehlikeli Sınıf</strong></td>
+                            <td><strong>En geç 4 yılda bir</strong></td>
+                            <td><strong>En geç 4 yılda bir</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Az Tehlikeli Sınıf</strong></td>
+                            <td><strong>En geç 6 yılda bir</strong></td>
+                            <td><strong>En geç 6 yılda bir</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>Sınav Notu:</strong> İşyerinin <strong>taşınması, binalarda değişiklik yapılması, yeni teknoloji veya hammaddeye geçilmesi, iş kazası/meslek hastalığı yaşanması veya mevzuat değişikliği</strong> durumlarında periyotlar beklenmeksizin risk değerlendirmesi <strong>tamamen veya kısmen yenilenir</strong>.</p>
+            </div>
+
+            <h3 class="subsection-title">3.2. Acil Durum Planları ve Tatbikatlar</h3>
+
+            <div class="card">
+                <ul>
+                    <li><strong>Acil Durum Planı Yenileme Süreleri:</strong>
+                        <ul>
+                            <li>Çok Tehlikeli Sınıf: <strong>En geç 2 yılda bir</strong></li>
+                            <li>Tehlikeli Sınıf: <strong>En geç 4 yılda bir</strong></li>
+                            <li>Az Tehlikeli Sınıf: <strong>En geç 6 yılda bir</strong></li>
+                        </ul>
+                    </li>
+                    <li><strong>Acil Durum Tatbikat Periyodu:</strong> Hazırlanan acil durum planlarının uygulanabilirliğini ve tahliye organizasyonunu kontrol etmek amacıyla tatbikatlar <span class="highlight">en geç 1 yılda bir</span> yapılır, raporlaştırılır ve kayıt altına alınır.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">3.3. Onaylı Defter (İSG Tespit ve Öneri Defteri)</h3>
+
+            <div class="card">
+                <ul>
+                    <li><strong>Hukuki Niteliği:</strong> İşyerinde yapılan tespit, öneri ve İSG faaliyetlerinin yazıldığı <strong>resmi evrak niteliğindeki kanuni belgedir</strong>.</li>
+                    <li><strong>İmza Yetkilileri:</strong> İş güvenliği uzmanı, işyeri hekimi ve işveren veya işveren vekili tarafından <strong>müştereken</strong> imzalanır.</li>
+                    <li><strong>Teknik ve Yasal Esaslar:</strong> Sayfaları <strong>seri numaralı ve otokopilidir</strong>. Çalışma ve İş Kurumu İl Müdürlüğü veya <strong>Noter</strong> tarafından mühürlenip onaylanması şarttır. Defterin asıl nüshası <strong>işverende</strong> kalır; suretleri ise uzman ve hekim tarafından saklanır.</li>
+                    <li><strong>Yargıtay ve Hukuki Boyut:</strong> Onaylı deftere yazılan tespit ve öneriler, işverene <strong>doğrudan tebliğ edilmiş sayılır</strong>. İşverenin İSG eksikliklerinden haberdar olduğuna dair yargı mercileri önünde <strong>kesin delil teşkil eder</strong>.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">3.4. Yıllık Çalışma Planı ve EK-2 Yıllık Değerlendirme Raporu</h3>
+
+            <div class="card">
+                <p>
+                    İş sağlığı ve güvenliği hizmetlerinin planlı yürütülmesi amacıyla <strong>İSG Uzmanı ve İşyeri Hekimi</strong> tarafından ortaklaşa <strong>Yıllık Çalışma Planı</strong> hazırlanır.
+                </p>
+                <p>
+                    Yıl sonunda ise yürütülen tüm İSG çalışmalarını, ortam ölçümlerini, sağlık gözetimi verilerini, iş kazası ve meslek hastalığı istatistiklerini ile eğitim kayıtlarını kapsayan <strong>EK-2 Yıllık Değerlendirme Raporu</strong> oluşturulur.
+                </p>
+                <ul>
+                    <li><strong>Onay ve İmza Süreci:</strong> Hazırlanan EK-2 formu; <strong>İşveren/İşveren Vekili, İşyeri Hekimi ve İş Güvenliği Uzmanı</strong> tarafından müştereken imzalanır.</li>
+                    <li><strong>İSG-KATİP ve OSGB Yükümlülüğü:</strong> Rapor verileri <span class="keyword keyword-accent">İSG-KATİP</span> sistemi üzerinden bildirilir. OSGB'ler bu raporun bir suretini arşivlerinde saklamak ve <strong>sözleşme süresi sonunda veya talep halinde işverene eksiksiz teslim etmekle</strong> yükümlüdür.</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">3.5. İSG Eğitim Belgeleri ve Süreleri</h3>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>İşyeri Tehlike Sınıfı</th>
+                            <th>Asgari Eğitim Süresi (Çalışan Başına)</th>
+                            <th>Yenileme Periyodu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Çok Tehlikeli Sınıf</strong></td>
+                            <td><strong>Yılda en az 16 saat</strong></td>
+                            <td><strong>Her 1 yılda bir</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tehlikeli Sınıf</strong></td>
+                            <td><strong>2 yılda en az 12 saat</strong></td>
+                            <td><strong>Her 2 yılda bir</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Az Tehlikeli Sınıf</strong></td>
+                            <td><strong>3 yılda en az 8 saat</strong></td>
+                            <td><strong>Her 3 yılda bir</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="exam-box">
+                <p><strong>Dikkat Edilmesi Gereken Nokta:</strong> İSG eğitim süreleri <strong>çalışan sayısından bağımsızdır</strong>. Sadece işyerinin <strong>tehlike sınıfına</strong> göre belirlenir. 50 ve üzeri çalışan sayısı, İSG Kurulu kurulma şartı için önem taşır; ancak bireysel eğitim sürelerini etkilemez. Bu, sınavlarda sıkça karşılaşılan bir çeldiricidir.</p>
+            </div>
+
+            <h3 class="subsection-title">3.6. İş Kazası ve Meslek Hastalığı Bildirim Belgeleri</h3>
+
+            <div class="card">
+                <ul>
+                    <li><strong>İş Kazası Bildirimi:</strong> Kazadan sonraki <span class="highlight">3 iş günü</span> içinde Sosyal Güvenlik Kurumu'na (SGK) bildirilmek zorundadır.</li>
+                    <li><strong>Meslek Hastalığı Bildirimi:</strong> Öğrenildiği veya tıbbi teşhisin konulduğu günden itibaren <span class="highlight">3 iş günü</span> içinde SGK'ya bildirilmelidir.</li>
+                </ul>
+            </div>
+
+            <div class="metric-grid">
+                <div class="metric-card danger">
+                    <span class="mc-icon">🚑</span>
+                    <div class="mc-value">3 İş Günü</div>
+                    <div class="mc-label">İş Kazası Bildirimi</div>
+                    <div class="mc-sub">SGK'ya</div>
+                </div>
+                <div class="metric-card danger">
+                    <span class="mc-icon">🩺</span>
+                    <div class="mc-value">3 İş Günü</div>
+                    <div class="mc-label">Meslek Hastalığı Bildirimi</div>
+                    <div class="mc-sub">SGK'ya</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 4. EVRAK SAKLAMA SÜRELERİ VE YASAL DENETİMLER                -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum6-4">
+            <h2 class="section-title">
+                <span class="num">4</span>
+                Evrak Saklama Süreleri ve Yasal Denetimler
+            </h2>
+
+            <h3 class="subsection-title">4.1. İSG Belgeleri Evrak Saklama Süreleri Özeti</h3>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Belge / Kayıt Türü</th>
+                            <th>Yasal Saklama Süresi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Genel Ölçüm, Ortam Gözetimi ve Onaylı Defter Nüshaları</strong></td>
+                            <td><strong>10 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kişisel Sağlık Dosyaları (Genel İSG)</strong></td>
+                            <td><strong>15 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Radyasyon İle Çalışmalarda Sağlık ve Maruziyet Kayıtları</strong></td>
+                            <td><strong>30 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kanserojen/Mutajen Maddeler ve Özel Biyolojik Etkenler Maruziyet Kayıtları</strong></td>
+                            <td><strong>40 Yıl</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- METRİK: SAKLAMA SÜRELERİ -->
+            <div class="metric-grid">
+                <div class="metric-card success">
+                    <span class="mc-icon">📋</span>
+                    <div class="mc-value">10 Yıl</div>
+                    <div class="mc-label">Genel Ölçüm</div>
+                    <div class="mc-sub">Ortam gözetimi, onaylı defter</div>
+                </div>
+                <div class="metric-card success">
+                    <span class="mc-icon">🩺</span>
+                    <div class="mc-value">15 Yıl</div>
+                    <div class="mc-label">Kişisel Sağlık</div>
+                    <div class="mc-sub">Genel İSG dosyaları</div>
+                </div>
+                <div class="metric-card warning">
+                    <span class="mc-icon">☢️</span>
+                    <div class="mc-value">30 Yıl</div>
+                    <div class="mc-label">Radyasyon</div>
+                    <div class="mc-sub">Sağlık ve maruziyet kayıtları</div>
+                </div>
+                <div class="metric-card danger">
+                    <span class="mc-icon">⚠️</span>
+                    <div class="mc-value">40 Yıl</div>
+                    <div class="mc-label">Kanserojen/Mutajen</div>
+                    <div class="mc-sub">Özel biyolojik etkenler</div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">4.2. Bakanlık İş Müfettişleri Denetimleri ve İşin Durdurulması</h3>
+
+            <div class="card">
+                <p>
+                    Çalışma ve Sosyal Güvenlik Bakanlığı İş Müfettişleri, işyerlerinde İSG mevzuatına uyumu <strong>denetlemeye yetkilidir</strong>.
+                </p>
+            </div>
+
+            <div class="warning-box">
+                <p><strong>İŞİN DURDURULMASI SEBEPLERİ:</strong></p>
+                <ul>
+                    <li>Çalışanların hayatı için <strong>tehlikeli bir husus</strong> tespit edildiğinde,</li>
+                    <li>Binalar ve eklentilerinde <strong>çökme veya yangın riski</strong> öngörüldüğünde,</li>
+                    <li>Maden işyerlerinde <strong>en az iki yerden ayrı giriş-çıkış (çift kaçış yolu)</strong> bulunmaması halinde,</li>
+                    <li>Çok tehlikeli sınıfta yer alan <strong>maden, metal ve yapı işlerinde risk değerlendirmesi yapılmamışsa</strong> iş durdurulur.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <p><strong>Yargıtay Kararlarına Göre İşverenin Geniş Kontrol ve Denetim Yükümlülüğü:</strong></p>
+                <blockquote>
+                    <strong>Önlem Alma ve Denetleme Yükümlülüğü (Yargıtay 10. HD, 31.10.1978):</strong> İşveren sadece önlem almakla yükümlülüğünü tamamlamış sayılmaz. Alınan önlemlere uyulup uyulmadığını <strong>denetlemek ve uyulmasını temin etmek zorundadır</strong>. İşyerinde geniş anlamda doğabilecek tüm riskleri önleyecek bir <strong>kontrol mekanizması</strong> kurulmalıdır.
+                </blockquote>
+                <blockquote>
+                    <strong>Bilim ve Teknolojiyi Takip Yükümlülüğü (Yargıtay 10. HD, 17.4.1984):</strong> İşveren salt mevzuatta öngörülen tedbirlerle sınırlı kalamaz; günümüz <strong>bilim ve teknolojisinin gerekli kıldığı önlemleri dahi almakla</strong> yükümlüdür. İş güvenliği asla <strong>çalışanın kendi dikkatine bırakılamaz</strong>.
+                </blockquote>
+                <blockquote>
+                    <strong>KKD Kullanımının Etkin Denetimi (Yargıtay 9. HD, 16.6.1988):</strong> Kişisel koruyucu donanımı çalışana teslim etmek yeterli değildir; bu malzemenin amacına uygun kullanıldığını <strong>sürekli ve etkin bir şekilde denetleme</strong> yükümlülüğü işverene aittir.
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 5. ÖRNEK SORU UYGULAMALARI VE ÇÖZÜMLERİ                      -->
+        <!-- ============================================================ -->
+        <section class="section" id="bolum6-5">
+            <h2 class="section-title">
+                <span class="num">5</span>
+                Örnek Soru Uygulamaları ve Çözümleri
+            </h2>
+
+            <!-- SORU 1 -->
+            <div class="example-box">
+                <p><strong>Soru 1:</strong> İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği'ne göre, işyerinde kullanılan buhar kazanları ve kaldırma ekipmanlarının aksi standartlarda belirtilmedikçe periyodik kontrolleri azami kaç yılda bir yapılmalıdır?</p>
+                <div class="options">
+                    <span>A) 1 Yıl – 1 Yıl</span>
+                    <span>B) 1 Yıl – 2 Yıl</span>
+                    <span>C) 2 Yıl – 3 Yıl</span>
+                    <span>D) 3 Yıl – 5 Yıl</span>
+                    <span>E) 5 Yıl – 5 Yıl</span>
+                </div>
+                <p><span class="correct-answer">Doğru Cevap: A</span></p>
+                <p><strong>Detaylı Çözüm ve Mevzuat Gerekçesi:</strong></p>
+                <ol>
+                    <li><strong>Yasal Dayanak:</strong> İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği Ek-III Periyodik Kontrol Çizelgesi.</li>
+                    <li><strong>Kritik Bilgi:</strong> Basınçlı kaplar grubunda yer alan buhar kazanları ile kaldırma-iletme ekipmanları grubunda yer alan vinç ve forkliftlerin periyodik kontrolleri standartlarda aksi belirtilmedikçe <strong>azami 1 Yıl</strong> periyotla yapılmak zorundadır.</li>
+                    <li><strong>Çeldirici Analizi:</strong> A şıkkı dışındaki tüm periyotlar mevzuattaki azami süre sınırını aştığı için yanlıştır.</li>
+                </ol>
+            </div>
+
+            <!-- SORU 2 -->
+            <div class="example-box">
+                <p><strong>Soru 2:</strong> Çok tehlikeli sınıfta yer alan 150 çalışanlı bir maden işletmesinde çalışanların alması gereken asgari İSG eğitim süresi ve yenileme sıklığı aşağıdakilerin hangisinde doğru olarak verilmiştir?</p>
+                <div class="options">
+                    <span>A) Yılda en az 8 saat – Her 3 yılda bir</span>
+                    <span>B) 2 yılda en az 12 saat – Her 2 yılda bir</span>
+                    <span>C) Yılda en az 12 saat – Her 1 yılda bir</span>
+                    <span>D) Yılda en az 16 saat – Her 1 yılda bir</span>
+                    <span>E) 3 yılda en az 16 saat – Her 3 yılda bir</span>
+                </div>
+                <p><span class="correct-answer">Doğru Cevap: D</span></p>
+                <p><strong>Detaylı Çözüm ve Mevzuat Gerekçesi:</strong></p>
+                <ol>
+                    <li><strong>Yasal Dayanak:</strong> Çalışanların İş Sağlığı ve Güvenliği Eğitimlerinin Usul ve Esasları Hakkında Yönetmelik Madde 11.</li>
+                    <li><strong>Kritik Bilgi:</strong> Çok Tehlikeli sınıfta yer alan işyerlerinde çalışanlara verilmesi gereken İSG eğitimi çalışan başına <strong>yılda en az 16 saat</strong> ve yenileme sıklığı <strong>her 1 yılda bir</strong>'dir.</li>
+                    <li><strong>Çeldirici Analizi (Sınav Tuzağı):</strong> Soru kökünde verilen <strong>150 çalışan sayısı bir çeldiricidir</strong>. 6331 sayılı Kanun kapsamında 50 ve üzeri çalışan sayısı İSG Kurulu kurulma şartı için önem taşırken, <strong>bireysel İSG eğitim süreleri çalışan sayısından bağımsız olarak sadece işyerinin Tehlike Sınıfına göre belirlenir</strong>.</li>
+                </ol>
+            </div>
+
+            <!-- SORU 3 -->
+            <div class="example-box">
+                <p><strong>Soru 3:</strong> Tehlikeli sınıfta yer alan bir işyerinde yapılmış olan Risk Değerlendirmesi Raporu ile Acil Durum Planı, mevzuata göre azami kaç yılda bir tamamen yenilenmelidir?</p>
+                <div class="options">
+                    <span>A) RD: 2 Yıl / ADP: 2 Yıl</span>
+                    <span>B) RD: 4 Yıl / ADP: 4 Yıl</span>
+                    <span>C) RD: 6 Yıl / ADP: 6 Yıl</span>
+                    <span>D) RD: 4 Yıl / ADP: 2 Yıl</span>
+                    <span>E) RD: 2 Yıl / ADP: 4 Yıl</span>
+                </div>
+                <p><span class="correct-answer">Doğru Cevap: B</span></p>
+                <p><strong>Detaylı Çözüm ve Mevzuat Gerekçesi:</strong></p>
+                <ol>
+                    <li><strong>Yasal Dayanak:</strong> İş Sağlığı ve Güvenliği Risk Değerlendirmesi Yönetmeliği Madde 12 ve İşyerlerinde Acil Durumlar Hakkında Yönetmelik Madde 14.</li>
+                    <li><strong>Kritik Bilgi:</strong> Tehlikeli sınıftaki işyerlerinde <strong>hem Risk Değerlendirmesi Raporu hem de Acil Durum Planı azami 4 yılda bir</strong> yenilenir.</li>
+                    <li><strong>Çeldirici Analizi:</strong> Çok tehlikeli sınıfta süre <strong>2 yıl</strong>, az tehlikeli sınıfta ise <strong>6 yıl</strong>'dır. Soru Tehlikeli sınıfı sorduğu için B şıkkı (4 Yıl – 4 Yıl) doğrudur.</li>
+                </ol>
+            </div>
+
+            <!-- SORU 4 -->
+            <div class="example-box">
+                <p><strong>Soru 4:</strong> İşyerinde kanserojen ve mutajen maddelere maruziyet riski bulunan çalışanların kişisel sağlık ve maruziyet kayıtları, maruziyetin sona ermesinden sonra en az kaç yıl süreyle saklanmalıdır?</p>
+                <div class="options">
+                    <span>A) 10 Yıl</span>
+                    <span>B) 15 Yıl</span>
+                    <span>C) 20 Yıl</span>
+                    <span>D) 30 Yıl</span>
+                    <span>E) 40 Yıl</span>
+                </div>
+                <p><span class="correct-answer">Doğru Cevap: E</span></p>
+                <p><strong>Detaylı Çözüm ve Mevzuat Gerekçesi:</strong></p>
+                <ol>
+                    <li><strong>Yasal Dayanak:</strong> Kanserojen veya Mutajen Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik Madde 13.</li>
+                    <li><strong>Kritik Bilgi:</strong> Kanserojen, mutajen maddeler ile biyolojik etkenlere maruziyet kayıtları <strong>40 Yıl</strong> saklanır.</li>
+                    <li><strong>Çeldirici Analizi:</strong> Genel İSG evrakı <strong>10 Yıl</strong>, kişisel sağlık dosyaları <strong>15 Yıl</strong>, radyasyon kayıtları <strong>30 Yıl</strong> saklanırken; kanserojen/mutajen maddeler için bu süre <strong>40 Yıl</strong> olarak düzenlenmiştir.</li>
+                </ol>
+            </div>
+
+            <!-- SORU 5 -->
+            <div class="example-box">
+                <p><strong>Soru 5:</strong> İş kazası geçiren bir çalışanın iş kazası bildiriminin işveren tarafından Sosyal Güvenlik Kurumu'na (SGK) yapılma süresi azami ne kadardır?</p>
+                <div class="options">
+                    <span>A) Kazanın gerçekleştiği gün içinde</span>
+                    <span>B) Kazadan sonraki 2 iş günü</span>
+                    <span>C) Kazadan sonraki 3 iş günü</span>
+                    <span>D) Kazadan sonraki 5 iş günü</span>
+                    <span>E) Kazadan sonraki 10 iş günü</span>
+                </div>
+                <p><span class="correct-answer">Doğru Cevap: C</span></p>
+                <p><strong>Detaylı Çözüm ve Mevzuat Gerekçesi:</strong></p>
+                <ol>
+                    <li><strong>Yasal Dayanak:</strong> 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu Madde 13 ve 6331 sayılı İSG Kanunu Madde 14.</li>
+                    <li><strong>Kritik Bilgi:</strong> İşverenler, iş kazalarını kazadan sonraki <strong>3 iş günü</strong> içinde SGK'ya bildirmekle yükümlüdürler.</li>
+                    <li><strong>Çeldirici Analizi:</strong> Süre <strong>takvim günü değil, iş günü</strong> olarak hesaplanır. 2 veya 5 gün çeldiricileri sağlık sunucularının bildirimi ile karıştırılmamalıdır.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SINAV ÖZET TABLOSU                                           -->
+        <!-- ============================================================ -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="num">★</span>
+                Sınav Özet Tablosu
+            </h2>
+
+            <div class="card">
+                <p>
+                    Bölüm 6 bünyesinde incelenen tüm periyodik kontrol süreleri, sağlık muayene sıklıkları, resmi belgeler ve yasal süreler sınav tekrarı amacıyla aşağıda özetlenmiştir:
+                </p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Konu / Kavram</th>
+                            <th>Anahtar Bilgi</th>
+                            <th>Yasal Değer / Süre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Basınçlı Kap Periyodik Kontrol</strong></td>
+                            <td>Buhar kazanı, kompresör, hidrofor</td>
+                            <td><strong>En geç 1 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kaldırma Ekipmanı Kontrol</strong></td>
+                            <td>Vinç, forklift, asansör</td>
+                            <td><strong>En geç 1 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kaldırma Test Yükü</strong></td>
+                            <td>Dinamik + statik test</td>
+                            <td><strong>Beyan edilen yükün 1,25 katı</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tesisat Periyodik Kontrol</strong></td>
+                            <td>Elektrik, paratoner, yangın</td>
+                            <td><strong>En geç 1 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sağlık Muayenesi — Az Tehlikeli</strong></td>
+                            <td>Periyodik muayene</td>
+                            <td><strong>5 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sağlık Muayenesi — Tehlikeli</strong></td>
+                            <td>Periyodik muayene</td>
+                            <td><strong>3 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sağlık Muayenesi — Çok Tehlikeli</strong></td>
+                            <td>Periyodik muayene</td>
+                            <td><strong>1 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Risk Değerlendirmesi — Çok Tehlikeli</strong></td>
+                            <td>Yenileme periyodu</td>
+                            <td><strong>2 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Risk Değerlendirmesi — Tehlikeli</strong></td>
+                            <td>Yenileme periyodu</td>
+                            <td><strong>4 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Risk Değerlendirmesi — Az Tehlikeli</strong></td>
+                            <td>Yenileme periyodu</td>
+                            <td><strong>6 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Acil Durum Planı — Çok Tehlikeli</strong></td>
+                            <td>Yenileme periyodu</td>
+                            <td><strong>2 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Acil Durum Planı — Tehlikeli</strong></td>
+                            <td>Yenileme periyodu</td>
+                            <td><strong>4 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Acil Durum Planı — Az Tehlikeli</strong></td>
+                            <td>Yenileme periyodu</td>
+                            <td><strong>6 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Acil Durum Tatbikatı</strong></td>
+                            <td>Uygulanabilirlik kontrolü</td>
+                            <td><strong>En geç 1 yılda bir</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>İSG Eğitimi — Çok Tehlikeli</strong></td>
+                            <td>Çalışan başına asgari süre</td>
+                            <td><strong>Yılda 16 saat / 1 yılda yenile</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>İSG Eğitimi — Tehlikeli</strong></td>
+                            <td>Çalışan başına asgari süre</td>
+                            <td><strong>2 yılda 12 saat / 2 yılda yenile</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>İSG Eğitimi — Az Tehlikeli</strong></td>
+                            <td>Çalışan başına asgari süre</td>
+                            <td><strong>3 yılda 8 saat / 3 yılda yenile</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>İş Kazası Bildirimi</strong></td>
+                            <td>SGK'ya bildirim</td>
+                            <td><strong>3 iş günü</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Meslek Hastalığı Bildirimi</strong></td>
+                            <td>SGK'ya bildirim</td>
+                            <td><strong>3 iş günü</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Genel Ölçüm/Onaylı Defter Saklama</strong></td>
+                            <td>Ortam gözetimi kayıtları</td>
+                            <td><strong>10 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kişisel Sağlık Dosyaları</strong></td>
+                            <td>Genel İSG</td>
+                            <td><strong>15 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Radyasyon Kayıtları</strong></td>
+                            <td>Sağlık ve maruziyet</td>
+                            <td><strong>30 Yıl</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kanserojen/Mutajen Kayıtlar</strong></td>
+                            <td>Özel biyolojik etkenler dahil</td>
+                            <td><strong>40 Yıl</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <p>
+                    İşyeri kontrolleri ve belgelendirme, İSG mevzuatının <strong>somut uygulama alanını</strong> oluşturur. Periyodik kontroller (<strong>basınçlı kaplar, kaldırma ekipmanları, tesisatlar, tezgahlar</strong>) yılda en az 1 kez yapılır ve <strong>EKİPNET</strong> sistemine kayıtlı yetkili personel tarafından raporlanır. Sağlık muayeneleri tehlike sınıfına göre <strong>1/3/5 yıl</strong>; risk değerlendirmesi ve acil durum planı <strong>2/4/6 yıl</strong> periyotlarıyla yenilenir. İSG eğitim süreleri <strong>çalışan sayısından bağımsız olarak sadece tehlike sınıfına göre</strong> belirlenir (16/12/8 saat). Tüm bu süreçler <strong>Onaylı Defter</strong> ile kayıt altına alınır, <strong>EK-2 Yıllık Değerlendirme Raporu</strong>'nda sentezlenir ve <strong>İSG-KATİP</strong> üzerinden Bakanlığa bildirilir. İşverenin yükümlülüğü, <strong>Yargıtay içtihatları</strong> doğrultusunda sadece önlem almakla sınırlı olmayıp; <strong>bilim ve teknolojinin gerektirdiği tüm tedbirleri almak ve denetimini sürekli kılmakla</strong> genişletilmiştir.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BÖLÜM GEZİNME (ALT)                                          -->
+        <!-- ============================================================ -->
+        <nav class="chapter-nav" aria-label="Bölümler arası gezinme">
+            <a href="../bolum-05/konu-anlatimi.html" class="prev">
+                <span class="cn-arrow">←</span>
+                <span class="cn-text">
+                    <small>Önceki Bölüm</small>
+                    <strong>Bölüm 5: Ortam Havası, Havalandırma</strong>
+                </span>
+            </a>
+            <a href="../final/konu-anlatimi.html" class="next">
+                <span class="cn-arrow">→</span>
+                <span class="cn-text">
+                    <small>Sonraki Bölüm</small>
+                    <strong>Final: Genel Tekrar ve Değerlendirme</strong>
+                </span>
+            </a>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- HAZIRLAYAN KARTI                                             -->
+        <!-- ============================================================ -->
+        <section class="author-card" aria-label="Hazırlayan bilgileri">
+            <div class="avatar" aria-hidden="true">SA</div>
+            <div class="author-info">
+                <h3>Sıraç Aksan</h3>
+                <p class="role">
+                    Konya Teknik Üniversitesi<br>
+                    İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans<br>
+                    <strong>Ders:</strong> Çalışma Ortamı Gözetimi &nbsp;|&nbsp; <strong>Öğretim Üyesi:</strong> Bilgehan Kekeç
+                </p>
+                <div class="contact-row">
+                    <a href="tel:+905069282100" aria-label="Telefon">
+                        <span aria-hidden="true">📞</span> 0506 928 21 00
+                    </a>
+                    <a href="mailto:saracaksan@gmail.com" aria-label="E-posta">
+                        <span aria-hidden="true">✉️</span> saracaksan@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- ==================== SAYFA SONU ==================== -->
+<footer class="page-footer">
+    <div class="container">
+        <p><strong>Çalışma Ortamı Gözetimi</strong> — Bölüm 6: İşyeri Kontrolleri ve Belgelendirme</p>
+        <p>
+            <a href="../../../index.html">Tüm Dersler</a> &nbsp;·&nbsp;
+            <a href="../index.html">Ders Ana Sayfası</a> &nbsp;·&nbsp;
+            <a href="sorular.html">Sorular</a> &nbsp;·&nbsp;
+            <a href="sunum.html">Sunum</a>
+        </p>
+        <p style="margin-top:0.6rem; font-size:0.76rem; opacity:0.75;">
+            © 2026 Sıraç Aksan — Konya Teknik Üniversitesi İSG Tezsiz Yüksek Lisans<br>
+            Bu içerik yalnızca eğitim amaçlıdır. Güncel mevzuat için resmî kaynaklara başvurunuz.
+        </p>
+    </div>
+</footer>
+
+<!-- ==================== YUKARI ÇIK BUTONU ==================== -->
+<button class="scroll-top" id="scrollTopBtn" aria-label="Sayfanın başına dön" title="Yukarı çık">↑</button>
+
+<script>
+    (function () {
+        'use strict';
+
+        var btn = document.getElementById('scrollTopBtn');
+        var toggle = function () {
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        };
+        window.addEventListener('scroll', toggle, { passive: true });
+        toggle();
+
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var targetId = this.getAttribute('href').slice(1);
+                if (!targetId) return;
+                var target = document.getElementById(targetId);
+                if (!target) return;
+                e.preventDefault();
+                var offset = target.getBoundingClientRect().top + window.scrollY - 20;
+                window.scrollTo({ top: offset, behavior: 'smooth' });
+                history.replaceState(null, '', '#' + targetId);
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>
